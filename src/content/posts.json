@@ -1,0 +1,473 @@
+{
+  "categories": [
+    "Hajj & Umrah",
+    "B2B",
+    "Finance",
+    "Omnichannel",
+    "AI",
+    "Guides"
+  ],
+  "items": [
+    {
+      "slug": "digitize-hajj-umrah-agency",
+      "cat": "Hajj & Umrah",
+      "icon": "i-kaaba",
+      "color": "#184332",
+      "date": "2 October 2026",
+      "read": 6,
+      "title": "How to digitize your Hajj & Umrah agency before the next season",
+      "excerpt": "A practical plan to move pilgrim registration, packages and instalments out of spreadsheets.",
+      "body": [
+        [
+          "p",
+          "Every season, Hajj and Umrah agencies handle hundreds of pilgrims with passports, visas, rooms, transport and instalment payments. When all of that lives in spreadsheets and notebooks, mistakes are expensive and stressful."
+        ],
+        [
+          "h2",
+          "Start with one pilgrim register"
+        ],
+        [
+          "p",
+          "Put every pilgrim in one register with passport details, photo, contact and emergency contact. This single list becomes the source for visas, rooms, flights and payments."
+        ],
+        [
+          "h2",
+          "Build packages, not price lists"
+        ],
+        [
+          "p",
+          "Define each package with its flights, Makkah and Madinah hotels, transport and services. When a pilgrim joins a package, everything they need is attached automatically."
+        ],
+        [
+          "h2",
+          "Make instalments visible"
+        ],
+        [
+          "ul",
+          [
+            "Record every instalment against the pilgrim's file",
+            "Send due reminders by SMS and WhatsApp",
+            "See total collected and outstanding per group"
+          ]
+        ],
+        [
+          "p",
+          "With the register, packages and payments connected, your team can focus on serving pilgrims instead of reconciling lists."
+        ]
+      ],
+      "extra": {
+        "takeaways": [
+          "Keep one pilgrim register as the single source of truth",
+          "Link packages to flights, hotels and transport",
+          "Automate instalment reminders"
+        ],
+        "blocks": [
+          [
+            "h2",
+            "Allocate groups and rooms early"
+          ],
+          [
+            "p",
+            "Group pilgrims by departure and assign rooms as soon as hotels are confirmed. Exported lists for hotels, transport companies and guides prevent last-minute confusion in Makkah and Madinah."
+          ],
+          [
+            "h2",
+            "Track visas and documents per pilgrim"
+          ],
+          [
+            "p",
+            "A checklist on every file shows which documents are missing and where each visa stands. Managers can filter the register to see only pilgrims with pending items."
+          ],
+          [
+            "h2",
+            "Measure the season"
+          ],
+          [
+            "p",
+            "At the end of the season, compare collections, supplier costs and expenses per package. These numbers guide pricing for the next season."
+          ]
+        ],
+        "faqs": [
+          [
+            "How long does it take to move an Umrah agency online?",
+            "Most agencies are running within two weeks, including importing existing pilgrim lists."
+          ],
+          [
+            "Can pilgrims pay online?",
+            "Yes. Send payment links for card, PayPal or Apple Pay, or record bank and cash payments."
+          ]
+        ]
+      }
+    },
+    {
+      "slug": "b2b-agent-credit-limits",
+      "cat": "B2B",
+      "icon": "i-layers",
+      "color": "#0e4a7a",
+      "date": "24 September 2026",
+      "read": 5,
+      "title": "B2B travel portals: how agent credit limits protect your cash flow",
+      "excerpt": "Credit wins agents, but unmanaged credit sinks consolidators. Here is how to get the balance right.",
+      "body": [
+        [
+          "p",
+          "Sub-agents choose the consolidator who gives them credit. But every ticket issued on credit is cash you have already paid to the airline. Without limits, a few slow payers can freeze your business."
+        ],
+        [
+          "h2",
+          "Set limits per agent"
+        ],
+        [
+          "p",
+          "Give each agent a credit limit based on their history and deposits. The portal blocks new bookings automatically when the limit is reached."
+        ],
+        [
+          "h2",
+          "Encourage deposits with a wallet"
+        ],
+        [
+          "p",
+          "A deposit wallet lets agents top up in advance by bank, bKash or Nagad and book instantly. You hold the cash before the ticket is issued."
+        ],
+        [
+          "ul",
+          [
+            "Review limits monthly using the aging report",
+            "Share statements so agents see their balance",
+            "Reward fast payers with higher limits"
+          ]
+        ]
+      ],
+      "extra": {
+        "takeaways": [
+          "Give every agent a clear credit limit",
+          "Use deposit wallets to collect cash before ticketing",
+          "Review aging reports every month"
+        ],
+        "blocks": [
+          [
+            "h2",
+            "Automate statements"
+          ],
+          [
+            "p",
+            "When every ticket posts to the agent's ledger automatically, statements are always ready. Agents see their balance in the portal, which reduces disputes and speeds up payment."
+          ],
+          [
+            "h2",
+            "Accept international payments"
+          ],
+          [
+            "p",
+            "Agents in the GCC and Malaysia often prefer to top up by card. Accepting Visa, Mastercard, PayPal and Stripe alongside bank transfer makes deposits faster."
+          ]
+        ],
+        "faqs": [
+          [
+            "What is a good starting credit limit?",
+            "Many consolidators start with one week of an agent's average sales and adjust after three months of history."
+          ],
+          [
+            "Can limits change automatically?",
+            "Limits are set by your team, guided by the aging and payment history reports."
+          ]
+        ]
+      }
+    },
+    {
+      "slug": "double-entry-accounting-travel",
+      "cat": "Finance",
+      "icon": "i-wallet",
+      "color": "#7a3e12",
+      "date": "15 September 2026",
+      "read": 7,
+      "title": "Why travel agencies need double-entry accounting",
+      "excerpt": "Sales are not profit. Learn how proper ledgers show what you really earn on every booking.",
+      "body": [
+        [
+          "p",
+          "Travel agencies move large amounts of money that are not theirs: fares owed to airlines, hotel costs, visa fees. A simple cash book cannot tell you how much of the money in the bank is actually profit."
+        ],
+        [
+          "h2",
+          "Every booking has two sides"
+        ],
+        [
+          "p",
+          "When you sell a ticket, the customer or agent owes you, and you owe the airline. Double-entry accounting records both, so receivables and payables are always correct."
+        ],
+        [
+          "h2",
+          "Profit per booking, not per month"
+        ],
+        [
+          "p",
+          "With service fees, markups and costs recorded per booking, you can see which services, agents and staff really make money."
+        ],
+        [
+          "ul",
+          [
+            "Know exactly what you owe each supplier",
+            "Collect agent dues before they age",
+            "Close the month in a day, not a week"
+          ]
+        ]
+      ],
+      "extra": {
+        "takeaways": [
+          "A cash book cannot show real profit",
+          "Record receivables and payables on every booking",
+          "Measure profit per booking, service and agent"
+        ],
+        "blocks": [
+          [
+            "h2",
+            "Handle multiple currencies correctly"
+          ],
+          [
+            "p",
+            "Agencies selling in SAR, AED, MYR or USD face exchange differences between booking and payment. Double-entry accounting records those gains and losses so they do not hide inside your margin."
+          ],
+          [
+            "h2",
+            "Reconcile with BSP and suppliers"
+          ],
+          [
+            "p",
+            "When tickets and supplier bills post automatically, BSP and supplier statements can be matched line by line in minutes instead of days."
+          ]
+        ],
+        "faqs": [
+          [
+            "Do I need an accountant to use it?",
+            "Daily work is automatic; an accountant reviews reports and closes the period."
+          ],
+          [
+            "Can I export to my existing accounting software?",
+            "Yes. Export journals to Excel, QuickBooks or Xero."
+          ]
+        ]
+      }
+    },
+    {
+      "slug": "whatsapp-for-travel-agencies",
+      "cat": "Omnichannel",
+      "icon": "i-chat",
+      "color": "#0f5c4f",
+      "date": "5 September 2026",
+      "read": 5,
+      "title": "WhatsApp for travel agencies: turning chats into bookings",
+      "excerpt": "Most travel inquiries now start on WhatsApp. A shared inbox makes sure none of them are lost.",
+      "body": [
+        [
+          "p",
+          "Customers message the number they see on your Facebook page or website, often late at night. If that number lives on one staff member's phone, inquiries are lost when they are busy or away."
+        ],
+        [
+          "h2",
+          "One number, the whole team"
+        ],
+        [
+          "p",
+          "A shared inbox lets several staff answer from the same WhatsApp Business number, with each conversation assigned to one person."
+        ],
+        [
+          "h2",
+          "From chat to CRM"
+        ],
+        [
+          "p",
+          "Turn a promising chat into a lead with one click. The conversation stays attached, so whoever follows up knows exactly what was discussed."
+        ],
+        [
+          "ul",
+          [
+            "Use saved replies for common questions",
+            "Let AI answer after office hours",
+            "Measure response time per staff"
+          ]
+        ]
+      ],
+      "extra": {
+        "takeaways": [
+          "Move customer chats off personal phones",
+          "Assign every conversation to one owner",
+          "Turn good chats into CRM leads"
+        ],
+        "blocks": [
+          [
+            "h2",
+            "Use templates for confirmations"
+          ],
+          [
+            "p",
+            "Approved WhatsApp templates let you send booking confirmations, payment reminders and travel documents automatically, even outside the 24-hour chat window."
+          ],
+          [
+            "h2",
+            "Bring Messenger and Instagram together"
+          ],
+          [
+            "p",
+            "Customers in the GCC and Malaysia often message on Instagram, while Bangladeshi customers prefer Messenger and WhatsApp. One inbox covers them all."
+          ]
+        ],
+        "faqs": [
+          [
+            "Is the WhatsApp Business app enough?",
+            "For one person, yes. For a team sharing one number, you need the WhatsApp Business Platform connected to a shared inbox."
+          ],
+          [
+            "Can I keep my existing number?",
+            "Usually yes. The number is migrated to the WhatsApp Business Platform during setup."
+          ]
+        ]
+      }
+    },
+    {
+      "slug": "ai-trip-planners",
+      "cat": "AI",
+      "icon": "i-bot",
+      "color": "#3c2a7a",
+      "date": "27 August 2026",
+      "read": 4,
+      "title": "AI trip planners: what they can and can't do for your agency",
+      "excerpt": "AI can draft itineraries in seconds. Here is how to use it without losing the human touch.",
+      "body": [
+        [
+          "p",
+          "AI trip planners can turn a short request like five days in Bali for a family into a complete draft itinerary in seconds. That saves your team hours every week."
+        ],
+        [
+          "h2",
+          "What AI does well"
+        ],
+        [
+          "ul",
+          [
+            "Drafting day-by-day itineraries",
+            "Answering common questions instantly",
+            "Qualifying leads by budget and dates"
+          ]
+        ],
+        [
+          "h2",
+          "Where your team still matters"
+        ],
+        [
+          "p",
+          "Pricing, supplier choice and special requests still need your experience. Use AI for the first draft and let your consultants refine and confirm it."
+        ]
+      ],
+      "extra": {
+        "takeaways": [
+          "AI writes the first draft in seconds",
+          "Consultants check prices and suppliers",
+          "Use AI to qualify leads after hours"
+        ],
+        "blocks": [
+          [
+            "h2",
+            "Getting started with AI safely"
+          ],
+          [
+            "p",
+            "Start with low-risk tasks such as answering common questions and drafting itineraries. Review AI replies for the first weeks, then widen what it handles as you gain confidence."
+          ],
+          [
+            "h2",
+            "Measure the impact"
+          ],
+          [
+            "p",
+            "Track reply times, leads qualified after hours and time saved per itinerary. These numbers show whether AI is paying for itself."
+          ]
+        ],
+        "faqs": [
+          [
+            "Will AI replace travel consultants?",
+            "No. It handles repetitive drafting and questions so consultants can focus on selling and service."
+          ],
+          [
+            "Which languages does the AI support?",
+            "English, Arabic, Bangla, Malay and many others."
+          ]
+        ]
+      }
+    },
+    {
+      "slug": "choosing-a-travel-erp",
+      "cat": "Guides",
+      "icon": "i-tasks",
+      "color": "#5a1f3c",
+      "date": "18 August 2026",
+      "read": 6,
+      "title": "Checklist: choosing the right travel ERP for your agency",
+      "excerpt": "Ten questions to ask any vendor before you move your agency to a new system.",
+      "body": [
+        [
+          "p",
+          "Switching systems is a big decision. The right travel ERP saves time every day; the wrong one creates double work. Use this checklist when you compare options."
+        ],
+        [
+          "h2",
+          "Questions to ask"
+        ],
+        [
+          "ul",
+          [
+            "Does it handle every service you sell, including Hajj & Umrah?",
+            "Do bookings post to accounts automatically?",
+            "Is there a B2B portal with credit limits?",
+            "Does it support bKash, Nagad and local banks?",
+            "Can staff use it in Bangla?",
+            "Are WhatsApp and Messenger connected?",
+            "Who imports your existing data?",
+            "Is training included?",
+            "Can you host it on your own server?",
+            "How fast does support respond?"
+          ]
+        ],
+        [
+          "p",
+          "Ask for a demo with your own workflows, not a generic tour. It is the fastest way to see whether a system fits."
+        ]
+      ],
+      "extra": {
+        "takeaways": [
+          "List every service and workflow you run today",
+          "Check payments for every market you serve",
+          "Ask for a demo with your own data"
+        ],
+        "blocks": [
+          [
+            "h2",
+            "Think about every market you sell to"
+          ],
+          [
+            "p",
+            "If you sell to customers in the GCC, Malaysia or the USA, check that the system supports their currencies, languages and payment methods such as Visa, Mastercard, PayPal, Stripe and Apple Pay."
+          ],
+          [
+            "h2",
+            "Plan the switch"
+          ],
+          [
+            "p",
+            "Pick a quiet period, import customers and balances first, train staff in short sessions and run old and new systems side by side for one or two weeks."
+          ]
+        ],
+        "faqs": [
+          [
+            "How much does a travel ERP cost?",
+            "Cloud plans usually start at a monthly fee, while self-hosted licenses are a one-time payment. See our pricing page for current plans."
+          ],
+          [
+            "Can I try before I buy?",
+            "Yes. Book a guided demo with sample data based on your workflows."
+          ]
+        ]
+      }
+    }
+  ]
+}

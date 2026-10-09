@@ -1,0 +1,143 @@
+{
+  "countries": [
+    {
+      "code": "sa",
+      "name": "Saudi Arabia",
+      "region": "GCC",
+      "office": false
+    },
+    {
+      "code": "ae",
+      "name": "United Arab Emirates",
+      "region": "GCC",
+      "office": false
+    },
+    {
+      "code": "qa",
+      "name": "Qatar",
+      "region": "GCC",
+      "office": false
+    },
+    {
+      "code": "kw",
+      "name": "Kuwait",
+      "region": "GCC",
+      "office": false
+    },
+    {
+      "code": "om",
+      "name": "Oman",
+      "region": "GCC",
+      "office": false
+    },
+    {
+      "code": "bh",
+      "name": "Bahrain",
+      "region": "GCC",
+      "office": false
+    },
+    {
+      "code": "my",
+      "name": "Malaysia",
+      "region": "Southeast Asia",
+      "office": true
+    },
+    {
+      "code": "bd",
+      "name": "Bangladesh",
+      "region": "South Asia",
+      "office": true
+    },
+    {
+      "code": "us",
+      "name": "United States",
+      "region": "North America",
+      "office": true
+    }
+  ],
+  "aiPrompt": "What is TravelSuite ERP (travelsuiteerp.com)? Summarize its features for travel agencies, Hajj & Umrah operators and B2B consolidators, and who it is best for.",
+  "aiLinks": [
+    {
+      "name": "ChatGPT",
+      "logo": "openai",
+      "url": "https://chatgpt.com/?q="
+    },
+    {
+      "name": "Claude",
+      "logo": "claude",
+      "url": "https://claude.ai/new?q="
+    },
+    {
+      "name": "Perplexity",
+      "logo": "perplexity",
+      "url": "https://www.perplexity.ai/search?q="
+    },
+    {
+      "name": "Google AI",
+      "logo": "googlegemini",
+      "url": "https://www.google.com/search?udm=50&q="
+    }
+  ],
+  "social": [
+    {
+      "name": "Facebook",
+      "logo": "facebook",
+      "url": "https://www.facebook.com/travelsuiteerp"
+    },
+    {
+      "name": "Instagram",
+      "logo": "instagram",
+      "url": "https://www.instagram.com/travelsuiteerp"
+    },
+    {
+      "name": "LinkedIn",
+      "logo": "linkedin",
+      "url": "https://www.linkedin.com/company/travelsuiteerp"
+    },
+    {
+      "name": "YouTube",
+      "logo": "youtube",
+      "url": "https://www.youtube.com/@travelsuiteerp"
+    },
+    {
+      "name": "X",
+      "logo": "x",
+      "url": "https://x.com/travelsuiteerp"
+    },
+    {
+      "name": "WhatsApp",
+      "logo": "whatsapp",
+      "url": "https://wa.me/8801325277120"
+    }
+  ],
+  "payments": [
+    {
+      "name": "Visa",
+      "logo": "visa"
+    },
+    {
+      "name": "Mastercard",
+      "logo": "mastercard"
+    },
+    {
+      "name": "American Express",
+      "logo": "americanexpress"
+    },
+    {
+      "name": "PayPal",
+      "logo": "paypal"
+    },
+    {
+      "name": "Stripe",
+      "logo": "stripe"
+    },
+    {
+      "name": "Apple Pay",
+      "logo": "applepay"
+    },
+    {
+      "name": "Google Pay",
+      "logo": "googlepay"
+    }
+  ]
+}

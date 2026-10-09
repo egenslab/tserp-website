@@ -1,0 +1,296 @@
+[
+  {
+    "slug": "travel-agencies",
+    "icon": "i-building",
+    "title": "Travel agencies",
+    "tagline": "Ticketing, hotels and visa under one roof",
+    "headline": "One system for the counter, the phone and the website",
+    "intro": "Most agencies sell tickets, hotels, visas and tours to the same customers. TravelSuite ERP puts all of it on one screen, with the accounts updating as you work.",
+    "challenges": [
+      "Customer details re-typed for every service",
+      "Ticket sales and accounts never quite match",
+      "Inquiries lost across phones and WhatsApp"
+    ],
+    "helps": [
+      "One customer profile for every service",
+      "Tickets and invoices post straight to the ledger",
+      "A shared inbox for every inquiry",
+      "Daily sales and profit at a glance"
+    ],
+    "modules": [
+      "flights",
+      "hotels",
+      "visa",
+      "crm",
+      "finance",
+      "omnichannel"
+    ],
+    "plan": "Growth",
+    "seo": {
+      "keywords": "travel agency software, travel agency management system, travel ERP for agencies",
+      "overview": [
+        "TravelSuite ERP is travel agency software that combines ticketing, hotels, visas, tours, CRM and accounting. Your team serves walk-in, phone and online customers from one system, and the accounts update as they work.",
+        "Agencies across Bangladesh, Malaysia and the GCC use it to replace separate booking tools, spreadsheets and accounting software with one platform."
+      ],
+      "faqs": [
+        [
+          "Is TravelSuite ERP suitable for small agencies?",
+          "Yes. Start with the Starter plan and the services you sell, then add modules as you grow."
+        ],
+        [
+          "Can we keep our existing customer data?",
+          "Yes. We import customers, agents and opening balances from Excel during setup."
+        ],
+        [
+          "How long does setup take?",
+          "Most agencies go live in 7 to 14 days."
+        ]
+      ]
+    }
+  },
+  {
+    "slug": "hajj-umrah",
+    "icon": "i-kaaba",
+    "title": "Hajj & Umrah operators",
+    "tagline": "Pilgrim registration, groups, packages",
+    "headline": "Every pilgrim, package and payment in one place",
+    "intro": "Hajj and Umrah seasons bring hundreds of pilgrims, each with documents, visas, rooms and instalments. TravelSuite ERP keeps every file complete and every payment on time.",
+    "challenges": [
+      "Pilgrim lists kept in spreadsheets",
+      "Instalments and dues hard to follow up",
+      "Room and group allocation done by hand"
+    ],
+    "helps": [
+      "Pilgrim registration with passport and photo",
+      "Package builder: flights, Makkah & Madinah hotels, transport",
+      "Instalment payments and due reminders",
+      "Group and room allocation"
+    ],
+    "modules": [
+      "hajj",
+      "visa",
+      "transport",
+      "invoices",
+      "finance",
+      "omnichannel"
+    ],
+    "plan": "Business",
+    "seo": {
+      "keywords": "Hajj software, Umrah management system, Hajj agency software Bangladesh, Umrah software Malaysia",
+      "overview": [
+        "Purpose-built Hajj and Umrah software for agencies in Bangladesh, Malaysia, Saudi Arabia and the wider GCC. Register pilgrims, build packages with Makkah and Madinah hotels, allocate groups and rooms, and collect instalments on time.",
+        "Because packages, visas and payments share one database, managers see every pilgrim's status and the season's profit at a glance."
+      ],
+      "faqs": [
+        [
+          "Can we manage several Umrah groups at once?",
+          "Yes. Each group has its own departure, hotels, transport and pilgrim list."
+        ],
+        [
+          "Does it send payment reminders to pilgrims?",
+          "Yes. Reminders go out by SMS and WhatsApp before each instalment is due."
+        ],
+        [
+          "Can agents sell our Umrah packages?",
+          "Yes. Publish packages on the B2B portal with agent commission."
+        ]
+      ]
+    }
+  },
+  {
+    "slug": "b2b-consolidators",
+    "icon": "i-users",
+    "title": "B2B consolidators",
+    "tagline": "Agent network, credit and commissions",
+    "headline": "Grow your agent network without growing your back office",
+    "intro": "Consolidators live on volume and credit control. TravelSuite ERP gives every agent a self-service portal while you keep markups, credit limits and balances under control.",
+    "challenges": [
+      "Agents call or message for every booking",
+      "Credit given without clear limits",
+      "Agent statements prepared manually"
+    ],
+    "helps": [
+      "B2B agent portal with net fares",
+      "Credit limits, deposits and wallet",
+      "Sub-agent hierarchy and markups",
+      "Agent ledgers and statements on demand"
+    ],
+    "modules": [
+      "b2b",
+      "flights",
+      "finance",
+      "invoices",
+      "reports",
+      "sales"
+    ],
+    "plan": "Business",
+    "seo": {
+      "keywords": "B2B travel portal, travel consolidator software, sub-agent management, agent credit limit software",
+      "overview": [
+        "Consolidator software with a self-service B2B portal. Sub-agents search, book and issue on their own, while you control fares, markups, credit limits and deposits.",
+        "Agent ledgers update with every ticket, and aging reports show who owes what, protecting your cash flow as the network grows."
+      ],
+      "faqs": [
+        [
+          "Can I set different markups for each agent?",
+          "Yes. Set markups by agent, agent group, airline or route."
+        ],
+        [
+          "What happens when an agent reaches the credit limit?",
+          "New bookings are blocked until they pay or top up their wallet."
+        ],
+        [
+          "Can agents download their statements?",
+          "Yes. Statements are available in the portal at any time."
+        ]
+      ]
+    }
+  },
+  {
+    "slug": "tour-operators",
+    "icon": "i-map",
+    "title": "Tour operators & DMCs",
+    "tagline": "Packages, departures, suppliers",
+    "headline": "Design packages once, sell them everywhere",
+    "intro": "Tour operators juggle itineraries, departures, suppliers and costing. TravelSuite ERP connects them, so every package shows its real margin before you sell a seat.",
+    "challenges": [
+      "Itineraries rebuilt in Word for every customer",
+      "Seats oversold on popular departures",
+      "Supplier costs unclear until the trip ends"
+    ],
+    "helps": [
+      "Day-by-day itinerary builder with photos",
+      "Fixed departures and seat inventory",
+      "Supplier costing and package profit",
+      "Shareable PDF brochures"
+    ],
+    "modules": [
+      "tours",
+      "transport",
+      "hotels",
+      "website",
+      "expenses",
+      "ai"
+    ],
+    "plan": "Growth",
+    "seo": {
+      "keywords": "tour operator software, DMC software, tour package booking system, itinerary software",
+      "overview": [
+        "Tour operator and DMC software for designing packages, managing departures and suppliers, and selling through your website, agents and WhatsApp.",
+        "Costing, seat inventory and expenses are tracked per departure, so you know each package's real profit before and after the trip."
+      ],
+      "faqs": [
+        [
+          "Can I publish packages on my website?",
+          "Yes. Packages appear on your site with photos, itinerary and online booking."
+        ],
+        [
+          "Can I manage local suppliers?",
+          "Yes. Hotels, transport and guides are managed as suppliers with payables."
+        ],
+        [
+          "Can AI draft itineraries?",
+          "Yes. The AI trip planner prepares a draft your team can refine."
+        ]
+      ]
+    }
+  },
+  {
+    "slug": "online-travel-agencies",
+    "icon": "i-globe",
+    "title": "Online travel agencies",
+    "tagline": "B2C website with online payment",
+    "headline": "Your own OTA, on your own domain",
+    "intro": "Launch a booking website that looks and works like the big OTAs, with online payment, customer accounts and AI that answers questions around the clock.",
+    "challenges": [
+      "Website and back office not connected",
+      "Visitors leave without booking",
+      "Questions arrive after office hours"
+    ],
+    "helps": [
+      "Responsive design on your domain",
+      "Online booking integration",
+      "AI agents for customer queries",
+      "Lead capture straight into CRM"
+    ],
+    "modules": [
+      "website",
+      "b2b",
+      "flights",
+      "hotels",
+      "ai",
+      "crm"
+    ],
+    "plan": "Business",
+    "seo": {
+      "keywords": "OTA software, online travel agency platform, white-label booking engine, travel booking website",
+      "overview": [
+        "Launch an online travel agency on your own domain with flights, hotels, packages and online payment. Customers can pay with cards, PayPal, Stripe, Apple Pay or Google Pay.",
+        "Behind the website, the same ERP handles fulfilment, customer service and accounting, and AI answers questions around the clock."
+      ],
+      "faqs": [
+        [
+          "Which payment gateways can my OTA use?",
+          "Stripe, PayPal, Apple Pay, Google Pay and card processors, plus regional gateways on request."
+        ],
+        [
+          "Can customers manage their own bookings?",
+          "Yes. Customers log in to view bookings, download tickets and make payments."
+        ],
+        [
+          "Is the booking site mobile friendly?",
+          "Yes. The site is responsive, and branded mobile apps are available as an add-on."
+        ]
+      ]
+    }
+  },
+  {
+    "slug": "corporate-travel",
+    "icon": "i-idcard",
+    "title": "Corporate travel desks",
+    "tagline": "Policies, approvals, monthly billing",
+    "headline": "Business travel with policies, approvals and one monthly bill",
+    "intro": "Serve companies that need travel booked to policy, approved by managers and billed once a month, with every trip visible in reports.",
+    "challenges": [
+      "Approvals chased over email",
+      "Monthly invoices compiled by hand",
+      "Clients ask for spend reports"
+    ],
+    "helps": [
+      "Approval workflow",
+      "Company accounts with monthly billing",
+      "Sales by service, staff, branch and agent",
+      "Export to Excel and PDF"
+    ],
+    "modules": [
+      "flights",
+      "hotels",
+      "invoices",
+      "reports",
+      "tasks",
+      "expenses"
+    ],
+    "plan": "Growth",
+    "seo": {
+      "keywords": "corporate travel management software, business travel booking, travel approval workflow",
+      "overview": [
+        "Corporate travel management software for agencies serving companies. Book within travel policy, collect manager approvals and bill each client once a month.",
+        "Spend reports by department, traveller and cost centre help your corporate clients control budgets and keep coming back."
+      ],
+      "faqs": [
+        [
+          "Can companies approve trips online?",
+          "Yes. Managers approve or reject requests by email or in the portal."
+        ],
+        [
+          "Can I invoice companies monthly?",
+          "Yes. Bookings are collected on one monthly invoice per company."
+        ],
+        [
+          "Can clients see their travel spend?",
+          "Yes. Share spend reports by department, traveller or cost centre."
+        ]
+      ]
+    }
+  }
+]

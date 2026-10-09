@@ -1,0 +1,272 @@
+[
+  {
+    "slug": "umrah-portal",
+    "shot": "umrah",
+    "url": "umrah-portal",
+    "type": "Hajj & Umrah operator",
+    "location": "Dhaka, Bangladesh",
+    "chips": [
+      "Hajj & Umrah",
+      "Visa",
+      "Finance"
+    ],
+    "metric": "2,400+ pilgrims managed in one season",
+    "golive": "14 days",
+    "headline": "How a Dhaka Umrah operator managed 2,400 pilgrims in one season without spreadsheets",
+    "intro": "A family-run Hajj and Umrah agency moved pilgrim registration, packages and instalments into TravelSuite ERP before its busiest season.",
+    "challenge": "Pilgrim lists lived in several Excel files, instalments were tracked in a notebook and room allocation was done by hand the night before departure. Staff spent more time reconciling lists than serving pilgrims.",
+    "solution": [
+      "Pilgrim register with passport, photo and documents",
+      "Packages linking flights, Makkah and Madinah hotels and transport",
+      "Instalment schedules with WhatsApp reminders",
+      "Group and room allocation exported for hotels"
+    ],
+    "results": [
+      [
+        "2,400+",
+        "pilgrims managed in one season"
+      ],
+      [
+        "3×",
+        "more pilgrims than the previous season"
+      ],
+      [
+        "98%",
+        "instalments collected on time"
+      ]
+    ],
+    "modules": [
+      "hajj",
+      "visa",
+      "invoices",
+      "finance"
+    ],
+    "quote": "We used to manage Umrah groups in Excel and payments in a notebook. Now every pilgrim, payment and message is in one place.",
+    "person": "Managing Director"
+  },
+  {
+    "slug": "b2b-fares",
+    "shot": "b2b",
+    "url": "b2b-fares",
+    "type": "B2B ticketing consolidator",
+    "location": "Chattogram, Bangladesh",
+    "chips": [
+      "Flights",
+      "B2B portal",
+      "Agent ledger"
+    ],
+    "metric": "180 sub-agents on one portal",
+    "golive": "10 days",
+    "headline": "A Chattogram consolidator grew to 180 sub-agents with a self-service B2B portal",
+    "intro": "A ticketing consolidator replaced phone and WhatsApp bookings with an agent portal that controls credit automatically.",
+    "challenge": "Every sub-agent booking came through a phone call or WhatsApp message, credit was given informally, and agent statements took days to prepare at month-end.",
+    "solution": [
+      "B2B portal with net fares and instant ticketing",
+      "Credit limits and deposit wallets per agent",
+      "Markups by agent group and airline",
+      "Agent ledgers and statements on demand"
+    ],
+    "results": [
+      [
+        "180",
+        "active sub-agents"
+      ],
+      [
+        "+140",
+        "new agents in the first year"
+      ],
+      [
+        "0",
+        "extra accounts staff hired"
+      ]
+    ],
+    "modules": [
+      "b2b",
+      "flights",
+      "finance",
+      "reports"
+    ],
+    "quote": "The B2B portal with agent credit limits let us grow our sub-agent network without hiring more accounts staff.",
+    "person": "Founder"
+  },
+  {
+    "slug": "tours-bd",
+    "shot": "tours",
+    "url": "tours-bd",
+    "type": "Tour operator",
+    "location": "Sylhet, Bangladesh",
+    "chips": [
+      "Tour packages",
+      "Website",
+      "Omnichannel"
+    ],
+    "metric": "40% of bookings now online",
+    "golive": "12 days",
+    "headline": "A Sylhet tour operator now takes 40% of bookings online",
+    "intro": "A domestic tour operator launched a booking website and a shared WhatsApp inbox connected to its packages and CRM.",
+    "challenge": "Inquiries arrived on Facebook and personal phones, itineraries were retyped in Word for each customer, and popular departures were sometimes oversold.",
+    "solution": [
+      "Package builder with day-by-day itineraries",
+      "Booking website with online payment",
+      "Shared inbox for WhatsApp, Messenger and Instagram",
+      "Seat inventory per departure"
+    ],
+    "results": [
+      [
+        "40%",
+        "of bookings made online"
+      ],
+      [
+        "< 5 min",
+        "average reply time"
+      ],
+      [
+        "0",
+        "oversold departures since launch"
+      ]
+    ],
+    "modules": [
+      "tours",
+      "website",
+      "omnichannel",
+      "crm"
+    ],
+    "quote": "WhatsApp, Messenger and Instagram chats land in one inbox and turn into CRM leads. Nobody misses an inquiry now.",
+    "person": "Sales Manager"
+  },
+  {
+    "slug": "fly-gulf",
+    "shot": "gulf",
+    "url": "fly-gulf",
+    "type": "Online travel agency",
+    "location": "Dubai, UAE",
+    "chips": [
+      "Flights",
+      "Hotels",
+      "B2C"
+    ],
+    "metric": "Live in 12 days",
+    "golive": "12 days",
+    "headline": "A Dubai OTA launched its booking site in 12 days with international payments",
+    "intro": "A new online travel agency in the UAE needed flights, hotels and card payments live before the winter season.",
+    "challenge": "The founders had supplier contracts but no booking website, no payment gateway and no back office to fulfil orders.",
+    "solution": [
+      "Branded B2C website on their own domain",
+      "Stripe, Apple Pay and Google Pay at checkout",
+      "Flight and hotel supplier connections",
+      "AI assistant answering questions after hours"
+    ],
+    "results": [
+      [
+        "12",
+        "days from contract to launch"
+      ],
+      [
+        "3",
+        "currencies on one site: AED, USD, BDT"
+      ],
+      [
+        "24/7",
+        "AI replies to customer questions"
+      ]
+    ],
+    "modules": [
+      "website",
+      "b2b",
+      "flights",
+      "ai"
+    ],
+    "quote": "Setup, branding and payment gateway were done in under two weeks, and the support team answers quickly on WhatsApp.",
+    "person": "CEO"
+  },
+  {
+    "slug": "visa-desk",
+    "shot": "visa",
+    "url": "visa-desk",
+    "type": "Visa processing centre",
+    "location": "Dhaka, Bangladesh",
+    "chips": [
+      "Visa",
+      "CRM",
+      "Help desk"
+    ],
+    "metric": "Every file tracked stage by stage",
+    "golive": "7 days",
+    "headline": "A Dhaka visa centre cut status calls by tracking every file stage by stage",
+    "intro": "A busy visa processing centre moved hundreds of monthly applications from paper files to tracked digital files.",
+    "challenge": "Customers called several times a day asking for status, documents were sometimes missing at submission and nobody could see which staff member owned each file.",
+    "solution": [
+      "Country and visa-type checklists",
+      "Stages with responsible staff for every file",
+      "Automatic SMS and WhatsApp status updates",
+      "Help desk tickets linked to applications"
+    ],
+    "results": [
+      [
+        "60%",
+        "fewer status calls"
+      ],
+      [
+        "100%",
+        "of files with a named owner"
+      ],
+      [
+        "7",
+        "days to go live"
+      ]
+    ],
+    "modules": [
+      "visa",
+      "crm",
+      "helpdesk",
+      "tasks"
+    ],
+    "quote": "Our visa team tracks every file stage by stage, and customers get updates automatically. Calls asking for status dropped sharply.",
+    "person": "Operations Head"
+  },
+  {
+    "slug": "corp-travel",
+    "shot": "corp",
+    "url": "corp-travel",
+    "type": "Corporate travel desk",
+    "location": "Kuala Lumpur, Malaysia",
+    "chips": [
+      "Flights",
+      "Hotels",
+      "Approvals"
+    ],
+    "metric": "Monthly billing automated",
+    "golive": "14 days",
+    "headline": "A Kuala Lumpur travel desk automated approvals and monthly billing for corporate clients",
+    "intro": "A corporate travel agency serving regional companies replaced email approvals and manual invoices with workflows and reports.",
+    "challenge": "Approvals were chased over email, monthly invoices were compiled by hand from dozens of bookings, and clients kept asking for spend reports.",
+    "solution": [
+      "Approval workflow for every trip request",
+      "Company accounts with monthly billing",
+      "Spend reports by department and cost centre",
+      "Tasks for ticketing and changes"
+    ],
+    "results": [
+      [
+        "1",
+        "invoice per client per month"
+      ],
+      [
+        "96%",
+        "of trips booked within policy"
+      ],
+      [
+        "2 days",
+        "saved every month-end"
+      ]
+    ],
+    "modules": [
+      "flights",
+      "hotels",
+      "invoices",
+      "reports"
+    ],
+    "quote": "Month-end used to take a week of matching tickets with bank statements. Now the ledgers are ready on the first day.",
+    "person": "Finance Manager"
+  }
+]
