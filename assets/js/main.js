@@ -113,6 +113,32 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  // ---------- Stats: count up when the numbers come into view ----------
+  // The final value is in the HTML, so the page reads correctly without JavaScript.
+  var counters = document.querySelectorAll('[data-count]');
+  if (counters.length && 'IntersectionObserver' in window && !reduceMotion.matches) {
+    var countUp = function (el) {
+      var target = parseInt(el.dataset.count, 10);
+      var suffix = el.dataset.suffix || '';
+      var start = null;
+      var step = function (ts) {
+        if (start === null) start = ts;
+        var p = Math.min((ts - start) / 1200, 1);
+        el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + suffix;
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    var countObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        countUp(entry.target);
+        countObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(function (el) { countObserver.observe(el); });
+  }
+
   // ---------- Booking widget tabs ----------
   var searchButtons = document.querySelectorAll('[data-search]');
   searchButtons.forEach(function (btn) {
