@@ -82,7 +82,8 @@
     langBtn.setAttribute('aria-expanded', String(open));
   }
   function markLang(code) {
-    lang.querySelector('.lang-current').textContent = code === 'bn' ? 'বাং' : 'EN';
+    var info = window.tsI18n && window.tsI18n.langs[code];
+    lang.querySelector('.lang-current').textContent = info ? info[0] : 'EN';
     langButtons.forEach(function (b) { b.setAttribute('aria-current', String(b.dataset.lang === code)); });
   }
   langBtn.addEventListener('click', function (e) {
