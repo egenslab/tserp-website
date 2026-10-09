@@ -31,17 +31,18 @@
   "metric": "Flights, hotels, visas and tour packages on one platform"
  },
  {
-  "slug": "b2b-fares",
-  "shot": "b2b",
-  "url": "b2b-fares",
-  "type": "B2B ticketing consolidator",
-  "location": "Chattogram, Bangladesh",
+  "slug": "globalskyvisa",
+  "shot": "globalskyvisa",
+  "url": "globalskyvisa.ae",
+  "website": "https://www.globalskyvisa.ae/",
+  "type": "Visa and travel agency",
+  "location": "Dubai, UAE",
   "chips": [
+   "Visa",
    "Flights",
-   "B2B portal",
-   "Agent ledger"
+   "Business modules"
   ],
-  "metric": "180 sub-agents on one portal"
+  "metric": "Visa processing, flights and the business ERP on one platform"
  },
  {
   "slug": "tours-bd",
