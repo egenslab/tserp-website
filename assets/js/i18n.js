@@ -735,7 +735,11 @@
       'AI answers, qualifies and follows up around the clock.': 'AI সারাক্ষণ উত্তর দেয়, লিড যাচাই ও ফলো-আপ করে।',
       'Reports show what sells and where to grow next.': 'রিপোর্ট দেখায় কী বিক্রি হচ্ছে আর কোথায় বাড়ানো যায়।',
       'Customer journey': 'কাস্টমারের যাত্রা',
-      'Step': 'ধাপ'
+      'Step': 'ধাপ',
+      'Book a free 30-minute demo': '৩০ মিনিটের ফ্রি ডেমো বুক করুন',
+      'See TravelSuite ERP set up with your own services, agents and branding.': 'আপনার নিজের সার্ভিস, এজেন্ট ও ব্র্যান্ডিং দিয়ে TravelSuite ERP দেখুন।',
+      'Book now': 'এখনই বুক করুন',
+      'TravelSuite ERP is an all-in-one booking and ERP platform for travel agencies, Hajj & Umrah operators and B2B consolidators. Sell flights, hotels, visas and packages, manage agents, accounts and HR, and automate daily work with AI, trusted by agencies across the GCC, Malaysia, Bangladesh and the USA.': 'TravelSuite ERP ট্রাভেল এজেন্সি, হজ ও উমরাহ অপারেটর এবং B2B কনসোলিডেটরদের জন্য অল-ইন-ওয়ান বুকিং ও ERP প্ল্যাটফর্ম। ফ্লাইট, হোটেল, ভিসা ও প্যাকেজ বিক্রি করুন, এজেন্ট, হিসাব ও HR পরিচালনা করুন, আর AI দিয়ে প্রতিদিনের কাজ অটোমেট করুন — GCC, মালয়েশিয়া, বাংলাদেশ ও যুক্তরাষ্ট্রের এজেন্সিগুলোর আস্থার প্ল্যাটফর্ম।'
     }
   };
 
