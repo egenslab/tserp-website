@@ -1219,3 +1219,43 @@ html[lang="th"] body { line-height: 1.8; }
   .fact-logos { gap: 8px; }
   .fact-logos img { height: 12px; }
 }
+
+/* ===== Site search ===== */
+.search-btn { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid var(--line); background: var(--white); color: var(--forest); cursor: pointer; transition: border-color .2s, background .2s; }
+.search-btn:hover { border-color: var(--forest); background: var(--lime-soft); }
+.search-btn .ic { width: 18px; height: 18px; }
+.search-overlay { position: fixed; inset: 0; z-index: 200; background: rgba(15, 46, 34, .45); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); display: flex; justify-content: center; align-items: flex-start; padding: max(10vh, 24px) 16px 24px; }
+.search-dialog { width: 100%; max-width: 640px; max-height: min(640px, 80vh); display: flex; flex-direction: column; background: var(--white); border-radius: 20px; box-shadow: 0 30px 80px rgba(0, 0, 0, .3); overflow: hidden; animation: search-in .15s ease-out; }
+@keyframes search-in { from { opacity: 0; transform: translateY(-8px) scale(.98); } }
+.search-field { display: flex; align-items: center; gap: 12px; padding: 16px 20px; border-bottom: 1px solid var(--line); }
+.search-field > .ic { width: 20px; height: 20px; color: var(--muted); flex: none; }
+.search-field input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; font: inherit; font-size: 1.05rem; color: var(--ink); padding: 4px 0; }
+.search-field input::placeholder { color: var(--muted); }
+.search-field input::-webkit-search-cancel-button { display: none; }
+.search-esc { flex: none; border: 1px solid var(--line); background: var(--bg-alt); color: var(--muted); border-radius: 8px; padding: 3px 8px; font: inherit; font-size: .75rem; font-weight: 600; cursor: pointer; }
+.search-results { list-style: none; margin: 0; padding: 8px 10px 12px; overflow-y: auto; overscroll-behavior: contain; }
+.search-results ul { list-style: none; margin: 0; padding: 0; }
+.search-group { margin: 10px 10px 6px; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.search-results [role="option"] a { display: flex; align-items: center; gap: 12px; padding: 9px 10px; border-radius: 12px; color: var(--ink); }
+.search-results [aria-selected="true"] a { background: var(--lime-soft); }
+.search-ico { width: 36px; height: 36px; border-radius: 10px; background: var(--bg-alt); display: grid; place-items: center; flex: none; color: var(--forest); }
+.search-ico .ic { width: 18px; height: 18px; }
+.search-results [aria-selected="true"] .search-ico { background: var(--white); }
+.search-text { flex: 1; min-width: 0; display: grid; }
+.search-text b { font-weight: 600; font-size: .95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.search-text b mark { background: none; color: var(--forest-2); font-weight: 800; }
+.search-text small { color: var(--muted); font-size: .8rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.search-go { width: 16px; height: 16px; color: var(--muted); opacity: 0; flex: none; }
+.search-results [aria-selected="true"] .search-go { opacity: 1; color: var(--forest); }
+.search-empty { padding: 28px 16px; text-align: center; display: grid; gap: 6px; color: var(--muted); }
+.search-empty b { color: var(--ink); }
+.search-empty a { color: var(--forest-2); font-weight: 600; text-decoration: underline; }
+.search-foot { display: flex; gap: 18px; padding: 10px 20px; border-top: 1px solid var(--line); background: var(--bg-alt); font-size: .78rem; color: var(--muted); }
+.search-foot kbd { display: inline-grid; place-items: center; min-width: 22px; height: 22px; margin-inline-end: 4px; padding: 0 5px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; background: var(--white); font-family: inherit; font-size: .72rem; color: var(--ink); }
+@media (max-width: 600px) {
+  .search-overlay { padding: 12px 10px; }
+  .search-dialog { max-height: calc(100vh - 24px); border-radius: 16px; }
+  .search-foot { display: none; }
+  .search-btn { width: 36px; height: 36px; }
+}
+@media (prefers-reduced-motion: reduce) { .search-dialog { animation: none; } }

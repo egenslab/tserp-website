@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { LANGS, type LangCode } from "@/lib/i18n";
 import { useI18n } from "./I18nProvider";
+import SiteSearch from "./SiteSearch";
 import { Icon } from "./ui";
 
 type MegaKey = "products" | "solutions" | "company";
@@ -270,6 +271,7 @@ export default function Header() {
             </div>
           </nav>
           <div className="header-actions">
+            <SiteSearch />
             <div className={langOpen ? "lang open" : "lang"} id="lang" ref={langRef}>
               <button className="lang-btn" aria-expanded={langOpen} aria-controls="lang-menu" aria-label="Change language" onClick={() => setLangOpen((o) => !o)}>
                 <Icon name="i-globe" /><span className="lang-current" data-no-i18n="">{LANGS[lang].label}</span><Icon name="i-chev" className="ic chev" />
