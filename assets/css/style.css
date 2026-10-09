@@ -1053,3 +1053,9 @@ a.site-shot { display: block; }
 .rv-stars.tp { display: flex; gap: 2px; margin: 2px 0; }
 .rv-stars.tp i { font-style: normal; width: 16px; height: 16px; display: grid; place-items: center; background: #00b67a; color: #fff; font-size: .7rem; }
 @media (max-width: 640px) { .review-badges { grid-template-columns: 1fr 1fr; } .review-card { padding: 12px; gap: 8px; } }
+
+/* CTA band: centred */
+.cta-inner { flex-direction: column; justify-content: center; text-align: center; gap: 26px; }
+.cta-inner h2 { margin-inline: auto; }
+.cta-actions { justify-content: center; }
+@media (max-width: 640px) { .cta-actions { flex-direction: column; } }
