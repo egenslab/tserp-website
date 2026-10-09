@@ -68,6 +68,7 @@ To add a language, add it to `LANGS` in `src/lib/i18n.ts` and `scripts/i18n.mjs`
 host must serve `/features/flights` from that file:
 
 - **Vercel, Netlify, Cloudflare Pages:** works as is (Vercel can also run `next build` directly).
+- **Node.js hosting (xCloud, a VPS, Render…):** run `npm ci && npm run build`, then start the site with `npm start`. It serves `out/` with clean URLs on the port in `PORT` (default 3000); point the host's proxy at that port.
 - **Apache / cPanel:** upload the contents of `out/`; the included `.htaccess` maps clean URLs to the `.html` files.
 - **Nginx:** `try_files $uri $uri.html $uri/ =404;`
 
