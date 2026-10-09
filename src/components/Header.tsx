@@ -26,7 +26,7 @@ function activeNav(path: string) {
   if (path.startsWith("/features/")) return "products";
   if (path.startsWith("/solutions")) return "solutions";
   if (path === "/pricing") return "pricing";
-  if (/^\/(about|contact|blog|success-stories)/.test(path)) return "company";
+  if (/^\/(about|contact|blog|success-stories|affiliate)/.test(path)) return "company";
   return "";
 }
 
@@ -294,6 +294,11 @@ export default function Header() {
                     <Link href="/blog" className="mega-item">
                       <span className="mi"><svg><use href="#i-file" /></svg></span>
                       <span><b>Blog</b><small>Guides for travel agencies</small></span>
+                    </Link>
+                    {" "}
+                    <Link href="/affiliate" className="mega-item">
+                      <span className="mi"><svg><use href="#i-percent" /></svg></span>
+                      <span><b>Affiliate program</b><small>Earn by referring agencies</small></span>
                     </Link>
                     {" "}
                     <Link href="/contact" className="mega-item">

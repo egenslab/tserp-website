@@ -4,7 +4,7 @@ import { FEATURES, POSTS, SITE, SOLUTIONS } from "@/lib/content";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const main = ["/", "/features", "/solutions", "/pricing", "/success-stories", "/blog", "/about", "/contact"];
+  const main = ["/", "/features", "/solutions", "/pricing", "/success-stories", "/blog", "/about", "/affiliate", "/contact"];
   const paths = [
     ...main,
     ...FEATURES.map((f) => `/features/${f.slug}`),

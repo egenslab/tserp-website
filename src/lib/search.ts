@@ -28,6 +28,7 @@ const PAGES: SearchItem[] = [
   { t: "Success stories", d: "Results from agencies using TravelSuite ERP", h: "/success-stories", g: "Pages", i: "i-award", k: "case study customers" },
   { t: "Blog", d: "Guides for travel agencies", h: "/blog", g: "Pages", i: "i-file", k: "articles news" },
   { t: "Customer reviews", d: "What agency owners say", h: "/#stories", g: "Pages", i: "i-star", k: "testimonials" },
+  { t: "Affiliate program", d: "Earn commission for every travel agency you refer", h: "/affiliate", g: "Pages", i: "i-percent", k: "partner referral commission earn reseller" },
   { t: "Terms & Conditions", d: "Legal", h: "/terms", g: "Pages", i: "i-file" },
   { t: "Privacy Policy", d: "Legal", h: "/privacy", g: "Pages", i: "i-lock" },
   { t: "Refund Policy", d: "Legal", h: "/refund", g: "Pages", i: "i-receipt" },

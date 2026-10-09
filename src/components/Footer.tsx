@@ -113,6 +113,7 @@ export default function Footer() {
               <Link href="/pricing">Pricing</Link>
               <Link href="/success-stories">Success stories</Link>
               <Link href="/blog">Blog</Link>
+              <Link href="/affiliate">Affiliate program</Link>
               <Link href="/contact">Contact us</Link>
             </div>
             <div className="fcol">

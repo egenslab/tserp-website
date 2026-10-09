@@ -1278,3 +1278,26 @@ html[lang="th"] body { line-height: 1.8; }
   .search-btn { width: 36px; height: 36px; }
 }
 @media (prefers-reduced-motion: reduce) { .search-dialog { animation: none; } }
+
+/* Affiliate page */
+.btn-ghost-light { border-color: rgba(255, 255, 255, .3); color: var(--white); }
+.btn-ghost-light:hover { border-color: var(--lime); color: var(--lime); }
+.aff-calc { display: grid; grid-template-columns: 1.3fr 1fr; gap: 24px; max-width: 980px; margin: 0 auto; background: var(--white); border: 1px solid var(--line); border-radius: 22px; padding: 26px; box-shadow: var(--shadow-lg); }
+.aff-calc-form { display: grid; gap: 22px; align-content: center; min-width: 0; }
+.aff-calc-form label, .aff-field { display: grid; gap: 10px; }
+.aff-calc-form label > span, .aff-field > span { display: flex; justify-content: space-between; font-weight: 700; color: var(--ink); font-size: .92rem; }
+.aff-calc-form label b { font-family: var(--font-display); color: var(--forest); font-size: 1.1rem; }
+.aff-calc-form input[type="range"] { width: 100%; accent-color: var(--forest); }
+.aff-field .seg { justify-content: flex-start; justify-self: start; }
+.aff-calc-result { background: var(--forest); border-radius: 18px; padding: 26px; display: grid; align-content: center; gap: 6px; color: #cfe0d6; min-width: 0; }
+.aff-calc-result small { font-size: .85rem; }
+.aff-calc-result strong { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3rem); font-weight: 800; color: var(--lime); line-height: 1.1; overflow-wrap: anywhere; }
+.aff-calc-result p { margin: 0; font-size: .9rem; }
+.aff-why { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.aff-why li { display: flex; gap: 12px; align-items: flex-start; background: var(--bg-alt); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; color: var(--ink); font-weight: 500; }
+.aff-why .ic { flex: none; width: 20px; height: 20px; margin-top: 2px; color: var(--forest); stroke: var(--forest); }
+#apply .contact-side h2 { margin-bottom: 10px; }
+#apply .contact-cards { margin-top: 20px; }
+@media (max-width: 800px) {
+  .aff-calc { grid-template-columns: 1fr; padding: 18px; }
+}
