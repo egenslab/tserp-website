@@ -739,7 +739,7 @@
       'Book a free 30-minute demo': '৩০ মিনিটের ফ্রি ডেমো বুক করুন',
       'See TravelSuite ERP set up with your own services, agents and branding.': 'আপনার নিজের সার্ভিস, এজেন্ট ও ব্র্যান্ডিং দিয়ে TravelSuite ERP দেখুন।',
       'Book now': 'এখনই বুক করুন',
-      'TravelSuite ERP is an all-in-one booking and ERP platform for travel agencies, Hajj & Umrah operators and B2B consolidators. Sell flights, hotels, visas and packages, manage agents, accounts and HR, and automate daily work with AI, trusted by agencies across the GCC, Malaysia, Bangladesh and the USA.': 'TravelSuite ERP ট্রাভেল এজেন্সি, হজ ও উমরাহ অপারেটর এবং B2B কনসোলিডেটরদের জন্য অল-ইন-ওয়ান বুকিং ও ERP প্ল্যাটফর্ম। ফ্লাইট, হোটেল, ভিসা ও প্যাকেজ বিক্রি করুন, এজেন্ট, হিসাব ও HR পরিচালনা করুন, আর AI দিয়ে প্রতিদিনের কাজ অটোমেট করুন — GCC, মালয়েশিয়া, বাংলাদেশ ও যুক্তরাষ্ট্রের এজেন্সিগুলোর আস্থার প্ল্যাটফর্ম।'
+      'All-in-one booking and ERP platform for travel agencies, Hajj & Umrah operators and B2B consolidators. Sell, manage and automate your entire travel business from one place.': 'ট্রাভেল এজেন্সি, হজ ও উমরাহ অপারেটর এবং B2B কনসোলিডেটরদের জন্য অল-ইন-ওয়ান বুকিং ও ERP প্ল্যাটফর্ম। পুরো ট্রাভেল ব্যবসার বিক্রি, ব্যবস্থাপনা ও অটোমেশন — এক জায়গা থেকে।'
     }
   };
 
