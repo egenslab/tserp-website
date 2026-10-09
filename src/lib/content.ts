@@ -9,7 +9,7 @@ import siteData from "@/content/site.json";
 
 export const SITE = "https://travelsuiteerp.com";
 export const WA = "https://wa.me/8801325277120";
-export const EMAIL = "hello@travelsuiteerp.com";
+export const EMAIL = "info@travelsuiteerp.com";
 
 export type Faq = [question: string, answer: string];
 export type Seo = { keywords: string; overview: string[]; faqs: Faq[] };
