@@ -251,6 +251,23 @@
     document.querySelectorAll('.fdetail').forEach(function (el) { spy.observe(el); });
   }
 
+  // ---------- Blog category filter ----------
+  var filterButtons = document.querySelectorAll('[data-filter]');
+  if (filterButtons.length) {
+    filterButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var cat = btn.dataset.filter;
+        filterButtons.forEach(function (b) {
+          b.classList.toggle('active', b === btn);
+          b.setAttribute('aria-pressed', String(b === btn));
+        });
+        document.querySelectorAll('#postGrid .post-card').forEach(function (card) {
+          card.hidden = cat !== 'all' && card.dataset.cat !== cat;
+        });
+      });
+    });
+  }
+
   // ---------- Contact form: client-side validation only ----------
   // Connect it to your backend or a form service (add action/method and remove preventDefault).
   var form = document.getElementById('contactForm');

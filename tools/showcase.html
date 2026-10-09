@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Showcase site</title>
+<!-- Sample client websites used to produce the success-story screenshots (tools/screenshot-showcase.js). -->
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { width: 1280px; height: 800px; overflow: hidden; font-family: var(--font, "Segoe UI", "Helvetica Neue", Arial, sans-serif); color: #1b1b1b; background: #fff; }
+  header { height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 56px; background: var(--head-bg, #fff); color: var(--head-fg, #1b1b1b); }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 22px; letter-spacing: -.01em; }
+  .brand i { width: 34px; height: 34px; border-radius: 10px; background: var(--accent); display: grid; place-items: center; color: var(--c); font-style: normal; font-size: 18px; }
+  nav { display: flex; gap: 30px; font-size: 15px; font-weight: 600; opacity: .85; }
+  .cta { background: var(--accent); color: var(--c); padding: 11px 20px; border-radius: 999px; font-weight: 700; font-size: 14px; }
+  .hero { position: relative; height: 470px; background: var(--hero); color: #fff; padding: 70px 56px 0; overflow: hidden; }
+  .hero h1 { font-size: 54px; line-height: 1.05; max-width: 640px; letter-spacing: -.02em; font-family: var(--display, inherit); }
+  .hero p { font-size: 19px; margin-top: 16px; max-width: 520px; opacity: .9; }
+  .art { position: absolute; right: 0; bottom: 0; width: 600px; height: 470px; }
+  .search { position: absolute; left: 56px; right: 56px; bottom: 34px; background: #fff; border-radius: 16px; padding: 14px; display: grid; grid-template-columns: repeat(4, 1fr) 170px; gap: 12px; box-shadow: 0 20px 50px rgba(0,0,0,.25); color: #1b1b1b; }
+  .search div { border: 1.5px solid #e5e7eb; border-radius: 10px; padding: 9px 14px; }
+  .search small { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #6b7280; font-weight: 700; }
+  .search b { font-size: 15px; }
+  .search button { border: 0; border-radius: 10px; background: var(--c); color: #fff; font-size: 16px; font-weight: 700; font-family: inherit; }
+  .tabs { display: flex; gap: 8px; margin-top: 26px; }
+  .tabs span { background: rgba(255,255,255,.16); padding: 8px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; }
+  .tabs span:first-child { background: #fff; color: var(--c); }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; padding: 30px 56px; }
+  .card { border-radius: 14px; overflow: hidden; border: 1px solid #eee; }
+  .thumb { height: 130px; background: var(--g); position: relative; }
+  .thumb em { position: absolute; left: 12px; top: 12px; background: #fff; color: var(--c); font-style: normal; font-weight: 700; font-size: 12px; padding: 4px 10px; border-radius: 999px; }
+  .card div.info { padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; }
+  .card b { font-size: 16px; }
+  .card span { color: var(--c); font-weight: 800; font-size: 16px; }
+</style>
+</head>
+<body>
+<header><div class="brand"><i id="mark"></i><span id="name"></span></div><nav id="nav"></nav><span class="cta" id="cta"></span></header>
+<section class="hero">
+  <svg class="art" id="art" viewBox="0 0 600 470" aria-hidden="true"></svg>
+  <h1 id="title"></h1><p id="sub"></p>
+  <div class="tabs" id="tabs"></div>
+  <div class="search" id="search"></div>
+</section>
+<section class="cards" id="cards"></section>
+<script>
+const SITES = {
+  umrah: { name: 'Umrah Portal', mark: '☾', c: '#184332', accent: '#d4b45f', hero: 'linear-gradient(120deg,#0f2e22,#1f5540)', display: 'Georgia, serif',
+    nav: ['Umrah', 'Hajj', 'Visa', 'Packages', 'Contact'], cta: 'Book now',
+    title: 'Your Umrah journey, planned with care', sub: 'Packages from Dhaka with hotels near Haram, visa and transport included.',
+    tabs: ['Umrah packages', 'Hajj 2027', 'Visa'], fields: [['Package', 'Economy · 14 Nights'], ['Departure', 'Jan 2027'], ['Makkah hotel', '600m from Haram'], ['Pilgrims', '4 Adults']],
+    cards: [['Economy Umrah', '৳ 1,45,000', 'linear-gradient(135deg,#1f5540,#7aa36b)'], ['Premium Umrah', '৳ 2,10,000', 'linear-gradient(135deg,#8a6d2b,#d4b45f)'], ['Ramadan Umrah', '৳ 2,65,000', 'linear-gradient(135deg,#0f2e22,#3c7a5c)']],
+    art: 'kaaba' },
+  b2b: { name: 'B2B Fares', mark: '✈', c: '#0e4a7a', accent: '#ffcc33', hero: 'linear-gradient(120deg,#0b2f52,#1673b8)',
+    nav: ['Flights', 'Agents', 'Groups', 'Support'], cta: 'Agent login',
+    title: 'Best fares for travel agents', sub: 'Net fares on 300+ airlines with instant ticketing, credit and wallet top-ups.',
+    tabs: ['One way', 'Round trip', 'Multi city'], fields: [['From', 'Dhaka (DAC)'], ['To', 'Jeddah (JED)'], ['Depart', '12 Dec 2026'], ['Passengers', '1 Adult']],
+    cards: [['Dhaka → Dubai', '৳ 38,900', 'linear-gradient(135deg,#1673b8,#5ab0e8)'], ['Dhaka → Kuala Lumpur', '৳ 24,500', 'linear-gradient(135deg,#0b2f52,#2f8fd8)'], ['Dhaka → London', '৳ 92,300', 'linear-gradient(135deg,#334155,#64748b)']],
+    art: 'plane' },
+  tours: { name: 'Tours BD', mark: '▲', c: '#7a3e12', accent: '#ffd29d', hero: 'linear-gradient(120deg,#5a2a0a,#c2671f)',
+    nav: ['Sylhet', 'Sajek', "Cox's Bazar", 'Sundarbans', 'Blog'], cta: 'Plan a trip',
+    title: 'Discover Sylhet & beyond', sub: 'Tea gardens, waterfalls and hill tracks with local guides and comfortable stays.',
+    tabs: ['Tours', 'Hotels', 'Transport'], fields: [['Destination', 'Sylhet'], ['Month', 'December'], ['Duration', '3 Days'], ['Travellers', '2 Adults']],
+    cards: [['Sylhet Tea Trail', '৳ 12,500', 'linear-gradient(135deg,#3f7a3a,#8bc34a)'], ['Sajek Valley', '৳ 9,800', 'linear-gradient(135deg,#5a2a0a,#e0a060)'], ["Cox's Bazar Escape", '৳ 14,200', 'linear-gradient(135deg,#0e7490,#67e8f9)']],
+    art: 'mountains' },
+  gulf: { name: 'Fly Gulf', mark: '◆', c: '#3c2a7a', accent: '#ff7a59', hero: 'linear-gradient(120deg,#22184a,#5b3fb5)',
+    nav: ['Flights', 'Hotels', 'Holidays', 'Deals'], cta: 'Sign in',
+    title: 'Fly, stay, explore', sub: 'Flights and hotels across the Gulf and beyond, with prices in AED, USD and BDT.',
+    tabs: ['Flights', 'Hotels', 'Holidays'], fields: [['From', 'Dubai (DXB)'], ['To', 'Istanbul (IST)'], ['Dates', '20–27 Nov'], ['Travellers', '2 Adults']],
+    cards: [['Istanbul City Break', 'AED 1,890', 'linear-gradient(135deg,#5b3fb5,#ff7a59)'], ['Maldives Resort', 'AED 4,250', 'linear-gradient(135deg,#0891b2,#a5f3fc)'], ['Baku Weekend', 'AED 1,240', 'linear-gradient(135deg,#22184a,#8b5cf6)']],
+    art: 'city' },
+  visa: { name: 'Visa Desk', mark: '✓', c: '#0f5c4f', accent: '#a7f3d0', hero: 'linear-gradient(120deg,#063b33,#14917c)',
+    nav: ['Tourist visa', 'Work visa', 'Track application', 'Documents'], cta: 'Apply now',
+    title: 'Visa made simple', sub: 'Apply online, upload documents and track your application stage by stage.',
+    tabs: ['Apply', 'Track', 'Requirements'], fields: [['Nationality', 'Bangladesh'], ['Destination', 'Thailand'], ['Visa type', 'Tourist'], ['Applicants', '2']],
+    cards: [['Thailand Tourist', '৳ 6,500', 'linear-gradient(135deg,#14917c,#5eead4)'], ['Malaysia eVisa', '৳ 5,200', 'linear-gradient(135deg,#063b33,#22c55e)'], ['Schengen Tourist', '৳ 14,800', 'linear-gradient(135deg,#1e3a8a,#60a5fa)']],
+    art: 'passport' },
+  corp: { name: 'Corp Travel', mark: '■', c: '#5a1f3c', accent: '#f5d0e0', hero: 'linear-gradient(120deg,#2e0f1f,#8a2f5c)',
+    nav: ['Book travel', 'Approvals', 'Reports', 'Policies'], cta: 'Company login',
+    title: 'Business travel, sorted', sub: 'Book within policy, get approvals in one click and receive one monthly invoice.',
+    tabs: ['Flights', 'Hotels', 'Approvals'], fields: [['Traveller', 'A. Rahman'], ['Trip', 'KUL → SIN'], ['Dates', '3–5 Dec'], ['Cost centre', 'Sales APAC']],
+    cards: [['Pending approvals', '3 trips', 'linear-gradient(135deg,#8a2f5c,#f472b6)'], ['This month spend', 'RM 48,200', 'linear-gradient(135deg,#2e0f1f,#9d174d)'], ['Policy compliance', '96%', 'linear-gradient(135deg,#334155,#94a3b8)']],
+    art: 'briefcase' }
+};
+const ART = {
+  kaaba: '<circle cx="470" cy="110" r="44" fill="#d4b45f" opacity=".9"/><circle cx="488" cy="98" r="40" fill="#163d2d"/><rect x="290" y="250" width="200" height="220" fill="#111"/><rect x="290" y="290" width="200" height="22" fill="#d4b45f"/><path d="M240 470V330l-30-40h20l-10-60 30 60h-10l20 40v140z" fill="#0b241a"/><path d="M540 470V300l-20-30h14l-6-50 22 50h-10l14 30v170z" fill="#0b241a"/>',
+  plane: '<path d="M80 330 C 200 250, 360 200, 560 120" stroke="rgba(255,255,255,.35)" stroke-width="3" stroke-dasharray="10 10" fill="none"/><g transform="translate(470 120) rotate(-25) scale(5)" fill="#fff"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></g><circle cx="140" cy="120" r="30" fill="rgba(255,255,255,.12)"/><circle cx="250" cy="70" r="18" fill="rgba(255,255,255,.12)"/>',
+  mountains: '<circle cx="470" cy="110" r="50" fill="#ffd29d"/><path d="M0 470 L170 230 L270 340 L380 180 L600 470z" fill="#3a1a05" opacity=".85"/><path d="M200 470 L380 250 L470 330 L540 270 L600 320 L600 470z" fill="#2a1203"/><path d="M380 180 L410 222 L395 218 L380 236 L364 214 L350 220z" fill="#fff" opacity=".8"/>',
+  city: '<circle cx="460" cy="120" r="60" fill="#ff7a59" opacity=".85"/><g fill="#170f33"><rect x="180" y="250" width="60" height="220"/><rect x="250" y="180" width="44" height="290"/><path d="M310 470V120l20-60 20 60v350z"/><rect x="370" y="220" width="70" height="250"/><rect x="450" y="280" width="50" height="190"/><rect x="510" y="240" width="70" height="230"/></g>',
+  passport: '<g transform="translate(330 70) rotate(8)"><rect width="200" height="270" rx="16" fill="#0a2e28"/><circle cx="100" cy="115" r="46" fill="none" stroke="#a7f3d0" stroke-width="5"/><path d="M54 115h92M100 69c-20 25-20 67 0 92M100 69c20 25 20 67 0 92" stroke="#a7f3d0" stroke-width="4" fill="none"/><rect x="45" y="200" width="110" height="10" rx="5" fill="#a7f3d0"/></g><g transform="translate(250 200) rotate(-12)"><circle r="54" fill="none" stroke="#fff" stroke-width="6" opacity=".7"/><path d="M-24 0l16 16 32-32" stroke="#fff" stroke-width="8" fill="none" opacity=".8"/></g>',
+  briefcase: '<g transform="translate(330 130)"><rect x="0" y="50" width="230" height="160" rx="18" fill="#2e0f1f"/><rect x="75" y="15" width="80" height="45" rx="10" fill="none" stroke="#2e0f1f" stroke-width="12"/><rect x="0" y="110" width="230" height="16" fill="#f5d0e0" opacity=".6"/></g><g fill="rgba(255,255,255,.18)"><rect x="160" y="320" width="40" height="90" rx="6"/><rect x="215" y="280" width="40" height="130" rx="6"/><rect x="270" y="340" width="40" height="70" rx="6"/></g>'
+};
+const id = new URLSearchParams(location.search).get('id') || 'umrah';
+const s = SITES[id];
+const r = document.documentElement.style;
+r.setProperty('--c', s.c); r.setProperty('--accent', s.accent); r.setProperty('--hero', s.hero);
+if (s.display) r.setProperty('--display', s.display);
+document.getElementById('mark').textContent = s.mark;
+document.getElementById('name').textContent = s.name;
+document.getElementById('nav').innerHTML = s.nav.map(n => `<span>${n}</span>`).join('');
+document.getElementById('cta').textContent = s.cta;
+document.getElementById('title').textContent = s.title;
+document.getElementById('sub').textContent = s.sub;
+document.getElementById('tabs').innerHTML = s.tabs.map(t => `<span>${t}</span>`).join('');
+document.getElementById('search').innerHTML = s.fields.map(([k, v]) => `<div><small>${k}</small><b>${v}</b></div>`).join('') + '<button>Search</button>';
+document.getElementById('cards').innerHTML = s.cards.map(([t, p, g]) => `<div class="card"><div class="thumb" style="--g:${g}"><em>${s.name}</em></div><div class="info"><b>${t}</b><span>${p}</span></div></div>`).join('');
+document.getElementById('art').innerHTML = ART[s.art];
+</script>
+</body>
+</html>
