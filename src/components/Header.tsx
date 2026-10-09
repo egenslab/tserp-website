@@ -10,6 +10,16 @@ import { Icon } from "./ui";
 
 type MegaKey = "products" | "solutions" | "company";
 
+// Solutions menu: how a customer moves through TravelSuite ERP
+const JOURNEY: [icon: string, title: string, text: string][] = [
+  ["i-chat", "Conversation", "WhatsApp, Messenger and web chat"],
+  ["i-target", "Lead", "Captured and qualified automatically"],
+  ["i-users", "CRM", "One profile for every customer"],
+  ["i-trend", "Sales", "Quotes that turn into bookings"],
+  ["i-plane", "Booking", "Flights, hotels, visas and packages"],
+  ["i-wallet", "Finance & Operations", "Invoices, ledgers and reports"],
+];
+
 /** Main menu item highlighted for the current page */
 function activeNav(path: string) {
   if (path === "/features") return "features";
@@ -215,15 +225,16 @@ export default function Header() {
                     </div>
                     <div className="mega-journey">
                       <h6>The connected journey</h6>
+                      <p className="mj-title">From first chat to final invoice</p>
                       <ol>
-                        <li>Conversation</li>
-                        <li>Lead</li>
-                        <li>CRM</li>
-                        <li>Sales</li>
-                        <li>Booking</li>
-                        <li>Finance & Operations</li>
+                        {JOURNEY.map(([icon, title, text]) => (
+                          <li key={title}>
+                            <span className="mj-dot"><Icon name={icon} /></span>
+                            <span className="mj-text"><b>{title}</b><small>{text}</small></span>
+                          </li>
+                        ))}
                       </ol>
-                      <Link href="/solutions" className="link-arrow">All solutions <svg className="ic"><use href="#i-arrow" /></svg></Link>
+                      <Link href="/solutions" className="btn btn-lime btn-block mj-cta">All solutions <Icon name="i-arrow" /></Link>
                     </div>
                   </div>
                 </div>
