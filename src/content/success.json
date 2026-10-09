@@ -15,17 +15,20 @@
   "metric": "Visa, flights, hotels and every business module on one platform"
  },
  {
-  "slug": "umrah-portal",
-  "shot": "umrah",
-  "url": "umrah-portal",
-  "type": "Hajj & Umrah operator",
+  "slug": "bengalpass",
+  "shot": "bengalpass",
+  "url": "bengalpass.com",
+  "website": "https://bengalpass.com/",
+  "type": "Travel and visa agency",
   "location": "Dhaka, Bangladesh",
   "chips": [
-   "Hajj & Umrah",
+   "Flights",
+   "Hotels",
    "Visa",
-   "Finance"
+   "Tour packages",
+   "Business modules"
   ],
-  "metric": "2,400+ pilgrims managed in one season"
+  "metric": "Flights, hotels, visas and tour packages on one platform"
  },
  {
   "slug": "b2b-fares",
