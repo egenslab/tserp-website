@@ -734,7 +734,8 @@
       'Ticketing, accounts, HR and support run in one ERP.': 'টিকিটিং, হিসাব, HR ও সাপোর্ট চলে একটি ERP-তে।',
       'AI answers, qualifies and follows up around the clock.': 'AI সারাক্ষণ উত্তর দেয়, লিড যাচাই ও ফলো-আপ করে।',
       'Reports show what sells and where to grow next.': 'রিপোর্ট দেখায় কী বিক্রি হচ্ছে আর কোথায় বাড়ানো যায়।',
-      'Customer journey': 'কাস্টমারের যাত্রা'
+      'Customer journey': 'কাস্টমারের যাত্রা',
+      'Step': 'ধাপ'
     }
   };
 

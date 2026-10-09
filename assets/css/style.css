@@ -1090,3 +1090,14 @@ a.site-shot { display: block; }
 .j-art, .jcard.dark .j-art { background: none; padding: 22px 12px 4px; }
 .jcard.dark .j-art img { filter: none; }
 .j-num { box-shadow: 0 0 0 5px var(--white); }
+
+/* Journey: corner ribbon instead of number circles */
+.j-ribbon { position: absolute; top: 16px; left: -6px; z-index: 2; padding: 6px 14px 6px 16px; background: var(--forest); color: var(--lime); font-family: var(--font-display); font-weight: 700; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; border-radius: 0 999px 999px 0; box-shadow: 0 6px 14px rgba(15, 46, 34, .2); }
+.j-ribbon::before { content: ""; position: absolute; left: 0; bottom: -6px; border-top: 6px solid var(--forest-ink); border-left: 6px solid transparent; }
+.jcard:nth-child(even) .j-ribbon { background: var(--lime); color: var(--forest-ink); }
+.jcard:nth-child(even) .j-ribbon::before { border-top-color: #5fae2f; }
+.jcard { overflow: visible; }
+.j-art { padding-top: 48px; border-radius: 22px 22px 0 0; }
+.j-body { padding-top: 14px; }
+
+.jcard .j-art, .jcard.dark .j-art { padding-top: 50px; }
