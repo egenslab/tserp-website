@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { AI_LINKS, AI_PROMPT, COUNTRIES, PAYMENTS, SOCIAL } from "@/lib/content";
-import { Icon } from "./ui";
 import WaPill from "./WaPill";
 
 /** Call-to-action band and site footer. */
@@ -39,7 +38,6 @@ export default function Footer() {
                 <a key={ai.name} className="ai-card" href={ai.url + encodeURIComponent(AI_PROMPT)} target="_blank" rel="noopener" aria-label={ai.name}>
                   <span className="ai-logo"><img src={`/assets/img/partners/${ai.logo}.svg`} alt="" width={26} height={26} /></span>
                   <span className="ai-name" data-no-i18n=""><b>{ai.name}</b><small>{ai.maker}</small></span>
-                  <Icon name="i-external" className="ic ai-go" />
                 </a>
               ))}
             </div>
