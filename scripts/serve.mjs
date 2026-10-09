@@ -16,9 +16,11 @@ const TYPES = {
 };
 
 // Old addresses -> new pages, shared with Vercel (vercel.json "redirects")
-const REDIRECTS = new Map(
-  JSON.parse(readFileSync(new URL("../vercel.json", import.meta.url), "utf8")).redirects.map((r) => [r.source, r.destination]),
-);
+// ("/old/:slug" patterns match one path segment)
+const REDIRECTS = JSON.parse(readFileSync(new URL("../vercel.json", import.meta.url), "utf8")).redirects.map((r) => ({
+  test: new RegExp(`^${r.source.replace(/\/+$/, "").replace(/:\w+/g, "[^/]+")}$`),
+  to: r.destination,
+}));
 
 if (!existsSync(join(ROOT, "index.html"))) {
   console.error("out/ is missing: run `npm run build` first.");
@@ -43,7 +45,7 @@ createServer((req, res) => {
     res.writeHead(400).end("Bad request");
     return;
   }
-  const moved = REDIRECTS.get(path.replace(/\/+$/, "") || "/");
+  const moved = REDIRECTS.find((r) => r.test.test(path.replace(/\/+$/, "") || "/"))?.to;
   if (moved) {
     res.writeHead(301, { location: moved }).end();
     return;

@@ -59,7 +59,7 @@ export function buildSearchIndex(): SearchItem[] {
     items.push({ t: name, d: `${kind} integration`, h: "/#integrations", g: "Integrations", i: "i-code" });
   }
   for (const st of SUCCESS) {
-    items.push({ t: st.headline, d: `${st.type}, ${st.location}`, h: `/success-stories/${st.slug}`, g: "Success stories", i: "i-award", k: st.chips.join(" ") });
+    items.push({ t: st.type, d: `${st.location} · ${st.metric}`, h: st.website ?? "/success-stories", g: "Success stories", i: "i-award", k: `${st.url} ${st.chips.join(" ")}` });
   }
   for (const p of POSTS) {
     items.push({ t: p.title, d: p.excerpt, h: `/blog/${p.slug}`, g: "Blog", i: "i-file", k: p.cat });

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { FEATURES, POSTS, SITE, SOLUTIONS, SUCCESS } from "@/lib/content";
+import { FEATURES, POSTS, SITE, SOLUTIONS } from "@/lib/content";
 
 export const dynamic = "force-static";
 
@@ -9,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...main,
     ...FEATURES.map((f) => `/features/${f.slug}`),
     ...SOLUTIONS.map((s) => `/solutions/${s.slug}`),
-    ...SUCCESS.map((s) => `/success-stories/${s.slug}`),
     ...POSTS.map((p) => `/blog/${p.slug}`),
     "/terms", "/privacy", "/refund",
   ];

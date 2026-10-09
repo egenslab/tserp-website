@@ -44,10 +44,9 @@ export type Post = {
 };
 export type LegalDoc = { slug: string; title: string; intro: string; sections: [string, string[]][] };
 export type Story = {
-  slug: string; shot: string; url: string; type: string; location: string; chips: string[]; metric: string;
-  headline: string; intro: string; challenge: string; solution: string[]; person: string; modules: string[];
-  // Leave these out for real clients until they are confirmed: the page hides what is missing
-  golive?: string; results?: [string, string][]; quote?: string;
+  slug: string; shot: string; type: string; location: string; chips: string[]; metric: string;
+  url: string;      // address shown in the screenshot's browser bar
+  website?: string; // the client's live site; the card title and screenshot link to it
 };
 export type Country = { code: string; name: string; region: string; office: boolean };
 type NamedLink = { name: string; logo: string; url: string };

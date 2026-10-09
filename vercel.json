@@ -10,6 +10,11 @@
       "source": "/flight-management-software/",
       "destination": "/features/flights",
       "permanent": true
+    },
+    {
+      "source": "/success-stories/:slug",
+      "destination": "/success-stories",
+      "permanent": true
     }
   ]
 }

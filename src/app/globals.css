@@ -922,6 +922,8 @@ a.ftile:hover { border-color: rgba(37, 211, 102, .5); background: rgba(37, 211, 
 /* ===== Success story pages ===== */
 .success-body h3 a { color: var(--ink); }
 .success-body h3 a:hover { color: var(--forest-2); }
+.success-body h3 .ext { width: .7em; height: .7em; margin-inline-start: 4px; vertical-align: .05em; color: var(--muted); }
+.success-body h3 a:hover .ext { color: var(--forest-2); }
 .success-body .link-arrow { margin-top: 4px; font-size: .9rem; }
 a.site-shot { display: block; }
 .site-shot .sm-bar { display: flex; }

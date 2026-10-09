@@ -102,19 +102,26 @@ export function SolutionCard({ s }: { s: Solution }) {
 }
 
 export function SuccessCard({ st }: { st: Story }) {
-  const href = `/success-stories/${st.slug}`;
+  const shot = (
+    <>
+      <span className="sm-bar"><i /><i /><i /><span>{st.url}</span></span>
+      <img src={`/assets/img/success/${st.shot}.jpg`} alt={`${st.url} website`} loading="lazy" width={960} height={600} />
+    </>
+  );
   return (
     <article className="success-card">
-      <Link className="site-shot" href={href} tabIndex={-1} aria-hidden="true">
-        <span className="sm-bar"><i /><i /><i /><span>{st.url}</span></span>
-        <img src={`/assets/img/success/${st.shot}.jpg`} alt="" loading="lazy" width={960} height={600} />
-      </Link>
+      {st.website
+        ? <a className="site-shot" href={st.website} target="_blank" rel="noopener" tabIndex={-1} aria-hidden="true">{shot}</a>
+        : <div className="site-shot">{shot}</div>}
       <div className="success-body">
-        <h3><Link href={href}>{st.type}</Link></h3>
+        <h3>
+          {st.website
+            ? <a href={st.website} target="_blank" rel="noopener">{st.type} <Icon name="i-external" className="ic ext" /></a>
+            : st.type}
+        </h3>
         <p className="loc"><Icon name="i-pin" />{st.location}</p>
         <div className="mini-chips">{st.chips.map((c) => <span key={c}>{c}</span>)}</div>
         <p className="metric"><Icon name="i-trend" />{st.metric}</p>
-        <Link href={href} className="link-arrow">Read the story <Icon name="i-arrow" /></Link>
       </div>
     </article>
   );

@@ -4,6 +4,7 @@ RewriteEngine On
 
 # Old travelsuiteerp.com addresses -> new pages (keeps search rankings)
 RewriteRule ^flight-management-software/?$ /features/flights [R=301,L]
+RewriteRule ^success-stories/.+$ /success-stories [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
