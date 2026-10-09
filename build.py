@@ -658,8 +658,14 @@ def build_shared_partials():
         f'<li><img src="assets/img/flags/{c["code"]}.svg" alt="" width="28" height="21"><span>{e(c["name"])}</span></li>'
         for c in M.COUNTRIES if c["office"])
     q = quote(M.AI_PROMPT)
+    tr(T_("Ask now", "এখনই জিজ্ঞাসা করুন"))
+    tr(T_("We'll ask", "যা জিজ্ঞাসা করা হবে"))
+    tr(T_("What is TravelSuite ERP? Summarize its features for travel agencies, Hajj & Umrah operators and B2B consolidators.",
+          "TravelSuite ERP কী? ট্রাভেল এজেন্সি, হজ ও উমরাহ অপারেটর এবং B2B কনসোলিডেটরদের জন্য এর ফিচারগুলো সংক্ষেপে বলো।"))
     GENERATED["footer-ai"] = "".join(
-        f'<a class="ai-btn" href="{url}{q}" target="_blank" rel="noopener"><img src="assets/img/partners/{logo}.svg" alt="" width="18" height="18">{name}</a>'
+        f'<a class="ai-card" href="{url}{q}" target="_blank" rel="noopener" aria-label="{name}">'
+        f'<span class="ai-logo"><img src="assets/img/partners/{logo}.svg" alt="" width="26" height="26"></span>'
+        f'<span class="ai-name"><b>{name}</b><small>{e("Ask now")}</small></span>{icon("i-external", "ic ai-go")}</a>'
         for name, logo, url in M.AI_LINKS)
     GENERATED["footer-social"] = "".join(
         f'<a href="{url}" target="_blank" rel="noopener" aria-label="{name}"><img src="assets/img/partners/{logo}.svg" alt="" width="18" height="18"></a>'

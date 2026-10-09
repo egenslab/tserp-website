@@ -13,6 +13,16 @@
 
 <footer class="footer">
   <div class="container">
+    <div class="ask-ai-band">
+      <div class="ask-ai-copy">
+        <span class="ask-ai-ico"><svg class="ic"><use href="#i-spark"/></svg></span>
+        <h3>Ask any AI about TravelSuite ERP</h3>
+        <p>Get an instant, independent summary of our platform from your favourite AI assistant.</p>
+        <div class="ai-prompt"><small>We'll ask</small><q>What is TravelSuite ERP? Summarize its features for travel agencies, Hajj & Umrah operators and B2B consolidators.</q></div>
+      </div>
+      <div class="ai-cards">{{> footer-ai}}</div>
+    </div>
+
     <div class="footer-hero">
       <div class="footer-brand">
         <img src="assets/img/logo-light.png" alt="TravelSuite ERP" width="230" height="30">
@@ -21,6 +31,8 @@
           <small>Follow us</small>
           <div class="socials">{{> footer-social}}</div>
         </div>
+      </div>
+      <div class="footer-side">
         <form class="newsletter" id="newsletterForm" novalidate>
           <label for="nl-email"><b>Get travel-tech tips every month</b><small>Guides for agencies. No spam, unsubscribe anytime.</small></label>
           <div class="nl-row">
@@ -29,12 +41,6 @@
           </div>
           <p class="nl-msg" id="nlMsg" role="status"></p>
         </form>
-      </div>
-      <div class="ask-ai">
-        <span class="ask-ai-ico"><svg class="ic"><use href="#i-spark"/></svg></span>
-        <h3>Ask any AI about TravelSuite ERP</h3>
-        <p>Get an instant, independent summary of our platform from your favourite AI assistant.</p>
-        <div class="ai-btns">{{> footer-ai}}</div>
         <a class="ftile" href="https://wa.me/8801325277120" target="_blank" rel="noopener">
           <span class="ftile-ico wa"><svg class="ic fill"><use href="#i-wa"/></svg></span>
           <span><small>WhatsApp sales & support</small><b>+880 13 2527 7120</b></span>
