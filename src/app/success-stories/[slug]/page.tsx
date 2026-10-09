@@ -37,7 +37,7 @@ export default async function StoryPage({ params }: Props) {
           <dl className="story-facts">
             <div><dt>Business type</dt><dd>{st.type}</dd></div>
             <div><dt>Location</dt><dd>{st.location}</dd></div>
-            <div><dt>Time to go live</dt><dd>{st.golive}</dd></div>
+            {st.golive && <div><dt>Time to go live</dt><dd>{st.golive}</dd></div>}
             <div><dt>Website</dt><dd>{st.url}</dd></div>
           </dl>
         </div>
@@ -48,9 +48,11 @@ export default async function StoryPage({ params }: Props) {
             <div className="sm-bar"><i /><i /><i /><span>{st.url}</span></div>
             <img src={`/assets/img/success/${st.shot}.jpg`} alt="" width={960} height={600} />
           </figure>
-          <div className="story-results">
-            {st.results.map(([v, label]) => <div key={label} className="result-card"><strong>{v}</strong><span>{label}</span></div>)}
-          </div>
+          {st.results && (
+            <div className="story-results">
+              {st.results.map(([v, label]) => <div key={label} className="result-card"><strong>{v}</strong><span>{label}</span></div>)}
+            </div>
+          )}
         </div>
       </section>
       <section className="section">
@@ -64,7 +66,7 @@ export default async function StoryPage({ params }: Props) {
             <ul className="story-list">{st.solution.map((x) => <li key={x}><Icon name="i-check" /><span>{x}</span></li>)}</ul>
           </div>
         </div>
-        <div className="container narrow">
+        {st.quote && <div className="container narrow">
           <figure className="t-card t-featured story-quote">
             <div className="stars" aria-label="5 out of 5">{[1, 2, 3, 4, 5].map((i) => <svg key={i}><use href="#i-star" /></svg>)}</div>
             <blockquote>{st.quote}</blockquote>
@@ -73,7 +75,7 @@ export default async function StoryPage({ params }: Props) {
               <span><b>{st.person}</b><small><span>{st.type}</span>, <span>{st.location}</span></small></span>
             </figcaption>
           </figure>
-        </div>
+        </div>}
       </section>
       <section className="section alt">
         <div className="container">
@@ -84,7 +86,7 @@ export default async function StoryPage({ params }: Props) {
       <section className="section">
         <div className="container">
           <div className="related-head"><h2>More success stories</h2><Link href="/success-stories" className="link-arrow">All success stories <Icon name="i-arrow" /></Link></div>
-          <div className="success-grid"><SuccessGrid exclude={st.slug} /></div>
+          <div className="success-grid"><SuccessGrid exclude={st.slug} limit={6} /></div>
         </div>
       </section>
     </>

@@ -523,7 +523,7 @@ export default function HomePage() {
             <p>From Hajj & Umrah operators to B2B consolidators, here is how agencies use the platform.</p>
           </div>
           <div className="success-grid">
-            <SuccessGrid />
+            <SuccessGrid limit={6} />
           </div>
           <div className="center-cta">
             <Link href="/success-stories" className="btn btn-outline btn-lg">All success stories <svg className="ic"><use href="#i-arrow" /></svg></Link>

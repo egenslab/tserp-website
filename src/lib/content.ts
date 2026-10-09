@@ -45,8 +45,9 @@ export type Post = {
 export type LegalDoc = { slug: string; title: string; intro: string; sections: [string, string[]][] };
 export type Story = {
   slug: string; shot: string; url: string; type: string; location: string; chips: string[]; metric: string;
-  golive: string; headline: string; intro: string; challenge: string; solution: string[];
-  results: [string, string][]; quote: string; person: string; modules: string[];
+  headline: string; intro: string; challenge: string; solution: string[]; person: string; modules: string[];
+  // Leave these out for real clients until they are confirmed: the page hides what is missing
+  golive?: string; results?: [string, string][]; quote?: string;
 };
 export type Country = { code: string; name: string; region: string; office: boolean };
 type NamedLink = { name: string; logo: string; url: string };
