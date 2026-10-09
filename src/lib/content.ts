@@ -13,9 +13,23 @@ export const WA = "https://wa.me/8801325277120";
 export type Faq = [question: string, answer: string];
 export type Seo = { keywords: string; overview: string[]; faqs: Faq[] };
 
+type Section<T> = { eyebrow: string; title: string; items: T[] };
+
+/** Optional extra content that turns a feature into a full landing page (see "flights"). */
+export type FeaturePage = {
+  seoTitle?: string; metaDescription?: string; h1?: string; overviewTitle?: string;
+  facts?: { value: string; label: string }[];
+  sources?: Section<{ icon: string; title: string; text: string; tags: string[] }>;
+  workflow?: { eyebrow: string; title: string; steps: { title: string; text: string }[] };
+  capabilities?: string[];
+  audiences?: Section<{ icon: string; title: string; items: string[] }>;
+  markets?: Section<{ flag: string; title: string; text: string }>;
+  compare?: { eyebrow: string; title: string; before: string; after: string; rows: [string, string, string][] };
+};
+
 export type Feature = {
   slug: string; group: string; icon: string; title: string; desc: string; intro: string;
-  bullets: string[]; steps: string[]; benefits: string[]; seo: Seo;
+  bullets: string[]; steps: string[]; benefits: string[]; seo: Seo; page?: FeaturePage;
 };
 export type Solution = {
   slug: string; icon: string; title: string; tagline: string; headline: string; intro: string; plan: string;

@@ -1,6 +1,10 @@
 # Apache: serve /features/flights from features/flights.html
 Options -MultiViews
 RewriteEngine On
+
+# Old travelsuiteerp.com addresses -> new pages (keeps search rankings)
+RewriteRule ^flight-management-software/?$ /features/flights [R=301,L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]

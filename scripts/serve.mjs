@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Serve the static export in out/ with clean URLs (/features/flights -> out/features/flights.html).
 // Used by `npm start`, locally or on a Node.js host behind a proxy (set PORT; defaults to 3000).
-import { createReadStream, existsSync, statSync } from "node:fs";
+import { createReadStream, existsSync, readFileSync, statSync } from "node:fs";
 import { createServer } from "node:http";
 import { extname, join, normalize, sep } from "node:path";
 
@@ -14,6 +14,11 @@ const TYPES = {
   ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg", ".webp": "image/webp", ".ico": "image/x-icon",
   ".woff2": "font/woff2",
 };
+
+// Old addresses -> new pages, shared with Vercel (vercel.json "redirects")
+const REDIRECTS = new Map(
+  JSON.parse(readFileSync(new URL("../vercel.json", import.meta.url), "utf8")).redirects.map((r) => [r.source, r.destination]),
+);
 
 if (!existsSync(join(ROOT, "index.html"))) {
   console.error("out/ is missing: run `npm run build` first.");
@@ -36,6 +41,11 @@ createServer((req, res) => {
     path = decodeURIComponent((req.url ?? "/").split("?")[0]);
   } catch {
     res.writeHead(400).end("Bad request");
+    return;
+  }
+  const moved = REDIRECTS.get(path.replace(/\/+$/, "") || "/");
+  if (moved) {
+    res.writeHead(301, { location: moved }).end();
     return;
   }
   if (path.length > 1 && path.endsWith("/")) {

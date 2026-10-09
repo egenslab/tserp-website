@@ -20,7 +20,7 @@
       "icon": "i-plane",
       "title": "Flight Tickets",
       "desc": "Search, book and ticket flights for walk-in customers, online travellers and B2B agents.",
-      "intro": "Sell air tickets to walk-in customers, online travellers and your agent network from one screen. Every ticket you issue updates the customer's file, the agent's balance and your accounts at the same time.",
+      "intro": "Search GDS, NDC and low-cost fares, issue e-tickets and handle every reissue and refund from one screen. Each ticket updates the passenger file, the agent's balance and your accounts at the same time.",
       "bullets": [
         "Fare search with filters for airline, stops and baggage",
         "PNR creation, ticket issue, reissue, void and refund",
@@ -40,15 +40,24 @@
         "Refunds and reissues tracked to the last taka"
       ],
       "seo": {
-        "keywords": "flight booking software, airline ticketing system, GDS booking engine, travel agency ticketing software",
+        "keywords": "flight booking software, flight management software, airline ticketing software, GDS booking engine, B2B flight booking portal, NDC booking system, travel agency ticketing software Bangladesh",
         "overview": [
-          "TravelSuite ERP's flight booking software connects your agency to GDS, NDC and low-cost carrier content and puts search, booking and ticketing on one screen. Counter staff, online customers and B2B agents all book from the same fares, with your markup applied automatically.",
-          "Because ticketing is part of the ERP, every issue, reissue, refund and void updates the passenger record, the agent ledger and your supplier payable instantly. Month-end BSP reconciliation becomes a report, not a spreadsheet exercise."
+          "TravelSuite ERP is flight booking and ticketing software built for travel agencies, OTAs and B2B consolidators. It brings GDS, NDC and low-cost carrier fares into one search, so counter staff, online customers and sub-agents book from the same content with your markup applied automatically.",
+          "Unlike a standalone booking engine, the flight module is part of a complete travel agency ERP. Every issue, reissue, refund and void updates the passenger record, the agent ledger and your supplier payable in real time, which turns month-end BSP reconciliation into a report instead of a spreadsheet exercise.",
+          "Agencies in Bangladesh, Saudi Arabia, the UAE and Malaysia use it as their flight management software to run walk-in counters, white-label B2B portals and B2C websites from one back office, in their own currency and with local payment methods."
         ],
         "faqs": [
           [
             "Which airline content can I sell?",
-            "You can connect Amadeus, Sabre, Travelport, airline NDC APIs and aggregators such as Duffel using your own supplier credentials."
+            "You can connect Amadeus, Sabre, Travelport, airline NDC APIs, low-cost carriers and aggregators such as Duffel or TBO using your own supplier credentials."
+          ],
+          [
+            "Do I need my own IATA licence or GDS contract?",
+            "No. You can sell through a consolidator or ticketing partner's API, or connect your own IATA and GDS credentials if you have them. Many agencies start with a partner and add direct contracts later."
+          ],
+          [
+            "Can I sell NDC fares and low-cost airlines?",
+            "Yes. NDC and low-cost fares appear in the same search as GDS fares, so staff and agents compare every option in one list. What you can sell depends on the airlines and suppliers you connect."
           ],
           [
             "Can B2B agents issue tickets themselves?",
@@ -57,8 +66,230 @@
           [
             "Does it handle refunds and reissues?",
             "Yes. Refunds, reissues and voids are processed from the booking, with penalties and service fees posted to accounts automatically."
+          ],
+          [
+            "Is BSP reconciliation supported?",
+            "Yes. Ticket sales, refunds and ADMs are recorded per airline and billing period, so you can match them against your BSP billing and supplier statements."
+          ],
+          [
+            "Which currencies and payment methods are supported?",
+            "You can sell in BDT, USD, SAR, AED, MYR and more, and take payment by card, PayPal, Stripe, bKash, Nagad, SSLCommerz, bank transfer or agent wallet."
+          ],
+          [
+            "How long does it take to start selling flights?",
+            "Most agencies go live in two to four weeks. The main factor is how quickly your supplier credentials and certification are ready; we handle the setup and training."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "Flight Booking Software for Travel Agencies — TravelSuite ERP",
+        "metaDescription": "Flight booking and ticketing software for travel agencies. Sell GDS, NDC and low-cost fares, issue e-tickets, run B2B agents and reconcile BSP in one ERP.",
+        "h1": "Flight booking & ticketing software",
+        "overviewTitle": "Flight management software for travel agencies",
+        "facts": [
+          {
+            "value": "3 GDS",
+            "label": "Amadeus, Sabre and Travelport"
+          },
+          {
+            "value": "NDC + LCC",
+            "label": "Branded fares and low-cost airlines"
+          },
+          {
+            "value": "1 screen",
+            "label": "From fare search to e-ticket"
+          },
+          {
+            "value": "BSP",
+            "label": "Sales matched to your airline billing"
+          }
+        ],
+        "sources": {
+          "eyebrow": "Airline content",
+          "title": "Every fare your customers ask for, in one search",
+          "items": [
+            {
+              "icon": "i-globe",
+              "title": "GDS",
+              "text": "Full schedules, fare rules and PNR control with queue management.",
+              "tags": [
+                "Amadeus",
+                "Sabre",
+                "Travelport"
+              ]
+            },
+            {
+              "icon": "i-plane",
+              "title": "NDC airlines",
+              "text": "Branded fares, bundles, seats and extra baggage straight from airlines that sell through NDC.",
+              "tags": []
+            },
+            {
+              "icon": "i-trend",
+              "title": "Low-cost carriers",
+              "text": "Budget and regional airlines through their own APIs or aggregators, shown next to GDS fares.",
+              "tags": []
+            },
+            {
+              "icon": "i-layers",
+              "title": "Aggregators and consolidators",
+              "text": "Add a consolidator's API and use your own supplier contracts and credentials.",
+              "tags": [
+                "Duffel",
+                "TBO"
+              ]
+            }
+          ]
+        },
+        "workflow": {
+          "eyebrow": "Booking workflow",
+          "title": "From search to e-ticket in six steps",
+          "steps": [
+            {
+              "title": "Search",
+              "text": "One-way, return and multi-city trips across all connected suppliers, with flexible dates."
+            },
+            {
+              "title": "Compare and price",
+              "text": "Filter by airline, stops, baggage and refundability, then re-price so the customer sees the final fare."
+            },
+            {
+              "title": "Hold the PNR",
+              "text": "Create the booking and hold it until the airline's time limit while the customer decides."
+            },
+            {
+              "title": "Take payment",
+              "text": "Card, bKash, bank transfer, agent wallet or credit limit, with part payments tracked."
+            },
+            {
+              "title": "Issue the ticket",
+              "text": "The e-ticket, invoice and ledger entries are created automatically."
+            },
+            {
+              "title": "After-sales",
+              "text": "Reissue, refund, void or change names on the same booking, with penalties posted to accounts."
+            }
+          ]
+        },
+        "capabilities": [
+          "Fare search with filters for airline, stops and baggage",
+          "Multi-city, open-jaw and flexible-date search",
+          "Branded fares, seat maps and extra baggage",
+          "Fare rules, baggage and seat information",
+          "Hold bookings with time-limit alerts",
+          "PNR creation, ticket issue, reissue, void and refund",
+          "Group bookings and name changes",
+          "Schedule-change alerts from airline queues",
+          "Agent-wise markup, commission and service fee",
+          "E-ticket and invoice sent automatically",
+          "Passenger profiles with passport and frequent flyer details",
+          "Airline-wise sales, profit and refund reports"
+        ],
+        "audiences": {
+          "eyebrow": "Built for every team",
+          "title": "One flight module, four ways to sell",
+          "items": [
+            {
+              "icon": "i-headset",
+              "title": "Counter staff",
+              "items": [
+                "Quick search with saved passenger profiles",
+                "Hold, issue and print tickets from one screen",
+                "Customer's full travel history on the booking",
+                "Send the itinerary by WhatsApp or email"
+              ]
+            },
+            {
+              "icon": "i-users",
+              "title": "B2B agents",
+              "items": [
+                "Branded agent portal with live fares",
+                "Book against wallet balance or credit limit",
+                "Agent-wise markup, commission and service fees",
+                "Instant ledger and statement downloads"
+              ]
+            },
+            {
+              "icon": "i-globe",
+              "title": "Online customers",
+              "items": [
+                "Flight search on your agency website",
+                "Secure online payment and instant e-ticket",
+                "Manage bookings and request changes online",
+                "Prices in their own currency"
+              ]
+            },
+            {
+              "icon": "i-chart",
+              "title": "Accounts and management",
+              "items": [
+                "Sales and profit by airline, agent and branch",
+                "Supplier payables and BSP reconciliation",
+                "Refunds and reissues tracked with penalties",
+                "Daily sales summary for each branch"
+              ]
+            }
+          ]
+        },
+        "markets": {
+          "eyebrow": "Local by design",
+          "title": "Ready for the markets you sell in",
+          "items": [
+            {
+              "flag": "bd",
+              "title": "Bangladesh",
+              "text": "Sell in BDT, take bKash, Nagad and SSLCommerz payments, and keep passport and visa details on file for labour, student and Umrah travellers."
+            },
+            {
+              "flag": "sa",
+              "title": "Saudi Arabia and the GCC",
+              "text": "Price in SAR, AED, QAR and other Gulf currencies, sell Umrah and family travel, and run sub-agent networks across branches."
+            },
+            {
+              "flag": "my",
+              "title": "Malaysia",
+              "text": "Sell in MYR with local payment gateways and package flights with hotels and tours for walk-in and online customers."
+            }
+          ]
+        },
+        "compare": {
+          "eyebrow": "Why agencies switch",
+          "title": "Before and after TravelSuite ERP",
+          "before": "Without TravelSuite",
+          "after": "With TravelSuite ERP",
+          "rows": [
+            [
+              "Fare search",
+              "GDS terminal plus several airline websites",
+              "All suppliers in one search"
+            ],
+            [
+              "Markup",
+              "Calculated by hand for each agent",
+              "Applied automatically per agent and channel"
+            ],
+            [
+              "Ticket issue",
+              "Re-typed into invoices and ledgers",
+              "Invoice and ledger updated instantly"
+            ],
+            [
+              "Refunds and reissues",
+              "Tracked in spreadsheets",
+              "Processed on the booking with penalties posted"
+            ],
+            [
+              "Agent bookings",
+              "Taken by phone and WhatsApp",
+              "Self-service B2B portal with credit limits"
+            ],
+            [
+              "Month-end",
+              "Days of BSP and supplier reconciliation",
+              "Reconciliation reports in minutes"
+            ]
+          ]
+        }
       }
     },
     {

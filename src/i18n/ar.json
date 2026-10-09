@@ -572,6 +572,7 @@
  "Fixed departures keep seat counts accurate, and supplier costing shows your margin before you sell. After the trip, expenses and payables close out the package profit.": "تحافظ رحلات المغادرة الثابتة على دقة أعداد المقاعد، وتوضح تكاليف الموردين هامش ربحك قبل البيع. وبعد الرحلة، تُغلق المصروفات والمستحقات حساب ربح الباقة.",
  "Flight Tickets": "تذاكر الطيران",
  "Flight and hotel supplier connections": "الربط مع موردي الطيران والفنادق",
+ "Flight management software for travel agencies": "برنامج إدارة الرحلات الجوية لوكالات السفر",
  "Flight, hotel, visa, Hajj & Umrah, tours, transport": "الطيران، الفنادق، التأشيرات، الحج والعمرة، الجولات، النقل",
  "Flight, hotel, visa, tours, transport": "الطيران، الفنادق، التأشيرات، الجولات، النقل",
  "Flights": "الطيران",

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/flight-management-software",
+      "destination": "/features/flights",
+      "permanent": true
+    },
+    {
+      "source": "/flight-management-software/",
+      "destination": "/features/flights",
+      "permanent": true
+    }
+  ]
+}
