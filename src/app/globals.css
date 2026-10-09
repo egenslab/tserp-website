@@ -1160,8 +1160,8 @@ html[lang="th"] body { line-height: 1.8; }
 .facts > div + div { border-inline-start: 1px solid var(--line); }
 .facts dt { font-family: var(--font-display); font-weight: 800; font-size: 1.6rem; line-height: 1.1; color: var(--forest); letter-spacing: -.02em; }
 .facts dd { margin: 0; color: var(--muted); font-size: .9rem; }
-.fact-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding-top: 4px; }
-.fact-logos img { height: 22px; width: auto; }
+.fact-logos { display: flex; flex-wrap: nowrap; align-items: center; gap: 14px; padding-top: 6px; }
+.fact-logos img { height: 17px; width: auto; min-width: 0; }
 
 .source-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
 .source-card { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 22px; display: grid; gap: 8px; align-content: start; }
@@ -1214,4 +1214,6 @@ html[lang="th"] body { line-height: 1.8; }
   .source-grid, .audience-grid, .flow { grid-template-columns: 1fr; }
   .facts > div { padding: 18px 14px; }
   .facts dt { font-size: 1.3rem; }
+  .fact-logos { gap: 8px; }
+  .fact-logos img { height: 12px; }
 }
