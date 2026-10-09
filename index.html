@@ -2,47 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TSERP — Travel Suite ERP for Agencies, OTAs & Tour Operators</title>
-  <meta name="description" content="TSERP is an all-in-one Travel Suite ERP: flights, hotels, tours, visa, transfers, B2B agents, suppliers, accounting and CRM in one white-label platform.">
-  <meta property="og:title" content="TSERP — Travel Suite ERP">
-  <meta property="og:description" content="Launch your own branded travel booking platform with built-in ERP, accounting and B2B agent portal.">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Travel Suite ERP — Travel Booking Software & Back Office</title>
+  <meta name="description" content="Travel Suite ERP is a ready-made travel booking platform with built-in ERP: flights, hotels, tours, visa and transfers, B2B agent portal, supplier extranet, accounting and CRM.">
+  <meta property="og:title" content="Travel Suite ERP">
+  <meta property="og:description" content="Launch your own branded travel booking website with a full back office for agents, suppliers and accounts.">
+  <meta property="og:image" content="assets/img/logo.png">
+  <meta name="theme-color" content="#184332">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<!-- Top bar -->
-<div class="topbar">
-  <div class="container topbar-inner">
-    <span>🎉 TSERP v5 is live — new GDS connectors, AI itinerary builder & multi-currency accounting.</span>
-    <a href="#pricing">See what's new →</a>
-  </div>
-</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></symbol>
+    <symbol id="i-passport" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 17h6"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2M9 17h6"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  </defs>
+</svg>
 
 <!-- Header -->
 <header class="header" id="top">
   <div class="container header-inner">
-    <a href="#top" class="logo" aria-label="TSERP home">
-      <img src="assets/img/logo.svg" alt="" width="36" height="36">
-      <span>TS<b>ERP</b></span>
+    <a href="#top" class="logo" aria-label="Travel Suite ERP home">
+      <img src="assets/img/logo.png" alt="Travel Suite ERP" width="230" height="30">
     </a>
-    <nav class="nav" id="nav">
-      <a href="#modules">Modules</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#products">Products</a>
       <a href="#demo">Demo</a>
       <a href="#features">Features</a>
       <a href="#integrations">Integrations</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
-      <a href="#contact" class="btn btn-ghost nav-cta-mobile">Contact sales</a>
+      <a href="#contact" class="nav-cta-mobile">Contact sales</a>
     </nav>
     <div class="header-actions">
       <a href="#contact" class="btn btn-ghost">Contact sales</a>
-      <a href="#demo" class="btn btn-primary">Live demo</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <a href="#demo" class="btn btn-lime">Live demo</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -55,184 +61,265 @@
 <section class="hero">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow">Travel Suite ERP · White-label · Self-hosted or Cloud</span>
-      <h1>Run your entire travel business from <span class="grad">one platform</span></h1>
-      <p class="lead">Booking engine, B2B agent portal, supplier management, accounting, CRM and reporting — all built in. Launch your own branded OTA in days, not months.</p>
+      <span class="pill">Booking engine + ERP · B2C · B2B · B2B2C</span>
+      <h1>The travel booking software that also runs your <span class="hl">back office</span></h1>
+      <p class="lead">Travel Suite ERP gives your agency a branded booking website, a B2B agent portal, a supplier extranet and full accounting, all on one database. Go live in days with your own domain.</p>
       <div class="hero-ctas">
-        <a href="#demo" class="btn btn-primary btn-lg">Try live demo</a>
-        <a href="#pricing" class="btn btn-outline btn-lg">View pricing</a>
+        <a href="#demo" class="btn btn-lime btn-lg">Explore the live demo <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a href="#pricing" class="btn btn-outline-light btn-lg">See pricing</a>
       </div>
       <ul class="hero-points">
-        <li>✓ Flights, Hotels, Tours, Visa, Cars</li>
-        <li>✓ 40+ supplier APIs</li>
-        <li>✓ Full source code option</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Free installation</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Your brand, your domain</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Source code option</li>
       </ul>
     </div>
-    <div class="hero-visual" aria-hidden="true">
-      <div class="mock">
-        <div class="mock-bar"><i></i><i></i><i></i><span>admin.yourtravel.com</span></div>
-        <div class="mock-body">
-          <aside class="mock-side">
-            <b>TSERP</b>
-            <span class="active">Dashboard</span><span>Bookings</span><span>Agents</span><span>Suppliers</span><span>Accounts</span><span>Reports</span>
-          </aside>
-          <div class="mock-main">
-            <div class="kpis">
-              <div><small>Bookings today</small><strong data-count="184">0</strong></div>
-              <div><small>Revenue (USD)</small><strong data-count="42690" data-prefix="$">0</strong></div>
-              <div><small>Active agents</small><strong data-count="312">0</strong></div>
-            </div>
-            <div class="chart">
-              <span style="--h:40%"></span><span style="--h:65%"></span><span style="--h:52%"></span><span style="--h:78%"></span><span style="--h:60%"></span><span style="--h:88%"></span><span style="--h:72%"></span><span style="--h:95%"></span>
-            </div>
-            <div class="rows">
-              <div><em class="tag fl">Flight</em> DAC → DXB <b>Confirmed</b></div>
-              <div><em class="tag ht">Hotel</em> Cox's Bazar · 3N <b>Confirmed</b></div>
-              <div><em class="tag tr">Tour</em> Bali 5D/4N <b class="pending">Pending</b></div>
-            </div>
-          </div>
-        </div>
+
+    <!-- Booking widget preview -->
+    <div class="search-card" aria-label="Booking engine preview">
+      <div class="search-tabs" role="tablist">
+        <button class="active" role="tab" aria-selected="true" data-search="flight"><svg class="ic"><use href="#i-plane"/></svg>Flights</button>
+        <button role="tab" aria-selected="false" data-search="hotel"><svg class="ic"><use href="#i-bed"/></svg>Hotels</button>
+        <button role="tab" aria-selected="false" data-search="tour"><svg class="ic"><use href="#i-map"/></svg>Tours</button>
+        <button role="tab" aria-selected="false" data-search="visa"><svg class="ic"><use href="#i-passport"/></svg>Visa</button>
       </div>
-      <div class="float-card fc1">✈️ PNR issued <small>EK-585 · 2 pax</small></div>
-      <div class="float-card fc2">💳 Payment received <small>$1,240 · Stripe</small></div>
+      <div class="search-body">
+        <div class="search-pane active" data-pane="flight">
+          <div class="field"><small>From</small><b>Dhaka (DAC)</b></div>
+          <div class="field"><small>To</small><b>Dubai (DXB)</b></div>
+          <div class="field"><small>Depart</small><b>14 Nov 2026</b></div>
+          <div class="field"><small>Travellers</small><b>2 Adults · Economy</b></div>
+        </div>
+        <div class="search-pane" data-pane="hotel">
+          <div class="field wide"><small>Destination</small><b>Cox's Bazar, Bangladesh</b></div>
+          <div class="field"><small>Check-in</small><b>20 Dec 2026</b></div>
+          <div class="field"><small>Check-out</small><b>23 Dec 2026</b></div>
+          <div class="field wide"><small>Rooms</small><b>1 Room · 2 Adults</b></div>
+        </div>
+        <div class="search-pane" data-pane="tour">
+          <div class="field wide"><small>Destination</small><b>Bali, Indonesia</b></div>
+          <div class="field"><small>Month</small><b>January 2027</b></div>
+          <div class="field"><small>Duration</small><b>5 Days / 4 Nights</b></div>
+          <div class="field wide"><small>Travellers</small><b>2 Adults · 1 Child</b></div>
+        </div>
+        <div class="search-pane" data-pane="visa">
+          <div class="field"><small>Nationality</small><b>Bangladesh</b></div>
+          <div class="field"><small>Destination</small><b>Thailand</b></div>
+          <div class="field"><small>Visa type</small><b>Tourist · Single entry</b></div>
+          <div class="field"><small>Applicants</small><b>2</b></div>
+        </div>
+        <a href="#demo" class="btn btn-forest btn-block">Search</a>
+      </div>
+      <div class="results">
+        <div class="result"><span class="carrier">EK</span><div><b>DAC 21:40 → DXB 01:10</b><small>Non-stop · 5h 30m · 30kg</small></div><strong>$412</strong></div>
+        <div class="result"><span class="carrier">BG</span><div><b>DAC 09:15 → DXB 12:50</b><small>Non-stop · 5h 35m · 35kg</small></div><strong>$389</strong></div>
+      </div>
+      <p class="search-note">Example of the customer booking engine your clients will use.</p>
     </div>
   </div>
 </section>
 
-<!-- Trust strip -->
-<section class="trust">
-  <div class="container">
-    <p>Trusted by 1,200+ travel agencies, OTAs and DMCs in 60+ countries</p>
-    <div class="stats">
-      <div><strong data-count="1200" data-suffix="+">0</strong><span>Businesses</span></div>
-      <div><strong data-count="60" data-suffix="+">0</strong><span>Countries</span></div>
-      <div><strong data-count="40" data-suffix="+">0</strong><span>Supplier APIs</span></div>
-      <div><strong data-count="99.9" data-suffix="%" data-decimals="1">0</strong><span>Uptime SLA</span></div>
-    </div>
+<!-- Numbers strip -->
+<section class="numbers">
+  <div class="container numbers-grid">
+    <div><strong>5</strong><span>booking products in one platform</span></div>
+    <div><strong>4</strong><span>panels: customer, admin, agent, supplier</span></div>
+    <div><strong>40+</strong><span>supplier and payment integrations</span></div>
+    <div><strong>7–14</strong><span>days from purchase to go-live</span></div>
   </div>
 </section>
 
-<!-- Modules -->
-<section class="section" id="modules">
+<!-- Products -->
+<section class="section" id="products">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">Booking modules</span>
-      <h2>Sell every travel product from one storefront</h2>
-      <p>Enable only the modules you need. Each module supports manual inventory, supplier APIs, or both.</p>
+      <span class="eyebrow">Products</span>
+      <h2>Sell every trip your customers plan</h2>
+      <p>Turn modules on as you grow. Each one works with your own contracted inventory, live supplier APIs, or both at once.</p>
     </div>
-    <div class="grid cards-3">
-      <article class="card module"><div class="ico">✈️</div><h3>Flights</h3><p>GDS & NDC search, fare rules, seat maps, ancillaries, auto-ticketing and PNR management.</p></article>
-      <article class="card module"><div class="ico">🏨</div><h3>Hotels</h3><p>Own contracts plus bedbank APIs, room-level markup, allotments, stop-sell and dynamic pricing.</p></article>
-      <article class="card module"><div class="ico">🗺️</div><h3>Tours & Packages</h3><p>Build day-by-day itineraries, departures, group pricing and AI-assisted itinerary builder.</p></article>
-      <article class="card module"><div class="ico">🛂</div><h3>Visa</h3><p>Country-wise requirements, document uploads, application tracking and status notifications.</p></article>
-      <article class="card module"><div class="ico">🚗</div><h3>Cars & Transfers</h3><p>Airport transfers, rentals and chauffeur services with vehicle, driver and route management.</p></article>
-      <article class="card module"><div class="ico">🛡️</div><h3>Insurance & Extras</h3><p>Travel insurance, eSIM, lounge access and activities as add-ons on any booking.</p></article>
+    <div class="products">
+      <article class="product">
+        <div class="p-ico"><svg><use href="#i-plane"/></svg></div>
+        <h3>Flights</h3>
+        <p>GDS and NDC fares, branded fares, seat and baggage add-ons, fare rules, auto-ticketing, void and refund handling.</p>
+      </article>
+      <article class="product">
+        <div class="p-ico"><svg><use href="#i-bed"/></svg></div>
+        <h3>Hotels</h3>
+        <p>Your direct contracts next to bedbank rates. Room-level markup, allotments, stop-sell, cancellation policies.</p>
+      </article>
+      <article class="product">
+        <div class="p-ico"><svg><use href="#i-map"/></svg></div>
+        <h3>Tours & Packages</h3>
+        <p>Day-by-day itineraries, fixed departures, group and child pricing, inclusions, PDF brochures.</p>
+      </article>
+      <article class="product">
+        <div class="p-ico"><svg><use href="#i-passport"/></svg></div>
+        <h3>Visa</h3>
+        <p>Country requirements, document checklist and uploads, processing stages and SMS/email status updates.</p>
+      </article>
+      <article class="product">
+        <div class="p-ico"><svg><use href="#i-car"/></svg></div>
+        <h3>Transfers & Cars</h3>
+        <p>Airport pick-ups, point-to-point rides and rentals with vehicles, drivers, zones and route pricing.</p>
+      </article>
+      <article class="product">
+        <div class="p-ico"><svg><use href="#i-shield"/></svg></div>
+        <h3>Insurance & Add-ons</h3>
+        <p>Travel insurance, eSIM, lounge access and activities attached to any booking at checkout.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Business models -->
+<section class="section models-wrap">
+  <div class="container">
+    <div class="section-head light">
+      <span class="eyebrow">Business models</span>
+      <h2>Built for how your agency sells</h2>
+    </div>
+    <div class="models">
+      <div class="model"><h3>B2C</h3><p>A consumer booking website with online payment, customer accounts and e-tickets.</p></div>
+      <div class="model"><h3>B2B</h3><p>Net rates for registered agents with deposits, credit limits and wallet top-ups.</p></div>
+      <div class="model"><h3>B2B2C</h3><p>Agents get their own white-label sites and set their own markup on your inventory.</p></div>
+      <div class="model"><h3>Corporate</h3><p>Company accounts with travel policies, approvals and monthly invoicing.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ERP -->
-<section class="section alt">
+<section class="section" id="erp">
   <div class="container split">
     <div>
-      <span class="eyebrow">Not just a booking script</span>
-      <h2>A real ERP behind your booking engine</h2>
-      <p>Every booking flows straight into your back office — invoices, ledgers, supplier payables, agent credit and commissions update automatically.</p>
+      <span class="eyebrow">The ERP part</span>
+      <h2>Every booking posts to your books automatically</h2>
+      <p class="muted">Most booking scripts stop at checkout. In Travel Suite ERP, the moment a ticket is issued the invoice, supplier payable, agent ledger and commission are already recorded.</p>
       <ul class="checklist">
-        <li><b>Accounting</b> — double-entry ledger, invoices, receipts, VAT/GST, multi-currency.</li>
-        <li><b>B2B agent portal</b> — sub-agents, credit limits, deposits, wallet top-ups, markups.</li>
-        <li><b>Supplier management</b> — contracts, payables, reconciliation and settlement reports.</li>
-        <li><b>CRM & leads</b> — enquiries, quotations, follow-ups, WhatsApp & email templates.</li>
-        <li><b>HR & staff</b> — roles, permissions, branches, targets and staff commissions.</li>
-        <li><b>Reports</b> — sales, profit per booking, BSP/ADM reconciliation, aging & cash flow.</li>
+        <li><b>Accounts</b> Double-entry ledger, invoices, receipts, VAT, multi-currency and bank reconciliation.</li>
+        <li><b>Agents</b> Sub-agent tree, credit limits, deposits, commission and statement of account.</li>
+        <li><b>Suppliers</b> Contracts, payables, BSP/ADM reconciliation and settlement reports.</li>
+        <li><b>CRM</b> Leads, quotations, follow-ups and WhatsApp/email templates.</li>
+        <li><b>Staff & branches</b> Role permissions, branch-wise P&L, targets and staff incentives.</li>
       </ul>
     </div>
-    <div class="erp-diagram" aria-hidden="true">
-      <div class="hub">TSERP<br><small>Core</small></div>
-      <span class="node n1">Bookings</span>
-      <span class="node n2">Accounts</span>
-      <span class="node n3">Agents</span>
-      <span class="node n4">Suppliers</span>
-      <span class="node n5">CRM</span>
-      <span class="node n6">Reports</span>
+    <div class="ledger" aria-label="Example: journal entries posted from one booking">
+      <div class="ledger-head">
+        <span>Booking <b>TSE-26-10482</b> · Flight DAC→DXB · 2 pax</span>
+        <em>Ticketed</em>
+      </div>
+      <table>
+        <thead><tr><th>Account</th><th class="num">Debit</th><th class="num">Credit</th></tr></thead>
+        <tbody>
+          <tr><td>Agent: Sky Wings Travels</td><td class="num">824.00</td><td class="num"></td></tr>
+          <tr><td>Supplier payable: Emirates (BSP)</td><td class="num"></td><td class="num">762.00</td></tr>
+          <tr><td>Service fee income</td><td class="num"></td><td class="num">40.00</td></tr>
+          <tr><td>VAT payable</td><td class="num"></td><td class="num">6.00</td></tr>
+          <tr><td>Markup income</td><td class="num"></td><td class="num">16.00</td></tr>
+        </tbody>
+        <tfoot><tr><td>Total (USD)</td><td class="num">824.00</td><td class="num">824.00</td></tr></tfoot>
+      </table>
+      <p class="ledger-note">Example entries generated by one booking. No manual posting.</p>
     </div>
   </div>
 </section>
 
 <!-- Demo -->
-<section class="section" id="demo">
+<section class="section alt" id="demo">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Live demo</span>
-      <h2>Explore every panel before you buy</h2>
-      <p>The demo resets every 24 hours. Use the credentials below to log in.</p>
+      <h2>Log in to every panel before you decide</h2>
+      <p>Demo data resets every 24 hours, so feel free to make bookings, issue tickets and post payments.</p>
     </div>
-    <div class="tabs" role="tablist">
-      <button class="tab active" role="tab" aria-selected="true" data-tab="customer">Customer website</button>
-      <button class="tab" role="tab" aria-selected="false" data-tab="admin">Admin / ERP</button>
-      <button class="tab" role="tab" aria-selected="false" data-tab="agent">B2B Agent</button>
-      <button class="tab" role="tab" aria-selected="false" data-tab="supplier">Supplier</button>
-    </div>
-    <div class="tab-panels">
-      <div class="tab-panel active" data-panel="customer">
-        <div><h3>Customer website</h3><p>Responsive booking site with search, filters, checkout, payments and customer account area.</p>
-          <dl class="creds"><dt>URL</dt><dd>demo.tserp.com</dd><dt>Email</dt><dd>user@tserp.com</dd><dt>Password</dt><dd>demouser</dd></dl>
-          <a href="#contact" class="btn btn-primary">Open customer demo</a></div>
+    <div class="demo">
+      <div class="demo-tabs" role="tablist" aria-label="Demo panels">
+        <button class="active" role="tab" aria-selected="true" data-tab="customer"><b>Customer website</b><small>Search, book, pay</small></button>
+        <button role="tab" aria-selected="false" data-tab="admin"><b>Admin & ERP</b><small>Back office</small></button>
+        <button role="tab" aria-selected="false" data-tab="agent"><b>B2B agent</b><small>Net fares & wallet</small></button>
+        <button role="tab" aria-selected="false" data-tab="supplier"><b>Supplier</b><small>Inventory & payouts</small></button>
       </div>
-      <div class="tab-panel" data-panel="admin">
-        <div><h3>Admin / ERP back office</h3><p>Manage modules, markups, content, accounts, staff, branches and all reports.</p>
-          <dl class="creds"><dt>URL</dt><dd>demo.tserp.com/admin</dd><dt>Email</dt><dd>admin@tserp.com</dd><dt>Password</dt><dd>demoadmin</dd></dl>
-          <a href="#contact" class="btn btn-primary">Open admin demo</a></div>
-      </div>
-      <div class="tab-panel" data-panel="agent">
-        <div><h3>B2B agent portal</h3><p>Net fares, credit wallet, sub-agent management, white-label agent sites and commission statements.</p>
-          <dl class="creds"><dt>URL</dt><dd>demo.tserp.com/agent</dd><dt>Email</dt><dd>agent@tserp.com</dd><dt>Password</dt><dd>demoagent</dd></dl>
-          <a href="#contact" class="btn btn-primary">Open agent demo</a></div>
-      </div>
-      <div class="tab-panel" data-panel="supplier">
-        <div><h3>Supplier extranet</h3><p>Hotels, tour operators and transfer partners update inventory, rates and see payouts.</p>
-          <dl class="creds"><dt>URL</dt><dd>demo.tserp.com/supplier</dd><dt>Email</dt><dd>supplier@tserp.com</dd><dt>Password</dt><dd>demosupplier</dd></dl>
-          <a href="#contact" class="btn btn-primary">Open supplier demo</a></div>
+      <div class="demo-panels">
+        <div class="demo-panel active" data-panel="customer">
+          <h3>Customer website</h3><p>Responsive booking site with search filters, secure checkout, customer account, booking history and downloadable vouchers.</p>
+          <dl class="creds"><dt>URL</dt><dd>demo.travelsuiteerp.com</dd><dt>Email</dt><dd>user@demo.com</dd><dt>Password</dt><dd>demouser</dd></dl>
+          <a href="#contact" class="btn btn-forest">Open customer demo</a>
+        </div>
+        <div class="demo-panel" data-panel="admin">
+          <h3>Admin & ERP back office</h3><p>Modules, markups, CMS, accounts, staff, branches and every report: sales, profit per booking, aging and cash flow.</p>
+          <dl class="creds"><dt>URL</dt><dd>demo.travelsuiteerp.com/admin</dd><dt>Email</dt><dd>admin@demo.com</dd><dt>Password</dt><dd>demoadmin</dd></dl>
+          <a href="#contact" class="btn btn-forest">Open admin demo</a>
+        </div>
+        <div class="demo-panel" data-panel="agent">
+          <h3>B2B agent portal</h3><p>Net fares, deposit wallet, credit limit, sub-agents, own markup, white-label agent website and commission statements.</p>
+          <dl class="creds"><dt>URL</dt><dd>demo.travelsuiteerp.com/agent</dd><dt>Email</dt><dd>agent@demo.com</dd><dt>Password</dt><dd>demoagent</dd></dl>
+          <a href="#contact" class="btn btn-forest">Open agent demo</a>
+        </div>
+        <div class="demo-panel" data-panel="supplier">
+          <h3>Supplier extranet</h3><p>Hotels, tour operators and transport partners update rates and availability, confirm bookings and track payouts.</p>
+          <dl class="creds"><dt>URL</dt><dd>demo.travelsuiteerp.com/supplier</dd><dt>Email</dt><dd>supplier@demo.com</dd><dt>Password</dt><dd>demosupplier</dd></dl>
+          <a href="#contact" class="btn btn-forest">Open supplier demo</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Features -->
-<section class="section alt" id="features">
+<section class="section" id="features">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Features</span>
-      <h2>Everything you need, out of the box</h2>
+      <h2>Included with every installation</h2>
     </div>
-    <div class="grid cards-4 features">
-      <div class="feature"><span>🎨</span><h4>White-label branding</h4><p>Your logo, domain, colors and themes.</p></div>
-      <div class="feature"><span>🌐</span><h4>Multi-language</h4><p>RTL support, English, বাংলা, Arabic & more.</p></div>
-      <div class="feature"><span>💱</span><h4>Multi-currency</h4><p>Live exchange rates and per-market pricing.</p></div>
-      <div class="feature"><span>💳</span><h4>30+ payment gateways</h4><p>Stripe, PayPal, SSLCommerz, bKash and more.</p></div>
-      <div class="feature"><span>📈</span><h4>Markup engine</h4><p>Rules by supplier, route, agent or channel.</p></div>
-      <div class="feature"><span>🔐</span><h4>Roles & permissions</h4><p>Granular access per staff and branch.</p></div>
-      <div class="feature"><span>📱</span><h4>Mobile apps</h4><p>Android & iOS apps on the same backend.</p></div>
-      <div class="feature"><span>🔌</span><h4>REST API</h4><p>Connect your website, apps and partners.</p></div>
-      <div class="feature"><span>🤖</span><h4>AI assistant</h4><p>Itinerary drafts and smart quotation replies.</p></div>
-      <div class="feature"><span>🧾</span><h4>Auto invoicing</h4><p>Branded invoices, vouchers and e-tickets.</p></div>
-      <div class="feature"><span>🔍</span><h4>SEO ready</h4><p>Landing pages, sitemaps and blog built in.</p></div>
-      <div class="feature"><span>🛟</span><h4>Priority support</h4><p>Installation, training and updates.</p></div>
+    <div class="features">
+      <div class="feature"><h4>White-label branding</h4><p>Your logo, colours, domain and email templates.</p></div>
+      <div class="feature"><h4>Multi-language & RTL</h4><p>English, বাংলা, العربية and any language you add.</p></div>
+      <div class="feature"><h4>Multi-currency</h4><p>Auto exchange rates and prices per market.</p></div>
+      <div class="feature"><h4>Payment gateways</h4><p>SSLCommerz, bKash, Nagad, Stripe, PayPal and bank transfer.</p></div>
+      <div class="feature"><h4>Markup & discount rules</h4><p>By product, supplier, route, agent group or date.</p></div>
+      <div class="feature"><h4>Roles & permissions</h4><p>Control what each staff member and branch can see.</p></div>
+      <div class="feature"><h4>CMS & blog</h4><p>Landing pages, offers, blog posts and SEO settings.</p></div>
+      <div class="feature"><h4>Invoices & vouchers</h4><p>Branded PDF invoices, e-tickets and hotel vouchers.</p></div>
+      <div class="feature"><h4>Mobile apps</h4><p>Android and iOS apps on the same back office.</p></div>
+      <div class="feature"><h4>REST API</h4><p>Connect partner sites, apps and in-house tools.</p></div>
+      <div class="feature"><h4>Notifications</h4><p>Email, SMS and WhatsApp alerts for every booking stage.</p></div>
+      <div class="feature"><h4>Reports & exports</h4><p>Excel and PDF exports for every list and ledger.</p></div>
     </div>
   </div>
 </section>
 
 <!-- Integrations -->
-<section class="section" id="integrations">
+<section class="section alt" id="integrations">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Integrations</span>
-      <h2>Connect to the suppliers you already use</h2>
-      <p>Plug in your own supplier credentials. Integrations are available as add-ons.</p>
+      <h2>Connect the suppliers you already work with</h2>
+      <p>Bring your own supplier credentials and we connect them. New integrations are available on request.</p>
     </div>
-    <div class="logos">
-      <span>Amadeus</span><span>Sabre</span><span>Travelport</span><span>NDC Airlines</span><span>Hotelbeds</span><span>Expedia Rapid</span><span>WebBeds</span><span>TBO</span><span>RateHawk</span><span>Viator</span><span>Stripe</span><span>PayPal</span><span>SSLCommerz</span><span>bKash</span><span>WhatsApp</span><span>QuickBooks</span>
+    <div class="int-groups">
+      <div class="int-group"><h4>Flights</h4><div class="chips"><span>Amadeus</span><span>Sabre</span><span>Travelport</span><span>NDC airlines</span><span>Duffel</span><span>Kiwi</span></div></div>
+      <div class="int-group"><h4>Hotels</h4><div class="chips"><span>Hotelbeds</span><span>Expedia Rapid</span><span>WebBeds</span><span>TBO</span><span>RateHawk</span></div></div>
+      <div class="int-group"><h4>Tours & activities</h4><div class="chips"><span>Viator</span><span>GetYourGuide</span><span>Tiqets</span></div></div>
+      <div class="int-group"><h4>Payments</h4><div class="chips"><span>SSLCommerz</span><span>bKash</span><span>Nagad</span><span>Stripe</span><span>PayPal</span><span>Razorpay</span></div></div>
+      <div class="int-group"><h4>Messaging & tools</h4><div class="chips"><span>WhatsApp</span><span>Twilio SMS</span><span>Mailgun</span><span>Google Analytics</span></div></div>
     </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Getting started</span>
+      <h2>From purchase to first booking</h2>
+    </div>
+    <ol class="steps">
+      <li><span>1</span><h4>Choose a plan</h4><p>Cloud subscription or a self-hosted license.</p></li>
+      <li><span>2</span><h4>We install it</h4><p>On our cloud or your own server, with your domain and SSL.</p></li>
+      <li><span>3</span><h4>Brand & configure</h4><p>Logo, colours, modules, markups, payment gateway and suppliers.</p></li>
+      <li><span>4</span><h4>Train & go live</h4><p>Online training for your team, then start taking bookings.</p></li>
+    </ol>
   </div>
 </section>
 
@@ -241,34 +328,34 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Pricing</span>
-      <h2>Simple plans that grow with you</h2>
+      <h2>Plans for every stage of your agency</h2>
       <div class="billing-toggle" role="group" aria-label="Billing type">
-        <button class="active" data-billing="cloud">Cloud (monthly)</button>
-        <button data-billing="license">Self-hosted (one-time)</button>
+        <button class="active" data-billing="cloud" aria-pressed="true">Cloud · monthly</button>
+        <button data-billing="license" aria-pressed="false">Self-hosted · one-time</button>
       </div>
     </div>
-    <div class="grid cards-3 pricing">
+    <div class="pricing">
       <div class="plan">
-        <h3>Starter</h3><p class="plan-sub">For new agencies going online</p>
+        <h3>Starter</h3><p class="plan-sub">For agencies taking their first bookings online</p>
         <div class="price" data-cloud="$79" data-license="$599"><b>$79</b><small data-cloud="/month" data-license="one-time">/month</small></div>
-        <ul><li>Website + booking engine</li><li>2 modules (e.g. Hotels, Tours)</li><li>3 staff accounts</li><li>Invoices & basic accounts</li><li>Email support</li></ul>
-        <a href="#contact" class="btn btn-outline btn-block">Get Starter</a>
+        <ul><li>Booking website on your domain</li><li>Any 2 products</li><li>3 staff accounts</li><li>Invoices and basic accounts</li><li>Email support</li></ul>
+        <a href="#contact" class="btn btn-outline btn-block">Choose Starter</a>
       </div>
       <div class="plan featured">
-        <span class="badge">Most popular</span>
-        <h3>Business</h3><p class="plan-sub">For growing OTAs & B2B agencies</p>
+        <span class="badge">Most chosen</span>
+        <h3>Business</h3><p class="plan-sub">For B2B agencies and growing OTAs</p>
         <div class="price" data-cloud="$249" data-license="$1,899"><b>$249</b><small data-cloud="/month" data-license="one-time">/month</small></div>
-        <ul><li>All booking modules</li><li>B2B agent & supplier portals</li><li>Full ERP accounting & CRM</li><li>2 supplier API integrations</li><li>Unlimited staff · Priority support</li></ul>
-        <a href="#contact" class="btn btn-primary btn-block">Get Business</a>
+        <ul><li>All products</li><li>B2B agent portal & supplier extranet</li><li>Full ERP accounts & CRM</li><li>2 supplier API integrations</li><li>Unlimited staff · priority support</li></ul>
+        <a href="#contact" class="btn btn-lime btn-block">Choose Business</a>
       </div>
       <div class="plan">
-        <h3>Enterprise</h3><p class="plan-sub">For consolidators & multi-branch groups</p>
+        <h3>Enterprise</h3><p class="plan-sub">For consolidators and multi-branch groups</p>
         <div class="price" data-cloud="Custom" data-license="Custom"><b>Custom</b><small data-cloud="" data-license=""></small></div>
-        <ul><li>Everything in Business</li><li>Unlimited API integrations</li><li>Mobile apps (Android & iOS)</li><li>Full source code & custom dev</li><li>Dedicated account manager</li></ul>
+        <ul><li>Everything in Business</li><li>Unlimited integrations</li><li>Android & iOS apps</li><li>Source code & custom development</li><li>Dedicated account manager</li></ul>
         <a href="#contact" class="btn btn-outline btn-block">Talk to sales</a>
       </div>
     </div>
-    <p class="note">Prices are indicative and exclude third-party supplier fees. Self-hosted licenses include 12 months of updates.</p>
+    <p class="note">Prices are indicative and exclude supplier fees. Self-hosted licenses include free installation and 12 months of updates.</p>
   </div>
 </section>
 
@@ -277,12 +364,12 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Customers</span>
-      <h2>Agencies that switched to TSERP</h2>
+      <h2>What agencies say after switching</h2>
     </div>
-    <div class="grid cards-3">
-      <blockquote class="card quote"><p>“We replaced three separate tools — booking script, accounting software and spreadsheets for agents. Month-end closing went from a week to a day.”</p><footer><b>Operations Head</b><span>B2B consolidator, Dhaka</span></footer></blockquote>
-      <blockquote class="card quote"><p>“The agent portal with credit limits was the reason we chose TSERP. Our sub-agent network grew 3× in the first year.”</p><footer><b>Founder</b><span>Online travel agency, Dubai</span></footer></blockquote>
-      <blockquote class="card quote"><p>“Setup, branding and supplier API connection were done in under two weeks. Support answers fast.”</p><footer><b>CTO</b><span>Tour operator, Kuala Lumpur</span></footer></blockquote>
+    <div class="quotes">
+      <blockquote class="quote"><p>We used a booking script, separate accounting software and spreadsheets for agents. Now it's one system, and month-end closing takes a day instead of a week.</p><footer><b>Operations Head</b><span>B2B consolidator, Dhaka</span></footer></blockquote>
+      <blockquote class="quote"><p>Agent credit limits and the deposit wallet were why we chose Travel Suite ERP. Our sub-agent network tripled in the first year.</p><footer><b>Founder</b><span>Online travel agency, Dubai</span></footer></blockquote>
+      <blockquote class="quote"><p>Branding, payment gateway and our hotel supplier were connected in under two weeks. Support replies quickly on WhatsApp.</p><footer><b>Managing Director</b><span>Tour operator, Kuala Lumpur</span></footer></blockquote>
     </div>
   </div>
 </section>
@@ -292,45 +379,46 @@
   <div class="container narrow">
     <div class="section-head">
       <span class="eyebrow">FAQ</span>
-      <h2>Frequently asked questions</h2>
+      <h2>Questions agencies ask us</h2>
     </div>
     <div class="faq">
-      <details open><summary>Is TSERP a booking script or a full ERP?</summary><p>Both. You get a customer-facing booking website and a complete back office with accounting, agent and supplier management, CRM and reports — all on the same database.</p></details>
-      <details><summary>Can I host it on my own server?</summary><p>Yes. Choose our managed Cloud plan, or buy a self-hosted license and install it on your own VPS. We offer free installation with every license.</p></details>
-      <details><summary>Do I need my own supplier API credentials?</summary><p>For GDS and bedbank integrations you sign a contract directly with the supplier; we connect your credentials to TSERP. You can also sell your own manual inventory with no API at all.</p></details>
-      <details><summary>Which payment gateways are supported?</summary><p>Over 30 gateways including Stripe, PayPal, Razorpay, SSLCommerz, bKash, Nagad and bank transfer. New gateways can be added on request.</p></details>
-      <details><summary>Can I customise the design and features?</summary><p>Yes. Themes are fully customisable, and Enterprise plans include source code access and custom development.</p></details>
-      <details><summary>How long does it take to go live?</summary><p>Most agencies go live within 7–14 days, including branding, domain setup, payment gateway and training.</p></details>
+      <details open><summary>Is this a booking script or a full ERP?</summary><p>Both. You get a customer booking website and a complete back office with accounts, agent and supplier management, CRM and reports, sharing one database.</p></details>
+      <details><summary>Can I install it on my own server?</summary><p>Yes. Choose our managed cloud, or buy a self-hosted license and we install it on your VPS free of charge.</p></details>
+      <details><summary>Do I need my own supplier API accounts?</summary><p>For GDS and bedbank connections you sign directly with the supplier and we connect your credentials. You can also sell your own inventory without any API.</p></details>
+      <details><summary>Which payment gateways can I use?</summary><p>SSLCommerz, bKash, Nagad, Stripe, PayPal, Razorpay, bank transfer and agent wallet. Other gateways can be added on request.</p></details>
+      <details><summary>Can you customise features for us?</summary><p>Yes. Themes are fully editable, and Enterprise plans include source code access and custom development.</p></details>
+      <details><summary>How long does it take to go live?</summary><p>Most agencies go live in 7 to 14 days, including branding, domain, payment gateway and staff training.</p></details>
     </div>
   </div>
 </section>
 
-<!-- Contact / CTA -->
-<section class="section cta" id="contact">
+<!-- Contact -->
+<section class="section contact" id="contact">
   <div class="container split">
     <div>
-      <h2>Ready to launch your travel platform?</h2>
-      <p>Tell us about your business and we'll set up a personalised demo with your branding.</p>
+      <span class="eyebrow">Contact</span>
+      <h2>Get a demo set up with your own branding</h2>
+      <p>Tell us what you sell and how many agents you work with. We'll prepare a walkthrough for your business.</p>
       <ul class="contact-list">
-        <li>📧 <a href="mailto:sales@tserp.com">sales@tserp.com</a></li>
-        <li>💬 WhatsApp: <a href="https://wa.me/8801000000000">+880 1000-000000</a></li>
-        <li>🕘 Sun–Thu, 9am–7pm (GMT+6)</li>
+        <li><small>Email</small><span>sales@travelsuiteerp.com</span></li>
+        <li><small>WhatsApp</small><span>+880 1000-000000</span></li>
+        <li><small>Hours</small><span>Sat–Thu, 10am–7pm (GMT+6)</span></li>
       </ul>
     </div>
     <form class="contact-form" id="contactForm" novalidate>
       <div class="row2">
-        <label>Full name<input name="name" required autocomplete="name"></label>
-        <label>Company<input name="company" autocomplete="organization"></label>
+        <label for="f-name">Full name<input id="f-name" name="name" required autocomplete="name"></label>
+        <label for="f-company">Agency name<input id="f-company" name="company" autocomplete="organization"></label>
       </div>
       <div class="row2">
-        <label>Email<input type="email" name="email" required autocomplete="email"></label>
-        <label>Phone / WhatsApp<input name="phone" autocomplete="tel"></label>
+        <label for="f-email">Email<input id="f-email" type="email" name="email" required autocomplete="email"></label>
+        <label for="f-phone">Phone / WhatsApp<input id="f-phone" name="phone" autocomplete="tel"></label>
       </div>
-      <label>Interested in
-        <select name="plan"><option>Business plan</option><option>Starter plan</option><option>Enterprise</option><option>Custom development</option></select>
+      <label for="f-plan">Interested in
+        <select id="f-plan" name="plan"><option>Business plan</option><option>Starter plan</option><option>Enterprise</option><option>Custom development</option></select>
       </label>
-      <label>Message<textarea name="message" rows="4" placeholder="Modules, suppliers, number of agents…"></textarea></label>
-      <button class="btn btn-primary btn-block" type="submit">Request a demo</button>
+      <label for="f-msg">Message<textarea id="f-msg" name="message" rows="4" placeholder="Products you sell, suppliers you use, number of agents"></textarea></label>
+      <button class="btn btn-lime btn-block" type="submit">Request a demo</button>
       <p class="form-msg" id="formMsg" role="status"></p>
     </form>
   </div>
@@ -340,17 +428,17 @@
 
 <footer class="footer">
   <div class="container footer-grid">
-    <div>
-      <a href="#top" class="logo light"><img src="assets/img/logo.svg" alt="" width="32" height="32"><span>TS<b>ERP</b></span></a>
-      <p>Travel Suite ERP — booking engine, B2B portal and back office for modern travel businesses.</p>
+    <div class="footer-brand">
+      <img src="assets/img/logo-light.png" alt="Travel Suite ERP" width="230" height="30">
+      <p>Travel booking software with a built-in ERP for travel agencies, OTAs, consolidators and tour operators.</p>
     </div>
-    <div><h5>Product</h5><a href="#modules">Modules</a><a href="#features">Features</a><a href="#integrations">Integrations</a><a href="#pricing">Pricing</a></div>
-    <div><h5>Resources</h5><a href="#demo">Live demo</a><a href="#faq">FAQ</a><a href="#contact">Documentation</a><a href="#contact">Changelog</a></div>
-    <div><h5>Company</h5><a href="#contact">About</a><a href="#contact">Contact</a><a href="#contact">Privacy policy</a><a href="#contact">Terms</a></div>
+    <div><h5>Product</h5><a href="#products">Products</a><a href="#features">Features</a><a href="#integrations">Integrations</a><a href="#pricing">Pricing</a></div>
+    <div><h5>Resources</h5><a href="#demo">Live demo</a><a href="#how">Getting started</a><a href="#faq">FAQ</a><a href="#contact">Documentation</a></div>
+    <div><h5>Company</h5><a href="#contact">About us</a><a href="#contact">Contact</a><a href="#contact">Privacy policy</a><a href="#contact">Terms of service</a></div>
   </div>
   <div class="container footer-bottom">
-    <span>© <span id="year"></span> TSERP. All rights reserved.</span>
-    <a href="#top">Back to top ↑</a>
+    <span>© <span id="year">2026</span> Travel Suite ERP. All rights reserved.</span>
+    <a href="#top">Back to top</a>
   </div>
 </footer>
 
