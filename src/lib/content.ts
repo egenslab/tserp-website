@@ -18,7 +18,7 @@ type Section<T> = { eyebrow: string; title: string; items: T[] };
 /** Optional extra content that turns a feature into a full landing page (see "flights"). */
 export type FeaturePage = {
   seoTitle?: string; metaDescription?: string; h1?: string; overviewTitle?: string;
-  facts?: { value: string; label: string }[];
+  facts?: { value: string; label: string; logos?: string[] }[];
   sources?: Section<{ icon: string; title: string; text: string; tags: string[] }>;
   workflow?: { eyebrow: string; title: string; steps: { title: string; text: string }[] };
   capabilities?: string[];

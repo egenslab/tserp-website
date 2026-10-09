@@ -13,7 +13,17 @@ export function FactStrip({ facts }: { facts: P["facts"] }) {
     <section className="fact-strip" aria-label="At a glance">
       <div className="container">
         <dl className="facts">
-          {facts.map((f) => <div key={f.value}><dt>{f.value}</dt><dd>{f.label}</dd></div>)}
+          {facts.map((f) => (
+            <div key={f.value}>
+              <dt>{f.value}</dt>
+              {f.logos ? (
+                <dd className="fact-logos" aria-label={f.label}>
+                  {/* Logo files live in public/assets/img/partners/<name>.svg; replace them with the official artwork */}
+                  {f.logos.map((l) => <img key={l} src={`/assets/img/partners/${l}.svg`} alt={l} height={22} />)}
+                </dd>
+              ) : <dd>{f.label}</dd>}
+            </div>
+          ))}
         </dl>
       </div>
     </section>

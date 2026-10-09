@@ -89,7 +89,12 @@
         "facts": [
           {
             "value": "3 GDS",
-            "label": "Amadeus, Sabre and Travelport"
+            "label": "Amadeus, Sabre and Travelport",
+            "logos": [
+              "amadeus",
+              "sabre",
+              "travelport"
+            ]
           },
           {
             "value": "NDC + LCC",

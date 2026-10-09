@@ -44,7 +44,7 @@ export default async function FeaturePage({ params }: Props) {
           <div>
             <Breadcrumb items={crumbs} />
             <span className="pill">{groupTitle(f.group)}</span>
-            <h1><span className="hero-ico"><Glyph name={f.icon} /></span>{page.h1 ?? f.title}</h1>
+            <h1>{page.h1 ?? f.title}</h1>
             <p className="lead">{f.intro}</p>
             <HeroCtas />
           </div>
