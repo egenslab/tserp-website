@@ -499,7 +499,7 @@ def build_blog():
                                 nav="company", head=jsonld(breadcrumb_ld([("Home", ""), ("Blog", "blog.html")]))), page)
     tr(T_("Blog — TravelSuite ERP", "ব্লগ — TravelSuite ERP"))
 
-    GENERATED["blog-latest"] = f'''<section class="section alt" id="blog">
+    GENERATED["blog-latest"] = f'''<section class="section" id="blog">
   <div class="container">
     <div class="section-head with-controls">
       <div><span class="eyebrow">{e("Latest from the blog")}</span><h2>{e("Practical guides for travel agencies")}</h2></div>
