@@ -599,12 +599,14 @@ html[lang="bn"] h1, html[lang="bn"] h2, html[lang="bn"] h3 { line-height: 1.3; l
 .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: start; }
 .contact-side { display: grid; gap: 24px; min-width: 0; }
 .contact-side .wa-pill { justify-self: start; border: 1px solid var(--line); }
-.contact-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.contact-cards { display: grid; grid-template-columns: 1fr; gap: 12px; }
 .ccard { display: flex; gap: 12px; align-items: center; border: 1px solid var(--line); border-radius: 14px; padding: 14px; min-width: 0; }
 .ccard .f-ico { margin: 0; flex: none; }
 .ccard .f-ico .ic.fill { width: 20px; height: 20px; color: var(--forest); }
 .ccard small { display: block; color: var(--muted); font-size: .78rem; }
-.ccard b { display: block; color: var(--ink); font-size: .92rem; overflow-wrap: anywhere; }
+.ccard b { display: block; color: var(--ink); font-size: .92rem; overflow-wrap: break-word; }
+.ccard b a { color: inherit; }
+.ccard b a:hover { color: var(--forest-2); text-decoration: underline; }
 .next-steps { background: var(--bg-alt); border-radius: 18px; padding: 24px; }
 .next-steps h3 { margin-bottom: 14px; }
 .next-steps ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; counter-reset: s; }

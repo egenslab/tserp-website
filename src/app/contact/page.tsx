@@ -1,11 +1,10 @@
 import ContactForm from "@/components/ContactForm";
-import WaPill from "@/components/WaPill";
-import { COUNTRIES } from "@/lib/content";
+import { COUNTRIES, EMAIL, WA } from "@/lib/content";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "Contact us — TravelSuite ERP",
-  description: "Request a TravelSuite ERP demo or chat with our team on WhatsApp at +880 13 2527 7120.",
+  description: "Request a TravelSuite ERP demo, chat with our team on WhatsApp at +880 13 2527 7120 or email hello@travelsuiteerp.com.",
   path: "/contact",
 });
 
@@ -22,20 +21,19 @@ export default function ContactPage() {
       <section className="section contact-page">
         <div className="container contact-grid">
           <div className="contact-side">
-            <WaPill />
             <div className="contact-cards">
               <div className="ccard">
                 <span className="f-ico"><svg className="ic fill"><use href="#i-wa" /></svg></span>
                 <div>
                   <small>WhatsApp</small>
-                  <b>+880 13 2527 7120</b>
+                  <b><a href={WA} target="_blank" rel="noopener">+880 13 2527 7120</a></b>
                 </div>
               </div>
               <div className="ccard">
-                <span className="f-ico"><svg><use href="#i-globe" /></svg></span>
+                <span className="f-ico"><svg><use href="#i-mail" /></svg></span>
                 <div>
-                  <small>Website</small>
-                  <b>travelsuiteerp.com</b>
+                  <small>Email</small>
+                  <b><a href={`mailto:${EMAIL}`}>{EMAIL}</a></b>
                 </div>
               </div>
               <div className="ccard wide">

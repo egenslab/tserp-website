@@ -39,7 +39,7 @@ export const ORG_LD = {
   parentOrganization: { "@type": "Organization", name: "Egens Lab Limited" },
   sameAs: SOCIAL.filter((s) => !s.url.includes("wa.me")).map((s) => s.url),
   contactPoint: {
-    "@type": "ContactPoint", telephone: "+8801325277120", contactType: "sales",
+    "@type": "ContactPoint", telephone: "+8801325277120", contactType: "sales", email: "hello@travelsuiteerp.com",
     areaServed: ["BD", "MY", "SA", "AE", "QA", "KW", "OM", "BH", "US"], availableLanguage: ["English", "Bengali"],
   },
   address: ["US", "MY", "BD"].map((c) => ({ "@type": "PostalAddress", addressCountry: c })),
