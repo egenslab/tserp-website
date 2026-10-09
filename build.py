@@ -10,10 +10,12 @@ Hand-written pages live in src/pages/. Each starts with a front-matter block:
     -->
 
 `{{> name}}` includes src/partials/name.html (or a generated partial).
-Feature, solution, blog and legal pages are generated from src/content.py.
-All pages are wrapped in src/partials/layout.html and written to the repository root.
+Feature, solution, success story, blog and legal pages are generated from
+src/content.py, src/content_seo.py and src/content_more.py.
+All pages are wrapped in src/partials/layout.html and written to the repository root,
+together with sitemap.xml and robots.txt.
 
-The build also writes assets/js/i18n-data.js (Bangla text from src/content.py) and
+The build also writes assets/js/i18n-data.js (Bangla text from the content files) and
 reports any visible English text that has no Bangla translation.
 
 Usage: python3 build.py
@@ -24,18 +26,22 @@ import pathlib
 import re
 import sys
 from html.parser import HTMLParser
+from urllib.parse import quote
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SRC = ROOT / "src"
 PARTIALS = SRC / "partials"
 sys.path.insert(0, str(SRC))
 import content as C  # noqa: E402
+import content_more as M  # noqa: E402
+import content_seo as S  # noqa: E402
 
+SITE = "https://travelsuiteerp.com/"
 INCLUDE = re.compile(r"\{\{>\s*([\w-]+)\s*\}\}")
 FRONT = re.compile(r"\A<!--(.*?)-->\s*", re.S)
 WA = "https://wa.me/8801325277120"
 
-PAIRS = {}          # English -> Bangla, collected from content.py
+PAIRS = {}          # English -> Bangla, collected from the content files
 GENERATED = {}      # generated partials
 OUTPUT = {}         # file name -> (meta, body)
 
@@ -53,17 +59,55 @@ def e(value):
     return html.escape(tr(value), quote=False)
 
 
+def a(value):
+    """Escape for an attribute value."""
+    return html.escape(tr(value), quote=True)
+
+
 def icon(name, cls="ic"):
     return f'<svg class="{cls}"><use href="#{name}"/></svg>'
 
 
-for pair in C.UI:
+def T_(en, bn):
+    return (en, bn)
+
+
+for pair in C.UI + C.BLOG_CATEGORIES + M.UI_MORE:
     tr(pair)
-for pair in C.BLOG_CATEGORIES:
-    tr(pair)
+for c in M.COUNTRIES:
+    tr(c["name"])
 
 FEATURES = {f["slug"]: f for f in C.FEATURES}
 GROUP_TITLE = dict(C.FEATURE_GROUPS)
+
+
+# ---------------------------------------------------------------------------
+# SEO helpers
+# ---------------------------------------------------------------------------
+def jsonld(obj):
+    return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False) + "</script>"
+
+
+def breadcrumb_ld(items):
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i, "name": tr(label), "item": SITE + (href or "")}
+        for i, (label, href) in enumerate(items, 1)]}
+
+
+def faq_ld(faqs):
+    return {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": tr(q), "acceptedAnswer": {"@type": "Answer", "text": tr(ans)}} for q, ans in faqs]}
+
+
+def faq_section(faqs, title="Frequently asked questions", alt=False):
+    items = "".join(f"<details{' open' if i == 0 else ''}><summary>{e(q)}</summary><p>{e(ans)}</p></details>"
+                    for i, (q, ans) in enumerate(faqs))
+    return f'''<section class="section{' alt' if alt else ''}" id="faq">
+  <div class="container narrow">
+    <div class="section-head"><span class="eyebrow">{e("FAQ")}</span><h2>{e(title)}</h2></div>
+    <div class="faq">{items}</div>
+  </div>
+</section>'''
 
 
 # ---------------------------------------------------------------------------
@@ -73,7 +117,14 @@ def breadcrumb(items):
     parts = []
     for label, href in items:
         parts.append(f'<a href="{href}">{e(label)}</a>' if href else f'<span aria-current="page">{e(label)}</span>')
-    return '<nav class="breadcrumb" aria-label="Breadcrumb">' + '<span class="sep">/</span>'.join(parts) + "</nav>"
+    return f'<nav class="breadcrumb" aria-label="{a("Breadcrumb")}">' + '<span class="sep">/</span>'.join(parts) + "</nav>"
+
+
+def crumbs_for_ld(items, current):
+    out = []
+    for label, href in items:
+        out.append((label, href if href is not None else current))
+    return [(lbl, "" if h == "index.html" else h) for lbl, h in out]
 
 
 def hero_ctas():
@@ -89,18 +140,15 @@ def feature_card(f):
             f'{icon("i-arrow", "ic go")}</a>')
 
 
-def post_card(p):
-    return f'''<article class="post-card" data-cat="{html.escape(p["cat"])}">
-  <a href="blog-{p["slug"]}.html" class="post-cover" style="--c:{p["color"]}" tabindex="-1" aria-hidden="true">
-    <svg><use href="#{p["icon"]}"/></svg><span class="cover-chip">{e(p["cat"])}</span>
-  </a>
-  <div class="post-body">
-    <p class="post-meta"><span>{e(p["date"])}</span><span class="dotsep"></span><span>{p["read"]}</span> <span>{e("min read")}</span></p>
-    <h3><a href="blog-{p["slug"]}.html">{e(p["title"])}</a></h3>
-    <p>{e(p["excerpt"])}</p>
-    <a href="blog-{p["slug"]}.html" class="link-arrow">{e("Read article")} {icon("i-arrow")}</a>
+def overview_section(title, paragraphs, keywords=""):
+    paras = "".join(f"<p>{e(p)}</p>" for p in paragraphs)
+    return f'''<section class="section overview">
+  <div class="container narrow">
+    <span class="eyebrow">{e("Overview")}</span>
+    <h2>{e(title)}</h2>
+    <div class="prose">{paras}</div>
   </div>
-</article>'''
+</section>'''
 
 
 # ---------------------------------------------------------------------------
@@ -130,7 +178,7 @@ def build_features_overview():
 </section>
 <section class="section features-page">
   <div class="container fp-grid">
-    <aside class="fnav" aria-label="{e("Features navigation")}"><div class="fnav-inner">{"".join(nav)}</div></aside>
+    <aside class="fnav" aria-label="{a("Features navigation")}"><div class="fnav-inner">{"".join(nav)}</div></aside>
     <div class="fbody">{"".join(body)}</div>
   </div>
 </section>
@@ -138,19 +186,24 @@ def build_features_overview():
     OUTPUT["features.html"] = (dict(
         title="Features — TravelSuite ERP",
         description="Every feature of TravelSuite ERP: flights, hotels, Hajj & Umrah, visa, tours, transport, CRM, sales, finance, HR, help desk, reports, AI automation and omnichannel inbox.",
-        nav="features"), page)
+        nav="features",
+        head=jsonld(breadcrumb_ld([("Home", ""), ("Features", "features.html")]))), page)
 
 
 def build_feature_pages():
+    tr(T_("Overview", "সংক্ষিপ্ত পরিচিতি"))
     for f in C.FEATURES:
+        seo = S.FEATURE_SEO[f["slug"]]
+        name = f"feature-{f['slug']}.html"
         caps = "".join(f'<div class="cap">{icon("i-check")}<span>{e(b)}</span></div>' for b in f["bullets"])
         steps = "".join(f"<li><span>{i}</span><h4>{e(s)}</h4></li>" for i, s in enumerate(f["steps"], 1))
         benefits = "".join(f"<li>{icon('i-check')}<span>{e(b)}</span></li>" for b in f["benefits"])
         related = [g for g in C.FEATURES if g["group"] == f["group"] and g["slug"] != f["slug"]][:3]
+        crumbs = [("Home", "index.html"), ("Features", "features.html"), (f["title"], None)]
         page = f'''<section class="page-hero">
   <div class="container detail-hero">
     <div>
-      {breadcrumb([("Home", "index.html"), ("Features", "features.html"), (f["title"], None)])}
+      {breadcrumb(crumbs)}
       <span class="pill">{e(GROUP_TITLE[f["group"]])}</span>
       <h1><span class="hero-ico"><svg><use href="#{f["icon"]}"/></svg></span>{e(f["title"])}</h1>
       <p class="lead">{e(f["intro"])}</p>
@@ -162,18 +215,20 @@ def build_feature_pages():
     </aside>
   </div>
 </section>
-<section class="section">
+{overview_section(f["title"], seo["overview"], seo["keywords"])}
+<section class="section alt">
   <div class="container">
     <div class="section-head"><span class="eyebrow">{e("Key capabilities")}</span><h2>{e(f["desc"])}</h2></div>
     <div class="caps">{caps}</div>
   </div>
 </section>
-<section class="section alt">
+<section class="section">
   <div class="container">
     <div class="section-head"><span class="eyebrow">{e("How it works")}</span><h2>{e(f["title"])}</h2></div>
     <ol class="steps three">{steps}</ol>
   </div>
 </section>
+{faq_section(seo["faqs"], alt=True)}
 <section class="section">
   <div class="container">
     <div class="connect-strip">
@@ -186,10 +241,14 @@ def build_feature_pages():
     </div>
   </div>
 </section>'''
-        OUTPUT[f"feature-{f['slug']}.html"] = (dict(
-            title=f"{tr(f['title'])} — TravelSuite ERP", description=tr(f["intro"]), nav="products"), page)
-        # translate the generated <title>
-        PAIRS.setdefault(f"{tr(f['title'])} — TravelSuite ERP", None)
+        title = f"{tr(f['title'])} — TravelSuite ERP"
+        PAIRS.setdefault(title, None)
+        head = jsonld(breadcrumb_ld(crumbs_for_ld(crumbs, name))) + jsonld(faq_ld(seo["faqs"])) + jsonld({
+            "@context": "https://schema.org", "@type": "SoftwareApplication", "name": f"TravelSuite ERP — {tr(f['title'])}",
+            "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": tr(f["intro"]),
+            "offers": {"@type": "Offer", "url": SITE + "pricing.html"}})
+        OUTPUT[name] = (dict(title=title, description=tr(seo["overview"][0])[:300], nav="products",
+                             keywords=seo["keywords"], head=head), page)
 
 
 # ---------------------------------------------------------------------------
@@ -214,25 +273,28 @@ def build_solutions():
 </section>
 <section class="section">
   <div class="container"><div class="solution-grid">{"".join(solution_card(s) for s in C.SOLUTIONS)}</div></div>
-</section>'''
+</section>
+{{{{> markets}}}}'''
     OUTPUT["solutions.html"] = (dict(
         title="Solutions — TravelSuite ERP",
         description="TravelSuite ERP solutions for travel agencies, Hajj & Umrah operators, B2B consolidators, tour operators, online travel agencies and corporate travel desks.",
-        nav="solutions"), page)
-    tr(T_("Solutions — TravelSuite ERP", "সলিউশন — TravelSuite ERP"))
+        nav="solutions", head=jsonld(breadcrumb_ld([("Home", ""), ("Solutions", "solutions.html")]))), page)
     tr(T_("TravelSuite ERP solutions for travel agencies, Hajj & Umrah operators, B2B consolidators, tour operators, online travel agencies and corporate travel desks.",
           "ট্রাভেল এজেন্সি, হজ ও উমরাহ অপারেটর, B2B কনসোলিডেটর, ট্যুর অপারেটর, অনলাইন ট্রাভেল এজেন্সি ও কর্পোরেট ট্রাভেল ডেস্কের জন্য TravelSuite ERP সলিউশন।"))
 
     for s in C.SOLUTIONS:
+        seo = S.SOLUTION_SEO[s["slug"]]
+        name = f"solution-{s['slug']}.html"
         challenges = "".join(f'<div class="challenge">{icon("i-x")}<span>{e(c)}</span></div>' for c in s["challenges"])
         helps = "".join(f'<div class="help">{icon("i-check")}<span>{e(h)}</span></div>' for h in s["helps"])
         modules = "".join(feature_card(FEATURES[m]) for m in s["modules"])
         others = "".join(f'<a href="solution-{o["slug"]}.html">{icon(o["icon"])}{e(o["title"])}</a>'
                          for o in C.SOLUTIONS if o["slug"] != s["slug"])
+        crumbs = [("Home", "index.html"), ("Solutions", "solutions.html"), (s["title"], None)]
         page = f'''<section class="page-hero">
   <div class="container detail-hero">
     <div>
-      {breadcrumb([("Home", "index.html"), ("Solutions", "solutions.html"), (s["title"], None)])}
+      {breadcrumb(crumbs)}
       <span class="pill">{e(s["title"])}</span>
       <h1>{e(s["headline"])}</h1>
       <p class="lead">{e(s["intro"])}</p>
@@ -247,6 +309,7 @@ def build_solutions():
     </aside>
   </div>
 </section>
+{overview_section(s["title"], seo["overview"], seo["keywords"])}
 <section class="section alt">
   <div class="container">
     <div class="section-head"><span class="eyebrow">{e("Common challenges")}</span><h2>{e("What slows these businesses down")}</h2></div>
@@ -263,24 +326,160 @@ def build_solutions():
   <div class="container">
     <div class="related-head"><h2>{e("Recommended modules")}</h2><a href="features.html" class="link-arrow">{e("All features")} {icon("i-arrow")}</a></div>
     <div class="link-cards">{modules}</div>
+  </div>
+</section>
+{faq_section(seo["faqs"])}
+<section class="section alt">
+  <div class="container">
     <div class="other-solutions"><h3>{e("Other solutions")}</h3><div class="chips-row">{others}</div></div>
   </div>
 </section>'''
         title = f"{tr(s['title'])} — TravelSuite ERP"
-        OUTPUT[f"solution-{s['slug']}.html"] = (dict(title=title, description=tr(s["intro"]), nav="solutions"), page)
         PAIRS.setdefault(title, None)
+        head = jsonld(breadcrumb_ld(crumbs_for_ld(crumbs, name))) + jsonld(faq_ld(seo["faqs"]))
+        OUTPUT[name] = (dict(title=title, description=tr(seo["overview"][0])[:300], nav="solutions",
+                             keywords=seo["keywords"], head=head), page)
 
 
-def T_(en, bn):
-    return (en, bn)
+# ---------------------------------------------------------------------------
+# Success stories
+# ---------------------------------------------------------------------------
+def success_card(st):
+    chips = "".join(f"<span>{e(c)}</span>" for c in st["chips"])
+    return f'''<article class="success-card">
+  <a class="site-shot" href="success-{st["slug"]}.html" tabindex="-1" aria-hidden="true">
+    <span class="sm-bar"><i></i><i></i><i></i><span>{st["url"]}</span></span>
+    <img src="assets/img/success/{st["shot"]}.jpg" alt="" loading="lazy" width="960" height="600">
+  </a>
+  <div class="success-body">
+    <h3><a href="success-{st["slug"]}.html">{e(st["type"])}</a></h3>
+    <p class="loc"><svg class="ic"><use href="#i-pin"/></svg>{e(st["location"])}</p>
+    <div class="mini-chips">{chips}</div>
+    <p class="metric"><svg class="ic"><use href="#i-trend"/></svg>{e(st["metric"])}</p>
+    <a href="success-{st["slug"]}.html" class="link-arrow">{e("Read the story")} {icon("i-arrow")}</a>
+  </div>
+</article>'''
+
+
+def build_success():
+    GENERATED["success-grid"] = "".join(success_card(st) for st in M.SUCCESS)
+    page = f'''<section class="page-hero">
+  <div class="container">
+    {breadcrumb([("Home", "index.html"), ("Success stories", None)])}
+    <h1>{e("Success stories")}</h1>
+    <p class="lead">{e("Real results from travel businesses using TravelSuite ERP across Bangladesh, Malaysia and the GCC.")}</p>
+  </div>
+</section>
+<section class="section"><div class="container"><div class="success-grid">{{{{> success-grid}}}}</div></div></section>'''
+    OUTPUT["success-stories.html"] = (dict(title="Success stories — TravelSuite ERP",
+                                           description=tr(M.UI_MORE[8]), nav="company",
+                                           head=jsonld(breadcrumb_ld([("Home", ""), ("Success stories", "success-stories.html")]))), page)
+
+    stars = "".join('<svg><use href="#i-star"/></svg>' for _ in range(5))
+    for st in M.SUCCESS:
+        name = f"success-{st['slug']}.html"
+        crumbs = [("Home", "index.html"), ("Success stories", "success-stories.html"), (st["type"], None)]
+        results = "".join(f'<div class="result-card"><strong>{e(v)}</strong><span>{e(lbl)}</span></div>' for v, lbl in st["results"])
+        sol = "".join(f'<li>{icon("i-check")}<span>{e(x)}</span></li>' for x in st["solution"])
+        mods = "".join(feature_card(FEATURES[m]) for m in st["modules"])
+        others = "".join(success_card(o) for o in M.SUCCESS if o["slug"] != st["slug"])
+        page = f'''<section class="page-hero">
+  <div class="container">
+    {breadcrumb(crumbs)}
+    <span class="pill">{e("Success story")}</span>
+    <h1 class="story-title">{e(st["headline"])}</h1>
+    <p class="lead">{e(st["intro"])}</p>
+    <dl class="story-facts">
+      <div><dt>{e("Business type")}</dt><dd>{e(st["type"])}</dd></div>
+      <div><dt>{e("Location")}</dt><dd>{e(st["location"])}</dd></div>
+      <div><dt>{e("Time to go live")}</dt><dd>{e(st["golive"])}</dd></div>
+      <div><dt>{e("Website")}</dt><dd>{st["url"]}</dd></div>
+    </dl>
+  </div>
+</section>
+<section class="section story-shot-wrap">
+  <div class="container">
+    <figure class="story-shot">
+      <div class="sm-bar"><i></i><i></i><i></i><span>{st["url"]}</span></div>
+      <img src="assets/img/success/{st["shot"]}.jpg" alt="" width="960" height="600">
+    </figure>
+    <div class="story-results">{results}</div>
+  </div>
+</section>
+<section class="section">
+  <div class="container story-grid">
+    <div class="story-block">
+      <span class="eyebrow">{e("The challenge")}</span>
+      <p class="prose-lg">{e(st["challenge"])}</p>
+    </div>
+    <div class="story-block">
+      <span class="eyebrow">{e("The solution")}</span>
+      <ul class="story-list">{sol}</ul>
+    </div>
+  </div>
+  <div class="container narrow">
+    <figure class="t-card t-featured story-quote">
+      <div class="stars" aria-label="{a("5 out of 5")}">{stars}</div>
+      <blockquote>{e(st["quote"])}</blockquote>
+      <figcaption><span class="avatar">{"".join(w[0] for w in tr(st["person"]).split()[:2])}</span><span><b>{e(st["person"])}</b><small><span>{e(st["type"])}</span>, <span>{e(st["location"])}</span></small></span></figcaption>
+    </figure>
+  </div>
+</section>
+<section class="section alt">
+  <div class="container">
+    <div class="related-head"><h2>{e("Modules used")}</h2><a href="features.html" class="link-arrow">{e("All features")} {icon("i-arrow")}</a></div>
+    <div class="link-cards">{mods}</div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="related-head"><h2>{e("More success stories")}</h2><a href="success-stories.html" class="link-arrow">{e("All success stories")} {icon("i-arrow")}</a></div>
+    <div class="success-grid">{others}</div>
+  </div>
+</section>'''
+        title = f"{tr(st['headline'])} — TravelSuite ERP"
+        PAIRS[title] = f"{st['headline'][1]} — TravelSuite ERP"
+        head = jsonld(breadcrumb_ld(crumbs_for_ld(crumbs, name)))
+        OUTPUT[name] = (dict(title=title, description=tr(st["intro"]), nav="company", head=head,
+                             image=f"assets/img/success/{st['shot']}.jpg"), page)
 
 
 # ---------------------------------------------------------------------------
 # Blog
 # ---------------------------------------------------------------------------
+def post_card(p, featured=False):
+    cls = "post-card featured-post" if featured else "post-card"
+    chip = f'<span class="feat-chip">{e("Featured article")}</span>' if featured else ""
+    return f'''<article class="{cls}" data-cat="{html.escape(p["cat"])}">
+  <a href="blog-{p["slug"]}.html" class="post-cover" style="--c:{p["color"]}" tabindex="-1" aria-hidden="true">
+    <svg><use href="#{p["icon"]}"/></svg><span class="cover-chip">{e(p["cat"])}</span>
+  </a>
+  <div class="post-body">
+    {chip}
+    <p class="post-meta"><span>{e(p["date"])}</span><span class="dotsep"></span><span>{p["read"]}</span> <span>{e("min read")}</span></p>
+    <h3><a href="blog-{p["slug"]}.html">{e(p["title"])}</a></h3>
+    <p>{e(p["excerpt"])}</p>
+    <a href="blog-{p["slug"]}.html" class="link-arrow">{e("Read article")} {icon("i-arrow")}</a>
+  </div>
+</article>'''
+
+
+ISO_DATES = {"digitize-hajj-umrah-agency": "2026-10-02", "b2b-agent-credit-limits": "2026-09-24",
+             "double-entry-accounting-travel": "2026-09-15", "whatsapp-for-travel-agencies": "2026-09-05",
+             "ai-trip-planners": "2026-08-27", "choosing-a-travel-erp": "2026-08-18"}
+
+
+def slugify(text):
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
 def build_blog():
-    chips = f'<button class="active" data-filter="all" aria-pressed="true">{e("All")}</button>' + "".join(
-        f'<button data-filter="{html.escape(tr(c))}" aria-pressed="false">{e(c)}</button>' for c in C.BLOG_CATEGORIES)
+    counts = {}
+    for p in C.POSTS:
+        counts[p["cat"]] = counts.get(p["cat"], 0) + 1
+    chips = f'<button class="active" data-filter="all" aria-pressed="true">{e("All")} <em>{len(C.POSTS)}</em></button>' + "".join(
+        f'<button data-filter="{html.escape(tr(c))}" aria-pressed="false">{e(c)} <em>{counts.get(tr(c), 0)}</em></button>'
+        for c in C.BLOG_CATEGORIES)
     page = f'''<section class="page-hero">
   <div class="container">
     {breadcrumb([("Home", "index.html"), ("Blog", None)])}
@@ -290,13 +489,14 @@ def build_blog():
 </section>
 <section class="section">
   <div class="container">
-    <div class="blog-filter" role="group" aria-label="{e("Filter articles by category")}">{chips}</div>
-    <div class="post-grid" id="postGrid">{"".join(post_card(p) for p in C.POSTS)}</div>
+    {post_card(C.POSTS[0], featured=True)}
+    <div class="blog-filter" role="group" aria-label="{a("Filter articles by category")}">{chips}</div>
+    <div class="post-grid" id="postGrid">{"".join(post_card(p) for p in C.POSTS[1:])}</div>
   </div>
 </section>'''
     OUTPUT["blog.html"] = (dict(title="Blog — TravelSuite ERP",
                                 description="Guides, ideas and news for travel agencies running their business online.",
-                                nav="company"), page)
+                                nav="company", head=jsonld(breadcrumb_ld([("Home", ""), ("Blog", "blog.html")]))), page)
     tr(T_("Blog — TravelSuite ERP", "ব্লগ — TravelSuite ERP"))
 
     GENERATED["blog-latest"] = f'''<section class="section alt" id="blog">
@@ -309,43 +509,74 @@ def build_blog():
   </div>
 </section>'''
 
-    for i, p in enumerate(C.POSTS):
-        parts = []
-        for kind, value in p["body"]:
+    for p in C.POSTS:
+        extra = M.BLOG_EXTRA.get(p["slug"], {})
+        body = list(p["body"])
+        # keep the closing paragraph last when extra sections are added
+        closing = [body.pop()] if body and body[-1][0] == "p" and len(body) > 3 else []
+        body += extra.get("blocks", []) + closing
+        parts, toc = [], []
+        for kind, value in body:
             if kind == "h2":
-                parts.append(f"<h2>{e(value)}</h2>")
+                hid = slugify(tr(value))
+                toc.append(f'<a href="#{hid}">{e(value)}</a>')
+                parts.append(f'<h2 id="{hid}">{e(value)}</h2>')
             elif kind == "p":
                 parts.append(f"<p>{e(value)}</p>")
             elif kind == "ul":
                 parts.append("<ul>" + "".join(f"<li>{e(v)}</li>" for v in value) + "</ul>")
+        faqs = extra.get("faqs", [])
+        if faqs:
+            toc.append(f'<a href="#post-faq">{e("Frequently asked questions")}</a>')
+            parts.append(f'<h2 id="post-faq">{e("Frequently asked questions")}</h2><div class="faq">' + "".join(
+                f"<details><summary>{e(q)}</summary><p>{e(ans)}</p></details>" for q, ans in faqs) + "</div>")
+        takeaways = "".join(f"<li>{e(t)}</li>" for t in extra.get("takeaways", []))
         related = [q for q in C.POSTS if q["slug"] != p["slug"] and q["cat"] == p["cat"]]
         related += [q for q in C.POSTS if q["slug"] != p["slug"] and q not in related]
-        url = f"https://travelsuiteerp.com/blog-{p['slug']}.html"
+        name = f"blog-{p['slug']}.html"
+        url = SITE + name
         title = tr(p["title"])
-        share = (f'<a class="share wa" data-share="wa" href="https://wa.me/?text={html.escape(title)}%20{url}" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>'
-                 f'<a class="share fb" data-share="fb" href="https://www.facebook.com/sharer/sharer.php?u={url}" target="_blank" rel="noopener" aria-label="Facebook">f</a>'
-                 f'<a class="share in" data-share="in" href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>')
-        page = f'''<section class="page-hero post-hero">
+        share = (f'<a class="share wa" href="https://wa.me/?text={quote(title + " " + url)}" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>'
+                 f'<a class="share fb" href="https://www.facebook.com/sharer/sharer.php?u={quote(url)}" target="_blank" rel="noopener" aria-label="Facebook">f</a>'
+                 f'<a class="share in" href="https://www.linkedin.com/sharing/share-offsite/?url={quote(url)}" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>')
+        crumbs = [("Home", "index.html"), ("Blog", "blog.html"), (p["cat"], None)]
+        words = sum(len(tr(v).split()) if k != "ul" else sum(len(tr(x).split()) for x in v) for k, v in body)
+        page = f'''<div class="read-progress" aria-hidden="true"><span id="readBar"></span></div>
+<section class="page-hero post-hero">
   <div class="container narrow">
-    {breadcrumb([("Home", "index.html"), ("Blog", "blog.html"), (p["cat"], None)])}
+    {breadcrumb(crumbs)}
     <span class="pill">{e(p["cat"])}</span>
     <h1>{e(p["title"])}</h1>
     <p class="post-meta light"><span>{e("TravelSuite Team")}</span><span class="dotsep"></span><span>{e(p["date"])}</span><span class="dotsep"></span><span>{p["read"]}</span> <span>{e("min read")}</span></p>
   </div>
 </section>
 <section class="section post-section">
-  <div class="container narrow">
-    <div class="post-cover big" style="--c:{p["color"]}" aria-hidden="true"><svg><use href="#{p["icon"]}"/></svg></div>
-    <article class="article">
-      <p class="article-lead">{e(p["excerpt"])}</p>
-      {"".join(parts)}
-    </article>
-    <div class="share-row"><span>{e("Share this article")}</span>{share}</div>
-    <div class="article-cta">
-      <div><h3>{e("Want to see this in your agency?")}</h3><p>{e("Book a free 30-minute walkthrough with our team.")}</p></div>
-      <a href="contact.html" class="btn btn-lime">{e("Request a demo")} {icon("i-arrow")}</a>
+  <div class="container post-layout">
+    <aside class="post-toc" aria-label="{a("Table of contents")}">
+      <div class="toc-inner">
+        <p class="fnav-group">{e("Table of contents")}</p>
+        <nav id="tocNav">{"".join(toc)}</nav>
+        <div class="toc-share"><span>{e("Share this article")}</span><div>{share}</div></div>
+      </div>
+    </aside>
+    <div class="post-main">
+      <div class="post-cover big" style="--c:{p["color"]}" aria-hidden="true"><svg><use href="#{p["icon"]}"/></svg></div>
+      <article class="article" id="article">
+        <p class="article-lead">{e(p["excerpt"])}</p>
+        {f'<div class="takeaways"><h2 class="tk-title">{e("Key takeaways")}</h2><ul>{takeaways}</ul></div>' if takeaways else ""}
+        {"".join(parts)}
+      </article>
+      <div class="author-box">
+        <img src="assets/img/favicon.png" alt="" width="56" height="56">
+        <div><small>{e("About the author")}</small><b>{e("TravelSuite Team")}</b><p>{e("The TravelSuite team builds travel booking and ERP software for agencies in Bangladesh, Malaysia, the GCC and the USA.")}</p></div>
+      </div>
+      <div class="share-row"><span>{e("Share this article")}</span>{share}</div>
+      <div class="article-cta">
+        <div><h3>{e("Want to see this in your agency?")}</h3><p>{e("Book a free 30-minute walkthrough with our team.")}</p></div>
+        <a href="contact.html" class="btn btn-lime">{e("Request a demo")} {icon("i-arrow")}</a>
+      </div>
+      <a href="blog.html" class="link-arrow back">{icon("i-left")} {e("Back to blog")}</a>
     </div>
-    <a href="blog.html" class="link-arrow back">{icon("i-left")} {e("Back to blog")}</a>
   </div>
 </section>
 <section class="section alt">
@@ -355,9 +586,15 @@ def build_blog():
   </div>
 </section>'''
         page_title = f"{title} — TravelSuite ERP"
-        if isinstance(p["title"], tuple):
-            PAIRS[page_title] = f"{p['title'][1]} — TravelSuite ERP"
-        OUTPUT[f"blog-{p['slug']}.html"] = (dict(title=page_title, description=tr(p["excerpt"]), nav="company"), page)
+        PAIRS[page_title] = f"{p['title'][1]} — TravelSuite ERP"
+        ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": title, "description": tr(p["excerpt"]),
+              "datePublished": ISO_DATES.get(p["slug"], ""), "wordCount": words, "articleSection": p["cat"],
+              "author": {"@type": "Organization", "name": "TravelSuite ERP"},
+              "publisher": {"@type": "Organization", "name": "TravelSuite ERP", "logo": {"@type": "ImageObject", "url": SITE + "assets/img/logo.png"}},
+              "mainEntityOfPage": url}
+        head = jsonld(ld) + jsonld(breadcrumb_ld(crumbs_for_ld(crumbs, name))) + (jsonld(faq_ld(faqs)) if faqs else "")
+        head += '\n  <meta property="og:type" content="article">'
+        OUTPUT[name] = (dict(title=page_title, description=tr(p["excerpt"]), nav="company", head=head), page)
 
 
 # ---------------------------------------------------------------------------
@@ -383,7 +620,7 @@ def build_legal():
 </section>
 <section class="section">
   <div class="container legal-grid">
-    <aside class="legal-toc" aria-label="{e("On this page")}"><p class="fnav-group">{e("On this page")}</p>{"".join(toc)}</aside>
+    <aside class="legal-toc" aria-label="{a("On this page")}"><p class="fnav-group">{e("On this page")}</p>{"".join(toc)}</aside>
     <div class="legal-body">
       {"".join(body)}
       <div class="legal-contact">
@@ -397,6 +634,39 @@ def build_legal():
         page_title = f"{title} — TravelSuite ERP"
         PAIRS[page_title] = f"{doc['title'][1]} — TravelSuite ERP"
         OUTPUT[f"{doc['slug']}.html"] = (dict(title=page_title, description=tr(doc["intro"]), nav=""), page)
+
+
+# ---------------------------------------------------------------------------
+# Markets, footer pieces
+# ---------------------------------------------------------------------------
+def build_shared_partials():
+    flags = "".join(
+        f'<li class="market{" has-office" if c["office"] else ""}"><img src="assets/img/flags/{c["code"]}.svg" alt="" width="36" height="27">'
+        f'<span><b>{e(c["name"])}</b><small>{e(c["region"])}</small></span>'
+        + (f'<em class="office-badge">{icon("i-building")}{e("Office")}</em>' if c["office"] else "") + "</li>"
+        for c in M.COUNTRIES)
+    GENERATED["markets"] = f'''<section class="section markets-wrap" id="markets">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">{e("Where we work")}</span><h2>{e("Serving travel businesses across the GCC, Southeast Asia and beyond")}</h2><p>{e("Local teams in the USA, Malaysia and Bangladesh support agencies in every market we serve.")}</p></div>
+    <ul class="markets">{flags}</ul>
+  </div>
+</section>'''
+    GENERATED["footer-flags"] = "".join(
+        f'<li><img src="assets/img/flags/{c["code"]}.svg" alt="" width="24" height="18"><span>{e(c["name"])}</span>'
+        + (f'<em>{e("Office")}</em>' if c["office"] else "") + "</li>" for c in M.COUNTRIES)
+    GENERATED["footer-offices"] = "".join(
+        f'<li><img src="assets/img/flags/{c["code"]}.svg" alt="" width="28" height="21"><span>{e(c["name"])}</span></li>'
+        for c in M.COUNTRIES if c["office"])
+    q = quote(M.AI_PROMPT)
+    GENERATED["footer-ai"] = "".join(
+        f'<a class="ai-btn" href="{url}{q}" target="_blank" rel="noopener"><img src="assets/img/partners/{logo}.svg" alt="" width="18" height="18">{name}</a>'
+        for name, logo, url in M.AI_LINKS)
+    GENERATED["footer-social"] = "".join(
+        f'<a href="{url}" target="_blank" rel="noopener" aria-label="{name}"><img src="assets/img/partners/{logo}.svg" alt="" width="18" height="18"></a>'
+        for name, logo, url in M.SOCIAL)
+    GENERATED["footer-pay"] = "".join(
+        f'<span class="pay-badge" title="{name}"><img src="assets/img/partners/{logo}.svg" alt="{name}" width="26" height="18"></span>'
+        for name, logo in M.PAYMENTS)
 
 
 # ---------------------------------------------------------------------------
@@ -414,9 +684,26 @@ def include(text, depth=0):
     return INCLUDE.sub(sub, text)
 
 
+ORG_LD = jsonld({"@context": "https://schema.org", "@type": "Organization", "name": "TravelSuite ERP", "url": SITE,
+                 "logo": SITE + "assets/img/logo.png",
+                 "sameAs": [url for _, _, url in M.SOCIAL if "wa.me" not in url],
+                 "contactPoint": {"@type": "ContactPoint", "telephone": "+8801325277120", "contactType": "sales",
+                                  "areaServed": ["BD", "MY", "SA", "AE", "QA", "KW", "OM", "BH", "US"],
+                                  "availableLanguage": ["English", "Bengali"]},
+                 "address": [{"@type": "PostalAddress", "addressCountry": c} for c in ("US", "MY", "BD")]})
+
+
 def render(name, meta, body, layout):
     page = layout.replace("{{body}}", body)
     page = include(page)
+    canonical = SITE + ("" if name == "index.html" else name)
+    head = f'<link rel="canonical" href="{canonical}">\n  <meta property="og:url" content="{canonical}">'
+    if meta.get("keywords"):
+        head += f'\n  <meta name="keywords" content="{html.escape(meta["keywords"], quote=True)}">'
+    head += "\n  " + ORG_LD if name == "index.html" else ""
+    head += "\n  " + meta.get("head", "")
+    page = page.replace("{{head}}", head)
+    page = page.replace("{{image}}", meta.get("image", "assets/img/logo.png"))
     page = page.replace("{{title}}", html.escape(meta.get("title", ""), quote=True))
     page = page.replace("{{description}}", html.escape(meta.get("description", ""), quote=True))
     nav = meta.get("nav", "")
@@ -439,6 +726,16 @@ def load_hand_pages():
         OUTPUT[page.name] = (meta, raw[match.end():])
 
 
+def write_sitemap():
+    order = ["index.html", "features.html", "solutions.html", "pricing.html", "success-stories.html", "blog.html", "about.html", "contact.html"]
+    names = order + sorted(n for n in OUTPUT if n not in order)
+    urls = "".join(f"  <url><loc>{SITE}{'' if n == 'index.html' else n}</loc><changefreq>{'weekly' if n.startswith('blog') or n == 'index.html' else 'monthly'}</changefreq></url>\n"
+                   for n in names)
+    (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+                                      + urls + "</urlset>\n", encoding="utf-8")
+    (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /src/\nDisallow: /tools/\n\nSitemap: {SITE}sitemap.xml\n", encoding="utf-8")
+
+
 def write_translations():
     hand = hand_dictionary()
     for key, value in list(PAIRS.items()):
@@ -449,7 +746,7 @@ def write_translations():
             if bn:
                 PAIRS[key] = f"{bn} — TravelSuite ERP"
     data = {k: v for k, v in PAIRS.items() if v}
-    js = ("/* Generated by build.py from src/content.py. Do not edit by hand. */\n"
+    js = ("/* Generated by build.py from src/content*.py. Do not edit by hand. */\n"
           "window.TS_DICT_EXTRA = { bn: " + json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True) + " };\n")
     (ROOT / "assets/js/i18n-data.js").write_text(js, encoding="utf-8")
     return data
@@ -460,8 +757,9 @@ def write_translations():
 # ---------------------------------------------------------------------------
 BRANDS = set("""Amadeus Sabre Travelport Duffel Kiwi.com Hotelbeds Expedia Hotels.com WebBeds TBO Tripadvisor GetYourGuide
 SSLCommerz Mastercard Stripe PayPal Razorpay WhatsApp Messenger Instagram Mailgun OpenAI QuickBooks Xero English
-travelsuiteerp.com EN in f""".split()) | {"Twilio SMS", "Google Analytics", "Google Maps", "WhatsApp, Messenger, Instagram",
-                                          "WhatsApp + Facebook + Instagram", "+ Messenger, Instagram", "LinkedIn", "Facebook"}
+travelsuiteerp.com EN in f ChatGPT Claude Perplexity Topics""".split()) | {
+    "Twilio SMS", "Google Analytics", "Google Maps", "WhatsApp, Messenger, Instagram", "WhatsApp + Facebook + Instagram",
+    "+ Messenger, Instagram", "LinkedIn", "Facebook", "YouTube", "Google AI", "Apple Pay", "Google Pay", "American Express"}
 
 
 def hand_dictionary():
@@ -474,24 +772,35 @@ def hand_dictionary():
 
 
 class TextCollector(HTMLParser):
+    SKIP = ("script", "style", "svg", "title")
+
     def __init__(self):
         super().__init__()
         self.skip = 0
+        self.no_i18n = 0
+        self.stack = []
         self.found = []
 
     def handle_starttag(self, tag, attrs):
-        if tag in ("script", "style", "svg", "title"):
+        attrs = dict(attrs)
+        if tag in self.SKIP:
             self.skip += 1
-        for k, v in attrs:
-            if k in ("placeholder", "aria-label", "title") and v:
-                self.found.append(v)
+        if "data-no-i18n" in attrs:
+            self.no_i18n += 1
+            self.stack.append(tag)
+        for k in ("placeholder", "aria-label", "title"):
+            if attrs.get(k):
+                self.found.append(attrs[k])
 
     def handle_endtag(self, tag):
-        if tag in ("script", "style", "svg", "title"):
+        if tag in self.SKIP:
             self.skip -= 1
+        if self.stack and tag == self.stack[-1]:
+            self.stack.pop()
+            self.no_i18n -= 1
 
     def handle_data(self, data):
-        if not self.skip:
+        if not self.skip and not self.no_i18n:
             self.found.append(data)
 
 
@@ -520,16 +829,19 @@ def check_translations(extra):
 
 def build():
     layout = (PARTIALS / "layout.html").read_text(encoding="utf-8")
+    build_shared_partials()
     build_features_overview()
     build_feature_pages()
     build_solutions()
+    build_success()
     build_blog()
     build_legal()
     load_hand_pages()
     for name, (meta, body) in OUTPUT.items():
         render(name, meta, body, layout)
+    write_sitemap()
     extra = write_translations()
-    print(f"built {len(OUTPUT)} pages, {len(extra)} generated translations")
+    print(f"built {len(OUTPUT)} pages, {len(extra)} generated translations, sitemap.xml and robots.txt")
     check_translations(extra)
 
 

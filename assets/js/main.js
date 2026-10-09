@@ -2,6 +2,31 @@
   'use strict';
 
   var t = window.tsI18n ? window.tsI18n.t : function (s) { return s; };
+
+  // ---------- Scroll position on navigation ----------
+  // A new page always opens at the top; links with #section scroll below the sticky header.
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  function headerOffset() {
+    var h = document.querySelector('.header');
+    return (h ? h.offsetHeight : 0) + 12;
+  }
+  function scrollToHash(hash, smooth) {
+    var target = hash && hash.length > 1 && document.getElementById(decodeURIComponent(hash.slice(1)));
+    if (!target) return false;
+    var y = target.getBoundingClientRect().top + window.pageYOffset - headerOffset();
+    window.scrollTo({ top: Math.max(0, y), behavior: smooth ? 'smooth' : 'auto' });
+    return true;
+  }
+  window.addEventListener('load', function () {
+    if (!scrollToHash(location.hash, false)) window.scrollTo(0, 0);
+  });
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+    var hash = link.getAttribute('href');
+    if (hash === '#top') { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+    if (scrollToHash(hash, true)) { e.preventDefault(); history.replaceState(null, '', hash); }
+  });
   var mobileQuery = window.matchMedia('(max-width: 960px)');
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -292,6 +317,25 @@
       msg.className = 'form-msg ok';
       form.reset();
     });
+  }
+
+  // ---------- Blog article: reading progress and table-of-contents highlight ----------
+  var article = document.getElementById('article');
+  if (article) {
+    var bar = document.getElementById('readBar');
+    var tocLinks = document.querySelectorAll('#tocNav a');
+    var headings = Array.prototype.map.call(tocLinks, function (l) { return document.getElementById(l.getAttribute('href').slice(1)); });
+    var onRead = function () {
+      var r = article.getBoundingClientRect();
+      var total = r.height - window.innerHeight * 0.6;
+      var pct = Math.min(100, Math.max(0, (-r.top + headerOffset()) / Math.max(total, 1) * 100));
+      if (bar) bar.style.width = pct + '%';
+      var current = 0;
+      headings.forEach(function (h, i) { if (h && h.getBoundingClientRect().top < headerOffset() + 80) current = i; });
+      tocLinks.forEach(function (l, i) { l.classList.toggle('active', i === current); });
+    };
+    window.addEventListener('scroll', onRead, { passive: true });
+    onRead();
   }
 
   // ---------- Footer newsletter: client-side only (connect to your email tool) ----------

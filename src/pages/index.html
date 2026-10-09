@@ -240,7 +240,7 @@ nav: home
       <div class="feature"><span class="f-ico"><svg><use href="#i-palette"/></svg></span><h4>White-label branding</h4><p>Your logo, colours, domain and email templates.</p></div>
       <div class="feature"><span class="f-ico"><svg><use href="#i-lang"/></svg></span><h4>Multi-language</h4><p>English, বাংলা, العربية and any language you add.</p></div>
       <div class="feature"><span class="f-ico"><svg><use href="#i-coins"/></svg></span><h4>Multi-currency</h4><p>BDT, USD, SAR, AED and more with exchange rates.</p></div>
-      <div class="feature"><span class="f-ico"><svg><use href="#i-card"/></svg></span><h4>Online payments</h4><p>bKash, Nagad, SSLCommerz, cards and bank transfer.</p></div>
+      <div class="feature"><span class="f-ico"><svg><use href="#i-card"/></svg></span><h4>Online payments</h4><p>Visa, Mastercard, PayPal, Stripe, Apple Pay and more.</p></div>
       <div class="feature"><span class="f-ico"><svg><use href="#i-percent"/></svg></span><h4>Markup & discounts</h4><p>Rules by service, supplier, agent group or date.</p></div>
       <div class="feature"><span class="f-ico"><svg><use href="#i-lock"/></svg></span><h4>Roles & permissions</h4><p>Control what each staff member and branch sees.</p></div>
       <div class="feature"><span class="f-ico"><svg><use href="#i-search"/></svg></span><h4>CMS & SEO</h4><p>Landing pages, offers, blog posts and meta tags.</p></div>
@@ -285,14 +285,16 @@ nav: home
       <div class="int-group">
         <h4><svg class="ic"><use href="#i-card"/></svg>Payments</h4>
         <div class="logos">
-          <span class="logo-tile"><span class="mono" style="--c:#e2136e">b</span>bKash</span>
-          <span class="logo-tile"><span class="mono" style="--c:#f6921e">N</span>Nagad</span>
-          <span class="logo-tile"><span class="mono" style="--c:#2a3a8c">S</span>SSLCommerz</span>
           <span class="logo-tile"><img src="assets/img/partners/visa.svg" alt="" width="22" height="22">Visa</span>
           <span class="logo-tile"><img src="assets/img/partners/mastercard.svg" alt="" width="22" height="22">Mastercard</span>
-          <span class="logo-tile"><img src="assets/img/partners/stripe.svg" alt="" width="22" height="22">Stripe</span>
+          <span class="logo-tile"><img src="assets/img/partners/americanexpress.svg" alt="" width="22" height="22">American Express</span>
           <span class="logo-tile"><img src="assets/img/partners/paypal.svg" alt="" width="22" height="22">PayPal</span>
+          <span class="logo-tile"><img src="assets/img/partners/stripe.svg" alt="" width="22" height="22">Stripe</span>
+          <span class="logo-tile"><img src="assets/img/partners/applepay.svg" alt="" width="22" height="22">Apple Pay</span>
+          <span class="logo-tile"><img src="assets/img/partners/googlepay.svg" alt="" width="22" height="22">Google Pay</span>
           <span class="logo-tile"><img src="assets/img/partners/razorpay.svg" alt="" width="22" height="22">Razorpay</span>
+          <span class="logo-tile"><span class="mono" style="--c:#e2136e">b</span>bKash</span>
+          <span class="logo-tile"><span class="mono" style="--c:#2a3a8c">S</span>SSLCommerz</span>
         </div>
       </div>
       <div class="int-group">
@@ -319,6 +321,8 @@ nav: home
   </div>
 </section>
 
+{{> markets}}
+
 <!-- Success stories -->
 <section class="section alt" id="success">
   <div class="container">
@@ -328,79 +332,9 @@ nav: home
       <p>From Hajj & Umrah operators to B2B consolidators, here is how agencies use the platform.</p>
     </div>
     <div class="success-grid">
-        <article class="success-card">
-          <div class="site-shot">
-            <div class="sm-bar"><i></i><i></i><i></i><span>umrah-portal</span></div>
-            <img src="assets/img/success/umrah.jpg" alt="" loading="lazy" width="960" height="600">
-          </div>
-          <div class="success-body">
-            <h3>Hajj & Umrah operator</h3>
-            <p class="loc"><svg class="ic"><use href="#i-pin"/></svg>Dhaka, Bangladesh</p>
-            <div class="mini-chips"><span>Hajj & Umrah</span><span>Visa</span><span>Finance</span></div>
-            <p class="metric"><svg class="ic"><use href="#i-trend"/></svg>2,400+ pilgrims managed in one season</p>
-          </div>
-        </article>
-        <article class="success-card">
-          <div class="site-shot">
-            <div class="sm-bar"><i></i><i></i><i></i><span>b2b-fares</span></div>
-            <img src="assets/img/success/b2b.jpg" alt="" loading="lazy" width="960" height="600">
-          </div>
-          <div class="success-body">
-            <h3>B2B ticketing consolidator</h3>
-            <p class="loc"><svg class="ic"><use href="#i-pin"/></svg>Chattogram, Bangladesh</p>
-            <div class="mini-chips"><span>Flights</span><span>B2B portal</span><span>Agent ledger</span></div>
-            <p class="metric"><svg class="ic"><use href="#i-trend"/></svg>180 sub-agents on one portal</p>
-          </div>
-        </article>
-        <article class="success-card">
-          <div class="site-shot">
-            <div class="sm-bar"><i></i><i></i><i></i><span>tours-bd</span></div>
-            <img src="assets/img/success/tours.jpg" alt="" loading="lazy" width="960" height="600">
-          </div>
-          <div class="success-body">
-            <h3>Tour operator</h3>
-            <p class="loc"><svg class="ic"><use href="#i-pin"/></svg>Sylhet, Bangladesh</p>
-            <div class="mini-chips"><span>Tour packages</span><span>Website</span><span>Omnichannel</span></div>
-            <p class="metric"><svg class="ic"><use href="#i-trend"/></svg>40% of bookings now online</p>
-          </div>
-        </article>
-        <article class="success-card">
-          <div class="site-shot">
-            <div class="sm-bar"><i></i><i></i><i></i><span>fly-gulf</span></div>
-            <img src="assets/img/success/gulf.jpg" alt="" loading="lazy" width="960" height="600">
-          </div>
-          <div class="success-body">
-            <h3>Online travel agency</h3>
-            <p class="loc"><svg class="ic"><use href="#i-pin"/></svg>Dubai, UAE</p>
-            <div class="mini-chips"><span>Flights</span><span>Hotels</span><span>B2C</span></div>
-            <p class="metric"><svg class="ic"><use href="#i-trend"/></svg>Live in 12 days</p>
-          </div>
-        </article>
-        <article class="success-card">
-          <div class="site-shot">
-            <div class="sm-bar"><i></i><i></i><i></i><span>visa-desk</span></div>
-            <img src="assets/img/success/visa.jpg" alt="" loading="lazy" width="960" height="600">
-          </div>
-          <div class="success-body">
-            <h3>Visa processing centre</h3>
-            <p class="loc"><svg class="ic"><use href="#i-pin"/></svg>Dhaka, Bangladesh</p>
-            <div class="mini-chips"><span>Visa</span><span>CRM</span><span>Help desk</span></div>
-            <p class="metric"><svg class="ic"><use href="#i-trend"/></svg>Every file tracked stage by stage</p>
-          </div>
-        </article>
-        <article class="success-card">
-          <div class="site-shot">
-            <div class="sm-bar"><i></i><i></i><i></i><span>corp-travel</span></div>
-            <img src="assets/img/success/corp.jpg" alt="" loading="lazy" width="960" height="600">
-          </div>
-          <div class="success-body">
-            <h3>Corporate travel desk</h3>
-            <p class="loc"><svg class="ic"><use href="#i-pin"/></svg>Kuala Lumpur, Malaysia</p>
-            <div class="mini-chips"><span>Flights</span><span>Hotels</span><span>Approvals</span></div>
-            <p class="metric"><svg class="ic"><use href="#i-trend"/></svg>Monthly billing automated</p>
-          </div>
-        </article>
+{{> success-grid}}
     </div>
+    <div class="center-cta"><a href="success-stories.html" class="btn btn-outline btn-lg">All success stories <svg class="ic"><use href="#i-arrow"/></svg></a></div>
   </div>
 </section>
 
@@ -487,7 +421,7 @@ nav: home
       <details open><summary>Is TravelSuite ERP a booking system or a full ERP?</summary><p>Both. It combines B2B & B2C booking, a travel ERP (CRM, sales, finance, HR, help desk), your agency website, AI automation and an omnichannel inbox, all sharing one database.</p></details>
       <details><summary>Does it support Hajj & Umrah operations?</summary><p>Yes. Manage pilgrim registration, passports and visas, group allocation, Makkah and Madinah hotels, transport, packages and instalment payments.</p></details>
       <details><summary>Can I connect WhatsApp, Facebook and Instagram?</summary><p>Yes. Messages from WhatsApp, Messenger and Instagram arrive in one shared inbox, can be assigned to team members and turned into CRM leads.</p></details>
-      <details><summary>Which payment methods are supported?</summary><p>bKash, Nagad, SSLCommerz, Visa and Mastercard, bank transfer and agent wallet. Other gateways can be added on request.</p></details>
+      <details><summary>Which payment methods are supported?</summary><p>International gateways including Visa, Mastercard, American Express, PayPal, Stripe, Apple Pay and Google Pay, plus bank transfer, agent wallet and regional options such as bKash. Other gateways can be added on request.</p></details>
       <details><summary>Can I host it on my own server?</summary><p>Yes. Choose our managed cloud on a monthly or yearly plan, or buy a lifetime license and we install it on your server free of charge.</p></details>
       <details><summary>How long does it take to go live?</summary><p>Most agencies go live in 7 to 14 days, including branding, domain, payment gateway, data import and staff training.</p></details>
     </div>

@@ -721,7 +721,11 @@
       'Subscribe': 'সাবস্ক্রাইব',
       'Payments we support': 'যেসব পেমেন্ট সাপোর্ট করি',
       'Enter a valid email address.': 'সঠিক ইমেইল ঠিকানা লিখুন।',
-      'Thanks for subscribing.': 'সাবস্ক্রাইব করার জন্য ধন্যবাদ।'
+      'Thanks for subscribing.': 'সাবস্ক্রাইব করার জন্য ধন্যবাদ।',
+      'Visa, Mastercard, PayPal, Stripe, Apple Pay and more.': 'Visa, Mastercard, PayPal, Stripe, Apple Pay এবং আরও।',
+      'International gateways including Visa, Mastercard, American Express, PayPal, Stripe, Apple Pay and Google Pay, plus bank transfer, agent wallet and regional options such as bKash. Other gateways can be added on request.': 'আন্তর্জাতিক গেটওয়ে — Visa, Mastercard, American Express, PayPal, Stripe, Apple Pay ও Google Pay, সাথে ব্যাংক ট্রান্সফার, এজেন্ট ওয়ালেট এবং বিকাশের মতো আঞ্চলিক মাধ্যম। অনুরোধে অন্য গেটওয়েও যোগ করা যায়।',
+      'Card (Visa, Mastercard, American Express), PayPal, Stripe, Apple Pay, Google Pay or bank transfer. Customers in Bangladesh can also pay in BDT; international customers are invoiced in USD.': 'কার্ড (Visa, Mastercard, American Express), PayPal, Stripe, Apple Pay, Google Pay বা ব্যাংক ট্রান্সফার। বাংলাদেশের গ্রাহকরা টাকায়ও পরিশোধ করতে পারেন; বিদেশি গ্রাহকদের ডলারে ইনভয়েস করা হয়।',
+      'Topics': 'বিষয়'
     }
   };
 
