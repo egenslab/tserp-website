@@ -23,10 +23,12 @@ export default function Footer() {
       <footer className="footer">
         <div className="container">
           <div className="ask-ai-band">
-            <div className="ask-ai-copy">
-              <span className="ask-ai-ico"><svg className="ic"><use href="#i-spark" /></svg></span>
-              <h3>Ask any AI about TravelSuite ERP</h3>
-              <p>Get an instant, independent summary of our platform from your favourite AI assistant.</p>
+            <div className="ask-ai-head">
+              <div className="ask-ai-copy">
+                <span className="ask-ai-ico"><svg className="ic"><use href="#i-spark" /></svg></span>
+                <h3>Ask any AI about TravelSuite ERP</h3>
+                <p>Get an instant, independent summary of our platform from your favourite AI assistant.</p>
+              </div>
               <div className="ai-prompt">
                 <small>We'll ask</small>
                 <q>What is TravelSuite ERP? Summarize its features for travel agencies, Hajj & Umrah operators and B2B consolidators.</q>
@@ -34,12 +36,12 @@ export default function Footer() {
             </div>
             <div className="ai-cards">
               {AI_LINKS.map((ai) => (
-            <a key={ai.name} className="ai-card" href={ai.url + encodeURIComponent(AI_PROMPT)} target="_blank" rel="noopener" aria-label={ai.name}>
-              <span className="ai-logo"><img src={`/assets/img/partners/${ai.logo}.svg`} alt="" width={26} height={26} /></span>
-              <span className="ai-name"><b>{ai.name}</b><small>Ask now</small></span>
-              <Icon name="i-external" className="ic ai-go" />
-            </a>
-          ))}
+                <a key={ai.name} className="ai-card" href={ai.url + encodeURIComponent(AI_PROMPT)} target="_blank" rel="noopener" aria-label={ai.name}>
+                  <span className="ai-logo"><img src={`/assets/img/partners/${ai.logo}.svg`} alt="" width={26} height={26} /></span>
+                  <span className="ai-name" data-no-i18n=""><b>{ai.name}</b><small>{ai.maker}</small></span>
+                  <Icon name="i-external" className="ic ai-go" />
+                </a>
+              ))}
             </div>
           </div>
           <div className="footer-hero">

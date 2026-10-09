@@ -23,7 +23,8 @@ SSLCommerz Mastercard Stripe PayPal Razorpay WhatsApp Messenger Instagram Mailgu
 travelsuiteerp.com EN in f ChatGPT Claude Perplexity Topics Trustpilot LinkedIn Facebook YouTube Visa`.split(/\s+/));
 ["Twilio SMS", "Google Analytics", "Google Maps", "WhatsApp, Messenger, Instagram", "WhatsApp + Facebook + Instagram",
   "+ Messenger, Instagram", "Google AI", "Apple Pay", "Google Pay", "American Express", "TravelSuite ERP", "Google Gemini",
-  "Microsoft Copilot", "Grok", "Booking.com", "Agoda"].forEach((b) => BRANDS.add(b));
+  "Microsoft Copilot", "Grok", "Booking.com", "Agoda", "Gemini", "Copilot", "Meta AI", "DeepSeek", "Le Chat", "You.com",
+  "Duck.ai", "HuggingChat"].forEach((b) => BRANDS.add(b));
 
 const norm = (s) => s.replace(/\s+/g, " ").trim();
 const load = (lang) => JSON.parse(readFileSync(join(SRC, `${lang}.json`), "utf8"));

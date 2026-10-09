@@ -35,6 +35,7 @@ export type Story = {
 };
 export type Country = { code: string; name: string; region: string; office: boolean };
 type NamedLink = { name: string; logo: string; url: string };
+type AiLink = NamedLink & { maker: string };
 
 export const FEATURE_GROUPS = featuresData.groups as { id: string; title: string }[];
 export const FEATURES = featuresData.items as Feature[];
@@ -45,7 +46,7 @@ export const LEGAL = legalData as LegalDoc[];
 export const SUCCESS = successData as Story[];
 export const COUNTRIES = siteData.countries as Country[];
 export const AI_PROMPT = siteData.aiPrompt;
-export const AI_LINKS = siteData.aiLinks as NamedLink[];
+export const AI_LINKS = siteData.aiLinks as AiLink[];
 export const SOCIAL = siteData.social as NamedLink[];
 export const PAYMENTS = siteData.payments as { name: string; logo: string }[];
 

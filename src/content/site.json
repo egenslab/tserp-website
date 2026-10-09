@@ -59,23 +59,75 @@
   "aiLinks": [
     {
       "name": "ChatGPT",
+      "maker": "OpenAI",
       "logo": "openai",
       "url": "https://chatgpt.com/?q="
     },
     {
       "name": "Claude",
+      "maker": "Anthropic",
       "logo": "claude",
       "url": "https://claude.ai/new?q="
     },
     {
+      "name": "Gemini",
+      "maker": "Google",
+      "logo": "googlegemini",
+      "url": "https://www.google.com/search?udm=50&q="
+    },
+    {
       "name": "Perplexity",
+      "maker": "Perplexity AI",
       "logo": "perplexity",
       "url": "https://www.perplexity.ai/search?q="
     },
     {
-      "name": "Google AI",
-      "logo": "googlegemini",
-      "url": "https://www.google.com/search?udm=50&q="
+      "name": "Copilot",
+      "maker": "Microsoft",
+      "logo": "copilot",
+      "url": "https://copilot.microsoft.com/?q="
+    },
+    {
+      "name": "Grok",
+      "maker": "xAI",
+      "logo": "grok",
+      "url": "https://grok.com/?q="
+    },
+    {
+      "name": "Meta AI",
+      "maker": "Meta",
+      "logo": "meta",
+      "url": "https://www.meta.ai/?q="
+    },
+    {
+      "name": "DeepSeek",
+      "maker": "DeepSeek",
+      "logo": "deepseek",
+      "url": "https://chat.deepseek.com/?q="
+    },
+    {
+      "name": "Le Chat",
+      "maker": "Mistral AI",
+      "logo": "mistralai",
+      "url": "https://chat.mistral.ai/chat?q="
+    },
+    {
+      "name": "You.com",
+      "maker": "You.com",
+      "logo": "youdotcom",
+      "url": "https://you.com/search?tbm=youchat&q="
+    },
+    {
+      "name": "Duck.ai",
+      "maker": "DuckDuckGo",
+      "logo": "duckduckgo",
+      "url": "https://duckduckgo.com/?ia=chat&q="
+    },
+    {
+      "name": "HuggingChat",
+      "maker": "Hugging Face",
+      "logo": "huggingface",
+      "url": "https://huggingface.co/chat/?q="
     }
   ],
   "social": [
