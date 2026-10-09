@@ -245,23 +245,54 @@
 </section>
 
 <footer class="footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <img src="assets/img/logo-light.png" alt="TravelSuite ERP" width="230" height="30">
-      <p>Everything your travel agency needs to sell, operate and grow.</p>
-      <ul class="footer-contact">
-        <li><svg class="ic fill"><use href="#i-wa"/></svg><a href="https://wa.me/8801325277120" target="_blank" rel="noopener">+880 13 2527 7120</a></li>
-        <li><svg class="ic"><use href="#i-globe"/></svg><span>travelsuiteerp.com</span></li>
-      </ul>
+  <div class="container">
+    <div class="footer-top">
+      <a class="ftile" href="https://wa.me/8801325277120" target="_blank" rel="noopener">
+        <span class="ftile-ico wa"><svg class="ic fill"><use href="#i-wa"/></svg></span>
+        <span><small>WhatsApp sales & support</small><b>+880 13 2527 7120</b></span>
+      </a>
+      <div class="ftile">
+        <span class="ftile-ico"><svg class="ic"><use href="#i-clock"/></svg></span>
+        <span><small>Office hours</small><b>Sat–Thu, 10am–7pm (GMT+6)</b></span>
+      </div>
+      <form class="newsletter" id="newsletterForm" novalidate>
+        <label for="nl-email"><b>Get travel-tech tips every month</b><small>Guides for agencies. No spam, unsubscribe anytime.</small></label>
+        <div class="nl-row">
+          <input id="nl-email" type="email" name="email" placeholder="Your email address" autocomplete="email" required>
+          <button class="btn btn-lime" type="submit">Subscribe</button>
+        </div>
+        <p class="nl-msg" id="nlMsg" role="status"></p>
+      </form>
     </div>
-    <div><h5>Services</h5><a href="feature-flights.html">Flight Tickets</a><a href="feature-hotels.html">Hotel Booking</a><a href="feature-hajj.html">Hajj & Umrah</a><a href="feature-visa.html">Visa Processing</a><a href="feature-tours.html">Tour Packages</a><a href="feature-transport.html">Transport Booking</a></div>
-    <div><h5>Platform</h5><a href="feature-crm.html">Travel ERP</a><a href="feature-b2b.html">B2B & B2C Booking</a><a href="feature-website.html">Agency Website</a><a href="feature-ai.html">AI Automation</a><a href="feature-omnichannel.html">Omnichannel Inbox</a></div>
-    <div><h5>Company</h5><a href="about.html">About us</a><a href="solutions.html">Solutions</a><a href="pricing.html">Pricing</a><a href="index.html#success">Success stories</a><a href="blog.html">Blog</a><a href="contact.html">Contact us</a></div>
-    <div><h5>Legal</h5><a href="terms.html">Terms & Conditions</a><a href="privacy.html">Privacy Policy</a><a href="refund.html">Refund Policy</a></div>
+
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo-light.png" alt="TravelSuite ERP" width="230" height="30">
+        <p>Everything your travel agency needs to sell, operate and grow.</p>
+        <div class="pay">
+          <small>Payments we support</small>
+          <div class="pay-row">
+            <span class="pay-badge"><span class="mono" style="--c:#e2136e">b</span>bKash</span>
+            <span class="pay-badge"><span class="mono" style="--c:#f6921e">N</span>Nagad</span>
+            <span class="pay-badge"><img src="assets/img/partners/visa.svg" alt="" width="20" height="20">Visa</span>
+            <span class="pay-badge"><img src="assets/img/partners/mastercard.svg" alt="" width="20" height="20">Mastercard</span>
+            <span class="pay-badge"><span class="mono" style="--c:#2a3a8c">S</span>SSLCommerz</span>
+          </div>
+        </div>
+      </div>
+      <div class="fcol"><h5>Services</h5><a href="feature-flights.html">Flight Tickets</a><a href="feature-hotels.html">Hotel Booking</a><a href="feature-hajj.html">Hajj & Umrah</a><a href="feature-visa.html">Visa Processing</a><a href="feature-tours.html">Tour Packages</a><a href="feature-transport.html">Transport Booking</a></div>
+      <div class="fcol"><h5>Platform</h5><a href="feature-crm.html">Travel ERP</a><a href="feature-b2b.html">B2B & B2C Booking</a><a href="feature-website.html">Agency Website</a><a href="feature-ai.html">AI Automation</a><a href="feature-omnichannel.html">Omnichannel Inbox</a><a href="features.html">All features</a></div>
+      <div class="fcol"><h5>Solutions</h5><a href="solution-travel-agencies.html">Travel agencies</a><a href="solution-hajj-umrah.html">Hajj & Umrah operators</a><a href="solution-b2b-consolidators.html">B2B consolidators</a><a href="solution-tour-operators.html">Tour operators & DMCs</a><a href="solution-online-travel-agencies.html">Online travel agencies</a><a href="solution-corporate-travel.html">Corporate travel desks</a></div>
+      <div class="fcol"><h5>Company</h5><a href="about.html">About us</a><a href="pricing.html">Pricing</a><a href="index.html#success">Success stories</a><a href="blog.html">Blog</a><a href="contact.html">Contact us</a></div>
+    </div>
   </div>
-  <div class="container footer-bottom">
-    <span>© <span id="year">2026</span> TravelSuite ERP. All rights reserved.</span>
-    <nav class="footer-legal" aria-label="Legal"><a href="terms.html">Terms & Conditions</a><a href="privacy.html">Privacy Policy</a><a href="refund.html">Refund Policy</a><a href="#top">Back to top</a></nav>
+
+  <div class="footer-bottom-wrap">
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> TravelSuite ERP. All rights reserved.</span>
+      <nav class="footer-legal" aria-label="Legal"><a href="terms.html">Terms & Conditions</a><a href="privacy.html">Privacy Policy</a><a href="refund.html">Refund Policy</a></nav>
+      <a href="#top" class="to-top" aria-label="Back to top"><svg class="ic"><use href="#i-chev"/></svg></a>
+    </div>
   </div>
 </footer>
 

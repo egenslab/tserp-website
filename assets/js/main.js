@@ -294,5 +294,20 @@
     });
   }
 
+  // ---------- Footer newsletter: client-side only (connect to your email tool) ----------
+  var nl = document.getElementById('newsletterForm');
+  if (nl) {
+    nl.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var input = nl.elements.email;
+      var nlMsg = document.getElementById('nlMsg');
+      var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim());
+      input.classList.toggle('invalid', !valid);
+      nlMsg.textContent = t(valid ? 'Thanks for subscribing.' : 'Enter a valid email address.');
+      nlMsg.className = 'nl-msg ' + (valid ? 'ok' : 'err');
+      if (valid) nl.reset();
+    });
+  }
+
   document.getElementById('year').textContent = new Date().getFullYear();
 })();

@@ -713,7 +713,15 @@
       'Thanks. Our team will contact you within one business day.': 'ধন্যবাদ। আমাদের টিম এক কর্মদিবসের মধ্যে আপনার সাথে যোগাযোগ করবে।',
       'Guides for travel agencies': 'ট্রাভেল এজেন্সির জন্য গাইড',
       'Legal': 'আইনি তথ্য',
-      'Solutions — TravelSuite ERP': 'সলিউশন — TravelSuite ERP'
+      'Solutions — TravelSuite ERP': 'সলিউশন — TravelSuite ERP',
+      'WhatsApp sales & support': 'WhatsApp সেলস ও সাপোর্ট',
+      'Get travel-tech tips every month': 'প্রতি মাসে ট্রাভেল-টেক টিপস পান',
+      'Guides for agencies. No spam, unsubscribe anytime.': 'এজেন্সির জন্য গাইড। কোনো স্প্যাম নয়, যেকোনো সময় বন্ধ করা যায়।',
+      'Your email address': 'আপনার ইমেইল ঠিকানা',
+      'Subscribe': 'সাবস্ক্রাইব',
+      'Payments we support': 'যেসব পেমেন্ট সাপোর্ট করি',
+      'Enter a valid email address.': 'সঠিক ইমেইল ঠিকানা লিখুন।',
+      'Thanks for subscribing.': 'সাবস্ক্রাইব করার জন্য ধন্যবাদ।'
     }
   };
 
