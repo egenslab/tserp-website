@@ -79,12 +79,16 @@ p { margin: 0 0 1em; }
 .has-mega.open > .mega { opacity: 1; visibility: visible; transform: none; }
 .mega-inner { display: grid; grid-template-columns: 1fr 1fr 1fr 280px; gap: 28px; padding-block: 28px 32px; }
 .mega-inner.sol { grid-template-columns: 1fr 1fr 320px; }
+.mega-inner.prod { grid-template-columns: repeat(4, minmax(0, 1fr)) 230px; gap: 16px; }
+.mega-inner.prod .mega-item { padding: 8px; gap: 10px; }
+.mega h6:empty::before { content: "\00a0"; }
 .mega-col { display: grid; align-content: start; gap: 2px; min-width: 0; }
 .mega h6 { font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin: 0 0 10px 10px; font-weight: 700; }
 .mega-item { display: flex; gap: 12px; align-items: flex-start; padding: 10px; border-radius: 10px; color: var(--ink); transition: background .15s; }
 .mega-item:hover { background: var(--bg-alt); }
 .mega-item b { display: block; font-size: .93rem; font-family: var(--font-display); font-weight: 600; }
-.mega-item small { color: var(--muted); font-size: .82rem; }
+.mega-item b { line-height: 1.35; }
+.mega-item small { display: block; margin-top: 2px; color: var(--muted); font-size: .82rem; line-height: 1.4; }
 .mi { width: 36px; height: 36px; border-radius: 10px; background: var(--lime-soft); display: grid; place-items: center; flex: none; }
 .mi svg { width: 18px; height: 18px; fill: none; stroke: var(--forest); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .mega-item:hover .mi { background: var(--forest); }
@@ -385,6 +389,8 @@ p { margin: 0 0 1em; }
 /* Responsive */
 @media (max-width: 1140px) {
   .nav-link { padding: .6em .55em; }
+  .mega-inner.prod { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .mega-inner.prod .mega-promo { display: none; }
   .plans { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 1000px) {
@@ -413,7 +419,7 @@ p { margin: 0 0 1em; }
   .nav-link:hover, .nav-link[aria-expanded="true"] { background: none; }
   .mega, .has-mega.small .mega { position: static; width: auto; margin: 0; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: 0; border-radius: 0; display: none; transition: none; }
   .has-mega.open > .mega { display: block; }
-  .mega-inner, .mega-inner.sol { grid-template-columns: 1fr; gap: 12px; padding: 0 0 14px; }
+  .mega-inner, .mega-inner.sol, .mega-inner.prod { grid-template-columns: 1fr; gap: 12px; padding: 0 0 14px; }
   .mega-promo, .mega-journey { display: none; }
   .mega h6 { margin: 6px 0 4px 10px; }
   .mega-col h6:empty, .mega-col h6:only-child { display: none; }

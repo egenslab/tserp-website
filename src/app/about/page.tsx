@@ -31,7 +31,7 @@ export default function AboutPage() {
               <span>travel services</span>
             </div>
             <div>
-              <strong>9</strong>
+              <strong>12</strong>
               <span>ERP modules</span>
             </div>
           </div>

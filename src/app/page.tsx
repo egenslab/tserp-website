@@ -49,7 +49,7 @@ export default function HomePage() {
             </div>
             <div className="stat">
               <div>
-                <CountUp value={9} />
+                <CountUp value={12} />
                 <b>ERP modules</b>
                 <small>CRM, sales, finance, HR, help desk and more</small>
               </div>

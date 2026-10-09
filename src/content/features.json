@@ -1751,6 +1751,226 @@
       }
     },
     {
+      "slug": "proposals",
+      "group": "modules",
+      "icon": "i-file",
+      "title": "Proposals & Quotations",
+      "desc": "Send branded proposals and priced quotations, track validity and follow up until the customer says yes.",
+      "intro": "Prepare professional travel proposals and itemised quotations in minutes, assign them to the right staff member and track every one from draft to accepted. Validity dates, values and statuses sit in one list, so no offer is forgotten and every accepted quote moves straight on to invoicing.",
+      "bullets": [
+        "Proposals with recipient, value and validity",
+        "Itemised quotations for any travel service",
+        "Assign each proposal or quote to a staff member",
+        "Status tracking from draft to accepted",
+        "Branded documents with your numbering and terms",
+        "Invoices from the same sales workspace"
+      ],
+      "steps": [
+        "Create a proposal or quotation",
+        "Send it and track its validity",
+        "Invoice the accepted offer"
+      ],
+      "benefits": [
+        "Faster replies win more enquiries",
+        "No expired offer slips through",
+        "Every quote has an owner"
+      ],
+      "seo": {
+        "keywords": "travel quotation software, travel proposal software, tour quotation system, travel agency quote builder, corporate travel proposal, quotation management for travel agencies",
+        "overview": [
+          "TravelSuite ERP includes proposal and quotation software built for travel agencies. Staff prepare a proposal for a corporate client or group, or an itemised quotation for a family holiday, Umrah package or ticket request, and send it with your branding in minutes.",
+          "Every offer has a recipient, an assigned staff member, a date, a validity period, a value and a status. Managers see the whole pipeline in one list, filter by owner or status and follow up before an offer expires.",
+          "Proposals and quotations live in the same Sales workspace as customers and invoices, and their numbering and default terms are set once in finance settings. When a customer accepts, the work carries on to invoicing without retyping."
+        ],
+        "faqs": [
+          [
+            "What is the difference between a proposal and a quotation?",
+            "A proposal presents an offer and its proposed value to a recipient, often a company or group. A quotation lists the priced items for a specific customer and has a valid-until date. TravelSuite ERP keeps both."
+          ],
+          [
+            "Can I quote any travel service?",
+            "Yes. Quotations can include flights, hotels, visas, tours, transport or any custom line, with your own prices."
+          ],
+          [
+            "Can I set how long an offer is valid?",
+            "Yes. Each proposal has a date and validity, and each quotation has a valid-until date, so expired offers are easy to spot."
+          ],
+          [
+            "Can I assign quotations to staff?",
+            "Yes. Every proposal and quotation has an assigned staff member, and the list can be filtered by owner and status."
+          ],
+          [
+            "Do proposals carry my branding?",
+            "Yes. Documents use your agency logo, numbering and default terms, which you set once in settings."
+          ],
+          [
+            "How do I follow up on open quotes?",
+            "Filter the list by status and validity to see which offers are still open and which are about to expire."
+          ],
+          [
+            "Is it connected to invoicing?",
+            "Yes. Proposals, quotations, customers and invoices sit in the same Sales workspace, so an accepted offer moves on to invoicing without retyping."
+          ],
+          [
+            "Is the module included in every plan?",
+            "Proposals and quotations are part of the Sales tools. Ask us during the demo which plan fits your team."
+          ]
+        ]
+      },
+      "page": {
+        "seoTitle": "Travel Quotation & Proposal Software — TravelSuite ERP",
+        "metaDescription": "Travel quotation and proposal software for travel agencies. Send branded quotes, track validity and status, assign staff and move accepted offers to invoicing.",
+        "h1": "Travel proposal & quotation software",
+        "overviewTitle": "Quotation management for travel agencies",
+        "facts": [
+          {
+            "value": "Proposals + quotes",
+            "label": "Two document types in one workspace"
+          },
+          {
+            "value": "Validity",
+            "label": "Every offer has an expiry date"
+          },
+          {
+            "value": "Owner",
+            "label": "Each quote assigned to a staff member"
+          },
+          {
+            "value": "Branded",
+            "label": "Your logo, numbering and terms"
+          }
+        ],
+        "workflow": {
+          "eyebrow": "Quote workflow",
+          "title": "From enquiry to accepted offer in six steps",
+          "steps": [
+            {
+              "title": "Capture the enquiry",
+              "text": "Pick an existing customer or add a new one from the CRM."
+            },
+            {
+              "title": "Build the offer",
+              "text": "Add flights, hotels, visas, tours or custom lines with your prices."
+            },
+            {
+              "title": "Set validity",
+              "text": "Choose the date and how long the offer stays valid."
+            },
+            {
+              "title": "Assign an owner",
+              "text": "The responsible staff member follows the offer through."
+            },
+            {
+              "title": "Send and follow up",
+              "text": "Track status and chase offers before they expire."
+            },
+            {
+              "title": "Invoice",
+              "text": "An accepted offer moves on to invoicing in the same workspace."
+            }
+          ]
+        },
+        "capabilities": [
+          "Proposals with recipient, proposed value and validity",
+          "Itemised quotations with valid-until dates",
+          "Quote flights, hotels, visas, tours and custom items",
+          "Assigned staff member on every document",
+          "Statuses from draft to accepted or declined",
+          "Filters by status, owner and date",
+          "Branded documents with your logo",
+          "Default numbering and terms in finance settings",
+          "Customer history alongside every quote",
+          "Invoices in the same Sales workspace",
+          "Role-based access for sales staff",
+          "Quote value and status at a glance"
+        ],
+        "audiences": {
+          "eyebrow": "Built for every team",
+          "title": "One quote list, every role covered",
+          "items": [
+            {
+              "icon": "i-headset",
+              "title": "Sales staff",
+              "items": [
+                "Quote any service in minutes",
+                "See their own open offers",
+                "Follow up before expiry",
+                "Customer history on hand"
+              ]
+            },
+            {
+              "icon": "i-building",
+              "title": "Corporate desks",
+              "items": [
+                "Formal proposals for companies",
+                "Proposed value and validity",
+                "Clear recipient and owner",
+                "Professional branded format"
+              ]
+            },
+            {
+              "icon": "i-users",
+              "title": "Group and Umrah sales",
+              "items": [
+                "Package quotes for groups",
+                "Several options per enquiry",
+                "Track which groups said yes",
+                "Hand over to operations"
+              ]
+            },
+            {
+              "icon": "i-chart",
+              "title": "Managers",
+              "items": [
+                "Pipeline by status and owner",
+                "Offers about to expire",
+                "Value of open quotations",
+                "Conversion follow-up"
+              ]
+            }
+          ]
+        },
+        "compare": {
+          "eyebrow": "Why agencies switch",
+          "title": "Before and after TravelSuite ERP",
+          "before": "Without TravelSuite",
+          "after": "With TravelSuite ERP",
+          "rows": [
+            [
+              "Preparing a quote",
+              "Typed in Word or WhatsApp",
+              "Built from items in minutes"
+            ],
+            [
+              "Branding",
+              "Different look from each staff member",
+              "One branded format with your terms"
+            ],
+            [
+              "Validity",
+              "Forgotten until the customer asks",
+              "Valid-until date on every offer"
+            ],
+            [
+              "Ownership",
+              "Nobody sure who is following up",
+              "Assigned staff member on each quote"
+            ],
+            [
+              "Pipeline",
+              "Scattered across chats",
+              "One list filtered by status"
+            ],
+            [
+              "Invoicing",
+              "Prices retyped into the invoice",
+              "Accepted offer moves on to invoicing"
+            ]
+          ]
+        }
+      }
+    },
+    {
       "slug": "finance",
       "group": "modules",
       "icon": "i-wallet",
@@ -1795,6 +2015,251 @@
             "Yes. Cost, selling price, fees and margin are stored on every booking."
           ]
         ]
+      }
+    },
+    {
+      "slug": "vendors",
+      "group": "modules",
+      "icon": "i-building",
+      "title": "Vendor Management",
+      "desc": "Onboard suppliers, list their services, track bookings, commission and payouts, and rate their performance.",
+      "intro": "Manage every travel supplier in one place: hotels, transport companies, guides, ground handlers and other partners. Onboard vendors with KYC checks, list their services with customer price and commission, follow their bookings and pay what is due, then rate their performance so you always work with the best partners.",
+      "bullets": [
+        "Vendor profiles with type, contact and onboarding status",
+        "KYC verification and document expiry rules",
+        "Vendor services with customer price and commission",
+        "Vendor bookings with commission and payable",
+        "Vendor payments with due dates and balances",
+        "Ratings, feedback and a vendor leaderboard"
+      ],
+      "steps": [
+        "Onboard vendors and verify KYC",
+        "List their services and commission",
+        "Track bookings and pay vendors"
+      ],
+      "benefits": [
+        "Know exactly what each vendor is owed",
+        "Commission calculated on every booking",
+        "Work with the best-rated partners"
+      ],
+      "seo": {
+        "keywords": "travel vendor management software, travel supplier management, travel marketplace software, vendor commission management, supplier payment tracking for travel agencies, travel partner management system",
+        "overview": [
+          "TravelSuite ERP includes vendor management software for travel agencies and travel marketplaces. Hotels, transport companies, tour guides, ground handlers and other suppliers each get a profile with their type, contacts, onboarding status and rating.",
+          "Run it as a classic agency, where you buy from suppliers and resell, or switch on marketplace mode, where vendors list services and you earn a default commission as a percentage or a fixed amount. KYC controls set which documents are needed and when they expire.",
+          "Each vendor service shows the customer price, estimated commission and estimated vendor payout. Every booking records the commission and the vendor payable, and the payments screen shows what is paid, what is due and when, so supplier accounts never drift."
+        ],
+        "faqs": [
+          [
+            "What kinds of vendors can I manage?",
+            "Any supplier you work with, such as hotels, transport companies, guides and ground handlers. Vendor types are reusable categories you define."
+          ],
+          [
+            "What is marketplace mode?",
+            "In marketplace mode vendors list their own services and your agency earns a commission on each booking. In agency mode you manage suppliers as part of your own products."
+          ],
+          [
+            "How is commission calculated?",
+            "You set a default commission as a percentage or a fixed amount per booking. Each service shows the estimated commission and vendor payout."
+          ],
+          [
+            "Can I verify vendors before they go live?",
+            "Yes. KYC controls set verification and document expiry rules, and each vendor shows its onboarding status."
+          ],
+          [
+            "How do I track what I owe vendors?",
+            "Every vendor booking creates a payable. The payments screen lists the total, paid and due amounts with due dates and status."
+          ],
+          [
+            "Can I rate vendor performance?",
+            "Yes. Performance & Reviews collects ratings, feedback and quality signals and ranks partners on a vendor leaderboard."
+          ],
+          [
+            "Is the vendor module free?",
+            "Vendor Management is included with TravelSuite ERP. Ask us during the demo how it fits your setup."
+          ],
+          [
+            "Does it work with the travel modules?",
+            "Yes. Vendor bookings show the service, travel date, booking value, commission and payment, alongside your customer bookings."
+          ]
+        ]
+      },
+      "page": {
+        "seoTitle": "Travel Vendor & Supplier Management Software — TravelSuite ERP",
+        "metaDescription": "Vendor management software for travel agencies and marketplaces. Onboard suppliers with KYC, list services, calculate commission, track payables and rate partners.",
+        "h1": "Travel vendor & supplier management",
+        "overviewTitle": "Supplier management for travel agencies and marketplaces",
+        "facts": [
+          {
+            "value": "Agency or marketplace",
+            "label": "Two ways to work with vendors"
+          },
+          {
+            "value": "% or fixed",
+            "label": "Default commission per booking"
+          },
+          {
+            "value": "KYC",
+            "label": "Verification and expiry rules"
+          },
+          {
+            "value": "Leaderboard",
+            "label": "Rank partners by rating"
+          }
+        ],
+        "sources": {
+          "eyebrow": "Your partners",
+          "title": "Every supplier in one vendor list",
+          "items": [
+            {
+              "icon": "i-bed",
+              "title": "Hotels and stays",
+              "text": "Hotels, apartments and guest houses you book or resell.",
+              "tags": []
+            },
+            {
+              "icon": "i-car",
+              "title": "Transport companies",
+              "text": "Transfers, coaches and car rental partners with their own rates.",
+              "tags": []
+            },
+            {
+              "icon": "i-map",
+              "title": "Guides and ground handlers",
+              "text": "Local guides, tour operators and destination partners.",
+              "tags": []
+            },
+            {
+              "icon": "i-layers",
+              "title": "Custom vendor types",
+              "text": "Reusable categories for any other partner you work with.",
+              "tags": []
+            }
+          ]
+        },
+        "workflow": {
+          "eyebrow": "Vendor workflow",
+          "title": "From onboarding to payout in six steps",
+          "steps": [
+            {
+              "title": "Onboard",
+              "text": "Add the vendor with type, contacts and onboarding status."
+            },
+            {
+              "title": "Verify",
+              "text": "Collect KYC documents and track their expiry."
+            },
+            {
+              "title": "List services",
+              "text": "Set customer price, commission and estimated vendor payout."
+            },
+            {
+              "title": "Take bookings",
+              "text": "Each booking records the commission and vendor payable."
+            },
+            {
+              "title": "Pay the vendor",
+              "text": "Track totals, paid and due amounts against due dates."
+            },
+            {
+              "title": "Review",
+              "text": "Rate the vendor and keep the best partners on top."
+            }
+          ]
+        },
+        "capabilities": [
+          "Vendor dashboard with items that need attention",
+          "Vendor profiles with type, contact and rating",
+          "Onboarding and operation status per vendor",
+          "Agency mode or marketplace mode",
+          "Default commission as percentage or fixed amount",
+          "Reusable vendor types",
+          "KYC verification and expiry rules",
+          "Vendor services with price, commission and payout",
+          "Vendor bookings with commission and payable",
+          "Vendor payments with due dates and balances",
+          "Ratings, feedback and quality signals",
+          "Top vendor partners and leaderboard"
+        ],
+        "audiences": {
+          "eyebrow": "Built for every team",
+          "title": "One vendor module for the whole agency",
+          "items": [
+            {
+              "icon": "i-headset",
+              "title": "Operations",
+              "items": [
+                "Find the right vendor fast",
+                "See each vendor's services",
+                "Check bookings by travel date",
+                "Flag vendors that need attention"
+              ]
+            },
+            {
+              "icon": "i-wallet",
+              "title": "Accounts",
+              "items": [
+                "Payables created per booking",
+                "Due dates and balances",
+                "Commission per booking",
+                "Paid and unpaid at a glance"
+              ]
+            },
+            {
+              "icon": "i-shield",
+              "title": "Compliance",
+              "items": [
+                "KYC documents per vendor",
+                "Expiry rules and reminders",
+                "Onboarding status",
+                "Only verified vendors go live"
+              ]
+            },
+            {
+              "icon": "i-chart",
+              "title": "Management",
+              "items": [
+                "Top vendor partners",
+                "Ratings and feedback",
+                "Commission earned",
+                "Marketplace growth"
+              ]
+            }
+          ]
+        },
+        "compare": {
+          "eyebrow": "Why agencies switch",
+          "title": "Before and after TravelSuite ERP",
+          "before": "Without TravelSuite",
+          "after": "With TravelSuite ERP",
+          "rows": [
+            [
+              "Supplier list",
+              "Phone contacts and spreadsheets",
+              "Vendor profiles with type and status"
+            ],
+            [
+              "Verification",
+              "Documents lost in email",
+              "KYC with expiry rules"
+            ],
+            [
+              "Commission",
+              "Worked out by hand",
+              "Calculated on every booking"
+            ],
+            [
+              "Payables",
+              "Unclear who is owed what",
+              "Paid and due per vendor with dates"
+            ],
+            [
+              "Quality",
+              "Based on memory",
+              "Ratings, feedback and leaderboard"
+            ]
+          ]
+        }
       }
     },
     {
@@ -2080,6 +2545,245 @@
       }
     },
     {
+      "slug": "marketing",
+      "group": "modules",
+      "icon": "i-mail",
+      "title": "Marketing",
+      "desc": "Reach travel customers with targeted email campaigns and track how they engage.",
+      "intro": "Turn your customer and lead list into repeat bookings. Send targeted email campaigns about new packages, Umrah seasons, visa openings and seasonal offers, spread sending across your own email accounts within their limits, and track how each campaign performs.",
+      "bullets": [
+        "Targeted email campaigns to customers and leads",
+        "Audiences built from your CRM data",
+        "Several sender accounts rotated within their limits",
+        "Campaign engagement tracking",
+        "Your agency branding on every email",
+        "Available as an add-on module"
+      ],
+      "steps": [
+        "Choose the audience",
+        "Write and send the campaign",
+        "Track engagement and follow up"
+      ],
+      "benefits": [
+        "More repeat bookings from past travellers",
+        "Healthy sending across your accounts",
+        "See which campaigns work"
+      ],
+      "seo": {
+        "keywords": "travel email marketing software, email campaigns for travel agencies, travel agency marketing automation, travel CRM email marketing, Umrah package email campaign, travel newsletter software",
+        "overview": [
+          "The TravelSuite ERP Marketing module is email marketing built into your travel ERP. Because it uses the same customers and leads as your CRM, you can target past travellers, enquiries that did not book or customers of a particular service without exporting lists.",
+          "Campaigns are sent through your own email accounts. Add several SMTP senders and campaigns rotate between healthy accounts within each account's limits, which keeps delivery steady and protects your domain.",
+          "After sending, track engagement for each campaign and follow up with the people who showed interest. Marketing is available as an add-on, so you switch it on when you are ready to grow repeat business."
+        ],
+        "faqs": [
+          [
+            "What does the Marketing module do?",
+            "It sends targeted email campaigns to your travel customers and leads and tracks how they engage."
+          ],
+          [
+            "Where do the contacts come from?",
+            "From your TravelSuite ERP customers and leads, so there is no need to export and import lists."
+          ],
+          [
+            "Which email accounts are used to send?",
+            "Your own SMTP email accounts. You can add several senders and campaigns rotate between healthy accounts within their limits."
+          ],
+          [
+            "Can I track results?",
+            "Yes. Each campaign shows engagement so you can see which offers interest your customers."
+          ],
+          [
+            "What can I promote?",
+            "Anything you sell, such as new tour packages, Hajj and Umrah seasons, visa openings, holiday offers or agency news."
+          ],
+          [
+            "Is Marketing included in every plan?",
+            "Marketing is a premium add-on module. It can be added to your TravelSuite ERP whenever you need it."
+          ],
+          [
+            "Do emails carry my branding?",
+            "Yes. Campaigns go out from your sender accounts with your agency name and branding."
+          ],
+          [
+            "Does it replace WhatsApp messaging?",
+            "No. Marketing covers email campaigns. Day-to-day WhatsApp, Messenger and Instagram conversations are handled in the Omnichannel Inbox."
+          ]
+        ]
+      },
+      "page": {
+        "seoTitle": "Email Marketing for Travel Agencies — TravelSuite ERP",
+        "metaDescription": "Email marketing built into your travel ERP. Send targeted campaigns to customers and leads, rotate your own SMTP senders and track engagement.",
+        "h1": "Email marketing for travel agencies",
+        "overviewTitle": "Travel email campaigns built into your ERP",
+        "facts": [
+          {
+            "value": "Email campaigns",
+            "label": "Targeted to customers and leads"
+          },
+          {
+            "value": "CRM data",
+            "label": "No list exports needed"
+          },
+          {
+            "value": "Sender rotation",
+            "label": "Your SMTP accounts within limits"
+          },
+          {
+            "value": "Add-on",
+            "label": "Switch it on when you need it"
+          }
+        ],
+        "sources": {
+          "eyebrow": "Who to reach",
+          "title": "Audiences you already have",
+          "items": [
+            {
+              "icon": "i-users",
+              "title": "Past travellers",
+              "text": "Customers who booked before and are ready for their next trip.",
+              "tags": []
+            },
+            {
+              "icon": "i-target",
+              "title": "Open leads",
+              "text": "Enquiries that have not booked yet and need a reason to come back.",
+              "tags": []
+            },
+            {
+              "icon": "i-kaaba",
+              "title": "Pilgrims",
+              "text": "Hajj and Umrah customers ahead of the next season.",
+              "tags": []
+            },
+            {
+              "icon": "i-building",
+              "title": "Corporate clients",
+              "text": "Companies that buy travel for their staff.",
+              "tags": []
+            }
+          ]
+        },
+        "workflow": {
+          "eyebrow": "Campaign workflow",
+          "title": "From idea to results in five steps",
+          "steps": [
+            {
+              "title": "Pick the audience",
+              "text": "Choose customers or leads from your CRM."
+            },
+            {
+              "title": "Write the email",
+              "text": "Promote a package, season or offer with your branding."
+            },
+            {
+              "title": "Choose senders",
+              "text": "Campaigns rotate between your healthy SMTP accounts."
+            },
+            {
+              "title": "Send",
+              "text": "Emails go out within each account's limits."
+            },
+            {
+              "title": "Track and follow up",
+              "text": "See engagement and contact interested customers."
+            }
+          ]
+        },
+        "capabilities": [
+          "Targeted email campaigns",
+          "Audiences from CRM customers and leads",
+          "Your own SMTP sender accounts",
+          "Rotation across healthy senders within limits",
+          "Campaign engagement tracking",
+          "Your agency name and branding on emails",
+          "Promote packages, seasons and offers",
+          "Follow up from the same customer records",
+          "Works with the CRM and sales modules",
+          "Premium add-on, enabled when needed"
+        ],
+        "audiences": {
+          "eyebrow": "Built for every team",
+          "title": "Marketing that works with the rest of the agency",
+          "items": [
+            {
+              "icon": "i-trend",
+              "title": "Marketing staff",
+              "items": [
+                "Build campaigns from CRM data",
+                "Promote seasonal offers",
+                "Track engagement",
+                "No separate email tool"
+              ]
+            },
+            {
+              "icon": "i-headset",
+              "title": "Sales staff",
+              "items": [
+                "Follow up interested customers",
+                "Customer history on hand",
+                "Turn replies into quotes",
+                "Fewer cold calls"
+              ]
+            },
+            {
+              "icon": "i-shield",
+              "title": "IT and admins",
+              "items": [
+                "Use your own SMTP accounts",
+                "Sending within account limits",
+                "Healthy sender rotation",
+                "Your domain protected"
+              ]
+            },
+            {
+              "icon": "i-chart",
+              "title": "Owners",
+              "items": [
+                "More repeat bookings",
+                "Results per campaign",
+                "One system to pay for",
+                "Add it when you are ready"
+              ]
+            }
+          ]
+        },
+        "compare": {
+          "eyebrow": "Why agencies switch",
+          "title": "Before and after TravelSuite ERP",
+          "before": "Without TravelSuite",
+          "after": "With TravelSuite ERP",
+          "rows": [
+            [
+              "Contact lists",
+              "Exported from spreadsheets",
+              "Customers and leads from your CRM"
+            ],
+            [
+              "Sending",
+              "One mailbox hitting its limit",
+              "Rotation across healthy sender accounts"
+            ],
+            [
+              "Targeting",
+              "Same email to everyone",
+              "Campaigns for the right audience"
+            ],
+            [
+              "Results",
+              "No idea who read it",
+              "Engagement per campaign"
+            ],
+            [
+              "Follow-up",
+              "Separate tools and copy-paste",
+              "Same customer records as sales"
+            ]
+          ]
+        }
+      }
+    },
+    {
       "slug": "b2b",
       "group": "platform",
       "icon": "i-layers",
@@ -2174,6 +2878,251 @@
       }
     },
     {
+      "slug": "cms",
+      "group": "platform",
+      "icon": "i-palette",
+      "title": "Website CMS",
+      "desc": "Manage pages, menus, media, blog, FAQs, testimonials and SEO for your agency website without a developer.",
+      "intro": "Keep your agency website fresh without calling a developer. Edit pages, build menus, manage images in a media library, publish SEO-ready blog posts, and update FAQs, testimonials, theme and header and footer from the same back office that runs your bookings.",
+      "bullets": [
+        "Pages with a chosen home page",
+        "Details templates for service pages",
+        "Menu builder for pages, categories and links",
+        "Media library with folders and favourites",
+        "Blog with SEO fields, categories and comments",
+        "Testimonials, FAQs, theme and SEO settings"
+      ],
+      "steps": [
+        "Edit pages and menus",
+        "Publish blogs, FAQs and testimonials",
+        "Tune theme and SEO settings"
+      ],
+      "benefits": [
+        "Update the site in minutes",
+        "SEO-ready content without plugins",
+        "One login for website and ERP"
+      ],
+      "seo": {
+        "keywords": "travel website CMS, travel agency content management system, travel website builder, travel blog CMS, SEO for travel agency website, menu builder travel website",
+        "overview": [
+          "TravelSuite ERP includes a content management system made for travel agency websites. Pages, menus, images, blog posts, FAQs and testimonials are all managed from the same admin panel as your bookings, so marketing staff can update the site without a developer.",
+          "Content is built for search. Blog posts have meta titles, meta descriptions and a search preview, categories and tags, a feature image and a publishing workflow from draft and review to scheduled and published. Site-wide SEO settings cover the rest.",
+          "Design stays consistent too. Theme and header and footer settings control the look, details templates shape service pages, and the menu builder adds pages, categories and custom links to your navigation."
+        ],
+        "faqs": [
+          [
+            "Do I need a developer to update the website?",
+            "No. Pages, menus, images, blog posts, FAQs and testimonials are edited from the admin panel."
+          ],
+          [
+            "Is the blog SEO-friendly?",
+            "Yes. Every post has a meta title, meta description and search preview, plus categories, tags and a feature image."
+          ],
+          [
+            "Can I schedule blog posts?",
+            "Yes. Posts move through draft, review, scheduled and published, so you can plan content ahead."
+          ],
+          [
+            "How do I change the menu?",
+            "Use the menu builder to add pages, categories and custom links, then save the order you want."
+          ],
+          [
+            "Where are images stored?",
+            "In the media library, with folders, favourites, duplicate detection, filters and a trash for deleted files."
+          ],
+          [
+            "Can I moderate blog comments?",
+            "Yes. Comments arrive in a moderation queue where you approve or remove them."
+          ],
+          [
+            "Can I show customer reviews?",
+            "Yes. Testimonials support a person, rating, text, optional video, featured flag and display order."
+          ],
+          [
+            "How is this different from the Agency Website feature?",
+            "Agency Website is the booking site your customers use. The Website CMS is how your team manages its content, design and SEO."
+          ]
+        ]
+      },
+      "page": {
+        "seoTitle": "Travel Website CMS for Travel Agencies — TravelSuite ERP",
+        "metaDescription": "Content management for travel agency websites. Edit pages, menus and media, publish SEO-ready blogs and manage FAQs, testimonials, theme and SEO from your ERP.",
+        "h1": "Website CMS for travel agencies",
+        "overviewTitle": "A travel website you can update yourself",
+        "facts": [
+          {
+            "value": "No developer",
+            "label": "Edit the site from the admin panel"
+          },
+          {
+            "value": "SEO built in",
+            "label": "Meta fields and search preview"
+          },
+          {
+            "value": "Scheduled",
+            "label": "Draft, review and publish posts"
+          },
+          {
+            "value": "One login",
+            "label": "Website and ERP together"
+          }
+        ],
+        "sources": {
+          "eyebrow": "What you manage",
+          "title": "Every part of your website in one place",
+          "items": [
+            {
+              "icon": "i-file",
+              "title": "Pages and templates",
+              "text": "Site pages with a home page, plus details templates for service pages.",
+              "tags": []
+            },
+            {
+              "icon": "i-layers",
+              "title": "Menus",
+              "text": "A menu builder for pages, categories and custom links.",
+              "tags": []
+            },
+            {
+              "icon": "i-eye",
+              "title": "Media library",
+              "text": "Images in folders, with favourites, filters, duplicates and trash.",
+              "tags": []
+            },
+            {
+              "icon": "i-star",
+              "title": "Blog, FAQ and reviews",
+              "text": "SEO-ready posts, FAQs and testimonials with ratings and video.",
+              "tags": []
+            }
+          ]
+        },
+        "workflow": {
+          "eyebrow": "Publishing workflow",
+          "title": "From draft to published in six steps",
+          "steps": [
+            {
+              "title": "Write",
+              "text": "Add the title and content of a page or blog post."
+            },
+            {
+              "title": "Add media",
+              "text": "Pick a feature image from the media library."
+            },
+            {
+              "title": "Optimise",
+              "text": "Set the meta title and description and check the search preview."
+            },
+            {
+              "title": "Organise",
+              "text": "Choose a category and tags and place it in the menu."
+            },
+            {
+              "title": "Review",
+              "text": "Move the post from draft to review for a second pair of eyes."
+            },
+            {
+              "title": "Publish",
+              "text": "Publish now or schedule it for later."
+            }
+          ]
+        },
+        "capabilities": [
+          "Page management with a chosen home page",
+          "Details templates per module",
+          "Menu builder with pages, categories and custom links",
+          "Media library with folders and favourites",
+          "Duplicate detection, filters and trash for media",
+          "Blog with SEO fields and search preview",
+          "Blog categories and tags",
+          "Draft, review, scheduled and published states",
+          "Comment moderation and blog settings",
+          "Testimonials with rating, video and order",
+          "FAQ management with display order",
+          "Theme, header, footer and SEO settings"
+        ],
+        "audiences": {
+          "eyebrow": "Built for every team",
+          "title": "Content tools for everyone who touches the site",
+          "items": [
+            {
+              "icon": "i-trend",
+              "title": "Marketing",
+              "items": [
+                "Publish blogs that rank",
+                "Schedule seasonal content",
+                "Update offers fast",
+                "Add testimonials"
+              ]
+            },
+            {
+              "icon": "i-palette",
+              "title": "Design",
+              "items": [
+                "Theme settings",
+                "Header and footer",
+                "Details templates",
+                "Consistent media"
+              ]
+            },
+            {
+              "icon": "i-headset",
+              "title": "Support",
+              "items": [
+                "Keep FAQs current",
+                "Answer before customers ask",
+                "Moderate comments",
+                "Fewer repeat questions"
+              ]
+            },
+            {
+              "icon": "i-chart",
+              "title": "Owners",
+              "items": [
+                "No developer bills",
+                "Fresh, SEO-ready site",
+                "One login for everything",
+                "Brand kept consistent"
+              ]
+            }
+          ]
+        },
+        "compare": {
+          "eyebrow": "Why agencies switch",
+          "title": "Before and after TravelSuite ERP",
+          "before": "Without TravelSuite",
+          "after": "With TravelSuite ERP",
+          "rows": [
+            [
+              "Page updates",
+              "Wait for a developer",
+              "Edit pages in the admin panel"
+            ],
+            [
+              "Blog SEO",
+              "Plugins and guesswork",
+              "Meta fields and search preview"
+            ],
+            [
+              "Images",
+              "Scattered across folders",
+              "One media library"
+            ],
+            [
+              "Menus",
+              "Hard-coded in the theme",
+              "Menu builder"
+            ],
+            [
+              "Logins",
+              "Separate website and booking system",
+              "One back office"
+            ]
+          ]
+        }
+      }
+    },
+    {
       "slug": "ai",
       "group": "platform",
       "icon": "i-bot",
@@ -2218,6 +3167,257 @@
             "Yes. It can reply in English, Arabic, Bangla, Malay and more."
           ]
         ]
+      }
+    },
+    {
+      "slug": "document-intelligence",
+      "group": "platform",
+      "icon": "i-eye",
+      "title": "Document Intelligence (OCR)",
+      "desc": "Scan passports and travel documents with OCR to capture text and speed up data entry.",
+      "intro": "Stop typing passport details by hand. Document Intelligence scans travel documents with OCR, reads the text and fills in the form for your staff to check, across modules such as Visa, Hotel, Tour and CRM. Every scan is logged with its confidence score, so you know what was read and how well.",
+      "bullets": [
+        "OCR scanning for travel documents",
+        "Auto-fill in Visa, Hotel, Tour and CRM forms",
+        "English and Bangla text recognition",
+        "Confidence threshold you control",
+        "Scan history with confidence per document",
+        "OCR logs for errors and review"
+      ],
+      "steps": [
+        "Upload or scan the document",
+        "OCR reads the text",
+        "Staff check the filled form and save"
+      ],
+      "benefits": [
+        "Minutes saved on every application",
+        "Fewer typing mistakes in names and numbers",
+        "A record of every scan"
+      ],
+      "seo": {
+        "keywords": "passport OCR software, travel document OCR, passport scanner for travel agencies, visa application OCR, automatic data entry travel agency, Tesseract OCR travel ERP",
+        "overview": [
+          "Document Intelligence brings OCR to TravelSuite ERP. Staff upload or scan a traveller's document, the system reads the text and fills in the matching fields, and the staff member only checks and saves. It works in modules such as Visa, Hotel, Tour and CRM.",
+          "The engine is Tesseract, running on your own server, with English and Bangla language support. You choose the confidence threshold, which document types are enabled and whether to keep the raw OCR text and logs. Support for Google Vision, Azure and AWS Textract is planned.",
+          "Every scan is recorded with its module, document type, reference, status, confidence and time. The dashboard groups scans by module and the logs show any errors, so managers can see how much typing OCR is saving and where documents need a second look."
+        ],
+        "faqs": [
+          [
+            "What does Document Intelligence do?",
+            "It reads text from travel documents with OCR and fills in the matching form fields, so staff check instead of typing."
+          ],
+          [
+            "Which modules use it?",
+            "It works across modules such as Visa, Hotel, Tour and CRM, and the dashboard shows scans by module."
+          ],
+          [
+            "Which OCR engine is used?",
+            "Tesseract, self-hosted on your server. Google Vision, Azure and AWS Textract providers are planned."
+          ],
+          [
+            "Does it read Bangla?",
+            "Yes. Tesseract language codes such as eng, ben or eng+ben let you read English, Bangla or both."
+          ],
+          [
+            "How accurate is it?",
+            "Accuracy depends on image quality. Each scan has a confidence score and you set the threshold, so low-confidence results are flagged for review."
+          ],
+          [
+            "Is the scanned text stored?",
+            "You decide. Settings let you store or skip the raw OCR text and the OCR logs."
+          ],
+          [
+            "Can I see past scans?",
+            "Yes. Scan history lists the module, document type, reference, status, confidence and time of every scan."
+          ],
+          [
+            "Is Document Intelligence free?",
+            "The OCR module is included with TravelSuite ERP. Ask us during the demo how to switch it on."
+          ]
+        ]
+      },
+      "page": {
+        "seoTitle": "Passport & Travel Document OCR Software — TravelSuite ERP",
+        "metaDescription": "OCR for travel agencies. Scan passports and travel documents, auto-fill Visa, Hotel, Tour and CRM forms, and track every scan with confidence scores.",
+        "h1": "Passport & travel document OCR",
+        "overviewTitle": "Automatic data entry for travel agencies",
+        "facts": [
+          {
+            "value": "Auto-fill",
+            "label": "Visa, Hotel, Tour and CRM forms"
+          },
+          {
+            "value": "English + Bangla",
+            "label": "Tesseract language support"
+          },
+          {
+            "value": "Self-hosted",
+            "label": "Documents stay on your server"
+          },
+          {
+            "value": "Confidence",
+            "label": "A score on every scan"
+          }
+        ],
+        "sources": {
+          "eyebrow": "OCR providers",
+          "title": "Choose how documents are read",
+          "items": [
+            {
+              "icon": "i-shield",
+              "title": "Tesseract (active)",
+              "text": "Self-hosted OCR on your own server, with English and Bangla language packs.",
+              "tags": [
+                "eng",
+                "ben",
+                "eng+ben"
+              ]
+            },
+            {
+              "icon": "i-search",
+              "title": "Google Vision",
+              "text": "Cloud OCR provider, coming soon.",
+              "tags": [
+                "Coming soon"
+              ]
+            },
+            {
+              "icon": "i-layers",
+              "title": "Azure and AWS Textract",
+              "text": "Cloud document AI providers, coming soon.",
+              "tags": [
+                "Coming soon"
+              ]
+            },
+            {
+              "icon": "i-code",
+              "title": "Custom provider",
+              "text": "Connect your own OCR service, coming soon.",
+              "tags": [
+                "Coming soon"
+              ]
+            }
+          ]
+        },
+        "workflow": {
+          "eyebrow": "Scan workflow",
+          "title": "From document to saved record in five steps",
+          "steps": [
+            {
+              "title": "Upload",
+              "text": "Add a photo or scan of the traveller's document."
+            },
+            {
+              "title": "Read",
+              "text": "OCR extracts the text in the language you set."
+            },
+            {
+              "title": "Fill",
+              "text": "Matching fields in the form are filled in."
+            },
+            {
+              "title": "Check",
+              "text": "Staff review the result; low-confidence scans are flagged."
+            },
+            {
+              "title": "Log",
+              "text": "The scan is saved to history with its confidence and status."
+            }
+          ]
+        },
+        "capabilities": [
+          "OCR scanning for travel documents",
+          "Form auto-fill across Visa, Hotel, Tour and CRM",
+          "Self-hosted Tesseract engine",
+          "English, Bangla or combined language packs",
+          "Configurable confidence threshold",
+          "Enable or disable document types",
+          "Option to store raw OCR text",
+          "Option to store OCR logs",
+          "Dashboard with scans by module",
+          "Scan history with confidence and status",
+          "Error logs for failed scans",
+          "Cloud providers planned: Google Vision, Azure, AWS Textract"
+        ],
+        "audiences": {
+          "eyebrow": "Built for every team",
+          "title": "Less typing for everyone who handles documents",
+          "items": [
+            {
+              "icon": "i-passport",
+              "title": "Visa officers",
+              "items": [
+                "Passport details filled in",
+                "Fewer spelling mistakes",
+                "More files per day",
+                "Flagged low-confidence scans"
+              ]
+            },
+            {
+              "icon": "i-headset",
+              "title": "Front desk",
+              "items": [
+                "Scan at the counter",
+                "New customer in seconds",
+                "Check, then save",
+                "Less waiting for travellers"
+              ]
+            },
+            {
+              "icon": "i-shield",
+              "title": "Admins",
+              "items": [
+                "Self-hosted engine",
+                "Choose what is stored",
+                "Language and threshold settings",
+                "Error logs"
+              ]
+            },
+            {
+              "icon": "i-chart",
+              "title": "Managers",
+              "items": [
+                "Scans by module",
+                "Confidence over time",
+                "Time saved on data entry",
+                "Audit trail of every scan"
+              ]
+            }
+          ]
+        },
+        "compare": {
+          "eyebrow": "Why agencies switch",
+          "title": "Before and after TravelSuite ERP",
+          "before": "Without TravelSuite",
+          "after": "With TravelSuite ERP",
+          "rows": [
+            [
+              "Passport details",
+              "Typed by hand from a photo",
+              "Read by OCR and filled in"
+            ],
+            [
+              "Mistakes",
+              "Wrong letters in names and numbers",
+              "Staff check what OCR read"
+            ],
+            [
+              "Bangla documents",
+              "Typed separately",
+              "eng+ben language support"
+            ],
+            [
+              "Tracking",
+              "No record of what was entered",
+              "Scan history with confidence"
+            ],
+            [
+              "Privacy",
+              "Files sent to random tools",
+              "Self-hosted OCR on your server"
+            ]
+          ]
+        }
       }
     },
     {

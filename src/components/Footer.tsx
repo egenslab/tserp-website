@@ -93,6 +93,7 @@ export default function Footer() {
               <Link href="/features/crm">Travel ERP</Link>
               <Link href="/features/b2b">B2B & B2C Booking</Link>
               <Link href="/features/website">Agency Website</Link>
+              <Link href="/features/cms">Website CMS</Link>
               <Link href="/features/ai">AI Automation</Link>
               <Link href="/features/omnichannel">Omnichannel Inbox</Link>
               <Link href="/features">All features</Link>

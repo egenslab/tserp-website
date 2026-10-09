@@ -86,7 +86,7 @@ export default function Header() {
               <li className={"has-mega" + (mega === "products" ? " open" : "")} {...hoverProps("products")}>
                 <button className="nav-link" data-nav="products" aria-current={active === "products" ? "page" : undefined} aria-expanded={mega === "products"} aria-controls="mega-products" onClick={(e) => { e.stopPropagation(); toggleMega("products"); }}>Products <svg className="ic chev"><use href="#i-chev" /></svg></button>
                 <div className="mega" id="mega-products">
-                  <div className="mega-inner container">
+                  <div className="mega-inner container prod">
                     <div className="mega-col">
                       <h6>Travel services</h6>
                       <Link href="/features/flights" className="mega-item">
@@ -131,11 +131,23 @@ export default function Header() {
                         <span><b>Sales</b><small>Quotes to confirmed bookings</small></span>
                       </Link>
                       {" "}
+                      <Link href="/features/proposals" className="mega-item">
+                        <span className="mi"><svg><use href="#i-file" /></svg></span>
+                        <span><b>Proposals & Quotations</b><small>Branded offers with validity</small></span>
+                      </Link>
+                      {" "}
                       <Link href="/features/finance" className="mega-item">
                         <span className="mi"><svg><use href="#i-wallet" /></svg></span>
                         <span><b>Finance & Accounting</b><small>Ledgers, invoices, payments</small></span>
                       </Link>
                       {" "}
+                      <Link href="/features/vendors" className="mega-item">
+                        <span className="mi"><svg><use href="#i-building" /></svg></span>
+                        <span><b>Vendor Management</b><small>Suppliers, commission, payouts</small></span>
+                      </Link>
+                    </div>
+                    <div className="mega-col">
+                      <h6 aria-hidden="true"></h6>
                       <Link href="/features/hr" className="mega-item">
                         <span className="mi"><svg><use href="#i-idcard" /></svg></span>
                         <span><b>HR & Employees</b><small>Staff, attendance, payroll</small></span>
@@ -150,6 +162,11 @@ export default function Header() {
                         <span className="mi"><svg><use href="#i-chart" /></svg></span>
                         <span><b>Reports & Analytics</b><small>Sales, profit, performance</small></span>
                       </Link>
+                      {" "}
+                      <Link href="/features/marketing" className="mega-item">
+                        <span className="mi"><svg><use href="#i-mail" /></svg></span>
+                        <span><b>Marketing</b><small>Targeted email campaigns</small></span>
+                      </Link>
                     </div>
                     <div className="mega-col">
                       <h6>Platform</h6>
@@ -163,9 +180,19 @@ export default function Header() {
                         <span><b>Agency Website</b><small>Your digital storefront</small></span>
                       </Link>
                       {" "}
+                      <Link href="/features/cms" className="mega-item">
+                        <span className="mi"><svg><use href="#i-palette" /></svg></span>
+                        <span><b>Website CMS</b><small>Pages, blog, menus & SEO</small></span>
+                      </Link>
+                      {" "}
                       <Link href="/features/ai" className="mega-item">
                         <span className="mi"><svg><use href="#i-bot" /></svg></span>
                         <span><b>AI Automation</b><small>AI agents & trip planners</small></span>
+                      </Link>
+                      {" "}
+                      <Link href="/features/document-intelligence" className="mega-item">
+                        <span className="mi"><svg><use href="#i-eye" /></svg></span>
+                        <span><b>Document Intelligence</b><small>Passport & document OCR</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/omnichannel" className="mega-item">
