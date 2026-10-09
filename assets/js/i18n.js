@@ -736,6 +736,7 @@
       'Reports show what sells and where to grow next.': 'রিপোর্ট দেখায় কী বিক্রি হচ্ছে আর কোথায় বাড়ানো যায়।',
       'Customer journey': 'কাস্টমারের যাত্রা',
       'Step': 'ধাপ',
+      'A division of Egens Lab Limited': 'Egens Lab Limited-এর একটি অঙ্গপ্রতিষ্ঠান',
       'Book a free 30-minute demo': '৩০ মিনিটের ফ্রি ডেমো বুক করুন',
       'See TravelSuite ERP set up with your own services, agents and branding.': 'আপনার নিজের সার্ভিস, এজেন্ট ও ব্র্যান্ডিং দিয়ে TravelSuite ERP দেখুন।',
       'Book now': 'এখনই বুক করুন',

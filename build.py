@@ -692,6 +692,7 @@ def include(text, depth=0):
 
 ORG_LD = jsonld({"@context": "https://schema.org", "@type": "Organization", "name": "TravelSuite ERP", "url": SITE,
                  "logo": SITE + "assets/img/logo.png",
+                 "parentOrganization": {"@type": "Organization", "name": "Egens Lab Limited"},
                  "sameAs": [url for _, _, url in M.SOCIAL if "wa.me" not in url],
                  "contactPoint": {"@type": "ContactPoint", "telephone": "+8801325277120", "contactType": "sales",
                                   "areaServed": ["BD", "MY", "SA", "AE", "QA", "KW", "OM", "BH", "US"],

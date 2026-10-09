@@ -1115,3 +1115,5 @@ a.site-shot { display: block; }
 @media (max-width: 640px) { .demo-card { flex-wrap: wrap; } .demo-go { width: 100%; justify-content: center; } }
 .footer-brand p { max-width: 100%; }
 .footer-brand p { max-width: 430px; }
+.copy { display: grid; gap: 2px; }
+.division { color: var(--lime); font-size: .8rem; font-weight: 600; letter-spacing: .02em; }
