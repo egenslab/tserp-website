@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import I18nProvider from "@/components/I18nProvider";
+import ScrollToTop from "@/components/ScrollToTop";
 import Icons from "@/components/Icons";
 import WaFloat from "@/components/WaFloat";
 import { SITE } from "@/lib/content";
@@ -23,7 +24,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" dir="ltr" data-scroll-behavior="smooth" suppressHydrationWarning>
+    <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: EARLY_SCRIPT }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <I18nProvider>
+          <ScrollToTop />
           <Icons />
           <Header />
           <main>{children}</main>
