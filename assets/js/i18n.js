@@ -727,7 +727,14 @@
       'Card (Visa, Mastercard, American Express), PayPal, Stripe, Apple Pay, Google Pay or bank transfer. Customers in Bangladesh can also pay in BDT; international customers are invoiced in USD.': 'কার্ড (Visa, Mastercard, American Express), PayPal, Stripe, Apple Pay, Google Pay বা ব্যাংক ট্রান্সফার। বাংলাদেশের গ্রাহকরা টাকায়ও পরিশোধ করতে পারেন; বিদেশি গ্রাহকদের ডলারে ইনভয়েস করা হয়।',
       'Topics': 'বিষয়',
       'Google Reviews': 'Google রিভিউ',
-      'Read or write a review': 'রিভিউ পড়ুন বা লিখুন'
+      'Read or write a review': 'রিভিউ পড়ুন বা লিখুন',
+      'Travellers discover you through your website and online booking.': 'যাত্রীরা আপনার ওয়েবসাইট ও অনলাইন বুকিংয়ের মাধ্যমে আপনাকে খুঁজে পান।',
+      'Chats from every channel land in one shared inbox.': 'প্রতিটি চ্যানেলের চ্যাট আসে একটি শেয়ার্ড ইনবক্সে।',
+      'Leads become quotations and confirmed bookings.': 'লিড পরিণত হয় কোটেশন ও কনফার্মড বুকিংয়ে।',
+      'Ticketing, accounts, HR and support run in one ERP.': 'টিকিটিং, হিসাব, HR ও সাপোর্ট চলে একটি ERP-তে।',
+      'AI answers, qualifies and follows up around the clock.': 'AI সারাক্ষণ উত্তর দেয়, লিড যাচাই ও ফলো-আপ করে।',
+      'Reports show what sells and where to grow next.': 'রিপোর্ট দেখায় কী বিক্রি হচ্ছে আর কোথায় বাড়ানো যায়।',
+      'Customer journey': 'কাস্টমারের যাত্রা'
     }
   };
 
