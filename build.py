@@ -763,7 +763,7 @@ def write_translations():
 # ---------------------------------------------------------------------------
 BRANDS = set("""Amadeus Sabre Travelport Duffel Kiwi.com Hotelbeds Expedia Hotels.com WebBeds TBO Tripadvisor GetYourGuide
 SSLCommerz Mastercard Stripe PayPal Razorpay WhatsApp Messenger Instagram Mailgun OpenAI QuickBooks Xero English
-travelsuiteerp.com EN in f ChatGPT Claude Perplexity Topics""".split()) | {
+travelsuiteerp.com EN in f ChatGPT Claude Perplexity Topics Trustpilot""".split()) | {
     "Twilio SMS", "Google Analytics", "Google Maps", "WhatsApp, Messenger, Instagram", "WhatsApp + Facebook + Instagram",
     "+ Messenger, Instagram", "LinkedIn", "Facebook", "YouTube", "Google AI", "Apple Pay", "Google Pay", "American Express"}
 

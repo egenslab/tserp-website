@@ -1039,3 +1039,17 @@ a.site-shot { display: block; }
 @media (max-width: 480px) {
   .ai-cards { grid-template-columns: 1fr; }
 }
+
+/* Footer review badges (replace newsletter) */
+.review-badges { display: grid; grid-template-columns: repeat(2, minmax(0, 220px)); gap: 12px; }
+.review-card { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 16px; background: var(--white); color: var(--ink) !important; margin: 0 !important; transition: transform .2s, box-shadow .2s; }
+.review-card:hover { transform: translateY(-2px); box-shadow: 0 0 0 3px var(--lime); }
+.review-card img { width: 28px; height: 28px; flex: none; }
+.rv-text { display: grid; line-height: 1.25; }
+.rv-text b { font-family: var(--font-display); font-weight: 700; font-size: .95rem; }
+.rv-text small { color: var(--muted); font-size: .76rem; }
+.rv-stars { font-size: .95rem; letter-spacing: 1px; }
+.rv-stars.g { color: #fbbc04; }
+.rv-stars.tp { display: flex; gap: 2px; margin: 2px 0; }
+.rv-stars.tp i { font-style: normal; width: 16px; height: 16px; display: grid; place-items: center; background: #00b67a; color: #fff; font-size: .7rem; }
+@media (max-width: 640px) { .review-badges { grid-template-columns: 1fr 1fr; } .review-card { padding: 12px; gap: 8px; } }
