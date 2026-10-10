@@ -642,8 +642,10 @@ html[lang="bn"] h1, html[lang="bn"] h2, html[lang="bn"] h3 { line-height: 1.3; l
 
 /* About: founder message */
 .founder { background: var(--forest); background-image: radial-gradient(circle at 90% 10%, rgba(146, 239, 89, .18), transparent 35%); color: #cfe0d6; }
-.founder-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 72px; align-items: center; }
-.founder-photo { position: relative; margin: 0 0 0 18px; }
+.founder-grid { display: grid; grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr); gap: 72px; align-items: start; }
+/* Photo stays in view while the message scrolls, then leaves with the section */
+.founder-photo { position: sticky; top: 110px; }
+.founder-photo { margin: 0 0 0 18px; }
 .founder-photo::before { content: ""; position: absolute; inset: 18px -18px -18px 18px; border: 2px solid var(--lime); border-radius: 28px; }
 .founder-photo img { position: relative; display: block; width: 100%; height: auto; border-radius: 28px; box-shadow: 0 30px 60px rgba(0, 0, 0, .3); }
 .founder-photo figcaption { position: absolute; left: -18px; bottom: 32px; background: var(--white); color: var(--ink); border-radius: 16px; padding: 12px 18px; box-shadow: 0 16px 40px rgba(0, 0, 0, .25); }
@@ -666,7 +668,7 @@ html[lang="bn"] h1, html[lang="bn"] h2, html[lang="bn"] h3 { line-height: 1.3; l
 .founder-sign small { color: var(--lime); font-weight: 600; }
 @media (max-width: 1000px) {
   .founder-grid { grid-template-columns: 1fr; gap: 48px; }
-  .founder-photo { max-width: 420px; margin: 0 auto; }
+  .founder-photo { max-width: 420px; margin: 0 auto; position: relative; top: auto; }
 }
 @media (max-width: 640px) {
   .founder-photo { max-width: calc(100% - 36px); }
