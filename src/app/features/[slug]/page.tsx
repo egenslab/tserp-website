@@ -9,6 +9,9 @@ import { breadcrumbLd, faqLd, pageMeta, type Crumb } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
+// Icons for the generic three-step "How it works" block: set up, work, result
+const STEP_ICONS = ["i-layers", "i-spark", "i-rocket"];
+
 export const dynamicParams = false;
 export const generateStaticParams = () => FEATURES.map((f) => ({ slug: f.slug }));
 
@@ -70,8 +73,19 @@ export default async function FeaturePage({ params }: Props) {
       {page.workflow ? <Workflow data={page.workflow} alt={!!page.sources} /> : (
         <section className="section">
           <div className="container">
-            <div className="section-head"><span className="eyebrow">How it works</span><h2>{f.title}</h2></div>
-            <ol className="steps three">{f.steps.map((s, i) => <li key={s}><span>{i + 1}</span><h4>{s}</h4></li>)}</ol>
+            <div className="section-head"><span className="eyebrow">How it works</span><h2>{`${f.title} in three simple steps`}</h2></div>
+            <ol className="how3">
+              {f.steps.map((s, i) => (
+                <li key={s} className={i === f.steps.length - 1 ? "how3-step last" : "how3-step"}>
+                  <div className="how3-top">
+                    <span className="how3-ico"><Glyph name={STEP_ICONS[i] ?? f.icon} /></span>
+                    <span className="how3-num">{String(i + 1).padStart(2, "0")}</span>
+                  </div>
+                  <span className="how3-label">{`Step ${i + 1}`}</span>
+                  <h3>{s}</h3>
+                </li>
+              ))}
+            </ol>
           </div>
         </section>
       )}

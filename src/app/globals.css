@@ -1524,3 +1524,25 @@ html[lang="th"] body { line-height: 1.8; }
 .gds-strip-list { display: flex; flex-wrap: wrap; gap: 6px; }
 .gds-strip-list span { background: var(--white); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: .84rem; font-weight: 700; color: var(--ink); }
 @media (max-width: 640px) { .gds-strip { border-radius: 20px; } }
+
+/* Feature pages: generic three-step How it works */
+.how3 { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; counter-reset: none; }
+.how3-step { position: relative; display: grid; gap: 10px; align-content: start; padding: 28px; border-radius: 22px; background: var(--white); border: 1px solid var(--line); transition: transform .3s, box-shadow .3s, border-color .3s; }
+.how3-step:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--lime); }
+.how3-step:not(:last-child)::after { content: ""; position: absolute; right: -32px; top: 54px; width: 24px; height: 24px; border-radius: 50%; background: var(--lime) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23184332' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / 14px no-repeat; box-shadow: 0 0 0 6px var(--white); z-index: 1; }
+.how3-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.how3-ico { width: 60px; height: 60px; border-radius: 18px; display: grid; place-items: center; background: var(--lime-soft); transition: background .3s; }
+.how3-ico svg { width: 28px; height: 28px; fill: none; stroke: var(--forest); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.how3-step:hover .how3-ico { background: var(--lime); }
+.how3-num { font-family: var(--font-display); font-weight: 800; font-size: 3.2rem; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px #cfdcd3; }
+.how3-label { font-size: .74rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--forest-2); }
+.how3-step h3 { font-size: 1.15rem; line-height: 1.35; margin: 0; }
+.how3-step.last { background: var(--forest); border-color: var(--forest); background-image: radial-gradient(circle at 90% 10%, rgba(146, 239, 89, .25), transparent 45%); }
+.how3-step.last .how3-ico { background: var(--lime); }
+.how3-step.last .how3-num { -webkit-text-stroke-color: rgba(146, 239, 89, .5); }
+.how3-step.last .how3-label { color: var(--lime); }
+.how3-step.last h3 { color: var(--white); }
+@media (max-width: 900px) {
+  .how3 { grid-template-columns: 1fr; gap: 32px; max-width: 520px; margin: 0 auto; }
+  .how3-step:not(:last-child)::after { right: auto; left: 50%; top: auto; bottom: -28px; transform: translateX(-50%) rotate(90deg); }
+}
