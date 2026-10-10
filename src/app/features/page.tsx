@@ -32,9 +32,8 @@ export default function FeaturesPage() {
               <h2 key={g.id} className="fgroup-title" id={g.id}>{g.title}</h2>,
               ...g.items.map((f) => (
                 <article key={f.slug} className="fdetail" id={f.slug}>
-                  <div className="fdetail-head"><span className="m-ico dark"><Glyph name={f.icon} /></span><div><h3>{f.title}</h3><p>{f.desc}</p></div></div>
+                  <div className="fdetail-head"><span className="m-ico dark"><Glyph name={f.icon} /></span><div><h3>{f.title}</h3><p>{f.desc}</p></div><Link href={`/features/${f.slug}`} className="fd-more" aria-label={`Learn more about ${f.title}`}>Learn more <Icon name="i-arrow" /></Link></div>
                   <ul className="fdetail-list">{f.bullets.map((b) => <li key={b}>{b}</li>)}</ul>
-                  <Link href={`/features/${f.slug}`} className="link-arrow">Learn more <Icon name="i-arrow" /></Link>
                 </article>
               )),
             ])}
