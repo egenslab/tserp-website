@@ -144,7 +144,7 @@ export function PostCard({ p, featured = false, hidden = false }: { p: Post; fea
   return (
     <article className={featured ? "post-card featured-post" : "post-card"} hidden={hidden}>
       <Link href={href} className="post-cover" style={{ "--c": p.color }} tabIndex={-1} aria-hidden="true">
-        <Glyph name={p.icon} /><span className="cover-chip">{p.cat}</span>
+        {p.cover ? <img className="cover-img" src={p.cover} alt="" width={1200} height={675} loading="lazy" /> : <Glyph name={p.icon} />}<span className="cover-chip">{p.cat}</span>
       </Link>
       <div className="post-body">
         {featured && <span className="feat-chip">Featured article</span>}

@@ -39,7 +39,7 @@ export type Solution = {
 };
 export type Block = ["h2" | "p", string] | ["ul", string[]];
 export type Post = {
-  slug: string; cat: string; icon: string; color: string; date: string; read: number;
+  slug: string; cat: string; icon: string; color: string; cover?: string; date: string; read: number;
   title: string; seoTitle?: string; excerpt: string; body: Block[];
   extra: { takeaways?: string[]; blocks?: Block[]; faqs?: Faq[] };
 };

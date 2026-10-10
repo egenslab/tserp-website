@@ -89,7 +89,7 @@ export default async function PostPage({ params }: Props) {
             </div>
           </aside>
           <div className="post-main">
-            <div className="post-cover big" style={{ "--c": p.color }} aria-hidden="true"><Glyph name={p.icon} /></div>
+            <div className="post-cover big" style={{ "--c": p.color }}>{p.cover ? <img className="cover-img" src={p.cover} alt={p.title} width={1200} height={675} /> : <Glyph name={p.icon} />}</div>
             <article className="article" id="article">
               <p className="article-lead">{p.excerpt}</p>
               {takeaways.length > 0 && (
