@@ -589,11 +589,11 @@ export default function HomePage() {
                     <svg><use href="#i-star" /></svg>
                     <svg><use href="#i-star" /></svg>
                   </div>
-                  <blockquote>Our visa team tracks every file stage by stage, and customers get updates automatically. Calls asking for status dropped sharply.</blockquote>
-                  <span className="chip">Fewer status calls</span>
+                  <blockquote>Guests book our cabins and resorts online, and every room, rate and booking is managed from one dashboard. Availability is always accurate.</blockquote>
+                  <span className="chip">Cabin & resort booking</span>
                   <figcaption>
-                    <span className="avatar a2">TJ</span>
-                    <span className="t-who"><span className="b t-name">Operations Head</span><span className="t-role">Visa processing centre</span><span className="t-loc"><img src="/assets/img/flags/bd.svg" alt="Bangladesh flag" width={16} height={12} />Dhaka, Bangladesh</span></span>
+                    <span className="avatar a2">CE</span>
+                    <span className="t-who"><span className="b t-name">Chad Elish</span><span className="t-role">CEO · <span className="t-co">BrokenBow</span></span><span className="t-loc"><img src="/assets/img/flags/us.svg" alt="USA flag" width={16} height={12} />USA</span></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
