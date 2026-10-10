@@ -86,10 +86,10 @@ export function AiTop2() {
               <p>5 nights · 2 adults, 2 children · December</p>
             </header>
             <div className="au-blocks">
-              <section><Icon name="i-bed" /><span><span className="b">Stay</span><small>Beachfront family room from your hotel list</small></span></section>
-              <section><Icon name="i-map" /><span><span className="b">Activities</span><small>Two half-day tours from your tour packages</small></span></section>
-              <section><Icon name="i-car" /><span><span className="b">Transfers</span><small>Airport pick-up and drop-off</small></span></section>
-              <section className="au-note"><Icon name="i-bell" /><span><span className="b">For the consultant</span><small>Confirm budget and child ages before quoting</small></span></section>
+              <div><Icon name="i-bed" /><span><span className="b">Stay</span><small>Beachfront family room from your hotel list</small></span></div>
+              <div><Icon name="i-map" /><span><span className="b">Activities</span><small>Two half-day tours from your tour packages</small></span></div>
+              <div><Icon name="i-car" /><span><span className="b">Transfers</span><small>Airport pick-up and drop-off</small></span></div>
+              <div className="au-note"><Icon name="i-bell" /><span><span className="b">For the consultant</span><small>Confirm budget and child ages before quoting</small></span></div>
             </div>
             <footer className="au-review">
               <span className="au-rv-who"><Icon name="i-headset" />Consultant review</span>

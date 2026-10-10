@@ -1,4 +1,4 @@
-// Reports & Analytics page: report library, sales funnel with channel mix, and profit bridge with forecast.
+// Reports & Analytics page: report library, booking and customer reports, and profit bridge with forecast.
 // Based on the analytics screens (Dashboard Analytics, Sales, Booking, Customer, Revenue, Staff Performance)
 // and the per-module report pages. All figures shown are fictional examples.
 import { Icon } from "../ui";
@@ -76,80 +76,97 @@ export function ReportsTop1() {
   );
 }
 
-const FUNNEL = [
-  { t: "Enquiries", v: 1000 },
-  { t: "Quotations sent", v: 600 },
-  { t: "Follow-up done", v: 420 },
-  { t: "Proposal accepted", v: 250 },
-  { t: "Booking confirmed", v: 160 },
-  { t: "Paid & closed", v: 140 },
+// Booking and customer reports: weekly volume, lead time, module mix, segments, lifetime value and sources
+const WEEKS: [string, number, number, number][] = [["W1", 62, 18, 4], ["W2", 74, 15, 3], ["W3", 81, 20, 5], ["W4", 70, 12, 2]];
+const MODULES: [string, string, number, string, string][] = [
+  ["i-kaaba", "Hajj & Umrah", 86, "$1,700", "2.4%"],
+  ["i-passport", "Visa", 72, "$130", "3.8%"],
+  ["i-map", "Tour", 80, "$220", "5.1%"],
+  ["i-bed", "Hotel", 49, "$150", "6.2%"],
 ];
-const CHANNELS = [
-  { t: "Direct / walk-in", v: 50, cls: "c0" },
-  { t: "Agent network", v: 30, cls: "c1" },
-  { t: "Online / portal", v: 20, cls: "c2" },
-];
+const LEAD: [string, number][] = [["Same day", 9], ["1–3 days", 25], ["4–7 days", 37], ["8–14 days", 19], ["15+ days", 10]];
+const SEGMENTS: [string, number, string][] = [["New", 34, "sa"], ["Returning", 43, "sb"], ["VIP", 7, "sc"], ["Corporate", 5, "sd"], ["Agent-referred", 11, "se"]];
+const SOURCES: [string, number][] = [["Direct / walk-in", 45], ["Word of mouth", 23], ["Social media", 15], ["Agent referral", 10], ["Google / SEO", 7]];
 
 export function ReportsTop2() {
-  const top = FUNNEL[0].v;
+  const maxWeek = Math.max(...WEEKS.map(([, c, p, x]) => c + p + x));
+  const maxLead = Math.max(...LEAD.map(([, v]) => v));
   return (
-    <section className="section rp-funnel">
+    <section className="section rp-bc">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">Sales report</span>
-          <h2>See where enquiries turn into paid bookings</h2>
-          <p>The sales funnel follows every enquiry through quotation, follow-up, proposal and confirmation to payment, and shows the share that moves to each next stage.</p>
+          <span className="eyebrow">Booking and customer reports</span>
+          <h2>Know how bookings move and who your customers are</h2>
+          <p>The booking report shows weekly volume, status, module mix and how far ahead people book. The customer report shows segments, lifetime value and where new customers come from.</p>
         </div>
-        <div className="rp-fn-grid">
-          <div className="rp-fn">
-            {FUNNEL.map((s, i) => {
-              const pct = Math.round((s.v / top) * 100);
-              const next = FUNNEL[i + 1];
-              return (
-                <div key={s.t} className="rp-fn-row">
-                  <div className="rp-fn-bar" style={{ width: `${Math.max(pct, 22)}%` }}>
-                    <span className="b">{s.v.toLocaleString("en-US")}</span>
-                    <span className="rp-fn-pct">{pct}%</span>
-                  </div>
-                  <div className="rp-fn-label">
-                    <span>{s.t}</span>
-                    {next && <small>{Math.round((next.v / s.v) * 100)}% move on</small>}
-                  </div>
+        <div className="rp-bc-grid">
+          <article className="rp-bc-card">
+            <div className="rp-bc-head"><span className="b"><Icon name="i-calendar" />Booking report</span><small>This month</small></div>
+            <div className="rp-bc-kpis">
+              <div><small>Total bookings</small><span className="b">366</span></div>
+              <div><small>Confirmed</small><span className="b">287</span></div>
+              <div><small>Cancellation rate</small><span className="b">4.2%</span></div>
+              <div><small>Avg processing</small><span className="b">3.4 days</span></div>
+            </div>
+            <div className="rp-bc-split">
+              <div>
+                <span className="rp-bc-label">Weekly volume</span>
+                <div className="rp-weeks" aria-label="Weekly bookings by status">
+                  {WEEKS.map(([w, c, p, x]) => (
+                    <div key={w} className="rp-week">
+                      <div className="rp-stack" style={{ height: `${((c + p + x) / maxWeek) * 100}%` }}>
+                        <i className="x" style={{ flex: x }} /><i className="p" style={{ flex: p }} /><i className="c" style={{ flex: c }} />
+                      </div>
+                      <small>{w}</small>
+                    </div>
+                  ))}
                 </div>
-              );
-            })}
-          </div>
-          <div className="rp-side">
-            <div className="rp-mix">
-              <h3>Sales channel mix</h3>
-              <div className="rp-mix-bar" aria-hidden="true">
-                {CHANNELS.map((c) => <i key={c.t} className={`rp-${c.cls}`} style={{ width: `${c.v}%` }}>{c.v}%</i>)}
+                <p className="rp-bc-legend"><i className="c" />Confirmed <i className="p" />Pending <i className="x" />Cancelled</p>
               </div>
-              <ul>
-                {CHANNELS.map((c) => <li key={c.t}><span className={`rp-sw rp-${c.cls}`} />{c.t}<span className="b">{c.v}%</span></li>)}
-              </ul>
+              <div>
+                <span className="rp-bc-label">Booking lead time</span>
+                <ul className="rp-lead">
+                  {LEAD.map(([k, v]) => (
+                    <li key={k}><span>{k}</span><span className="rp-lead-bar"><i style={{ width: `${(v / maxLead) * 100}%` }} /></span><span className="b">{v}%</span></li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <div className="rp-mom">
-              <h3>Month on month</h3>
-              <table>
-                <thead><tr><th scope="col">Metric</th><th scope="col">Last</th><th scope="col">This</th></tr></thead>
-                <tbody>
-                  <tr><th scope="row">Gross sales</th><td>$75,000</td><td>$84,000</td></tr>
-                  <tr><th scope="row">Avg order size</th><td>$720</td><td>$700</td></tr>
-                  <tr><th scope="row">Cancellations</th><td>9</td><td>7</td></tr>
-                  <tr><th scope="row">Conversion</th><td>13%</td><td>14%</td></tr>
-                </tbody>
-              </table>
+            <div className="rp-mods">
+              <div className="rp-mods-h"><span>Module</span><span>Bookings</span><span>Avg value</span><span>Cancel rate</span></div>
+              {MODULES.map(([i, m, n, v, c]) => (
+                <div key={m} className="rp-mods-r"><span><Icon name={i} />{m}</span><span>{n}</span><span>{v}</span><span>{c}</span></div>
+              ))}
             </div>
-          </div>
+          </article>
+
+          <article className="rp-bc-card dark">
+            <div className="rp-bc-head"><span className="b"><Icon name="i-users" />Customer report</span><small>This month</small></div>
+            <span className="rp-bc-label">Customer segments</span>
+            <div className="rp-seg" aria-label="Customers by segment">
+              {SEGMENTS.map(([k, v, c]) => <i key={k} className={c} style={{ flex: v }} />)}
+            </div>
+            <ul className="rp-seg-key">
+              {SEGMENTS.map(([k, v, c]) => <li key={k}><i className={c} />{k}<span className="b">{v}%</span></li>)}
+            </ul>
+            <span className="rp-bc-label">Lifetime value by segment</span>
+            <div className="rp-ltv">
+              <div><small>VIP</small><span className="b">$3,600</span><em>4.8 trips a year · 92% stay</em></div>
+              <div><small>Returning</small><span className="b">$1,280</span><em>2.4 trips a year · 68% stay</em></div>
+              <div><small>New</small><span className="b">$440</span><em>1 trip a year</em></div>
+            </div>
+            <span className="rp-bc-label">How new customers find you</span>
+            <ul className="rp-src">
+              {SOURCES.map(([k, v]) => <li key={k}><span>{k}</span><span className="rp-src-bar"><i style={{ width: `${(v / SOURCES[0][1]) * 100}%` }} /></span><span className="b">{v}%</span></li>)}
+            </ul>
+          </article>
         </div>
-        <p className="rp-note">Example data.</p>
+        <p className="hj-note">Example data. Both reports can be exported.</p>
       </div>
     </section>
   );
 }
 
-// Profit bridge steps in USD thousands: [label, value, kind]
 const BRIDGE: [string, number, "total" | "minus"][] = [
   ["Gross revenue", 100, "total"],
   ["Cost of services", 72, "minus"],

@@ -6,6 +6,7 @@ import CrmPipeline from "@/components/CrmPipeline";
 import GdsPriority from "@/components/GdsPriority";
 import HotelShowcase from "@/components/HotelShowcase";
 import { HotelCatalogue, HotelOps, HotelRates } from "@/components/HotelModules";
+import { MODULE_SECTIONS } from "@/components/modules";
 import { HajjPackages, HajjReadiness, HajjReports } from "@/components/HajjModules";
 import { TourBuilder, TourCatalogue, TourPricing } from "@/components/TourModules";
 import { TransportScorecard, TransportTrip, TransportVendors } from "@/components/TransportModules";
@@ -40,6 +41,7 @@ export default async function FeaturePage({ params }: Props) {
   const related = FEATURES.filter((g) => g.group === f.group && g.slug !== f.slug).slice(0, 3);
   const page = f.page ?? {};
   const capabilities = page.capabilities ?? f.bullets;
+  const mod = MODULE_SECTIONS[f.slug];
   return (
     <>
       <JsonLd data={[
@@ -74,6 +76,8 @@ export default async function FeaturePage({ params }: Props) {
       {f.slug === "hotels" && <HotelRates />}
       {f.slug === "hajj" && <HajjPackages />}
       {f.slug === "hajj" && <HajjReadiness />}
+      {mod && <mod.Top1 />}
+      {mod && <mod.Top2 />}
       {f.slug === "visa" && <VisaFlow />}
       {f.slug === "visa" && <VisaPipeline />}
       {f.slug === "tours" && <TourBuilder />}
@@ -122,6 +126,7 @@ export default async function FeaturePage({ params }: Props) {
       )}
       {f.slug === "hotels" && <HotelOps />}
       {f.slug === "hajj" && <HajjReports />}
+      {mod && <mod.Bottom />}
       {f.slug === "visa" && <VisaReports />}
       {f.slug === "tours" && <TourCatalogue />}
       {f.slug === "transport" && <TransportScorecard />}

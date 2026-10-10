@@ -120,7 +120,7 @@ export function SalesTop2() {
               </div>
             </div>
             <div className="sa-cal-scroll">
-              <div className="sa-cal-grid" role="grid" aria-label="Example booking calendar">
+              <div className="sa-cal-grid" aria-label="Example booking calendar">
                 {DAYS.map((d) => <span key={d} className="sa-dow">{d}</span>)}
                 {cells.map((n, i) => (
                   <div key={i} className={`sa-day${n === null ? " off" : ""}${n === SEL ? " sel" : ""}`}>
