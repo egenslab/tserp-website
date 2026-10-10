@@ -1628,3 +1628,39 @@ html[lang="th"] body { line-height: 1.8; }
   .caps-count { justify-content: center; }
 }
 @media (max-width: 640px) { .caps-list { grid-template-columns: 1fr; } }
+
+/* Hotels page: catalogue, rates and operations */
+.hm-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.hm-tile { display: flex; gap: 14px; align-items: center; padding: 18px; border-radius: 16px; background: var(--white); border: 1px solid var(--line); transition: border-color .2s, transform .2s; }
+.hm-tile:hover { border-color: var(--lime); transform: translateY(-3px); }
+.hm-ico { flex: none; width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; background: var(--lime-soft); color: var(--forest); }
+.hm-ico .ic { width: 22px; height: 22px; }
+.hm-tile h3, .hm-op h3 { font-size: 1rem; margin: 0 0 3px; }
+.hm-tile p, .hm-op p { margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.45; }
+.hm-rates-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr); gap: 52px; align-items: center; }
+.hm-rates-grid h2 { margin: 0 0 14px; }
+.hm-points { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 10px; }
+.hm-points li { display: flex; gap: 10px; align-items: center; font-weight: 500; color: var(--ink); }
+.hm-points .ic { width: 20px; height: 20px; padding: 3px; border-radius: 50%; background: var(--lime); color: var(--forest-ink); stroke-width: 3; }
+.hm-matrix { border-radius: 20px; background: var(--forest); padding: 16px; overflow-x: auto; }
+.hm-mrow { display: grid; grid-template-columns: 1.4fr repeat(7, minmax(54px, 1fr)); gap: 6px; min-width: 560px; }
+.hm-mrow + .hm-mrow { margin-top: 6px; }
+.hm-mhead span { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #9fb8ab; text-align: center; padding: 4px 0 6px; }
+.hm-mhead span:first-child { text-align: left; }
+.hm-room { color: var(--white); font-weight: 600; font-size: .86rem; display: flex; align-items: center; }
+.hm-cell { display: grid; place-items: center; padding: 10px 4px; border-radius: 10px; background: rgba(255, 255, 255, .08); color: var(--white); font-weight: 700; font-size: .84rem; font-variant-numeric: tabular-nums; }
+.hm-cell.low { background: rgba(245, 185, 40, .22); color: #ffd36b; font-size: .74rem; }
+.hm-cell.blk { background: rgba(229, 83, 75, .22); color: #ff9a92; font-size: .72rem; }
+.hm-ops-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.hm-op { padding: 22px; border-radius: 18px; background: var(--white); border: 1px solid var(--line); display: grid; gap: 8px; align-content: start; }
+.hm-op .hm-ico { margin-bottom: 6px; }
+.hm-settings { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; margin-top: 26px; color: var(--ink); }
+.hm-settings .b { margin-right: 6px; }
+.hm-chip { padding: 6px 14px; border-radius: 999px; background: var(--white); border: 1px solid var(--line); font-size: .84rem; font-weight: 600; color: var(--forest); }
+@media (max-width: 1000px) {
+  .hm-grid { grid-template-columns: 1fr 1fr; }
+  .hm-rates-grid { grid-template-columns: 1fr; gap: 28px; }
+  .hm-ops-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) { .hm-grid, .hm-ops-grid { grid-template-columns: 1fr; } }
+.section.alt + .hm-ops { padding-top: 0; }

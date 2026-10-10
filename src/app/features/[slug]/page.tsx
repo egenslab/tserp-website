@@ -5,6 +5,7 @@ import CrmCompare from "@/components/CrmCompare";
 import CrmPipeline from "@/components/CrmPipeline";
 import GdsPriority from "@/components/GdsPriority";
 import HotelShowcase from "@/components/HotelShowcase";
+import { HotelCatalogue, HotelOps, HotelRates } from "@/components/HotelModules";
 import { Breadcrumb, FaqSection, FeatureCard, Glyph, HeroCtas, Icon, JsonLd, OverviewSection } from "@/components/ui";
 import { FEATURES, SITE, featureBySlug, groupTitle } from "@/lib/content";
 import { breadcrumbLd, faqLd, pageMeta, type Crumb } from "@/lib/seo";
@@ -64,6 +65,8 @@ export default async function FeaturePage({ params }: Props) {
       {page.facts && <FactStrip facts={page.facts} />}
       <OverviewSection title={page.overviewTitle ?? f.title} paragraphs={f.seo.overview} />
       {f.slug === "hotels" && <HotelShowcase />}
+      {f.slug === "hotels" && <HotelCatalogue />}
+      {f.slug === "hotels" && <HotelRates />}
       {f.slug === "crm" && <CrmPipeline />}
       {f.slug === "crm" && <CrmCompare />}
       {page.sources && <Sources data={page.sources} alt />}
@@ -104,6 +107,7 @@ export default async function FeaturePage({ params }: Props) {
           </div>
         </section>
       )}
+      {f.slug === "hotels" && <HotelOps />}
       {page.audiences && <Audiences data={page.audiences} />}
       {page.compare && <BeforeAfter data={page.compare} alt />}
       {page.markets && <MarketNotes data={page.markets} />}
