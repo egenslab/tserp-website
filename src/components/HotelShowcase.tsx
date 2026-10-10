@@ -1,4 +1,6 @@
 // Hotels feature page: a static mock of the hotel search results, with a map and the inventory sources.
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { Icon } from "./ui";
 
 type Result = {
@@ -26,6 +28,9 @@ const SOURCES = [
 
 const SUPPLIERS = ["Hotelbeds", "WebBeds", "TBO Holidays", "RateHawk", "Expedia", "Local suppliers"];
 
+/** Real photo if public/assets/img/hotels/<art>.jpg exists, otherwise the drawn placeholder */
+const photo = (art: string) => existsSync(join(process.cwd(), "public/assets/img/hotels", `${art}.jpg`)) ? `/assets/img/hotels/${art}.jpg` : null;
+
 const usd = (n: number) => "$" + n.toLocaleString("en-US");
 
 export default function HotelShowcase() {
@@ -46,7 +51,7 @@ export default function HotelShowcase() {
             <ul className="hs-list">
               {RESULTS.map((r) => (
                 <li key={r.name} className={r.active ? "hs-item active" : "hs-item"}>
-                  <div className={`hs-photo art-${r.art}`}><span>{r.source}</span></div>
+                  <div className={`hs-photo art-${r.art}`}>{photo(r.art) && <img src={photo(r.art)!} alt={`${r.name} hotel`} width={280} height={240} loading="lazy" />}<span>{r.source}</span></div>
                   <div className="hs-info">
                     <h3>{r.name} <span className="hs-stars" aria-label={`${r.stars} star hotel`}>{"★".repeat(r.stars)}</span></h3>
                     <p className="hs-dist"><Icon name="i-pin" />{r.distance}</p>
