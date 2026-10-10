@@ -42,7 +42,7 @@ export default function HotelShowcase() {
               <span><Icon name="i-users" />2 rooms · 4 guests</span>
             </div>
             <div className="hx-photo">
-              {PHOTO && <img src={PHOTO} alt="Haram View Tower hotel" width={560} height={300} loading="lazy" />}
+              {PHOTO && <img src={PHOTO} alt="Deluxe double room at Haram View Tower" width={560} height={300} loading="lazy" />}
               <span className="hx-badge"><Icon name="i-star" />5-star · 300 m to Haram</span>
             </div>
             <div className="hx-title">
