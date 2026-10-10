@@ -24,7 +24,7 @@ export default function AffiliateCalc() {
     <div className="aff-calc">
       <div className="aff-calc-form">
         <label htmlFor="aff-count">
-          <span>Agencies you refer <b>{count}</b></span>
+          <span>Agencies you refer <span className="b">{count}</span></span>
           <input id="aff-count" type="range" min={1} max={50} value={count} onChange={(e) => setCount(Number(e.target.value))} />
         </label>
         <div className="aff-field">

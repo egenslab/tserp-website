@@ -43,28 +43,28 @@ export default function HomePage() {
             <div className="stat">
               <div>
                 <CountUp value={6} />
-                <b>Travel services</b>
+                <span className="b">Travel services</span>
                 <small>Flight, hotel, visa, Hajj & Umrah, tours, transport</small>
               </div>
             </div>
             <div className="stat">
               <div>
                 <CountUp value={12} />
-                <b>ERP modules</b>
+                <span className="b">ERP modules</span>
                 <small>CRM, sales, finance, HR, help desk and more</small>
               </div>
             </div>
             <div className="stat">
               <div>
                 <CountUp value={4} />
-                <b>Channels, one inbox</b>
+                <span className="b">Channels, one inbox</span>
                 <small>WhatsApp, Messenger, Instagram, website</small>
               </div>
             </div>
             <div className="stat">
               <div>
                 <CountUp value={24} suffix="/7" />
-                <b>AI automation</b>
+                <span className="b">AI automation</span>
                 <small>Replies, follow-ups and lead qualification</small>
               </div>
             </div>
@@ -286,56 +286,56 @@ export default function HomePage() {
           <ol className="journey2">
             <li className="jcard dark">
               <div className="j-art">
-                <img src="/assets/img/journey/attract.svg" alt="" width="160" height="110" loading="lazy" />
+                <img src="/assets/img/journey/attract.svg" alt="Attract travellers with your website and online booking" width="160" height="110" loading="lazy" />
               </div>
               <span className="j-ribbon"><span>Step</span> 01</span>
               <div className="j-body">
                 <h3>Attract</h3>
-                <b>Website + B2C</b>
+                <span className="b">Website + B2C</span>
                 <p>Travellers discover you through your website and online booking.</p>
               </div>
             </li>
             <li className="jcard">
               <div className="j-art">
-                <img src="/assets/img/journey/engage.svg" alt="" width="160" height="110" loading="lazy" />
+                <img src="/assets/img/journey/engage.svg" alt="Engage customers on WhatsApp, Facebook and Instagram" width="160" height="110" loading="lazy" />
               </div>
               <span className="j-ribbon"><span>Step</span> 02</span>
               <div className="j-body">
                 <h3>Engage</h3>
-                <b>WhatsApp + Facebook + Instagram</b>
+                <span className="b">WhatsApp + Facebook + Instagram</span>
                 <p>Chats from every channel land in one shared inbox.</p>
               </div>
             </li>
             <li className="jcard dark">
               <div className="j-art">
-                <img src="/assets/img/journey/convert.svg" alt="" width="160" height="110" loading="lazy" />
+                <img src="/assets/img/journey/convert.svg" alt="Convert leads with CRM, sales and booking" width="160" height="110" loading="lazy" />
               </div>
               <span className="j-ribbon"><span>Step</span> 03</span>
               <div className="j-body">
                 <h3>Convert</h3>
-                <b>CRM + Sales + Booking</b>
+                <span className="b">CRM + Sales + Booking</span>
                 <p>Leads become quotations and confirmed bookings.</p>
               </div>
             </li>
             <li className="jcard">
               <div className="j-art">
-                <img src="/assets/img/journey/operate.svg" alt="" width="160" height="110" loading="lazy" />
+                <img src="/assets/img/journey/operate.svg" alt="Operate ticketing, finance, HR and help desk in one ERP" width="160" height="110" loading="lazy" />
               </div>
               <span className="j-ribbon"><span>Step</span> 04</span>
               <div className="j-body">
                 <h3>Operate</h3>
-                <b>ERP + Finance + HR + Help Desk</b>
+                <span className="b">ERP + Finance + HR + Help Desk</span>
                 <p>Ticketing, accounts, HR and support run in one ERP.</p>
               </div>
             </li>
             <li className="jcard dark">
               <div className="j-art">
-                <img src="/assets/img/journey/grow.svg" alt="" width="160" height="110" loading="lazy" />
+                <img src="/assets/img/journey/grow.svg" alt="Grow with reports and analytics" width="160" height="110" loading="lazy" />
               </div>
               <span className="j-ribbon"><span>Step</span> 05</span>
               <div className="j-body">
                 <h3>Grow</h3>
-                <b>Reports + Analytics + Better CX</b>
+                <span className="b">Reports + Analytics + Better CX</span>
                 <p>Reports show what sells and where to grow next.</p>
               </div>
             </li>
@@ -434,15 +434,15 @@ export default function HomePage() {
               <div className="logos">
                 <span className="logo-tile"><span className="mono" style={{ "--c": "#f26b21" }}>H</span>Hotelbeds</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/expedia.svg" alt="" width="22" height="22" />Expedia</span>
+                <span className="logo-tile"><img src="/assets/img/partners/expedia.svg" alt="Expedia logo" width="22" height="22" />Expedia</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/hotelsdotcom.svg" alt="" width="22" height="22" />Hotels.com</span>
+                <span className="logo-tile"><img src="/assets/img/partners/hotelsdotcom.svg" alt="Hotels.com logo" width="22" height="22" />Hotels.com</span>
                 {" "}
                 <span className="logo-tile"><span className="mono" style={{ "--c": "#1aa3dd" }}>W</span>WebBeds</span>
                 {" "}
                 <span className="logo-tile"><span className="mono" style={{ "--c": "#e31e24" }}>T</span>TBO</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/tripadvisor.svg" alt="" width="22" height="22" />Tripadvisor</span>
+                <span className="logo-tile"><img src="/assets/img/partners/tripadvisor.svg" alt="Tripadvisor logo" width="22" height="22" />Tripadvisor</span>
                 {" "}
                 <span className="logo-tile"><span className="mono" style={{ "--c": "#ff5533" }}>G</span>GetYourGuide</span>
               </div>
@@ -450,21 +450,21 @@ export default function HomePage() {
             <div className="int-group">
               <h4><svg className="ic"><use href="#i-card" /></svg>Payments</h4>
               <div className="logos">
-                <span className="logo-tile"><img src="/assets/img/partners/visa.svg" alt="" width="22" height="22" />Visa</span>
+                <span className="logo-tile"><img src="/assets/img/partners/visa.svg" alt="Visa logo" width="22" height="22" />Visa</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/mastercard.svg" alt="" width="22" height="22" />Mastercard</span>
+                <span className="logo-tile"><img src="/assets/img/partners/mastercard.svg" alt="Mastercard logo" width="22" height="22" />Mastercard</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/americanexpress.svg" alt="" width="22" height="22" />American Express</span>
+                <span className="logo-tile"><img src="/assets/img/partners/americanexpress.svg" alt="American Express logo" width="22" height="22" />American Express</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/paypal.svg" alt="" width="22" height="22" />PayPal</span>
+                <span className="logo-tile"><img src="/assets/img/partners/paypal.svg" alt="PayPal logo" width="22" height="22" />PayPal</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/stripe.svg" alt="" width="22" height="22" />Stripe</span>
+                <span className="logo-tile"><img src="/assets/img/partners/stripe.svg" alt="Stripe logo" width="22" height="22" />Stripe</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/applepay.svg" alt="" width="22" height="22" />Apple Pay</span>
+                <span className="logo-tile"><img src="/assets/img/partners/applepay.svg" alt="Apple Pay logo" width="22" height="22" />Apple Pay</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/googlepay.svg" alt="" width="22" height="22" />Google Pay</span>
+                <span className="logo-tile"><img src="/assets/img/partners/googlepay.svg" alt="Google Pay logo" width="22" height="22" />Google Pay</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/razorpay.svg" alt="" width="22" height="22" />Razorpay</span>
+                <span className="logo-tile"><img src="/assets/img/partners/razorpay.svg" alt="Razorpay logo" width="22" height="22" />Razorpay</span>
                 {" "}
                 <span className="logo-tile"><span className="mono" style={{ "--c": "#e2136e" }}>b</span>bKash</span>
                 {" "}
@@ -474,29 +474,29 @@ export default function HomePage() {
             <div className="int-group">
               <h4><svg className="ic"><use href="#i-chat" /></svg>Messaging & AI</h4>
               <div className="logos">
-                <span className="logo-tile"><img src="/assets/img/partners/whatsapp.svg" alt="" width="22" height="22" />WhatsApp</span>
+                <span className="logo-tile"><img src="/assets/img/partners/whatsapp.svg" alt="WhatsApp logo" width="22" height="22" />WhatsApp</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/messenger.svg" alt="" width="22" height="22" />Messenger</span>
+                <span className="logo-tile"><img src="/assets/img/partners/messenger.svg" alt="Messenger logo" width="22" height="22" />Messenger</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/instagram.svg" alt="" width="22" height="22" />Instagram</span>
+                <span className="logo-tile"><img src="/assets/img/partners/instagram.svg" alt="Instagram logo" width="22" height="22" />Instagram</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/twilio.svg" alt="" width="22" height="22" />Twilio SMS</span>
+                <span className="logo-tile"><img src="/assets/img/partners/twilio.svg" alt="Twilio SMS logo" width="22" height="22" />Twilio SMS</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/mailgun.svg" alt="" width="22" height="22" />Mailgun</span>
+                <span className="logo-tile"><img src="/assets/img/partners/mailgun.svg" alt="Mailgun logo" width="22" height="22" />Mailgun</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/openai.svg" alt="" width="22" height="22" />OpenAI</span>
+                <span className="logo-tile"><img src="/assets/img/partners/openai.svg" alt="OpenAI logo" width="22" height="22" />OpenAI</span>
               </div>
             </div>
             <div className="int-group">
               <h4><svg className="ic"><use href="#i-chart" /></svg>Accounting & analytics</h4>
               <div className="logos">
-                <span className="logo-tile"><img src="/assets/img/partners/quickbooks.svg" alt="" width="22" height="22" />QuickBooks</span>
+                <span className="logo-tile"><img src="/assets/img/partners/quickbooks.svg" alt="QuickBooks logo" width="22" height="22" />QuickBooks</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/xero.svg" alt="" width="22" height="22" />Xero</span>
+                <span className="logo-tile"><img src="/assets/img/partners/xero.svg" alt="Xero logo" width="22" height="22" />Xero</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/googleanalytics.svg" alt="" width="22" height="22" />Google Analytics</span>
+                <span className="logo-tile"><img src="/assets/img/partners/googleanalytics.svg" alt="Google Analytics logo" width="22" height="22" />Google Analytics</span>
                 {" "}
-                <span className="logo-tile"><img src="/assets/img/partners/googlemaps.svg" alt="" width="22" height="22" />Google Maps</span>
+                <span className="logo-tile"><img src="/assets/img/partners/googlemaps.svg" alt="Google Maps logo" width="22" height="22" />Google Maps</span>
               </div>
             </div>
           </div>
@@ -533,7 +533,7 @@ export default function HomePage() {
                   <span className="chip">Visa, flights & hotels on one platform</span>
                   <figcaption>
                     <img className="avatar photo" src="/assets/img/testimonials/syed-imigo.jpg" alt="Syed" width={46} height={46} loading="lazy" />
-                    <span><b>Syed, Founder</b><small>Imigo, United Kingdom</small></span>
+                    <span><span className="b">Syed, Founder</span><small>Imigo, United Kingdom</small></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
@@ -548,7 +548,7 @@ export default function HomePage() {
                   <span className="chip">Everything in one dashboard</span>
                   <figcaption>
                     <img className="avatar photo" src="/assets/img/testimonials/flyavro.jpg" alt="FlyAvro" width={46} height={46} loading="lazy" />
-                    <span><b>FlyAvro</b><small>Travel agency, Dhaka, Bangladesh</small></span>
+                    <span><span className="b">FlyAvro</span><small>Travel agency, Dhaka, Bangladesh</small></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
@@ -563,7 +563,7 @@ export default function HomePage() {
                   <span className="chip">Replies in under 5 minutes</span>
                   <figcaption>
                     <span className="avatar a3">NK</span>
-                    <span><b>Sales Manager</b><small>Tour operator, Sylhet</small></span>
+                    <span><span className="b">Sales Manager</span><small>Tour operator, Sylhet</small></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
@@ -578,7 +578,7 @@ export default function HomePage() {
                   <span className="chip">Month-end closing in 1 day</span>
                   <figcaption>
                     <span className="avatar ">FH</span>
-                    <span><b>Finance Manager</b><small>Travel agency, Dhaka</small></span>
+                    <span><span className="b">Finance Manager</span><small>Travel agency, Dhaka</small></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
@@ -593,7 +593,7 @@ export default function HomePage() {
                   <span className="chip">Fewer status calls</span>
                   <figcaption>
                     <span className="avatar a2">TJ</span>
-                    <span><b>Operations Head</b><small>Visa processing centre, Dhaka</small></span>
+                    <span><span className="b">Operations Head</span><small>Visa processing centre, Dhaka</small></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
@@ -608,7 +608,7 @@ export default function HomePage() {
                   <span className="chip">Live in 12 days</span>
                   <figcaption>
                     <span className="avatar a3">AR</span>
-                    <span><b>CEO</b><small>Online travel agency, Dubai</small></span>
+                    <span><span className="b">CEO</span><small>Online travel agency, Dubai</small></span>
                   </figcaption>
                 </figure>
       </StoriesCarousel>

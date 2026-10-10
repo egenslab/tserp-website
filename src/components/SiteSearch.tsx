@@ -126,7 +126,7 @@ export default function SiteSearch() {
                       const inner = (
                         <>
                           <span className="search-ico"><Icon name={item.i} /></span>
-                          <span className="search-text"><b><Highlight text={item.t} query={query} /></b><small>{item.d}</small></span>
+                          <span className="search-text"><span className="b"><Highlight text={item.t} query={query} /></span><small>{item.d}</small></span>
                           <Icon name={external ? "i-external" : "i-arrow"} className="ic search-go" />
                         </>
                       );
@@ -143,7 +143,7 @@ export default function SiteSearch() {
               ))}
               {query.trim() && !flat.length && (
                 <li className="search-empty" role="presentation">
-                  <b>No results for “{query}”</b>
+                  <span className="b">No results for “{query}”</span>
                   <span>Try another word, or <Link href="/contact" onClick={hide}>ask our team</Link>.</span>
                 </li>
               )}

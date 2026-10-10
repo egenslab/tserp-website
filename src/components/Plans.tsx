@@ -15,14 +15,14 @@ function PlanPrice({ monthly, lifetime, period }: { monthly: number; lifetime: n
   if (period === "lifetime") {
     return (
       <>
-        <div className="price"><b>{usd(lifetime)}</b><small>one-time</small></div>
+        <div className="price"><span className="b">{usd(lifetime)}</span><small>one-time</small></div>
         <p className="billing-note">Self-hosted · 12 months updates</p>
       </>
     );
   }
   return (
     <>
-      <div className="price"><b>{usd(perMonth)}</b><small>/month</small></div>
+      <div className="price"><span className="b">{usd(perMonth)}</span><small>/month</small></div>
       <p className="billing-note">
         {period === "monthly" ? "Billed monthly" : <><span>Billed yearly:</span> {usd(perMonth * 12)}</>}
       </p>
@@ -100,7 +100,7 @@ export default function Plans() {
         <div className="plan">
           <h3>Enterprise</h3>
           <p className="plan-sub">For consolidators & groups</p>
-          <div className="price"><b>Custom</b><small /></div>
+          <div className="price"><span className="b">Custom</span><small /></div>
           <p className="billing-note">Tailored contract</p>
           <a href={WA} target="_blank" rel="noopener" className="btn btn-outline btn-block">Talk to sales</a>
           <ul>

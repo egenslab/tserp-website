@@ -39,7 +39,7 @@ export default async function SolutionPage({ params }: Props) {
             <span className="m-ico"><Glyph name={s.icon} /></span>
             <h2>{s.title}</h2>
             <p>{s.tagline}</p>
-            <div className="plan-pill"><small>Recommended plan</small><b>{s.plan}</b></div>
+            <div className="plan-pill"><small>Recommended plan</small><span className="b">{s.plan}</span></div>
             <Link href="/pricing" className="link-arrow light">See plan details <Icon name="i-arrow" /></Link>
           </aside>
         </div>

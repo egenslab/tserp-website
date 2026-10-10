@@ -99,8 +99,8 @@ export default async function PostPage({ params }: Props) {
               {faqs.length > 0 && <><h2 id="post-faq">Frequently asked questions</h2><FaqList faqs={faqs} /></>}
             </article>
             <div className="author-box">
-              <img src="/assets/img/favicon.png" alt="" width={56} height={56} />
-              <div><small>About the author</small><b>TravelSuite Team</b><p>The TravelSuite team builds travel booking and ERP software for agencies in Bangladesh, Malaysia, the GCC and the USA.</p></div>
+              <img src="/assets/img/favicon.png" alt="TravelSuite ERP" width={56} height={56} />
+              <div><small>About the author</small><span className="b">TravelSuite Team</span><p>The TravelSuite team builds travel booking and ERP software for agencies in Bangladesh, Malaysia, the GCC and the USA.</p></div>
             </div>
             <div className="share-row"><span>Share this article</span><ShareLinks title={p.title} url={url} /></div>
             <div className="article-cta">

@@ -26,14 +26,14 @@ export default function ContactPage() {
                 <span className="f-ico"><svg className="ic fill"><use href="#i-wa" /></svg></span>
                 <div>
                   <small>WhatsApp</small>
-                  <b><a href={WA} target="_blank" rel="noopener">+880 13 2527 7120</a></b>
+                  <span className="b"><a href={WA} target="_blank" rel="noopener">+880 13 2527 7120</a></span>
                 </div>
               </div>
               <div className="ccard">
                 <span className="f-ico"><svg><use href="#i-mail" /></svg></span>
                 <div>
                   <small>Email</small>
-                  <b><a href={`mailto:${EMAIL}`}>{EMAIL}</a></b>
+                  <span className="b"><a href={`mailto:${EMAIL}`}>{EMAIL}</a></span>
                 </div>
               </div>
               <div className="ccard wide">
@@ -42,7 +42,7 @@ export default function ContactPage() {
                   <small>Our offices</small>
                   <ul className="office-flags">
                     {COUNTRIES.filter((c) => c.office).map((c) => (
-                      <li key={c.code}><img src={`/assets/img/flags/${c.code}.svg`} alt="" width={28} height={21} /><span>{c.name}</span></li>
+                      <li key={c.code}><img src={`/assets/img/flags/${c.code}.svg`} alt={`${c.name} flag`} width={28} height={21} /><span>{c.name}</span></li>
                     ))}
                   </ul>
                 </div>
@@ -52,15 +52,15 @@ export default function ContactPage() {
               <h3>What happens next</h3>
               <ol>
                 <li>
-                  <b>We call you</b>
+                  <span className="b">We call you</span>
                   <span>Within one business day, to understand your services.</span>
                 </li>
                 <li>
-                  <b>Personal demo</b>
+                  <span className="b">Personal demo</span>
                   <span>A 30-minute online walkthrough with your workflows.</span>
                 </li>
                 <li>
-                  <b>Proposal</b>
+                  <span className="b">Proposal</span>
                   <span>A plan and quote that fits your agency.</span>
                 </li>
               </ol>

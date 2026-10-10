@@ -23,69 +23,69 @@ export default function SearchCard() {
         <div className={tab === "flight" ? "search-pane active" : "search-pane"}>
           <div className="field">
             <small>From</small>
-            <b>Dhaka (DAC)</b>
+            <span className="b">Dhaka (DAC)</span>
           </div>
           <div className="field">
             <small>To</small>
-            <b>Dubai (DXB)</b>
+            <span className="b">Dubai (DXB)</span>
           </div>
           <div className="field">
             <small>Depart</small>
-            <b>14 Nov 2026</b>
+            <span className="b">14 Nov 2026</span>
           </div>
           <div className="field">
             <small>Travellers</small>
-            <b>2 Adults · Economy</b>
+            <span className="b">2 Adults · Economy</span>
           </div>
         </div>
         <div className={tab === "hotel" ? "search-pane active" : "search-pane"}>
           <div className="field wide">
             <small>Destination</small>
-            <b>Cox's Bazar, Bangladesh</b>
+            <span className="b">Cox's Bazar, Bangladesh</span>
           </div>
           <div className="field">
             <small>Check-in</small>
-            <b>20 Dec 2026</b>
+            <span className="b">20 Dec 2026</span>
           </div>
           <div className="field">
             <small>Check-out</small>
-            <b>23 Dec 2026</b>
+            <span className="b">23 Dec 2026</span>
           </div>
         </div>
         <div className={tab === "umrah" ? "search-pane active" : "search-pane"}>
           <div className="field">
             <small>Package</small>
-            <b>Umrah Economy · 14 Nights</b>
+            <span className="b">Umrah Economy · 14 Nights</span>
           </div>
           <div className="field">
             <small>Departure</small>
-            <b>Jan 2027 · Dhaka</b>
+            <span className="b">Jan 2027 · Dhaka</span>
           </div>
           <div className="field">
             <small>Makkah hotel</small>
-            <b>600m from Haram</b>
+            <span className="b">600m from Haram</span>
           </div>
           <div className="field">
             <small>Pilgrims</small>
-            <b>4 Adults</b>
+            <span className="b">4 Adults</span>
           </div>
         </div>
         <div className={tab === "visa" ? "search-pane active" : "search-pane"}>
           <div className="field">
             <small>Nationality</small>
-            <b>Bangladesh</b>
+            <span className="b">Bangladesh</span>
           </div>
           <div className="field">
             <small>Destination</small>
-            <b>Thailand</b>
+            <span className="b">Thailand</span>
           </div>
           <div className="field">
             <small>Visa type</small>
-            <b>Tourist · Single entry</b>
+            <span className="b">Tourist · Single entry</span>
           </div>
           <div className="field">
             <small>Applicants</small>
-            <b>2</b>
+            <span className="b">2</span>
           </div>
         </div>
         <Link href="/contact" className="btn btn-forest btn-block">Search</Link>
@@ -94,7 +94,7 @@ export default function SearchCard() {
         <div className="result">
           <span className="carrier">EK</span>
           <div>
-            <b>DAC 21:40 → DXB 01:10</b>
+            <span className="b">DAC 21:40 → DXB 01:10</span>
             <small>Non-stop · 5h 30m · 30kg</small>
           </div>
           <strong>৳ 49,450</strong>
@@ -102,7 +102,7 @@ export default function SearchCard() {
         <div className="result">
           <span className="carrier">BG</span>
           <div>
-            <b>DAC 09:15 → DXB 12:50</b>
+            <span className="b">DAC 09:15 → DXB 12:50</span>
             <small>Non-stop · 5h 35m · 35kg</small>
           </div>
           <strong>৳ 46,700</strong>

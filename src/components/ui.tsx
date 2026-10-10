@@ -84,7 +84,7 @@ export function FeatureCard({ f }: { f: Feature }) {
   return (
     <Link className="link-card" href={`/features/${f.slug}`}>
       <span className="m-ico dark sm"><Glyph name={f.icon} /></span>
-      <span><b>{f.title}</b><small>{f.desc}</small></span>
+      <span><span className="b">{f.title}</span><small>{f.desc}</small></span>
       <Icon name="i-arrow" className="ic go" />
     </Link>
   );
@@ -120,7 +120,7 @@ export function SuccessCard({ st }: { st: Story }) {
             : st.type}
         </h3>
         <p className="loc">
-          {st.flag ? <img className="loc-flag" src={`/assets/img/flags/${st.flag}.svg`} alt="" width={20} height={15} /> : <Icon name="i-pin" />}
+          {st.flag ? <img className="loc-flag" src={`/assets/img/flags/${st.flag}.svg`} alt={`${st.location} flag`} width={20} height={15} /> : <Icon name="i-pin" />}
           {st.location}
         </p>
         <div className="mini-chips">{st.chips.map((c) => <span key={c}>{c}</span>)}</div>

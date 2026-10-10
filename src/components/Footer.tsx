@@ -36,8 +36,8 @@ export default function Footer() {
             <div className="ai-cards">
               {AI_LINKS.map((ai) => (
                 <a key={ai.name} className="ai-card" href={ai.url + encodeURIComponent(AI_PROMPT)} target="_blank" rel="noopener" aria-label={ai.name}>
-                  <span className="ai-logo"><img src={`/assets/img/partners/${ai.logo}.svg`} alt="" width={26} height={26} /></span>
-                  <span className="ai-name" data-no-i18n=""><b>{ai.name}</b><small>{ai.maker}</small></span>
+                  <span className="ai-logo"><img src={`/assets/img/partners/${ai.logo}.svg`} alt={`${ai.name} logo`} width={26} height={26} /></span>
+                  <span className="ai-name" data-no-i18n=""><span className="b">{ai.name}</span><small>{ai.maker}</small></span>
                 </a>
               ))}
             </div>
@@ -50,7 +50,7 @@ export default function Footer() {
                 <small>Follow us</small>
                 <div className="socials">
                   {SOCIAL.map((s) => (
-                <a key={s.name} href={s.url} target="_blank" rel="noopener" aria-label={s.name}><img src={`/assets/img/partners/${s.logo}.svg`} alt="" width={18} height={18} /></a>
+                <a key={s.name} href={s.url} target="_blank" rel="noopener" aria-label={s.name}><img src={`/assets/img/partners/${s.logo}.svg`} alt={`${s.name} logo`} width={18} height={18} /></a>
               ))}
                 </div>
               </div>
@@ -58,21 +58,21 @@ export default function Footer() {
             <div className="footer-side">
               <div className="review-badges">
                 <a className="review-card" href="https://www.google.com/search?q=TravelSuite+ERP+reviews" target="_blank" rel="noopener">
-                  <img src="/assets/img/partners/google-g.svg" alt="" width="28" height="28" />
+                  <img src="/assets/img/partners/google-g.svg" alt="Google Reviews" width="28" height="28" />
                   {" "}
-                  <span className="rv-text"><b>Google Reviews</b><span className="rv-stars g" aria-hidden="true">★★★★★</span><small>Read or write a review</small></span>
+                  <span className="rv-text"><span className="b">Google Reviews</span><span className="rv-stars g" aria-hidden="true">★★★★★</span><small>Read or write a review</small></span>
                 </a>
                 {" "}
                 <a className="review-card" href="https://www.trustpilot.com/review/travelsuiteerp.com" target="_blank" rel="noopener">
-                  <img src="/assets/img/partners/trustpilot.svg" alt="" width="28" height="28" />
+                  <img src="/assets/img/partners/trustpilot.svg" alt="Trustpilot" width="28" height="28" />
                   {" "}
-                  <span className="rv-text"><b>Trustpilot</b><span className="rv-stars tp" aria-hidden="true"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span><small>Read or write a review</small></span>
+                  <span className="rv-text"><span className="b">Trustpilot</span><span className="rv-stars tp" aria-hidden="true"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span><small>Read or write a review</small></span>
                 </a>
               </div>
               <Link className="demo-card" href="/contact">
                 <span className="demo-ico"><svg className="ic"><use href="#i-calendar" /></svg></span>
                 {" "}
-                <span className="demo-text"><b>Book a free 30-minute demo</b><small>See TravelSuite ERP set up with your own services, agents and branding.</small></span>
+                <span className="demo-text"><span className="b">Book a free 30-minute demo</span><small>See TravelSuite ERP set up with your own services, agents and branding.</small></span>
                 {" "}
                 <span className="demo-go">Book now <svg className="ic"><use href="#i-arrow" /></svg></span>
               </Link>
@@ -129,7 +129,7 @@ export default function Footer() {
             </div>
             <ul className="flag-list">
               {COUNTRIES.map((c) => (
-            <li key={c.code}><img src={`/assets/img/flags/${c.code}.svg`} alt="" width={24} height={18} /><span>{c.name}</span>{c.office && <em>Office</em>}</li>
+            <li key={c.code}><img src={`/assets/img/flags/${c.code}.svg`} alt={`${c.name} flag`} width={24} height={18} /><span>{c.name}</span>{c.office && <em>Office</em>}</li>
           ))}
             </ul>
           </div>

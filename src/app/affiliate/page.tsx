@@ -163,11 +163,11 @@ export default function AffiliatePage() {
             <div className="contact-cards">
               <div className="ccard">
                 <span className="f-ico"><svg className="ic fill"><use href="#i-wa" /></svg></span>
-                <div><small>WhatsApp</small><b><a href={WA} target="_blank" rel="noopener">+880 13 2527 7120</a></b></div>
+                <div><small>WhatsApp</small><span className="b"><a href={WA} target="_blank" rel="noopener">+880 13 2527 7120</a></span></div>
               </div>
               <div className="ccard">
                 <span className="f-ico"><svg><use href="#i-mail" /></svg></span>
-                <div><small>Email</small><b><a href={`mailto:${EMAIL}?subject=Affiliate%20program`}>{EMAIL}</a></b></div>
+                <div><small>Email</small><span className="b"><a href={`mailto:${EMAIL}?subject=Affiliate%20program`}>{EMAIL}</a></span></div>
               </div>
             </div>
           </div>

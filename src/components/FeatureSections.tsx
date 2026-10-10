@@ -119,7 +119,7 @@ export function MarketNotes({ data, alt = false }: { data: P["markets"]; alt?: b
         <div className="market-notes">
           {data.items.map((m) => (
             <article key={m.title} className="market-note">
-              <img src={`/assets/img/flags/${m.flag}.svg`} alt="" width={36} height={27} />
+              <img src={`/assets/img/flags/${m.flag}.svg`} alt={`${m.title} flag`} width={36} height={27} />
               <h3>{m.title}</h3>
               <p>{m.text}</p>
             </article>

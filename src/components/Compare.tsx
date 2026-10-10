@@ -160,7 +160,7 @@ export default function Compare() {
           <div className="addon">
             <span className="m-ico dark sm"><svg><use href="#i-plane" /></svg></span>
             <div>
-              <b>GDS / NDC connection</b>
+              <span className="b">GDS / NDC connection</span>
               <small>Amadeus, Sabre, Travelport or airline NDC</small>
             </div>
             <em>Quote</em>
@@ -168,7 +168,7 @@ export default function Compare() {
           <div className="addon">
             <span className="m-ico dark sm"><svg><use href="#i-phone" /></svg></span>
             <div>
-              <b>Branded mobile apps</b>
+              <span className="b">Branded mobile apps</span>
               <small>Android & iOS on your back office</small>
             </div>
             <em>Quote</em>
@@ -176,7 +176,7 @@ export default function Compare() {
           <div className="addon">
             <span className="m-ico dark sm"><svg><use href="#i-bot" /></svg></span>
             <div>
-              <b>Extra AI agent</b>
+              <span className="b">Extra AI agent</span>
               <small>Dedicated assistant per channel or team</small>
             </div>
             <em>Quote</em>
@@ -184,7 +184,7 @@ export default function Compare() {
           <div className="addon">
             <span className="m-ico dark sm"><svg><use href="#i-code" /></svg></span>
             <div>
-              <b>Custom development</b>
+              <span className="b">Custom development</span>
               <small>Features built to your workflow</small>
             </div>
             <em>Quote</em>

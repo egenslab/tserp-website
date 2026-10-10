@@ -14,8 +14,8 @@ export default function Markets() {
         <ul className="markets">
           {COUNTRIES.map((c) => (
             <li key={c.code} className={c.office ? "market has-office" : "market"}>
-              <img src={`/assets/img/flags/${c.code}.svg`} alt="" width={36} height={27} />
-              <span><b>{c.name}</b><small>{c.region}</small></span>
+              <img src={`/assets/img/flags/${c.code}.svg`} alt={`${c.name} flag`} width={36} height={27} />
+              <span><span className="b">{c.name}</span><small>{c.region}</small></span>
               {c.office && <em className="office-badge"><Icon name="i-building" />Office</em>}
             </li>
           ))}

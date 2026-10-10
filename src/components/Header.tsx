@@ -91,113 +91,113 @@ export default function Header() {
                       <h6>Travel services</h6>
                       <Link href="/features/flights" className="mega-item">
                         <span className="mi"><svg><use href="#i-plane" /></svg></span>
-                        <span><b>Flight Tickets</b><small>Bookings & ticketing workflows</small></span>
+                        <span><span className="b">Flight Tickets</span><small>Bookings & ticketing workflows</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/hotels" className="mega-item">
                         <span className="mi"><svg><use href="#i-bed" /></svg></span>
-                        <span><b>Hotel Booking</b><small>Hotel products & reservations</small></span>
+                        <span><span className="b">Hotel Booking</span><small>Hotel products & reservations</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/hajj" className="mega-item">
                         <span className="mi"><svg><use href="#i-kaaba" /></svg></span>
-                        <span><b>Hajj & Umrah</b><small>Pilgrims, packages & services</small></span>
+                        <span><span className="b">Hajj & Umrah</span><small>Pilgrims, packages & services</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/visa" className="mega-item">
                         <span className="mi"><svg><use href="#i-passport" /></svg></span>
-                        <span><b>Visa Processing</b><small>Applications & documents</small></span>
+                        <span><span className="b">Visa Processing</span><small>Applications & documents</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/tours" className="mega-item">
                         <span className="mi"><svg><use href="#i-map" /></svg></span>
-                        <span><b>Tour Packages</b><small>Create & sell packages</small></span>
+                        <span><span className="b">Tour Packages</span><small>Create & sell packages</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/transport" className="mega-item">
                         <span className="mi"><svg><use href="#i-car" /></svg></span>
-                        <span><b>Transport Booking</b><small>Transfers & transport</small></span>
+                        <span><span className="b">Transport Booking</span><small>Transfers & transport</small></span>
                       </Link>
                     </div>
                     <div className="mega-col">
                       <h6>Business modules</h6>
                       <Link href="/features/crm" className="mega-item">
                         <span className="mi"><svg><use href="#i-users" /></svg></span>
-                        <span><b>CRM</b><small>Customers & leads</small></span>
+                        <span><span className="b">CRM</span><small>Customers & leads</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/sales" className="mega-item">
                         <span className="mi"><svg><use href="#i-trend" /></svg></span>
-                        <span><b>Sales</b><small>Quotes to confirmed bookings</small></span>
+                        <span><span className="b">Sales</span><small>Quotes to confirmed bookings</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/proposals" className="mega-item">
                         <span className="mi"><svg><use href="#i-file" /></svg></span>
-                        <span><b>Proposals & Quotations</b><small>Branded offers with validity</small></span>
+                        <span><span className="b">Proposals & Quotations</span><small>Branded offers with validity</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/finance" className="mega-item">
                         <span className="mi"><svg><use href="#i-wallet" /></svg></span>
-                        <span><b>Finance & Accounting</b><small>Ledgers, invoices, payments</small></span>
+                        <span><span className="b">Finance & Accounting</span><small>Ledgers, invoices, payments</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/vendors" className="mega-item">
                         <span className="mi"><svg><use href="#i-building" /></svg></span>
-                        <span><b>Vendor Management</b><small>Suppliers, commission, payouts</small></span>
+                        <span><span className="b">Vendor Management</span><small>Suppliers, commission, payouts</small></span>
                       </Link>
                     </div>
                     <div className="mega-col">
                       <h6 aria-hidden="true"></h6>
                       <Link href="/features/hr" className="mega-item">
                         <span className="mi"><svg><use href="#i-idcard" /></svg></span>
-                        <span><b>HR & Employees</b><small>Staff, attendance, payroll</small></span>
+                        <span><span className="b">HR & Employees</span><small>Staff, attendance, payroll</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/helpdesk" className="mega-item">
                         <span className="mi"><svg><use href="#i-headset" /></svg></span>
-                        <span><b>Help Desk</b><small>Tickets & customer support</small></span>
+                        <span><span className="b">Help Desk</span><small>Tickets & customer support</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/reports" className="mega-item">
                         <span className="mi"><svg><use href="#i-chart" /></svg></span>
-                        <span><b>Reports & Analytics</b><small>Sales, profit, performance</small></span>
+                        <span><span className="b">Reports & Analytics</span><small>Sales, profit, performance</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/marketing" className="mega-item">
                         <span className="mi"><svg><use href="#i-mail" /></svg></span>
-                        <span><b>Marketing</b><small>Targeted email campaigns</small></span>
+                        <span><span className="b">Marketing</span><small>Targeted email campaigns</small></span>
                       </Link>
                     </div>
                     <div className="mega-col">
                       <h6>Platform</h6>
                       <Link href="/features/b2b" className="mega-item">
                         <span className="mi"><svg><use href="#i-layers" /></svg></span>
-                        <span><b>B2B & B2C Booking</b><small>Agent portal + customer site</small></span>
+                        <span><span className="b">B2B & B2C Booking</span><small>Agent portal + customer site</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/website" className="mega-item">
                         <span className="mi"><svg><use href="#i-globe" /></svg></span>
-                        <span><b>Agency Website</b><small>Your digital storefront</small></span>
+                        <span><span className="b">Agency Website</span><small>Your digital storefront</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/cms" className="mega-item">
                         <span className="mi"><svg><use href="#i-palette" /></svg></span>
-                        <span><b>Website CMS</b><small>Pages, blog, menus & SEO</small></span>
+                        <span><span className="b">Website CMS</span><small>Pages, blog, menus & SEO</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/ai" className="mega-item">
                         <span className="mi"><svg><use href="#i-bot" /></svg></span>
-                        <span><b>AI Automation</b><small>AI agents & trip planners</small></span>
+                        <span><span className="b">AI Automation</span><small>AI agents & trip planners</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/document-intelligence" className="mega-item">
                         <span className="mi"><svg><use href="#i-eye" /></svg></span>
-                        <span><b>Document Intelligence</b><small>Passport & document OCR</small></span>
+                        <span><span className="b">Document Intelligence</span><small>Passport & document OCR</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/omnichannel" className="mega-item">
                         <span className="mi"><svg><use href="#i-chat" /></svg></span>
-                        <span><b>Omnichannel Inbox</b><small>WhatsApp, Messenger, Instagram</small></span>
+                        <span><span className="b">Omnichannel Inbox</span><small>WhatsApp, Messenger, Instagram</small></span>
                       </Link>
                     </div>
                     <div className="mega-promo">
@@ -219,17 +219,17 @@ export default function Header() {
                       <h6>Who it's for</h6>
                       <Link href="/solutions/travel-agencies" className="mega-item">
                         <span className="mi"><svg><use href="#i-building" /></svg></span>
-                        <span><b>Travel agencies</b><small>Ticketing, hotels and visa under one roof</small></span>
+                        <span><span className="b">Travel agencies</span><small>Ticketing, hotels and visa under one roof</small></span>
                       </Link>
                       {" "}
                       <Link href="/solutions/hajj-umrah" className="mega-item">
                         <span className="mi"><svg><use href="#i-kaaba" /></svg></span>
-                        <span><b>Hajj & Umrah operators</b><small>Pilgrim registration, groups, packages</small></span>
+                        <span><span className="b">Hajj & Umrah operators</span><small>Pilgrim registration, groups, packages</small></span>
                       </Link>
                       {" "}
                       <Link href="/solutions/b2b-consolidators" className="mega-item">
                         <span className="mi"><svg><use href="#i-users" /></svg></span>
-                        <span><b>B2B consolidators</b><small>Agent network, credit and commissions</small></span>
+                        <span><span className="b">B2B consolidators</span><small>Agent network, credit and commissions</small></span>
                       </Link>
                     </div>
                     <div className="mega-col">
@@ -237,34 +237,34 @@ export default function Header() {
                       </h6>
                       <Link href="/solutions/tour-operators" className="mega-item">
                         <span className="mi"><svg><use href="#i-map" /></svg></span>
-                        <span><b>Tour operators & DMCs</b><small>Packages, departures, suppliers</small></span>
+                        <span><span className="b">Tour operators & DMCs</span><small>Packages, departures, suppliers</small></span>
                       </Link>
                       {" "}
                       <Link href="/solutions/online-travel-agencies" className="mega-item">
                         <span className="mi"><svg><use href="#i-globe" /></svg></span>
-                        <span><b>Online travel agencies</b><small>B2C website with online payment</small></span>
+                        <span><span className="b">Online travel agencies</span><small>B2C website with online payment</small></span>
                       </Link>
                       {" "}
                       <Link href="/solutions/corporate-travel" className="mega-item">
                         <span className="mi"><svg><use href="#i-idcard" /></svg></span>
-                        <span><b>Corporate travel desks</b><small>Policies, approvals, monthly billing</small></span>
+                        <span><span className="b">Corporate travel desks</span><small>Policies, approvals, monthly billing</small></span>
                       </Link>
                     </div>
                     <div className="mega-col">
                       <h6>By goal</h6>
                       <Link href="/features/website" className="mega-item">
                         <span className="mi"><svg><use href="#i-rocket" /></svg></span>
-                        <span><b>Sell online 24/7</b><small>Booking website with online payment</small></span>
+                        <span><span className="b">Sell online 24/7</span><small>Booking website with online payment</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/b2b" className="mega-item">
                         <span className="mi"><svg><use href="#i-layers" /></svg></span>
-                        <span><b>Grow an agent network</b><small>B2B portal, markups, credit and wallets</small></span>
+                        <span><span className="b">Grow an agent network</span><small>B2B portal, markups, credit and wallets</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/finance" className="mega-item">
                         <span className="mi"><svg><use href="#i-wallet" /></svg></span>
-                        <span><b>Run the back office</b><small>Accounts, invoices and supplier dues</small></span>
+                        <span><span className="b">Run the back office</span><small>Accounts, invoices and supplier dues</small></span>
                       </Link>
                     </div>
                     <div className="mega-journey">
@@ -274,7 +274,7 @@ export default function Header() {
                         {JOURNEY.map(([icon, title, text]) => (
                           <li key={title}>
                             <span className="mj-dot"><Icon name={icon} /></span>
-                            <span className="mj-text"><b>{title}</b><small>{text}</small></span>
+                            <span className="mj-text"><span className="b">{title}</span><small>{text}</small></span>
                           </li>
                         ))}
                       </ol>
@@ -295,32 +295,32 @@ export default function Header() {
                   <div className="mega-inner">
                     <Link href="/about" className="mega-item">
                       <span className="mi"><svg><use href="#i-heart" /></svg></span>
-                      <span><b>About us</b><small>Who we are and why we build</small></span>
+                      <span><span className="b">About us</span><small>Who we are and why we build</small></span>
                     </Link>
                     {" "}
                     <Link href="/success-stories" className="mega-item">
                       <span className="mi"><svg><use href="#i-award" /></svg></span>
-                      <span><b>Success stories</b><small>Agencies growing with TravelSuite</small></span>
+                      <span><span className="b">Success stories</span><small>Agencies growing with TravelSuite</small></span>
                     </Link>
                     {" "}
                     <Link href="/#stories" className="mega-item">
                       <span className="mi"><svg><use href="#i-star" /></svg></span>
-                      <span><b>Customer reviews</b><small>What our clients say</small></span>
+                      <span><span className="b">Customer reviews</span><small>What our clients say</small></span>
                     </Link>
                     {" "}
                     <Link href="/blog" className="mega-item">
                       <span className="mi"><svg><use href="#i-file" /></svg></span>
-                      <span><b>Blog</b><small>Guides for travel agencies</small></span>
+                      <span><span className="b">Blog</span><small>Guides for travel agencies</small></span>
                     </Link>
                     {" "}
                     <Link href="/affiliate" className="mega-item">
                       <span className="mi"><svg><use href="#i-percent" /></svg></span>
-                      <span><b>Affiliate program</b><small>Earn by referring agencies</small></span>
+                      <span><span className="b">Affiliate program</span><small>Earn by referring agencies</small></span>
                     </Link>
                     {" "}
                     <Link href="/contact" className="mega-item">
                       <span className="mi"><svg><use href="#i-headset" /></svg></span>
-                      <span><b>Contact us</b><small>Sales and support</small></span>
+                      <span><span className="b">Contact us</span><small>Sales and support</small></span>
                     </Link>
                   </div>
                 </div>
@@ -341,7 +341,7 @@ export default function Header() {
                 {(Object.keys(LANGS) as LangCode[]).map((code) => (
                   <li key={code}>
                     <button lang={code} data-no-i18n="" aria-current={code === lang} onClick={() => { changeLanguage(code); setLangOpen(false); }}>
-                      <b>{LANGS[code].native}</b><small>{LANGS[code].english}</small><Icon name="i-check" className="ic tick" />
+                      <span className="b">{LANGS[code].native}</span><small>{LANGS[code].english}</small><Icon name="i-check" className="ic tick" />
                     </button>
                   </li>
                 ))}

@@ -12,7 +12,7 @@ import { EARLY_SCRIPT } from "@/lib/i18n";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title: "TravelSuite ERP",
-  icons: { icon: "/assets/img/favicon.png" },
+  icons: { icon: "/assets/img/favicon.png", apple: "/apple-touch-icon.png" },
 };
 
 export const viewport: Viewport = {
