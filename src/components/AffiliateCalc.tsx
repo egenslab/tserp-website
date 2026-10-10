@@ -6,8 +6,8 @@ import { AFFILIATE } from "@/lib/affiliate";
 // USD list prices, matching the pricing page
 const PLANS = [
   { name: "Starter", monthly: 39, lifetime: 599 },
-  { name: "Growth", monthly: 89, lifetime: 1299 },
-  { name: "Business", monthly: 179, lifetime: 2499 },
+  { name: "Growth", monthly: 89, lifetime: 799 },
+  { name: "Business", monthly: 179, lifetime: 1499 },
 ];
 
 const usd = (n: number) => "$" + Math.round(n).toLocaleString("en-US");

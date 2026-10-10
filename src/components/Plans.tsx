@@ -73,8 +73,8 @@ export default function Plans() {
         <div className="plan">
           <h3>Growth</h3>
           <p className="plan-sub">For agencies with a sales team</p>
-          <PlanPrice monthly={89} lifetime={1299} period={period} />
-          <BuyNow plan="Growth" monthly={89} lifetime={1299} period={period} />
+          <PlanPrice monthly={89} lifetime={799} period={period} />
+          <BuyNow plan="Growth" monthly={89} lifetime={799} period={period} />
           <ul>
             <li>Everything in Starter</li>
             <li>All 6+ booking modules</li>
@@ -87,8 +87,8 @@ export default function Plans() {
           <span className="badge">Most popular</span>
           <h3>Business</h3>
           <p className="plan-sub">For B2B agencies & Hajj operators</p>
-          <PlanPrice monthly={179} lifetime={2499} period={period} />
-          <BuyNow plan="Business" monthly={179} lifetime={2499} period={period} featured />
+          <PlanPrice monthly={179} lifetime={1499} period={period} />
+          <BuyNow plan="Business" monthly={179} lifetime={1499} period={period} featured />
           <ul>
             <li>Everything in Growth</li>
             <li>B2B agents with commission & payouts</li>
