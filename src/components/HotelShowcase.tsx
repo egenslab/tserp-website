@@ -1,98 +1,106 @@
-// Hotels feature page: a static mock of the hotel search results, with a map and the inventory sources.
+// Hotels feature page: one room priced from three sources, with the agency's profit on each,
+// and the contracted allotment for the week. A static illustration of the hotel module.
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { Icon } from "./ui";
 
-type Result = {
-  name: string; stars: number; source: string; distance: string; room: string;
-  tags: string[]; score: string; label: string; reviews: string; price: number; nights: number; art: string; active?: boolean;
-};
+const SELL = 189;
 
-const RESULTS: Result[] = [
-  { name: "Marina Bay Suites", stars: 5, source: "Direct contract", distance: "0.4 km from Marina Walk", room: "Deluxe room · Breakfast included",
-    tags: ["Free cancellation", "Pay at hotel"], score: "8.9", label: "Excellent", reviews: "1,284", price: 214, nights: 4, art: "a" },
-  { name: "Palm Shore Resort", stars: 5, source: "Bedbank", distance: "2.1 km from Marina Walk", room: "Sea-view room · Half board",
-    tags: ["Member deal"], score: "9.2", label: "Excellent", reviews: "2,310", price: 262, nights: 4, art: "b", active: true },
-  { name: "City Walk Apartments", stars: 4, source: "Hotel vendor", distance: "1.2 km from Marina Walk", room: "One-bedroom apartment · Room only",
-    tags: ["Free cancellation"], score: "8.4", label: "Very good", reviews: "642", price: 142, nights: 4, art: "c" },
+const RATES = [
+  { icon: "i-file", source: "Direct contract", note: "Your own seasonal rate", net: 142, best: true },
+  { icon: "i-building", source: "Hotel vendor", note: "Partner rate, commission included", net: 158 },
+  { icon: "i-code", source: "Supplier API", note: "Live bedbank rate", net: 171 },
 ];
 
-// Price pins on the map: [left %, top %, price]
-const PINS: [number, number, number][] = [[24, 16, 198], [44, 33, 214], [72, 21, 176], [86, 40, 131], [11, 46, 305], [18, 72, 262], [77, 62, 142], [55, 82, 158]];
-
-const SOURCES = [
-  { icon: "i-file", title: "Direct contracts", text: "Load the hotels you contract yourself, with your own seasons, rates and allotments." },
-  { icon: "i-building", title: "Hotel vendors", text: "Add hotel partners as vendors with their rooms, prices, commission and payouts." },
-  { icon: "i-code", title: "Supplier APIs", text: "Bring live rates from the bedbanks and wholesalers you work with, using your own credentials." },
-];
+// [day, date, rooms left]; 0 = sold out (stop-sell)
+const ALLOTMENT: [string, number, number][] = [["Thu", 12, 12], ["Fri", 13, 9], ["Sat", 14, 5], ["Sun", 15, 2], ["Mon", 16, 0], ["Tue", 17, 7], ["Wed", 18, 10]];
 
 const SUPPLIERS = ["Hotelbeds", "WebBeds", "TBO Holidays", "RateHawk", "Expedia", "Local suppliers"];
 
-/** Real photo if public/assets/img/hotels/<art>.jpg exists, otherwise the drawn placeholder */
-const photo = (art: string) => existsSync(join(process.cwd(), "public/assets/img/hotels", `${art}.jpg`)) ? `/assets/img/hotels/${art}.jpg` : null;
+/** Real photo if public/assets/img/hotels/a.jpg exists, otherwise the drawn placeholder */
+const PHOTO = existsSync(join(process.cwd(), "public/assets/img/hotels/a.jpg")) ? "/assets/img/hotels/a.jpg" : null;
 
 const usd = (n: number) => "$" + n.toLocaleString("en-US");
+const level = (n: number) => (n === 0 ? "out" : n <= 3 ? "low" : "ok");
 
 export default function HotelShowcase() {
+  const maxProfit = Math.max(...RATES.map((r) => SELL - r.net));
   return (
     <section className="section hotel-showcase">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">Hotel search</span>
-          <h2>Every room you can sell, side by side</h2>
-          <p>Your own contracts, hotel vendors and supplier rates in one result list, with the price on the map.</p>
+          <span className="eyebrow">Hotel contracting</span>
+          <h2>One room, three sources, one clear profit</h2>
+          <p>See every rate you can sell for the same room, what each one earns you, and how many rooms are left.</p>
         </div>
-        <div className="hs-frame" aria-label="Example of hotel search results">
-          <div className="hs-bar">
-            <span><span className="b">248</span> properties from 3 sources</span>
-            <span className="hs-sort"><Icon name="i-chart" />Sort: lowest price</span>
-          </div>
-          <div className="hs-body">
-            <ul className="hs-list">
-              {RESULTS.map((r) => (
-                <li key={r.name} className={r.active ? "hs-item active" : "hs-item"}>
-                  <div className={`hs-photo art-${r.art}`}>{photo(r.art) && <img src={photo(r.art)!} alt={`${r.name} hotel`} width={280} height={240} loading="lazy" />}<span>{r.source}</span></div>
-                  <div className="hs-info">
-                    <h3>{r.name} <span className="hs-stars" aria-label={`${r.stars} star hotel`}>{"★".repeat(r.stars)}</span></h3>
-                    <p className="hs-dist"><Icon name="i-pin" />{r.distance}</p>
-                    <p className="hs-room">{r.room}</p>
-                    <div className="hs-tags">{r.tags.map((t) => <span key={t} className={t === "Free cancellation" ? "ok" : undefined}>{t === "Free cancellation" && <Icon name="i-check" />}{t}</span>)}</div>
-                  </div>
-                  <div className="hs-price">
-                    <div className="hs-score"><span><span className="b">{r.label}</span><small>{r.reviews} reviews</small></span><em>{r.score}</em></div>
-                    <p className="hs-amount"><span className="b">{usd(r.price)}</span> per night</p>
-                    <small>{usd(r.price * r.nights)} · {r.nights} nights, taxes included</small>
-                    <span className="hs-btn">View rooms</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
-            <div className="hs-map" aria-hidden="true">
-              <span className="hs-map-tag"><Icon name="i-map" />Map</span>
-              <span className="hs-zoom"><i>+</i><i>−</i></span>
-              <svg className="hs-roads" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path className="sea" d="M0 0 H20 L17 18 L23 40 L16 62 L22 100 H0 Z" />
-                <path className="park" d="M62 66 H82 V82 H62 Z" />
-                <path className="road" d="M74 0 L50 100" />
-                <path className="road" d="M17 54 L100 40" />
-                <path className="road" d="M30 84 H86" />
-              </svg>
-              {PINS.map(([x, y, p]) => (
-                <span key={p} className={p === 262 ? "hs-pin active" : "hs-pin"} style={{ left: `${x}%`, top: `${y}%` }}>{usd(p)}</span>
-              ))}
-              <span className="hs-scale">1 km</span>
+
+        <div className="hx" aria-label="Example of hotel rates and allotment in TravelSuite ERP">
+          <div className="hx-hotel">
+            <div className="hx-search">
+              <span><Icon name="i-pin" />Makkah · near Haram</span>
+              <span><Icon name="i-calendar" />12 – 16 Mar · 4 nights</span>
+              <span><Icon name="i-users" />2 rooms · 4 guests</span>
+            </div>
+            <div className="hx-photo">
+              {PHOTO && <img src={PHOTO} alt="Haram View Tower hotel" width={560} height={300} loading="lazy" />}
+              <span className="hx-badge"><Icon name="i-star" />5-star · 300 m to Haram</span>
+            </div>
+            <div className="hx-title">
+              <div>
+                <h3>Haram View Tower</h3>
+                <p>Deluxe double · Breakfast · Free cancellation until 7 days</p>
+              </div>
+              <span className="hx-score">9.1</span>
+            </div>
+            <div className="hx-allot">
+              <div className="hx-allot-head"><span className="b">Contracted allotment</span><small>Rooms left per night</small></div>
+              <ol>
+                {ALLOTMENT.map(([d, date, n]) => (
+                  <li key={date} className={`lv-${level(n)}`}>
+                    <small>{d}</small><span className="b">{date}</span><em>{n === 0 ? "Stop" : n}</em>
+                  </li>
+                ))}
+              </ol>
+              <p className="hx-legend"><i className="lv-ok" />Available <i className="lv-low" />Last rooms <i className="lv-out" />Stop-sell</p>
             </div>
           </div>
-          <div className="hs-sources">
-            {SOURCES.map((s, i) => (
-              <div key={s.title}>
-                <span className="hs-num">{String(i + 1).padStart(2, "0")} <Icon name={s.icon} /></span>
-                <h3>{s.title}</h3>
-                <p>{s.text}</p>
+
+          <div className="hx-rates">
+            <div className="hx-rates-head">
+              <span className="b">Same room, per night</span>
+              <span className="hx-sell">Sell price <span className="b">{usd(SELL)}</span></span>
+            </div>
+            <ul>
+              {RATES.map((r) => {
+                const profit = SELL - r.net;
+                return (
+                  <li key={r.source} className={r.best ? "best" : undefined}>
+                    <span className="hx-src-ico"><Icon name={r.icon} /></span>
+                    <div className="hx-src">
+                      <span className="b">{r.source}{r.best && <em>Best margin</em>}</span>
+                      <small>{r.note}</small>
+                      <span className="hx-bar" aria-hidden="true"><i style={{ width: `${(profit / maxProfit) * 100}%` }} /></span>
+                    </div>
+                    <div className="hx-nums">
+                      <small>Net {usd(r.net)}</small>
+                      <span className="b">+{usd(profit)}</span>
+                      <small>{Math.round((profit / SELL) * 100)}% margin</small>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+            <div className="hx-channels">
+              <span>Sell the same room as</span>
+              <div>
+                <span><Icon name="i-globe" />Website <span className="b">{usd(SELL)}</span></span>
+                <span><Icon name="i-users" />B2B agent <span className="b">{usd(176)}</span></span>
+                <span><Icon name="i-kaaba" />Umrah package <span className="b">Included</span></span>
               </div>
-            ))}
+            </div>
           </div>
         </div>
+
         <div className="hs-suppliers">
           <h3>Hotel suppliers you can connect</h3>
           <ul>{SUPPLIERS.map((s) => <li key={s}><span className="hs-mono" aria-hidden="true">{s[0]}</span>{s}</li>)}</ul>
