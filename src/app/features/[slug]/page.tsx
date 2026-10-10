@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Audiences, BeforeAfter, FactStrip, MarketNotes, Sources, Workflow } from "@/components/FeatureSections";
+import CrmPipeline from "@/components/CrmPipeline";
 import GdsPriority from "@/components/GdsPriority";
 import HotelShowcase from "@/components/HotelShowcase";
 import { Breadcrumb, FaqSection, FeatureCard, Glyph, HeroCtas, Icon, JsonLd, OverviewSection } from "@/components/ui";
@@ -62,6 +63,7 @@ export default async function FeaturePage({ params }: Props) {
       {page.facts && <FactStrip facts={page.facts} />}
       <OverviewSection title={page.overviewTitle ?? f.title} paragraphs={f.seo.overview} />
       {f.slug === "hotels" && <HotelShowcase />}
+      {f.slug === "crm" && <CrmPipeline />}
       {page.sources && <Sources data={page.sources} alt />}
       {f.slug === "flights" && <GdsPriority />}
       <section className={page.sources ? "section" : "section alt"}>

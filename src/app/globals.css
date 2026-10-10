@@ -1550,3 +1550,30 @@ html[lang="th"] body { line-height: 1.8; }
   .how3 { grid-template-columns: 1fr; gap: 32px; max-width: 520px; margin: 0 auto; }
   .how3-step:not(:last-child)::after { right: auto; left: 50%; top: auto; bottom: -28px; transform: translateX(-50%) rotate(90deg); }
 }
+
+/* CRM page: lead pipeline */
+.cp-stages { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0; }
+.cp-stage { padding: 0 20px 0 0; }
+.cp-head { display: flex; align-items: center; margin-bottom: 22px; }
+.cp-num { flex: none; width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; font-family: var(--font-display); font-weight: 800; font-size: .95rem; color: var(--forest); background: var(--white); border: 2px solid var(--forest); }
+.cp-line { flex: 1; height: 2px; margin-left: 8px; background: repeating-linear-gradient(90deg, var(--forest-2) 0 6px, transparent 6px 12px); opacity: .45; }
+.cp-stage:last-child .cp-line { display: none; }
+.cp-stage.won .cp-num { background: var(--lime); border-color: var(--lime); box-shadow: 0 0 0 6px rgba(146, 239, 89, .3); }
+.cp-stage h3 { display: flex; align-items: center; gap: 8px; font-size: 1.12rem; margin: 0 0 16px; }
+.cp-stage h3 .ic { color: var(--forest-2); width: 20px; height: 20px; }
+.cp-label { display: block; font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.cp-when { margin: 0 0 16px; color: var(--ink); font-size: .93rem; line-height: 1.55; }
+.cp-then { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.55; }
+.cp-lost { display: flex; align-items: flex-start; gap: 12px; max-width: 760px; margin: 44px auto 0; padding: 16px 20px; border-radius: 16px; background: var(--white); border: 1px dashed #e5a3a0; color: var(--muted); font-size: .93rem; }
+.cp-lost .ic { flex: none; width: 22px; height: 22px; padding: 4px; border-radius: 50%; background: #fde4e1; color: #b3261e; }
+.cp-lost .b { color: var(--ink); }
+@media (max-width: 1100px) {
+  .cp-stages { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 36px; }
+  .cp-stage:nth-child(3n) .cp-line { display: none; }
+}
+@media (max-width: 640px) {
+  .cp-stages { grid-template-columns: 1fr; row-gap: 28px; }
+  .cp-stage { padding: 0 0 0 64px; position: relative; }
+  .cp-head { position: absolute; left: 0; top: 0; }
+  .cp-line { display: none; }
+}
