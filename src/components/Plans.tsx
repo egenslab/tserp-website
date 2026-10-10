@@ -91,7 +91,7 @@ export default function Plans() {
           <BuyNow plan="Business" monthly={179} lifetime={2499} period={period} featured />
           <ul>
             <li>Everything in Growth</li>
-            <li>B2B agent portal with credit & wallet</li>
+            <li>B2B agents with commission & payouts</li>
             <li>Full ERP: HR, help desk, workflows</li>
             <li>AI agents & AI trip planner</li>
             <li>Unlimited users · 5 branches</li>
@@ -105,7 +105,7 @@ export default function Plans() {
           <a href={WA} target="_blank" rel="noopener" className="btn btn-outline btn-block">Talk to sales</a>
           <ul>
             <li>Everything in Business</li>
-            <li>GDS / NDC API integrations</li>
+            <li>GDS API integrations</li>
             <li>Android & iOS apps</li>
             <li>Source code & custom development</li>
             <li>Dedicated account manager</li>

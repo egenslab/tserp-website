@@ -1,3 +1,11 @@
+const ADDONS: [string, string, string][] = [
+  ["i-plane", "Flights (GDS)", "Amadeus, Sabre, Travelport or Galileo connection"],
+  ["i-users", "Agent management", "Agent profiles, bookings, commission and payouts"],
+  ["i-mail", "Email marketing", "Campaigns to your customers with open and click tracking"],
+  ["i-phone", "Branded mobile apps", "Android & iOS on your back office"],
+  ["i-code", "Custom development", "Features built to your workflow"],
+];
+
 /** Plan comparison table on the pricing page. */
 export default function Compare() {
   return (
@@ -34,7 +42,7 @@ export default function Compare() {
                 <td className="yes">✓</td>
               </tr>
               <tr>
-                <td>GDS / NDC supplier API</td>
+                <td>GDS supplier API</td>
                 <td className="no">—</td>
                 <td className="no">—</td>
                 <td className="hl-col">Add-on</td>
@@ -51,7 +59,7 @@ export default function Compare() {
                 <td className="yes">✓</td>
               </tr>
               <tr>
-                <td>B2B agent portal, credit & wallet</td>
+                <td>B2B agents, commission & payouts</td>
                 <td className="no">—</td>
                 <td className="no">—</td>
                 <td className="hl-col yes">✓</td>
@@ -157,38 +165,16 @@ export default function Compare() {
       <div className="addons">
         <h3>Add-ons</h3>
         <div className="addon-grid">
-          <div className="addon">
-            <span className="m-ico dark sm"><svg><use href="#i-plane" /></svg></span>
-            <div>
-              <span className="b">GDS / NDC connection</span>
-              <small>Amadeus, Sabre, Travelport, Galileo or airline NDC</small>
+          {ADDONS.map(([icon, name, text]) => (
+            <div key={name} className="addon">
+              <span className="m-ico dark sm"><svg><use href={`#${icon}`} /></svg></span>
+              <div>
+                <span className="b">{name}</span>
+                <small>{text}</small>
+              </div>
+              <em>Quote</em>
             </div>
-            <em>Quote</em>
-          </div>
-          <div className="addon">
-            <span className="m-ico dark sm"><svg><use href="#i-phone" /></svg></span>
-            <div>
-              <span className="b">Branded mobile apps</span>
-              <small>Android & iOS on your back office</small>
-            </div>
-            <em>Quote</em>
-          </div>
-          <div className="addon">
-            <span className="m-ico dark sm"><svg><use href="#i-bot" /></svg></span>
-            <div>
-              <span className="b">Extra AI agent</span>
-              <small>Dedicated assistant per channel or team</small>
-            </div>
-            <em>Quote</em>
-          </div>
-          <div className="addon">
-            <span className="m-ico dark sm"><svg><use href="#i-code" /></svg></span>
-            <div>
-              <span className="b">Custom development</span>
-              <small>Features built to your workflow</small>
-            </div>
-            <em>Quote</em>
-          </div>
+          ))}
         </div>
       </div>
     </>

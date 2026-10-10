@@ -1,6 +1,10 @@
+import Link from "next/link";
 import Compare from "@/components/Compare";
 import Plans from "@/components/Plans";
-import { pageMeta } from "@/lib/seo";
+import { CloudVsLifetime, GoLive, PlanFinder, PricingProof } from "@/components/PricingSections";
+import { FaqSection, JsonLd } from "@/components/ui";
+import type { Faq } from "@/lib/content";
+import { breadcrumbLd, faqLd, pageMeta, type Crumb } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "Travel ERP Pricing & Plans — TravelSuite ERP",
@@ -8,9 +12,23 @@ export const metadata = pageMeta({
   path: "/pricing",
 });
 
+const FAQS: Faq[] = [
+  ["What is the difference between a cloud plan and a lifetime license?", "A cloud plan is hosted and maintained by us for a monthly or yearly fee. A lifetime license is a one-time payment: we install TravelSuite ERP on your own server and you get 12 months of updates, after which updates can be renewed."],
+  ["Which plan should I start with?", "Small agencies selling two services usually start on Starter. Agencies with a sales team and accounts start on Growth. Hajj & Umrah operators, B2B consolidators and online travel agencies usually need Business. Our team can recommend a plan in a short call."],
+  ["Can I change plans later?", "Yes. You can upgrade at any time and only pay the difference for the remaining period. Your data stays exactly where it is."],
+  ["How do I buy and pay?", "Click Buy now on a plan and our team confirms the details with you on WhatsApp, then sends an invoice with the payment options for your country. Plans are priced in USD."],
+  ["Is setup really free?", "Yes. Every plan includes setup of your domain, branding, modules and payment methods, import of your existing data from Excel and live training for your staff."],
+  ["How long does it take to go live?", "Most agencies go live in 7 to 14 days. Larger setups, extra modules or custom development can take longer."],
+  ["Are GDS and supplier fees included?", "No. Amadeus, Sabre, Travelport, Galileo and other suppliers charge their own fees under your contract with them. We quote separately for connecting and maintaining the integration."],
+  ["Is there a free trial?", "We offer a guided demo with sample data so you can see your own workflows before you decide. Contact us to book one."],
+  ["What if I want a refund?", "Refunds follow our refund policy, which explains what is covered and how to request one."],
+];
+const CRUMBS: Crumb[] = [["Home", "/"], ["Pricing", null]];
+
 export default function PricingPage() {
   return (
     <>
+      <JsonLd data={[breadcrumbLd(CRUMBS, "/pricing"), faqLd(FAQS)]} />
       <section className="page-hero">
         <div className="container">
           <span className="pill">Pricing</span>
@@ -26,7 +44,8 @@ export default function PricingPage() {
           <p className="note">Prices are indicative and exclude supplier fees and VAT. Lifetime licenses include free installation and 12 months of updates.</p>
         </div>
       </section>
-      <section className="section alt">
+      <PlanFinder />
+      <section className="section">
         <div className="container">
           <div className="section-head">
             <span className="eyebrow">Every plan includes</span>
@@ -37,7 +56,7 @@ export default function PricingPage() {
               <span className="f-ico"><svg><use href="#i-rocket" /></svg></span>
               <div>
                 <h4>Free setup</h4>
-                <p>Domain, branding, modules and payment gateway configured for you.</p>
+                <p>Domain, branding, modules and payment methods configured for you.</p>
               </div>
             </div>
             <div className="include">
@@ -78,36 +97,11 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
-      <section className="section">
-        <div className="container narrow">
-          <div className="section-head">
-            <span className="eyebrow">Pricing FAQ</span>
-            <h2>Questions about plans and billing</h2>
-          </div>
-          <div className="faq">
-            <details open>
-              <summary>What is the difference between cloud and lifetime license?</summary>
-              <p>Cloud plans are hosted and maintained by us for a monthly or yearly fee. A lifetime license is a one-time payment; we install it on your own server and you get 12 months of updates, after which updates can be renewed.</p>
-            </details>
-            <details>
-              <summary>Can I change plans later?</summary>
-              <p>Yes. You can upgrade at any time and only pay the difference for the remaining period. Your data stays exactly where it is.</p>
-            </details>
-            <details>
-              <summary>How do I pay?</summary>
-              <p>Card (Visa, Mastercard, American Express), PayPal, Stripe, Apple Pay, Google Pay or bank transfer. Customers in Bangladesh can also pay in BDT; international customers are invoiced in USD.</p>
-            </details>
-            <details>
-              <summary>Are supplier API fees included?</summary>
-              <p>No. GDS, NDC and bedbank suppliers charge their own fees under your contract with them. We charge only for connecting and maintaining the integration.</p>
-            </details>
-            <details>
-              <summary>Is there a free trial?</summary>
-              <p>We offer a guided demo with sample data so you can see your workflows before you decide. Contact us to book one.</p>
-            </details>
-          </div>
-        </div>
-      </section>
+      <CloudVsLifetime />
+      <GoLive />
+      <PricingProof />
+      <FaqSection faqs={FAQS} title="Questions about plans and billing" />
+      <div className="container narrow pricing-refund"><p>Read our <Link href="/refund">refund policy</Link>, <Link href="/terms">terms</Link> and <Link href="/privacy">privacy policy</Link>.</p></div>
     </>
   );
 }
