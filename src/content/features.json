@@ -1697,16 +1697,48 @@
         ],
         "faqs": [
           [
+            "What is a travel CRM and why does my agency need one?",
+            "A travel CRM keeps every lead, customer, booking and conversation in one place. Instead of inquiries scattered across WhatsApp, phone notes and spreadsheets, your team sees each traveller's full history, knows who is following up and never loses a lead that could have become a booking."
+          ],
+          [
             "Where do leads come from?",
-            "Website forms, WhatsApp, Messenger, Instagram, phone and walk-in customers can all be captured as leads."
+            "Leads can be created from your website forms, WhatsApp, Messenger, Instagram, phone calls, referrals, agents and walk-in customers. Each lead records its source, so the CRM reports show which channels bring the most inquiries and the most bookings."
+          ],
+          [
+            "How do I track a lead from inquiry to booking?",
+            "Every lead moves through clear stages: New, Contacted, Qualified, Proposal Sent, Negotiation, Converted or Lost. Work in a list or drag leads across a Kanban board, add tags such as VIP, Corporate or Hot Lead, and set a priority from Medium to Urgent."
+          ],
+          [
+            "Can I assign leads to my sales staff?",
+            "Yes. Each lead and customer has an assigned staff member, and staff see the leads they own. Managers can filter by owner, status or source to check workloads and make sure no inquiry is left waiting."
+          ],
+          [
+            "How do follow-up reminders work?",
+            "Schedule a follow-up as a call, meeting or message with a date, time and purpose. The CRM reminds the assigned person in advance, for example one hour before by notification and email, and the dashboard highlights today's and overdue follow-ups."
+          ],
+          [
+            "Is there a calendar view?",
+            "Yes. The CRM calendar shows every follow-up and task by day, week or month, so your team can plan calls around busy seasons like Umrah or school holidays."
+          ],
+          [
+            "Can I keep notes and documents on a customer?",
+            "Yes. Add notes to any lead or customer and upload documents such as passport copies, visa forms or quotations. Everything stays on the customer's record, so the next staff member has the full story."
+          ],
+          [
+            "Is the CRM connected to bookings and accounts?",
+            "Yes. The CRM shares one database with sales, bookings and finance. A lead converts into a quotation and a booking without retyping, and the customer list shows the last service, number of bookings and any amount still due."
+          ],
+          [
+            "What reports does the CRM include?",
+            "The CRM dashboard and reports show total, new, converted and lost leads, a lead status overview, lead source analytics with conversion rates, lead trends over time, and today's and overdue follow-ups."
+          ],
+          [
+            "Can I import my existing customers and leads?",
+            "Yes. Import customers and leads from Excel or CSV, and export them whenever you need. Our team can also help move your existing data during setup."
           ],
           [
             "Can I send offers to customer groups?",
-            "Yes. Segment customers by destination, spend or travel history and send targeted offers."
-          ],
-          [
-            "Is the CRM separate from bookings?",
-            "No. It is the same database, so a lead converts into a booking without retyping anything."
+            "Yes. Segment customers by destination, service, spend or travel history and send targeted offers, for example to Umrah customers before the season or families before school holidays."
           ]
         ]
       },
