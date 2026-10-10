@@ -547,8 +547,8 @@ export default function HomePage() {
                   <blockquote>Since FlyAvro moved to TravelSuite ERP, bookings, invoices and follow-ups run from one dashboard. We save hours every week and support is quick.</blockquote>
                   <span className="chip">Everything in one dashboard</span>
                   <figcaption>
-                    <img className="avatar photo" src="/assets/img/testimonials/flyavro.jpg" alt="FlyAvro" width={46} height={46} loading="lazy" />
-                    <span className="t-who"><span className="b t-name">FlyAvro</span><span className="t-role">Travel agency</span><span className="t-loc"><img src="/assets/img/flags/bd.svg" alt="Bangladesh flag" width={16} height={12} />Dhaka, Bangladesh</span></span>
+                    <img className="avatar photo" src="/assets/img/testimonials/flyavro.jpg" alt="Abubakar Siddiq" width={46} height={46} loading="lazy" />
+                    <span className="t-who"><span className="b t-name">Abubakar Siddiq</span><span className="t-role">Founder · <span className="t-co">FlyAvro</span></span><span className="t-loc"><img src="/assets/img/flags/bd.svg" alt="Bangladesh flag" width={16} height={12} />Dhaka, Bangladesh</span></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
