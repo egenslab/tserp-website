@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Audiences, BeforeAfter, FactStrip, MarketNotes, Sources, Workflow } from "@/components/FeatureSections";
+import CrmCompare from "@/components/CrmCompare";
 import CrmPipeline from "@/components/CrmPipeline";
 import GdsPriority from "@/components/GdsPriority";
 import HotelShowcase from "@/components/HotelShowcase";
@@ -64,6 +65,7 @@ export default async function FeaturePage({ params }: Props) {
       <OverviewSection title={page.overviewTitle ?? f.title} paragraphs={f.seo.overview} />
       {f.slug === "hotels" && <HotelShowcase />}
       {f.slug === "crm" && <CrmPipeline />}
+      {f.slug === "crm" && <CrmCompare />}
       {page.sources && <Sources data={page.sources} alt />}
       {f.slug === "flights" && <GdsPriority />}
       <section className={page.sources ? "section" : "section alt"}>
