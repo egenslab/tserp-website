@@ -1664,3 +1664,77 @@ html[lang="th"] body { line-height: 1.8; }
 }
 @media (max-width: 640px) { .hm-grid, .hm-ops-grid { grid-template-columns: 1fr; } }
 .section.alt + .hm-ops { padding-top: 0; }
+
+/* Hajj & Umrah page */
+.hj-pk-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.hj-card { display: flex; flex-direction: column; gap: 12px; padding: 22px; border-radius: 20px; background: var(--white); border: 1px solid var(--line); transition: transform .25s, box-shadow .25s; }
+.hj-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+.hj-card.featured { background: var(--forest); border-color: var(--forest); color: #cfe0d6; background-image: radial-gradient(circle at 90% 0%, rgba(146, 239, 89, .25), transparent 50%); }
+.hj-top { display: flex; justify-content: space-between; align-items: center; }
+.hj-tag { font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; background: var(--lime-soft); color: var(--forest); }
+.hj-card.featured .hj-tag { background: var(--lime); }
+.hj-days { font-size: .82rem; color: var(--muted); }
+.hj-days .b { font-family: var(--font-display); font-size: 1.5rem; color: var(--forest); margin-right: 2px; }
+.hj-card.featured .hj-days, .hj-card.featured .hj-days .b { color: var(--lime); }
+.hj-card h3 { font-size: 1.12rem; margin: 0; }
+.hj-card.featured h3 { color: var(--white); }
+.hj-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; flex: 1; }
+.hj-card li { display: flex; gap: 8px; align-items: center; font-size: .88rem; }
+.hj-card li .ic { width: 16px; height: 16px; color: var(--forest-2); stroke-width: 3; }
+.hj-card.featured li .ic { color: var(--lime); }
+.hj-seats { display: grid; gap: 6px; font-size: .8rem; color: var(--muted); padding-top: 12px; border-top: 1px dashed var(--line); }
+.hj-card.featured .hj-seats { color: #b9cfc2; border-color: rgba(255, 255, 255, .15); }
+.hj-seats .b { color: var(--ink); }
+.hj-card.featured .hj-seats .b { color: var(--white); }
+.hj-bar { display: block; height: 6px; border-radius: 99px; background: var(--bg-alt); overflow: hidden; }
+.hj-card.featured .hj-bar { background: rgba(255, 255, 255, .12); }
+.hj-bar i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--forest-2), var(--lime)); }
+.hj-note { text-align: center; color: var(--muted); font-size: .8rem; margin: 18px 0 0; }
+.hj-rd-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.3fr); gap: 52px; align-items: center; }
+.hj-rd-grid h2 { margin: 0 0 14px; }
+.hj-visa { margin-top: 24px; padding: 18px; border-radius: 18px; background: var(--bg-alt); border: 1px solid var(--line); }
+.hj-visa-title { display: block; font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+.hj-visa-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.hj-visa-steps div { display: grid; gap: 2px; padding: 10px; border-radius: 12px; background: var(--white); text-align: center; }
+.hj-visa-steps .b { font-family: var(--font-display); font-size: 1.3rem; color: var(--forest); }
+.hj-visa-steps small { font-size: .72rem; color: var(--muted); }
+.hj-visa-steps .done { background: var(--forest); }
+.hj-visa-steps .done .b { color: var(--lime); }
+.hj-visa-steps .done small { color: #cfe0d6; }
+.hj-board { border-radius: 22px; background: var(--forest); padding: 18px; color: #cfe0d6; overflow-x: auto; }
+.hj-board-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; font-size: .86rem; }
+.hj-board-head .b { color: var(--white); }
+.hj-pill { font-size: .74rem; font-weight: 800; padding: 4px 10px; border-radius: 999px; background: var(--lime); color: var(--forest-ink); }
+.hj-row { display: grid; grid-template-columns: 1.6fr repeat(4, minmax(64px, 1fr)); gap: 6px; min-width: 500px; }
+.hj-row + .hj-row { margin-top: 6px; }
+.hj-row-h span { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #9fb8ab; text-align: center; padding-bottom: 4px; }
+.hj-row-h span:first-child { text-align: left; }
+.hj-name { color: var(--white); font-weight: 600; font-size: .86rem; display: flex; align-items: center; }
+.hj-st { display: grid; place-items: center; padding: 9px 4px; border-radius: 10px; font-size: .74rem; font-weight: 700; }
+.hj-st.ok { background: rgba(146, 239, 89, .18); color: var(--lime); }
+.hj-st.wait { background: rgba(245, 185, 40, .2); color: #ffd36b; }
+.hj-st.miss { background: rgba(229, 83, 75, .22); color: #ff9a92; }
+.hj-rp-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.hj-rp-card { display: grid; gap: 8px; align-content: start; padding: 22px; border-radius: 18px; background: var(--white); border: 1px solid var(--line); }
+.hj-rp-card .hm-ico { margin-bottom: 6px; }
+.hj-rp-card h3 { font-size: 1rem; margin: 0; }
+.hj-rp-card p { margin: 0; color: var(--muted); font-size: .88rem; }
+@media (max-width: 1100px) { .hj-pk-grid, .hj-rp-grid { grid-template-columns: 1fr 1fr; } .hj-rd-grid { grid-template-columns: 1fr; gap: 28px; } }
+@media (max-width: 640px) { .hj-pk-grid, .hj-rp-grid { grid-template-columns: 1fr; } .hj-visa-steps { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) {
+  .hj-board { padding: 16px 12px; overflow: visible; }
+  .hj-row { min-width: 0; grid-template-columns: 1.3fr repeat(4, minmax(0, 1fr)); gap: 5px; }
+  .hj-row-h span { font-size: .6rem; letter-spacing: 0; }
+  .hj-name { font-size: .78rem; }
+  .hj-st { padding: 8px 2px; }
+  .hj-st > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .hj-st::before { font-size: .9rem; line-height: 1; }
+  .hj-st.ok::before { content: "✓"; }
+  .hj-st.wait::before { content: "…"; }
+  .hj-st.miss::before { content: "✕"; }
+}
+.hj-key { display: none; }
+@media (max-width: 640px) {
+  .hj-key { display: flex; gap: 14px; justify-content: center; margin: 12px 0 0; font-size: .74rem; font-weight: 600; }
+  .hj-key .ok { color: var(--lime); } .hj-key .wait { color: #ffd36b; } .hj-key .miss { color: #ff9a92; }
+}
