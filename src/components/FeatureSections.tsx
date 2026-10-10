@@ -36,9 +36,9 @@ export function Sources({ data, alt = false }: { data: P["sources"]; alt?: boole
       <div className="container">
         <Head eyebrow={data.eyebrow} title={data.title} />
         <div className="source-grid">
-          {data.items.map((s) => (
-            <article key={s.title} className="source-card">
-              <span className="f-ico"><Glyph name={s.icon} /></span>
+          {data.items.map((s, i) => (
+            <article key={s.title} className="source-card" style={{ "--i": i } as React.CSSProperties}>
+              <span className="src-ico" aria-hidden="true"><Glyph name={s.icon} /></span>
               <h3>{s.title}</h3>
               <p>{s.text}</p>
               {s.tags.length > 0 && <div className="source-tags">{s.tags.map((t) => <span key={t}>{t}</span>)}</div>}
