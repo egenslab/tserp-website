@@ -544,11 +544,11 @@ export default function HomePage() {
                     <svg><use href="#i-star" /></svg>
                     <svg><use href="#i-star" /></svg>
                   </div>
-                  <blockquote>The B2B portal with agent credit limits let us grow our sub-agent network without hiring more accounts staff.</blockquote>
-                  <span className="chip">+140 B2B agents in year one</span>
+                  <blockquote>Since FlyAvro moved to TravelSuite ERP, bookings, invoices and follow-ups run from one dashboard. We save hours every week and support is quick.</blockquote>
+                  <span className="chip">Everything in one dashboard</span>
                   <figcaption>
-                    <span className="avatar a2">SA</span>
-                    <span><b>Founder</b><small>B2B ticketing consolidator, Chattogram</small></span>
+                    <img className="avatar photo" src="/assets/img/testimonials/flyavro.jpg" alt="FlyAvro" width={46} height={46} loading="lazy" />
+                    <span><b>FlyAvro</b><small>Travel agency, Dhaka, Bangladesh</small></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
