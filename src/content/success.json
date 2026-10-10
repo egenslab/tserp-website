@@ -73,17 +73,18 @@
   "metric": "Visa processing, Hajj & Umrah and tour packages on one platform"
  },
  {
-  "slug": "visa-desk",
-  "shot": "visa",
-  "url": "visa-desk",
-  "type": "Visa processing centre",
-  "location": "Dhaka, Bangladesh",
+  "slug": "brokenbow",
+  "shot": "brokenbow",
+  "url": "cabins.brokenbow.com",
+  "website": "https://cabins.brokenbow.com/",
+  "type": "Cabin and resort booking",
+  "location": "USA",
   "chips": [
-   "Visa",
-   "CRM",
-   "Help desk"
+   "Hotels",
+   "Resorts",
+   "Online booking"
   ],
-  "metric": "Every file tracked stage by stage"
+  "metric": "Cabin, hotel and resort booking on one platform"
  },
  {
   "slug": "corp-travel",
