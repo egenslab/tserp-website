@@ -2,7 +2,7 @@ import Markets from "@/components/Markets";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "About us — TravelSuite ERP",
+  title: "About TravelSuite ERP — Travel Agency Software Company",
   description: "TravelSuite ERP is an all-in-one digital platform built for travel agencies, tour operators and Hajj & Umrah operators.",
   path: "/about",
 });

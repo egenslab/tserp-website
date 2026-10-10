@@ -3,7 +3,7 @@ import { COUNTRIES, EMAIL, WA } from "@/lib/content";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Contact us — TravelSuite ERP",
+  title: "Contact Us & Request a Demo — TravelSuite ERP",
   description: "Request a TravelSuite ERP demo, chat with our team on WhatsApp at +880 13 2527 7120 or email info@travelsuiteerp.com.",
   path: "/contact",
 });

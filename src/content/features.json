@@ -82,7 +82,7 @@
         ]
       },
       "page": {
-        "seoTitle": "Flight Booking Software for Travel Agencies — TravelSuite ERP",
+        "seoTitle": "Flight Booking & Ticketing Software — TravelSuite ERP",
         "metaDescription": "Flight booking and ticketing software for travel agencies. Sell GDS, NDC and low-cost fares, issue e-tickets, run B2B agents and reconcile BSP in one ERP.",
         "h1": "Flight booking & ticketing software",
         "overviewTitle": "Flight management software for travel agencies",
@@ -640,7 +640,7 @@
         ]
       },
       "page": {
-        "seoTitle": "Hajj & Umrah Management Software for Agencies — TravelSuite ERP",
+        "seoTitle": "Hajj & Umrah Management Software — TravelSuite ERP",
         "metaDescription": "Hajj and Umrah management software: pilgrim registration, packages, Makkah and Madinah rooms, visas, groups and instalments for agencies, in one ERP.",
         "h1": "Hajj & Umrah management software",
         "overviewTitle": "Umrah booking system and pilgrim management",
@@ -911,7 +911,7 @@
         ]
       },
       "page": {
-        "seoTitle": "Visa Processing Software for Travel Agencies — TravelSuite ERP",
+        "seoTitle": "Visa Processing Software for Agencies — TravelSuite ERP",
         "metaDescription": "Visa processing and tracking software for travel agencies: country checklists, online document upload, status alerts and visa profit in one ERP.",
         "h1": "Visa processing & tracking software",
         "overviewTitle": "Visa application management for travel agencies",
@@ -1453,7 +1453,7 @@
         ]
       },
       "page": {
-        "seoTitle": "Transport & Airport Transfer Booking Software — TravelSuite ERP",
+        "seoTitle": "Transport & Transfer Booking Software — TravelSuite ERP",
         "metaDescription": "Transport and airport transfer booking software for travel agencies: vehicles, drivers, zone pricing, trip sheets and vendor payables, linked to every booking.",
         "h1": "Transport & airport transfer software",
         "overviewTitle": "Airport transfer and fleet management for travel agencies",
@@ -1701,6 +1701,11 @@
             "No. It is the same database, so a lead converts into a booking without retyping anything."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "Travel CRM Software for Travel Agencies — TravelSuite ERP",
+        "metaDescription": "Travel CRM for agencies: capture leads from every channel, keep traveller profiles and passports, follow up on time and turn enquiries into bookings.",
+        "h1": "Travel CRM for travel agencies"
       }
     },
     {
@@ -1748,6 +1753,11 @@
             "Yes. Discounts above a set level need a manager's approval."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "Travel Sales Management Software — TravelSuite ERP",
+        "metaDescription": "Track every travel sale from enquiry to confirmed booking. Pipelines, targets, commissions and staff performance for travel agencies in one ERP.",
+        "h1": "Travel sales management software"
       }
     },
     {
@@ -2015,6 +2025,11 @@
             "Yes. Cost, selling price, fees and margin are stored on every booking."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "Travel Agency Accounting Software — TravelSuite ERP",
+        "metaDescription": "Double-entry accounting built for travel agencies: ledgers, receivables, supplier payables, BSP reconciliation and profit per booking in one ERP.",
+        "h1": "Travel agency accounting software"
       }
     },
     {
@@ -2085,8 +2100,8 @@
         ]
       },
       "page": {
-        "seoTitle": "Travel Vendor & Supplier Management Software — TravelSuite ERP",
-        "metaDescription": "Vendor management software for travel agencies and marketplaces. Onboard suppliers with KYC, list services, calculate commission, track payables and rate partners.",
+        "seoTitle": "Travel Vendor Management Software — TravelSuite ERP",
+        "metaDescription": "Vendor management for travel agencies and marketplaces: onboard suppliers with KYC, list services, calculate commission and track payables.",
         "h1": "Travel vendor & supplier management",
         "overviewTitle": "Supplier management for travel agencies and marketplaces",
         "facts": [
@@ -2307,6 +2322,11 @@
             "Yes. Staff, attendance and costs are tracked per branch and department."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "HR & Payroll Software for Travel Agencies — TravelSuite ERP",
+        "metaDescription": "Manage travel agency staff, attendance, leave, payroll and HR requests in the same ERP that runs your bookings and accounts.",
+        "h1": "HR & payroll for travel agencies"
       }
     },
     {
@@ -2354,6 +2374,11 @@
             "Yes. Staff see the related booking, payments and documents inside the ticket."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "Travel Help Desk & Ticketing Software — TravelSuite ERP",
+        "metaDescription": "Organise traveller support requests as tickets, assign them to your team, track replies and resolve issues faster with TravelSuite ERP.",
+        "h1": "Help desk software for travel agencies"
       }
     },
     {
@@ -2401,6 +2426,11 @@
             "Yes. Expenses can be assigned to a tour, group or Hajj package."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "Expense Management for Travel Agencies — TravelSuite ERP",
+        "metaDescription": "Record office and trip expenses, attach receipts, approve spending and see costs by booking, branch and category in TravelSuite ERP.",
+        "h1": "Expense management for travel agencies"
       }
     },
     {
@@ -2448,6 +2478,11 @@
             "Refunds and credit notes are linked to the original invoice and post to accounts automatically."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "Travel Invoicing & Payment Software — TravelSuite ERP",
+        "metaDescription": "Create branded travel invoices, receipts and payment links, track dues and partial payments, and post every payment to your accounts.",
+        "h1": "Travel invoicing & payment software"
       }
     },
     {
@@ -2495,6 +2530,11 @@
             "Yes. Permissions limit reports to the branches a user manages."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "Travel Agency Reports & Analytics — TravelSuite ERP",
+        "metaDescription": "Sales, profit, receivables and staff performance reports for travel agencies. See what sells and where money is owed, in real time.",
+        "h1": "Travel agency reports & analytics"
       }
     },
     {
@@ -2542,6 +2582,11 @@
             "Yes. Reminders arrive before deadlines by notification and email."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "Task & Workflow Management for Travel — TravelSuite ERP",
+        "metaDescription": "Assign travel operation tasks, coordinate your team, use checklists and stay on top of deadlines for every booking and departure.",
+        "h1": "Task & workflow management for travel teams"
       }
     },
     {
@@ -2828,6 +2873,11 @@
             "Yes. Accept cards, PayPal, Stripe, Apple Pay and Google Pay at checkout."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "B2B Travel Portal & B2C Booking Engine — TravelSuite ERP",
+        "metaDescription": "Sell one inventory through a B2C booking website and a B2B agent portal with net fares, markups, credit limits and agent wallets.",
+        "h1": "B2B travel portal & B2C booking engine"
       }
     },
     {
@@ -2875,6 +2925,11 @@
             "Yes. Publish content in English, Arabic, Bangla, Malay and other languages."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "Travel Agency Website Builder — TravelSuite ERP",
+        "metaDescription": "A fast, SEO-ready travel agency website with live booking for flights, hotels, tours, visa and Umrah, connected to your ERP.",
+        "h1": "Travel agency website with online booking"
       }
     },
     {
@@ -3167,6 +3222,11 @@
             "Yes. It can reply in English, Arabic, Bangla, Malay and more."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "AI Automation for Travel Agencies — TravelSuite ERP",
+        "metaDescription": "AI for travel agencies: trip planning, lead qualification and instant replies that save staff time, built into TravelSuite ERP.",
+        "h1": "AI automation for travel agencies"
       }
     },
     {
@@ -3465,6 +3525,11 @@
             "Yes. Every conversation is stored on the customer's profile."
           ]
         ]
+      },
+      "page": {
+        "seoTitle": "WhatsApp & Omnichannel Inbox for Travel — TravelSuite ERP",
+        "metaDescription": "Answer WhatsApp, Messenger and Instagram from one shared inbox, linked to your travel CRM so every chat can become a booking.",
+        "h1": "WhatsApp & omnichannel inbox for travel agencies"
       }
     }
   ]

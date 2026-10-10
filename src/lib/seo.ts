@@ -4,13 +4,13 @@ import { SITE, SOCIAL, type Faq } from "./content";
 type PageMeta = { title: string; description: string; path: string; keywords?: string; image?: string; article?: boolean };
 
 /** Page metadata with canonical URL and Open Graph / Twitter cards. */
-export function pageMeta({ title, description, path, keywords, image = "/assets/img/logo.png", article }: PageMeta): Metadata {
+export function pageMeta({ title, description, path, keywords, image = "/assets/img/og-image.png", article }: PageMeta): Metadata {
   return {
     title: { absolute: title },
     description,
     keywords: keywords || undefined,
     alternates: { canonical: path },
-    openGraph: { title, description, url: path, images: [image], type: article ? "article" : "website", siteName: "TravelSuite ERP" },
+    openGraph: { title, description, url: path, images: [{ url: image, width: 1200, height: 630, alt: "TravelSuite ERP" }], type: article ? "article" : "website", siteName: "TravelSuite ERP" },
     twitter: { card: "summary_large_image", title, description, images: [image] },
   };
 }

@@ -14,7 +14,7 @@ export const generateStaticParams = () => SOLUTIONS.map((s) => ({ slug: s.slug }
 export async function generateMetadata({ params }: Props) {
   const s = solutionBySlug((await params).slug)!;
   return pageMeta({
-    title: `${s.title} — TravelSuite ERP`, description: s.seo.overview[0].slice(0, 300),
+    title: s.seoTitle ?? `${s.title} — TravelSuite ERP`, description: s.metaDescription ?? s.seo.overview[0].slice(0, 160),
     path: `/solutions/${s.slug}`, keywords: s.seo.keywords,
   });
 }

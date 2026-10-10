@@ -4,8 +4,8 @@ import { SOLUTIONS } from "@/lib/content";
 import { breadcrumbLd, pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Solutions — TravelSuite ERP",
-  description: "TravelSuite ERP solutions for travel agencies, Hajj & Umrah operators, B2B consolidators, tour operators, online travel agencies and corporate travel desks.",
+  title: "Travel Software Solutions by Business Type — TravelSuite",
+  description: "TravelSuite ERP setups for travel agencies, Hajj & Umrah operators, B2B consolidators, tour operators, OTAs and corporate travel desks.",
   path: "/solutions",
 });
 

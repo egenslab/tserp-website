@@ -6,8 +6,8 @@ import { FEATURE_GROUPS, FEATURES } from "@/lib/content";
 import { breadcrumbLd, pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Features — TravelSuite ERP",
-  description: "Every feature of TravelSuite ERP: flights, hotels, Hajj & Umrah, visa, tours, transport, CRM, sales, finance, HR, help desk, reports, AI automation and omnichannel inbox.",
+  title: "Travel Agency Software Features — TravelSuite ERP",
+  description: "Every TravelSuite ERP feature: flights, hotels, Hajj & Umrah, visa, tours, CRM, accounting, vendors, website CMS, OCR, AI and a WhatsApp inbox.",
   path: "/features",
 });
 

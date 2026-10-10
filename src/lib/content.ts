@@ -35,11 +35,12 @@ export type Feature = {
 export type Solution = {
   slug: string; icon: string; title: string; tagline: string; headline: string; intro: string; plan: string;
   challenges: string[]; helps: string[]; modules: string[]; seo: Seo;
+  seoTitle?: string; metaDescription?: string;
 };
 export type Block = ["h2" | "p", string] | ["ul", string[]];
 export type Post = {
   slug: string; cat: string; icon: string; color: string; date: string; read: number;
-  title: string; excerpt: string; body: Block[];
+  title: string; seoTitle?: string; excerpt: string; body: Block[];
   extra: { takeaways?: string[]; blocks?: Block[]; faqs?: Faq[] };
 };
 export type LegalDoc = { slug: string; title: string; intro: string; sections: [string, string[]][] };

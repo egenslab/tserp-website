@@ -12,7 +12,7 @@ import { ORG_LD, pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "TravelSuite ERP — All-in-one Travel ERP for Travel Agencies",
-  description: "TravelSuite ERP connects B2B & B2C booking, travel ERP, your agency website, AI automation and omnichannel conversations in one platform for travel agencies, Hajj & Umrah operators and tour operators.",
+  description: "All-in-one travel ERP for travel agencies, Hajj & Umrah and tour operators: B2B & B2C booking, accounting, CRM, your website and WhatsApp in one platform.",
   path: "/",
 });
 

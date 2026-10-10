@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props) {
   const f = featureBySlug((await params).slug)!;
   return pageMeta({
     title: f.page?.seoTitle ?? `${f.title} — TravelSuite ERP`,
-    description: f.page?.metaDescription ?? f.seo.overview[0].slice(0, 300),
+    description: f.page?.metaDescription ?? f.seo.overview[0].slice(0, 160),
     path: `/features/${f.slug}`, keywords: f.seo.keywords,
   });
 }

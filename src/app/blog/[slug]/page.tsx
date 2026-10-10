@@ -14,7 +14,7 @@ export const generateStaticParams = () => POSTS.map((p) => ({ slug: p.slug }));
 
 export async function generateMetadata({ params }: Props) {
   const p = postBySlug((await params).slug)!;
-  return pageMeta({ title: `${p.title} — TravelSuite ERP`, description: p.excerpt, path: `/blog/${p.slug}`, article: true });
+  return pageMeta({ title: p.seoTitle ?? (p.title.length > 45 ? p.title : `${p.title} — TravelSuite ERP`), description: p.excerpt, path: `/blog/${p.slug}`, article: true });
 }
 
 /** Article body: the post's own blocks plus the extra sections, with the closing paragraph kept last. */

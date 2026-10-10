@@ -3,8 +3,8 @@ import { JsonLd, PageHero } from "@/components/ui";
 import { breadcrumbLd, pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Success stories — TravelSuite ERP",
-  description: "Real results from travel businesses using TravelSuite ERP across Bangladesh, Malaysia and the GCC.",
+  title: "Customer Success Stories — TravelSuite ERP",
+  description: "See how travel and visa agencies in the UK, Bangladesh and the UAE run flights, hotels, visas and their business on TravelSuite ERP.",
   path: "/success-stories",
 });
 

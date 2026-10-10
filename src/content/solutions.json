@@ -46,7 +46,9 @@
           "Most agencies go live in 7 to 14 days."
         ]
       ]
-    }
+    },
+    "seoTitle": "Travel Agency Software & Management System — TravelSuite",
+    "metaDescription": "All-in-one travel agency software: flights, hotels, visa, tours, CRM and accounting for the counter, the phone and your website."
   },
   {
     "slug": "hajj-umrah",
@@ -95,7 +97,9 @@
           "Yes. Publish packages on the B2B portal with agent commission."
         ]
       ]
-    }
+    },
+    "seoTitle": "Hajj & Umrah Software for Agencies — TravelSuite ERP",
+    "metaDescription": "Hajj and Umrah software for agencies: pilgrim registration, groups, packages, visas, Makkah and Madinah hotels and payments in one place."
   },
   {
     "slug": "b2b-consolidators",
@@ -144,7 +148,9 @@
           "Yes. Statements are available in the portal at any time."
         ]
       ]
-    }
+    },
+    "seoTitle": "B2B Travel Consolidator Software — TravelSuite ERP",
+    "metaDescription": "Consolidator software with a B2B agent portal, sub-agents, net fares, markups, credit limits and wallets, so your network grows, not your back office."
   },
   {
     "slug": "tour-operators",
@@ -193,7 +199,9 @@
           "Yes. The AI trip planner prepares a draft your team can refine."
         ]
       ]
-    }
+    },
+    "seoTitle": "Tour Operator & DMC Software — TravelSuite ERP",
+    "metaDescription": "Tour operator and DMC software: build itineraries and packages once, price them by season and sell through your website, agents and staff."
   },
   {
     "slug": "online-travel-agencies",
@@ -242,7 +250,9 @@
           "Yes. The site is responsive, and branded mobile apps are available as an add-on."
         ]
       ]
-    }
+    },
+    "seoTitle": "OTA Software & White-label Booking Engine — TravelSuite",
+    "metaDescription": "Launch your own online travel agency on your own domain with a white-label booking engine for flights, hotels, tours and visas."
   },
   {
     "slug": "corporate-travel",
@@ -291,6 +301,8 @@
           "Yes. Share spend reports by department, traveller or cost centre."
         ]
       ]
-    }
+    },
+    "seoTitle": "Corporate Travel Management Software — TravelSuite ERP",
+    "metaDescription": "Corporate travel software with travel policies, approval workflows, employee profiles and one consolidated monthly invoice per company."
   }
 ]

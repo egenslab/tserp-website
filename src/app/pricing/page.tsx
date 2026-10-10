@@ -3,7 +3,7 @@ import Plans from "@/components/Plans";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Pricing — TravelSuite ERP",
+  title: "Travel ERP Pricing & Plans — TravelSuite ERP",
   description: "TravelSuite ERP plans for travel agencies, Hajj & Umrah operators and B2B consolidators. Monthly, yearly or lifetime license in BDT or USD.",
   path: "/pricing",
 });
