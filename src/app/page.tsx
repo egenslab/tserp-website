@@ -559,11 +559,11 @@ export default function HomePage() {
                     <svg><use href="#i-star" /></svg>
                     <svg><use href="#i-star" /></svg>
                   </div>
-                  <blockquote>WhatsApp, Messenger and Instagram chats land in one inbox and turn into CRM leads. Nobody misses an inquiry now.</blockquote>
-                  <span className="chip">Replies in under 5 minutes</span>
+                  <blockquote>Our visa files, flight bookings and accounts now run in one system. Every application is tracked stage by stage, and our Dubai team has one clear view of the business.</blockquote>
+                  <span className="chip">Visa, flights & ERP in one place</span>
                   <figcaption>
-                    <span className="avatar a3">NK</span>
-                    <span><span className="b">Sales Manager</span><small>Tour operator, Sylhet</small></span>
+                    <img className="avatar photo" src="/assets/img/testimonials/globalskyvisa.jpg" alt="Golam Kibria" width={46} height={46} loading="lazy" />
+                    <span><span className="b">Golam Kibria, Managing Director</span><small>Global Sky Visa, Dubai, UAE</small></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
