@@ -1985,3 +1985,6 @@ html[lang="th"] body { line-height: 1.8; }
   .tr-legs .tr-ico { grid-column: 1; grid-row: 1 / span 4; margin: 0; }
   .tr-foot { margin-top: 6px; }
 }
+/* Third feature section sharing the workflow's alt band: one tight gap, not two paddings */
+.section.alt + .hj-rp, .section.alt + .vs-rp, .section.alt + .tp-cat, .section.alt + .tr-score, .section.alt + .hm-ops { margin-top: -40px; }
+@media (max-width: 640px) { .section.alt + .hj-rp, .section.alt + .vs-rp, .section.alt + .tp-cat, .section.alt + .tr-score, .section.alt + .hm-ops { margin-top: -24px; } }
