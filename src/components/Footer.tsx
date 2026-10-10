@@ -60,13 +60,25 @@ export default function Footer() {
                 <a className="review-card" href="https://www.google.com/search?q=TravelSuite+ERP+reviews" target="_blank" rel="noopener">
                   <img src="/assets/img/partners/google-g.svg" alt="Google Reviews" width="28" height="28" />
                   {" "}
-                  <span className="rv-text"><span className="b">Google Reviews</span><span className="rv-stars g" aria-hidden="true">★★★★★</span><small>Read or write a review</small></span>
+                  <span className="rv-text"><span className="b">Google</span><span className="rv-stars g" aria-hidden="true">★★★★★</span><small>Write a review</small></span>
                 </a>
                 {" "}
                 <a className="review-card" href="https://www.trustpilot.com/review/travelsuiteerp.com" target="_blank" rel="noopener">
                   <img src="/assets/img/partners/trustpilot.svg" alt="Trustpilot" width="28" height="28" />
                   {" "}
-                  <span className="rv-text"><span className="b">Trustpilot</span><span className="rv-stars tp" aria-hidden="true"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span><small>Read or write a review</small></span>
+                  <span className="rv-text"><span className="b">Trustpilot</span><span className="rv-stars tp" aria-hidden="true"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span><small>Write a review</small></span>
+                </a>
+                {" "}
+                <a className="review-card" href="https://www.capterra.com/search/?query=TravelSuite%20ERP" target="_blank" rel="noopener">
+                  <img src="/assets/img/partners/capterra.svg" alt="Capterra" width="28" height="28" />
+                  {" "}
+                  <span className="rv-text"><span className="b">Capterra</span><span className="rv-stars cp" aria-hidden="true">★★★★★</span><small>Write a review</small></span>
+                </a>
+                {" "}
+                <a className="review-card" href="https://www.getapp.com/search/?query=TravelSuite%20ERP" target="_blank" rel="noopener">
+                  <img src="/assets/img/partners/getapp.svg" alt="GetApp" width="28" height="28" />
+                  {" "}
+                  <span className="rv-text"><span className="b">GetApp</span><span className="rv-stars ga" aria-hidden="true">★★★★★</span><small>Write a review</small></span>
                 </a>
               </div>
               <Link className="demo-card" href="/contact">
