@@ -39,7 +39,7 @@ const PERKS = [
 ];
 
 const WHY = [
-  "All-in-one travel ERP: flights, hotels, Hajj & Umrah, visa, tours and 12 business modules",
+  "All-in-one travel ERP: flights, hotels, Hajj & Umrah, visa, tours and 12+ ERP modules",
   "Monthly, yearly and lifetime plans for every agency size",
   "Website, B2B agent portal, AI and omnichannel inbox included",
   "Free setup, data import and staff training",

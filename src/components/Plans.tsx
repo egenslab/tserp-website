@@ -64,7 +64,7 @@ export default function Plans() {
           <BuyNow plan="Starter" monthly={39} lifetime={599} period={period} />
           <ul>
             <li>Agency website + B2C booking</li>
-            <li>Any 2 travel services</li>
+            <li>Any 2 booking modules</li>
             <li>CRM, invoices & payments</li>
             <li>3 staff users · 1 branch</li>
             <li>WhatsApp inbox</li>
@@ -77,7 +77,7 @@ export default function Plans() {
           <BuyNow plan="Growth" monthly={89} lifetime={1299} period={period} />
           <ul>
             <li>Everything in Starter</li>
-            <li>All 6 travel services</li>
+            <li>All 6+ booking modules</li>
             <li>Finance & accounting, expenses</li>
             <li>10 staff users · 2 branches</li>
             <li>Messenger & Instagram inbox</li>

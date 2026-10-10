@@ -42,14 +42,14 @@ export default function HomePage() {
           <div className="stats">
             <div className="stat">
               <div>
-                <CountUp value={6} />
-                <span className="b">Travel services</span>
+                <CountUp value={6} suffix="+" />
+                <span className="b">Booking modules</span>
                 <small>Flight, hotel, visa, Hajj & Umrah, tours, transport</small>
               </div>
             </div>
             <div className="stat">
               <div>
-                <CountUp value={12} />
+                <CountUp value={12} suffix="+" />
                 <span className="b">ERP modules</span>
                 <small>CRM, sales, finance, HR, help desk and more</small>
               </div>

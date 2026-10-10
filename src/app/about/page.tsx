@@ -34,11 +34,11 @@ export default function AboutPage() {
               <span>countries</span>
             </div>
             <div>
-              <strong>6</strong>
-              <span>travel services</span>
+              <strong>6+</strong>
+              <span>booking modules</span>
             </div>
             <div>
-              <strong>12</strong>
+              <strong>12+</strong>
               <span>ERP modules</span>
             </div>
           </div>

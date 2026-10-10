@@ -20,7 +20,7 @@ export default function FeaturesPage() {
       <PageHero
         crumbs={[["Home", "/"], ["Features", null]]}
         title={<>Everything your agency needs, in <span className="hl">one platform</span></>}
-        lead="6 travel services, 12 business modules and a connected website, CMS, OCR, AI and inbox. Explore what each part does."
+        lead="6+ booking modules, 12+ ERP modules and a connected website, CMS, OCR, AI and inbox. Explore what each part does."
       >
         <div className="jump-chips"><a href="#services">Travel services</a><a href="#modules">Business modules</a><a href="#platform">Platform</a></div>
       </PageHero>
