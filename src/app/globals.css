@@ -352,6 +352,14 @@ p { margin: 0 0 1em; }
 .t-featured figcaption { border-color: rgba(255, 255, 255, .14); }
 .t-card figcaption .b { display: block; color: var(--ink); font-family: var(--font-display); font-size: .95rem; }
 .t-card figcaption small { color: var(--muted); font-size: .84rem; }
+.t-card figcaption { align-items: center; gap: 14px; }
+.t-card figcaption .avatar { width: 54px; height: 54px; }
+.t-who { display: grid; gap: 3px; min-width: 0; }
+.t-card figcaption .t-name { font-size: 1.02rem; line-height: 1.2; }
+.t-role { font-size: .84rem; color: var(--muted); line-height: 1.35; }
+.t-co { color: var(--forest-2); font-weight: 700; }
+.t-loc { display: inline-flex; align-items: center; gap: 6px; font-size: .76rem; font-weight: 600; color: var(--muted); letter-spacing: .01em; }
+.t-loc img { width: 16px; height: 12px; border-radius: 2px; object-fit: cover; box-shadow: 0 0 0 1px rgba(0, 0, 0, .08); }
 .t-featured figcaption .b { color: var(--white); }
 .t-featured figcaption small { color: #b9cfc2; }
 .avatar { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; background: var(--lime); color: var(--forest-ink); font-family: var(--font-display); font-weight: 800; font-size: .9rem; flex: none; box-shadow: 0 0 0 3px var(--white), 0 0 0 5px var(--lime); }

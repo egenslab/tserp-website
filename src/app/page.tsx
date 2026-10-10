@@ -533,7 +533,7 @@ export default function HomePage() {
                   <span className="chip">Visa, flights & hotels on one platform</span>
                   <figcaption>
                     <img className="avatar photo" src="/assets/img/testimonials/syed-imigo.jpg" alt="Syed" width={46} height={46} loading="lazy" />
-                    <span><span className="b">Syed, Founder</span><small>Imigo, United Kingdom</small></span>
+                    <span className="t-who"><span className="b t-name">Syed</span><span className="t-role">Founder · <span className="t-co">Imigo</span></span><span className="t-loc"><img src="/assets/img/flags/gb.svg" alt="United Kingdom flag" width={16} height={12} />United Kingdom</span></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
@@ -548,7 +548,7 @@ export default function HomePage() {
                   <span className="chip">Everything in one dashboard</span>
                   <figcaption>
                     <img className="avatar photo" src="/assets/img/testimonials/flyavro.jpg" alt="FlyAvro" width={46} height={46} loading="lazy" />
-                    <span><span className="b">FlyAvro</span><small>Travel agency, Dhaka, Bangladesh</small></span>
+                    <span className="t-who"><span className="b t-name">FlyAvro</span><span className="t-role">Travel agency</span><span className="t-loc"><img src="/assets/img/flags/bd.svg" alt="Bangladesh flag" width={16} height={12} />Dhaka, Bangladesh</span></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
@@ -563,7 +563,7 @@ export default function HomePage() {
                   <span className="chip">Visa, flights & ERP in one place</span>
                   <figcaption>
                     <img className="avatar photo" src="/assets/img/testimonials/globalskyvisa.jpg" alt="Golam Kibria" width={46} height={46} loading="lazy" />
-                    <span><span className="b">Golam Kibria, Managing Director</span><small>Global Sky Visa, Dubai, UAE</small></span>
+                    <span className="t-who"><span className="b t-name">Golam Kibria</span><span className="t-role">Managing Director · <span className="t-co">Global Sky Visa</span></span><span className="t-loc"><img src="/assets/img/flags/ae.svg" alt="UAE flag" width={16} height={12} />Dubai, UAE</span></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
@@ -578,7 +578,7 @@ export default function HomePage() {
                   <span className="chip">Month-end closing in 1 day</span>
                   <figcaption>
                     <span className="avatar ">FH</span>
-                    <span><span className="b">Finance Manager</span><small>Travel agency, Dhaka</small></span>
+                    <span className="t-who"><span className="b t-name">Finance Manager</span><span className="t-role">Travel agency</span><span className="t-loc"><img src="/assets/img/flags/bd.svg" alt="Bangladesh flag" width={16} height={12} />Dhaka, Bangladesh</span></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
@@ -593,7 +593,7 @@ export default function HomePage() {
                   <span className="chip">Fewer status calls</span>
                   <figcaption>
                     <span className="avatar a2">TJ</span>
-                    <span><span className="b">Operations Head</span><small>Visa processing centre, Dhaka</small></span>
+                    <span className="t-who"><span className="b t-name">Operations Head</span><span className="t-role">Visa processing centre</span><span className="t-loc"><img src="/assets/img/flags/bd.svg" alt="Bangladesh flag" width={16} height={12} />Dhaka, Bangladesh</span></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
@@ -608,7 +608,7 @@ export default function HomePage() {
                   <span className="chip">Live in 12 days</span>
                   <figcaption>
                     <span className="avatar a3">AR</span>
-                    <span><span className="b">CEO</span><small>Online travel agency, Dubai</small></span>
+                    <span className="t-who"><span className="b t-name">CEO</span><span className="t-role">Online travel agency</span><span className="t-loc"><img src="/assets/img/flags/ae.svg" alt="UAE flag" width={16} height={12} />Dubai, UAE</span></span>
                   </figcaption>
                 </figure>
       </StoriesCarousel>
