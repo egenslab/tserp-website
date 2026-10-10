@@ -1607,3 +1607,24 @@ html[lang="th"] body { line-height: 1.8; }
 .cc-2 .cc-no { display: flex; gap: 10px; align-items: flex-start; }
 .cc-2 .cc-no .ic { flex: none; width: 18px; height: 18px; margin-top: 2px; padding: 3px; border-radius: 50%; background: rgba(229, 83, 75, .18); color: #ff8a80; stroke-width: 3; }
 @media (max-width: 900px) { .cc-2 .cc-row { grid-template-columns: 1fr; } .cc-2 .cc-no { display: block; } .cc-2 .cc-no .ic { display: none; } }
+
+/* Feature pages: key capabilities */
+.caps-wrap { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.6fr); gap: 56px; align-items: start; }
+.caps-intro { position: sticky; top: 110px; }
+.caps-intro h2 { margin: 0 0 18px; font-size: clamp(1.6rem, 2.4vw, 2.15rem); }
+.caps-count { display: flex; align-items: baseline; gap: 10px; color: var(--muted); margin: 0 0 24px; font-size: .95rem; }
+.caps-count strong { font-family: var(--font-display); font-size: 2.6rem; line-height: 1; color: var(--forest); }
+.caps-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.caps-list li { position: relative; display: flex; align-items: center; gap: 14px; padding: 18px 46px 18px 18px; border-radius: 16px; background: var(--white); border: 1px solid var(--line); font-weight: 500; color: var(--ink); line-height: 1.4; transition: border-color .2s, transform .2s, box-shadow .2s; }
+.caps-list li:hover { border-color: var(--lime); transform: translateY(-2px); box-shadow: 0 10px 24px rgba(24, 67, 50, .08); }
+.caps-n { flex: none; width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; background: var(--bg-alt); color: var(--forest-2); font-family: var(--font-display); font-weight: 800; font-size: .78rem; transition: background .2s, color .2s; }
+.caps-list li:hover .caps-n { background: var(--forest); color: var(--lime); }
+.caps-list li .ic { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; padding: 3px; border-radius: 50%; background: var(--lime); color: var(--forest-ink); stroke-width: 3; }
+.section:not(.alt) .caps-list li { background: var(--bg-alt); }
+.section:not(.alt) .caps-n { background: var(--white); }
+@media (max-width: 1000px) {
+  .caps-wrap { grid-template-columns: 1fr; gap: 28px; }
+  .caps-intro { position: static; text-align: center; }
+  .caps-count { justify-content: center; }
+}
+@media (max-width: 640px) { .caps-list { grid-template-columns: 1fr; } }

@@ -70,8 +70,19 @@ export default async function FeaturePage({ params }: Props) {
       {f.slug === "flights" && <GdsPriority />}
       <section className={page.sources ? "section" : "section alt"}>
         <div className="container">
-          <div className="section-head"><span className="eyebrow">Key capabilities</span><h2>{f.desc}</h2></div>
-          <div className="caps">{capabilities.map((b) => <div key={b} className="cap"><Icon name="i-check" /><span>{b}</span></div>)}</div>
+          <div className="caps-wrap">
+            <div className="caps-intro">
+              <span className="eyebrow">Key capabilities</span>
+              <h2>{f.desc}</h2>
+              <p className="caps-count"><strong>{capabilities.length}</strong> features included in {f.title}</p>
+              <Link href="/contact" className="btn btn-forest">See it in a demo <Icon name="i-arrow" /></Link>
+            </div>
+            <ul className="caps-list">
+              {capabilities.map((b, i) => (
+                <li key={b}><span className="caps-n">{String(i + 1).padStart(2, "0")}</span><span>{b}</span><Icon name="i-check" /></li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
       {page.workflow ? <Workflow data={page.workflow} alt={!!page.sources} /> : (
