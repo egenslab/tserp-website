@@ -2,60 +2,161 @@
   {
     "slug": "terms",
     "title": "Terms & Conditions",
-    "intro": "These terms govern your use of the TravelSuite ERP website, software and services. By using them you agree to these terms.",
+    "updated": "10 October 2026",
+    "intro": "These terms form the agreement between TravelSuite ERP and the businesses that use our website, software and services. Please read them before you order.",
+    "keyPoints": [
+      "TravelSuite ERP is sold to businesses, as a cloud plan billed monthly or yearly or as a one-time lifetime license.",
+      "Fees are payable in advance in US dollars and exclude taxes and third-party supplier fees.",
+      "You own your business data. We process it only to provide the service.",
+      "Lifetime licenses run on your server, with installation, maintenance and updates carried out by our team.",
+      "These terms are governed by the laws of Bangladesh."
+    ],
     "sections": [
       [
-        "1. Our services",
+        "1. About these terms",
         [
-          "TravelSuite ERP provides travel booking, ERP, website, AI automation and messaging software to travel businesses, either as a hosted cloud service or as a self-hosted license."
+          "These Terms & Conditions (the “Terms”) apply to the TravelSuite ERP website, software, cloud plans, lifetime licenses, add-ons and related services (together, the “Services”) provided by TravelSuite ERP (“TravelSuite”, “we”, “us” or “our”).",
+          "By placing an order, paying an invoice or using the Services, the business you represent (“you” or the “Customer”) agrees to these Terms. If you accept them on behalf of a business, you confirm that you have the authority to do so.",
+          "The Services are intended for travel agencies, tour operators and other businesses. They are not offered to consumers for personal use.",
+          "Where a signed proposal, order form or Enterprise contract conflicts with these Terms, that document applies for the matters it covers."
         ]
       ],
       [
-        "2. Accounts",
+        "2. Definitions",
         [
-          "You are responsible for keeping your login details secure and for all activity under your account. Tell us immediately if you suspect unauthorised access."
+          "- “Cloud plan” means a subscription in which we host and operate TravelSuite ERP for you, billed monthly or yearly.",
+          "- “Lifetime license” means a one-time license to use TravelSuite ERP on a server you provide, as described in section 5.",
+          "- “Customer Data” means the information you or your users enter into the Services, including data about your travellers, agents, suppliers and staff.",
+          "- “Users” means the staff and other people you authorise to access the Services under your account.",
+          "- “Third-party Services” means services provided by others, such as GDS and airline systems, hotel suppliers, messaging platforms, email providers and payment providers."
         ]
       ],
       [
-        "3. Fees and payment",
+        "3. The Services",
         [
-          "Subscription fees are billed monthly or yearly in advance. License fees are paid once before installation. Prices exclude VAT and third-party supplier fees unless stated otherwise."
+          "TravelSuite ERP is travel business software covering, depending on your plan, booking modules, a customer website, CRM, accounting, HR, support tickets, a shared inbox and related tools. The features included in each plan are described on our pricing page or in your order.",
+          "Setup, data import and staff training are included as described for your plan. Add-ons, supplier integrations, mobile apps and custom development are provided only when agreed in writing and quoted separately.",
+          "We continuously improve the Services and may add, change or retire features. We will not materially reduce the core functionality of a plan you have paid for during the paid period."
         ]
       ],
       [
-        "4. Your data",
+        "4. Orders, fees and payment",
         [
-          "You own the data you enter into TravelSuite ERP. We process it only to provide the service, as described in our Privacy Policy."
+          "An order is confirmed when we issue an invoice for the plan or service you have chosen and you pay it. Our team confirms orders through WhatsApp or email.",
+          "- Fees are stated in US dollars and are payable in advance, before the service period begins or before installation starts.",
+          "- Fees exclude VAT and other taxes, bank charges and the fees of Third-party Services, which are your responsibility.",
+          "- Cloud plans renew automatically at the end of each monthly or yearly period unless you cancel before the renewal date.",
+          "- If an invoice remains unpaid after its due date, we may suspend access after giving you notice. Access is restored once the balance is paid.",
+          "- We may change our prices. Changes to a cloud plan apply from your next renewal, and we will tell you at least 30 days in advance.",
+          "Refunds are handled under our Refund Policy, which forms part of these Terms."
         ]
       ],
       [
-        "5. Acceptable use",
+        "5. Lifetime licenses",
         [
-          "You must not use the service for unlawful activity, to send spam, or to attempt to access other customers' data or our systems without permission."
+          "A lifetime license gives you a non-exclusive, non-transferable right to use TravelSuite ERP for your own business on a server you provide, for as long as you comply with these Terms.",
+          "- We install the software on your server free of charge.",
+          "- Our team carries out the maintenance and updates of your installation. The license includes 12 months of updates, after which updates and maintenance can be renewed.",
+          "- You are responsible for providing and paying for a server that meets our technical requirements, and for giving us the access we need to install, maintain and update the software.",
+          "- You may not resell, sublicense, rent or share the software with other businesses, or remove our copyright notices.",
+          "- Source code is not included unless it is expressly agreed in an Enterprise contract."
         ]
       ],
       [
-        "6. Third-party suppliers",
+        "6. Accounts and security",
         [
-          "Airline, hotel, payment and messaging providers are governed by your own agreements with them. We are not responsible for their availability, pricing or decisions."
+          "You are responsible for your Users, for keeping login details confidential and for all activity under your account. Use strong passwords, give each User only the access their role needs, and remove access when a User leaves your business.",
+          "Tell us immediately if you suspect any unauthorised access to your account. We may temporarily restrict access when this is needed to protect your account, other customers or our systems."
         ]
       ],
       [
-        "7. Availability and support",
+        "7. Customer Data",
         [
-          "We aim to keep cloud services available at all times and to announce planned maintenance in advance. Support is provided during office hours through WhatsApp, phone and email."
+          "You own your Customer Data. You give us permission to host, copy, process and display it only as needed to provide, secure and support the Services, and as described in our Privacy Policy.",
+          "You are responsible for the accuracy of your Customer Data and for having a lawful basis to collect it and to share it with us, including any notices or consents your travellers and staff are entitled to.",
+          "We do not sell Customer Data and do not use it to market to your customers. Our staff access it only when this is needed to provide or support the Services.",
+          "When a cloud plan ends, you can ask us for an export of your Customer Data within 30 days. After that period, we may delete it from our active systems, except where the law requires us to keep it."
         ]
       ],
       [
-        "8. Termination",
+        "8. Acceptable use",
         [
-          "You may cancel at any time; the service continues until the end of the paid period. We may suspend accounts that breach these terms or remain unpaid."
+          "You and your Users must not:",
+          "- use the Services for any unlawful, fraudulent or misleading purpose;",
+          "- send spam or unsolicited messages, or use messaging channels in breach of the rules of the platform concerned;",
+          "- upload malware, or attempt to probe, overload or break the security of the Services;",
+          "- try to access another customer’s data or any part of our systems you are not authorised to use;",
+          "- copy, reverse engineer or build a competing product from the Services, except where the law allows it.",
+          "We may suspend access that breaches this section, and will tell you why unless the law or an urgent security issue prevents us."
         ]
       ],
       [
-        "9. Changes and governing law",
+        "9. Third-party Services",
         [
-          "We may update these terms and will notify customers of material changes. These terms are governed by the laws of Bangladesh."
+          "The Services can connect to Third-party Services such as GDS and airline systems, hotel suppliers, WhatsApp, Messenger and Instagram, email providers and payment providers. Your use of each one is governed by your own agreement with that provider.",
+          "Third-party Services are outside our control. We are not responsible for their availability, pricing, content, decisions or changes, or for losses they cause. If a provider changes or withdraws its service, the related feature may stop working, and we will make reasonable efforts to offer an alternative."
+        ]
+      ],
+      [
+        "10. Availability, maintenance and support",
+        [
+          "We aim to keep cloud plans available at all times. Planned maintenance is announced in advance where possible and scheduled to limit disruption. We take regular backups of cloud plans.",
+          "Support is provided in English and Bangla through WhatsApp, phone and email during our business hours. Support covers the use of the Services and the correction of faults; it does not include custom development or the operation of your business."
+        ]
+      ],
+      [
+        "11. Intellectual property",
+        [
+          "TravelSuite ERP, our website and all related software, designs, documentation and trademarks belong to us or our licensors. These Terms give you a right to use the Services, not ownership of them.",
+          "If you send us suggestions or feedback, we may use them to improve the Services without any obligation to you."
+        ]
+      ],
+      [
+        "12. Confidentiality",
+        [
+          "Each party will keep the other’s non-public business, technical and pricing information confidential and use it only for the purposes of this agreement. This does not apply to information that is already public, independently developed or lawfully received from someone else, or that must be disclosed by law."
+        ]
+      ],
+      [
+        "13. Warranties and disclaimers",
+        [
+          "We will provide the Services with reasonable skill and care. Apart from that commitment and anything else expressly stated in these Terms, the Services are provided “as is” and “as available”.",
+          "We do not guarantee that the Services will be uninterrupted or error-free, or that they will meet every requirement of your business. You remain responsible for your business decisions, prices, bookings and compliance with the laws and licensing rules that apply to travel businesses in your country."
+        ]
+      ],
+      [
+        "14. Limitation of liability",
+        [
+          "To the extent permitted by law:",
+          "- neither party is liable for indirect or consequential loss, or for loss of profit, revenue, goodwill or data that could have been prevented by keeping your own backups;",
+          "- our total liability arising from the Services in any 12-month period is limited to the fees you paid us for the Services in that period.",
+          "Nothing in these Terms limits liability for fraud, or for any liability that cannot be limited by law."
+        ]
+      ],
+      [
+        "15. Suspension and termination",
+        [
+          "You may cancel a cloud plan at any time. The plan stays active until the end of the period you have paid for and is not renewed.",
+          "We may suspend or end the Services if you seriously breach these Terms and do not fix the breach within 14 days of our notice, if invoices remain unpaid, or immediately where the law or a security risk requires it.",
+          "Sections that by their nature should continue after the end of the agreement, including those on fees owed, Customer Data, confidentiality, intellectual property and limitation of liability, remain in force."
+        ]
+      ],
+      [
+        "16. Changes to these Terms",
+        [
+          "We may update these Terms from time to time. We will publish the new version on this page with a new “Last updated” date and tell customers about material changes in advance. If you continue to use the Services after a change takes effect, the updated Terms apply."
+        ]
+      ],
+      [
+        "17. Governing law and disputes",
+        [
+          "These Terms are governed by the laws of Bangladesh. If a dispute arises, both parties will first try in good faith to resolve it through discussion. If it cannot be resolved within 30 days, it may be brought before the competent courts of Dhaka, Bangladesh."
+        ]
+      ],
+      [
+        "18. Contact",
+        [
+          "Email info@travelsuiteerp.com or message us on WhatsApp at +880 13 2527 7120."
         ]
       ]
     ]
@@ -63,44 +164,123 @@
   {
     "slug": "privacy",
     "title": "Privacy Policy",
-    "intro": "This policy explains what information TravelSuite ERP collects, how we use it and the choices you have.",
+    "updated": "10 October 2026",
+    "intro": "This policy explains how TravelSuite ERP collects, uses and protects personal information, and the choices and rights you have.",
+    "keyPoints": [
+      "We collect the details you share with us, account and billing information, and basic website usage data.",
+      "Data you store in TravelSuite ERP about your travellers, agents and staff belongs to your business. We process it only on your instructions.",
+      "We never sell personal information.",
+      "We share data only with service providers who help us run the Services, or when the law requires it.",
+      "You can ask us to access, correct or delete your personal information at any time."
+    ],
     "sections": [
       [
-        "1. Information we collect",
+        "1. Who we are and what this policy covers",
         [
-          "Contact details you share with us, such as name, agency name, email and phone number.",
-          "Account and billing information for customers of our service.",
-          "Basic usage data such as pages visited and device type, used to improve the website."
+          "TravelSuite ERP (“TravelSuite”, “we” or “us”) provides travel business software. This policy applies to personal information about visitors to our website, people who contact us or request a demo, our customers and their users, and our affiliates.",
+          "It does not cover the data our customers store in TravelSuite ERP about their own travellers, agents, suppliers and staff. For that data, our customer is responsible, and we act only on their behalf, as explained in section 4."
         ]
       ],
       [
-        "2. How we use information",
+        "2. Information we collect",
         [
-          "To respond to demo requests and questions, provide and support the service, send invoices and important notices, and improve our products."
+          "### Information you give us",
+          "- Contact details, such as your name, business name, job title, email address, phone and WhatsApp number.",
+          "- Messages and information you share when you request a demo, ask a question, apply to our affiliate program or contact support.",
+          "- Account details for our customers’ users, such as names, email addresses and roles.",
+          "- Billing details, such as invoices, payment records and billing addresses.",
+          "### Information collected automatically",
+          "- Basic technical data about website visits, such as pages viewed, approximate location, browser and device type.",
+          "- Security and usage logs from the Services, such as sign-in times and actions taken, used to keep accounts secure and to fix problems.",
+          "### Information from others",
+          "- Details passed to us by a business that refers you, such as one of our affiliates, or that is publicly available about your business."
         ]
       ],
       [
-        "3. Your customers' data",
+        "3. How we use information",
         [
-          "Data about your travellers, agents and suppliers that you store in TravelSuite ERP belongs to you. We process it only on your instructions and never sell it."
+          "We use personal information to:",
+          "- respond to enquiries and demo requests and provide quotes;",
+          "- set up, provide, maintain and support the Services, including installation and updates;",
+          "- send invoices, service notices and security alerts;",
+          "- keep the Services and our customers’ accounts secure and prevent misuse;",
+          "- understand how our website and Services are used, so we can improve them;",
+          "- send news about TravelSuite ERP, where you have agreed to it or where we have a legitimate business interest, with an easy way to opt out;",
+          "- meet our legal, tax and accounting obligations.",
+          "We rely on the legal bases that apply to each use: performing our contract with you, our legitimate interests in running and improving our business, your consent where it is required, and compliance with the law."
         ]
       ],
       [
-        "4. Sharing",
+        "4. Data you store in TravelSuite ERP",
         [
-          "We share information only with service providers who help us run the service, such as hosting and messaging providers, and when required by law."
+          "Our customers use TravelSuite ERP to store information about their travellers, agents, suppliers and staff, such as passport details for visa or Hajj & Umrah files. This data belongs to the customer, who decides what is collected and how it is used.",
+          "For this data we act as a service provider (data processor). We process it only to provide, secure and support the Services and on our customer’s instructions. We do not sell it, use it for our own marketing or share it with other customers.",
+          "If you are a traveller or other person whose details are held by one of our customers, please contact that business first. We will help them respond to your request."
         ]
       ],
       [
-        "5. Security and retention",
+        "5. Cookies and similar technologies",
         [
-          "We use encryption, access controls and daily backups to protect data. We keep information only as long as needed for the purposes above or as required by law."
+          "Our website uses cookies and similar technologies that are needed for it to work, such as remembering your language choice. Where we use analytics tools, they help us understand which pages are useful. You can block or delete cookies in your browser settings; some features of the website may not work as intended without them."
         ]
       ],
       [
-        "6. Your choices",
+        "6. How we share information",
         [
-          "You can ask us to access, correct or delete your personal information, or to stop sending marketing messages, by contacting us on WhatsApp."
+          "We never sell personal information. We share it only:",
+          "- with service providers who help us run our business and the Services, such as hosting, email delivery, messaging, form handling and analytics providers, under contracts that require them to protect it;",
+          "- with Third-party Services you choose to connect, such as GDS, messaging or payment providers, as needed to make that connection work;",
+          "- with professional advisers, such as accountants and lawyers, under a duty of confidentiality;",
+          "- when required by law, a court order or a public authority, or to protect our rights, our customers or the public;",
+          "- with a buyer or successor if our business is reorganised or sold, subject to this policy."
+        ]
+      ],
+      [
+        "7. International transfers",
+        [
+          "We and our service providers may process information in countries other than the one where you are located. When we transfer personal information across borders, we take reasonable steps to make sure it remains protected in line with this policy and applicable law."
+        ]
+      ],
+      [
+        "8. How we protect information",
+        [
+          "We use technical and organisational measures appropriate to the information we handle, including encrypted connections, access controls based on roles, staff confidentiality and regular backups of cloud plans. No system is completely secure, so we also ask customers to use strong passwords and limit access to the people who need it."
+        ]
+      ],
+      [
+        "9. How long we keep information",
+        [
+          "We keep personal information only for as long as it is needed for the purposes described in this policy. Enquiry details are kept while we are in contact with you and for a reasonable period afterwards. Customer account and billing records are kept for the duration of the contract and as long as tax and accounting laws require. Customer Data in cloud plans is handled as described in our Terms & Conditions."
+        ]
+      ],
+      [
+        "10. Your rights",
+        [
+          "Depending on the law that applies to you, you may have the right to:",
+          "- ask for a copy of the personal information we hold about you;",
+          "- ask us to correct information that is inaccurate or incomplete;",
+          "- ask us to delete your information, or to restrict or object to how we use it;",
+          "- withdraw consent you have given, at any time, without affecting earlier processing;",
+          "- stop receiving marketing messages, by replying to the message or contacting us.",
+          "To use any of these rights, contact us using the details below. We may need to confirm your identity before we respond. You also have the right to complain to the data protection authority in your country."
+        ]
+      ],
+      [
+        "11. Children",
+        [
+          "Our website and Services are intended for businesses and are not directed at children. We do not knowingly collect personal information from children for our own purposes."
+        ]
+      ],
+      [
+        "12. Changes to this policy",
+        [
+          "We may update this policy from time to time. The latest version is always on this page, with the date it was last updated. If we make significant changes, we will tell our customers in advance."
+        ]
+      ],
+      [
+        "13. Contact",
+        [
+          "Email info@travelsuiteerp.com or message us on WhatsApp at +880 13 2527 7120."
         ]
       ]
     ]
@@ -108,36 +288,82 @@
   {
     "slug": "refund",
     "title": "Refund Policy",
-    "intro": "We want you to be confident in choosing TravelSuite ERP. This policy explains when refunds are available.",
+    "updated": "10 October 2026",
+    "intro": "We want you to choose TravelSuite ERP with confidence. This policy explains when payments can be refunded and how to ask for a refund.",
+    "keyPoints": [
+      "Monthly cloud plans can be cancelled at any time; the current month is not refunded.",
+      "Yearly cloud plans cancelled within 14 days of the first payment are refunded, minus setup work already done.",
+      "Lifetime licenses can be refunded within 7 days of payment if installation has not started.",
+      "Completed custom work and third-party fees are not refundable.",
+      "Approved refunds are paid to the original payment method within 10 working days."
+    ],
     "sections": [
       [
-        "1. Cloud subscriptions",
+        "1. Scope",
         [
-          "Monthly plans can be cancelled at any time and are not refunded for the current month. Yearly plans cancelled within 14 days of the first payment receive a full refund, minus any setup work already delivered."
+          "This Refund Policy applies to payments made to TravelSuite ERP for cloud plans, lifetime licenses, add-ons and services. It forms part of our Terms & Conditions. Where a signed proposal or Enterprise contract sets different refund terms, those terms apply."
         ]
       ],
       [
-        "2. Lifetime licenses",
+        "2. Monthly cloud plans",
         [
-          "Lifetime licenses can be refunded within 7 days of payment if installation has not started. After installation, licenses are not refundable."
+          "Monthly plans can be cancelled at any time before the next renewal date. The plan stays active until the end of the month you have paid for. Payments for the current month are not refunded, and we do not refund part months."
         ]
       ],
       [
-        "3. Add-ons and custom work",
+        "3. Yearly cloud plans",
         [
-          "Supplier integrations, mobile apps and custom development are quoted separately. Work already completed is not refundable."
+          "If you cancel a yearly plan within 14 days of your first payment, we refund the amount paid, minus the value of any setup, data import or training already carried out.",
+          "After 14 days, yearly plans are not refundable. The plan remains active until the end of the paid year and is not renewed."
         ]
       ],
       [
-        "4. Third-party fees",
+        "4. Lifetime licenses",
         [
-          "Fees paid to GDS, airline, hotel, payment gateway or messaging providers are set by those providers and are not refunded by us."
+          "A lifetime license can be refunded in full if you ask within 7 days of payment and installation on your server has not started.",
+          "Once installation has started, the license fee is not refundable, because the software has been delivered and configured for your business."
         ]
       ],
       [
-        "5. How to request a refund",
+        "5. Setup, add-ons and custom work",
         [
-          "Message us on WhatsApp with your agency name and invoice number. Approved refunds are paid to the original payment method within 10 working days."
+          "- Add-ons, supplier integrations, mobile apps and custom development are quoted separately.",
+          "- Work that has already been carried out is not refundable.",
+          "- Where work has been paid for in advance and not yet started, we refund the unused part of the payment."
+        ]
+      ],
+      [
+        "6. Third-party fees",
+        [
+          "Fees charged by GDS and airline systems, hotel suppliers, messaging platforms, domain registrars, hosting providers or payment providers are set by those companies and are not refunded by us. This includes any server you pay for yourself to run a lifetime license."
+        ]
+      ],
+      [
+        "7. Upgrades and plan changes",
+        [
+          "When you upgrade during a paid period, you pay only the difference for the time remaining. A change to a lower plan takes effect from your next billing period, and the current period is not partly refunded."
+        ]
+      ],
+      [
+        "8. How to request a refund",
+        [
+          "Send your request by email or WhatsApp with:",
+          "- your business name;",
+          "- the invoice number and payment date;",
+          "- the reason for the request.",
+          "We review every request and confirm our decision in writing. Approved refunds are paid to the original payment method within 10 working days. Your bank or payment provider may take longer to show the amount."
+        ]
+      ],
+      [
+        "9. Payment disputes",
+        [
+          "If you are unhappy with a charge, please contact us before raising a dispute with your bank or card provider. Most issues are resolved quickly once we know about them."
+        ]
+      ],
+      [
+        "10. Contact",
+        [
+          "Email info@travelsuiteerp.com or message us on WhatsApp at +880 13 2527 7120."
         ]
       ]
     ]

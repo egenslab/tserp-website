@@ -48,7 +48,7 @@ export type Post = {
   title: string; seoTitle?: string; excerpt: string; body: Block[];
   extra: { takeaways?: string[]; blocks?: Block[]; faqs?: Faq[] };
 };
-export type LegalDoc = { slug: string; title: string; intro: string; sections: [string, string[]][] };
+export type LegalDoc = { slug: string; title: string; intro: string; updated: string; keyPoints: string[]; sections: [string, string[]][] };
 export type Story = {
   slug: string; shot: string; type: string; location: string; chips: string[]; metric: string;
   flag?: string;    // country code of a flag in /assets/img/flags

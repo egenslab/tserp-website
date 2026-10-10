@@ -2168,3 +2168,14 @@ html[lang="th"] body { line-height: 1.8; }
   .pf-plan { margin-top: 8px; padding: 10px 12px; }
   .pf-go { margin-top: 2px; }
 }
+/* Legal pages: key points summary, sub-headings, contact link */
+.legal-key { margin-bottom: 34px; padding: 24px 26px; border-radius: 20px; background: var(--bg-alt); border: 1px solid var(--line); }
+.legal-key h2 { font-size: 1.1rem; margin: 0 0 14px; }
+.legal-key ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.legal-key li { display: flex; gap: 10px; align-items: flex-start; line-height: 1.6; }
+.legal-key li .ic { flex: none; width: 20px; height: 20px; margin-top: 2px; padding: 3px; border-radius: 50%; background: var(--lime); color: var(--forest); }
+.legal-key > p { margin: 14px 0 0; font-size: .82rem; color: var(--muted); }
+.legal-body h3 { font-size: 1rem; margin: 18px 0 8px; color: var(--forest); }
+.legal-body section p + ul, .legal-body section ul + p { margin-top: .6em; }
+.legal-contact a:not(.btn) { color: var(--forest); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 640px) { .legal-key { padding: 18px; } }
