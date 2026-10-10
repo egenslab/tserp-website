@@ -74,9 +74,9 @@ export default function AboutPage() {
           </figure>
           <div className="founder-msg">
             <span className="eyebrow">Message from our founder</span>
-            <h2>Travel agencies deserve the same tools as the biggest travel companies</h2>
-            <p>Too many agencies still run on spreadsheets, separate booking portals and a dozen WhatsApp groups. Data is typed three times, payments are missed and owners can&apos;t see their real profit.</p>
-            <p>We built TravelSuite ERP so that one conversation becomes a lead, a booking, an invoice and a ledger entry, without anyone copying it across systems. Every feature we ship starts with a conversation with an agency owner.</p>
+            <h2>From flight tickets to hotels, your whole agency on one platform</h2>
+            <p>Most travel agencies issue flight tickets on one OTA portal, book hotels on another, then create invoices and do the accounting somewhere else. The same booking is typed again and again, and the real profit is hard to see.</p>
+            <p>TravelSuite ERP brings it all together. Flights, hotels, visas and tours are booked, invoiced and accounted for in one place, so every ticket you issue updates the customer, the invoice and your ledger automatically.</p>
             <p>Thank you for trusting us with your business. We&apos;re here to help you grow.</p>
             <div className="founder-sign">
               <span className="b">Shafiqul Islam</span>
