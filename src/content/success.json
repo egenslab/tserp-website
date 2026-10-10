@@ -87,16 +87,16 @@
   "metric": "Cabin, hotel and resort booking on one platform"
  },
  {
-  "slug": "corp-travel",
-  "shot": "corp",
-  "url": "corp-travel",
-  "type": "Corporate travel desk",
-  "location": "Kuala Lumpur, Malaysia",
+  "slug": "akaba",
+  "shot": "akaba",
+  "url": "akabaint-5qlq.1wp.site",
+  "website": "https://akabaint-5qlq.1wp.site/",
+  "type": "Hajj & Umrah agency",
+  "location": "Bangladesh",
   "chips": [
-   "Flights",
-   "Hotels",
-   "Approvals"
+   "Hajj",
+   "Umrah"
   ],
-  "metric": "Monthly billing automated"
+  "metric": "Hajj and Umrah packages and bookings on one platform"
  }
 ]
