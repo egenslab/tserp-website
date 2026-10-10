@@ -574,11 +574,11 @@ export default function HomePage() {
                     <svg><use href="#i-star" /></svg>
                     <svg><use href="#i-star" /></svg>
                   </div>
-                  <blockquote>Month-end used to take a week of matching tickets with bank statements. Now the ledgers are ready on the first day.</blockquote>
-                  <span className="chip">Month-end closing in 1 day</span>
+                  <blockquote>At Bengal Pass, flights, hotels, visas and tour packages now run on one platform. Bookings, payments and reports are finally in one place.</blockquote>
+                  <span className="chip">Flights, hotels, visas & tours together</span>
                   <figcaption>
-                    <span className="avatar ">FH</span>
-                    <span className="t-who"><span className="b t-name">Finance Manager</span><span className="t-role">Travel agency</span><span className="t-loc"><img src="/assets/img/flags/bd.svg" alt="Bangladesh flag" width={16} height={12} />Dhaka, Bangladesh</span></span>
+                    <img className="avatar photo" src="/assets/img/testimonials/bengalpass.jpg" alt="Auvi Deb Nath" width={46} height={46} loading="lazy" />
+                    <span className="t-who"><span className="b t-name">Auvi Deb Nath</span><span className="t-role">Founder · <span className="t-co">Bengal Pass</span></span><span className="t-loc"><img src="/assets/img/flags/bd.svg" alt="Bangladesh flag" width={16} height={12} />Dhaka, Bangladesh</span></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
