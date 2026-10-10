@@ -593,7 +593,7 @@ export default function HomePage() {
                   <span className="chip">Cabin & resort booking</span>
                   <figcaption>
                     <span className="avatar a2">CE</span>
-                    <span className="t-who"><span className="b t-name">Chad Elish</span><span className="t-role">CEO · <span className="t-co">BrokenBow</span></span><span className="t-loc"><img src="/assets/img/flags/us.svg" alt="USA flag" width={16} height={12} />USA</span></span>
+                    <span className="t-who"><span className="b t-name">Chad Elish</span><span className="t-role">CEO · <span className="t-co">BrokenBow</span></span><span className="t-loc"><img src="/assets/img/flags/us.svg" alt="USA flag" width={16} height={12} />Florida, USA</span></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
