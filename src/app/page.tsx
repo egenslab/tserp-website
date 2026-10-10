@@ -604,11 +604,11 @@ export default function HomePage() {
                     <svg><use href="#i-star" /></svg>
                     <svg><use href="#i-star" /></svg>
                   </div>
-                  <blockquote>Setup, branding and payment gateway were done in under two weeks, and the support team answers quickly on WhatsApp.</blockquote>
-                  <span className="chip">Live in 12 days</span>
+                  <blockquote>We build Jordan tour packages once, with hotels and transport included. Petra, Wadi Rum and Dead Sea trips are now managed in one place.</blockquote>
+                  <span className="chip">Tours, hotels & transport together</span>
                   <figcaption>
-                    <span className="avatar a3">AR</span>
-                    <span className="t-who"><span className="b t-name">CEO</span><span className="t-role">Online travel agency</span><span className="t-loc"><img src="/assets/img/flags/ae.svg" alt="UAE flag" width={16} height={12} />Dubai, UAE</span></span>
+                    <span className="avatar a3">Z</span>
+                    <span className="t-who"><span className="b t-name">Zaid</span><span className="t-role">Founder · <span className="t-co">JorTours</span></span><span className="t-loc"><img src="/assets/img/flags/jo.svg" alt="Jordan flag" width={16} height={12} />Jordan</span></span>
                   </figcaption>
                 </figure>
       </StoriesCarousel>
