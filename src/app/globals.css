@@ -335,6 +335,7 @@ p { margin: 0 0 1em; }
 .t-card::after { content: "\201D"; position: absolute; right: 18px; top: -18px; font-family: var(--font-display); font-size: 9rem; line-height: 1; color: var(--lime-soft); z-index: 0; }
 .t-card > * { position: relative; z-index: 1; }
 .t-card blockquote { margin: 0; flex: 1; color: var(--ink); font-size: 1rem; line-height: 1.65; }
+.avatar.photo { object-fit: cover; padding: 0; background: var(--lime-soft); }
 .t-featured { grid-row: span 1; background: var(--forest); border-color: var(--forest); }
 .t-featured::after { color: rgba(146, 239, 89, .12); }
 .t-featured blockquote { color: var(--white); font-size: 1.15rem; font-family: var(--font-display); font-weight: 400; line-height: 1.55; }

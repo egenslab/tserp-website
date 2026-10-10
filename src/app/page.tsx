@@ -529,11 +529,11 @@ export default function HomePage() {
                     <svg><use href="#i-star" /></svg>
                     <svg><use href="#i-star" /></svg>
                   </div>
-                  <blockquote>We used to manage Umrah groups in Excel and payments in a notebook. Now every pilgrim, payment and message is in one place.</blockquote>
-                  <span className="chip">3× more pilgrims per season</span>
+                  <blockquote>Very satisfied with the admin panel and the front end. You&apos;ve done phenomenal work for Imigo. Thanks to Mr. Shafiqul Islam and his team for their support throughout.</blockquote>
+                  <span className="chip">Visa, flights & hotels on one platform</span>
                   <figcaption>
-                    <span className="avatar ">MR</span>
-                    <span><b>Managing Director</b><small>Hajj & Umrah agency, Dhaka</small></span>
+                    <img className="avatar photo" src="/assets/img/testimonials/syed-imigo.jpg" alt="Syed" width={46} height={46} loading="lazy" />
+                    <span><b>Syed, Founder</b><small>Imigo, United Kingdom</small></span>
                   </figcaption>
                 </figure>
                 <figure className="t-card">
