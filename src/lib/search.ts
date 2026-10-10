@@ -11,7 +11,7 @@ export const GROUP_ORDER: SearchGroup[] = ["Pages", "Features", "Solutions", "In
 /** Shown before the visitor types anything */
 export const QUICK_LINKS: SearchItem[] = [
   { t: "Request a demo", d: "Book a free 30-minute walkthrough", h: "/contact", g: "Pages", i: "i-calendar" },
-  { t: "Pricing", d: "Plans in BDT and USD, monthly, yearly or lifetime", h: "/pricing", g: "Pages", i: "i-coins" },
+  { t: "Pricing", d: "Plans in USD, monthly, yearly or lifetime", h: "/pricing", g: "Pages", i: "i-coins" },
   { t: "All features", d: "Travel services, business modules and platform", h: "/features", g: "Pages", i: "i-layers" },
   { t: "Integrations", d: "GDS, bedbanks, payments and messaging", h: "/#integrations", g: "Pages", i: "i-code" },
   { t: "Success stories", d: "Agencies growing with TravelSuite ERP", h: "/success-stories", g: "Pages", i: "i-award" },

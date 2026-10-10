@@ -1,44 +1,50 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
+import { WA } from "@/lib/content";
 
 type Period = "monthly" | "yearly" | "lifetime";
-type Currency = "BDT" | "USD";
 
-// Prices are set in USD; BDT is converted and rounded to the nearest 100
-const BDT_PER_USD = 120;
 const YEARLY_DISCOUNT = 0.8;
+const PERIOD_LABEL: Record<Period, string> = { monthly: "monthly", yearly: "yearly", lifetime: "lifetime license" };
 
-const convert = (usd: number, currency: Currency) =>
-  currency === "USD" ? Math.round(usd) : Math.round((usd * BDT_PER_USD) / 100) * 100;
-const format = (value: number, currency: Currency) =>
-  (currency === "USD" ? "$" : "৳ ") + value.toLocaleString("en-US");
+const usd = (value: number) => "$" + Math.round(value).toLocaleString("en-US");
 
-function PlanPrice({ monthly, lifetime, period, currency }: { monthly: number; lifetime: number; period: Period; currency: Currency }) {
-  const perMonth = convert(period === "yearly" ? monthly * YEARLY_DISCOUNT : monthly, currency);
+function PlanPrice({ monthly, lifetime, period }: { monthly: number; lifetime: number; period: Period }) {
+  const perMonth = period === "yearly" ? monthly * YEARLY_DISCOUNT : monthly;
   if (period === "lifetime") {
     return (
       <>
-        <div className="price"><b>{format(convert(lifetime, currency), currency)}</b><small>one-time</small></div>
+        <div className="price"><b>{usd(lifetime)}</b><small>one-time</small></div>
         <p className="billing-note">Self-hosted · 12 months updates</p>
       </>
     );
   }
   return (
     <>
-      <div className="price"><b>{format(perMonth, currency)}</b><small>/month</small></div>
+      <div className="price"><b>{usd(perMonth)}</b><small>/month</small></div>
       <p className="billing-note">
-        {period === "monthly" ? "Billed monthly" : <><span>Billed yearly:</span> {format(perMonth * 12, currency)}</>}
+        {period === "monthly" ? "Billed monthly" : <><span>Billed yearly:</span> {usd(perMonth * 12)}</>}
       </p>
     </>
   );
 }
 
-/** Pricing plans with billing period (monthly / yearly / lifetime) and currency (BDT / USD) toggles. */
+/** "Buy now" opens WhatsApp with the chosen plan and billing already written in the message. */
+function BuyNow({ plan, monthly, lifetime, period, featured = false }: { plan: string; monthly: number; lifetime: number; period: Period; featured?: boolean }) {
+  const price = period === "lifetime" ? usd(lifetime)
+    : period === "yearly" ? `${usd(monthly * YEARLY_DISCOUNT * 12)}/year` : `${usd(monthly)}/month`;
+  const text = `Hi, I want to buy the TravelSuite ERP ${plan} plan (${PERIOD_LABEL[period]}, ${price}).`;
+  return (
+    <a href={`${WA}?text=${encodeURIComponent(text)}`} target="_blank" rel="noopener" className={`btn btn-block ${featured ? "btn-lime" : "btn-outline"}`}>
+      <svg className="ic fill"><use href="#i-wa" /></svg>Buy now
+    </a>
+  );
+}
+
+/** Pricing plans in USD with a billing period toggle (monthly / yearly / lifetime). */
 export default function Plans() {
   const [period, setPeriod] = useState<Period>("monthly");
-  const [currency, setCurrency] = useState<Currency>("BDT");
   return (
     <>
       <div className="pricing-controls">
@@ -49,18 +55,13 @@ export default function Plans() {
           {" "}
           <button className={period === "lifetime" ? "active" : undefined} aria-pressed={period === "lifetime"} onClick={() => setPeriod("lifetime")}>Lifetime license</button>
         </div>
-        <div className="seg small" role="group" aria-label="Currency">
-          <button className={currency === "BDT" ? "active" : undefined} aria-pressed={currency === "BDT"} onClick={() => setCurrency("BDT")}>৳ BDT</button>
-          {" "}
-          <button className={currency === "USD" ? "active" : undefined} aria-pressed={currency === "USD"} onClick={() => setCurrency("USD")}>$ USD</button>
-        </div>
       </div>
       <div className="plans">
         <div className="plan">
           <h3>Starter</h3>
           <p className="plan-sub">For small agencies going digital</p>
-          <PlanPrice monthly={39} lifetime={599} period={period} currency={currency} />
-          <Link href="/contact" className="btn btn-outline btn-block">Request a demo</Link>
+          <PlanPrice monthly={39} lifetime={599} period={period} />
+          <BuyNow plan="Starter" monthly={39} lifetime={599} period={period} />
           <ul>
             <li>Agency website + B2C booking</li>
             <li>Any 2 travel services</li>
@@ -72,8 +73,8 @@ export default function Plans() {
         <div className="plan">
           <h3>Growth</h3>
           <p className="plan-sub">For agencies with a sales team</p>
-          <PlanPrice monthly={89} lifetime={1299} period={period} currency={currency} />
-          <Link href="/contact" className="btn btn-outline btn-block">Request a demo</Link>
+          <PlanPrice monthly={89} lifetime={1299} period={period} />
+          <BuyNow plan="Growth" monthly={89} lifetime={1299} period={period} />
           <ul>
             <li>Everything in Starter</li>
             <li>All 6 travel services</li>
@@ -86,8 +87,8 @@ export default function Plans() {
           <span className="badge">Most popular</span>
           <h3>Business</h3>
           <p className="plan-sub">For B2B agencies & Hajj operators</p>
-          <PlanPrice monthly={179} lifetime={2499} period={period} currency={currency} />
-          <Link href="/contact" className="btn btn-lime btn-block">Request a demo</Link>
+          <PlanPrice monthly={179} lifetime={2499} period={period} />
+          <BuyNow plan="Business" monthly={179} lifetime={2499} period={period} featured />
           <ul>
             <li>Everything in Growth</li>
             <li>B2B agent portal with credit & wallet</li>
@@ -101,7 +102,7 @@ export default function Plans() {
           <p className="plan-sub">For consolidators & groups</p>
           <div className="price"><b>Custom</b><small /></div>
           <p className="billing-note">Tailored contract</p>
-          <a href="https://wa.me/8801325277120" target="_blank" rel="noopener" className="btn btn-outline btn-block">Talk to sales</a>
+          <a href={WA} target="_blank" rel="noopener" className="btn btn-outline btn-block">Talk to sales</a>
           <ul>
             <li>Everything in Business</li>
             <li>GDS / NDC API integrations</li>

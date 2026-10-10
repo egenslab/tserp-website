@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "Travel ERP Pricing & Plans — TravelSuite ERP",
-  description: "TravelSuite ERP plans for travel agencies, Hajj & Umrah operators and B2B consolidators. Monthly, yearly or lifetime license in BDT or USD.",
+  description: "TravelSuite ERP plans for travel agencies, Hajj & Umrah operators and B2B consolidators. Monthly, yearly or lifetime license, priced in USD.",
   path: "/pricing",
 });
 
