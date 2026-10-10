@@ -4,6 +4,29 @@ import Link from "next/link";
 import { useState } from "react";
 
 type Tab = "flight" | "hotel" | "umrah" | "visa";
+type Result = { badge: string; title: string; meta: string; price: string };
+
+const BUTTON: Record<Tab, string> = { flight: "Search flights", hotel: "Search hotels", umrah: "Find packages", visa: "Check visa" };
+
+// Sample results for each tab, matching the search shown above them
+const RESULTS: Record<Tab, Result[]> = {
+  flight: [
+    { badge: "EK", title: "DAC 21:40 → DXB 01:10", meta: "Non-stop · 5h 30m · 30kg", price: "৳ 49,450" },
+    { badge: "BG", title: "DAC 09:15 → DXB 12:50", meta: "Non-stop · 5h 35m · 35kg", price: "৳ 46,700" },
+  ],
+  hotel: [
+    { badge: "5★", title: "Sea Pearl Beach Resort", meta: "Sea view · Breakfast · 3 nights", price: "৳ 38,900" },
+    { badge: "4★", title: "Long Beach Hotel", meta: "Deluxe room · Free cancellation", price: "৳ 24,600" },
+  ],
+  umrah: [
+    { badge: "14N", title: "Economy Umrah Package", meta: "Flight · Visa · Makkah 600m from Haram", price: "৳ 1,45,000" },
+    { badge: "10N", title: "Premium Umrah Package", meta: "Flight · Visa · 5★ next to Haram", price: "৳ 2,35,000" },
+  ],
+  visa: [
+    { badge: "TH", title: "Thailand Tourist Visa", meta: "Single entry · 60 days · 7–10 working days", price: "৳ 6,500" },
+    { badge: "eV", title: "Thailand e-Visa", meta: "Online · 3–5 working days", price: "৳ 7,900" },
+  ],
+};
 
 /** Hero booking engine preview with service tabs. */
 export default function SearchCard() {
@@ -88,25 +111,19 @@ export default function SearchCard() {
             <span className="b">2</span>
           </div>
         </div>
-        <Link href="/contact" className="btn btn-forest btn-block">Search</Link>
+        <Link href="/contact" className="btn btn-forest btn-block">{BUTTON[tab]}</Link>
       </div>
-      <div className="results">
-        <div className="result">
-          <span className="carrier">EK</span>
-          <div>
-            <span className="b">DAC 21:40 → DXB 01:10</span>
-            <small>Non-stop · 5h 30m · 30kg</small>
+      <div className="results" key={tab}>
+        {RESULTS[tab].map((r) => (
+          <div key={r.title} className="result">
+            <span className="carrier">{r.badge}</span>
+            <div>
+              <span className="b">{r.title}</span>
+              <small>{r.meta}</small>
+            </div>
+            <strong>{r.price}</strong>
           </div>
-          <strong>৳ 49,450</strong>
-        </div>
-        <div className="result">
-          <span className="carrier">BG</span>
-          <div>
-            <span className="b">DAC 09:15 → DXB 12:50</span>
-            <small>Non-stop · 5h 35m · 35kg</small>
-          </div>
-          <strong>৳ 46,700</strong>
-        </div>
+        ))}
       </div>
       <p className="search-note">Example of the booking engine your customers and agents will use.</p>
     </div>
