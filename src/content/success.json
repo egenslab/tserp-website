@@ -45,17 +45,18 @@
   "metric": "Visa processing, flights and the business ERP on one platform"
  },
  {
-  "slug": "tours-bd",
-  "shot": "tours",
-  "url": "tours-bd",
+  "slug": "jortours",
+  "shot": "jortours",
+  "url": "jortours.com",
+  "website": "https://jortours.com/",
   "type": "Tour operator",
-  "location": "Sylhet, Bangladesh",
+  "location": "Jordan",
   "chips": [
    "Tour packages",
-   "Website",
-   "Omnichannel"
+   "Hotels",
+   "Transport"
   ],
-  "metric": "40% of bookings now online"
+  "metric": "Tour packages, hotels and transport on one platform"
  },
  {
   "slug": "fly-gulf",
