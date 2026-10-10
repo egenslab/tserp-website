@@ -7,6 +7,10 @@ import GdsPriority from "@/components/GdsPriority";
 import HotelShowcase from "@/components/HotelShowcase";
 import { HotelCatalogue, HotelOps, HotelRates } from "@/components/HotelModules";
 import { HajjPackages, HajjReadiness, HajjReports } from "@/components/HajjModules";
+import { TourBuilder, TourCatalogue, TourPricing } from "@/components/TourModules";
+import { TransportScorecard, TransportTrip, TransportVendors } from "@/components/TransportModules";
+import VisaFlow from "@/components/VisaFlow";
+import { VisaPipeline, VisaReports } from "@/components/VisaModules";
 import { Breadcrumb, FaqSection, FeatureCard, Glyph, HeroCtas, Icon, JsonLd, OverviewSection } from "@/components/ui";
 import { FEATURES, SITE, featureBySlug, groupTitle } from "@/lib/content";
 import { breadcrumbLd, faqLd, pageMeta, type Crumb } from "@/lib/seo";
@@ -70,6 +74,12 @@ export default async function FeaturePage({ params }: Props) {
       {f.slug === "hotels" && <HotelRates />}
       {f.slug === "hajj" && <HajjPackages />}
       {f.slug === "hajj" && <HajjReadiness />}
+      {f.slug === "visa" && <VisaFlow />}
+      {f.slug === "visa" && <VisaPipeline />}
+      {f.slug === "tours" && <TourBuilder />}
+      {f.slug === "tours" && <TourPricing />}
+      {f.slug === "transport" && <TransportTrip />}
+      {f.slug === "transport" && <TransportVendors />}
       {f.slug === "crm" && <CrmPipeline />}
       {f.slug === "crm" && <CrmCompare />}
       {page.sources && <Sources data={page.sources} alt />}
@@ -112,6 +122,9 @@ export default async function FeaturePage({ params }: Props) {
       )}
       {f.slug === "hotels" && <HotelOps />}
       {f.slug === "hajj" && <HajjReports />}
+      {f.slug === "visa" && <VisaReports />}
+      {f.slug === "tours" && <TourCatalogue />}
+      {f.slug === "transport" && <TransportScorecard />}
       {page.audiences && <Audiences data={page.audiences} />}
       {page.compare && <BeforeAfter data={page.compare} alt />}
       {page.markets && <MarketNotes data={page.markets} />}
