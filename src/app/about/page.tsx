@@ -126,7 +126,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <section className="section">
+      <section className="section" id="why">
         <div className="container">
           <div className="section-head">
             <span className="eyebrow">Why agencies choose us</span>
