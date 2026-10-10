@@ -1330,6 +1330,8 @@ html[lang="th"] body { line-height: 1.8; }
 }
 
 /* Hotels page: search results showcase */
+/* Same background as the overview above it, so don't stack two section paddings */
+.overview + .hotel-showcase { padding-top: 0; }
 .hs-frame { background: var(--white); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
 .hs-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 18px; background: var(--bg-alt); border-bottom: 1px solid var(--line); font-size: .85rem; color: var(--muted); }
 .hs-bar .b { color: var(--ink); }
