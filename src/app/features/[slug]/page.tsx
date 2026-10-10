@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Audiences, BeforeAfter, FactStrip, MarketNotes, Sources, Workflow } from "@/components/FeatureSections";
+import HotelShowcase from "@/components/HotelShowcase";
 import { Breadcrumb, FaqSection, FeatureCard, Glyph, HeroCtas, Icon, JsonLd, OverviewSection } from "@/components/ui";
 import { FEATURES, SITE, featureBySlug, groupTitle } from "@/lib/content";
 import { breadcrumbLd, faqLd, pageMeta, type Crumb } from "@/lib/seo";
@@ -56,6 +57,7 @@ export default async function FeaturePage({ params }: Props) {
       </section>
       {page.facts && <FactStrip facts={page.facts} />}
       <OverviewSection title={page.overviewTitle ?? f.title} paragraphs={f.seo.overview} />
+      {f.slug === "hotels" && <HotelShowcase />}
       {page.sources && <Sources data={page.sources} alt />}
       <section className={page.sources ? "section" : "section alt"}>
         <div className="container">
