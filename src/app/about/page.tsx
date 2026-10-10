@@ -7,6 +7,13 @@ export const metadata = pageMeta({
   path: "/about",
 });
 
+const WHY: [icon: string, title: string, text: string, tags: string][] = [
+  ["i-plane", "Made for travel, not adapted", "PNRs, pilgrims, visa files and agent wallets are built in, not bolted onto a generic ERP.", "Hajj|Visa|B2B"],
+  ["i-wallet", "Local payments and language", "bKash, Nagad, SSLCommerz, BDT accounting and a বাংলা interface out of the box.", "bKash|Nagad|বাংলা"],
+  ["i-layers", "One connected ecosystem", "Website, inbox, CRM, bookings and accounts share one database, so nothing is entered twice.", "One database"],
+  ["i-headset", "Support that answers", "A real team on WhatsApp who know travel operations, from setup to your busiest season.", "WhatsApp support"],
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -59,6 +66,25 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <section className="section founder" id="founder">
+        <div className="container founder-grid">
+          <figure className="founder-photo">
+            <img src="/assets/img/team/founder.jpg" alt="Shafiqul Islam, Founder & CEO of TravelSuite ERP" width={640} height={764} loading="lazy" />
+            <figcaption><span className="b">Shafiqul Islam</span><small>Founder &amp; CEO</small></figcaption>
+          </figure>
+          <div className="founder-msg">
+            <span className="eyebrow">Message from our founder</span>
+            <h2>Travel agencies deserve the same tools as the biggest travel companies</h2>
+            <p>Too many agencies still run on spreadsheets, separate booking portals and a dozen WhatsApp groups. Data is typed three times, payments are missed and owners can&apos;t see their real profit.</p>
+            <p>We built TravelSuite ERP so that one conversation becomes a lead, a booking, an invoice and a ledger entry, without anyone copying it across systems. Every feature we ship starts with a conversation with an agency owner.</p>
+            <p>Thank you for trusting us with your business. We&apos;re here to help you grow.</p>
+            <div className="founder-sign">
+              <span className="b">Shafiqul Islam</span>
+              <small>Founder &amp; CEO, TravelSuite ERP</small>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="section alt">
         <div className="container">
           <div className="section-head">
@@ -100,26 +126,14 @@ export default function AboutPage() {
             <h2>Built for how travel businesses really work</h2>
           </div>
           <div className="why">
-            <div className="why-item">
-              <span className="why-num">01</span>
-              <h3>Made for travel, not adapted</h3>
-              <p>PNRs, pilgrims, visa files and agent wallets are built in, not bolted onto a generic ERP.</p>
-            </div>
-            <div className="why-item">
-              <span className="why-num">02</span>
-              <h3>Local payments and language</h3>
-              <p>bKash, Nagad, SSLCommerz, BDT accounting and a বাংলা interface out of the box.</p>
-            </div>
-            <div className="why-item">
-              <span className="why-num">03</span>
-              <h3>One connected ecosystem</h3>
-              <p>Website, inbox, CRM, bookings and accounts share one database, so nothing is entered twice.</p>
-            </div>
-            <div className="why-item">
-              <span className="why-num">04</span>
-              <h3>Support that answers</h3>
-              <p>A real team on WhatsApp who know travel operations, from setup to your busiest season.</p>
-            </div>
+            {WHY.map(([icon, title, text, tags], i) => (
+              <div key={title} className="why-item">
+                <div className="why-top"><span className="why-ico"><svg><use href={`#${icon}`} /></svg></span><span className="why-num">{String(i + 1).padStart(2, "0")}</span></div>
+                <h3>{title}</h3>
+                <p>{text}</p>
+                <div className="why-tags">{tags.split("|").map((t) => <span key={t}>{t}</span>)}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
