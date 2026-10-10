@@ -77,6 +77,13 @@ export default function AboutPage() {
             <h2>From flight tickets to hotels, your whole agency on one platform</h2>
             <p>Most travel agencies issue flight tickets on one OTA portal, book hotels on another, then create invoices and do the accounting somewhere else. The same booking is typed again and again, and the real profit is hard to see.</p>
             <p>TravelSuite ERP brings it all together. Flights, hotels, visas and tours are booked, invoiced and accounted for in one place, so every ticket you issue updates the customer, the invoice and your ledger automatically.</p>
+            <p>Our Business ERP then automates everything after the booking: CRM follow-ups, quotations, invoices, supplier payments, HR and reports, so your team spends its time selling, not on paperwork.</p>
+            <ul className="founder-parts">
+              <li><span className="fp-ico"><svg><use href="#i-plane" /></svg></span><span><span className="b">Booking</span><small>Flights, hotels, visa and tours</small></span></li>
+              <li><span className="fp-ico"><svg><use href="#i-layers" /></svg></span><span><span className="b">Business ERP</span><small>CRM, sales, finance and HR</small></span></li>
+              <li><span className="fp-ico"><svg><use href="#i-globe" /></svg></span><span><span className="b">Website &amp; B2B</span><small>Customer site and agent portal</small></span></li>
+              <li><span className="fp-ico"><svg><use href="#i-chat" /></svg></span><span><span className="b">Communication</span><small>WhatsApp, Messenger and email</small></span></li>
+            </ul>
             <p>Thank you for trusting us with your business. We&apos;re here to help you grow.</p>
             <div className="founder-sign">
               <span className="b">Shafiqul Islam</span>
