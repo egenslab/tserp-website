@@ -250,6 +250,23 @@ export default function Header() {
                         <span><b>Corporate travel desks</b><small>Policies, approvals, monthly billing</small></span>
                       </Link>
                     </div>
+                    <div className="mega-col">
+                      <h6>By goal</h6>
+                      <Link href="/features/website" className="mega-item">
+                        <span className="mi"><svg><use href="#i-rocket" /></svg></span>
+                        <span><b>Sell online 24/7</b><small>Booking website with online payment</small></span>
+                      </Link>
+                      {" "}
+                      <Link href="/features/b2b" className="mega-item">
+                        <span className="mi"><svg><use href="#i-layers" /></svg></span>
+                        <span><b>Grow an agent network</b><small>B2B portal, markups, credit and wallets</small></span>
+                      </Link>
+                      {" "}
+                      <Link href="/features/finance" className="mega-item">
+                        <span className="mi"><svg><use href="#i-wallet" /></svg></span>
+                        <span><b>Run the back office</b><small>Accounts, invoices and supplier dues</small></span>
+                      </Link>
+                    </div>
                     <div className="mega-journey">
                       <h6>The connected journey</h6>
                       <p className="mj-title">From first chat to final invoice</p>

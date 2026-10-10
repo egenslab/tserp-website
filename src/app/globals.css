@@ -78,7 +78,7 @@ p { margin: 0 0 1em; }
 .mega { position: absolute; left: 0; right: 0; top: 100%; background: var(--white); border-top: 1px solid var(--line); box-shadow: 0 30px 60px rgba(15, 46, 34, .14); opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .18s, transform .18s, visibility .18s; }
 .has-mega.open > .mega { opacity: 1; visibility: visible; transform: none; }
 .mega-inner { display: grid; grid-template-columns: 1fr 1fr 1fr 280px; gap: 28px; padding-block: 28px 32px; }
-.mega-inner.sol { grid-template-columns: 1fr 1fr 320px; }
+.mega-inner.sol { grid-template-columns: repeat(3, minmax(0, 1fr)) 320px; gap: 20px; }
 .mega-inner.prod { grid-template-columns: repeat(4, minmax(0, 1fr)) 230px; gap: 16px; }
 .mega-inner.prod .mega-item { padding: 8px; gap: 10px; }
 .mega h6:empty::before { content: "\00a0"; }
