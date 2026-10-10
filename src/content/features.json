@@ -1690,8 +1690,10 @@
       "seo": {
         "keywords": "travel CRM, CRM for travel agencies, travel lead management, customer management software for travel",
         "overview": [
-          "A travel CRM built into your booking system. Every customer profile holds passports, travel history, bookings, payments and conversations, so any staff member can help any customer.",
-          "Leads from your website, WhatsApp, Facebook and walk-ins enter one pipeline, with reminders that make sure every inquiry is followed up."
+          "TravelSuite ERP includes a travel CRM built into your booking system, not bolted on beside it. Every customer profile keeps passports, family members, travel history, bookings, payments and conversations together, so any staff member can pick up any customer and know exactly where things stand.",
+          "Leads from your website, WhatsApp, Facebook, phone calls and walk-ins enter one pipeline. Each lead shows its source, the assigned staff member and the next follow-up, and reminders make sure no inquiry is forgotten between the first message and a confirmed booking.",
+          "Because the CRM shares one database with sales, bookings and accounts, a lead turns into a quotation and then a booking in a few clicks, without retyping names or passport numbers. The customer list shows the last service, total bookings and any amount still due, so your team knows who to call first.",
+          "Use segments to send the right offer to the right travellers: Umrah customers before the season, families before school holidays or corporate clients before peak travel. Birthday and passport-expiry reminders give your team a reason to stay in touch and win repeat bookings."
         ],
         "faqs": [
           [
@@ -1711,7 +1713,8 @@
       "page": {
         "seoTitle": "Travel CRM Software for Travel Agencies — TravelSuite ERP",
         "metaDescription": "Travel CRM for agencies: capture leads from every channel, keep traveller profiles and passports, follow up on time and turn enquiries into bookings.",
-        "h1": "Travel CRM for travel agencies"
+        "h1": "Travel CRM for travel agencies",
+        "overviewTitle": "A travel CRM that knows every customer and every booking"
       }
     },
     {
