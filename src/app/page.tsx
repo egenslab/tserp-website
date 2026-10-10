@@ -330,20 +330,9 @@ export default function HomePage() {
             </li>
             <li className="jcard dark">
               <div className="j-art">
-                <img src="/assets/img/journey/automate.svg" alt="" width="160" height="110" loading="lazy" />
-              </div>
-              <span className="j-ribbon"><span>Step</span> 05</span>
-              <div className="j-body">
-                <h3>Automate</h3>
-                <b>AI Agents + AI Trip Planners</b>
-                <p>AI answers, qualifies and follows up around the clock.</p>
-              </div>
-            </li>
-            <li className="jcard">
-              <div className="j-art">
                 <img src="/assets/img/journey/grow.svg" alt="" width="160" height="110" loading="lazy" />
               </div>
-              <span className="j-ribbon"><span>Step</span> 06</span>
+              <span className="j-ribbon"><span>Step</span> 05</span>
               <div className="j-body">
                 <h3>Grow</h3>
                 <b>Reports + Analytics + Better CX</b>
