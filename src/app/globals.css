@@ -2061,3 +2061,23 @@ html[lang="th"] body { line-height: 1.8; }
   .sl-story-card { padding: 16px; }
   .sl-story-body blockquote { font-size: 1.08rem; }
 }
+
+/* Other solutions (solution detail pages) */
+.os-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 28px; flex-wrap: wrap; }
+.os-head h2 { margin: 0; }
+.os-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
+.os-card { position: relative; display: flex; flex-direction: column; gap: 6px; padding: 22px 20px 20px; border-radius: 20px; background: var(--white); border: 1px solid var(--line); color: var(--ink); overflow: hidden; transition: transform .25s, border-color .25s, box-shadow .25s; }
+.os-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 4px; background: linear-gradient(90deg, var(--lime), var(--forest)); transform: scaleX(0); transform-origin: left; transition: transform .35s; }
+.os-card:hover { transform: translateY(-5px); border-color: var(--forest); box-shadow: var(--shadow-lg); }
+.os-card:hover::before { transform: scaleX(1); }
+.os-ico { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 14px; background: var(--lime-soft); color: var(--forest); margin-bottom: 10px; transition: background .25s, color .25s; }
+.os-ico svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.os-card:hover .os-ico { background: var(--forest); color: var(--lime); }
+.os-card .b { font-size: 1rem; line-height: 1.3; }
+.os-card small { color: var(--muted); font-size: .84rem; line-height: 1.45; flex: 1; }
+.os-go { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; font-size: .84rem; font-weight: 700; color: var(--forest); }
+.os-go .ic { width: 15px; height: 15px; transition: transform .25s; }
+.os-card:hover .os-go .ic { transform: translateX(4px); }
+@media (max-width: 1100px) { .os-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .os-grid { grid-template-columns: 1fr 1fr; } .os-card { padding: 18px 16px; } }
+@media (max-width: 420px) { .os-grid { grid-template-columns: 1fr; } .os-card { flex-direction: row; flex-wrap: wrap; align-items: center; column-gap: 14px; } .os-ico { margin: 0; } .os-card small, .os-go { flex-basis: 100%; } .os-go { margin-top: 4px; } }

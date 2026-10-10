@@ -309,7 +309,7 @@
     "slug": "b2b-consolidators",
     "icon": "i-users",
     "title": "B2B consolidators",
-    "tagline": "Agent network, credit and commissions",
+    "tagline": "Agent network, commissions and payouts",
     "headline": "Grow your agent network without growing your back office",
     "intro": "Consolidators live on volume and credit control. TravelSuite ERP gives every agent a self-service portal while you keep markups, credit limits and balances under control.",
     "modules": [
@@ -611,7 +611,7 @@
     "slug": "online-travel-agencies",
     "icon": "i-globe",
     "title": "Online travel agencies",
-    "tagline": "B2C website with online payment",
+    "tagline": "Your own booking website and customer portal",
     "headline": "Your own OTA, on your own domain",
     "intro": "Launch a booking website that looks and works like the big OTAs, with online payment, customer accounts and AI that answers questions around the clock.",
     "modules": [
@@ -765,7 +765,7 @@
     "slug": "corporate-travel",
     "icon": "i-idcard",
     "title": "Corporate travel desks",
-    "tagline": "Policies, approvals, monthly billing",
+    "tagline": "Client accounts, tasks and spend reports",
     "headline": "Business travel booked fast, billed correctly and reported clearly",
     "intro": "Serve companies whose staff travel often. Every request is assigned, every trip invoiced to the right client, and every client can see what they spent.",
     "modules": [
@@ -778,7 +778,7 @@
     ],
     "plan": "Growth",
     "seo": {
-      "keywords": "corporate travel management software, business travel booking, travel approval workflow",
+      "keywords": "corporate travel management software, business travel booking, corporate travel agency software",
       "overview": [
         "TravelSuite ERP helps agencies serve corporate clients: companies whose staff travel often and expect bookings to be handled quickly, invoiced correctly and reported clearly.",
         "Company clients and their travellers are kept in the CRM with every booking, invoice and payment, so your account managers see the whole relationship in one place.",

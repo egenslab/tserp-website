@@ -61,13 +61,19 @@ export default async function SolutionPage({ params }: Props) {
       <FaqSection faqs={s.seo.faqs} alt={!s.story} />
       <section className={s.story ? "section alt" : "section"}>
         <div className="container">
-          <div className="other-solutions">
-            <h3>Other solutions</h3>
-            <div className="chips-row">
-              {SOLUTIONS.filter((o) => o.slug !== s.slug).map((o) => (
-                <Link key={o.slug} href={`/solutions/${o.slug}`}><Icon name={o.icon} />{o.title}</Link>
-              ))}
-            </div>
+          <div className="os-head">
+            <div><span className="eyebrow">Other solutions</span><h2>Built for every kind of travel business</h2></div>
+            <Link href="/solutions" className="link-arrow">All solutions <Icon name="i-arrow" /></Link>
+          </div>
+          <div className="os-grid">
+            {SOLUTIONS.filter((o) => o.slug !== s.slug).map((o) => (
+              <Link key={o.slug} href={`/solutions/${o.slug}`} className="os-card">
+                <span className="os-ico"><Glyph name={o.icon} /></span>
+                <span className="b">{o.title}</span>
+                <small>{o.tagline}</small>
+                <span className="os-go">Explore <Icon name="i-arrow" /></span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

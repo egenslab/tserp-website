@@ -229,7 +229,7 @@ export default function Header() {
                       {" "}
                       <Link href="/solutions/b2b-consolidators" className="mega-item">
                         <span className="mi"><svg><use href="#i-users" /></svg></span>
-                        <span><span className="b">B2B consolidators</span><small>Agent network, credit and commissions</small></span>
+                        <span><span className="b">B2B consolidators</span><small>Agent network, commissions and payouts</small></span>
                       </Link>
                     </div>
                     <div className="mega-col">
@@ -242,12 +242,12 @@ export default function Header() {
                       {" "}
                       <Link href="/solutions/online-travel-agencies" className="mega-item">
                         <span className="mi"><svg><use href="#i-globe" /></svg></span>
-                        <span><span className="b">Online travel agencies</span><small>B2C website with online payment</small></span>
+                        <span><span className="b">Online travel agencies</span><small>Your own booking website and customer portal</small></span>
                       </Link>
                       {" "}
                       <Link href="/solutions/corporate-travel" className="mega-item">
                         <span className="mi"><svg><use href="#i-idcard" /></svg></span>
-                        <span><span className="b">Corporate travel desks</span><small>Policies, approvals, monthly billing</small></span>
+                        <span><span className="b">Corporate travel desks</span><small>Client accounts, tasks and spend reports</small></span>
                       </Link>
                     </div>
                     <div className="mega-col">
