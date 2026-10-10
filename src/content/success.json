@@ -6,6 +6,7 @@
   "website": "https://imigo.co.uk/",
   "type": "Visa and travel agency",
   "location": "United Kingdom",
+  "flag": "gb",
   "chips": [
    "Visa",
    "Flights",
@@ -21,6 +22,7 @@
   "website": "https://bengalpass.com/",
   "type": "Travel and visa agency",
   "location": "Dhaka, Bangladesh",
+  "flag": "bd",
   "chips": [
    "Flights",
    "Hotels",
@@ -37,6 +39,7 @@
   "website": "https://www.globalskyvisa.ae/",
   "type": "Visa and travel agency",
   "location": "Dubai, UAE",
+  "flag": "ae",
   "chips": [
    "Visa",
    "Flights",
@@ -51,6 +54,7 @@
   "website": "https://jortours.com/",
   "type": "Tour operator",
   "location": "Jordan",
+  "flag": "jo",
   "chips": [
    "Tour packages",
    "Hotels",
@@ -65,6 +69,7 @@
   "website": "https://www.amazingtoursbd.com/",
   "type": "Travel agency",
   "location": "Bangladesh",
+  "flag": "bd",
   "chips": [
    "Visa",
    "Hajj & Umrah",
@@ -79,6 +84,7 @@
   "website": "https://cabins.brokenbow.com/",
   "type": "Cabin and resort booking",
   "location": "USA",
+  "flag": "us",
   "chips": [
    "Hotels",
    "Resorts",
@@ -93,6 +99,7 @@
   "website": "https://akabaint-5qlq.1wp.site/",
   "type": "Hajj & Umrah agency",
   "location": "Bangladesh",
+  "flag": "bd",
   "chips": [
    "Hajj",
    "Umrah"

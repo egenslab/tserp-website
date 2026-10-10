@@ -46,6 +46,7 @@ export type Post = {
 export type LegalDoc = { slug: string; title: string; intro: string; sections: [string, string[]][] };
 export type Story = {
   slug: string; shot: string; type: string; location: string; chips: string[]; metric: string;
+  flag?: string;    // country code of a flag in /assets/img/flags
   url: string;      // address shown in the screenshot's browser bar
   website?: string; // the client's live site; the card title and screenshot link to it
 };

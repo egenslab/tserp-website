@@ -119,7 +119,10 @@ export function SuccessCard({ st }: { st: Story }) {
             ? <a href={st.website} target="_blank" rel="noopener">{st.type} <Icon name="i-external" className="ic ext" /></a>
             : st.type}
         </h3>
-        <p className="loc"><Icon name="i-pin" />{st.location}</p>
+        <p className="loc">
+          {st.flag ? <img className="loc-flag" src={`/assets/img/flags/${st.flag}.svg`} alt="" width={20} height={15} /> : <Icon name="i-pin" />}
+          {st.location}
+        </p>
         <div className="mini-chips">{st.chips.map((c) => <span key={c}>{c}</span>)}</div>
         <p className="metric"><Icon name="i-trend" />{st.metric}</p>
       </div>
