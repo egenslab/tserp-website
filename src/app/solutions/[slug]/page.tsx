@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { FactStrip } from "@/components/FeatureSections";
+import { SolJourney, SolPairs, SolRoles, SolStory } from "@/components/SolutionSections";
 import { Breadcrumb, FaqSection, FeatureCard, Glyph, HeroCtas, Icon, JsonLd, OverviewSection } from "@/components/ui";
 import { SOLUTIONS, featureBySlug } from "@/lib/content";
 import { breadcrumbLd, faqLd, pageMeta, type Crumb } from "@/lib/seo";
@@ -44,27 +46,20 @@ export default async function SolutionPage({ params }: Props) {
           </aside>
         </div>
       </section>
-      <OverviewSection title={s.title} paragraphs={s.seo.overview} />
-      <section className="section alt">
-        <div className="container">
-          <div className="section-head"><span className="eyebrow">Common challenges</span><h2>What slows these businesses down</h2></div>
-          <div className="challenges">{s.challenges.map((c) => <div key={c} className="challenge"><Icon name="i-x" /><span>{c}</span></div>)}</div>
-        </div>
-      </section>
-      <section className="section">
-        <div className="container">
-          <div className="section-head"><span className="eyebrow">How TravelSuite helps</span><h2>Built around your daily work</h2></div>
-          <div className="helps">{s.helps.map((h) => <div key={h} className="help"><Icon name="i-check" /><span>{h}</span></div>)}</div>
-        </div>
-      </section>
-      <section className="section alt">
+      <FactStrip facts={s.facts} />
+      <OverviewSection title={s.overviewTitle} paragraphs={s.seo.overview} />
+      <SolPairs pairs={s.pairs} title={s.title} />
+      <SolJourney steps={s.journey} />
+      <SolRoles roles={s.roles} />
+      {s.story && <SolStory story={s.story} />}
+      <section className={s.story ? "section alt" : "section"}>
         <div className="container">
           <div className="related-head"><h2>Recommended modules</h2><Link href="/features" className="link-arrow">All features <Icon name="i-arrow" /></Link></div>
           <div className="link-cards">{s.modules.map((m) => <FeatureCard key={m} f={featureBySlug(m)!} />)}</div>
         </div>
       </section>
-      <FaqSection faqs={s.seo.faqs} />
-      <section className="section alt">
+      <FaqSection faqs={s.seo.faqs} alt={!s.story} />
+      <section className={s.story ? "section alt" : "section"}>
         <div className="container">
           <div className="other-solutions">
             <h3>Other solutions</h3>

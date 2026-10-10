@@ -34,7 +34,12 @@ export type Feature = {
 };
 export type Solution = {
   slug: string; icon: string; title: string; tagline: string; headline: string; intro: string; plan: string;
-  challenges: string[]; helps: string[]; modules: string[]; seo: Seo;
+  modules: string[]; seo: Seo; overviewTitle: string;
+  facts: { value: string; label: string }[];
+  pairs: [string, string][];                                   // [problem today, how TravelSuite solves it]
+  journey: { title: string; text: string; module: string }[];  // module = feature slug
+  roles: { icon: string; role: string; text: string }[];
+  story?: { slug: string; quote?: string; name?: string; role?: string; photo?: string }; // slug from success.json
   seoTitle?: string; metaDescription?: string;
 };
 export type Block = ["h2" | "p", string] | ["ul", string[]];
