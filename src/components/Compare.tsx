@@ -161,7 +161,7 @@ export default function Compare() {
             <span className="m-ico dark sm"><svg><use href="#i-plane" /></svg></span>
             <div>
               <span className="b">GDS / NDC connection</span>
-              <small>Amadeus, Sabre, Travelport or airline NDC</small>
+              <small>Amadeus, Sabre, Travelport, Galileo or airline NDC</small>
             </div>
             <em>Quote</em>
           </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Audiences, BeforeAfter, FactStrip, MarketNotes, Sources, Workflow } from "@/components/FeatureSections";
+import GdsPriority from "@/components/GdsPriority";
 import HotelShowcase from "@/components/HotelShowcase";
 import { Breadcrumb, FaqSection, FeatureCard, Glyph, HeroCtas, Icon, JsonLd, OverviewSection } from "@/components/ui";
 import { FEATURES, SITE, featureBySlug, groupTitle } from "@/lib/content";
@@ -59,6 +60,7 @@ export default async function FeaturePage({ params }: Props) {
       <OverviewSection title={page.overviewTitle ?? f.title} paragraphs={f.seo.overview} />
       {f.slug === "hotels" && <HotelShowcase />}
       {page.sources && <Sources data={page.sources} alt />}
+      {f.slug === "flights" && <GdsPriority />}
       <section className={page.sources ? "section" : "section alt"}>
         <div className="container">
           <div className="section-head"><span className="eyebrow">Key capabilities</span><h2>{f.desc}</h2></div>

@@ -35,7 +35,7 @@ const PAGES: SearchItem[] = [
 ];
 
 const INTEGRATIONS: [string, string][] = [
-  ["Amadeus", "GDS"], ["Sabre", "GDS"], ["Travelport", "GDS"], ["Duffel", "Flight API"], ["Kiwi.com", "Flight API"],
+  ["Amadeus", "GDS"], ["Sabre", "GDS"], ["Travelport", "GDS"], ["Galileo", "GDS"], ["Duffel", "Flight API"], ["Kiwi.com", "Flight API"],
   ["Airline NDC", "Flight content"], ["Hotelbeds", "Bedbank"], ["Expedia", "Hotel supplier"], ["Hotels.com", "Hotel supplier"],
   ["WebBeds", "Bedbank"], ["TBO", "Flights and hotels"], ["Tripadvisor", "Activities"], ["GetYourGuide", "Activities"],
   ["Visa", "Card payments"], ["Mastercard", "Card payments"], ["American Express", "Card payments"], ["PayPal", "Payments"],

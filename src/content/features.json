@@ -40,7 +40,7 @@
         "Refunds and reissues tracked to the last taka"
       ],
       "seo": {
-        "keywords": "flight booking software, flight management software, airline ticketing software, GDS booking engine, B2B flight booking portal, NDC booking system, travel agency ticketing software Bangladesh",
+        "keywords": "flight booking software, GDS booking engine, Amadeus integration, Sabre integration, Travelport integration, Galileo GDS, multi-GDS flight search, airline ticketing software, B2B flight booking portal, travel agency ticketing software Bangladesh",
         "overview": [
           "TravelSuite ERP is flight booking and ticketing software built for travel agencies, OTAs and B2B consolidators. It brings GDS, NDC and low-cost carrier fares into one search, so counter staff, online customers and sub-agents book from the same content with your markup applied automatically.",
           "Unlike a standalone booking engine, the flight module is part of a complete travel agency ERP. Every issue, reissue, refund and void updates the passenger record, the agent ledger and your supplier payable in real time, which turns month-end BSP reconciliation into a report instead of a spreadsheet exercise.",
@@ -50,6 +50,14 @@
           [
             "Which airline content can I sell?",
             "You can connect Amadeus, Sabre, Travelport, airline NDC APIs, low-cost carriers and aggregators such as Duffel or TBO using your own supplier credentials."
+          ],
+          [
+            "Which GDS can I connect?",
+            "Amadeus, Sabre, Travelport and Galileo. Connect one or all four with your own credentials and choose the order they are searched in."
+          ],
+          [
+            "What happens if one GDS is down?",
+            "Search follows your priority order. If a GDS doesn't respond, the next one in the list is searched automatically, so your staff and agents still see fares."
           ],
           [
             "Do I need my own IATA licence or GDS contract?",
@@ -82,14 +90,14 @@
         ]
       },
       "page": {
-        "seoTitle": "Flight Booking & Ticketing Software — TravelSuite ERP",
-        "metaDescription": "Flight booking and ticketing software for travel agencies. Sell GDS, NDC and low-cost fares, issue e-tickets, run B2B agents and reconcile BSP in one ERP.",
+        "seoTitle": "Flight Booking & GDS Ticketing Software — TravelSuite ERP",
+        "metaDescription": "Flight booking and GDS ticketing software with Amadeus, Sabre, Travelport and Galileo. Priority search with fallback, e-tickets, B2B agents and BSP in one ERP.",
         "h1": "Flight booking & ticketing software",
         "overviewTitle": "Flight management software for travel agencies",
         "facts": [
           {
-            "value": "3 GDS",
-            "label": "Amadeus, Sabre and Travelport"
+            "value": "4 GDS",
+            "label": "Amadeus, Sabre, Travelport and Galileo"
           },
           {
             "value": "NDC + LCC",
@@ -111,11 +119,12 @@
             {
               "icon": "i-globe",
               "title": "GDS",
-              "text": "Full schedules, fare rules and PNR control with queue management.",
+              "text": "Full schedules, fare rules and PNR control, searched in the priority order you choose.",
               "tags": [
                 "Amadeus",
                 "Sabre",
-                "Travelport"
+                "Travelport",
+                "Galileo"
               ]
             },
             {
@@ -172,6 +181,8 @@
           ]
         },
         "capabilities": [
+          "Multi-GDS priority search with automatic fallback",
+          "Use your own GDS credentials (PCC / Office ID)",
           "Fare search with filters for airline, stops and baggage",
           "Multi-city, open-jaw and flexible-date search",
           "Branded fares, seat maps and extra baggage",

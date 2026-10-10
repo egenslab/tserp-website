@@ -91,7 +91,7 @@ export default function Header() {
                       <h6>Travel services</h6>
                       <Link href="/features/flights" className="mega-item">
                         <span className="mi"><svg><use href="#i-plane" /></svg></span>
-                        <span><span className="b">Flight Tickets</span><small>Bookings & ticketing workflows</small></span>
+                        <span><span className="b">Flight Tickets</span><small>4 GDS · booking & ticketing</small></span>
                       </Link>
                       {" "}
                       <Link href="/features/hotels" className="mega-item">

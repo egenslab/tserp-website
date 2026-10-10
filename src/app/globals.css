@@ -1473,3 +1473,54 @@ html[lang="th"] body { line-height: 1.8; }
   .hs-suppliers li:nth-child(-n+2) { border-top: 0; }
 }
 @media (prefers-reduced-motion: reduce) { .hx-bar i { animation: none; } .hx-rates li:hover { transform: none; } }
+
+/* Flights page: multi-GDS priority search */
+.gds-prio { background: var(--forest); background-image: radial-gradient(circle at 12% 0%, rgba(146, 239, 89, .18), transparent 35%), radial-gradient(circle at 100% 100%, rgba(146, 239, 89, .1), transparent 35%); color: #cfe0d6; }
+.gp-flow { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 22px; align-items: center; padding: 26px; border-radius: 24px; background: rgba(255, 255, 255, .05); border: 1px solid rgba(255, 255, 255, .12); }
+.gp-search { display: flex; align-items: center; gap: 12px; padding: 16px; border-radius: 16px; background: var(--white); color: var(--ink); position: relative; }
+.gp-search::after { content: ""; position: absolute; right: -24px; top: 50%; width: 24px; border-top: 2px dashed var(--lime); }
+.gp-search small { display: block; font-size: .72rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+.gp-search .b { font-family: var(--font-display); font-size: .98rem; white-space: nowrap; }
+.gp-ico { width: 44px; height: 44px; flex: none; border-radius: 12px; display: grid; place-items: center; background: var(--lime); color: var(--forest); }
+.gp-ico .ic { width: 20px; height: 20px; }
+.gp-flow ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; position: relative; }
+.gp-flow ol::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 2px dashed rgba(146, 239, 89, .35); }
+.gp-node { position: relative; display: grid; gap: 4px; justify-items: start; padding: 16px; border-radius: 16px; background: #1f4d3b; border: 1px solid rgba(255, 255, 255, .12); color: var(--white); }
+.gp-node .b { font-family: var(--font-display); font-size: 1.05rem; }
+.gp-node small { display: inline-flex; align-items: center; gap: 6px; font-size: .78rem; color: #b9cfc2; }
+.gp-node small i { width: 8px; height: 8px; border-radius: 50%; background: #8aa197; }
+.gp-num { width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center; font-weight: 800; font-size: .8rem; background: rgba(255, 255, 255, .12); color: var(--white); margin-bottom: 4px; }
+.gp-node.is-down { z-index: 3; }
+.gp-node.is-down .b, .gp-node.is-down small, .gp-node.is-down .gp-num { opacity: .7; }
+.gp-node.is-down small i { background: #f5b928; animation: gp-blink 1.4s ease-in-out infinite; }
+.gp-node.is-ok { background: var(--white); color: var(--ink); border-color: var(--lime); box-shadow: 0 0 0 4px rgba(146, 239, 89, .3); }
+.gp-node.is-ok .gp-num { background: var(--lime); color: var(--forest); }
+.gp-node.is-ok small { color: var(--forest); font-weight: 700; }
+.gp-node.is-ok small i { background: #2fae6b; }
+.gp-fallback { position: absolute; right: -7px; bottom: -13px; transform: translateX(50%); z-index: 2; display: inline-flex; align-items: center; gap: 4px; font-style: normal; font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; background: #f5b928; color: #3d2a00; padding: 4px 8px; border-radius: 999px; white-space: nowrap; }
+.gp-fallback .ic { width: 12px; height: 12px; }
+@keyframes gp-blink { 50% { opacity: .3; } }
+.gp-points { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 26px; }
+.gp-points > div { padding: 22px; border-radius: 18px; background: rgba(255, 255, 255, .05); border: 1px solid rgba(255, 255, 255, .1); }
+.gp-points h3 { color: var(--white); font-size: 1.05rem; margin: 14px 0 6px; }
+.gp-points p { margin: 0; font-size: .92rem; color: #b9cfc2; }
+@media (max-width: 1000px) {
+  .gp-flow { grid-template-columns: 1fr; }
+  .gp-search::after { right: auto; left: 50%; top: auto; bottom: -22px; width: 0; height: 22px; border-top: 0; border-left: 2px dashed var(--lime); }
+  .gp-flow ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gp-flow ol::before { display: none; }
+  .gp-fallback { right: 8px; top: 12px; transform: none; }
+}
+@media (max-width: 640px) {
+  .gp-flow { padding: 16px; }
+  .gp-points { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { .gp-node.is-down small i { animation: none; } }
+
+/* Home: GDS strip under the stats */
+.gds-strip { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px 22px; margin: 26px auto 0; padding: 14px 22px; border-radius: 999px; background: var(--bg-alt); border: 1px solid var(--line); width: fit-content; max-width: 100%; }
+.gds-strip-title { display: inline-flex; align-items: center; gap: 8px; color: var(--forest); font-family: var(--font-display); }
+.gds-strip-title .ic { color: var(--forest-2); }
+.gds-strip-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.gds-strip-list span { background: var(--white); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: .84rem; font-weight: 700; color: var(--ink); }
+@media (max-width: 640px) { .gds-strip { border-radius: 20px; } }

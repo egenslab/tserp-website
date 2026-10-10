@@ -71,6 +71,14 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      {/* GDS strip */}
+      <div className="container">
+        <div className="gds-strip">
+          <span className="gds-strip-title"><svg className="ic"><use href="#i-plane" /></svg><span className="b">4 GDS, one search</span></span>
+          <span className="gds-strip-list"><span>Amadeus</span><span>Sabre</span><span>Travelport</span><span>Galileo</span></span>
+          <Link href="/features/flights#gds" className="link-arrow">See flight booking <svg className="ic"><use href="#i-arrow" /></svg></Link>
+        </div>
+      </div>
       {/* Travel services */}
       <section className="section" id="services">
         <div className="container">
@@ -421,6 +429,8 @@ export default function HomePage() {
                 <span className="logo-tile"><span className="mono" style={{ "--c": "#e50000" }}>S</span>Sabre</span>
                 {" "}
                 <span className="logo-tile"><span className="mono" style={{ "--c": "#4b2c83" }}>T</span>Travelport</span>
+                {" "}
+                <span className="logo-tile"><span className="mono" style={{ "--c": "#0072bc" }}>G</span>Galileo</span>
                 {" "}
                 <span className="logo-tile"><span className="mono" style={{ "--c": "#0d0d0d" }}>D</span>Duffel</span>
                 {" "}
