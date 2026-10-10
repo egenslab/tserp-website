@@ -59,17 +59,18 @@
   "metric": "Tour packages, hotels and transport on one platform"
  },
  {
-  "slug": "fly-gulf",
-  "shot": "gulf",
-  "url": "fly-gulf",
-  "type": "Online travel agency",
-  "location": "Dubai, UAE",
+  "slug": "amazingtours",
+  "shot": "amazingtours",
+  "url": "amazingtoursbd.com",
+  "website": "https://www.amazingtoursbd.com/",
+  "type": "Travel agency",
+  "location": "Bangladesh",
   "chips": [
-   "Flights",
-   "Hotels",
-   "B2C"
+   "Visa",
+   "Hajj & Umrah",
+   "Tour packages"
   ],
-  "metric": "Live in 12 days"
+  "metric": "Visa processing, Hajj & Umrah and tour packages on one platform"
  },
  {
   "slug": "visa-desk",
