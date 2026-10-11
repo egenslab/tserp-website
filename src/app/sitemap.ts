@@ -3,17 +3,21 @@ import { FEATURES, POSTS, SITE, SOLUTIONS } from "@/lib/content";
 
 export const dynamic = "force-static";
 
+/** Blog posts carry their publish date ("2 October 2026"); every other page uses the build date. */
+const built = new Date();
+const postDate = (d: string) => { const t = new Date(`${d} 12:00 UTC`); return isNaN(t.getTime()) ? built : t; };
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const main = ["/", "/features", "/solutions", "/pricing", "/success-stories", "/blog", "/about", "/affiliate", "/contact"];
-  const paths = [
-    ...main,
-    ...FEATURES.map((f) => `/features/${f.slug}`),
-    ...SOLUTIONS.map((s) => `/solutions/${s.slug}`),
-    ...POSTS.map((p) => `/blog/${p.slug}`),
-    "/terms", "/privacy", "/refund",
+  const page = (path: string, priority: number, changeFrequency: "weekly" | "monthly" | "yearly", lastModified = built) =>
+    ({ url: SITE + path, lastModified, changeFrequency, priority });
+  return [
+    page("/", 1, "weekly"),
+    ...["/features", "/solutions", "/pricing"].map((p) => page(p, 0.9, "monthly")),
+    ...FEATURES.map((f) => page(`/features/${f.slug}`, 0.8, "monthly")),
+    ...SOLUTIONS.map((s) => page(`/solutions/${s.slug}`, 0.8, "monthly")),
+    ...["/success-stories", "/about", "/contact", "/affiliate"].map((p) => page(p, 0.7, "monthly")),
+    page("/blog", 0.7, "weekly"),
+    ...POSTS.map((p) => page(`/blog/${p.slug}`, 0.6, "monthly", postDate(p.date))),
+    ...["/terms", "/privacy", "/refund"].map((p) => page(p, 0.3, "yearly")),
   ];
-  return paths.map((p) => ({
-    url: SITE + p,
-    changeFrequency: p === "/" || p.startsWith("/blog") ? "weekly" : "monthly",
-  }));
 }
