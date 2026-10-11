@@ -1,0 +1,62 @@
+/* /solutions overview: showcase cards, module matrix, getting-started path */
+.si-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.si-card { position: relative; display: flex; flex-direction: column; gap: 14px; padding: 26px; border-radius: 22px; background: var(--white); border: 1px solid var(--line); transition: border-color .2s, box-shadow .2s, transform .2s; }
+.si-card:hover { border-color: var(--forest); box-shadow: var(--shadow); transform: translateY(-3px); }
+.si-card:nth-child(2) { background: linear-gradient(160deg, var(--lime-soft), var(--white) 55%); border-color: #cfeebb; }
+.si-top { display: flex; align-items: center; justify-content: space-between; }
+.si-ico { width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; background: var(--forest); color: var(--lime); }
+.si-ico svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.si-n { font-family: var(--font-display); font-weight: 800; font-size: 2rem; line-height: 1; color: transparent; -webkit-text-stroke: 1.2px #cbd8d0; }
+.si-card h3 { margin: 0; font-size: 1.25rem; }
+.si-card h3 a { color: inherit; }
+.si-head { margin: -6px 0 0; color: var(--muted); font-size: .95rem; }
+.si-mods small, .si-plan small, .si-fact small, .si-cust small { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.si-mods ul { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.si-mods li { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px; background: var(--bg-alt); color: var(--ink); font-size: .8rem; font-weight: 600; }
+.si-mods li .ic { width: 14px; height: 14px; color: var(--forest); }
+.si-foot { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: end; margin-top: auto; padding-top: 14px; border-top: 1px dashed var(--line); }
+.si-fact .b { display: block; font-family: var(--font-display); font-size: 1.05rem; color: var(--ink); }
+.si-fact small { text-transform: none; letter-spacing: 0; font-weight: 500; font-size: .8rem; }
+.si-plan { text-align: end; }
+.si-plan .b { display: inline-block; margin-top: 4px; padding: 4px 12px; border-radius: 999px; background: var(--forest); color: var(--lime); font-family: var(--font-display); font-size: .85rem; }
+.si-cust { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; padding: 6px 12px; border-radius: 10px; border: 1px solid var(--line); font-size: .82rem; font-weight: 600; color: var(--ink); }
+.si-cust small { letter-spacing: .04em; color: var(--forest); }
+.si-card .link-arrow { margin-top: 2px; }
+
+.si-table-wrap { position: relative; max-width: 100%; min-width: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 20px; border: 1px solid var(--line); background: var(--white); }
+.si-table { width: 100%; min-width: 820px; border-collapse: collapse; font-size: .9rem; }
+.si-table th, .si-table td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: center; }
+.si-table tbody tr:last-child th, .si-table tbody tr:last-child td { border-bottom: 0; }
+.si-table thead th { vertical-align: bottom; font-family: var(--font-display); font-size: .82rem; font-weight: 700; color: var(--ink); background: var(--bg-alt); }
+.si-table thead th:first-child { text-align: start; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; font-size: .72rem; }
+.si-th-ico { display: grid; place-items: center; width: 34px; height: 34px; margin: 0 auto 8px; border-radius: 10px; background: var(--forest); color: var(--lime); }
+.si-th-ico svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.si-table tbody th { text-align: start; font-weight: 600; color: var(--ink); white-space: nowrap; }
+.si-table tbody th .ic { width: 16px; height: 16px; margin-inline-end: 8px; vertical-align: -3px; color: var(--forest); }
+.si-table tbody tr:hover { background: #fafcf9; }
+.si-yes { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--lime); color: var(--forest-ink); }
+.si-yes .ic { width: 14px; height: 14px; }
+.si-no { color: #c3cfc8; font-size: 1.4rem; line-height: 1; }
+
+.si-path-card { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: center; padding: 44px; border-radius: 28px; background: var(--forest); color: #fff; position: relative; overflow: hidden; }
+.si-path-card::after { content: ""; position: absolute; width: 360px; height: 360px; left: -140px; bottom: -200px; border-radius: 50%; background: radial-gradient(circle, rgba(146, 239, 89, .22), transparent 70%); pointer-events: none; }
+.si-path-copy { position: relative; z-index: 1; }
+.si-path-copy .eyebrow { color: var(--lime); }
+.si-path-copy h2 { color: #fff; }
+.si-path-copy p { color: rgba(255, 255, 255, .75); margin-bottom: 22px; }
+.si-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; position: relative; z-index: 1; }
+.si-steps li { display: grid; grid-template-columns: 48px 1fr; gap: 16px; padding: 18px; border-radius: 18px; background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .1); }
+.si-step-ico { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: var(--lime); color: var(--forest-ink); }
+.si-step-ico .ic { width: 22px; height: 22px; }
+.si-step-n { font-family: var(--font-display); font-weight: 800; font-size: .75rem; color: var(--lime); letter-spacing: .08em; }
+.si-steps h3 { color: #fff; margin: 2px 0 4px; font-size: 1.05rem; }
+.si-steps p { margin: 0; color: rgba(255, 255, 255, .72); font-size: .9rem; }
+
+@media (max-width: 1024px) {
+  .si-grid { grid-template-columns: 1fr 1fr; }
+  .si-path-card { grid-template-columns: 1fr; padding: 32px; }
+}
+@media (max-width: 640px) {
+  .si-grid { grid-template-columns: 1fr; }
+  .si-path-card { padding: 24px; border-radius: 22px; }
+}
