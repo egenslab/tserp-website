@@ -133,6 +133,7 @@ export default function Footer() {
               <Link href="/terms">Terms & Conditions</Link>
               <Link href="/privacy">Privacy Policy</Link>
               <Link href="/refund">Refund Policy</Link>
+              <a href="#cookie-settings" data-cookie-settings>Cookie settings</a>
             </div>
           </div>
           <div className="footer-markets">

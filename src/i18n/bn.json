@@ -3375,7 +3375,6 @@
  "Our visa team tracks every file stage by stage, and customers get updates automatically. Calls asking for status dropped sharply.": "আমাদের ভিসা টিম প্রতিটি ফাইল ধাপে ধাপে ট্র্যাক করে, আর কাস্টমাররা অটোমেটিক আপডেট পান। স্ট্যাটাস জানতে ফোন অনেক কমে গেছে।",
  "Our vision": "আমাদের স্বপ্ন",
  "Our website and Services are intended for businesses and are not directed at children. We do not knowingly collect personal information from children for our own purposes.": "আমাদের ওয়েবসাইট ও সার্ভিস ব্যবসায়িক প্রতিষ্ঠানের জন্য, শিশুদের উদ্দেশে নয়। আমরা জেনেশুনে নিজেদের উদ্দেশ্যে শিশুদের কাছ থেকে ব্যক্তিগত তথ্য সংগ্রহ করি না।",
- "Our website uses cookies and similar technologies that are needed for it to work, such as remembering your language choice. Where we use analytics tools, they help us understand which pages are useful. You can block or delete cookies in your browser settings; some features of the website may not work as intended without them.": "আমাদের ওয়েবসাইট কাজ করার জন্য প্রয়োজনীয় কুকি ও অনুরূপ প্রযুক্তি ব্যবহার করে, যেমন আপনার বেছে নেওয়া ভাষা মনে রাখা। যেখানে আমরা অ্যানালিটিক্স টুল ব্যবহার করি, সেগুলো আমাদের বুঝতে সাহায্য করে কোন পেজগুলো উপকারী। আপনি ব্রাউজার সেটিংসে কুকি ব্লক বা মুছে ফেলতে পারেন; এগুলো ছাড়া ওয়েবসাইটের কিছু ফিচার প্রত্যাশিতভাবে কাজ নাও করতে পারে।",
  "Outgoing": "বহির্গামী",
  "Outstanding balances per client on the accounts dashboard": "অ্যাকাউন্টস ড্যাশবোর্ডে প্রতিটি ক্লায়েন্টের বকেয়া ব্যালান্স",
  "Outstanding dues per client": "প্রতিটি ক্লায়েন্টের বকেয়া",
@@ -5763,5 +5762,15 @@
  "✕ Missing": "✕ নেই",
  "After you send the form": "ফর্ম পাঠানোর পর",
  "30 minutes": "৩০ মিনিট",
- "Tailored": "আপনার মতো করে"
+ "Tailored": "আপনার মতো করে",
+ "Cookies on this site": "এই সাইটে কুকি",
+ "We use Google Analytics cookies to understand how visitors use this site. You can accept or decline them, and change your choice at any time.": "ভিজিটররা কীভাবে এই সাইট ব্যবহার করেন তা বুঝতে আমরা Google Analytics কুকি ব্যবহার করি। আপনি এগুলো গ্রহণ বা প্রত্যাখ্যান করতে পারেন, এবং যেকোনো সময় আপনার সিদ্ধান্ত বদলাতে পারেন।",
+ "Decline": "প্রত্যাখ্যান",
+ "Accept": "গ্রহণ করুন",
+ "Cookie settings": "কুকি সেটিংস",
+ "Our website uses storage that is needed for it to work, such as remembering your language choice and your cookie choice.": "আমাদের ওয়েবসাইট চালু রাখতে প্রয়োজনীয় স্টোরেজ ব্যবহার করে, যেমন আপনার বেছে নেওয়া ভাষা এবং কুকি সংক্রান্ত সিদ্ধান্ত মনে রাখা।",
+ "We also use Google Analytics, provided by Google, to understand which pages are useful and how visitors find us. Google Analytics sets cookies on your device and processes usage data on our behalf.": "কোন পেজগুলো কাজে লাগছে এবং ভিজিটররা কীভাবে আমাদের খুঁজে পান তা বুঝতে আমরা Google-এর দেওয়া Google Analytics-ও ব্যবহার করি। Google Analytics আপনার ডিভাইসে কুকি সেট করে এবং আমাদের পক্ষে ব্যবহার-সংক্রান্ত ডেটা প্রক্রিয়া করে।",
+ "In the European Economic Area, the United Kingdom and Switzerland, analytics cookies are set only after you accept them. Elsewhere they are on unless you decline them. You can change your choice at any time with the “Cookie settings” link at the bottom of every page.": "ইউরোপীয় অর্থনৈতিক অঞ্চল, যুক্তরাজ্য ও সুইজারল্যান্ডে অ্যানালিটিক্স কুকি কেবল আপনি গ্রহণ করার পরেই সেট হয়। অন্যান্য জায়গায় আপনি প্রত্যাখ্যান না করা পর্যন্ত এগুলো চালু থাকে। প্রতিটি পেজের নিচে থাকা “কুকি সেটিংস” লিংক দিয়ে আপনি যেকোনো সময় আপনার সিদ্ধান্ত বদলাতে পারেন।",
+ "You can also block or delete cookies in your browser settings. Some features of the website may not work as intended without them.": "আপনি ব্রাউজারের সেটিংস থেকেও কুকি ব্লক বা মুছে ফেলতে পারেন। কুকি ছাড়া ওয়েবসাইটের কিছু ফিচার ঠিকমতো কাজ নাও করতে পারে।",
+ "11 October 2026": "১১ অক্টোবর ২০২৬"
 }

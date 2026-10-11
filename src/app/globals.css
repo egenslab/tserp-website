@@ -2188,3 +2188,20 @@ html[lang="th"] body { line-height: 1.8; }
 .legal-body section p + ul, .legal-body section ul + p { margin-top: .6em; }
 .legal-contact a:not(.btn) { color: var(--forest); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 640px) { .legal-key { padding: 18px; } }
+
+/* Cookie banner */
+.cookie-banner { position: fixed; z-index: 70; left: 20px; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); width: min(440px, calc(100vw - 40px)); display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 18px; border-radius: 20px; background: var(--forest-ink); color: #fff; box-shadow: 0 18px 48px rgba(15, 46, 34, .35); border: 1px solid rgba(146, 239, 89, .18); animation: cb-in .35s ease both; }
+@keyframes cb-in { from { opacity: 0; transform: translateY(16px); } }
+.cb-ico { width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; background: rgba(146, 239, 89, .14); color: var(--lime); }
+.cb-ico svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linejoin: round; }
+.cb-ico circle { fill: currentColor; stroke: none; }
+.cb-body .b { display: block; font-family: var(--font-display); font-size: 1.02rem; margin-bottom: 4px; }
+.cb-body p { margin: 0 0 6px; color: rgba(255, 255, 255, .75); font-size: .88rem; line-height: 1.5; }
+.cb-body a { color: var(--lime); font-size: .85rem; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.cb-actions { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.cb-actions .btn { padding: .6em 1em; }
+.cb-actions .btn-outline { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .25); }
+.cb-actions .btn-outline:hover { border-color: #fff; }
+@media (max-width: 600px) {
+  .cookie-banner { left: 12px; right: 12px; width: auto; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); }
+}

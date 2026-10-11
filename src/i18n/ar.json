@@ -3335,7 +3335,6 @@
  "Our visa team tracks every file stage by stage, and customers get updates automatically. Calls asking for status dropped sharply.": "يتابع فريق التأشيرات لدينا كل ملف مرحلة بمرحلة، ويحصل العملاء على التحديثات تلقائيًا. انخفضت الاتصالات للاستفسار عن الحالة بشكل كبير.",
  "Our vision": "رؤيتنا",
  "Our website and Services are intended for businesses and are not directed at children. We do not knowingly collect personal information from children for our own purposes.": "موقعنا الإلكتروني وخدماتنا موجهة للشركات وليست موجهة للأطفال. ولا نجمع عن قصد معلومات شخصية من الأطفال لأغراضنا الخاصة.",
- "Our website uses cookies and similar technologies that are needed for it to work, such as remembering your language choice. Where we use analytics tools, they help us understand which pages are useful. You can block or delete cookies in your browser settings; some features of the website may not work as intended without them.": "يستخدم موقعنا الإلكتروني ملفات تعريف الارتباط وتقنيات مشابهة لازمة لعمله، مثل تذكّر اللغة التي اخترتها. وحيث نستخدم أدوات التحليلات، فإنها تساعدنا على فهم الصفحات المفيدة. ويمكنك حظر ملفات تعريف الارتباط أو حذفها من إعدادات المتصفح؛ وقد لا تعمل بعض مزايا الموقع كما ينبغي دونها.",
  "Outgoing": "صادر",
  "Outstanding balances per client on the accounts dashboard": "الأرصدة المستحقة لكل عميل على لوحة تحكم الحسابات",
  "Outstanding dues per client": "المستحقات القائمة لكل عميل",
@@ -5692,5 +5691,15 @@
  "✕ Missing": "✕ ناقص",
  "After you send the form": "بعد إرسال النموذج",
  "30 minutes": "30 دقيقة",
- "Tailored": "مصمم لك"
+ "Tailored": "مصمم لك",
+ "Cookies on this site": "ملفات تعريف الارتباط على هذا الموقع",
+ "We use Google Analytics cookies to understand how visitors use this site. You can accept or decline them, and change your choice at any time.": "نستخدم ملفات تعريف الارتباط الخاصة بـ Google Analytics لفهم كيفية استخدام الزوار لهذا الموقع. يمكنك قبولها أو رفضها، وتغيير اختيارك في أي وقت.",
+ "Decline": "رفض",
+ "Accept": "قبول",
+ "Cookie settings": "إعدادات ملفات تعريف الارتباط",
+ "Our website uses storage that is needed for it to work, such as remembering your language choice and your cookie choice.": "يستخدم موقعنا التخزين اللازم لعمله، مثل تذكّر اللغة التي اخترتها واختيارك بشأن ملفات تعريف الارتباط.",
+ "We also use Google Analytics, provided by Google, to understand which pages are useful and how visitors find us. Google Analytics sets cookies on your device and processes usage data on our behalf.": "نستخدم أيضًا Google Analytics المقدّم من Google لفهم الصفحات المفيدة وكيف يصل إلينا الزوار. يضع Google Analytics ملفات تعريف ارتباط على جهازك ويعالج بيانات الاستخدام نيابةً عنا.",
+ "In the European Economic Area, the United Kingdom and Switzerland, analytics cookies are set only after you accept them. Elsewhere they are on unless you decline them. You can change your choice at any time with the “Cookie settings” link at the bottom of every page.": "في المنطقة الاقتصادية الأوروبية والمملكة المتحدة وسويسرا، لا تُضبط ملفات تعريف الارتباط التحليلية إلا بعد موافقتك عليها. أما في المناطق الأخرى فتكون مفعّلة ما لم ترفضها. يمكنك تغيير اختيارك في أي وقت عبر رابط “إعدادات ملفات تعريف الارتباط” أسفل كل صفحة.",
+ "You can also block or delete cookies in your browser settings. Some features of the website may not work as intended without them.": "يمكنك أيضًا حظر ملفات تعريف الارتباط أو حذفها من إعدادات المتصفح. وقد لا تعمل بعض ميزات الموقع كما ينبغي بدونها.",
+ "11 October 2026": "11 أكتوبر 2026"
 }

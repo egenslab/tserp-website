@@ -3335,7 +3335,6 @@
  "Our visa team tracks every file stage by stage, and customers get updates automatically. Calls asking for status dropped sharply.": "Vize ekibimiz her dosyayı aşama aşama takip ediyor ve müşteriler güncellemeleri otomatik olarak alıyor. Durum sormak için gelen aramalar ciddi şekilde azaldı.",
  "Our vision": "Vizyonumuz",
  "Our website and Services are intended for businesses and are not directed at children. We do not knowingly collect personal information from children for our own purposes.": "Web sitemiz ve Hizmetlerimiz işletmelere yöneliktir ve çocuklara hitap etmez. Kendi amaçlarımız için çocuklardan bilerek kişisel bilgi toplamayız.",
- "Our website uses cookies and similar technologies that are needed for it to work, such as remembering your language choice. Where we use analytics tools, they help us understand which pages are useful. You can block or delete cookies in your browser settings; some features of the website may not work as intended without them.": "Web sitemiz, dil tercihinizi hatırlamak gibi çalışması için gerekli olan çerezleri ve benzeri teknolojileri kullanır. Analiz araçları kullandığımız durumlarda bunlar hangi sayfaların faydalı olduğunu anlamamıza yardımcı olur. Çerezleri tarayıcı ayarlarınızdan engelleyebilir veya silebilirsiniz; bu durumda web sitesinin bazı özellikleri amaçlandığı gibi çalışmayabilir.",
  "Outgoing": "Giden",
  "Outstanding balances per client on the accounts dashboard": "Muhasebe panosunda müşteri başına açık bakiyeler",
  "Outstanding dues per client": "Müşteri başına açık borçlar",
@@ -5692,5 +5691,15 @@
  "✕ Missing": "✕ Eksik",
  "After you send the form": "Formu gönderdikten sonra",
  "30 minutes": "30 dakika",
- "Tailored": "Size özel"
+ "Tailored": "Size özel",
+ "Cookies on this site": "Bu sitede çerezler",
+ "We use Google Analytics cookies to understand how visitors use this site. You can accept or decline them, and change your choice at any time.": "Ziyaretçilerin bu siteyi nasıl kullandığını anlamak için Google Analytics çerezlerini kullanıyoruz. Bunları kabul edebilir veya reddedebilir, tercihinizi istediğiniz zaman değiştirebilirsiniz.",
+ "Decline": "Reddet",
+ "Accept": "Kabul et",
+ "Cookie settings": "Çerez ayarları",
+ "Our website uses storage that is needed for it to work, such as remembering your language choice and your cookie choice.": "Web sitemiz, çalışması için gerekli olan depolamayı kullanır; örneğin dil tercihinizi ve çerez tercihinizi hatırlamak için.",
+ "We also use Google Analytics, provided by Google, to understand which pages are useful and how visitors find us. Google Analytics sets cookies on your device and processes usage data on our behalf.": "Ayrıca hangi sayfaların faydalı olduğunu ve ziyaretçilerin bizi nasıl bulduğunu anlamak için Google tarafından sağlanan Google Analytics'i kullanıyoruz. Google Analytics cihazınıza çerez yerleştirir ve kullanım verilerini bizim adımıza işler.",
+ "In the European Economic Area, the United Kingdom and Switzerland, analytics cookies are set only after you accept them. Elsewhere they are on unless you decline them. You can change your choice at any time with the “Cookie settings” link at the bottom of every page.": "Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de analiz çerezleri yalnızca siz kabul ettikten sonra yerleştirilir. Diğer bölgelerde siz reddetmediğiniz sürece etkindir. Tercihinizi her sayfanın altındaki “Çerez ayarları” bağlantısıyla istediğiniz zaman değiştirebilirsiniz.",
+ "You can also block or delete cookies in your browser settings. Some features of the website may not work as intended without them.": "Çerezleri tarayıcı ayarlarınızdan da engelleyebilir veya silebilirsiniz. Çerezler olmadan web sitesinin bazı özellikleri beklendiği gibi çalışmayabilir.",
+ "11 October 2026": "11 Ekim 2026"
 }

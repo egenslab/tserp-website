@@ -3335,7 +3335,6 @@
  "Our visa team tracks every file stage by stage, and customers get updates automatically. Calls asking for status dropped sharply.": "ทีมวีซ่าของเราติดตามทุกแฟ้มทีละขั้นตอน และลูกค้าได้รับอัปเดตอัตโนมัติ สายโทรถามสถานะลดลงอย่างมาก",
  "Our vision": "วิสัยทัศน์ของเรา",
  "Our website and Services are intended for businesses and are not directed at children. We do not knowingly collect personal information from children for our own purposes.": "เว็บไซต์และบริการของเรามีไว้สำหรับธุรกิจและไม่ได้มุ่งเป้าไปที่เด็ก เราไม่เก็บรวบรวมข้อมูลส่วนบุคคลจากเด็กเพื่อวัตถุประสงค์ของเราเองโดยเจตนา",
- "Our website uses cookies and similar technologies that are needed for it to work, such as remembering your language choice. Where we use analytics tools, they help us understand which pages are useful. You can block or delete cookies in your browser settings; some features of the website may not work as intended without them.": "เว็บไซต์ของเราใช้คุกกี้และเทคโนโลยีที่คล้ายกันซึ่งจำเป็นต่อการทำงาน เช่น การจดจำภาษาที่คุณเลือก ในกรณีที่เราใช้เครื่องมือวิเคราะห์ เครื่องมือเหล่านั้นช่วยให้เราเข้าใจว่าหน้าใดมีประโยชน์ คุณสามารถบล็อกหรือลบคุกกี้ได้ในการตั้งค่าเบราว์เซอร์ บางฟีเจอร์ของเว็บไซต์อาจทำงานไม่เป็นไปตามที่ตั้งใจหากไม่มีคุกกี้",
  "Outgoing": "ขาออก",
  "Outstanding balances per client on the accounts dashboard": "ยอดค้างชำระของแต่ละลูกค้าบนแดชบอร์ดบัญชี",
  "Outstanding dues per client": "ยอดค้างชำระของแต่ละลูกค้า",
@@ -5692,5 +5691,15 @@
  "✕ Missing": "✕ ขาด",
  "After you send the form": "หลังจากคุณส่งแบบฟอร์ม",
  "30 minutes": "30 นาที",
- "Tailored": "ปรับให้เหมาะกับคุณ"
+ "Tailored": "ปรับให้เหมาะกับคุณ",
+ "Cookies on this site": "คุกกี้บนเว็บไซต์นี้",
+ "We use Google Analytics cookies to understand how visitors use this site. You can accept or decline them, and change your choice at any time.": "เราใช้คุกกี้ของ Google Analytics เพื่อทำความเข้าใจว่าผู้เข้าชมใช้งานเว็บไซต์นี้อย่างไร คุณสามารถยอมรับหรือปฏิเสธ และเปลี่ยนตัวเลือกได้ทุกเมื่อ",
+ "Decline": "ปฏิเสธ",
+ "Accept": "ยอมรับ",
+ "Cookie settings": "การตั้งค่าคุกกี้",
+ "Our website uses storage that is needed for it to work, such as remembering your language choice and your cookie choice.": "เว็บไซต์ของเราใช้พื้นที่จัดเก็บข้อมูลที่จำเป็นต่อการทำงาน เช่น การจดจำภาษาที่คุณเลือกและตัวเลือกคุกกี้ของคุณ",
+ "We also use Google Analytics, provided by Google, to understand which pages are useful and how visitors find us. Google Analytics sets cookies on your device and processes usage data on our behalf.": "เรายังใช้ Google Analytics ซึ่งให้บริการโดย Google เพื่อทำความเข้าใจว่าหน้าใดมีประโยชน์และผู้เข้าชมพบเราได้อย่างไร Google Analytics จะตั้งค่าคุกกี้บนอุปกรณ์ของคุณและประมวลผลข้อมูลการใช้งานในนามของเรา",
+ "In the European Economic Area, the United Kingdom and Switzerland, analytics cookies are set only after you accept them. Elsewhere they are on unless you decline them. You can change your choice at any time with the “Cookie settings” link at the bottom of every page.": "ในเขตเศรษฐกิจยุโรป สหราชอาณาจักร และสวิตเซอร์แลนด์ คุกกี้เพื่อการวิเคราะห์จะถูกตั้งค่าหลังจากที่คุณยอมรับเท่านั้น ส่วนพื้นที่อื่นจะเปิดใช้งานอยู่เว้นแต่คุณจะปฏิเสธ คุณสามารถเปลี่ยนตัวเลือกได้ทุกเมื่อผ่านลิงก์ “การตั้งค่าคุกกี้” ที่ด้านล่างของทุกหน้า",
+ "You can also block or delete cookies in your browser settings. Some features of the website may not work as intended without them.": "คุณยังสามารถบล็อกหรือลบคุกกี้ได้ในการตั้งค่าเบราว์เซอร์ ฟีเจอร์บางอย่างของเว็บไซต์อาจทำงานไม่สมบูรณ์หากไม่มีคุกกี้",
+ "11 October 2026": "11 ตุลาคม 2026"
 }

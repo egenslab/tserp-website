@@ -3335,7 +3335,6 @@
  "Our visa team tracks every file stage by stage, and customers get updates automatically. Calls asking for status dropped sharply.": "我们的签证团队逐阶段跟踪每份档案，客户自动收到更新。询问进度的电话大幅减少。",
  "Our vision": "我们的愿景",
  "Our website and Services are intended for businesses and are not directed at children. We do not knowingly collect personal information from children for our own purposes.": "我们的网站和服务面向企业，并非针对儿童。我们不会出于自身目的故意收集儿童的个人信息。",
- "Our website uses cookies and similar technologies that are needed for it to work, such as remembering your language choice. Where we use analytics tools, they help us understand which pages are useful. You can block or delete cookies in your browser settings; some features of the website may not work as intended without them.": "我们的网站使用其正常运行所需的 Cookie 及类似技术，例如记住您选择的语言。我们使用分析工具时，是为了了解哪些页面有用。您可以在浏览器设置中阻止或删除 Cookie；没有 Cookie，网站的某些功能可能无法正常使用。",
  "Outgoing": "外发",
  "Outstanding balances per client on the accounts dashboard": "账务仪表盘上显示每位客户的未结余额",
  "Outstanding dues per client": "每位客户的未结欠款",
@@ -5692,5 +5691,15 @@
  "✕ Missing": "✕ 缺失",
  "After you send the form": "提交表单之后",
  "30 minutes": "30 分钟",
- "Tailored": "量身定制"
+ "Tailored": "量身定制",
+ "Cookies on this site": "本网站使用 Cookie",
+ "We use Google Analytics cookies to understand how visitors use this site. You can accept or decline them, and change your choice at any time.": "我们使用 Google Analytics Cookie 来了解访客如何使用本网站。您可以接受或拒绝，并可随时更改您的选择。",
+ "Decline": "拒绝",
+ "Accept": "接受",
+ "Cookie settings": "Cookie 设置",
+ "Our website uses storage that is needed for it to work, such as remembering your language choice and your cookie choice.": "我们的网站会使用其正常运行所需的存储，例如记住您选择的语言和您的 Cookie 选择。",
+ "We also use Google Analytics, provided by Google, to understand which pages are useful and how visitors find us. Google Analytics sets cookies on your device and processes usage data on our behalf.": "我们还使用由 Google 提供的 Google Analytics，以了解哪些页面有用以及访客如何找到我们。Google Analytics 会在您的设备上设置 Cookie，并代表我们处理使用数据。",
+ "In the European Economic Area, the United Kingdom and Switzerland, analytics cookies are set only after you accept them. Elsewhere they are on unless you decline them. You can change your choice at any time with the “Cookie settings” link at the bottom of every page.": "在欧洲经济区、英国和瑞士，分析 Cookie 仅在您接受后才会设置；在其他地区，除非您拒绝，否则默认开启。您可以随时通过每个页面底部的“Cookie 设置”链接更改您的选择。",
+ "You can also block or delete cookies in your browser settings. Some features of the website may not work as intended without them.": "您也可以在浏览器设置中阻止或删除 Cookie。没有 Cookie，网站的部分功能可能无法正常使用。",
+ "11 October 2026": "2026 年 10 月 11 日"
 }

@@ -3335,7 +3335,6 @@
  "Our visa team tracks every file stage by stage, and customers get updates automatically. Calls asking for status dropped sharply.": "ہماری ویزا ٹیم ہر فائل کو مرحلہ وار ٹریک کرتی ہے، اور کسٹمرز کو خودکار اپڈیٹس ملتی ہیں۔ اسٹیٹس پوچھنے والی کالز میں نمایاں کمی آئی۔",
  "Our vision": "ہمارا وژن",
  "Our website and Services are intended for businesses and are not directed at children. We do not knowingly collect personal information from children for our own purposes.": "ہماری ویب سائٹ اور سروسز کاروباری اداروں کے لیے ہیں اور بچوں کے لیے نہیں۔ ہم جان بوجھ کر اپنے مقاصد کے لیے بچوں سے ذاتی معلومات جمع نہیں کرتے۔",
- "Our website uses cookies and similar technologies that are needed for it to work, such as remembering your language choice. Where we use analytics tools, they help us understand which pages are useful. You can block or delete cookies in your browser settings; some features of the website may not work as intended without them.": "ہماری ویب سائٹ کوکیز اور اسی طرح کی ٹیکنالوجیز استعمال کرتی ہے جو اس کے کام کرنے کے لیے ضروری ہیں، جیسے آپ کی زبان کا انتخاب یاد رکھنا۔ جہاں ہم اینالیٹکس ٹولز استعمال کرتے ہیں، وہ ہمیں یہ سمجھنے میں مدد دیتے ہیں کہ کون سے صفحات مفید ہیں۔ آپ اپنے براؤزر کی سیٹنگز میں کوکیز بلاک یا حذف کر سکتے ہیں؛ ان کے بغیر ویب سائٹ کے کچھ فیچرز توقع کے مطابق کام نہیں کر سکتے۔",
  "Outgoing": "بھیجے گئے",
  "Outstanding balances per client on the accounts dashboard": "اکاؤنٹس ڈیش بورڈ پر ہر کلائنٹ کے بقایا بیلنس",
  "Outstanding dues per client": "ہر کلائنٹ کے بقایا واجبات",
@@ -5692,5 +5691,15 @@
  "✕ Missing": "✕ غائب",
  "After you send the form": "فارم بھیجنے کے بعد",
  "30 minutes": "30 منٹ",
- "Tailored": "آپ کے مطابق"
+ "Tailored": "آپ کے مطابق",
+ "Cookies on this site": "اس سائٹ پر کوکیز",
+ "We use Google Analytics cookies to understand how visitors use this site. You can accept or decline them, and change your choice at any time.": "ہم Google Analytics کوکیز استعمال کرتے ہیں تاکہ سمجھ سکیں کہ وزیٹرز اس سائٹ کو کیسے استعمال کرتے ہیں۔ آپ انہیں قبول یا مسترد کر سکتے ہیں، اور کسی بھی وقت اپنا انتخاب بدل سکتے ہیں۔",
+ "Decline": "مسترد کریں",
+ "Accept": "قبول کریں",
+ "Cookie settings": "کوکی سیٹنگز",
+ "Our website uses storage that is needed for it to work, such as remembering your language choice and your cookie choice.": "ہماری ویب سائٹ وہ اسٹوریج استعمال کرتی ہے جو اس کے کام کرنے کے لیے ضروری ہے، جیسے آپ کی منتخب کردہ زبان اور کوکیز سے متعلق آپ کا انتخاب یاد رکھنا۔",
+ "We also use Google Analytics, provided by Google, to understand which pages are useful and how visitors find us. Google Analytics sets cookies on your device and processes usage data on our behalf.": "ہم Google کی فراہم کردہ Google Analytics بھی استعمال کرتے ہیں تاکہ سمجھ سکیں کہ کون سے صفحات مفید ہیں اور وزیٹرز ہم تک کیسے پہنچتے ہیں۔ Google Analytics آپ کے ڈیوائس پر کوکیز لگاتا ہے اور ہماری جانب سے استعمال کا ڈیٹا پراسیس کرتا ہے۔",
+ "In the European Economic Area, the United Kingdom and Switzerland, analytics cookies are set only after you accept them. Elsewhere they are on unless you decline them. You can change your choice at any time with the “Cookie settings” link at the bottom of every page.": "یورپی اقتصادی علاقے، برطانیہ اور سوئٹزرلینڈ میں اینالیٹکس کوکیز صرف آپ کی منظوری کے بعد لگائی جاتی ہیں۔ دیگر جگہوں پر یہ اس وقت تک فعال رہتی ہیں جب تک آپ انہیں مسترد نہ کریں۔ آپ ہر صفحے کے نیچے موجود “کوکی سیٹنگز” لنک سے کسی بھی وقت اپنا انتخاب بدل سکتے ہیں۔",
+ "You can also block or delete cookies in your browser settings. Some features of the website may not work as intended without them.": "آپ اپنے براؤزر کی سیٹنگز سے بھی کوکیز بلاک یا حذف کر سکتے ہیں۔ ان کے بغیر ویب سائٹ کی کچھ خصوصیات صحیح طرح کام نہیں کر سکتیں۔",
+ "11 October 2026": "11 اکتوبر 2026"
 }
