@@ -36,7 +36,7 @@ export function SolutionShowcase() {
                 </div>
                 <div className="si-foot">
                   {fact && <span className="si-fact"><span className="b">{fact.value}</span><small>{fact.label}</small></span>}
-                  <span className="si-plan"><small>Typical plan</small><span className="b">{s.plan}</span></span>
+                  <span className="si-plan"><small>Typical plan</small><span className="b" data-no-i18n="">{s.plan}</span></span>
                 </div>
                 {story && (
                   <span className="si-cust">

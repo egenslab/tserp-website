@@ -60,3 +60,4 @@
   .si-grid { grid-template-columns: 1fr; }
   .si-path-card { padding: 24px; border-radius: 22px; }
 }
+.si-path { padding-bottom: 0; }

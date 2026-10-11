@@ -18,7 +18,7 @@ export function PlanFinder() {
               <span className="pf-ico"><Glyph name={s.icon} /></span>
               <span className="b">{s.title}</span>
               <small>{s.tagline}</small>
-              <span className="pf-plan"><small>Start with</small><span className="b">{s.plan}</span></span>
+              <span className="pf-plan"><small>Start with</small><span className="b" data-no-i18n="">{s.plan}</span></span>
               <span className="pf-go">See how it works <Icon name="i-arrow" /></span>
             </Link>
           ))}
