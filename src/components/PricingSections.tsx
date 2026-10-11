@@ -125,7 +125,7 @@ export function PricingProof() {
                 <span>
                   <span className="b">{q.name}</span>
                   <small>{q.role}</small>
-                  <small className="pp-loc"><img src={`/assets/img/flags/${q.flag}.svg`} alt="" width={16} height={12} />{q.place}</small>
+                  <small className="pp-loc"><img src={`/assets/img/flags/${q.flag}.svg`} alt={`${q.place} flag`} width={16} height={12} />{q.place}</small>
                 </span>
               </figcaption>
             </figure>

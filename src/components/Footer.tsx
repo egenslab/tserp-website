@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { AI_LINKS, AI_PROMPT, COUNTRIES, MAPS, PAYMENTS, SOCIAL, TRUSTPILOT } from "@/lib/content";
+import { COUNTRIES, MAPS, PAYMENTS, SOCIAL, TRUSTPILOT } from "@/lib/content";
+import AiCards from "./AiCards";
 import WaPill from "./WaPill";
 
 /** Call-to-action band and site footer. */
@@ -33,14 +34,7 @@ export default function Footer() {
                 <q>What is TravelSuite ERP? Summarize its features for travel agencies, Hajj & Umrah operators and B2B consolidators.</q>
               </div>
             </div>
-            <div className="ai-cards">
-              {AI_LINKS.map((ai) => (
-                <a key={ai.name} className="ai-card" href={ai.url + encodeURIComponent(AI_PROMPT)} target="_blank" rel="noopener" aria-label={ai.name}>
-                  <span className="ai-logo"><img src={`/assets/img/partners/${ai.logo}.svg`} alt={`${ai.name} logo`} width={26} height={26} /></span>
-                  <span className="ai-name" data-no-i18n=""><span className="b">{ai.name}</span><small>{ai.maker}</small></span>
-                </a>
-              ))}
-            </div>
+            <AiCards />
           </div>
           <div className="footer-hero">
             <div className="footer-brand">

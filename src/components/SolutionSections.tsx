@@ -98,7 +98,7 @@ export function SolStory({ story }: { story: NonNullable<Solution["story"]> }) {
               <span>
                 <span className="b">{name}</span>
                 <small>{story.role ? `${story.role} · ` : ""}{s.type}</small>
-                <small className="sl-loc">{s.flag && <img src={`/assets/img/flags/${s.flag}.svg`} alt="" width={16} height={12} />}{s.location}</small>
+                <small className="sl-loc">{s.flag && <img src={`/assets/img/flags/${s.flag}.svg`} alt={`${s.location} flag`} width={16} height={12} />}{s.location}</small>
               </span>
             </div>
             <ul className="sl-chips">{s.chips.map((c) => <li key={c}>{c}</li>)}</ul>

@@ -5762,5 +5762,11 @@
  "Sending…": "กำลังส่ง…",
  "Your message could not be sent. Please try again, or message us on WhatsApp at +880 13 2527 7120.": "ไม่สามารถส่งข้อความของคุณได้ โปรดลองอีกครั้ง หรือส่งข้อความหาเราทาง WhatsApp ที่ +880 13 2527 7120",
  "Import your data": "นำเข้าข้อมูลของคุณ",
- "Train your team": "ฝึกอบรมทีมของคุณ"
+ "Train your team": "ฝึกอบรมทีมของคุณ",
+ "Explore flight booking": "ดูการจองตั๋วเครื่องบิน",
+ "Explore hotel booking": "ดูการจองโรงแรม",
+ "Explore Hajj & Umrah": "ดูฮัจญ์และอุมเราะห์",
+ "Explore visa processing": "ดูการดำเนินการวีซ่า",
+ "Explore tour packages": "ดูแพ็กเกจทัวร์",
+ "Explore transport booking": "ดูการจองรถรับส่ง"
 }

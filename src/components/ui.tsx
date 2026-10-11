@@ -110,13 +110,11 @@ export function SuccessCard({ st }: { st: Story }) {
   );
   return (
     <article className="success-card">
-      {st.website
-        ? <a className="site-shot" href={st.website} target="_blank" rel="noopener" tabIndex={-1} aria-hidden="true">{shot}</a>
-        : <div className="site-shot">{shot}</div>}
+      <div className="site-shot">{shot}</div>
       <div className="success-body">
         <h3>
           {st.website
-            ? <a href={st.website} target="_blank" rel="noopener">{st.type}<span className="sr-only"> · {st.url}</span> <Icon name="i-external" className="ic ext" /></a>
+            ? <a href={st.website} target="_blank" rel="noopener" className="card-link">{st.type}<span className="sr-only"> · {st.url}</span> <Icon name="i-external" className="ic ext" /></a>
             : <>{st.type}<span className="sr-only"> · {st.url}</span></>}
         </h3>
         <p className="loc">
@@ -143,15 +141,15 @@ export function PostCard({ p, featured = false, hidden = false }: { p: Post; fea
   const href = `/blog/${p.slug}`;
   return (
     <article className={featured ? "post-card featured-post" : "post-card"} hidden={hidden}>
-      <Link href={href} className="post-cover" style={{ "--c": p.color }} tabIndex={-1} aria-hidden="true">
-        {p.cover ? <img className="cover-img" src={p.cover} alt="" width={1200} height={675} loading="lazy" /> : <Glyph name={p.icon} />}<span className="cover-chip">{p.cat}</span>
-      </Link>
+      <div className="post-cover" style={{ "--c": p.color }}>
+        {p.cover ? <img className="cover-img" src={p.cover} alt={p.title} width={1200} height={675} loading="lazy" /> : <Glyph name={p.icon} />}<span className="cover-chip">{p.cat}</span>
+      </div>
       <div className="post-body">
         {featured && <span className="feat-chip">Featured article</span>}
         <PostMeta p={p} />
-        <h3><Link href={href}>{p.title}</Link></h3>
+        <h3><Link href={href} className="card-link">{p.title}</Link></h3>
         <p>{p.excerpt}</p>
-        <Link href={href} className="link-arrow">Read article <Icon name="i-arrow" /></Link>
+        <span className="link-arrow" aria-hidden="true">Read article <Icon name="i-arrow" /></span>
       </div>
     </article>
   );

@@ -2209,3 +2209,8 @@ html[lang="th"] body { line-height: 1.8; }
 /* Spam trap for the contact forms: hidden from people, filled in by bots */
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .contact-form .btn:disabled { opacity: .6; cursor: wait; }
+
+/* Card-wide click target: the card's one real link stretches over the whole card */
+.post-card, .success-card { position: relative; }
+.card-link::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+button.ai-card { border: 0; font: inherit; color: inherit; text-align: start; cursor: pointer; }

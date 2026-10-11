@@ -94,7 +94,7 @@ export default function HomePage() {
               </div>
               <h3>Flight Tickets</h3>
               <p>Search and book fares, issue tickets, manage PNRs, reissues, refunds and void requests.</p>
-              <Link href="/features/flights" className="link-arrow">Learn more <svg className="ic"><use href="#i-arrow" /></svg></Link>
+              <Link href="/features/flights" className="link-arrow">Explore flight booking <svg className="ic"><use href="#i-arrow" /></svg></Link>
             </article>
             <article className="product">
               <div className="p-ico">
@@ -102,7 +102,7 @@ export default function HomePage() {
               </div>
               <h3>Hotel Booking</h3>
               <p>Your own hotel contracts and supplier rates side by side, with room-level markup and vouchers.</p>
-              <Link href="/features/hotels" className="link-arrow">Learn more <svg className="ic"><use href="#i-arrow" /></svg></Link>
+              <Link href="/features/hotels" className="link-arrow">Explore hotel booking <svg className="ic"><use href="#i-arrow" /></svg></Link>
             </article>
             <article className="product highlight">
               <span className="new-tag">For Hajj & Umrah agencies</span>
@@ -111,7 +111,7 @@ export default function HomePage() {
               </div>
               <h3>Hajj & Umrah</h3>
               <p>Pilgrim registration, passport and visa tracking, group allocation, Makkah & Madinah hotels, packages and instalment payments.</p>
-              <Link href="/features/hajj" className="link-arrow">Learn more <svg className="ic"><use href="#i-arrow" /></svg></Link>
+              <Link href="/features/hajj" className="link-arrow">Explore Hajj & Umrah <svg className="ic"><use href="#i-arrow" /></svg></Link>
             </article>
             <article className="product">
               <div className="p-ico">
@@ -119,7 +119,7 @@ export default function HomePage() {
               </div>
               <h3>Visa Processing</h3>
               <p>Country requirements, document checklists, application stages and status updates for each applicant.</p>
-              <Link href="/features/visa" className="link-arrow">Learn more <svg className="ic"><use href="#i-arrow" /></svg></Link>
+              <Link href="/features/visa" className="link-arrow">Explore visa processing <svg className="ic"><use href="#i-arrow" /></svg></Link>
             </article>
             <article className="product">
               <div className="p-ico">
@@ -127,7 +127,7 @@ export default function HomePage() {
               </div>
               <h3>Tour Packages</h3>
               <p>Build day-by-day itineraries, departures, inclusions and group pricing, then sell them online.</p>
-              <Link href="/features/tours" className="link-arrow">Learn more <svg className="ic"><use href="#i-arrow" /></svg></Link>
+              <Link href="/features/tours" className="link-arrow">Explore tour packages <svg className="ic"><use href="#i-arrow" /></svg></Link>
             </article>
             <article className="product">
               <div className="p-ico">
@@ -135,7 +135,7 @@ export default function HomePage() {
               </div>
               <h3>Transport Booking</h3>
               <p>Airport transfers, intercity transport and rentals with vehicles, drivers and route pricing.</p>
-              <Link href="/features/transport" className="link-arrow">Learn more <svg className="ic"><use href="#i-arrow" /></svg></Link>
+              <Link href="/features/transport" className="link-arrow">Explore transport booking <svg className="ic"><use href="#i-arrow" /></svg></Link>
             </article>
           </div>
           <div className="b2b-strip">
