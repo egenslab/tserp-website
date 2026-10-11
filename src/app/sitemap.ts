@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { EI_COUNTRIES } from "@/components/EInvoice";
 import { FEATURES, POSTS, SITE, SOLUTIONS } from "@/lib/content";
 
 export const dynamic = "force-static";
@@ -15,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...["/features", "/solutions", "/pricing"].map((p) => page(p, 0.9, "monthly")),
     ...FEATURES.map((f) => page(`/features/${f.slug}`, 0.8, "monthly")),
     ...SOLUTIONS.map((s) => page(`/solutions/${s.slug}`, 0.8, "monthly")),
+    page("/e-invoicing", 0.8, "monthly"),
+    ...EI_COUNTRIES.map((c) => page(`/e-invoicing/${c.slug}`, 0.8, "monthly")),
     ...["/success-stories", "/about", "/contact", "/affiliate"].map((p) => page(p, 0.7, "monthly")),
     page("/blog", 0.7, "weekly"),
     ...POSTS.map((p) => page(`/blog/${p.slug}`, 0.6, "monthly", postDate(p.date))),

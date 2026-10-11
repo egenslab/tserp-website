@@ -90,6 +90,13 @@ export default function Compare() {
                 <td className="yes">✓</td>
               </tr>
               <tr>
+                <td>E-invoicing (UAE & Malaysia)</td>
+                <td className="no">—</td>
+                <td className="no">—</td>
+                <td className="hl-col yes">✓</td>
+                <td className="yes">✓</td>
+              </tr>
+              <tr>
                 <td>Finance & accounting, expenses</td>
                 <td className="no">—</td>
                 <td className="yes">✓</td>

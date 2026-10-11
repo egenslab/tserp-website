@@ -1,0 +1,408 @@
+{
+  "hub": {
+    "seoTitle": "Travel Agency E-Invoicing: UAE & Malaysia — TravelSuite",
+    "metaDescription": "E-invoicing built into TravelSuite ERP: LHDN MyInvois for Malaysia and Peppol e-invoicing for the UAE, created from the invoices your agency already issues.",
+    "title": "E-invoicing for travel agencies in the UAE and Malaysia",
+    "lead": "Issue invoices the way you do today. TravelSuite ERP turns them into compliant e-invoices, sends them to the tax authority's system and keeps every status on the invoice.",
+    "steps": [
+      {
+        "icon": "i-receipt",
+        "title": "Issue the invoice",
+        "text": "Bookings and quotations become invoices exactly as they do now."
+      },
+      {
+        "icon": "i-file",
+        "title": "Build the e-invoice",
+        "text": "The invoice is converted into the format your country requires."
+      },
+      {
+        "icon": "i-shield",
+        "title": "Submit and validate",
+        "text": "It is sent to MyInvois in Malaysia, or through your service provider in the UAE."
+      },
+      {
+        "icon": "i-check",
+        "title": "Status on the invoice",
+        "text": "Validation, rejection or delivery shows on the invoice, with a full log."
+      }
+    ],
+    "faqs": [
+      [
+        "Which countries are supported?",
+        "E-invoicing is available for Malaysia, through LHDN MyInvois, and for the United Arab Emirates, through the Peppol network. Ask our team about other countries."
+      ],
+      [
+        "Which plan includes e-invoicing?",
+        "E-invoicing is included in the Business plan and in Enterprise contracts."
+      ],
+      [
+        "Do I need to change how my team invoices?",
+        "No. Your team creates invoices, credit notes and refunds as usual. TravelSuite ERP builds and submits the e-invoice in the background."
+      ],
+      [
+        "Will my customers still receive a PDF invoice?",
+        "Yes. Customers receive the invoice they are used to, with the e-invoice details such as the validation ID or QR code where the country requires them."
+      ],
+      [
+        "Who sets it up?",
+        "Our team configures e-invoicing during onboarding, connects your tax registration and tests the first invoices with you."
+      ]
+    ]
+  },
+  "countries": [
+    {
+      "slug": "malaysia",
+      "flag": "my",
+      "name": "Malaysia",
+      "short": "LHDN MyInvois",
+      "seoTitle": "MyInvois E-Invoicing for Travel Agencies — TravelSuite",
+      "metaDescription": "Submit e-invoices to LHDN MyInvois from TravelSuite ERP: validation, QR codes, credit notes, consolidated and self-billed e-invoices for travel agencies.",
+      "title": "LHDN MyInvois e-invoicing for Malaysian travel agencies",
+      "lead": "Every invoice, credit note and refund note your agency issues is submitted to MyInvois, validated and returned with its unique ID and QR code, without leaving TravelSuite ERP.",
+      "cardText": "Submit to LHDN MyInvois, with validation, QR codes, credit notes and consolidated e-invoices.",
+      "facts": [
+        {
+          "value": "MyInvois",
+          "label": "Submitted to LHDN automatically"
+        },
+        {
+          "value": "QR code",
+          "label": "On every validated invoice"
+        },
+        {
+          "value": "72 hours",
+          "label": "Cancellation window tracked"
+        },
+        {
+          "value": "Business plan",
+          "label": "E-invoicing included"
+        }
+      ],
+      "overview": [
+        "Malaysia is moving every business to e-invoicing through MyInvois, the system run by LHDN (the Inland Revenue Board of Malaysia). Each invoice must be submitted in the LHDN format, validated, and shared with the buyer with its unique identifier and QR code.",
+        "TravelSuite ERP does this from the invoices your agency already creates for tour packages, hotels, visas, Hajj & Umrah and transport. Your team keeps working as before, and every e-invoice status is visible on the invoice itself."
+      ],
+      "providers": [
+        {
+          "icon": "i-shield",
+          "name": "LHDN MyInvois API",
+          "text": "Direct connection to the MyInvois system, using your own taxpayer credentials."
+        },
+        {
+          "icon": "i-globe",
+          "name": "Peppol access point",
+          "text": "Send e-invoices through a Peppol network provider, if your business already uses one."
+        },
+        {
+          "icon": "i-layers",
+          "name": "MyInvois middleware",
+          "text": "Connect through an approved middleware provider that your accountant prefers."
+        }
+      ],
+      "features": [
+        {
+          "icon": "i-receipt",
+          "title": "Automatic submission",
+          "text": "Invoices are submitted to MyInvois when they are issued, one by one or in batches."
+        },
+        {
+          "icon": "i-check",
+          "title": "Validation status and ID",
+          "text": "Each invoice shows whether it is validated or rejected, with the unique ID from LHDN."
+        },
+        {
+          "icon": "i-file",
+          "title": "QR code on the PDF",
+          "text": "Validated invoices carry the MyInvois QR code, so your customer can check them."
+        },
+        {
+          "icon": "i-wallet",
+          "title": "Credit, debit and refund notes",
+          "text": "Cancellations, changes and refunds become the matching e-invoice documents."
+        },
+        {
+          "icon": "i-users",
+          "title": "Consolidated e-invoices",
+          "text": "Walk-in customers who don't need an e-invoice are grouped into a monthly consolidated e-invoice."
+        },
+        {
+          "icon": "i-idcard",
+          "title": "Self-billed e-invoices",
+          "text": "Where self-billing applies, such as some agent commission payments, the e-invoice is issued for you."
+        },
+        {
+          "icon": "i-search",
+          "title": "Buyer TIN check",
+          "text": "The buyer's tax identification number is checked before the invoice is submitted."
+        },
+        {
+          "icon": "i-clock",
+          "title": "Cancellation window",
+          "text": "Cancel a validated e-invoice within the 72-hour window, with the reason recorded."
+        }
+      ],
+      "steps": [
+        {
+          "title": "Issue the invoice",
+          "text": "Your team creates the invoice from a booking or quotation, as usual."
+        },
+        {
+          "title": "Build the e-invoice",
+          "text": "TravelSuite ERP prepares it in the LHDN format with seller, buyer and tax details."
+        },
+        {
+          "title": "Submit to MyInvois",
+          "text": "The e-invoice is sent to MyInvois through your chosen connection."
+        },
+        {
+          "title": "Validated",
+          "text": "The unique ID and QR code are added to the invoice."
+        },
+        {
+          "title": "Share with the customer",
+          "text": "The customer receives the invoice PDF with the QR code by email or WhatsApp."
+        }
+      ],
+      "mock": {
+        "currency": "RM",
+        "rows": [
+          [
+            "INV-2026-0142",
+            "Customer 01",
+            "1,250.00",
+            "ok",
+            "Validated"
+          ],
+          [
+            "INV-2026-0143",
+            "Customer 02",
+            "4,780.00",
+            "wait",
+            "Submitted"
+          ],
+          [
+            "CN-2026-0012",
+            "Customer 01",
+            "-320.00",
+            "ok",
+            "Validated"
+          ],
+          [
+            "INV-2026-0144",
+            "Customer 03",
+            "2,100.00",
+            "err",
+            "Rejected: invalid buyer TIN"
+          ]
+        ],
+        "idLabel": "UUID",
+        "id": "F9D4…7A21",
+        "authority": "MyInvois"
+      },
+      "faqs": [
+        [
+          "Is MyInvois e-invoicing included?",
+          "Yes. E-invoicing for Malaysia is included in the Business plan and in Enterprise contracts."
+        ],
+        [
+          "Do I need my own MyInvois account?",
+          "Yes. Your business registers on MyInvois with LHDN and authorises TravelSuite ERP to submit on its behalf. Our team helps you with the setup."
+        ],
+        [
+          "What happens if an e-invoice is rejected?",
+          "The invoice shows the rejection reason from MyInvois. Correct the details, such as the buyer's TIN, and submit it again."
+        ],
+        [
+          "Can I cancel a validated e-invoice?",
+          "Yes, within the 72-hour window that LHDN allows. After that, issue a credit note instead."
+        ],
+        [
+          "How are walk-in customers handled?",
+          "Sales to customers who don't ask for an e-invoice can be combined into a consolidated e-invoice, as LHDN allows."
+        ],
+        [
+          "Which documents are supported?",
+          "Invoices, credit notes, debit notes, refund notes and self-billed e-invoices."
+        ]
+      ],
+      "overviewTitle": "How e-invoicing works in Malaysia"
+    },
+    {
+      "slug": "uae",
+      "flag": "ae",
+      "name": "United Arab Emirates",
+      "short": "Peppol e-invoicing",
+      "seoTitle": "UAE E-Invoicing for Travel Agencies — TravelSuite ERP",
+      "metaDescription": "UAE e-invoicing for travel agencies: TravelSuite ERP creates PINT AE e-invoices and exchanges them over Peppol through your Accredited Service Provider.",
+      "title": "UAE e-invoicing for travel agencies, ready for Peppol",
+      "lead": "TravelSuite ERP turns your invoices and credit notes into PINT AE e-invoices and exchanges them over the Peppol network through your Accredited Service Provider, with every status back on the invoice.",
+      "cardText": "PINT AE e-invoices over Peppol, sent through your Accredited Service Provider with full status tracking.",
+      "facts": [
+        {
+          "value": "PINT AE",
+          "label": "UAE e-invoice format"
+        },
+        {
+          "value": "Peppol",
+          "label": "Exchanged through your ASP"
+        },
+        {
+          "value": "TRN",
+          "label": "Checked for seller and buyer"
+        },
+        {
+          "value": "Business plan",
+          "label": "E-invoicing included"
+        }
+      ],
+      "overview": [
+        "The UAE is introducing e-invoicing in phases, starting with larger businesses. Invoices are exchanged in a structured format over the Peppol network through Accredited Service Providers (ASPs), and invoice data is reported to the Federal Tax Authority (FTA).",
+        "TravelSuite ERP prepares each invoice and credit note in the PINT AE format, sends it through your ASP and records delivery and reporting on the invoice, so your agency is ready when your phase begins."
+      ],
+      "providers": [
+        {
+          "icon": "i-shield",
+          "name": "Accredited Service Provider",
+          "text": "Connect the ASP your business has appointed under the FTA programme."
+        },
+        {
+          "icon": "i-globe",
+          "name": "Peppol access point",
+          "text": "Exchange e-invoices with other businesses over the Peppol network."
+        },
+        {
+          "icon": "i-layers",
+          "name": "Your existing ASP",
+          "text": "Already working with a provider? We connect TravelSuite ERP to it."
+        }
+      ],
+      "features": [
+        {
+          "icon": "i-file",
+          "title": "PINT AE e-invoices",
+          "text": "Invoices and credit notes are created in the UAE Peppol format automatically."
+        },
+        {
+          "icon": "i-globe",
+          "title": "Sent through your ASP",
+          "text": "E-invoices go to your Accredited Service Provider for delivery and reporting."
+        },
+        {
+          "icon": "i-search",
+          "title": "Buyer lookup",
+          "text": "Find the buyer's Peppol address from their details before sending."
+        },
+        {
+          "icon": "i-idcard",
+          "title": "TRN checks",
+          "text": "Seller and buyer tax registration numbers are checked before submission."
+        },
+        {
+          "icon": "i-wallet",
+          "title": "Credit notes",
+          "text": "Refunds and cancellations are issued as e-invoice credit notes linked to the original."
+        },
+        {
+          "icon": "i-coins",
+          "title": "VAT in AED",
+          "text": "Invoices in other currencies show the VAT amounts in AED, as the FTA requires."
+        },
+        {
+          "icon": "i-check",
+          "title": "Delivery and reporting status",
+          "text": "See when each e-invoice is sent, delivered and reported, or why it was rejected."
+        },
+        {
+          "icon": "i-layers",
+          "title": "Archive",
+          "text": "The e-invoice and the customer PDF are stored together with the booking."
+        }
+      ],
+      "steps": [
+        {
+          "title": "Issue the invoice",
+          "text": "Your team creates the invoice from a booking or quotation, as usual."
+        },
+        {
+          "title": "Convert to PINT AE",
+          "text": "TravelSuite ERP builds the e-invoice with TRNs, VAT and line details."
+        },
+        {
+          "title": "Send through your ASP",
+          "text": "The e-invoice goes to your Accredited Service Provider."
+        },
+        {
+          "title": "Delivered and reported",
+          "text": "The ASP delivers it to the buyer's provider and reports the data to the FTA."
+        },
+        {
+          "title": "Status on the invoice",
+          "text": "Delivery and reporting confirmations appear on the invoice."
+        }
+      ],
+      "mock": {
+        "currency": "AED",
+        "rows": [
+          [
+            "INV-2026-0311",
+            "Customer 01",
+            "3,675.00",
+            "ok",
+            "Delivered"
+          ],
+          [
+            "INV-2026-0312",
+            "Customer 02",
+            "12,400.00",
+            "ok",
+            "Reported to FTA"
+          ],
+          [
+            "INV-2026-0313",
+            "Customer 03",
+            "890.00",
+            "wait",
+            "Sent to ASP"
+          ],
+          [
+            "CN-2026-0021",
+            "Customer 02",
+            "-1,200.00",
+            "ok",
+            "Delivered"
+          ]
+        ],
+        "idLabel": "Peppol ID",
+        "id": "0235:…4410",
+        "authority": "Peppol"
+      },
+      "faqs": [
+        [
+          "Is UAE e-invoicing included?",
+          "Yes. E-invoicing for the UAE is included in the Business plan and in Enterprise contracts."
+        ],
+        [
+          "When does my business have to start?",
+          "The FTA is introducing e-invoicing in phases by business size. Our team will help you prepare for the date that applies to you."
+        ],
+        [
+          "Do I need an Accredited Service Provider?",
+          "Yes. In the UAE, e-invoices are exchanged through an Accredited Service Provider. We connect TravelSuite ERP to the ASP you appoint."
+        ],
+        [
+          "What format is used?",
+          "PINT AE, the UAE version of the Peppol invoice standard."
+        ],
+        [
+          "Do my customers still get a PDF?",
+          "Yes. Customers receive their usual invoice PDF, and the e-invoice is exchanged in the background."
+        ],
+        [
+          "How are refunds handled?",
+          "A refund or cancellation is issued as a credit note linked to the original e-invoice."
+        ]
+      ],
+      "overviewTitle": "How e-invoicing works in the UAE"
+    }
+  ]
+}

@@ -102,6 +102,7 @@ export default function Footer() {
               <Link href="/features/cms">Website CMS</Link>
               <Link href="/features/ai">AI Automation</Link>
               <Link href="/features/omnichannel">Omnichannel Inbox</Link>
+              <Link href="/e-invoicing">E-Invoicing</Link>
               <Link href="/features">All features</Link>
             </div>
             <div className="fcol">

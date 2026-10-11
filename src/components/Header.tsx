@@ -167,6 +167,11 @@ export default function Header() {
                         <span className="mi"><svg><use href="#i-mail" /></svg></span>
                         <span><span className="b">Marketing</span><small>Targeted email campaigns</small></span>
                       </Link>
+                      {" "}
+                      <Link href="/e-invoicing" className="mega-item">
+                        <span className="mi"><svg><use href="#i-shield" /></svg></span>
+                        <span><span className="b">E-Invoicing</span><small>UAE & Malaysia compliance</small></span>
+                      </Link>
                     </div>
                     <div className="mega-col">
                       <p className="mm-h">Platform</p>

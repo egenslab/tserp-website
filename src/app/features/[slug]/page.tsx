@@ -7,6 +7,7 @@ import GdsPriority from "@/components/GdsPriority";
 import HotelShowcase from "@/components/HotelShowcase";
 import { HotelCatalogue, HotelOps, HotelRates } from "@/components/HotelModules";
 import { MODULE_SECTIONS } from "@/components/modules";
+import { EiCallout } from "@/components/EInvoice";
 import { HajjPackages, HajjReadiness, HajjReports } from "@/components/HajjModules";
 import { TourBuilder, TourCatalogue, TourPricing } from "@/components/TourModules";
 import { TransportScorecard, TransportTrip, TransportVendors } from "@/components/TransportModules";
@@ -133,6 +134,7 @@ export default async function FeaturePage({ params }: Props) {
       {page.audiences && <Audiences data={page.audiences} />}
       {page.compare && <BeforeAfter data={page.compare} alt />}
       {page.markets && <MarketNotes data={page.markets} />}
+      {(f.slug === "finance" || f.slug === "invoices") && <EiCallout />}
       <FaqSection faqs={f.seo.faqs} alt />
       <section className="section">
         <div className="container">

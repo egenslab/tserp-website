@@ -15,6 +15,7 @@ import "@/styles/modules/ai.css";
 import "@/styles/modules/document-intelligence.css";
 import "@/styles/modules/omnichannel.css";
 import "@/styles/solutions-index.css";
+import "@/styles/einvoice.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import I18nProvider from "@/components/I18nProvider";
