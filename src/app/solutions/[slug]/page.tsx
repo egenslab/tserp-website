@@ -48,7 +48,7 @@ export default async function SolutionPage({ params }: Props) {
       </section>
       <FactStrip facts={s.facts} />
       <OverviewSection title={s.overviewTitle} paragraphs={s.seo.overview} />
-      <SolPairs pairs={s.pairs} title={s.title} />
+      <SolPairs pairs={s.pairs} />
       <SolJourney steps={s.journey} />
       <SolRoles roles={s.roles} />
       {s.story && <SolStory story={s.story} />}

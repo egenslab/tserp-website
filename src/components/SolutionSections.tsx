@@ -3,13 +3,13 @@ import Link from "next/link";
 import { SUCCESS, featureBySlug, type Solution } from "@/lib/content";
 import { Glyph, Icon } from "./ui";
 
-export function SolPairs({ pairs, title }: { pairs: Solution["pairs"]; title: string }) {
+export function SolPairs({ pairs }: { pairs: Solution["pairs"] }) {
   return (
     <section className="section alt sl-pairs">
       <div className="container">
         <div className="section-head">
           <span className="eyebrow">Before and after</span>
-          <h2>What changes for {title.toLowerCase()}</h2>
+          <h2>What changes with TravelSuite ERP</h2>
           <p>The everyday problems we hear most often, and how TravelSuite ERP solves each one.</p>
         </div>
         <div className="sl-pair-head" aria-hidden="true"><span>Today</span><span>With TravelSuite ERP</span></div>
