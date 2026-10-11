@@ -24,7 +24,7 @@ import { SITE } from "@/lib/content";
 import { EARLY_SCRIPT } from "@/lib/i18n";
 
 /** Google Analytics 4 (gtag.js) measurement ID. */
-const GA_ID = "G-W4T7FZ5YR8";
+const GA_ID = "G-YE5B754YF2";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
