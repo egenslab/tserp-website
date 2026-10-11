@@ -23,6 +23,9 @@ import WaFloat from "@/components/WaFloat";
 import { SITE } from "@/lib/content";
 import { EARLY_SCRIPT } from "@/lib/i18n";
 
+/** Google Analytics 4 (gtag.js) measurement ID. */
+const GA_ID = "G-W4T7FZ5YR8";
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title: "TravelSuite ERP",
@@ -41,6 +44,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: EARLY_SCRIPT }} />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');` }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
