@@ -37,16 +37,52 @@
       "office": false
     },
     {
+      "code": "eg",
+      "name": "Egypt",
+      "region": "North Africa",
+      "office": false
+    },
+    {
+      "code": "jo",
+      "name": "Jordan",
+      "region": "Middle East",
+      "office": false
+    },
+    {
+      "code": "tr",
+      "name": "Türkiye",
+      "region": "Europe & Middle East",
+      "office": false
+    },
+    {
       "code": "my",
       "name": "Malaysia",
       "region": "Southeast Asia",
       "office": true
     },
     {
+      "code": "id",
+      "name": "Indonesia",
+      "region": "Southeast Asia",
+      "office": false
+    },
+    {
       "code": "bd",
       "name": "Bangladesh",
       "region": "South Asia",
       "office": true
+    },
+    {
+      "code": "pk",
+      "name": "Pakistan",
+      "region": "South Asia",
+      "office": false
+    },
+    {
+      "code": "gb",
+      "name": "United Kingdom",
+      "region": "Europe",
+      "office": false
     },
     {
       "code": "us",

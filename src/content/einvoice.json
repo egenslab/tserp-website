@@ -1,8 +1,8 @@
 {
   "hub": {
-    "seoTitle": "Travel Agency E-Invoicing: GCC & Malaysia — TravelSuite",
-    "metaDescription": "E-invoicing for travel agencies in Saudi Arabia (ZATCA), the UAE and Oman (Peppol) and Malaysia (MyInvois), built into TravelSuite ERP's invoicing.",
-    "title": "E-invoicing for travel agencies in the GCC and Malaysia",
+    "seoTitle": "E-Invoicing Software for Travel Agencies — TravelSuite ERP",
+    "metaDescription": "E-invoicing for travel agencies in Saudi Arabia, the UAE, Oman, Egypt, Jordan, Türkiye, Malaysia and Indonesia, built into TravelSuite ERP's invoicing.",
+    "title": "E-invoicing for travel agencies in the Middle East and Asia",
     "lead": "Issue invoices the way you do today. TravelSuite ERP turns them into compliant e-invoices, sends them to the tax authority's system and keeps every status on the invoice.",
     "steps": [
       {
@@ -29,7 +29,7 @@
     "faqs": [
       [
         "Which countries are supported?",
-        "Saudi Arabia (ZATCA FATOORA), the United Arab Emirates and Oman (Peppol) and Malaysia (LHDN MyInvois). Qatar, Kuwait and Bahrain have not yet introduced national e-invoicing; we will add them when they do."
+        "Saudi Arabia (ZATCA), the United Arab Emirates and Oman (Peppol), Egypt (ETA), Jordan (JoFotara), Türkiye (e-Fatura and e-Arşiv), Malaysia (MyInvois) and Indonesia (Coretax). Qatar, Kuwait and Bahrain have not yet introduced national e-invoicing; we will add them when they do."
       ],
       [
         "Which plan includes e-invoicing?",
@@ -586,6 +586,540 @@
       ]
     },
     {
+      "slug": "egypt",
+      "flag": "eg",
+      "name": "Egypt",
+      "short": "ETA e-invoice & e-receipt",
+      "seoTitle": "Egypt ETA E-Invoicing for Travel Agencies — TravelSuite",
+      "metaDescription": "Egyptian Tax Authority e-invoicing and e-receipts for travel agencies: signed e-invoices, ETA validation, QR receipts and credit notes in TravelSuite ERP.",
+      "title": "ETA e-invoicing and e-receipts for travel agencies in Egypt",
+      "overviewTitle": "How e-invoicing works in Egypt",
+      "lead": "TravelSuite ERP signs your invoices and submits them to the Egyptian Tax Authority's e-invoicing system, and issues e-receipts for travellers where your agency is required to, with every status back on the invoice.",
+      "cardText": "Signed e-invoices to the Egyptian Tax Authority, plus e-receipts with QR codes for B2C sales.",
+      "status": "We are adding the ETA e-invoicing and e-receipt connection to TravelSuite ERP. Business plan customers in Egypt get it as part of setup. Ask our team for the go-live date.",
+      "facts": [
+        {
+          "value": "ETA",
+          "label": "Egyptian Tax Authority platform"
+        },
+        {
+          "value": "E-receipt",
+          "label": "For B2C sales, where required"
+        },
+        {
+          "value": "Digital signature",
+          "label": "On every e-invoice"
+        },
+        {
+          "value": "Business plan",
+          "label": "E-invoicing included"
+        }
+      ],
+      "overview": [
+        "The Egyptian Tax Authority (ETA) requires e-invoices for sales between businesses and to the government. Each invoice is digitally signed, submitted to the ETA system and validated before it counts for tax. For sales to consumers, taxpayers named in ETA decisions must also issue electronic receipts.",
+        "TravelSuite ERP prepares both from the invoices your agency already issues for tour packages, hotels, flights, Umrah and transport, so your team keeps working as before."
+      ],
+      "providers": [
+        {
+          "icon": "i-shield",
+          "name": "ETA e-invoicing API",
+          "text": "Direct connection to the ETA e-invoicing system with your taxpayer credentials."
+        },
+        {
+          "icon": "i-lock",
+          "name": "Signing certificate",
+          "text": "Each e-invoice is signed with your organisation's e-seal certificate."
+        },
+        {
+          "icon": "i-receipt",
+          "name": "ETA e-receipt API",
+          "text": "Electronic receipts for consumer sales, for agencies named in ETA decisions."
+        }
+      ],
+      "features": [
+        {
+          "icon": "i-receipt",
+          "title": "Automatic submission",
+          "text": "Invoices are submitted to the ETA when they are issued, one by one or in batches."
+        },
+        {
+          "icon": "i-lock",
+          "title": "Digital signature",
+          "text": "Each e-invoice is signed with your e-seal before it is sent."
+        },
+        {
+          "icon": "i-check",
+          "title": "Validation status and UUID",
+          "text": "See whether each invoice is valid or rejected, with the ETA's unique ID."
+        },
+        {
+          "icon": "i-file",
+          "title": "E-receipts with QR code",
+          "text": "Consumer sales get an electronic receipt with a QR code, where your agency is required to issue one."
+        },
+        {
+          "icon": "i-wallet",
+          "title": "Credit and debit notes",
+          "text": "Refunds, cancellations and changes become credit or debit notes linked to the original."
+        },
+        {
+          "icon": "i-idcard",
+          "title": "Buyer registration check",
+          "text": "The buyer's tax registration number is checked for business invoices."
+        },
+        {
+          "icon": "i-search",
+          "title": "Rejection reasons",
+          "text": "Rejected documents show the ETA's message so your team can fix and resend them."
+        },
+        {
+          "icon": "i-layers",
+          "title": "Archive",
+          "text": "E-invoices, receipts and customer PDFs are stored with the booking."
+        }
+      ],
+      "steps": [
+        {
+          "title": "Issue the invoice",
+          "text": "Your team creates the invoice from a booking or quotation, as usual."
+        },
+        {
+          "title": "Sign the e-invoice",
+          "text": "TravelSuite ERP builds the e-invoice and signs it with your e-seal."
+        },
+        {
+          "title": "Submit to the ETA",
+          "text": "The signed document is sent to the ETA e-invoicing system."
+        },
+        {
+          "title": "Validated",
+          "text": "The UUID and status come back to the invoice."
+        },
+        {
+          "title": "Share with the customer",
+          "text": "The customer receives the invoice or receipt PDF by email or WhatsApp."
+        }
+      ],
+      "mock": {
+        "currency": "EGP",
+        "rows": [
+          [
+            "INV-2026-0418",
+            "Customer 01",
+            "18,500.00",
+            "ok",
+            "Valid"
+          ],
+          [
+            "RCP-2026-2207",
+            "Customer 02",
+            "4,200.00",
+            "ok",
+            "Receipt submitted"
+          ],
+          [
+            "INV-2026-0419",
+            "Customer 03",
+            "36,900.00",
+            "wait",
+            "Submitted"
+          ],
+          [
+            "CN-2026-0015",
+            "Customer 01",
+            "-2,500.00",
+            "err",
+            "Rejected: buyer ID invalid"
+          ]
+        ],
+        "idLabel": "UUID",
+        "id": "3B7F…D10C",
+        "authority": "ETA"
+      },
+      "faqs": [
+        [
+          "Is e-invoicing for Egypt included?",
+          "Yes. E-invoicing for Egypt is included in the Business plan and in Enterprise contracts."
+        ],
+        [
+          "Do I need a signing certificate?",
+          "Yes. E-invoices in Egypt are signed with an e-seal certificate issued to your organisation. Our team helps you install it during setup."
+        ],
+        [
+          "Does my agency have to issue e-receipts?",
+          "E-receipts apply to the taxpayers named in the Egyptian Tax Authority's roll-out decisions. Check your tax registration with the ETA, and we will switch e-receipts on if you are included."
+        ],
+        [
+          "What happens if a document is rejected?",
+          "The invoice shows the ETA's rejection reason. Correct the details and submit it again."
+        ],
+        [
+          "Can I issue credit notes?",
+          "Yes. Refunds and cancellations are issued as credit notes linked to the original e-invoice."
+        ],
+        [
+          "Do my customers still get a PDF?",
+          "Yes. Customers receive their usual invoice or receipt PDF."
+        ]
+      ]
+    },
+    {
+      "slug": "jordan",
+      "flag": "jo",
+      "name": "Jordan",
+      "short": "JoFotara",
+      "seoTitle": "JoFotara E-Invoicing for Travel Agencies — TravelSuite",
+      "metaDescription": "JoFotara e-invoicing for Jordanian travel agencies: invoices cleared by the Income and Sales Tax Department, with QR codes and credit notes in TravelSuite ERP.",
+      "title": "JoFotara e-invoicing for travel agencies in Jordan",
+      "overviewTitle": "How e-invoicing works in Jordan",
+      "lead": "TravelSuite ERP sends each invoice to JoFotara for approval before it is issued, adds the QR code to the invoice and keeps every status on record.",
+      "cardText": "Invoices approved by JoFotara before they are issued, with QR codes and credit notes.",
+      "status": "We are adding the JoFotara connection to TravelSuite ERP. Business plan customers in Jordan get it as part of setup. Ask our team for the go-live date.",
+      "facts": [
+        {
+          "value": "JoFotara",
+          "label": "Jordan's national e-invoicing system"
+        },
+        {
+          "value": "Clearance",
+          "label": "Approved before the invoice is issued"
+        },
+        {
+          "value": "QR code",
+          "label": "On every approved invoice"
+        },
+        {
+          "value": "Business plan",
+          "label": "E-invoicing included"
+        }
+      ],
+      "overview": [
+        "Jordan's Income and Sales Tax Department (ISTD) runs JoFotara, the national e-invoicing system. VAT-registered businesses submit each invoice to JoFotara, which approves it before it is issued to the customer.",
+        "TravelSuite ERP does this from the invoices your agency creates for tours, hotels, transport and flights, including trips to Petra, Wadi Rum and the Dead Sea, so your team does not have to re-enter anything in the JoFotara portal."
+      ],
+      "providers": [
+        {
+          "icon": "i-shield",
+          "name": "JoFotara API",
+          "text": "Direct connection to JoFotara using your agency's activity credentials."
+        },
+        {
+          "icon": "i-globe",
+          "name": "JoFotara portal",
+          "text": "Use the ISTD portal alongside TravelSuite ERP during the switch-over."
+        },
+        {
+          "icon": "i-layers",
+          "name": "Your e-invoicing provider",
+          "text": "Already working with a provider? We can connect TravelSuite ERP to it."
+        }
+      ],
+      "features": [
+        {
+          "icon": "i-check",
+          "title": "Clearance before issue",
+          "text": "Each invoice is approved by JoFotara before your customer receives it."
+        },
+        {
+          "icon": "i-file",
+          "title": "QR code on the invoice",
+          "text": "Approved invoices carry the JoFotara QR code."
+        },
+        {
+          "icon": "i-receipt",
+          "title": "Cash and credit invoices",
+          "text": "Paid-now and on-account sales are submitted as the right invoice type."
+        },
+        {
+          "icon": "i-wallet",
+          "title": "Credit notes",
+          "text": "Refunds and cancellations become credit notes linked to the original invoice."
+        },
+        {
+          "icon": "i-idcard",
+          "title": "Buyer tax number",
+          "text": "The buyer's tax number is added for business customers."
+        },
+        {
+          "icon": "i-coins",
+          "title": "Amounts in JOD",
+          "text": "Totals and tax are calculated in Jordanian dinars to three decimals."
+        },
+        {
+          "icon": "i-search",
+          "title": "Status and error log",
+          "text": "See approved and rejected invoices, with JoFotara's messages to fix them."
+        },
+        {
+          "icon": "i-layers",
+          "title": "Archive",
+          "text": "The approved e-invoice and the customer PDF are stored with the booking."
+        }
+      ],
+      "steps": [
+        {
+          "title": "Issue the invoice",
+          "text": "Your team creates the invoice from a booking or quotation, as usual."
+        },
+        {
+          "title": "Build the e-invoice",
+          "text": "TravelSuite ERP prepares it in the JoFotara format."
+        },
+        {
+          "title": "Send for approval",
+          "text": "The invoice is submitted to JoFotara."
+        },
+        {
+          "title": "Approved",
+          "text": "The QR code and approval are added to the invoice."
+        },
+        {
+          "title": "Share with the customer",
+          "text": "The customer receives the invoice PDF by email or WhatsApp."
+        }
+      ],
+      "mock": {
+        "currency": "JOD",
+        "rows": [
+          [
+            "INV-2026-0233",
+            "Customer 01",
+            "845.000",
+            "ok",
+            "Approved"
+          ],
+          [
+            "INV-2026-0234",
+            "Customer 02",
+            "1,320.500",
+            "ok",
+            "Approved"
+          ],
+          [
+            "INV-2026-0235",
+            "Customer 03",
+            "260.000",
+            "wait",
+            "Awaiting approval"
+          ],
+          [
+            "CN-2026-0007",
+            "Customer 02",
+            "-150.000",
+            "err",
+            "Rejected: tax number missing"
+          ]
+        ],
+        "idLabel": "UUID",
+        "id": "A41C…6E92",
+        "authority": "JoFotara"
+      },
+      "faqs": [
+        [
+          "Is e-invoicing for Jordan included?",
+          "Yes. E-invoicing for Jordan is included in the Business plan and in Enterprise contracts."
+        ],
+        [
+          "Who has to use JoFotara?",
+          "VAT-registered businesses in Jordan issue their invoices through JoFotara. If your agency is registered for sales tax, it applies to you."
+        ],
+        [
+          "Do I need JoFotara credentials?",
+          "Yes. Your agency registers its activity on JoFotara and authorises TravelSuite ERP to submit on its behalf. Our team helps you with the setup."
+        ],
+        [
+          "What happens if an invoice is rejected?",
+          "The invoice shows JoFotara's message. Correct the details, such as the buyer's tax number, and submit it again."
+        ],
+        [
+          "Can I issue credit notes?",
+          "Yes. Refunds and cancellations are issued as credit notes linked to the original invoice."
+        ],
+        [
+          "Do my customers still get a PDF?",
+          "Yes. Customers receive the invoice PDF with the JoFotara QR code."
+        ]
+      ]
+    },
+    {
+      "slug": "turkey",
+      "flag": "tr",
+      "name": "Türkiye",
+      "short": "e-Fatura & e-Arşiv",
+      "seoTitle": "e-Fatura & e-Arşiv for Travel Agencies — TravelSuite",
+      "metaDescription": "e-Fatura and e-Arşiv invoicing for Turkish travel agencies: TravelSuite ERP picks the right type, sends it through GİB and tracks acceptance and returns.",
+      "title": "e-Fatura and e-Arşiv invoicing for travel agencies in Türkiye",
+      "overviewTitle": "How e-invoicing works in Türkiye",
+      "lead": "TravelSuite ERP checks whether each buyer is registered for e-Fatura, issues an e-Fatura or an e-Arşiv invoice accordingly and sends it through the Revenue Administration's system, with acceptance and status on every invoice.",
+      "cardText": "The right document every time: e-Fatura for registered buyers, e-Arşiv for everyone else.",
+      "status": "We are adding e-Fatura and e-Arşiv to TravelSuite ERP. Business plan customers in Türkiye get it as part of setup. Ask our team for the go-live date.",
+      "facts": [
+        {
+          "value": "e-Fatura",
+          "label": "For buyers registered with GİB"
+        },
+        {
+          "value": "e-Arşiv",
+          "label": "For travellers and other buyers"
+        },
+        {
+          "value": "8 days",
+          "label": "To accept or reject commercial e-Fatura"
+        },
+        {
+          "value": "Business plan",
+          "label": "E-invoicing included"
+        }
+      ],
+      "overview": [
+        "In Türkiye, the Revenue Administration (GİB) requires invoices to be electronic. Businesses registered for e-Fatura exchange invoices with each other through GİB's system, and invoices to everyone else, including individual travellers, are issued as e-Arşiv invoices.",
+        "TravelSuite ERP checks each buyer against the e-Fatura register and issues the right document from the invoices your agency already creates for tours, hotels, flights and transfers."
+      ],
+      "providers": [
+        {
+          "icon": "i-layers",
+          "name": "Special integrator",
+          "text": "Send e-Fatura and e-Arşiv through a GİB-approved special integrator (özel entegratör)."
+        },
+        {
+          "icon": "i-shield",
+          "name": "GİB portal",
+          "text": "Use the Revenue Administration's own portal while you switch over."
+        },
+        {
+          "icon": "i-globe",
+          "name": "Your existing integrator",
+          "text": "Already working with an integrator? We connect TravelSuite ERP to it."
+        }
+      ],
+      "features": [
+        {
+          "icon": "i-search",
+          "title": "Automatic type selection",
+          "text": "Each buyer is checked against the e-Fatura register to choose e-Fatura or e-Arşiv."
+        },
+        {
+          "icon": "i-file",
+          "title": "UBL-TR documents",
+          "text": "Invoices are created in the UBL-TR format that GİB requires."
+        },
+        {
+          "icon": "i-check",
+          "title": "Acceptance and rejection",
+          "text": "Track commercial e-Fatura that the buyer accepts or rejects within the eight-day window."
+        },
+        {
+          "icon": "i-wallet",
+          "title": "Return invoices",
+          "text": "Refunds and cancellations are handled with return invoices linked to the original."
+        },
+        {
+          "icon": "i-mail",
+          "title": "e-Arşiv by email",
+          "text": "Travellers receive their e-Arşiv invoice by email or WhatsApp."
+        },
+        {
+          "icon": "i-coins",
+          "title": "Foreign currency invoices",
+          "text": "Invoices in EUR or USD show the exchange rate and amounts in TRY."
+        },
+        {
+          "icon": "i-idcard",
+          "title": "Tax ID checks",
+          "text": "The buyer's tax number or national ID is checked before sending."
+        },
+        {
+          "icon": "i-layers",
+          "title": "Archive",
+          "text": "Every e-Fatura and e-Arşiv invoice is stored with the booking."
+        }
+      ],
+      "steps": [
+        {
+          "title": "Issue the invoice",
+          "text": "Your team creates the invoice from a booking or quotation, as usual."
+        },
+        {
+          "title": "Choose the type",
+          "text": "TravelSuite ERP checks the buyer and picks e-Fatura or e-Arşiv."
+        },
+        {
+          "title": "Send through GİB",
+          "text": "The invoice goes through your integrator to the Revenue Administration's system."
+        },
+        {
+          "title": "Delivered",
+          "text": "The buyer receives it, and commercial e-Fatura can be accepted or rejected."
+        },
+        {
+          "title": "Status on the invoice",
+          "text": "Delivery, acceptance or rejection appears on the invoice."
+        }
+      ],
+      "mock": {
+        "currency": "TRY",
+        "rows": [
+          [
+            "TSE2026000000412",
+            "Customer 01",
+            "48,750.00",
+            "ok",
+            "e-Fatura accepted"
+          ],
+          [
+            "TSA2026000001388",
+            "Customer 02",
+            "12,300.00",
+            "ok",
+            "e-Arşiv sent"
+          ],
+          [
+            "TSE2026000000413",
+            "Customer 03",
+            "96,400.00",
+            "wait",
+            "Awaiting response"
+          ],
+          [
+            "TSE2026000000414",
+            "Customer 01",
+            "-6,500.00",
+            "err",
+            "Rejected by buyer"
+          ]
+        ],
+        "idLabel": "ETTN",
+        "id": "9E2B…41F7",
+        "authority": "GİB"
+      },
+      "faqs": [
+        [
+          "Is e-invoicing for Türkiye included?",
+          "Yes. E-invoicing for Türkiye is included in the Business plan and in Enterprise contracts."
+        ],
+        [
+          "When do I issue e-Fatura and when e-Arşiv?",
+          "If the buyer is registered for e-Fatura, the invoice is an e-Fatura. For everyone else, including individual travellers, it is an e-Arşiv invoice. TravelSuite ERP checks this for you."
+        ],
+        [
+          "Do I need a special integrator?",
+          "You can use the Revenue Administration's portal or a GİB-approved special integrator. Most agencies with regular volume use an integrator, and we connect TravelSuite ERP to the one you choose."
+        ],
+        [
+          "What is the eight-day window?",
+          "A buyer can accept or reject a commercial e-Fatura within eight days. The status appears on the invoice."
+        ],
+        [
+          "How are refunds handled?",
+          "Refunds and cancellations are handled with return invoices linked to the original."
+        ],
+        [
+          "Can I invoice in euros or dollars?",
+          "Yes. Foreign currency invoices show the exchange rate and the amounts in Turkish lira."
+        ]
+      ]
+    },
+    {
       "slug": "malaysia",
       "flag": "my",
       "name": "Malaysia",
@@ -762,6 +1296,184 @@
       ],
       "overviewTitle": "How e-invoicing works in Malaysia",
       "status": "We are adding the MyInvois connection to TravelSuite ERP. Business plan customers in Malaysia get it as part of setup. Ask our team for the go-live date."
+    },
+    {
+      "slug": "indonesia",
+      "flag": "id",
+      "name": "Indonesia",
+      "short": "Coretax e-Faktur",
+      "seoTitle": "Coretax e-Faktur for Travel Agencies — TravelSuite",
+      "metaDescription": "Coretax e-Faktur for Indonesian travel agencies: tax invoices from TravelSuite ERP, buyer NPWP checks, replacements and cancellations, ready for monthly VAT.",
+      "title": "Coretax e-Faktur for travel agencies in Indonesia",
+      "overviewTitle": "How e-invoicing works in Indonesia",
+      "lead": "TravelSuite ERP prepares your VAT invoices for Coretax, the Directorate General of Taxes' system, checks the buyer's tax ID and keeps every e-Faktur, replacement and cancellation ready for your monthly VAT return.",
+      "cardText": "VAT invoices prepared for Coretax, with buyer tax ID checks, replacements and cancellations.",
+      "status": "We are adding the Coretax e-Faktur connection to TravelSuite ERP. Business plan customers in Indonesia get it as part of setup. Ask our team for the go-live date.",
+      "facts": [
+        {
+          "value": "Coretax",
+          "label": "Directorate General of Taxes system"
+        },
+        {
+          "value": "e-Faktur",
+          "label": "For VAT-registered businesses"
+        },
+        {
+          "value": "NPWP",
+          "label": "Buyer tax ID checked"
+        },
+        {
+          "value": "Business plan",
+          "label": "E-invoicing included"
+        }
+      ],
+      "overview": [
+        "Indonesia's Directorate General of Taxes (DJP) moved tax invoicing to Coretax. VAT-registered businesses issue their e-Faktur through Coretax, including replacements and cancellations, and report them in the monthly VAT return.",
+        "TravelSuite ERP prepares the e-Faktur from the invoices your agency already creates for Umrah packages, tours, hotels and flights, so your finance team does not have to type them again."
+      ],
+      "providers": [
+        {
+          "icon": "i-shield",
+          "name": "Coretax",
+          "text": "Prepare e-Faktur for Coretax, the DJP's tax administration system."
+        },
+        {
+          "icon": "i-layers",
+          "name": "Host-to-host provider",
+          "text": "Send high volumes through a DJP-approved host-to-host provider."
+        },
+        {
+          "icon": "i-file",
+          "name": "Import file",
+          "text": "Export a Coretax import file when you prefer to upload in batches."
+        }
+      ],
+      "features": [
+        {
+          "icon": "i-file",
+          "title": "E-Faktur from invoices",
+          "text": "VAT invoices are prepared from your bookings and quotations automatically."
+        },
+        {
+          "icon": "i-idcard",
+          "title": "Buyer NPWP or NIK check",
+          "text": "The buyer's tax ID is checked before the e-Faktur is created."
+        },
+        {
+          "icon": "i-check",
+          "title": "Approval status",
+          "text": "See which e-Faktur are approved in Coretax and which need attention."
+        },
+        {
+          "icon": "i-wallet",
+          "title": "Replacement e-Faktur",
+          "text": "Corrections are issued as replacement e-Faktur linked to the original."
+        },
+        {
+          "icon": "i-x",
+          "title": "Cancellations",
+          "text": "Cancelled sales are recorded as cancelled e-Faktur."
+        },
+        {
+          "icon": "i-calendar",
+          "title": "Monthly VAT ready",
+          "text": "All e-Faktur for the month are ready for your VAT return before the deadline."
+        },
+        {
+          "icon": "i-coins",
+          "title": "Amounts in IDR",
+          "text": "Invoices in other currencies show VAT in rupiah."
+        },
+        {
+          "icon": "i-layers",
+          "title": "Archive",
+          "text": "Each e-Faktur and the customer PDF are stored with the booking."
+        }
+      ],
+      "steps": [
+        {
+          "title": "Issue the invoice",
+          "text": "Your team creates the invoice from a booking or quotation, as usual."
+        },
+        {
+          "title": "Prepare the e-Faktur",
+          "text": "TravelSuite ERP builds it with the buyer's tax ID and VAT details."
+        },
+        {
+          "title": "Send to Coretax",
+          "text": "The e-Faktur is uploaded through your chosen connection."
+        },
+        {
+          "title": "Approved",
+          "text": "The approval comes back to the invoice."
+        },
+        {
+          "title": "Monthly VAT",
+          "text": "The month's e-Faktur are ready for your VAT return."
+        }
+      ],
+      "mock": {
+        "currency": "IDR",
+        "rows": [
+          [
+            "INV-2026-0611",
+            "Customer 01",
+            "38,500,000",
+            "ok",
+            "Approved"
+          ],
+          [
+            "INV-2026-0612",
+            "Customer 02",
+            "12,750,000",
+            "ok",
+            "Approved"
+          ],
+          [
+            "INV-2026-0613",
+            "Customer 03",
+            "64,900,000",
+            "wait",
+            "Uploaded"
+          ],
+          [
+            "INV-2026-0610",
+            "Customer 01",
+            "9,200,000",
+            "wait",
+            "Replaced"
+          ]
+        ],
+        "idLabel": "NSFP",
+        "id": "04002600…1287",
+        "authority": "Coretax"
+      },
+      "faqs": [
+        [
+          "Is e-invoicing for Indonesia included?",
+          "Yes. E-invoicing for Indonesia is included in the Business plan and in Enterprise contracts."
+        ],
+        [
+          "Who has to issue e-Faktur?",
+          "VAT-registered businesses (PKP) issue their tax invoices as e-Faktur through Coretax."
+        ],
+        [
+          "Can I correct an e-Faktur?",
+          "Yes. Issue a replacement e-Faktur linked to the original, and TravelSuite ERP keeps both on record."
+        ],
+        [
+          "What if a sale is cancelled?",
+          "The e-Faktur is cancelled in Coretax and the cancellation is recorded on the invoice."
+        ],
+        [
+          "Is it ready for my monthly VAT return?",
+          "Yes. The month's e-Faktur are listed together so your finance team can complete the VAT return on time."
+        ],
+        [
+          "Do my customers still get a PDF?",
+          "Yes. Customers receive their usual invoice PDF."
+        ]
+      ]
     }
   ]
 }

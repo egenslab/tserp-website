@@ -170,7 +170,7 @@ export default function Header() {
                       {" "}
                       <Link href="/e-invoicing" className="mega-item">
                         <span className="mi"><svg><use href="#i-shield" /></svg></span>
-                        <span><span className="b">E-Invoicing</span><small>ZATCA, Peppol, MyInvois</small></span>
+                        <span><span className="b">E-Invoicing</span><small>8 countries, incl. ZATCA</small></span>
                       </Link>
                     </div>
                     <div className="mega-col">

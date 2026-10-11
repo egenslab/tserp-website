@@ -186,13 +186,13 @@ export function EiCallout() {
         <div className="ei-callout">
           <span className="ei-callout-ico"><Icon name="i-shield" /></span>
           <div>
-            <h2>E-invoicing for the GCC and Malaysia</h2>
-            <p>On the Business plan, invoices and credit notes become e-invoices for ZATCA in Saudi Arabia, Peppol in the UAE and Oman, and MyInvois in Malaysia.</p>
+            <h2>E-invoicing in eight countries</h2>
+            <p>On the Business plan, invoices and credit notes become e-invoices for the tax system of your country, from ZATCA in Saudi Arabia to MyInvois in Malaysia.</p>
           </div>
           <div className="ei-callout-links">
             {EI_COUNTRIES.map((c) => (
               <Link key={c.slug} href={`/e-invoicing/${c.slug}`} className="ei-chip">
-                <img src={`/assets/img/flags/${c.flag}.svg`} alt={`${c.name} flag`} width={20} height={15} />{c.short}
+                <img src={`/assets/img/flags/${c.flag}.svg`} alt={`${c.name} flag`} width={20} height={15} />{c.name}
               </Link>
             ))}
           </div>
