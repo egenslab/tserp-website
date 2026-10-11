@@ -69,8 +69,8 @@ export function CloudVsLifetime() {
 const STEPS = [
   { day: "Day 1", icon: "i-wa", title: "Choose your plan", text: "Pick a plan with our team on WhatsApp and receive your invoice." },
   { day: "Days 1–3", icon: "i-rocket", title: "Setup", text: "Domain, branding, the modules you use and your payment methods are configured." },
-  { day: "Days 3–7", icon: "i-file", title: "Data import", text: "Customers, agents, suppliers and opening balances come in from Excel." },
-  { day: "Days 7–10", icon: "i-users", title: "Staff training", text: "Live online sessions for each team, recorded for new joiners." },
+  { day: "Days 3–7", icon: "i-file", title: "Import your data", text: "Customers, agents, suppliers and opening balances come in from Excel." },
+  { day: "Days 7–10", icon: "i-users", title: "Train your team", text: "Live online sessions for each team, recorded for new joiners." },
   { day: "Days 10–14", icon: "i-check", title: "Go live", text: "Your team works in TravelSuite ERP, with support on WhatsApp." },
 ];
 

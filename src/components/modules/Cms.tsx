@@ -188,7 +188,7 @@ export function CmsBottom() {
         <div className="cm-wall">
           <div className="cm-lib">
             <div className="cm-lib-h">
-              <h3><Icon name="i-layers" /> Media library</h3>
+              <span className="cm-lib-t"><Icon name="i-layers" /> Media library</span>
               <span className="cm-up">Upload</span>
             </div>
             <div className="cm-lib-body">

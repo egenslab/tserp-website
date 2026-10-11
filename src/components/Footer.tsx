@@ -92,7 +92,7 @@ export default function Footer() {
           </div>
           <div className="footer-grid">
             <div className="fcol">
-              <h5>Services</h5>
+              <p className="f-h">Services</p>
               <Link href="/features/flights">Flight Tickets</Link>
               <Link href="/features/hotels">Hotel Booking</Link>
               <Link href="/features/hajj">Hajj & Umrah</Link>
@@ -101,7 +101,7 @@ export default function Footer() {
               <Link href="/features/transport">Transport Booking</Link>
             </div>
             <div className="fcol">
-              <h5>Platform</h5>
+              <p className="f-h">Platform</p>
               <Link href="/features/crm">Travel ERP</Link>
               <Link href="/features/b2b">B2B & B2C Booking</Link>
               <Link href="/features/website">Agency Website</Link>
@@ -111,7 +111,7 @@ export default function Footer() {
               <Link href="/features">All features</Link>
             </div>
             <div className="fcol">
-              <h5>Solutions</h5>
+              <p className="f-h">Solutions</p>
               <Link href="/solutions/travel-agencies">Travel agencies</Link>
               <Link href="/solutions/hajj-umrah">Hajj & Umrah operators</Link>
               <Link href="/solutions/b2b-consolidators">B2B consolidators</Link>
@@ -120,7 +120,7 @@ export default function Footer() {
               <Link href="/solutions/corporate-travel">Corporate travel desks</Link>
             </div>
             <div className="fcol">
-              <h5>Company</h5>
+              <p className="f-h">Company</p>
               <Link href="/about">About us</Link>
               <Link href="/pricing">Pricing</Link>
               <Link href="/success-stories">Success stories</Link>
@@ -129,7 +129,7 @@ export default function Footer() {
               <Link href="/contact">Contact us</Link>
             </div>
             <div className="fcol">
-              <h5>Legal</h5>
+              <p className="f-h">Legal</p>
               <Link href="/terms">Terms & Conditions</Link>
               <Link href="/privacy">Privacy Policy</Link>
               <Link href="/refund">Refund Policy</Link>
@@ -138,7 +138,7 @@ export default function Footer() {
           </div>
           <div className="footer-markets">
             <div className="fm-head">
-              <h5>Markets we serve</h5>
+              <p className="f-h">Markets we serve</p>
             </div>
             <ul className="flag-list">
               {COUNTRIES.map((c) => (

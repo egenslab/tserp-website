@@ -88,7 +88,7 @@ export default function Header() {
                 <div className="mega" id="mega-products">
                   <div className="mega-inner container prod">
                     <div className="mega-col">
-                      <h6>Travel services</h6>
+                      <p className="mm-h">Travel services</p>
                       <Link href="/features/flights" className="mega-item">
                         <span className="mi"><svg><use href="#i-plane" /></svg></span>
                         <span><span className="b">Flight Tickets</span><small>4 GDS · booking & ticketing</small></span>
@@ -120,7 +120,7 @@ export default function Header() {
                       </Link>
                     </div>
                     <div className="mega-col">
-                      <h6>Business modules</h6>
+                      <p className="mm-h">Business modules</p>
                       <Link href="/features/crm" className="mega-item">
                         <span className="mi"><svg><use href="#i-users" /></svg></span>
                         <span><span className="b">CRM</span><small>Customers & leads</small></span>
@@ -147,7 +147,7 @@ export default function Header() {
                       </Link>
                     </div>
                     <div className="mega-col">
-                      <h6 aria-hidden="true"></h6>
+                      <p className="mm-h" aria-hidden="true"></p>
                       <Link href="/features/hr" className="mega-item">
                         <span className="mi"><svg><use href="#i-idcard" /></svg></span>
                         <span><span className="b">HR & Employees</span><small>Staff, attendance, payroll</small></span>
@@ -169,7 +169,7 @@ export default function Header() {
                       </Link>
                     </div>
                     <div className="mega-col">
-                      <h6>Platform</h6>
+                      <p className="mm-h">Platform</p>
                       <Link href="/features/b2b" className="mega-item">
                         <span className="mi"><svg><use href="#i-layers" /></svg></span>
                         <span><span className="b">B2B & B2C Booking</span><small>Agent portal + customer site</small></span>
@@ -202,7 +202,7 @@ export default function Header() {
                     </div>
                     <div className="mega-promo">
                       <span className="tag-lime">Free walkthrough</span>
-                      <h5>See TravelSuite ERP with your own data</h5>
+                      <p className="mm-promo-t">See TravelSuite ERP with your own data</p>
                       <p>A 30-minute online session, tailored to the services you sell.</p>
                       <Link href="/contact" className="btn btn-lime btn-block">Request a demo</Link>
                       {" "}
@@ -216,7 +216,7 @@ export default function Header() {
                 <div className="mega" id="mega-solutions">
                   <div className="mega-inner container sol">
                     <div className="mega-col">
-                      <h6>Who it's for</h6>
+                      <p className="mm-h">Who it's for</p>
                       <Link href="/solutions/travel-agencies" className="mega-item">
                         <span className="mi"><svg><use href="#i-building" /></svg></span>
                         <span><span className="b">Travel agencies</span><small>Ticketing, hotels and visa under one roof</small></span>
@@ -233,8 +233,8 @@ export default function Header() {
                       </Link>
                     </div>
                     <div className="mega-col">
-                      <h6 className="spacer" aria-hidden="true">
-                      </h6>
+                      <p className="mm-h spacer" aria-hidden="true">
+                      </p>
                       <Link href="/solutions/tour-operators" className="mega-item">
                         <span className="mi"><svg><use href="#i-map" /></svg></span>
                         <span><span className="b">Tour operators & DMCs</span><small>Packages, departures, suppliers</small></span>
@@ -251,7 +251,7 @@ export default function Header() {
                       </Link>
                     </div>
                     <div className="mega-col">
-                      <h6>By goal</h6>
+                      <p className="mm-h">By goal</p>
                       <Link href="/features/website" className="mega-item">
                         <span className="mi"><svg><use href="#i-rocket" /></svg></span>
                         <span><span className="b">Sell online 24/7</span><small>Booking website with online payment</small></span>
@@ -268,7 +268,7 @@ export default function Header() {
                       </Link>
                     </div>
                     <div className="mega-journey">
-                      <h6>The connected journey</h6>
+                      <p className="mm-h">The connected journey</p>
                       <p className="mj-title">From first chat to final invoice</p>
                       <ol>
                         {JOURNEY.map(([icon, title, text]) => (

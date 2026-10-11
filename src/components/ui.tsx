@@ -116,8 +116,8 @@ export function SuccessCard({ st }: { st: Story }) {
       <div className="success-body">
         <h3>
           {st.website
-            ? <a href={st.website} target="_blank" rel="noopener">{st.type} <Icon name="i-external" className="ic ext" /></a>
-            : st.type}
+            ? <a href={st.website} target="_blank" rel="noopener">{st.type}<span className="sr-only"> · {st.url}</span> <Icon name="i-external" className="ic ext" /></a>
+            : <>{st.type}<span className="sr-only"> · {st.url}</span></>}
         </h3>
         <p className="loc">
           {st.flag ? <img className="loc-flag" src={`/assets/img/flags/${st.flag}.svg`} alt={`${st.location} flag`} width={20} height={15} /> : <Icon name="i-pin" />}
