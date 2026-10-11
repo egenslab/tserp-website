@@ -1,5 +1,5 @@
 import ContactForm from "@/components/ContactForm";
-import { COUNTRIES, EMAIL, MAPS, WA } from "@/lib/content";
+import { COUNTRIES, EMAIL, WA } from "@/lib/content";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
@@ -7,6 +7,12 @@ export const metadata = pageMeta({
   description: "Request a TravelSuite ERP demo, chat with our team on WhatsApp at +880 13 2527 7120 or email info@travelsuiteerp.com.",
   path: "/contact",
 });
+
+const NEXT = [
+  { icon: "i-phone", tag: "Day 1", title: "We call you", text: "Within one business day, to understand your services." },
+  { icon: "i-eye", tag: "30 minutes", title: "Personal demo", text: "A 30-minute online walkthrough with your workflows." },
+  { icon: "i-file", tag: "Tailored", title: "Proposal", text: "A plan and quote that fits your agency." },
+];
 
 export default function ContactPage() {
   return (
@@ -45,26 +51,29 @@ export default function ContactPage() {
                       <li key={c.code}><img src={`/assets/img/flags/${c.code}.svg`} alt={`${c.name} flag`} width={28} height={21} /><span>{c.name}</span></li>
                     ))}
                   </ul>
-                  <a className="map-link" href={MAPS} target="_blank" rel="noopener"><svg className="ic"><use href="#i-pin" /></svg>View on Google Maps</a>
                 </div>
               </div>
             </div>
             <div className="next-steps">
+              <span className="ns-eyebrow">After you send the form</span>
               <h3>What happens next</h3>
               <ol>
-                <li>
-                  <span className="b">We call you</span>
-                  <span>Within one business day, to understand your services.</span>
-                </li>
-                <li>
-                  <span className="b">Personal demo</span>
-                  <span>A 30-minute online walkthrough with your workflows.</span>
-                </li>
-                <li>
-                  <span className="b">Proposal</span>
-                  <span>A plan and quote that fits your agency.</span>
-                </li>
+                {NEXT.map((n, i) => (
+                  <li key={n.title}>
+                    <span className="ns-node"><svg className="ic"><use href={`#${n.icon}`} /></svg></span>
+                    <div className="ns-body">
+                      <span className="ns-top"><span className="ns-n">{String(i + 1).padStart(2, "0")}</span><span className="ns-tag">{n.tag}</span></span>
+                      <span className="b">{n.title}</span>
+                      <span className="ns-text">{n.text}</span>
+                    </div>
+                  </li>
+                ))}
               </ol>
+              <a className="ns-wa" href={WA} target="_blank" rel="noopener">
+                <svg className="ic fill"><use href="#i-wa" /></svg>
+                <span><small>Need an answer sooner?</small><span className="b">Chat with us on WhatsApp</span></span>
+                <svg className="ic ns-go"><use href="#i-arrow" /></svg>
+              </a>
             </div>
           </div>
           <ContactForm />
