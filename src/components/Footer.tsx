@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { AI_LINKS, AI_PROMPT, COUNTRIES, PAYMENTS, SOCIAL } from "@/lib/content";
+import { AI_LINKS, AI_PROMPT, COUNTRIES, MAPS, PAYMENTS, SOCIAL, TRUSTPILOT } from "@/lib/content";
 import WaPill from "./WaPill";
 
 /** Call-to-action band and site footer. */
@@ -57,13 +57,13 @@ export default function Footer() {
             </div>
             <div className="footer-side">
               <div className="review-badges">
-                <a className="review-card" href="https://www.google.com/search?q=TravelSuite+ERP+reviews" target="_blank" rel="noopener">
+                <a className="review-card" href={MAPS} target="_blank" rel="noopener">
                   <img src="/assets/img/partners/google-g.svg" alt="Google Reviews" width="28" height="28" />
                   {" "}
                   <span className="rv-text"><span className="b">Google</span><span className="rv-stars g" aria-hidden="true">★★★★★</span><small>Write a review</small></span>
                 </a>
                 {" "}
-                <a className="review-card" href="https://www.trustpilot.com/review/travelsuiteerp.com" target="_blank" rel="noopener">
+                <a className="review-card" href={TRUSTPILOT} target="_blank" rel="noopener">
                   <img src="/assets/img/partners/trustpilot.svg" alt="Trustpilot" width="28" height="28" />
                   {" "}
                   <span className="rv-text"><span className="b">Trustpilot</span><span className="rv-stars tp" aria-hidden="true"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span><small>Write a review</small></span>

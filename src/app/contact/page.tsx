@@ -1,5 +1,5 @@
 import ContactForm from "@/components/ContactForm";
-import { COUNTRIES, EMAIL, WA } from "@/lib/content";
+import { COUNTRIES, EMAIL, MAPS, WA } from "@/lib/content";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
@@ -45,6 +45,7 @@ export default function ContactPage() {
                       <li key={c.code}><img src={`/assets/img/flags/${c.code}.svg`} alt={`${c.name} flag`} width={28} height={21} /><span>{c.name}</span></li>
                     ))}
                   </ul>
+                  <a className="map-link" href={MAPS} target="_blank" rel="noopener"><svg className="ic"><use href="#i-pin" /></svg>View on Google Maps</a>
                 </div>
               </div>
             </div>

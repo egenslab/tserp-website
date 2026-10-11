@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SITE, SOCIAL, type Faq } from "./content";
+import { MAPS, SITE, SOCIAL, TRUSTPILOT, type Faq } from "./content";
 
 type PageMeta = { title: string; description: string; path: string; keywords?: string; image?: string; article?: boolean };
 
@@ -37,7 +37,8 @@ export const ORG_LD = {
   "@context": "https://schema.org", "@type": "Organization", name: "TravelSuite ERP", url: SITE + "/",
   logo: SITE + "/assets/img/logo.png",
   parentOrganization: { "@type": "Organization", name: "Egens Lab Limited" },
-  sameAs: SOCIAL.filter((s) => !s.url.includes("wa.me")).map((s) => s.url),
+  sameAs: [...SOCIAL.filter((s) => !s.url.includes("wa.me")).map((s) => s.url), TRUSTPILOT],
+  hasMap: MAPS,
   contactPoint: {
     "@type": "ContactPoint", telephone: "+8801325277120", contactType: "sales", email: "info@travelsuiteerp.com",
     areaServed: ["BD", "MY", "SA", "AE", "QA", "KW", "OM", "BH", "US"], availableLanguage: ["English", "Bengali"],
