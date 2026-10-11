@@ -69,11 +69,6 @@ export default function ContactPage() {
                   </li>
                 ))}
               </ol>
-              <a className="ns-wa" href={WA} target="_blank" rel="noopener">
-                <svg className="ic fill"><use href="#i-wa" /></svg>
-                <span><small>Need an answer sooner?</small><span className="b">Chat with us on WhatsApp</span></span>
-                <svg className="ic ns-go"><use href="#i-arrow" /></svg>
-              </a>
             </div>
           </div>
           <ContactForm />
