@@ -16,7 +16,7 @@ function PlanPrice({ monthly, lifetime, period }: { monthly: number; lifetime: n
     return (
       <>
         <div className="price"><span className="b">{usd(lifetime)}</span><small>one-time</small></div>
-        <p className="billing-note">Self-hosted · 12 months updates</p>
+        <p className="billing-note">Self-hosted · Lifetime updates</p>
       </>
     );
   }

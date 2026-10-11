@@ -47,7 +47,7 @@ export type Solution = {
 export type Block = ["h2" | "p", string] | ["ul", string[]];
 export type Post = {
   slug: string; cat: string; icon: string; color: string; cover?: string; date: string; read: number;
-  title: string; seoTitle?: string; excerpt: string; body: Block[];
+  title: string; seoTitle?: string; metaDescription?: string; excerpt: string; body: Block[];
   extra: { takeaways?: string[]; blocks?: Block[]; faqs?: Faq[] };
 };
 export type LegalDoc = { slug: string; title: string; intro: string; updated: string; keyPoints: string[]; sections: [string, string[]][] };
@@ -79,8 +79,8 @@ export const groupTitle = (id: string) => FEATURE_GROUPS.find((g) => g.id === id
 
 // Blog publication dates for structured data
 export const ISO_DATES: Record<string, string> = {
-  "digitize-hajj-umrah-agency": "2026-10-02", "b2b-agent-credit-limits": "2026-09-24",
-  "double-entry-accounting-travel": "2026-09-15", "whatsapp-for-travel-agencies": "2026-09-05",
+  "digitize-hajj-umrah-agency": "2026-10-02", "b2b-agent-commission-payouts": "2026-09-24",
+  "travel-agency-profit-and-loss": "2026-09-15", "whatsapp-for-travel-agencies": "2026-09-05",
   "ai-trip-planners": "2026-08-27", "choosing-a-travel-erp": "2026-08-18",
 };
 

@@ -15,6 +15,16 @@
       "source": "/success-stories/:slug",
       "destination": "/success-stories",
       "permanent": true
+    },
+    {
+      "source": "/blog/b2b-agent-credit-limits",
+      "destination": "/blog/b2b-agent-commission-payouts",
+      "permanent": true
+    },
+    {
+      "source": "/blog/double-entry-accounting-travel",
+      "destination": "/blog/travel-agency-profit-and-loss",
+      "permanent": true
     }
   ]
 }

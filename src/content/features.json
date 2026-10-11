@@ -2212,7 +2212,7 @@
         "Profit you can trace to records"
       ],
       "seo": {
-        "keywords": "travel accounting software, travel agency accounting, double-entry accounting for travel, BSP reconciliation",
+        "keywords": "travel accounting software, travel agency accounting, travel agency invoicing software, travel profit and loss report",
         "overview": [
           "TravelSuite ERP includes travel agency accounting software for the daily money work of an agency. Hotel, tour, visa and Hajj & Umrah bookings, accepted quotations and walk-in sales become customer invoices with their items, issue date and due date. Each invoice shows the paid amount against the total, the balance due and a status of draft, unpaid, partial or paid, and overdue invoices are flagged.",
           "Every money movement is a transaction. Staff receive customer payments by cash, bank transfer or cheque, pay approved supplier expenses and issue refunds that stay linked to the original payment or advance. Cancelled transactions remain on record. The transactions list shows the payment number, date, related customer or expense, type, method, amount, status and who received it.",
@@ -3976,7 +3976,7 @@
           ],
           [
             "Can the site use my agency's domain?",
-            "The website carries your own name, logo and branding. Domain setup is handled during onboarding, so confirm the details for your plan in the demo."
+            "Yes. Your website runs on your agency's own domain, with your name, logo and branding. Our team connects the domain during onboarding."
           ]
         ]
       },

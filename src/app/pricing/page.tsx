@@ -13,7 +13,7 @@ export const metadata = pageMeta({
 });
 
 const FAQS: Faq[] = [
-  ["What is the difference between a cloud plan and a lifetime license?", "A cloud plan is hosted and maintained by us for a monthly or yearly fee. A lifetime license is a one-time payment: we install TravelSuite ERP on your own server and you get 12 months of updates, after which updates can be renewed."],
+  ["What is the difference between a cloud plan and a lifetime license?", "A cloud plan is hosted and maintained by us for a monthly or yearly fee. A lifetime license is a one-time payment: we install TravelSuite ERP on your own server and you receive lifetime updates, installed by our team."],
   ["Which plan should I start with?", "Small agencies selling two services usually start on Starter. Agencies with a sales team and accounts start on Growth. Hajj & Umrah operators, B2B consolidators and online travel agencies usually need Business. Our team can recommend a plan in a short call."],
   ["Can I change plans later?", "Yes. You can upgrade at any time and only pay the difference for the remaining period. Your data stays exactly where it is."],
   ["How do I buy and pay?", "Click Buy now on a plan and our team confirms the details with you on WhatsApp, then sends an invoice with the payment options for your country. Plans are priced in USD."],
@@ -41,7 +41,7 @@ export default function PricingPage() {
           <Plans />
           {" "}
           <Compare />
-          <p className="note">Prices are indicative and exclude supplier fees and VAT. Lifetime licenses include free installation and 12 months of updates.</p>
+          <p className="note">Prices are indicative and exclude supplier fees and VAT. Lifetime licenses include free installation and lifetime updates.</p>
         </div>
       </section>
       <PlanFinder />

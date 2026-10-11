@@ -213,8 +213,8 @@
         ]
       ]
     },
-    "seoTitle": "Hajj & Umrah Software for Agencies — TravelSuite ERP",
-    "metaDescription": "Hajj and Umrah software for agencies: pilgrim registration, groups, packages, visas, Makkah and Madinah hotels and payments in one place.",
+    "seoTitle": "Hajj & Umrah Travel Agency Solution — TravelSuite ERP",
+    "metaDescription": "How Hajj and Umrah travel agencies run the whole season in one system: pilgrim files, groups, visas, transport, invoices and payments, from enquiry to return.",
     "overviewTitle": "Hajj and Umrah management software for agencies",
     "facts": [
       {
@@ -311,7 +311,7 @@
     "title": "B2B consolidators",
     "tagline": "Agent network, commissions and payouts",
     "headline": "Grow your agent network without growing your back office",
-    "intro": "Consolidators live on volume and credit control. TravelSuite ERP gives every agent a self-service portal while you keep markups, credit limits and balances under control.",
+    "intro": "Consolidators live on volume and on paying their agents correctly. TravelSuite ERP links every sale to the agent who made it, calculates the commission and keeps earned, paid and available balances in one place.",
     "modules": [
       "b2b",
       "flights",
@@ -322,12 +322,12 @@
     ],
     "plan": "Business",
     "seo": {
-      "keywords": "B2B travel portal, travel consolidator software, sub-agent management, agent credit limit software",
+      "keywords": "B2B travel software, travel consolidator software, sub-agent management, agent commission software",
       "overview": [
         "TravelSuite ERP helps consolidators and wholesalers sell through a network of sub-agents. Agent profiles, agent bookings, commission and payouts are managed in one Agent Management workspace.",
         "Every booking made through an agent records the service, the customer, the sale and the commission, so each agent's earned, paid and available commission is always correct and payouts take minutes, not days.",
         "Commission can be a percentage or a fixed amount per booking, set as a default and changed for individual agents. A performance ranking shows which partners bring the most sales.",
-        "Flights, hotels, packages and accounting share the same database, so agent sales flow straight into invoices, ledgers and reports."
+        "Flights, hotels, packages and accounting share the same database, so agent sales flow straight into invoices, accounts and reports."
       ],
       "faqs": [
         [
@@ -365,7 +365,7 @@
       ]
     },
     "seoTitle": "B2B Travel Consolidator Software — TravelSuite ERP",
-    "metaDescription": "Consolidator software with a B2B agent portal, sub-agents, net fares, markups, credit limits and wallets, so your network grows, not your back office.",
+    "metaDescription": "Consolidator software for agent networks: link every sale to the agent, calculate commission per booking and pay out from a clear balance, all in one system.",
     "overviewTitle": "Software for consolidators and travel agent networks",
     "facts": [
       {

@@ -17,7 +17,7 @@
       "date": "2 October 2026",
       "read": 6,
       "title": "How to digitize your Hajj & Umrah agency before the next season",
-      "seoTitle": "How to Digitize Your Hajj & Umrah Agency — TravelSuite",
+      "seoTitle": "How to Digitize Your Hajj & Umrah Agency — TravelSuite ERP",
       "excerpt": "A practical plan to move pilgrim registration, packages and instalments out of spreadsheets.",
       "body": [
         [
@@ -99,157 +99,185 @@
             "Yes. Send payment links for card, PayPal or Apple Pay, or record bank and cash payments."
           ]
         ]
-      }
+      },
+      "metaDescription": "A practical plan to move pilgrim registration, packages and instalment payments out of spreadsheets and into one system before the next Hajj season."
     },
     {
-      "slug": "b2b-agent-credit-limits",
+      "slug": "b2b-agent-commission-payouts",
       "cat": "B2B",
       "icon": "i-layers",
       "color": "#0e4a7a",
       "cover": "/assets/img/blog/b2b-agent-credit-limits.jpg",
       "date": "24 September 2026",
       "read": 5,
-      "title": "B2B travel portals: how agent credit limits protect your cash flow",
-      "seoTitle": "How Agent Credit Limits Protect a B2B Travel Portal",
-      "excerpt": "Credit wins agents, but unmanaged credit sinks consolidators. Here is how to get the balance right.",
+      "title": "B2B travel sales: tracking agent commission from booking to payout",
+      "seoTitle": "How to Track B2B Agent Commission — TravelSuite ERP",
+      "metaDescription": "How travel agencies can link every B2B sale to the agent, release commission only when bookings complete and pay agents from a clear available balance.",
+      "excerpt": "Partner agents bring sales, but unclear commission costs trust. Here is how to track what every agent earns, from booking to payout.",
       "body": [
         [
           "p",
-          "Sub-agents choose the consolidator who gives them credit. But every ticket issued on credit is cash you have already paid to the airline. Without limits, a few slow payers can freeze your business."
+          "Partner agents can bring a large share of a travel agency's sales, and they stay loyal when they are paid correctly and on time. When commission lives in a spreadsheet, agents are paid late, paid twice or paid on bookings that were later cancelled."
         ],
         [
           "h2",
-          "Set limits per agent"
+          "Link every sale to the agent"
         ],
         [
           "p",
-          "Give each agent a credit limit based on their history and deposits. The portal blocks new bookings automatically when the limit is reached."
+          "Select the agent on each hotel, tour, visa or Hajj & Umrah booking. The sale and its commission are then attributed to that agent, so you always know which partner brought which customer."
         ],
         [
           "h2",
-          "Encourage deposits with a wallet"
+          "Set clear commission rules"
         ],
         [
           "p",
-          "A deposit wallet lets agents top up in advance by bank, bKash or Nagad and book instantly. You hold the cash before the ticket is issued."
+          "Use one default rule for all agents, as a percentage or a fixed amount per booking, and give individual agents their own rate where you have agreed one."
         ],
         [
           "ul",
           [
-            "Review limits monthly using the aging report",
-            "Share statements so agents see their balance",
-            "Reward fast payers with higher limits"
+            "Agree the rate in writing before the first booking",
+            "Use a fixed amount for low-value services such as visas",
+            "Review special rates when an agent's volume changes"
           ]
         ]
       ],
       "extra": {
         "takeaways": [
-          "Give every agent a clear credit limit",
-          "Use deposit wallets to collect cash before ticketing",
-          "Review aging reports every month"
+          "Attribute every booking to the agent who brought it",
+          "Release commission only when the booking is completed",
+          "Pay out from the available balance, not from memory"
         ],
         "blocks": [
           [
             "h2",
-            "Automate statements"
+            "Release commission at the right moment"
           ],
           [
             "p",
-            "When every ticket posts to the agent's ledger automatically, statements are always ready. Agents see their balance in the portal, which reduces disputes and speeds up payment."
+            "Commission can become available when a booking is confirmed or when it is completed. Waiting for completion is safer: a booking cancelled before travel never reaches the agent's available balance, so you never pay commission on a sale you lost."
           ],
           [
             "h2",
-            "Accept international payments"
+            "Pay from a clear balance"
           ],
           [
             "p",
-            "Agents in the GCC and Malaysia often prefer to top up by card. Accepting Visa, Mastercard, PayPal and Stripe alongside bank transfer makes deposits faster."
+            "For every agent, keep three figures side by side: commission earned, commission already paid and the balance available now. Pay any amount up to the available balance, and both sides can see exactly what is still owed."
+          ],
+          [
+            "h2",
+            "Grow the agents who grow you"
+          ],
+          [
+            "p",
+            "Rank agents by bookings, sales and commission earned every month. It shows which partners deserve more attention and which ones have gone quiet."
           ]
         ],
         "faqs": [
           [
-            "What is a good starting credit limit?",
-            "Many consolidators start with one week of an agent's average sales and adjust after three months of history."
+            "Should commission be a percentage or a fixed amount?",
+            "Percentages suit high-value services such as packages and tours. A fixed amount is simpler for low-value, high-volume services such as visas. Many agencies use a percentage as the default and fixed rates for specific agents."
           ],
           [
-            "Can limits change automatically?",
-            "Limits are set by your team, guided by the aging and payment history reports."
+            "When should an agent be paid?",
+            "Pay from the available balance on an agreed schedule, such as weekly or monthly. If commission is released only when bookings are completed, cancelled sales are never paid out."
+          ],
+          [
+            "How does TravelSuite ERP handle agent commission?",
+            "Agents are selected on bookings, commission is calculated from the default or the agent's own rate, and Commissions & Payouts shows the earned, paid and available amounts for every agent."
           ]
         ]
       }
     },
     {
-      "slug": "double-entry-accounting-travel",
+      "slug": "travel-agency-profit-and-loss",
       "cat": "Finance",
       "icon": "i-wallet",
       "color": "#7a3e12",
       "cover": "/assets/img/blog/double-entry-accounting-travel.jpg",
       "date": "15 September 2026",
-      "read": 7,
-      "title": "Why travel agencies need double-entry accounting",
-      "excerpt": "Sales are not profit. Learn how proper ledgers show what you really earn on every booking.",
+      "read": 6,
+      "title": "Sales are not profit: how to read your travel agency's profit and loss",
+      "seoTitle": "Travel Agency Profit and Loss, Explained — TravelSuite ERP",
+      "metaDescription": "A practical guide for travel agencies: track paid and due invoices, link supplier costs to bookings, record refunds and read profit on a cash or accrual basis.",
+      "excerpt": "Sales are not profit. Learn how invoices, supplier costs and refunds add up to what your agency really earns.",
       "body": [
         [
           "p",
-          "Travel agencies move large amounts of money that are not theirs: fares owed to airlines, hotel costs, visa fees. A simple cash book cannot tell you how much of the money in the bank is actually profit."
+          "Travel agencies move large amounts of money that is not theirs to keep: hotel costs, supplier bills, visa fees and agent commission. Money in the bank is not profit until every one of those costs has been counted."
         ],
         [
           "h2",
-          "Every booking has two sides"
+          "Start with paid and due on every invoice"
         ],
         [
           "p",
-          "When you sell a ticket, the customer or agent owes you, and you owe the airline. Double-entry accounting records both, so receivables and payables are always correct."
+          "Each booking should become an invoice with its items and due date. As payments are recorded against it, the invoice moves from unpaid to partial to paid, and the balance still due is always visible."
         ],
         [
           "h2",
-          "Profit per booking, not per month"
+          "Link costs to the booking"
         ],
         [
           "p",
-          "With service fees, markups and costs recorded per booking, you can see which services, agents and staff really make money."
+          "Record supplier costs as expenses with a category, such as accommodation or vendor services, and link them to the booking they belong to. The cost of a sale then sits next to its income instead of in a separate notebook."
         ],
         [
           "ul",
           [
-            "Know exactly what you owe each supplier",
-            "Collect agent dues before they age",
-            "Close the month in a day, not a week"
+            "Approve expenses before they are paid",
+            "Pay suppliers on their agreed payment terms",
+            "Watch the bills that fall due in the next seven days"
           ]
         ]
       ],
       "extra": {
         "takeaways": [
-          "A cash book cannot show real profit",
-          "Record receivables and payables on every booking",
-          "Measure profit per booking, service and agent"
+          "Money in the bank is not the same as profit",
+          "Link every supplier cost to the booking it belongs to",
+          "Read profit on both a cash and an accrual basis"
         ],
         "blocks": [
           [
             "h2",
-            "Handle multiple currencies correctly"
+            "Record refunds against the original payment"
           ],
           [
             "p",
-            "Agencies selling in SAR, AED, MYR or USD face exchange differences between booking and payment. Double-entry accounting records those gains and losses so they do not hide inside your margin."
+            "When a trip is cancelled, record the refund against the payment it reverses, with the reason and the method. Refunds then reduce net income in the right period and never disappear from the records."
           ],
           [
             "h2",
-            "Reconcile with BSP and suppliers"
+            "Cash basis or accrual basis"
           ],
           [
             "p",
-            "When tickets and supplier bills post automatically, BSP and supplier statements can be matched line by line in minutes instead of days."
+            "On a cash basis, profit counts only money actually received and paid. On an accrual basis, it also includes invoices and approved bills that are still due. Cash shows what you can spend today; accrual shows what the business really earned in the period. Look at both."
+          ],
+          [
+            "h2",
+            "Read the profit and loss every month"
+          ],
+          [
+            "p",
+            "Income received, refunds, expenses paid, net profit and margin for the month show whether the agency is growing or only getting busier. Compare the top income sources and top expense categories to see where to act."
           ]
         ],
         "faqs": [
           [
-            "Do I need an accountant to use it?",
-            "Daily work is automatic; an accountant reviews reports and closes the period."
+            "Do I still need an accountant?",
+            "Your team records invoices, payments and expenses as they happen. An accountant can then review the reports and prepare your statutory accounts and tax returns."
           ],
           [
-            "Can I export to my existing accounting software?",
-            "Yes. Export journals to Excel, QuickBooks or Xero."
+            "Which is better, cash or accrual basis?",
+            "Neither replaces the other. Use the cash basis to manage cash flow and the accrual basis to judge the real profit of a period."
+          ],
+          [
+            "Does TravelSuite ERP produce a profit and loss report?",
+            "Yes. The Profit & Loss report covers any date range on a cash or accrual basis, with print and export."
           ]
         ]
       }
@@ -328,7 +356,9 @@
             "Usually yes. The number is migrated to the WhatsApp Business Platform during setup."
           ]
         ]
-      }
+      },
+      "seoTitle": "WhatsApp for Travel Agencies — TravelSuite ERP",
+      "metaDescription": "Most travel enquiries now start on WhatsApp. See how a shared inbox helps your team answer every chat and turn more conversations into confirmed bookings."
     },
     {
       "slug": "ai-trip-planners",
@@ -400,7 +430,9 @@
             "English, Arabic, Bangla, Malay and many others."
           ]
         ]
-      }
+      },
+      "seoTitle": "AI Trip Planners for Travel Agencies — TravelSuite ERP",
+      "metaDescription": "AI can draft itineraries in seconds. Here is what AI trip planners do well, where they fall short and how to use them without losing the human touch."
     },
     {
       "slug": "choosing-a-travel-erp",
@@ -475,7 +507,9 @@
             "Yes. Book a guided demo with sample data based on your workflows."
           ]
         ]
-      }
+      },
+      "seoTitle": "How to Choose a Travel ERP: 10 Questions — TravelSuite ERP",
+      "metaDescription": "Ten questions to ask any travel software vendor before you move your agency to a new system, from bookings and accounts to data import, training and support."
     }
   ]
 }

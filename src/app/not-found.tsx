@@ -1,5 +1,12 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Icon } from "@/components/ui";
+
+export const metadata: Metadata = {
+  title: { absolute: "Page not found — TravelSuite ERP" },
+  description: "The page you are looking for has moved or does not exist. Go back to the TravelSuite ERP home page to find travel agency software, features and pricing.",
+  robots: { index: false },
+};
 
 export default function NotFound() {
   return (

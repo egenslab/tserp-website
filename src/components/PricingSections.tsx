@@ -32,7 +32,7 @@ const HOSTING: [string, string, string][] = [
   ["Payment", "Monthly or yearly", "One-time"],
   ["Where it runs", "Our cloud, managed by us", "Your own server"],
   ["Installation", "Included", "Free installation"],
-  ["Updates", "Always included", "12 months, then renewable"],
+  ["Updates", "Always included", "Lifetime updates"],
   ["Backups & SSL", "Daily backups and SSL included", "Set up and maintained by our team"],
   ["Support", "Included while subscribed", "Included with updates"],
   ["Best for", "Starting fast with a low monthly cost", "A one-time payment, with maintenance and updates done by our team"],
