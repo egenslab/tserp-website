@@ -1522,7 +1522,7 @@ html[lang="th"] body { line-height: 1.8; }
   .gp-search::after { right: auto; left: 50%; top: auto; bottom: -22px; width: 0; height: 22px; border-top: 0; border-left: 2px dashed var(--lime); }
   .gp-flow ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .gp-flow ol::before { display: none; }
-  .gp-fallback { right: 8px; top: 12px; transform: none; }
+  .gp-fallback { position: static; transform: none; justify-self: start; margin-top: 6px; }
 }
 @media (max-width: 640px) {
   .gp-flow { padding: 16px; }
