@@ -1,18 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import { sendForm } from "@/lib/forms";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-/**
- * Affiliate application form. Like the demo form, validation runs in the browser only:
- * connect onSubmit to your backend or a form service before going live.
- */
+/** Affiliate application form. Validated in the browser, then emailed to the team through Web3Forms (src/lib/forms.ts). */
 export default function AffiliateForm() {
   const [invalid, setInvalid] = useState({ name: false, email: false });
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
+  const [sending, setSending] = useState(false);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
@@ -20,6 +19,14 @@ export default function AffiliateForm() {
     setInvalid(next);
     if (next.name || next.email) {
       setMsg({ ok: false, text: "Enter your name and a valid email address." });
+      return;
+    }
+    setSending(true);
+    setMsg({ ok: true, text: "Sending…" });
+    const sent = await sendForm(form, `New affiliate application — ${String(data.get("name") ?? "").trim()}`);
+    setSending(false);
+    if (!sent) {
+      setMsg({ ok: false, text: "Your message could not be sent. Please try again, or message us on WhatsApp at +880 13 2527 7120." });
       return;
     }
     setMsg({ ok: true, text: "Thanks for applying. We'll review your application and reply within two business days." });
@@ -46,7 +53,8 @@ export default function AffiliateForm() {
       </div>
       <label htmlFor="a-msg">How will you promote TravelSuite ERP?<textarea id="a-msg" name="message" rows={4} placeholder="Your audience, the countries you reach, how many agencies you know" /></label>
       {" "}
-      <button className="btn btn-lime btn-block btn-lg" type="submit">Submit application</button>
+      <input type="checkbox" name="botcheck" className="hp" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+      <button className="btn btn-lime btn-block btn-lg" type="submit" disabled={sending}>Submit application</button>
       <p className={msg ? `form-msg ${msg.ok ? "ok" : "err"}` : "form-msg"} role="status">{msg?.text}</p>
     </form>
   );

@@ -1,18 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import { sendForm } from "@/lib/forms";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-/**
- * Demo request form. Validation runs in the browser only: connect it to your backend or a form
- * service in onSubmit (for example POST the FormData to your API) before going live.
- */
+/** Demo request form. Validated in the browser, then emailed to the team through Web3Forms (src/lib/forms.ts). */
 export default function ContactForm() {
   const [invalid, setInvalid] = useState({ name: false, email: false });
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
+  const [sending, setSending] = useState(false);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
@@ -22,6 +21,14 @@ export default function ContactForm() {
     setInvalid(next);
     if (next.name || next.email) {
       setMsg({ ok: false, text: "Enter your name and a valid email address." });
+      return;
+    }
+    setSending(true);
+    setMsg({ ok: true, text: "Sending…" });
+    const sent = await sendForm(form, `New demo request — ${String(data.get("company") ?? "").trim() || name}`);
+    setSending(false);
+    if (!sent) {
+      setMsg({ ok: false, text: "Your message could not be sent. Please try again, or message us on WhatsApp at +880 13 2527 7120." });
       return;
     }
     setMsg({ ok: true, text: "Thanks. Our team will contact you within one business day." });
@@ -62,7 +69,8 @@ export default function ContactForm() {
       </fieldset>
       <label htmlFor="f-msg">Message<textarea id="f-msg" name="message" rows={4} placeholder="Number of agents, suppliers you use, anything else" /></label>
       {" "}
-      <button className="btn btn-lime btn-block btn-lg" type="submit">Request a demo</button>
+      <input type="checkbox" name="botcheck" className="hp" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+      <button className="btn btn-lime btn-block btn-lg" type="submit" disabled={sending}>Request a demo</button>
       <p className={msg ? `form-msg ${msg.ok ? "ok" : "err"}` : "form-msg"} id="formMsg" role="status">{msg?.text}</p>
     </form>
   );
