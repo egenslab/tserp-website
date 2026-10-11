@@ -12,7 +12,7 @@ import { ORG_LD, pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "TravelSuite ERP — All-in-one Travel ERP for Travel Agencies",
-  description: "All-in-one travel ERP for travel agencies, Hajj & Umrah and tour operators: B2B & B2C booking, accounting, CRM, your website and WhatsApp in one platform.",
+  description: "All-in-one travel ERP with GDS flight ticketing on Amadeus, Sabre, Travelport and Galileo, plus hotels, Hajj & Umrah, tours, B2B booking, CRM and accounting.",
   path: "/",
 });
 
@@ -24,9 +24,9 @@ export default function HomePage() {
       <section className="hero">
         <div className="container hero-grid">
           <div className="hero-copy">
-            <span className="pill">B2B & B2C Booking · Travel ERP · Website · AI · Omnichannel</span>
+            <span className="pill">GDS Flights · B2B & B2C Booking · Travel ERP · Website · AI</span>
             <h1>All-in-one travel ERP for modern <span className="hl">travel agencies</span></h1>
-            <p className="lead">Manage tour packages, hotels, transport, visas, Hajj & Umrah, CRM, HRM, bookings, accounting and agents in one platform.</p>
+            <p className="lead">Book and ticket flights through Amadeus, Sabre, Travelport and Galileo, and manage hotels, tour packages, transport, visas, Hajj & Umrah, CRM, HRM, accounting and agents in one platform.</p>
             <div className="hero-ctas">
               <Link href="/contact" className="btn btn-lime btn-lg">Request a demo <svg className="ic"><use href="#i-arrow" /></svg></Link>
               {" "}
