@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { EI_COUNTRIES, EiFeatures, EiOther, EiShowcase, EiSteps, eiCountry } from "@/components/EInvoice";
+import { EI_COUNTRIES, EiFeatures, EiOther, EiShowcase, EiStatus, EiSteps, eiCountry } from "@/components/EInvoice";
 import { FaqSection, JsonLd, OverviewSection, PageHero } from "@/components/ui";
 import { breadcrumbLd, faqLd, pageMeta } from "@/lib/seo";
 
@@ -21,6 +21,7 @@ export default async function EInvoiceCountryPage({ params }: Props) {
     <>
       <JsonLd data={[breadcrumbLd([["Home", "/"], ["E-invoicing", "/e-invoicing"], [c.name, null]], path), faqLd(c.faqs)]} />
       <PageHero crumbs={[["Home", "/"], ["E-invoicing", "/e-invoicing"], [c.name, null]]} title={c.title} lead={c.lead} />
+      <EiStatus text={c.status} />
       <EiShowcase c={c} />
       <OverviewSection title={c.overviewTitle} paragraphs={c.overview} />
       <EiFeatures c={c} />

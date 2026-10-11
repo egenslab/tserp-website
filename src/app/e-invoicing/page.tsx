@@ -1,4 +1,4 @@
-import { EI_HUB, EiCountryCards, EiSteps } from "@/components/EInvoice";
+import { EI_HUB, EiCountryCards, EiStatus, EiSteps } from "@/components/EInvoice";
 import { FaqSection, JsonLd, PageHero } from "@/components/ui";
 import { breadcrumbLd, faqLd, pageMeta } from "@/lib/seo";
 
@@ -9,6 +9,7 @@ export default function EInvoicingPage() {
     <>
       <JsonLd data={[breadcrumbLd([["Home", "/"], ["E-invoicing", null]], "/e-invoicing"), faqLd(EI_HUB.faqs)]} />
       <PageHero crumbs={[["Home", "/"], ["E-invoicing", null]]} title={EI_HUB.title} lead={EI_HUB.lead} />
+      <EiStatus text={EI_HUB.status} />
       <EiCountryCards />
       <EiSteps steps={EI_HUB.steps} eyebrow="How it works" title="From invoice to e-invoice in four steps" alt />
       <FaqSection faqs={EI_HUB.faqs} />

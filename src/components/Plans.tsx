@@ -94,7 +94,7 @@ export default function Plans() {
             <li>B2B agents with commission & payouts</li>
             <li>Full ERP: HR, help desk, workflows</li>
             <li>AI agents & AI trip planner</li>
-            <li>E-invoicing for the UAE & Malaysia</li>
+            <li>E-invoicing: Saudi Arabia, UAE, Oman, Malaysia</li>
             <li>Unlimited users · 5 branches</li>
           </ul>
         </div>

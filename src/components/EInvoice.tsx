@@ -7,14 +7,23 @@ type Step = { icon?: string; title: string; text: string };
 type Item = { icon: string; title: string; text: string };
 export type EiCountry = {
   slug: string; flag: string; name: string; short: string; seoTitle: string; metaDescription: string;
-  title: string; lead: string; cardText: string; overviewTitle: string; facts: { value: string; label: string }[]; overview: string[];
+  title: string; lead: string; cardText: string; overviewTitle: string; status: string; facts: { value: string; label: string }[]; overview: string[];
   providers: { icon: string; name: string; text: string }[]; features: Item[]; steps: Step[];
   mock: { currency: string; rows: string[][]; idLabel: string; id: string; authority: string };
   faqs: [string, string][];
 };
-export const EI_HUB = data.hub as { seoTitle: string; metaDescription: string; title: string; lead: string; steps: Step[]; faqs: [string, string][] };
+export const EI_HUB = data.hub as { seoTitle: string; metaDescription: string; title: string; lead: string; status: string; steps: Step[]; faqs: [string, string][] };
 export const EI_COUNTRIES = data.countries as EiCountry[];
 export const eiCountry = (slug: string) => EI_COUNTRIES.find((c) => c.slug === slug);
+
+/** Roll-out note: these connections are being added country by country. */
+export function EiStatus({ text }: { text: string }) {
+  return (
+    <div className="container">
+      <p className="ei-status"><span className="ei-status-dot" aria-hidden="true" /><span className="b">Rolling out</span>{text}</p>
+    </div>
+  );
+}
 
 /** Country picker on the hub page. */
 export function EiCountryCards() {
@@ -39,6 +48,7 @@ export function EiCountryCards() {
           ))}
         </div>
         <p className="ei-plan-note"><Icon name="i-award" />E-invoicing is included in the Business plan. <Link href="/pricing">See pricing</Link></p>
+        <p className="ei-plan-note ei-plan-sub">Qatar, Kuwait and Bahrain have not introduced national e-invoicing yet. We will add them when they do.</p>
       </div>
     </section>
   );
@@ -148,17 +158,21 @@ export function EiFeatures({ c }: { c: EiCountry }) {
   );
 }
 
-/** Link to the other country's guide at the bottom of a country page. */
+/** Links to the other countries' guides at the bottom of a country page. */
 export function EiOther({ c }: { c: EiCountry }) {
-  const o = EI_COUNTRIES.find((x) => x.slug !== c.slug)!;
   return (
     <section className="section ei-other">
       <div className="container">
-        <Link href={`/e-invoicing/${o.slug}`} className="ei-other-card">
-          <img src={`/assets/img/flags/${o.flag}.svg`} alt={`${o.name} flag`} width={40} height={30} />
-          <span><small>Also available</small><span className="b">{o.title}</span></span>
-          <Icon name="i-arrow" />
-        </Link>
+        <p className="ei-other-h">E-invoicing in other countries</p>
+        <div className="ei-other-grid">
+          {EI_COUNTRIES.filter((x) => x.slug !== c.slug).map((o) => (
+            <Link key={o.slug} href={`/e-invoicing/${o.slug}`} className="ei-other-card">
+              <img src={`/assets/img/flags/${o.flag}.svg`} alt={`${o.name} flag`} width={40} height={30} />
+              <span><small>{o.short}</small><span className="b">{o.name}</span></span>
+              <Icon name="i-arrow" />
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -172,8 +186,8 @@ export function EiCallout() {
         <div className="ei-callout">
           <span className="ei-callout-ico"><Icon name="i-shield" /></span>
           <div>
-            <h2>E-invoicing for the UAE and Malaysia</h2>
-            <p>On the Business plan, invoices and credit notes are submitted as e-invoices: LHDN MyInvois in Malaysia and Peppol in the UAE.</p>
+            <h2>E-invoicing for the GCC and Malaysia</h2>
+            <p>On the Business plan, invoices and credit notes become e-invoices for ZATCA in Saudi Arabia, Peppol in the UAE and Oman, and MyInvois in Malaysia.</p>
           </div>
           <div className="ei-callout-links">
             {EI_COUNTRIES.map((c) => (

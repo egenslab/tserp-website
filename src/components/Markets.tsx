@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Icon } from "./ui";
 
 /** Countries with an e-invoicing guide (/e-invoicing/<slug>). */
-const EINVOICE: Record<string, string> = { ae: "uae", my: "malaysia" };
+const EINVOICE: Record<string, string> = { sa: "saudi-arabia", ae: "uae", om: "oman", my: "malaysia" };
 
 /** "Where we work" section with country flags and office badges. */
 export default function Markets() {
