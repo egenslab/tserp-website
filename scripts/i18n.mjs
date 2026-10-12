@@ -20,7 +20,7 @@ const SUFFIX = " — TravelSuite ERP";
 // Text that stays as written in every language: brand and product names
 const BRANDS = new Set(`Amadeus Sabre Travelport Duffel Kiwi.com Hotelbeds Expedia Hotels.com WebBeds TBO Tripadvisor GetYourGuide
 SSLCommerz Mastercard Stripe PayPal Razorpay WhatsApp Messenger Instagram Mailgun OpenAI QuickBooks Xero English
-travelsuiteerp.com EN in f ChatGPT Claude Perplexity Topics Trustpilot LinkedIn Facebook YouTube Visa`.split(/\s+/));
+travelsuiteerp.com EN in f ChatGPT Claude Perplexity Topics Trustpilot LinkedIn Facebook YouTube TikTok Visa`.split(/\s+/));
 ["Twilio SMS", "Google Analytics", "Google Maps", "WhatsApp, Messenger, Instagram", "WhatsApp + Facebook + Instagram",
   "+ Messenger, Instagram", "Google AI", "Apple Pay", "Google Pay", "American Express", "TravelSuite ERP", "Google Gemini",
   "Microsoft Copilot", "Grok", "Booking.com", "Agoda", "Gemini", "Copilot", "Meta AI", "DeepSeek", "Le Chat", "You.com",
