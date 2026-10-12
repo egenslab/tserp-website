@@ -73,12 +73,6 @@
       "office": true
     },
     {
-      "code": "pk",
-      "name": "Pakistan",
-      "region": "South Asia",
-      "office": false
-    },
-    {
       "code": "gb",
       "name": "United Kingdom",
       "region": "Europe",

@@ -30,6 +30,9 @@ import { EARLY_SCRIPT } from "@/lib/i18n";
 /** Google Analytics 4 (gtag.js) measurement ID. */
 const GA_ID = "G-YE5B754YF2";
 
+/** Microsoft Clarity project ID. */
+const CLARITY_ID = "ywjws0uzun";
+
 /** Countries where analytics cookies wait for consent (EEA, UK, Switzerland). Elsewhere they are on until the visitor declines. */
 const CONSENT_REGIONS = "AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE IS LI NO GB CH".split(" ");
 
@@ -39,6 +42,10 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
 try{var c=localStorage.getItem('${CONSENT_KEY}');if(c==='granted'||c==='denied')gtag('consent','update',{analytics_storage:c});}catch(e){}
 gtag('js',new Date());gtag('config','${GA_ID}');`;
+
+/** Microsoft Clarity. A visitor who declined analytics cookies is passed on as no consent. */
+const CLARITY_SCRIPT = `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","${CLARITY_ID}");
+try{if(localStorage.getItem('${CONSENT_KEY}')==='denied')clarity('consent',false);}catch(e){}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
@@ -60,6 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: EARLY_SCRIPT }} />
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
         <script dangerouslySetInnerHTML={{ __html: GTAG_SCRIPT }} />
+        <script dangerouslySetInnerHTML={{ __html: CLARITY_SCRIPT }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}

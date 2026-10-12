@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { CONSENT_KEY } from "@/lib/consent";
 
 type Gtag = (...args: unknown[]) => void;
+type Clarity = (cmd: string, value?: boolean) => void;
 
 /** Cookie notice for Google Analytics. Reopened from any [data-cookie-settings] link (footer). */
 export default function CookieBanner() {
@@ -24,6 +25,7 @@ export default function CookieBanner() {
   const choose = (value: "granted" | "denied") => {
     try { localStorage.setItem(CONSENT_KEY, value); } catch {}
     (window as unknown as { gtag?: Gtag }).gtag?.("consent", "update", { analytics_storage: value });
+    (window as unknown as { clarity?: Clarity }).clarity?.("consent", value === "granted");
     setOpen(false);
   };
 
