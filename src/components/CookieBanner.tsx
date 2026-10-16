@@ -26,6 +26,7 @@ export default function CookieBanner() {
     try { localStorage.setItem(CONSENT_KEY, value); } catch {}
     (window as unknown as { gtag?: Gtag }).gtag?.("consent", "update", { analytics_storage: value });
     (window as unknown as { clarity?: Clarity }).clarity?.("consent", value === "granted");
+    (window as unknown as { fbq?: Gtag }).fbq?.("consent", value === "granted" ? "grant" : "revoke");
     setOpen(false);
   };
 
@@ -37,7 +38,7 @@ export default function CookieBanner() {
       </span>
       <div className="cb-body">
         <span className="b" id="cookie-title">Cookies on this site</span>
-        <p>We use Google Analytics cookies to understand how visitors use this site. You can accept or decline them, and change your choice at any time.</p>
+        <p>We use cookies from Google Analytics and Meta to understand how visitors use this site and to measure our ads. You can accept or decline them, and change your choice at any time.</p>
         <Link href="/privacy">Privacy Policy</Link>
       </div>
       <div className="cb-actions">

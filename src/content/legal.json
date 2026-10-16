@@ -164,7 +164,7 @@
   {
     "slug": "privacy",
     "title": "Privacy Policy",
-    "updated": "11 October 2026",
+    "updated": "16 October 2026",
     "intro": "This policy explains how TravelSuite ERP collects, uses and protects personal information, and the choices and rights you have.",
     "keyPoints": [
       "We collect the details you share with us, account and billing information, and basic website usage data.",
@@ -223,6 +223,7 @@
         [
           "Our website uses storage that is needed for it to work, such as remembering your language choice and your cookie choice.",
           "We also use Google Analytics, provided by Google, to understand which pages are useful and how visitors find us. Google Analytics sets cookies on your device and processes usage data on our behalf.",
+          "We also use the Meta Pixel, provided by Meta Platforms, to measure the results of our ads on Facebook and Instagram. It sets cookies on your device and follows the same choice as analytics cookies: in the European Economic Area, the United Kingdom and Switzerland it is used only after you accept, and elsewhere unless you decline.",
           "In the European Economic Area, the United Kingdom and Switzerland, analytics cookies are set only after you accept them. Elsewhere they are on unless you decline them. You can change your choice at any time with the “Cookie settings” link at the bottom of every page.",
           "You can also block or delete cookies in your browser settings. Some features of the website may not work as intended without them."
         ]

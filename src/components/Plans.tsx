@@ -36,7 +36,7 @@ function BuyNow({ plan, monthly, lifetime, period, featured = false }: { plan: s
     : period === "yearly" ? `${usd(monthly * YEARLY_DISCOUNT * 12)}/year` : `${usd(monthly)}/month`;
   const text = `Hi, I want to buy the TravelSuite ERP ${plan} plan (${PERIOD_LABEL[period]}, ${price}).`;
   return (
-    <a href={`${WA}?text=${encodeURIComponent(text)}`} target="_blank" rel="noopener" className={`btn btn-block ${featured ? "btn-lime" : "btn-outline"}`}>
+    <a href={`${WA}?text=${encodeURIComponent(text)}`} target="_blank" rel="noopener" data-plan={plan} data-value={period === "lifetime" ? lifetime : period === "yearly" ? Math.round(monthly * YEARLY_DISCOUNT * 12) : monthly} className={`btn btn-block ${featured ? "btn-lime" : "btn-outline"}`}>
       <svg className="ic fill"><use href="#i-wa" /></svg>Buy now
     </a>
   );

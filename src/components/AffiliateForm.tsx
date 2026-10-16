@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { sendForm } from "@/lib/forms";
+import { track } from "@/lib/track";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -30,6 +31,7 @@ export default function AffiliateForm() {
       return;
     }
     setMsg({ ok: true, text: "Thanks for applying. We'll review your application and reply within two business days." });
+    track("affiliate");
     form.reset();
   };
 

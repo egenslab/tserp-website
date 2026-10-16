@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { sendForm } from "@/lib/forms";
+import { track } from "@/lib/track";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -32,6 +33,7 @@ export default function ContactForm() {
       return;
     }
     setMsg({ ok: true, text: "Thanks. Our team will contact you within one business day." });
+    track("lead");
     form.reset();
   };
 
