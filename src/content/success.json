@@ -121,5 +121,22 @@
    "Experiences"
   ],
   "metric": "Tour packages, hotels, visas and experiences on one platform"
+ },
+ {
+  "slug": "triprex",
+  "shot": "triprex",
+  "url": "triprex.egenslab.com",
+  "website": "https://triprex.egenslab.com/",
+  "type": "Tour and travel agency",
+  "location": "USA",
+  "flag": "us",
+  "chips": [
+   "Tour packages",
+   "Hotels",
+   "Visa",
+   "Activities",
+   "Transport"
+  ],
+  "metric": "Tour packages, hotels, visas, activities and transport on one platform"
  }
 ]
