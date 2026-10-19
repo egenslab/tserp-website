@@ -105,5 +105,21 @@
    "Umrah"
   ],
   "metric": "Hajj and Umrah packages and bookings on one platform"
+ },
+ {
+  "slug": "gofly",
+  "shot": "gofly",
+  "url": "www.gofly-wp.egenstheme.com",
+  "website": "https://www.gofly-wp.egenstheme.com/",
+  "type": "Tour and travel agency",
+  "location": "USA",
+  "flag": "us",
+  "chips": [
+   "Tour packages",
+   "Hotels",
+   "Visa",
+   "Experiences"
+  ],
+  "metric": "Tour packages, hotels, visas and experiences on one platform"
  }
 ]
