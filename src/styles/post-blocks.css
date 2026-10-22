@@ -92,3 +92,9 @@
   .pb-plan-grid { grid-template-columns: 1fr; }
 }
 .pb-lines td[data-no-i18n] { white-space: nowrap; }
+
+/* Image covers are designed at 16:9 (title, logo and URL on the image), so show them uncropped */
+.post-cover.big:has(.cover-img), .featured-post .post-cover:has(.cover-img) { aspect-ratio: 16 / 9; min-height: 0; }
+.featured-post .post-cover:has(.cover-img) { align-self: center; }
+/* Designed covers carry the logo top-left, so the category chip moves to the right */
+.cover-img ~ .cover-chip { left: auto; right: 14px; }
