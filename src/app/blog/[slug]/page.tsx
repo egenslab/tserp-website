@@ -4,6 +4,7 @@ import { BlockView, blockText } from "@/components/PostBlocks";
 import { ProgressBar, TocNav } from "@/components/ReadingProgress";
 import { Breadcrumb, FaqList, Glyph, Icon, JsonLd, PostCard, PostMeta } from "@/components/ui";
 import { ISO_DATES, POSTS, SITE, slugify, type Block, type Post } from "@/lib/content";
+import { imageSize } from "@/lib/image";
 import { breadcrumbLd, faqLd, pageMeta, type Crumb } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -15,7 +16,9 @@ export const generateStaticParams = () => POSTS.map((p) => ({ slug: p.slug }));
 
 export async function generateMetadata({ params }: Props) {
   const p = postBySlug((await params).slug)!;
-  return pageMeta({ title: p.seoTitle ?? (p.title.length > 45 ? p.title : `${p.title} — TravelSuite ERP`), description: p.metaDescription ?? p.excerpt, path: `/blog/${p.slug}`, article: true });
+  return pageMeta({ title: p.seoTitle ?? (p.title.length > 45 ? p.title : `${p.title} — TravelSuite ERP`), description: p.metaDescription ?? p.excerpt, path: `/blog/${p.slug}`, article: true,
+    ...(p.cover && { image: p.cover, imageSize: imageSize(p.cover) ?? undefined, imageAlt: p.title }),
+  });
 }
 
 /** Article body: the post's own blocks plus the extra sections, with the closing paragraph kept last. */
@@ -56,7 +59,7 @@ export default async function PostPage({ params }: Props) {
     <>
       <JsonLd data={[
         {
-          "@context": "https://schema.org", "@type": "BlogPosting", headline: p.title, description: p.excerpt,
+          "@context": "https://schema.org", "@type": "BlogPosting", headline: p.title, description: p.excerpt, ...(p.cover && { image: SITE + p.cover }),
           datePublished: ISO_DATES[p.slug] ?? "", wordCount: words, articleSection: p.cat,
           author: { "@type": "Organization", name: "TravelSuite ERP" },
           publisher: { "@type": "Organization", name: "TravelSuite ERP", logo: { "@type": "ImageObject", url: `${SITE}/assets/img/logo.png` } },

@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import { MAPS, SITE, SOCIAL, TRUSTPILOT, type Faq } from "./content";
 
-type PageMeta = { title: string; description: string; path: string; keywords?: string; image?: string; article?: boolean };
+type PageMeta = { title: string; description: string; path: string; keywords?: string; image?: string; imageSize?: [number, number]; imageAlt?: string; article?: boolean };
 
 /** Page metadata with canonical URL and Open Graph / Twitter cards. */
-export function pageMeta({ title, description, path, keywords, image = "/assets/img/og-image.png", article }: PageMeta): Metadata {
+export function pageMeta({ title, description, path, keywords, image = "/assets/img/og-image.png", imageSize = [1200, 630], imageAlt = "TravelSuite ERP", article }: PageMeta): Metadata {
   return {
     title: { absolute: title },
     description,
     keywords: keywords || undefined,
     alternates: { canonical: path },
-    openGraph: { title, description, url: path, images: [{ url: image, width: 1200, height: 630, alt: "TravelSuite ERP" }], type: article ? "article" : "website", siteName: "TravelSuite ERP" },
+    openGraph: { title, description, url: path, images: [{ url: image, width: imageSize[0], height: imageSize[1], alt: imageAlt }], type: article ? "article" : "website", siteName: "TravelSuite ERP" },
     twitter: { card: "summary_large_image", title, description, images: [image] },
   };
 }
