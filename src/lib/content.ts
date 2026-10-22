@@ -44,7 +44,16 @@ export type Solution = {
   story?: { slug: string; quote?: string; name?: string; role?: string; photo?: string }; // slug from success.json
   seoTitle?: string; metaDescription?: string;
 };
-export type Block = ["h2" | "p", string] | ["ul", string[]];
+export type ListItem = string | [string, string];   // [bold label, text]
+export type Block =
+  | ["h2" | "h3" | "p" | "quote" | "note", string]
+  | ["lp", string, string]                            // paragraph with a bold lead-in
+  | ["ul" | "ol", ListItem[]]
+  | ["table", string[], string[][]]
+  | ["read", string, string]                          // related guide: title, link
+  | ["flow", string[], string]                        // workflow diagram: steps, caption
+  | ["links" | "sources", [string, string][]]
+  | ["figure", "invoice" | "plans" | "dashboard"];
 export type Post = {
   slug: string; cat: string; icon: string; color: string; cover?: string; date: string; read: number;
   title: string; seoTitle?: string; metaDescription?: string; excerpt: string; body: Block[];
@@ -79,6 +88,7 @@ export const groupTitle = (id: string) => FEATURE_GROUPS.find((g) => g.id === id
 
 // Blog publication dates for structured data
 export const ISO_DATES: Record<string, string> = {
+  "travel-agency-software-buyers-guide": "2026-10-27",
   "digitize-hajj-umrah-agency": "2026-10-02", "b2b-agent-commission-payouts": "2026-09-24",
   "travel-agency-profit-and-loss": "2026-09-15", "whatsapp-for-travel-agencies": "2026-09-05",
   "ai-trip-planners": "2026-08-27", "choosing-a-travel-erp": "2026-08-18",

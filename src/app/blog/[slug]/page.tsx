@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BlockView, blockText } from "@/components/PostBlocks";
 import { ProgressBar, TocNav } from "@/components/ReadingProgress";
 import { Breadcrumb, FaqList, Glyph, Icon, JsonLd, PostCard, PostMeta } from "@/components/ui";
 import { ISO_DATES, POSTS, SITE, slugify, type Block, type Post } from "@/lib/content";
@@ -24,12 +25,6 @@ function articleBlocks(p: Post): Block[] {
   return [...body, ...(p.extra.blocks ?? []), ...closing];
 }
 
-function BlockView({ block }: { block: Block }) {
-  if (block[0] === "ul") return <ul>{block[1].map((x) => <li key={x}>{x}</li>)}</ul>;
-  const [kind, text] = block;
-  return kind === "h2" ? <h2 id={slugify(text)}>{text}</h2> : <p>{text}</p>;
-}
-
 function ShareLinks({ title, url }: { title: string; url: string }) {
   return (
     <>
@@ -48,13 +43,13 @@ export default async function PostPage({ params }: Props) {
   const blocks = articleBlocks(p);
   const faqs = p.extra.faqs ?? [];
   const takeaways = p.extra.takeaways ?? [];
-  const toc = blocks.filter((b): b is ["h2", string] => b[0] === "h2").map(([, t]) => ({ id: slugify(t), title: t }));
+  const toc = blocks.filter((b) => b[0] === "h2").map((b) => ({ id: slugify(b[1] as string), title: b[1] as string }));
   if (faqs.length) toc.push({ id: "post-faq", title: "Frequently asked questions" });
   const related = [
     ...POSTS.filter((q) => q.slug !== p.slug && q.cat === p.cat),
     ...POSTS.filter((q) => q.slug !== p.slug && q.cat !== p.cat),
   ].slice(0, 3);
-  const words = blocks.reduce((n, [kind, v]) => n + (kind === "ul" ? v.join(" ") : v).split(/\s+/).length, 0);
+  const words = blocks.reduce((n, b) => n + blockText(b).split(/\s+/).filter(Boolean).length, 0);
   const crumbs: Crumb[] = [["Home", "/"], ["Blog", "/blog"], [p.cat, null]];
 
   return (
