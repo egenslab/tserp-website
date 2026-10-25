@@ -3917,15 +3917,15 @@
       "group": "platform",
       "icon": "i-globe",
       "title": "Agency Website",
-      "desc": "Your agency's customer-facing website, showing the services you sell and connected to your bookings.",
-      "intro": "Your agency's customer-facing website, run from the same system as your bookings. It shows the tours, hotels, visas and Hajj & Umrah packages you sell, lets travellers book or enquire, and is branded, translated and tuned for search from your admin settings.",
+      "desc": "Your agency's customer-facing website, selling flight tickets and every service you offer, with an AI chat that helps customers book.",
+      "intro": "Your agency's customer-facing website, run from the same system as your bookings. It sells flight tickets alongside the tours, hotels, visas and Hajj & Umrah packages you offer, lets travellers book or enquire, and includes an AI chat assistant that helps customers book flights, tour packages, Hajj & Umrah and visa processing. Branding, translation and search settings are all managed from your admin.",
       "bullets": [
-        "Logo, theme, header and footer set from the admin",
+        "Flight ticket search and booking, with your markup",
+        "AI chat assistant that books flights, tours, Hajj & Umrah and visas",
         "Tours, hotels, visas and Hajj & Umrah packages from your modules",
-        "Featured items highlighted on the site",
+        "Logo, theme, header and footer set from the admin",
         "Customer portal with sign-up, login and guest checkout",
-        "Translation, currencies and checkout payment methods",
-        "Site-wide SEO, social media and analytics settings"
+        "Translation, currencies and checkout payment methods"
       ],
       "steps": [
         "Add your branding, theme and menus",
@@ -3940,7 +3940,8 @@
       "seo": {
         "keywords": "travel agency website, travel website builder, SEO travel website, booking website for travel agency",
         "overview": [
-          "TravelSuite ERP includes a travel agency website that runs on the same system as your bookings and accounts. Visitors browse the tours, hotels, visa services and Hajj & Umrah packages you sell, then book or send an enquiry. Because the website reads from the same database, prices and package details always match what your team sees in the back office.",
+          "TravelSuite ERP includes a travel agency website that runs on the same system as your bookings and accounts. Visitors search and book flight tickets, browse the tours, hotels, visa services and Hajj & Umrah packages you sell, then book or send an enquiry. Because the website reads from the same database, prices and package details always match what your team sees in the back office.",
+          "Flight tickets take the front row. Customers search one-way, return and multi-city fares, filter by airline, stops and baggage, read the fare rules and book, with your markup applied and the e-ticket and invoice sent automatically. An AI chat assistant on the site answers questions and walks customers through booking a flight, a tour package, a Hajj or Umrah package or visa processing, then hands the booking to your team with the full conversation attached.",
           "Branding is controlled from the admin. Upload your logo, set the site name and tagline, choose the theme and edit the header and footer. Social media links, site-wide SEO and analytics tracking are configured in the same settings area, so a marketing manager can keep the travel website on brand and measurable without touching code or waiting for a developer.",
           "Your products publish from the modules that manage them. Active tours carry their destination, duration and price, hotels their room types and rates, visa packages their country, visa type and processing time, and Hajj & Umrah packages their journey and services. Mark items as featured to give them a front-row place on the site.",
           "The website also follows how you do business. Customer portal settings define sign-up, verification, approval and guest checkout. Translation settings support more than one language, currencies control symbols, formats and exchange rates, and payment methods decide which options are shown at checkout. Customer enquiries can create CRM leads automatically, so every interested visitor gets a follow-up."
@@ -3948,7 +3949,11 @@
         "faqs": [
           [
             "What can customers book on the website?",
-            "The services you sell in TravelSuite ERP: tours, hotels, visa services and Hajj & Umrah packages. Flight booking needs the separate Flights module."
+            "Flight tickets and the other services you sell in TravelSuite ERP: tours, hotels, visa services and Hajj & Umrah packages. Customers can book on the site themselves or through the AI chat assistant."
+          ],
+          [
+            "Can customers book through an AI chatbot on the website?",
+            "Yes. The AI chat assistant on your website helps customers book flight tickets, tour packages, Hajj & Umrah packages and visa processing. It asks for dates and travellers, shows matching options with prices, collects traveller details and creates the booking, and your team can see every chat and take over at any time. AI agents are part of the Business plan."
           ],
           [
             "Can I change the design myself?",

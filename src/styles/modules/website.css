@@ -49,7 +49,7 @@
 .ws-shelf-head { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: end; margin-bottom: 40px; }
 .ws-shelf-head h2 { margin: 0; }
 .ws-shelf-head p { margin: 0; color: var(--muted); }
-.ws-bento { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-areas: "tour tour hotel hotel" "tour tour visa hajj" "lead lead cms cms"; gap: 16px; }
+.ws-bento { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-areas: "flight flight flight flight" "tour tour hotel hotel" "tour tour visa hajj" "lead lead cms cms"; gap: 16px; }
 .ws-tile { background: var(--white); border: 1px solid var(--line); border-radius: 22px; padding: 22px; min-width: 0; transition: box-shadow .2s, transform .2s; }
 .ws-tile:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
 .ws-tile header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
@@ -110,7 +110,7 @@
   .ws-store-grid { grid-template-columns: 1fr; }
   .ws-legend { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .ws-shelf-head { grid-template-columns: 1fr; gap: 12px; }
-  .ws-bento { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: "tour tour" "hotel hotel" "visa hajj" "lead cms"; }
+  .ws-bento { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: "flight flight" "tour tour" "hotel hotel" "visa hajj" "lead cms"; }
   .ws-money-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
@@ -124,8 +124,71 @@
   .ws-card-img { height: 48px; }
   .ws-foot { grid-template-columns: 1fr 1fr; }
   .ws-legend { grid-template-columns: 1fr; }
-  .ws-bento { grid-template-columns: 1fr; grid-template-areas: "tour" "hotel" "visa" "hajj" "lead" "cms"; }
+  .ws-bento { grid-template-columns: 1fr; grid-template-areas: "flight" "tour" "hotel" "visa" "hajj" "lead" "cms"; }
   .ws-tile, .ws-panel { padding: 18px; }
   .ws-switches li { grid-template-columns: 34px 1fr auto; }
   .ws-tog-l { display: none; }
+}
+
+/* Flight tickets: the lead tile of the shelf */
+.ws-t-flight { grid-area: flight; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 28px; align-items: center; padding: 28px;
+  background: radial-gradient(circle at 92% 0%, rgba(146, 239, 89, .22), transparent 45%), linear-gradient(135deg, var(--forest) 0%, var(--forest-2) 100%); border-color: var(--forest); }
+.ws-t-flight h3 { color: var(--white); font-size: 1.6rem; }
+.ws-t-flight p { color: #c4d8cc; font-size: 1rem; }
+.ws-t-flight .ws-t-ic { background: var(--lime); color: var(--forest-ink); width: 56px; height: 56px; font-size: 1.5rem; }
+.ws-t-flight .ws-tags span { background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .16); color: var(--white); }
+.ws-fl-mock { background: var(--white); border-radius: 18px; padding: 14px; display: grid; gap: 8px; box-shadow: 0 18px 40px rgba(0, 0, 0, .25); }
+.ws-fl-q { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 4px 6px 8px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.ws-fl-q .b { font-family: var(--font-display); font-weight: 800; color: var(--ink); }
+.ws-fl-q small { color: var(--muted); font-size: .76rem; }
+.ws-fl-row { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto auto; gap: 10px; align-items: center; padding: 9px 8px; border-radius: 12px; border: 1px solid var(--line); }
+.ws-fl-row.best { border-color: #c5ecab; background: var(--lime-soft); }
+.ws-fl-air { width: 34px; height: 34px; border-radius: 10px; background: var(--bg-alt); color: var(--forest-2); display: grid; place-items: center; }
+.ws-fl-info { display: flex; flex-direction: column; min-width: 0; font-size: .86rem; color: var(--ink); }
+.ws-fl-info small { color: var(--muted); font-size: .74rem; }
+.ws-fl-price { font-family: var(--font-display); font-weight: 800; color: var(--ink); }
+.ws-fl-btn { font-size: .74rem; font-weight: 700; padding: 6px 12px; border-radius: 999px; background: var(--forest); color: var(--white); }
+.ws-fl-note { color: var(--muted); font-size: .72rem; text-align: end; }
+
+/* Floating AI chat button in the storefront mock */
+.ws-browser { position: relative; }
+.ws-ai-fab { position: absolute; right: 14px; bottom: 58px; display: inline-flex; align-items: center; gap: 6px; }
+.ws-ai-fab-b { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; background: var(--lime); color: var(--forest-ink); font-size: .76rem; font-weight: 700; box-shadow: 0 10px 24px rgba(15, 46, 34, .25); }
+
+/* AI booking assistant block */
+.ws-ai { margin-top: 28px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .95fr); gap: 40px; align-items: center; padding: 32px; border-radius: 26px; background: var(--bg-alt); border: 1px solid var(--line); }
+.ws-ai-copy h3 { font-size: 1.5rem; margin: 6px 0 10px; }
+.ws-ai-copy > p { color: var(--muted); margin: 0 0 16px; }
+.ws-ai-svc { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.ws-ai-svc span { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; background: var(--white); border: 1px solid var(--line); font-size: .84rem; font-weight: 600; color: var(--forest); }
+.ws-ai-steps { list-style: none; counter-reset: wsai; margin: 0 0 16px; padding: 0; display: grid; gap: 8px; }
+.ws-ai-steps li { counter-increment: wsai; position: relative; padding-inline-start: 34px; font-size: .92rem; color: var(--text); }
+.ws-ai-steps li::before { content: counter(wsai); position: absolute; inset-inline-start: 0; top: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--forest); color: var(--lime); font-size: .74rem; font-weight: 800; display: grid; place-items: center; }
+.ws-ai-plan { display: flex; align-items: center; gap: 8px; margin: 0; font-size: .84rem; font-weight: 600; color: var(--forest); }
+.ws-chat { background: var(--white); border-radius: 22px; border: 1px solid var(--line); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.ws-chat-head { display: flex; align-items: center; gap: 10px; padding: 14px 16px; background: var(--forest); color: #b9cfc2; }
+.ws-chat-head .b { color: var(--white); display: block; font-size: .92rem; }
+.ws-chat-head small { font-size: .74rem; }
+.ws-chat-av { width: 36px; height: 36px; border-radius: 50%; background: var(--lime); color: var(--forest-ink); display: grid; place-items: center; flex: none; }
+.ws-chat-body { padding: 16px; display: grid; gap: 10px; background: #f8fbf7; }
+.ws-msg { margin: 0; max-width: 86%; padding: 10px 13px; border-radius: 16px; font-size: .86rem; line-height: 1.5; }
+.ws-msg p { margin: 0 0 8px; }
+.ws-msg.me { justify-self: end; background: var(--forest); color: var(--white); border-end-end-radius: 4px; }
+.ws-msg.ai { justify-self: start; background: var(--white); border: 1px solid var(--line); color: var(--ink); border-end-start-radius: 4px; }
+.ws-chat-opt { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 10px; margin-top: 6px; border-radius: 10px; background: var(--bg-alt); }
+.ws-chat-opt > span:first-child { display: flex; flex-direction: column; }
+.ws-chat-opt small { color: var(--muted); font-size: .74rem; }
+.ws-chat-quick { display: flex; flex-wrap: wrap; gap: 6px; }
+.ws-chat-quick span { font-size: .76rem; font-weight: 600; padding: 6px 11px; border-radius: 999px; border: 1px solid #c5ecab; background: var(--lime-soft); color: var(--forest); }
+.ws-chat-input { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .84rem; }
+.ws-chat-send { width: 32px; height: 32px; border-radius: 50%; background: var(--lime); color: var(--forest-ink); display: grid; place-items: center; }
+[dir="rtl"] .ws-chat-send .ic { transform: scaleX(-1); }
+@media (max-width: 1100px) {
+  .ws-t-flight, .ws-ai { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .ws-t-flight, .ws-ai { padding: 18px; gap: 18px; }
+  .ws-fl-row { grid-template-columns: minmax(0, 1fr) auto auto; }
+  .ws-fl-air { display: none; }
+  .ws-ai-fab { position: static; display: flex; justify-content: flex-end; padding: 0 14px 14px; }
 }
