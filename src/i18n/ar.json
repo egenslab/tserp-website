@@ -7822,5 +7822,6 @@
  "Can customers book through an AI chatbot on the website?": "هل يمكن للعملاء الحجز عبر روبوت دردشة بالذكاء الاصطناعي على الموقع؟",
  "Yes. The AI chat assistant on your website helps customers book flight tickets, tour packages, Hajj & Umrah packages and visa processing. It asks for dates and travellers, shows matching options with prices, collects traveller details and creates the booking, and your team can see every chat and take over at any time. AI agents are part of the Business plan.": "نعم. يساعد مساعد الدردشة بالذكاء الاصطناعي على موقعك العملاء على حجز تذاكر الطيران والباقات السياحية وباقات الحج والعمرة ومعاملات التأشيرات. يسأل عن التواريخ وعدد المسافرين، ويعرض الخيارات المطابقة مع أسعارها، ويجمع بيانات المسافرين وينشئ الحجز، ويستطيع فريقك رؤية كل محادثة وتولّيها في أي وقت. وكلاء الذكاء الاصطناعي جزء من خطة Business.",
  "Flight ticket search and booking, with your markup": "البحث عن تذاكر الطيران وحجزها، مع هامش ربحك",
- "AI chat assistant that books flights, tours, Hajj & Umrah and visas": "مساعد دردشة بالذكاء الاصطناعي يحجز الرحلات الجوية والجولات والحج والعمرة والتأشيرات"
+ "AI chat assistant that books flights, tours, Hajj & Umrah and visas": "مساعد دردشة بالذكاء الاصطناعي يحجز الرحلات الجوية والجولات والحج والعمرة والتأشيرات",
+ "Self-hosted · Lifetime updates": "استضافة ذاتية · تحديثات مدى الحياة"
 }

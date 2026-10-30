@@ -7822,5 +7822,6 @@
  "Can customers book through an AI chatbot on the website?": "客户可以通过网站上的 AI 聊天机器人预订吗？",
  "Yes. The AI chat assistant on your website helps customers book flight tickets, tour packages, Hajj & Umrah packages and visa processing. It asks for dates and travellers, shows matching options with prices, collects traveller details and creates the booking, and your team can see every chat and take over at any time. AI agents are part of the Business plan.": "可以。您网站上的 AI 聊天助手帮助客户预订机票、旅游套餐、朝觐与副朝套餐以及签证办理。它会询问日期和出行人数，展示匹配的选项及价格，收集旅客信息并创建预订；团队可以查看每一段对话，并随时接手。AI 助手包含在 Business 方案中。",
  "Flight ticket search and booking, with your markup": "机票搜索与预订，自动加上您的加价",
- "AI chat assistant that books flights, tours, Hajj & Umrah and visas": "可预订机票、旅游线路、朝觐与副朝及签证的 AI 聊天助手"
+ "AI chat assistant that books flights, tours, Hajj & Umrah and visas": "可预订机票、旅游线路、朝觐与副朝及签证的 AI 聊天助手",
+ "Self-hosted · Lifetime updates": "自托管 · 终身更新"
 }

@@ -7822,5 +7822,6 @@
  "Can customers book through an AI chatbot on the website?": "ลูกค้าจองผ่านแชทบอท AI บนเว็บไซต์ได้ไหม",
  "Yes. The AI chat assistant on your website helps customers book flight tickets, tour packages, Hajj & Umrah packages and visa processing. It asks for dates and travellers, shows matching options with prices, collects traveller details and creates the booking, and your team can see every chat and take over at any time. AI agents are part of the Business plan.": "ได้ ผู้ช่วยแชท AI บนเว็บไซต์ของคุณช่วยลูกค้าจองตั๋วเครื่องบิน แพ็กเกจทัวร์ แพ็กเกจฮัจญ์และอุมเราะห์ และการดำเนินการวีซ่า โดยถามวันที่และผู้เดินทาง แสดงตัวเลือกที่ตรงกันพร้อมราคา เก็บข้อมูลผู้เดินทางและสร้างการจอง ส่วนทีมของคุณเห็นทุกแชทและเข้ามารับช่วงต่อได้ทุกเมื่อ AI เอเจนต์เป็นส่วนหนึ่งของแผน Business",
  "Flight ticket search and booking, with your markup": "ค้นหาและจองตั๋วเครื่องบิน พร้อมมาร์กอัปของคุณ",
- "AI chat assistant that books flights, tours, Hajj & Umrah and visas": "ผู้ช่วยแชท AI ที่จองเที่ยวบิน ทัวร์ ฮัจญ์และอุมเราะห์ และวีซ่า"
+ "AI chat assistant that books flights, tours, Hajj & Umrah and visas": "ผู้ช่วยแชท AI ที่จองเที่ยวบิน ทัวร์ ฮัจญ์และอุมเราะห์ และวีซ่า",
+ "Self-hosted · Lifetime updates": "โฮสต์เอง · อัปเดตตลอดชีพ"
 }

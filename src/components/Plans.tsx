@@ -44,7 +44,7 @@ function BuyNow({ plan, monthly, lifetime, period, featured = false }: { plan: s
 
 /** Pricing plans in USD with a billing period toggle (monthly / yearly / lifetime). */
 export default function Plans() {
-  const [period, setPeriod] = useState<Period>("monthly");
+  const [period, setPeriod] = useState<Period>("lifetime");
   return (
     <>
       <div className="pricing-controls">

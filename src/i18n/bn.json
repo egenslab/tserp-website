@@ -7893,5 +7893,6 @@
  "Can customers book through an AI chatbot on the website?": "গ্রাহকরা কি ওয়েবসাইটের AI চ্যাটবটের মাধ্যমে বুক করতে পারেন?",
  "Yes. The AI chat assistant on your website helps customers book flight tickets, tour packages, Hajj & Umrah packages and visa processing. It asks for dates and travellers, shows matching options with prices, collects traveller details and creates the booking, and your team can see every chat and take over at any time. AI agents are part of the Business plan.": "হ্যাঁ। আপনার ওয়েবসাইটের AI চ্যাট অ্যাসিস্ট্যান্ট গ্রাহকদের ফ্লাইট টিকিট, ট্যুর প্যাকেজ, হজ ও উমরাহ প্যাকেজ এবং ভিসা প্রসেসিং বুক করতে সাহায্য করে। এটি তারিখ ও ভ্রমণকারীর তথ্য জানতে চায়, দামসহ মিলে যাওয়া অপশন দেখায়, ভ্রমণকারীর বিবরণ সংগ্রহ করে বুকিং তৈরি করে, আর আপনার টিম প্রতিটি চ্যাট দেখতে ও যেকোনো সময় দায়িত্ব নিতে পারে। AI এজেন্ট Business প্ল্যানের অংশ।",
  "Flight ticket search and booking, with your markup": "আপনার মার্কআপসহ ফ্লাইট টিকিট সার্চ ও বুকিং",
- "AI chat assistant that books flights, tours, Hajj & Umrah and visas": "ফ্লাইট, ট্যুর, হজ ও উমরাহ এবং ভিসা বুক করা AI চ্যাট অ্যাসিস্ট্যান্ট"
+ "AI chat assistant that books flights, tours, Hajj & Umrah and visas": "ফ্লাইট, ট্যুর, হজ ও উমরাহ এবং ভিসা বুক করা AI চ্যাট অ্যাসিস্ট্যান্ট",
+ "Self-hosted · Lifetime updates": "সেলফ-হোস্টেড · আজীবন আপডেট"
 }
