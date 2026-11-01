@@ -138,5 +138,19 @@
    "Transport"
   ],
   "metric": "Tour packages, hotels, visas, activities and transport on one platform"
+ },
+ {
+  "slug": "baitullah",
+  "shot": "baitullah",
+  "url": "baitullah.1wp.site",
+  "website": "https://baitullah.1wp.site/",
+  "type": "Hajj & Umrah agency",
+  "location": "Qatar",
+  "flag": "qa",
+  "chips": [
+   "Hajj",
+   "Umrah"
+  ],
+  "metric": "Hajj and Umrah packages and bookings on one platform"
  }
 ]
