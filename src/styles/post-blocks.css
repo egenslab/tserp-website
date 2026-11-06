@@ -98,3 +98,6 @@
 .featured-post .post-cover:has(.cover-img) { align-self: center; }
 /* Designed covers carry the logo top-left, so the category chip moves to the right */
 .cover-img ~ .cover-chip { left: auto; right: 14px; }
+
+/* In-article images (16:9 illustrations) */
+.post-img img { display: block; width: 100%; height: auto; border-radius: 18px; border: 1px solid var(--line); box-shadow: var(--shadow); }

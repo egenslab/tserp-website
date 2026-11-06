@@ -19,6 +19,7 @@ export function blockText(b: Block): string {
     case "table": return [...b[1], ...b[2].flat()].join(" ");
     case "flow": return [...b[1], b[2]].join(" ");
     case "links": case "sources": case "figure": return "";
+    case "image": return b[3];
     default: return b[1];
   }
 }
@@ -64,6 +65,13 @@ export function BlockView({ block }: { block: Block }) {
           <p className="pl-h">Sources</p>
           <ul>{block[1].map(([label, href]) => <li key={href}><a href={href} target="_blank" rel="noopener">{label}</a></li>)}</ul>
         </div>
+      );
+    case "image":
+      return (
+        <figure className="post-fig post-img">
+          <img src={block[1]} alt={block[2]} width={1600} height={900} loading="lazy" />
+          {block[3] && <figcaption>{block[3]}</figcaption>}
+        </figure>
       );
     case "figure":
       return block[1] === "invoice" ? <InvoiceFig /> : block[1] === "plans" ? <PlansFig /> : <DashboardFig />;
