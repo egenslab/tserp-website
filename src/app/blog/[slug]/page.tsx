@@ -44,6 +44,7 @@ export default async function PostPage({ params }: Props) {
   const path = `/blog/${p.slug}`;
   const url = SITE + path;
   const blocks = articleBlocks(p);
+  const images = [p.cover, ...blocks.flatMap((b) => (b[0] === "image" ? [b[1]] : []))].filter(Boolean).map((src) => SITE + src);
   const faqs = p.extra.faqs ?? [];
   const takeaways = p.extra.takeaways ?? [];
   const toc = blocks.filter((b) => b[0] === "h2").map((b) => ({ id: slugify(b[1] as string), title: b[1] as string }));
@@ -59,7 +60,7 @@ export default async function PostPage({ params }: Props) {
     <>
       <JsonLd data={[
         {
-          "@context": "https://schema.org", "@type": "BlogPosting", headline: p.title, description: p.excerpt, ...(p.cover && { image: SITE + p.cover }),
+          "@context": "https://schema.org", "@type": "BlogPosting", headline: p.title, description: p.excerpt, ...(images.length && { image: images }),
           datePublished: ISO_DATES[p.slug] ?? "", wordCount: words, articleSection: p.cat,
           author: { "@type": "Organization", name: "TravelSuite ERP" },
           publisher: { "@type": "Organization", name: "TravelSuite ERP", logo: { "@type": "ImageObject", url: `${SITE}/assets/img/logo.png` } },

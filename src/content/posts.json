@@ -9,6 +9,712 @@
   ],
   "items": [
     {
+      "slug": "iata-accreditation-travel-agency",
+      "cat": "Guides",
+      "icon": "i-award",
+      "color": "#5a1f3c",
+      "cover": "/assets/img/blog/iata-accreditation-travel-agency-guide.jpg",
+      "date": "6 November 2026",
+      "read": 15,
+      "title": "IATA accreditation for travel agencies: a step-by-step guide",
+      "seoTitle": "IATA accreditation for travel agencies: step-by-step guide",
+      "excerpt": "What IATA accreditation lets your agency do, which model fits, the documents you need, how to apply step by step, and what changes once you settle through BSP.",
+      "body": [
+        [
+          "p",
+          "IATA accreditation for travel agencies is the approval that lets an agency issue airline tickets on behalf of IATA member airlines and settle the money through IATA's Billing and Settlement Plan (BSP). Instead of buying every ticket through another agency, you hold your own ticketing authority, report your own sales and pay the airlines through one settlement process."
+        ],
+        [
+          "p",
+          "Getting there takes preparation. You need to be properly registered in your own country first, pick the right accreditation model, assemble a set of documents, apply through IATA's online Customer Portal and, for some models, provide financial security. After approval there is still work to do: a GDS agreement, ticketing setup, trained staff and yearly compliance."
+        ],
+        [
+          "p",
+          "This guide explains each stage in plain words for agency owners in Bangladesh, the Gulf, Malaysia, Indonesia, Türkiye and the UK. It covers what accreditation gives you, whether it is worth it compared with a consolidator, the options IATA offers, a document checklist, the application steps, BSP basics, a Bangladesh section and the reasons applications are commonly held up."
+        ],
+        [
+          "note",
+          "Accreditation rules change and vary by country. This article is general information based on IATA's public pages, not legal or financial advice. Always check the current requirements for your market on IATA's official website and with your local authorities before you apply."
+        ],
+        [
+          "read",
+          "GDS integration for travel agencies: Amadeus, Sabre, Travelport explained",
+          "/blog/gds-integration-travel-agency"
+        ],
+        [
+          "h2",
+          "What IATA accreditation for travel agencies gives you"
+        ],
+        [
+          "p",
+          "IATA, the International Air Transport Association, runs a Travel Agency Program that sets the standards for how agencies sell tickets for its member airlines. An IATA accredited travel agent has passed IATA's checks for its market and signed a sales agency agreement. In return, it can issue tickets for participating airlines on its own authority."
+        ],
+        [
+          "p",
+          "The second half of the deal is settlement. Accredited agents report their ticket sales through BSP, which IATA describes as a system that simplifies selling, reporting and remitting for agents and airlines. Rather than paying each airline separately, the agency makes one net payment for a billing period and IATA passes each airline its share."
+        ],
+        [
+          "ul",
+          [
+            [
+              "Ticketing authority:",
+              "you issue tickets for participating IATA airlines in your own name, without a middleman."
+            ],
+            [
+              "One settlement process:",
+              "sales for many airlines are billed and paid together through BSP."
+            ],
+            [
+              "An industry code:",
+              "your accreditation comes with an IATA numeric code that airlines, GDS providers and suppliers recognise."
+            ],
+            [
+              "Direct relationships:",
+              "you can talk to airlines about your own deals and incentives instead of relying on a consolidator's terms."
+            ],
+            [
+              "Credibility:",
+              "corporate clients and B2B partners often ask whether an agency is accredited before they sign."
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Accreditation does not, on its own, give you fares on a screen. You still need a booking channel, usually a GDS contract or airline connections, and software to manage tickets, refunds and accounts. Think of accreditation as the licence to issue and settle, and the GDS as the shop counter."
+        ],
+        [
+          "h2",
+          "Is it worth it, or should you sell through a consolidator?"
+        ],
+        [
+          "p",
+          "Many agencies start without accreditation. They buy tickets from a consolidator, an accredited agency that issues on their behalf and charges a fee or shares commission. This is a legitimate way to run a ticketing business, and for a new or small agency it is often the sensible first step."
+        ],
+        [
+          "table",
+          [
+            "Question",
+            "Through a consolidator",
+            "Own IATA accreditation"
+          ],
+          [
+            [
+              "Who issues the ticket",
+              "The consolidator",
+              "Your agency"
+            ],
+            [
+              "Paperwork to start",
+              "A partner agreement",
+              "Full IATA application"
+            ],
+            [
+              "Financial security",
+              "Usually a deposit or credit with the partner",
+              "Depends on the model and market"
+            ],
+            [
+              "Margin",
+              "Shared with the partner",
+              "Kept by you, minus costs"
+            ],
+            [
+              "Airline relationships",
+              "Through the partner",
+              "Direct"
+            ],
+            [
+              "Compliance work",
+              "Mostly the partner's",
+              "Yours, every year"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Accreditation tends to make sense when your ticket volume is steady, you have staff who can issue and handle changes confidently, and the margin you give away to a consolidator has become a real cost. It also helps if your corporate or B2B clients expect you to hold your own code."
+        ],
+        [
+          "p",
+          "It is less urgent if most of your revenue comes from hotels, tours, visas or packages, or if you sell low volumes of air. In that case, a good consolidator with fair terms and fast support may serve you better while you grow. You can always apply later, once your accounts and processes are ready."
+        ],
+        [
+          "read",
+          "Sales are not profit: how to read your travel agency profit and loss",
+          "/blog/travel-agency-profit-and-loss"
+        ],
+        [
+          "h2",
+          "IATA accreditation options for travel agencies"
+        ],
+        [
+          "p",
+          "Under its modernised settlement programme, called NewGen ISS, IATA offers a choice of accreditation models rather than one fixed type. Each model sets which payment methods you can use, what financial security you may need and how your finances are reviewed. Choosing the right one is the first real decision in how to become IATA accredited."
+        ],
+        [
+          "lp",
+          "GoLite.",
+          "A lighter model with no cash facility. Agents sell through BSP using card payments and IATA EasyPay, IATA's own payment method. IATA presents it as having lighter financial requirements, without the annual financial review that applies to cash agents."
+        ],
+        [
+          "lp",
+          "GoStandard.",
+          "The traditional model with a cash facility. Agents can use all BSP payment methods, including cash, card and IATA EasyPay. They must meet the local financial criteria for their market and receive a Remittance Holding Capacity, which is a limit on how much unpaid cash sales they can hold."
+        ],
+        [
+          "lp",
+          "GoGlobal.",
+          "Designed for agency groups that operate in several countries. It provides one accreditation across the BSPs where the group participates, with global financial criteria and regular reviews of the whole group."
+        ],
+        [
+          "p",
+          "IATA's current manual for agents also describes a Euro-Zone option for multi-location agencies operating in euro markets. Check the Customer Portal for the models available in your country, as IATA updates them from time to time."
+        ],
+        [
+          "h3",
+          "Where the IATA TIDS code fits"
+        ],
+        [
+          "p",
+          "The Travel Industry Designator Service, or TIDS, gives non-accredited travel sellers a unique industry code so suppliers can identify where a booking came from. IATA states that TIDS is free of charge and is available globally except in the USA. An IATA TIDS code is not accreditation: a TIDS agent cannot issue airline tickets through BSP."
+        ],
+        [
+          "p",
+          "TIDS can still be useful. It helps a growing agency get recognised by hotels, car rental firms and some airlines while it sells air tickets through a consolidator. Some agencies hold a TIDS code first and apply for full accreditation once their volume justifies it."
+        ],
+        [
+          "image",
+          "/assets/img/blog/iata-accreditation-travel-agency-models.jpg",
+          "Comparison of IATA accreditation for travel agencies: TIDS, GoLite, GoStandard and GoGlobal",
+          "TIDS identifies you to suppliers; the Go models let you issue and settle through BSP."
+        ],
+        [
+          "table",
+          [
+            "Option",
+            "Can issue on BSP",
+            "Payment methods",
+            "Financial checks"
+          ],
+          [
+            [
+              "TIDS",
+              "No",
+              "Not applicable",
+              "Light registration"
+            ],
+            [
+              "GoLite",
+              "Yes",
+              "Card and IATA EasyPay",
+              "Lighter requirements"
+            ],
+            [
+              "GoStandard",
+              "Yes",
+              "Cash, card and IATA EasyPay",
+              "Local criteria and reviews"
+            ],
+            [
+              "GoGlobal",
+              "Yes",
+              "Per participating market",
+              "Group-wide criteria and reviews"
+            ]
+          ]
+        ],
+        [
+          "note",
+          "Summary based on IATA's public descriptions. Exact rules depend on your market and change over time."
+        ],
+        [
+          "h2",
+          "IATA travel agent requirements: who can apply"
+        ],
+        [
+          "p",
+          "IATA publishes a country checklist for each market, listing what an applicant must provide for each accreditation model. The details vary, but the same themes appear in most markets. Read your own country's checklist line by line before you start collecting papers."
+        ],
+        [
+          "ul",
+          [
+            [
+              "Legal entity:",
+              "the agency must be a properly formed business, resident or registered in the market where it applies, in line with local law."
+            ],
+            [
+              "Local licence:",
+              "where a country requires travel agencies to be licensed, the licence must be valid before IATA will proceed."
+            ],
+            [
+              "Financial standing:",
+              "financial statements and, for some models, financial security that meets the local criteria."
+            ],
+            [
+              "Banking:",
+              "a business bank account in the agency's name for BSP remittances."
+            ],
+            [
+              "Premises and people:",
+              "a working office and staff able to issue and manage tickets, where your checklist asks for them."
+            ],
+            [
+              "Agreement:",
+              "willingness to sign the passenger sales agency agreement and follow IATA's resolutions for your market."
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Some checklist items apply to all models, while others apply only to models with a cash facility. That is why your choice of model affects your paperwork. If you are unsure which model suits you, IATA's portal has guidance to help you choose before you submit anything."
+        ],
+        [
+          "h3",
+          "The document checklist"
+        ],
+        [
+          "p",
+          "Collect these early. Most delays come from missing, expired or inconsistent documents rather than from the application itself. Keep every name, address and registration number identical across all papers."
+        ],
+        [
+          "image",
+          "/assets/img/blog/iata-accreditation-travel-agency-documents.jpg",
+          "Typical document checklist for IATA accreditation for travel agencies",
+          "The documents most markets ask for; your country checklist is the final word."
+        ],
+        [
+          "ul",
+          [
+            [
+              "Company registration:",
+              "certificate of incorporation or trade licence, and your articles or partnership deed."
+            ],
+            [
+              "Local travel licence:",
+              "the travel agency registration issued by your national authority, where one is required."
+            ],
+            [
+              "Ownership details:",
+              "names of owners, directors and managers, with identity documents as your checklist specifies."
+            ],
+            [
+              "Financial statements:",
+              "recent accounts in the format your market asks for."
+            ],
+            [
+              "Bank account details:",
+              "a letter or statement confirming the agency's business account."
+            ],
+            [
+              "Office address proof:",
+              "a lease, ownership document or utility bill for the premises you list."
+            ],
+            [
+              "Financial security:",
+              "a bank guarantee, insurance or other instrument, only if your model and market require it."
+            ],
+            [
+              "Signed agency agreement:",
+              "the passenger sales agency agreement, signed by an authorised person."
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Some markets ask for documents in English or with certified translations. Scan everything clearly, name files sensibly and keep a folder of originals, because you will reuse many of them at each yearly revalidation."
+        ],
+        [
+          "h2",
+          "How to become IATA accredited, step by step"
+        ],
+        [
+          "p",
+          "The journey below reflects the process IATA describes for new applicants. The order of the first two steps matters: local registration always comes first, and your choice of model shapes everything after it."
+        ],
+        [
+          "image",
+          "/assets/img/blog/iata-accreditation-travel-agency-journey.jpg",
+          "The six-step journey of IATA accreditation for travel agencies, from local registration to BSP ticketing",
+          "From local licence to your first BSP ticket, in six stages."
+        ],
+        [
+          "ol",
+          [
+            [
+              "Register locally:",
+              "make sure your company and any national travel agency licence are valid and current."
+            ],
+            [
+              "Choose your model:",
+              "compare TIDS, GoLite, GoStandard and GoGlobal against your sales plan and cash flow."
+            ],
+            [
+              "Prepare documents:",
+              "follow your country checklist and collect every item in the right format."
+            ],
+            [
+              "Apply on the portal:",
+              "create an account on IATA's Customer Portal, complete the online application and upload your documents."
+            ],
+            [
+              "Sign, pay and secure:",
+              "after IATA reviews the file, pay the invoiced fees, sign the agency agreement and provide financial security if it is required."
+            ],
+            [
+              "Start BSP ticketing:",
+              "once your code is active, set up your GDS, BSPlink access and payment arrangements, then issue your first tickets."
+            ]
+          ]
+        ],
+        [
+          "p",
+          "IATA's material notes that where financial security is required, it must be provided within a set period after IATA asks for it. Plan your bank guarantee or insurance early, because banks have their own approval steps and can take longer than you expect."
+        ],
+        [
+          "quote",
+          "Hello, we have submitted our IATA accreditation application on the Customer Portal under the GoStandard model. Could you please confirm whether any documents are still missing and when we can expect the next step? Thank you."
+        ],
+        [
+          "p",
+          "A short, polite follow-up like the one above, sent through the portal's case system, is better than several separate emails. Keep your case reference and reply to the same thread so the history stays in one place."
+        ],
+        [
+          "h3",
+          "Why applications get delayed"
+        ],
+        [
+          "p",
+          "Most hold-ups are avoidable. They usually come down to preparation rather than anything unusual about the agency. Watch for these before you press submit."
+        ],
+        [
+          "ul",
+          [
+            [
+              "Wrong model:",
+              "applying for a cash facility when a lighter model would suit you means more documents and financial checks than you need."
+            ],
+            [
+              "Expired local licence:",
+              "a travel licence or trade licence that lapses during the review stops progress."
+            ],
+            [
+              "Inconsistent details:",
+              "the agency name, address or owners differ between documents."
+            ],
+            [
+              "Weak financial papers:",
+              "accounts that are incomplete, unsigned or in the wrong format for your market."
+            ],
+            [
+              "Late financial security:",
+              "the bank guarantee or insurance is not ready when IATA asks for it."
+            ],
+            [
+              "Unclear ownership:",
+              "shareholders or managers are not fully disclosed or documented."
+            ],
+            [
+              "Slow replies:",
+              "questions from IATA sit unanswered in the portal for days."
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Name one person in the agency as the owner of the application. Give them the checklist, the folder of documents and access to the portal, and ask them to check for messages every working day until the file is closed."
+        ],
+        [
+          "h2",
+          "Financial security and BSP settlement basics"
+        ],
+        [
+          "p",
+          "Financial security protects airlines against the risk that an agent collects money and does not pay it on. Whether you need it, and how much, depends on your accreditation model and your market's financial criteria. Models with a cash facility generally need it; IATA describes GoLite as having lighter requirements. Do not assume a figure: check your local criteria in IATA's Travel Agent Handbook."
+        ],
+        [
+          "h3",
+          "How a BSP billing period works"
+        ],
+        [
+          "flow",
+          [
+            "Issue tickets",
+            "Sales reported",
+            "Billing produced",
+            "Agent remits",
+            "Airlines paid"
+          ],
+          "Each billing period ends with one net payment that IATA splits among the airlines."
+        ],
+        [
+          "p",
+          "Your ticketing system reports issued tickets, refunds and other documents to IATA's data processing centre. IATA then produces your billing analysis, which you see in BSPlink, IATA's web platform for agents. On the date in your market's remittance calendar, you make a single net payment, usually by direct debit from your nominated bank account, and IATA settles each airline."
+        ],
+        [
+          "p",
+          "Money collected for cash sales is held in trust for the airlines until it is remitted. That is a legal and practical point, not a formality: spending that money on rent or salaries before remittance day is how agencies get into trouble. Keep it visible and separate in your accounts."
+        ],
+        [
+          "lp",
+          "Agency debit memos.",
+          "Airlines use ADMs to collect corrections, for example where a fare or rule was applied wrongly. They appear in your BSP billing, so check every one, respond within the dispute window and train staff to avoid the errors behind them."
+        ],
+        [
+          "lp",
+          "Remittance Holding Capacity.",
+          "Agents with a cash facility receive a limit on unpaid cash sales. If you approach it, IATA may ask you to remit early or adjust your security, so watch your sales against the limit during busy seasons."
+        ],
+        [
+          "h2",
+          "After approval: setting up to issue and stay compliant"
+        ],
+        [
+          "p",
+          "Your code being active is the start, not the finish. Several pieces must be in place before staff can issue confidently and before your first billing arrives."
+        ],
+        [
+          "ul",
+          [
+            [
+              "GDS agreement:",
+              "sign with a GDS such as Amadeus, Sabre or Travelport, get your office ID or pseudo city code and request ticketing set-up for your IATA code."
+            ],
+            [
+              "Airline ticketing:",
+              "confirm which airlines allow you to issue, since each airline decides whether to appoint an agent on its own stock."
+            ],
+            [
+              "BSPlink access:",
+              "set up users for billing, refunds and ADM handling, and agree who checks the billing each period."
+            ],
+            [
+              "Staff readiness:",
+              "train ticketing staff on issue, void, reissue and refund procedures, fare rules and your internal approval limits."
+            ],
+            [
+              "Payment controls:",
+              "decide which payment methods you accept, how card sales are authorised and who confirms remittance funds."
+            ],
+            [
+              "Yearly compliance:",
+              "pay the annual agency fee, complete revalidation on the portal and notify IATA of changes such as ownership, name or address."
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Changes to your business can trigger a review, so report them before they happen where your checklist says so. A change of owner, legal form or main office without notice is one of the easier ways to put an accreditation at risk."
+        ],
+        [
+          "read",
+          "Travel agency software: the complete buyer's guide for 2027",
+          "/blog/travel-agency-software-buyers-guide"
+        ],
+        [
+          "h2",
+          "IATA accreditation for travel agencies in Bangladesh"
+        ],
+        [
+          "p",
+          "In Bangladesh, travel agencies are regulated under the Bangladesh Travel Agency (Registration and Control) Act, 2013, and its rules, overseen by the Ministry of Civil Aviation and Tourism. The ministry handles registration and renewal of travel agency certificates, and runs an online registration system for agencies. The law and its rules have been updated in recent years, so read the current versions on the ministry's website."
+        ],
+        [
+          "p",
+          "The order is simple: get and keep your local travel agency registration first, then apply to IATA. IATA's checklist for Bangladesh, like other markets, expects the applicant to be registered in the market in line with local law. A registration that is close to expiry or under renewal can hold up your IATA file, so renew in good time."
+        ],
+        [
+          "ol",
+          [
+            [
+              "Local registration:",
+              "obtain or renew your travel agency registration certificate through the ministry's official process."
+            ],
+            [
+              "Company papers:",
+              "keep your trade licence, company registration and tax documents current and consistent."
+            ],
+            [
+              "IATA checklist:",
+              "open the Bangladesh travel agent checklist on IATA's site and match each item for your chosen model."
+            ],
+            [
+              "Application:",
+              "apply on IATA's Customer Portal and follow up through the portal's case system."
+            ],
+            [
+              "Local criteria:",
+              "check the Bangladesh local financial criteria in the Travel Agent Handbook if your model needs financial security."
+            ]
+          ]
+        ],
+        [
+          "p",
+          "The Association of Travel Agents of Bangladesh, ATAB, is the trade association for the sector and can be a useful source of practical guidance and industry updates. Membership and its benefits are a matter for ATAB itself, so confirm current requirements with them directly. For legal requirements, rely on the ministry and the published law, and for IATA rules, rely on IATA."
+        ],
+        [
+          "note",
+          "Bangladesh requirements are set by the government and may change. Confirm the current law, rules, fees and procedures with the Ministry of Civil Aviation and Tourism before you apply. Not legal advice."
+        ],
+        [
+          "read",
+          "How to digitize your Hajj & Umrah agency before the next season",
+          "/blog/digitize-hajj-umrah-agency"
+        ],
+        [
+          "h2",
+          "How software helps once you are accredited"
+        ],
+        [
+          "p",
+          "Accreditation adds responsibility for every ticket you issue, every refund you process and every BSP billing you pay. The cleaner your booking and accounting records, the easier it is to check BSP billing, answer ADMs and pass your yearly review. This is where agency software earns its place."
+        ],
+        [
+          "p",
+          "In TravelSuite ERP, the flight module handles PNR creation, ticket issue, reissue, void and refund from the booking, with penalties and service fees posted to accounts automatically. Ticket sales, refunds and ADMs are recorded per airline and billing period, so you can match them against your BSP billing and supplier statements."
+        ],
+        [
+          "p",
+          "You do not need your own IATA accreditation to use it. You can sell through a consolidator or ticketing partner's API, or connect your own IATA and GDS credentials once you have them. Many agencies start with a partner and add direct contracts later. Direct GDS API integration with Amadeus, Sabre, Travelport or Galileo is available on the Enterprise plan."
+        ],
+        [
+          "ul",
+          [
+            "Search fares from your connected suppliers in one screen.",
+            "Issue, reissue, void and refund tickets from the booking.",
+            "See sales, refunds and ADMs per airline and billing period.",
+            "Keep agent balances, invoices and the ledger updated as tickets are issued."
+          ]
+        ],
+        [
+          "read",
+          "Checklist: how to choose the right travel ERP for your agency",
+          "/blog/choosing-a-travel-erp"
+        ],
+        [
+          "links",
+          [
+            [
+              "Flight Tickets",
+              "/features/flights"
+            ],
+            [
+              "Finance & Accounting",
+              "/features/finance"
+            ],
+            [
+              "Reports & Analytics",
+              "/features/reports"
+            ],
+            [
+              "B2B & B2C Booking",
+              "/features/b2b"
+            ],
+            [
+              "B2B consolidators",
+              "/solutions/b2b-consolidators"
+            ],
+            [
+              "Pricing",
+              "/pricing"
+            ]
+          ]
+        ],
+        [
+          "sources",
+          [
+            [
+              "IATA: Travel Agent Accreditation",
+              "https://www.iata.org/en/services/travel-agency-program/accreditation-travel/"
+            ],
+            [
+              "IATA: Travel Agency Program",
+              "https://www.iata.org/en/services/travel-agency-program/"
+            ],
+            [
+              "IATA NewGen ISS: Accreditation overview",
+              "https://newgeniss.iata.org/travel-agents/accreditation/"
+            ],
+            [
+              "IATA: Accreditation country checklists",
+              "https://www.iata.org/en/services/travel-agency-program/accreditation-travel/country-requirements/"
+            ],
+            [
+              "IATA: Bangladesh travel agent checklist",
+              "https://www.iata.org/en/services/travel-agency-program/accreditation-travel/country-requirements/a52w0000000fy2yaaq/pax/"
+            ],
+            [
+              "IATA: Travel Agent Handbook",
+              "https://www.iata.org/en/services/travel-agency-program/travel-agent-resources/tah/"
+            ],
+            [
+              "IATA: Travel Industry Designator Service (TIDS)",
+              "https://www.iata.org/en/services/travel-agency-program/tids/"
+            ],
+            [
+              "IATA: TIDS frequently asked questions",
+              "https://www.iata.org/en/services/travel-agency-program/tids/faq/"
+            ],
+            [
+              "IATA: BSP Manual for Agents (NewGen ISS)",
+              "https://www.iata.org/en/fmc-documents/0067436c-e840-469b-b815-18153ac972d2"
+            ],
+            [
+              "IATA: BSPlink",
+              "https://www.iata.org/en/services/finance/bsp/bsplink/"
+            ],
+            [
+              "Ministry of Civil Aviation and Tourism, Bangladesh: Travel Agency Act and Rules",
+              "https://mocat.gov.bd/site/page/2bc3c66c-b143-4a89-a047-821afe3372e3/Travel-Agency-Act-Rules"
+            ],
+            [
+              "Travel Agency Management System, Bangladesh",
+              "https://regtravelagency.gov.bd/"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "If you are preparing for accreditation or already issuing on BSP, our team can show you how TravelSuite ERP keeps tickets, refunds and BSP records in order. Book a demo or talk to our team to see it with your own workflow."
+        ]
+      ],
+      "extra": {
+        "takeaways": [
+          "IATA accreditation lets an agency issue tickets for IATA airlines and settle through BSP.",
+          "Register locally first; IATA expects a valid local licence where one is required.",
+          "Choose between GoLite, GoStandard and GoGlobal; TIDS is a code, not ticketing authority.",
+          "Financial security depends on your model and market, so check the local criteria.",
+          "Starting through a consolidator is a valid route while your volume grows."
+        ],
+        "faqs": [
+          [
+            "What is IATA accreditation for travel agencies?",
+            "It is IATA's approval for an agency to issue tickets on behalf of participating IATA member airlines and settle the money through the Billing and Settlement Plan (BSP). An accredited agency signs a sales agency agreement, receives an IATA numeric code and reports its sales to IATA, then makes one net payment per billing period. IATA passes each airline its share. Requirements depend on the accreditation model and the country, so check IATA's official site for your market."
+          ],
+          [
+            "How do I become IATA accredited?",
+            "First make sure your company and any national travel agency licence are valid. Then choose an accreditation model, such as GoLite, GoStandard or GoGlobal, and follow your country checklist to prepare documents. Apply through IATA's online Customer Portal. After IATA reviews the file, you pay the fees, sign the agency agreement and provide financial security if your model requires it. Then set up your GDS and BSPlink access."
+          ],
+          [
+            "What is the difference between an IATA TIDS code and accreditation?",
+            "TIDS, the Travel Industry Designator Service, gives non-accredited sellers a unique code so suppliers can identify their bookings. IATA states that it is free and available worldwide except in the USA. It does not allow the agency to issue airline tickets through BSP. Full accreditation under one of IATA's models is what grants ticketing and settlement through BSP. Many agencies use TIDS while they sell air through a consolidator."
+          ],
+          [
+            "Do I need financial security to be IATA accredited?",
+            "It depends on the model and your market. Models with a cash facility, such as GoStandard, generally require financial security that meets the local financial criteria, while IATA describes GoLite as having lighter requirements. The amount and form, such as a bank guarantee or insurance, vary by country and can change. Check the local criteria in IATA's Travel Agent Handbook and your country checklist before arranging anything with your bank."
+          ],
+          [
+            "How does IATA accreditation work in Bangladesh?",
+            "Start with local registration. Travel agencies in Bangladesh are regulated under the Bangladesh Travel Agency (Registration and Control) Act, 2013, and its rules, overseen by the Ministry of Civil Aviation and Tourism. Once your registration is valid, follow IATA's Bangladesh checklist and apply on the Customer Portal. ATAB is the trade association for the sector. Confirm current rules and fees with the ministry and IATA before applying, as they can change."
+          ],
+          [
+            "Can I sell flights before I get IATA accreditation?",
+            "Yes. Many agencies sell through a consolidator, an accredited agency that issues tickets on their behalf. It needs less paperwork and no BSP obligations, though you share margin with the partner. TravelSuite ERP supports this route: you can sell through a consolidator or ticketing partner's API and connect your own IATA and GDS credentials later. Direct GDS API integration is available on the Enterprise plan."
+          ]
+        ]
+      },
+      "metaDescription": "IATA accreditation for travel agencies explained: GoLite, GoStandard, GoGlobal and TIDS, eligibility, documents, the application steps and BSP basics."
+    },
+    {
       "slug": "gds-integration-travel-agency",
       "cat": "Guides",
       "icon": "i-plane",
