@@ -19,6 +19,12 @@ export default function ContactForm() {
   const [sending, setSending] = useState(false);
   const [where, setWhere] = useState({ country: "", timezone: "" });
 
+  // "All" ticks or clears the six listed services ("Others" stays a separate choice)
+  const toggleAll = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const on = e.currentTarget.checked;
+    e.currentTarget.form?.querySelectorAll<HTMLInputElement>('input[name="svc"]:not([value="Others"])').forEach((box) => { box.checked = on; });
+  };
+
   // Filled after load: the page is prerendered, so the visitor's time zone is only known in the browser
   useEffect(() => setWhere(visitorCountry()), []);
 
@@ -81,6 +87,10 @@ export default function ContactForm() {
         <label><input type="checkbox" name="svc" defaultValue="Tours" />Tours</label>
         {" "}
         <label><input type="checkbox" name="svc" defaultValue="Transport" />Transport</label>
+        {" "}
+        <label><input type="checkbox" name="svc" defaultValue="Others" />Others</label>
+        {" "}
+        <label><input type="checkbox" name="svc" defaultValue="All services" onChange={toggleAll} />All</label>
       </fieldset>
       <label htmlFor="f-msg">Message<textarea id="f-msg" name="message" rows={4} placeholder="Number of agents, suppliers you use, anything else" /></label>
       {" "}
