@@ -1,16 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { visitorCountry } from "@/lib/country";
 import { sendForm } from "@/lib/forms";
 import { track } from "@/lib/track";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const SOURCES = [
+  "Google search", "AI assistant (ChatGPT, Gemini…)", "Facebook", "Instagram", "LinkedIn", "YouTube", "TikTok",
+  "WhatsApp", "Friend or colleague", "Existing customer", "Event or exhibition", "Other",
+];
 
 /** Demo request form. Validated in the browser, then emailed to the team through Web3Forms (src/lib/forms.ts). */
 export default function ContactForm() {
   const [invalid, setInvalid] = useState({ name: false, email: false });
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
   const [sending, setSending] = useState(false);
+  const [where, setWhere] = useState({ country: "", timezone: "" });
+
+  // Filled after load: the page is prerendered, so the visitor's time zone is only known in the browser
+  useEffect(() => setWhere(visitorCountry()), []);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -33,7 +43,7 @@ export default function ContactForm() {
       return;
     }
     setMsg({ ok: true, text: "Thanks. Our team will contact you within one business day." });
-    track("lead");
+    track("lead", { lead_source: String(data.get("source") ?? ""), country: where.country });
     form.reset();
   };
 
@@ -55,6 +65,9 @@ export default function ContactForm() {
         {" "}
         <label htmlFor="f-size">Team size <select id="f-size" name="size"><option>1–5 staff</option><option>6–20 staff</option><option>21–50 staff</option><option>50+ staff</option></select> </label>
       </div>
+      <label htmlFor="f-source">How did you find us?<select id="f-source" name="source" defaultValue=""><option value="">Select an option</option>{SOURCES.map((s) => <option key={s} value={s}>{s}</option>)}</select></label>
+      <input type="hidden" name="country" value={where.country} />
+      <input type="hidden" name="timezone" value={where.timezone} />
       <fieldset className="checks">
         <legend>Services you sell</legend>
         <label><input type="checkbox" name="svc" defaultValue="Flights" />Flights</label>

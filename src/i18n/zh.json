@@ -8237,5 +8237,11 @@
  "How does IATA accreditation work in Bangladesh?": "IATA 认证在孟加拉国如何运作？",
  "Start with local registration. Travel agencies in Bangladesh are regulated under the Bangladesh Travel Agency (Registration and Control) Act, 2013, and its rules, overseen by the Ministry of Civil Aviation and Tourism. Once your registration is valid, follow IATA's Bangladesh checklist and apply on the Customer Portal. ATAB is the trade association for the sector. Confirm current rules and fees with the ministry and IATA before applying, as they can change.": "从本地注册开始。孟加拉国的旅行社受《2013年孟加拉国旅行社（注册与管理）法》及其细则监管，由民航和旅游部负责监督。注册有效后，按照 IATA 的孟加拉国清单，在客户门户提交申请。ATAB 是该行业的行业协会。规则和费用可能变化，申请前请向该部和 IATA 确认最新规定。",
  "Can I sell flights before I get IATA accreditation?": "获得 IATA 认证之前可以销售机票吗？",
- "Yes. Many agencies sell through a consolidator, an accredited agency that issues tickets on their behalf. It needs less paperwork and no BSP obligations, though you share margin with the partner. TravelSuite ERP supports this route: you can sell through a consolidator or ticketing partner's API and connect your own IATA and GDS credentials later. Direct GDS API integration is available on the Enterprise plan.": "可以。许多旅行社通过批发商销售，即由获得认证的旅行社代为出票。这种方式所需文书更少，也没有 BSP 义务，但您需要与合作方分享利润。TravelSuite ERP 支持这种方式：您可以通过批发商或票务合作伙伴的 API 销售，之后再连接自己的 IATA 和 GDS 凭证。Enterprise 套餐提供 GDS API 直连集成。"
+ "Yes. Many agencies sell through a consolidator, an accredited agency that issues tickets on their behalf. It needs less paperwork and no BSP obligations, though you share margin with the partner. TravelSuite ERP supports this route: you can sell through a consolidator or ticketing partner's API and connect your own IATA and GDS credentials later. Direct GDS API integration is available on the Enterprise plan.": "可以。许多旅行社通过批发商销售，即由获得认证的旅行社代为出票。这种方式所需文书更少，也没有 BSP 义务，但您需要与合作方分享利润。TravelSuite ERP 支持这种方式：您可以通过批发商或票务合作伙伴的 API 销售，之后再连接自己的 IATA 和 GDS 凭证。Enterprise 套餐提供 GDS API 直连集成。",
+ "How did you find us?": "您是如何找到我们的？",
+ "Select an option": "请选择",
+ "Google search": "Google 搜索",
+ "AI assistant (ChatGPT, Gemini…)": "AI 助手（ChatGPT、Gemini…）",
+ "Friend or colleague": "朋友或同事",
+ "Event or exhibition": "活动或展会"
 }
