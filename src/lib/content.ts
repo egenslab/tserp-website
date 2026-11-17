@@ -89,6 +89,7 @@ export const groupTitle = (id: string) => FEATURE_GROUPS.find((g) => g.id === id
 
 // Blog publication dates for structured data
 export const ISO_DATES: Record<string, string> = {
+  "zatca-e-invoicing-travel-agency": "2026-11-17",
   "iata-accreditation-travel-agency": "2026-11-06",
   "gds-integration-travel-agency": "2026-11-02",
   "travel-agency-software-buyers-guide": "2026-10-27",
