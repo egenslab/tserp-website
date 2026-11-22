@@ -7,7 +7,7 @@ import legalData from "@/content/legal.json";
 import successData from "@/content/success.json";
 import siteData from "@/content/site.json";
 
-export const SITE = "https://travelsuiteerp.com";
+export const SITE = "https://www.travelsuiteerp.com";
 export const WA = "https://wa.me/8801325277120";
 export const EMAIL = "info@travelsuiteerp.com";
 export const MAPS = "https://maps.app.goo.gl/ZTR4XMHzXAAXSPPy8";

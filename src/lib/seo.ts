@@ -45,3 +45,21 @@ export const ORG_LD = {
   },
   address: ["US", "MY", "BD"].map((c) => ({ "@type": "PostalAddress", addressCountry: c })),
 };
+
+/** The product itself, for search engines and AI assistants. Prices: keep in step with components/Plans.tsx. No rating: add one only from real reviews. */
+const plan = (name: string, price: number) => ({
+  "@type": "Offer", name: `${name} plan`, price, priceCurrency: "USD", url: SITE + "/pricing",
+  priceSpecification: { "@type": "UnitPriceSpecification", price, priceCurrency: "USD", billingDuration: "P1M", unitText: "month" },
+});
+export const SOFTWARE_LD = {
+  "@context": "https://schema.org", "@type": "SoftwareApplication", name: "TravelSuite ERP", url: SITE + "/",
+  applicationCategory: "BusinessApplication", applicationSubCategory: "Travel agency software", operatingSystem: "Web",
+  description: "Travel agency software and ERP: GDS flight ticketing, hotels, Hajj & Umrah, visa, tours and transport, a B2B agent portal and B2C booking website, CRM, finance and accounting, HR, AI automation and an omnichannel inbox in one system.",
+  featureList: [
+    "GDS flight booking and ticketing (Amadeus, Sabre, Travelport, Galileo)", "Hotel booking", "Hajj and Umrah management",
+    "Visa processing", "Tour packages", "Transport", "B2B agent portal with commission and payouts", "B2C booking website",
+    "CRM and quotations", "Finance and accounting", "HR and help desk", "AI agents and AI trip planner", "WhatsApp, Messenger and Instagram inbox",
+  ],
+  offers: [plan("Starter", 39), plan("Growth", 49), plan("Business", 99)],
+  publisher: { "@type": "Organization", name: "TravelSuite ERP", url: SITE + "/" },
+};

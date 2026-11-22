@@ -8,18 +8,18 @@ import StoriesCarousel from "@/components/StoriesCarousel";
 import SuccessGrid from "@/components/SuccessGrid";
 import WaPill from "@/components/WaPill";
 import { JsonLd } from "@/components/ui";
-import { ORG_LD, pageMeta } from "@/lib/seo";
+import { ORG_LD, SOFTWARE_LD, pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "TravelSuite ERP — All-in-one Travel ERP for Travel Agencies",
-  description: "All-in-one travel ERP with GDS flight ticketing on Amadeus, Sabre, Travelport and Galileo, plus hotels, Hajj & Umrah, tours, B2B booking, CRM and accounting.",
+  title: "Travel Agency Software & ERP — TravelSuite ERP",
+  description: "Travel agency software and ERP in one: GDS ticketing on Amadeus, Sabre, Travelport and Galileo, hotels, Hajj & Umrah, tours, B2B portal, CRM and accounting.",
   path: "/",
 });
 
 export default function HomePage() {
   return (
     <>
-      <JsonLd data={ORG_LD} />
+      <JsonLd data={[ORG_LD, SOFTWARE_LD]} />
       {/* Hero */}
       <section className="hero">
         <div className="container hero-grid">
