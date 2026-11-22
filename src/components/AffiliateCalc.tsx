@@ -38,7 +38,7 @@ export default function AffiliateCalc() {
       <div className="aff-calc-result" aria-live="polite">
         <small>Your estimated commission</small>
         <strong>{usd(perAgency * count)}</strong>
-        <p>{usd(perAgency)} per agency · {AFFILIATE.commission}% of the one-time license</p>
+        <p>{usd(perAgency)} per agency · {`${AFFILIATE.commission}% of the one-time license`}</p>
       </div>
     </div>
   );
