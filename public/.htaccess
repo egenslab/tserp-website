@@ -2,6 +2,10 @@
 Options -MultiViews
 RewriteEngine On
 
+# One address for search engines: travelsuiteerp.com -> https://www.travelsuiteerp.com (same path)
+RewriteCond %{HTTP_HOST} ^travelsuiteerp\.com$ [NC]
+RewriteRule ^(.*)$ https://www.travelsuiteerp.com/$1 [R=301,L]
+
 # Old travelsuiteerp.com addresses -> new pages (keeps search rankings)
 RewriteRule ^flight-management-software/?$ /features/flights [R=301,L]
 RewriteRule ^success-stories/.+$ /success-stories [R=301,L]
