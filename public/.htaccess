@@ -2,15 +2,25 @@
 Options -MultiViews
 RewriteEngine On
 
+# Old travelsuiteerp.com addresses (earlier site) -> new pages, in one hop to the www address
+RewriteRule ^flight-management-software/?$ https://www.travelsuiteerp.com/features/flights [R=301,L]
+RewriteRule ^core-modules/flight-booking/?$ https://www.travelsuiteerp.com/features/flights [R=301,L]
+RewriteRule ^core-modules/?.*$ https://www.travelsuiteerp.com/features [R=301,L]
+RewriteRule ^visa-processing-software/?$ https://www.travelsuiteerp.com/features/visa [R=301,L]
+RewriteRule ^umrah-travel-agency-software/?$ https://www.travelsuiteerp.com/solutions/hajj-umrah [R=301,L]
+RewriteRule ^tour-management-(software|system)/?$ https://www.travelsuiteerp.com/features/tours [R=301,L]
+RewriteRule ^agent-management-software/?$ https://www.travelsuiteerp.com/features/b2b [R=301,L]
+RewriteRule ^hotel-reservation-system/?$ https://www.travelsuiteerp.com/features/hotels [R=301,L]
+RewriteRule ^travel-suite-erp-bangladesh/?$ https://www.travelsuiteerp.com/ [R=301,L]
+RewriteRule ^faq/?$ https://www.travelsuiteerp.com/pricing [R=301,L]
+RewriteRule ^product(-tag/.*)?/?$ https://www.travelsuiteerp.com/features/tours [R=301,L]
+RewriteRule ^success-stories/.+$ https://www.travelsuiteerp.com/success-stories [R=301,L]
+RewriteRule ^blog/b2b-agent-credit-limits/?$ https://www.travelsuiteerp.com/blog/b2b-agent-commission-payouts [R=301,L]
+RewriteRule ^blog/double-entry-accounting-travel/?$ https://www.travelsuiteerp.com/blog/travel-agency-profit-and-loss [R=301,L]
+
 # One address for search engines: travelsuiteerp.com -> https://www.travelsuiteerp.com (same path)
 RewriteCond %{HTTP_HOST} ^travelsuiteerp\.com$ [NC]
 RewriteRule ^(.*)$ https://www.travelsuiteerp.com/$1 [R=301,L]
-
-# Old travelsuiteerp.com addresses -> new pages (keeps search rankings)
-RewriteRule ^flight-management-software/?$ /features/flights [R=301,L]
-RewriteRule ^success-stories/.+$ /success-stories [R=301,L]
-RewriteRule ^blog/b2b-agent-credit-limits/?$ /blog/b2b-agent-commission-payouts [R=301,L]
-RewriteRule ^blog/double-entry-accounting-travel/?$ /blog/travel-agency-profit-and-loss [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
