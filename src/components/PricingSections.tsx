@@ -28,36 +28,29 @@ export function PlanFinder() {
   );
 }
 
-const HOSTING: [string, string, string][] = [
-  ["Payment", "Monthly or yearly", "One-time"],
-  ["Where it runs", "Our cloud, managed by us", "Your own server"],
-  ["Installation", "Included", "Free installation"],
-  ["Updates", "Always included", "Lifetime updates"],
-  ["Backups & SSL", "Daily backups and SSL included", "Set up and maintained by our team"],
-  ["Support", "Included while subscribed", "Included with updates"],
-  ["Best for", "Starting fast with a low monthly cost", "A one-time payment, with maintenance and updates done by our team"],
+const LIFETIME: [string, string][] = [
+  ["Payment", "One-time, per plan"],
+  ["Installation", "Free installation by our team"],
+  ["Updates", "Lifetime updates, installed by our team"],
+  ["Backups & SSL", "Set up and maintained by our team"],
+  ["Support", "Included with updates"],
+  ["Setup & training", "Domain, branding, data import and staff training"],
 ];
 
-export function CloudVsLifetime() {
+export function LifetimeIncludes() {
   return (
     <section className="section alt cl">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">Cloud or lifetime license</span>
-          <h2>Rent it, or own it</h2>
-          <p>Every plan comes in both forms. The features are the same; what changes is how you pay and where the system runs.</p>
+          <span className="eyebrow">Lifetime license</span>
+          <h2>Pay once, own it</h2>
+          <p>Every plan is a one-time lifetime license. Our team installs it, sets it up for your agency and keeps it updated.</p>
         </div>
-        <div className="cl-table" role="table" aria-label="Cloud plan compared with lifetime license">
-          <div className="cl-row cl-head" role="row">
-            <span role="columnheader" />
-            <span role="columnheader" className="cl-cloud"><Icon name="i-globe" />Cloud plan</span>
-            <span role="columnheader" className="cl-life"><Icon name="i-lock" />Lifetime license</span>
-          </div>
-          {HOSTING.map(([k, c, l]) => (
+        <div className="cl-table cl-single" role="table" aria-label="What the lifetime license includes">
+          {LIFETIME.map(([k, v]) => (
             <div key={k} className="cl-row" role="row">
               <span role="rowheader" className="b">{k}</span>
-              <span role="cell">{c}</span>
-              <span role="cell">{l}</span>
+              <span role="cell">{v}</span>
             </div>
           ))}
         </div>

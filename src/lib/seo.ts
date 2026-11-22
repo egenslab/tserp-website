@@ -48,8 +48,7 @@ export const ORG_LD = {
 
 /** The product itself, for search engines and AI assistants. Prices: keep in step with components/Plans.tsx. No rating: add one only from real reviews. */
 const plan = (name: string, price: number) => ({
-  "@type": "Offer", name: `${name} plan`, price, priceCurrency: "USD", url: SITE + "/pricing",
-  priceSpecification: { "@type": "UnitPriceSpecification", price, priceCurrency: "USD", billingDuration: "P1M", unitText: "month" },
+  "@type": "Offer", name: `${name} plan, lifetime license`, price, priceCurrency: "USD", url: SITE + "/pricing",
 });
 export const SOFTWARE_LD = {
   "@context": "https://schema.org", "@type": "SoftwareApplication", name: "TravelSuite ERP", url: SITE + "/",
@@ -60,6 +59,6 @@ export const SOFTWARE_LD = {
     "Visa processing", "Tour packages", "Transport", "B2B agent portal with commission and payouts", "B2C booking website",
     "CRM and quotations", "Finance and accounting", "HR and help desk", "AI agents and AI trip planner", "WhatsApp, Messenger and Instagram inbox",
   ],
-  offers: [plan("Starter", 39), plan("Growth", 49), plan("Business", 99)],
+  offers: [plan("Starter", 599), plan("Growth", 799), plan("Business", 1499)],
   publisher: { "@type": "Organization", name: "TravelSuite ERP", url: SITE + "/" },
 };

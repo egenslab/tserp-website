@@ -1,67 +1,36 @@
-"use client";
-
-import { useState } from "react";
 import { WA } from "@/lib/content";
-
-type Period = "monthly" | "yearly" | "lifetime";
-
-const YEARLY_DISCOUNT = 0.8;
-const PERIOD_LABEL: Record<Period, string> = { monthly: "monthly", yearly: "yearly", lifetime: "lifetime license" };
 
 const usd = (value: number) => "$" + Math.round(value).toLocaleString("en-US");
 
-function PlanPrice({ monthly, lifetime, period }: { monthly: number; lifetime: number; period: Period }) {
-  const perMonth = period === "yearly" ? monthly * YEARLY_DISCOUNT : monthly;
-  if (period === "lifetime") {
-    return (
-      <>
-        <div className="price"><span className="b">{usd(lifetime)}</span><small>one-time</small></div>
-        <p className="billing-note">Self-hosted · Lifetime updates</p>
-      </>
-    );
-  }
+function PlanPrice({ lifetime }: { lifetime: number }) {
   return (
     <>
-      <div className="price"><span className="b">{usd(perMonth)}</span><small>/month</small></div>
-      <p className="billing-note">
-        {period === "monthly" ? "Billed monthly" : <><span>Billed yearly:</span> {usd(perMonth * 12)}</>}
-      </p>
+      <div className="price"><span className="b">{usd(lifetime)}</span><small>one-time</small></div>
+      <p className="billing-note">Lifetime updates</p>
     </>
   );
 }
 
-/** "Buy now" opens WhatsApp with the chosen plan and billing already written in the message. */
-function BuyNow({ plan, monthly, lifetime, period, featured = false }: { plan: string; monthly: number; lifetime: number; period: Period; featured?: boolean }) {
-  const price = period === "lifetime" ? usd(lifetime)
-    : period === "yearly" ? `${usd(monthly * YEARLY_DISCOUNT * 12)}/year` : `${usd(monthly)}/month`;
-  const text = `Hi, I want to buy the TravelSuite ERP ${plan} plan (${PERIOD_LABEL[period]}, ${price}).`;
+/** "Buy now" opens WhatsApp with the chosen plan and its lifetime license price already written in the message. */
+function BuyNow({ plan, lifetime, featured = false }: { plan: string; lifetime: number; featured?: boolean }) {
+  const text = `Hi, I want to buy the TravelSuite ERP ${plan} plan (lifetime license, ${usd(lifetime)}).`;
   return (
-    <a href={`${WA}?text=${encodeURIComponent(text)}`} target="_blank" rel="noopener" data-plan={plan} data-value={period === "lifetime" ? lifetime : period === "yearly" ? Math.round(monthly * YEARLY_DISCOUNT * 12) : monthly} className={`btn btn-block ${featured ? "btn-lime" : "btn-outline"}`}>
+    <a href={`${WA}?text=${encodeURIComponent(text)}`} target="_blank" rel="noopener" data-plan={plan} data-value={lifetime} className={`btn btn-block ${featured ? "btn-lime" : "btn-outline"}`}>
       <svg className="ic fill"><use href="#i-wa" /></svg>Buy now
     </a>
   );
 }
 
-/** Pricing plans in USD with a billing period toggle (monthly / yearly / lifetime). */
+/** Pricing plans in USD: one-time lifetime licenses. */
 export default function Plans() {
-  const [period, setPeriod] = useState<Period>("lifetime");
   return (
     <>
-      <div className="pricing-controls">
-        <div className="seg" role="group" aria-label="Billing period">
-          <button className={period === "monthly" ? "active" : undefined} aria-pressed={period === "monthly"} onClick={() => setPeriod("monthly")}>Monthly</button>
-          {" "}
-          <button className={period === "yearly" ? "active" : undefined} aria-pressed={period === "yearly"} onClick={() => setPeriod("yearly")}>Yearly <em>Save 20%</em></button>
-          {" "}
-          <button className={period === "lifetime" ? "active" : undefined} aria-pressed={period === "lifetime"} onClick={() => setPeriod("lifetime")}>Lifetime license</button>
-        </div>
-      </div>
       <div className="plans">
         <div className="plan">
           <h3>Starter</h3>
           <p className="plan-sub">For small agencies going digital</p>
-          <PlanPrice monthly={39} lifetime={599} period={period} />
-          <BuyNow plan="Starter" monthly={39} lifetime={599} period={period} />
+          <PlanPrice lifetime={599} />
+          <BuyNow plan="Starter" lifetime={599} />
           <ul>
             <li>Agency website + B2C booking</li>
             <li>Any 2 booking modules</li>
@@ -73,8 +42,8 @@ export default function Plans() {
         <div className="plan">
           <h3>Growth</h3>
           <p className="plan-sub">For agencies with a sales team</p>
-          <PlanPrice monthly={49} lifetime={799} period={period} />
-          <BuyNow plan="Growth" monthly={49} lifetime={799} period={period} />
+          <PlanPrice lifetime={799} />
+          <BuyNow plan="Growth" lifetime={799} />
           <ul>
             <li>Everything in Starter</li>
             <li>All 6+ booking modules</li>
@@ -87,8 +56,8 @@ export default function Plans() {
           <span className="badge">Most popular</span>
           <h3>Business</h3>
           <p className="plan-sub">For B2B agencies & Hajj operators</p>
-          <PlanPrice monthly={99} lifetime={1499} period={period} />
-          <BuyNow plan="Business" monthly={99} lifetime={1499} period={period} featured />
+          <PlanPrice lifetime={1499} />
+          <BuyNow plan="Business" lifetime={1499} featured />
           <ul>
             <li>Everything in Growth</li>
             <li>B2B agents with commission & payouts</li>

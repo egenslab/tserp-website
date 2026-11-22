@@ -2214,3 +2214,6 @@ html[lang="th"] body { line-height: 1.8; }
 .post-card, .success-card { position: relative; }
 .card-link::after { content: ""; position: absolute; inset: 0; z-index: 1; }
 button.ai-card { border: 0; font: inherit; color: inherit; text-align: start; cursor: pointer; }
+/* Lifetime license table on the pricing page: label and value only */
+.cl-single .cl-row { grid-template-columns: minmax(0, .8fr) minmax(0, 2fr); }
+.cl-single .cl-row:first-child > span { border-top: 0; }

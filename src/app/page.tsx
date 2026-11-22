@@ -662,8 +662,8 @@ export default function HomePage() {
               <p>International gateways including Visa, Mastercard, American Express, PayPal, Stripe, Apple Pay and Google Pay, plus bank transfer, agent wallet and regional options such as bKash. Other gateways can be added on request.</p>
             </details>
             <details>
-              <summary>Can I host it on my own server?</summary>
-              <p>Yes. Choose our managed cloud on a monthly or yearly plan, or buy a lifetime license and we install it on your server free of charge.</p>
+              <summary>How is TravelSuite ERP sold?</summary>
+              <p>As a one-time lifetime license: our team installs it free of charge, and you receive lifetime updates.</p>
             </details>
             <details>
               <summary>How long does it take to go live?</summary>

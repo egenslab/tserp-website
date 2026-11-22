@@ -18,8 +18,8 @@ export function GET() {
     "",
     "TravelSuite ERP is a division of Egens Lab Limited, with offices in the USA, Malaysia and Bangladesh, and serves agencies " +
       "in Bangladesh, Malaysia, Indonesia, the Gulf (Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain), Egypt, Jordan, Türkiye, the UK and the USA. " +
-      "Plans: Starter $39/month, Growth $49/month, Business $99/month (20% off yearly), Enterprise custom; a lifetime licence " +
-      "(self-hosted, lifetime updates) is also offered. Most agencies go live in 7 to 14 days. GDS API integration is part of the Enterprise plan. " +
+      "Plans are one-time lifetime licences with free installation and lifetime updates: Starter $599, " +
+      "Growth $799, Business $1,499, Enterprise custom. Most agencies go live in 7 to 14 days. GDS API integration is part of the Enterprise plan. " +
       "E-invoicing for 8 countries is being added on the Business plan. The website is available in English, Arabic, Bangla, Chinese, " +
       "Indonesian, Malay, Thai, Turkish and Urdu.",
     "",

@@ -1,21 +1,21 @@
 import Link from "next/link";
 import Compare from "@/components/Compare";
 import Plans from "@/components/Plans";
-import { CloudVsLifetime, GoLive, PlanFinder, PricingProof } from "@/components/PricingSections";
+import { LifetimeIncludes, GoLive, PlanFinder, PricingProof } from "@/components/PricingSections";
 import { FaqSection, JsonLd } from "@/components/ui";
 import type { Faq } from "@/lib/content";
 import { breadcrumbLd, faqLd, pageMeta, type Crumb } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "Travel ERP Pricing & Plans — TravelSuite ERP",
-  description: "TravelSuite ERP plans for travel agencies, Hajj & Umrah operators and B2B consolidators. Monthly, yearly or lifetime license, priced in USD.",
+  description: "TravelSuite ERP plans for travel agencies, Hajj & Umrah operators and B2B consolidators: a one-time lifetime license with lifetime updates, priced in USD.",
   path: "/pricing",
 });
 
 const FAQS: Faq[] = [
-  ["What is the difference between a cloud plan and a lifetime license?", "A cloud plan is hosted and maintained by us for a monthly or yearly fee. A lifetime license is a one-time payment: we install TravelSuite ERP on your own server and you receive lifetime updates, installed by our team."],
+  ["What is a lifetime license?", "A one-time payment for your plan. Our team installs TravelSuite ERP free of charge, sets up backups and SSL, and you receive lifetime updates, installed by our team."],
   ["Which plan should I start with?", "Small agencies selling two services usually start on Starter. Agencies with a sales team and accounts start on Growth. Hajj & Umrah operators, B2B consolidators and online travel agencies usually need Business. Our team can recommend a plan in a short call."],
-  ["Can I change plans later?", "Yes. You can upgrade at any time and only pay the difference for the remaining period. Your data stays exactly where it is."],
+  ["Can I change plans later?", "Yes. You can upgrade at any time and pay only the difference between the two licenses. Your data stays exactly where it is."],
   ["How do I buy and pay?", "Click Buy now on a plan and our team confirms the details with you on WhatsApp, then sends an invoice with the payment options for your country. Plans are priced in USD."],
   ["Is setup really free?", "Yes. Every plan includes setup of your domain, branding, modules and payment methods, import of your existing data from Excel and live training for your staff."],
   ["How long does it take to go live?", "Most agencies go live in 7 to 14 days. Larger setups, extra modules or custom development can take longer."],
@@ -33,7 +33,7 @@ export default function PricingPage() {
         <div className="container">
           <span className="pill">Pricing</span>
           <h1>Simple plans that <span className="hl">grow with you</span></h1>
-          <p className="lead">Pay monthly, save 20% yearly, or own a lifetime license on your own server. Every plan includes setup and training.</p>
+          <p className="lead">Pay once and own a lifetime license, with lifetime updates. Every plan includes setup and training.</p>
         </div>
       </section>
       <section className="section pricing-page" id="pricing">
@@ -97,7 +97,7 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
-      <CloudVsLifetime />
+      <LifetimeIncludes />
       <GoLive />
       <PricingProof />
       <FaqSection faqs={FAQS} title="Questions about plans and billing" />

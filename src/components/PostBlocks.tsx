@@ -115,9 +115,9 @@ function InvoiceFig() {
 
 // Keep in step with components/Plans.tsx
 const PLANS = [
-  { name: "Starter", sub: "For small agencies going digital", price: "$39", items: ["Agency website + B2C booking", "Any 2 booking modules", "CRM, invoices & payments", "3 staff users · 1 branch"] },
-  { name: "Growth", sub: "For agencies with a sales team", price: "$49", items: ["Everything in Starter", "All 6+ booking modules", "Finance & accounting, expenses", "10 staff users · 2 branches"] },
-  { name: "Business", sub: "For B2B agencies & Hajj operators", price: "$99", items: ["B2B agents with commission & payouts", "AI agents & AI trip planner", "E-invoicing in 8 countries", "Unlimited users · 5 branches"], featured: true },
+  { name: "Starter", sub: "For small agencies going digital", price: "$599", items: ["Agency website + B2C booking", "Any 2 booking modules", "CRM, invoices & payments", "3 staff users · 1 branch"] },
+  { name: "Growth", sub: "For agencies with a sales team", price: "$799", items: ["Everything in Starter", "All 6+ booking modules", "Finance & accounting, expenses", "10 staff users · 2 branches"] },
+  { name: "Business", sub: "For B2B agencies & Hajj operators", price: "$1,499", items: ["B2B agents with commission & payouts", "AI agents & AI trip planner", "E-invoicing in 8 countries", "Unlimited users · 5 branches"], featured: true },
   { name: "Enterprise", sub: "For consolidators & groups", price: "", items: ["Everything in Business", "GDS API integrations", "Android & iOS apps", "Source code & custom development"] },
 ];
 
@@ -129,7 +129,7 @@ function PlansFig() {
           <div key={p.name} className={`pb-plan${p.featured ? " featured" : ""}`}>
             <p className="pb-plan-name" data-no-i18n>{p.name}</p>
             <small>{p.sub}</small>
-            <p className="pb-price">{p.price ? <><span className="b">{p.price}</span><small>/month</small></> : <span className="b">Custom</span>}</p>
+            <p className="pb-price">{p.price ? <><span className="b">{p.price}</span><small>one-time</small></> : <span className="b">Custom</span>}</p>
             <ul>{p.items.map((x) => <li key={x}>{x}</li>)}</ul>
           </div>
         ))}

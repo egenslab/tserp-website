@@ -5,9 +5,9 @@ import { AFFILIATE } from "@/lib/affiliate";
 
 // USD list prices, matching the pricing page
 const PLANS = [
-  { name: "Starter", monthly: 39, lifetime: 599 },
-  { name: "Growth", monthly: 49, lifetime: 799 },
-  { name: "Business", monthly: 99, lifetime: 1499 },
+  { name: "Starter", lifetime: 599 },
+  { name: "Growth", lifetime: 799 },
+  { name: "Business", lifetime: 1499 },
 ];
 
 const usd = (n: number) => "$" + Math.round(n).toLocaleString("en-US");
@@ -16,10 +16,9 @@ const usd = (n: number) => "$" + Math.round(n).toLocaleString("en-US");
 export default function AffiliateCalc() {
   const [count, setCount] = useState(5);
   const [plan, setPlan] = useState(1);
-  const [lifetime, setLifetime] = useState(false);
   const p = PLANS[plan];
   const rate = AFFILIATE.commission / 100;
-  const perAgency = lifetime ? p.lifetime * rate : p.monthly * AFFILIATE.months * rate;
+  const perAgency = p.lifetime * rate;
   return (
     <div className="aff-calc">
       <div className="aff-calc-form">
@@ -35,18 +34,11 @@ export default function AffiliateCalc() {
             ))}
           </div>
         </div>
-        <div className="aff-field">
-          <span>Billing</span>
-          <div className="seg" role="group" aria-label="Billing">
-            <button type="button" className={!lifetime ? "active" : undefined} aria-pressed={!lifetime} onClick={() => setLifetime(false)}>Monthly</button>
-            <button type="button" className={lifetime ? "active" : undefined} aria-pressed={lifetime} onClick={() => setLifetime(true)}>Lifetime license</button>
-          </div>
-        </div>
       </div>
       <div className="aff-calc-result" aria-live="polite">
         <small>Your estimated commission</small>
         <strong>{usd(perAgency * count)}</strong>
-        <p>{usd(perAgency)} per agency · {AFFILIATE.commission}% of {lifetime ? "the one-time license" : `${AFFILIATE.months} months of subscription`}</p>
+        <p>{usd(perAgency)} per agency · {AFFILIATE.commission}% of the one-time license</p>
       </div>
     </div>
   );

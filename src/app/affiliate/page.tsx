@@ -5,7 +5,7 @@ import { AFFILIATE } from "@/lib/affiliate";
 import { EMAIL, WA, type Faq } from "@/lib/content";
 import { breadcrumbLd, faqLd, pageMeta, type Crumb } from "@/lib/seo";
 
-const { commission, months, cookieDays, minPayout } = AFFILIATE;
+const { commission, cookieDays, minPayout } = AFFILIATE;
 
 export const metadata = pageMeta({
   title: "Affiliate Program — Earn With TravelSuite ERP",
@@ -30,7 +30,7 @@ const WHO = [
 ];
 
 const PERKS = [
-  ["i-percent", `${commission}% commission`, `On every subscription payment for the first ${months} months, or on the full lifetime license.`],
+  ["i-percent", `${commission}% commission`, "On the full price of every lifetime license a referred agency buys."],
   ["i-clock", `${cookieDays}-day cookie`, "Agencies often take time to decide. You still get credit if they sign up weeks later."],
   ["i-chart", "Real-time dashboard", "See clicks, sign-ups, sales and commission as they happen."],
   ["i-wallet", "Monthly payouts", `Paid by bank transfer, bKash or PayPal once you reach $${minPayout}.`],
@@ -40,7 +40,7 @@ const PERKS = [
 
 const WHY = [
   "All-in-one travel ERP: flights, hotels, Hajj & Umrah, visa, tours and 12+ ERP modules",
-  "Monthly, yearly and lifetime plans for every agency size",
+  "One-time lifetime licenses for every agency size",
   "Website, B2B agent portal, AI and omnichannel inbox included",
   "Free setup, data import and staff training",
   "Local support in English and Bangla over WhatsApp",
@@ -49,7 +49,7 @@ const WHY = [
 
 const FAQS: Faq[] = [
   ["Who can join the affiliate program?", "Anyone who can reach travel agencies, tour operators or Hajj & Umrah operators: bloggers, YouTubers, web agencies, consultants, associations and existing customers. There is no fee to join."],
-  ["How much commission do I earn?", `You earn ${commission}% of what each referred agency pays: on every subscription payment for the first ${months} months, or on the full price of a lifetime license.`],
+  ["How much commission do I earn?", `You earn ${commission}% of the full price of each lifetime license a referred agency buys.`],
   ["How long does the referral cookie last?", `${cookieDays} days. If an agency clicks your link and buys within ${cookieDays} days, the sale is credited to you.`],
   ["When and how am I paid?", `Commission is paid monthly by bank transfer, bKash or PayPal once your balance reaches $${minPayout}. Commission on a sale is confirmed after the refund period ends.`],
   ["Do I need to be a TravelSuite ERP customer?", "No. You don't need to use the software to promote it, although many of our best affiliates are agencies that already do."],
@@ -77,7 +77,7 @@ export default function AffiliatePage() {
           </div>
           <div className="about-stats">
             <div><strong>{commission}%</strong><span>commission</span></div>
-            <div><strong>{months}</strong><span>months of recurring payouts</span></div>
+            <div><strong>${Math.round(1499 * commission / 100)}</strong><span>per Business license</span></div>
             <div><strong>{cookieDays}</strong><span>day referral cookie</span></div>
             <div><strong>${minPayout}</strong><span>minimum payout</span></div>
           </div>
