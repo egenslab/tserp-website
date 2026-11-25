@@ -1773,7 +1773,7 @@
       "color": "#5a1f3c",
       "cover": "/assets/img/blog/iata-accreditation-travel-agency-guide.jpg",
       "date": "6 November 2026",
-      "read": 15,
+      "read": 17,
       "title": "IATA accreditation for travel agencies: a step-by-step guide",
       "seoTitle": "IATA accreditation for travel agencies: step-by-step guide",
       "excerpt": "What IATA accreditation lets your agency do, which model fits, the documents you need, how to apply step by step, and what changes once you settle through BSP.",
@@ -2224,6 +2224,65 @@
         ],
         [
           "h2",
+          "How much does IATA accreditation cost?"
+        ],
+        [
+          "p",
+          "There is no single price for IATA accreditation. What you pay depends on the accreditation model you choose, the country you trade in, how much you sell through BSP and how many locations you register. IATA's fees are set by its Passenger Agency Conference in Swiss francs and are published in IATA's accreditation brochure and on the Customer Portal, so check the current figures there before you budget."
+        ],
+        [
+          "table",
+          [
+            "Cost",
+            "What it is",
+            "How it varies"
+          ],
+          [
+            [
+              "Application fee",
+              "A one-time fee when IATA reviews your application",
+              "Set per accreditation model; GoLite is lighter than GoStandard or GoGlobal"
+            ],
+            [
+              "Annual agency fee",
+              "A yearly fee to keep the accreditation active",
+              "Tiered by your gross annual BSP sales, plus fees for each associate location"
+            ],
+            [
+              "Financial security",
+              "A bank guarantee or other security, where your model and market ask for it",
+              "Set by local financial criteria; GoLite needs no minimum financial security"
+            ],
+            [
+              "Local licence and company costs",
+              "Company registration, a travel agency licence and any association membership",
+              "Set by your own government and association, not by IATA"
+            ],
+            [
+              "Staff and systems",
+              "Qualified staff, training, a GDS agreement and ticketing setup",
+              "Depends on your team, your market and the systems you choose"
+            ]
+          ]
+        ],
+        [
+          "h3",
+          "How much is the IATA annual fee?"
+        ],
+        [
+          "p",
+          "The annual agency fee covers your head office accreditation, any associate locations and IATA's travel agency commissioner fee. IATA groups agents into tiers by gross annual sales through BSP: under USD 200,000, between USD 200,000 and USD 2 million, and above USD 2 million. The fee rises with each tier, and GoGlobal, which covers several countries, carries its own fee. IATA publishes the current amounts in its accreditation brochure."
+        ],
+        [
+          "p",
+          "When you compare costs, add the financial security as well. GoLite has no minimum financial security, no annual financial review and no audited statements to send to IATA, which is why many smaller agencies start there. GoStandard gives you a cash facility but asks for financial security and reviews under your country's local criteria."
+        ],
+        [
+          "note",
+          "Fees and criteria change. Use IATA's current accreditation brochure and the Customer Portal for exact amounts in your market."
+        ],
+        [
+          "h2",
           "After approval: setting up to issue and stay compliant"
         ],
         [
@@ -2427,6 +2486,10 @@
             [
               "Travel Agency Management System, Bangladesh",
               "https://regtravelagency.gov.bd/"
+            ],
+            [
+              "IATA: Travel Agent Services accreditation brochure",
+              "https://www.iata.org/contentassets/b07f1b4f067e4608856515c0cc26d6c4/boost-credibility-travel-accreditation-brochure.pdf"
             ]
           ]
         ],
@@ -2451,6 +2514,14 @@
           [
             "How do I become IATA accredited?",
             "First make sure your company and any national travel agency licence are valid. Then choose an accreditation model, such as GoLite, GoStandard or GoGlobal, and follow your country checklist to prepare documents. Apply through IATA's online Customer Portal. After IATA reviews the file, you pay the fees, sign the agency agreement and provide financial security if your model requires it. Then set up your GDS and BSPlink access."
+          ],
+          [
+            "How much does IATA accreditation cost?",
+            "It depends on the accreditation model, your country, your BSP sales and how many locations you register. Expect a one-time application fee, an annual agency fee tiered by your gross annual BSP sales, and, for models with a cash facility, financial security under your country's criteria. Local licence, staff and system costs come on top. IATA publishes its current fees, set in Swiss francs, in its accreditation brochure and on the Customer Portal."
+          ],
+          [
+            "How much is the IATA annual fee?",
+            "The annual agency fee covers your head office, any associate locations and IATA's travel agency commissioner fee. It is tiered by gross annual BSP sales: under USD 200,000, USD 200,000 to USD 2 million, and above USD 2 million, with higher fees in higher tiers and a separate fee for GoGlobal. Check IATA's current accreditation brochure for the exact amounts."
           ],
           [
             "What is the difference between an IATA TIDS code and accreditation?",
