@@ -9,6 +9,612 @@
   ],
   "items": [
     {
+      "slug": "uae-e-invoicing-travel-agency",
+      "cat": "Finance",
+      "icon": "i-receipt",
+      "color": "#0f5c4f",
+      "cover": "/assets/img/blog/uae-e-invoicing-travel-agency-guide.jpg",
+      "date": "27 November 2026",
+      "title": "UAE e-invoicing 2027: a guide for travel agencies",
+      "seoTitle": "UAE e-invoicing 2027: deadlines guide for travel agencies",
+      "metaDescription": "UAE e-invoicing for travel agencies: Phase 2 deadlines, ASP rules, penalties, Peppol and PINT AE, and a month-by-month plan to be ready by 1 July 2027.",
+      "excerpt": "Most UAE travel agencies must appoint an Accredited Service Provider by 31 March 2027 and issue e-invoices from 1 July 2027. Here is what changes and how to prepare.",
+      "read": 16,
+      "body": [
+        [
+          "p",
+          "UAE e-invoicing is coming to every VAT-registered business in stages, and most travel agencies, tour operators, DMCs and B2B consolidators fall into Phase 2. If your annual revenue is below AED 50 million, you must appoint an Accredited Service Provider (ASP) by 31 March 2027 and issue e-invoices from 1 July 2027. This guide explains the dates, the penalties, how the Peppol 5-corner model works and what changes for tickets, packages, refunds and commissions, with a month-by-month plan you can start this week."
+        ],
+        [
+          "h2",
+          "What is UAE e-invoicing and why does it matter for travel agencies?"
+        ],
+        [
+          "p",
+          "Under the new system, a PDF or paper invoice is no longer the legal invoice between businesses. Each invoice is created as structured data in a set format called PINT AE, sent through an Accredited Service Provider over the Peppol network, and its tax data is reported to the Federal Tax Authority (FTA). The rules come from Ministerial Decision No. 243 of 2025 on the Electronic Invoicing System and Ministerial Decision No. 244 of 2025 on its implementation, both since amended."
+        ],
+        [
+          "p",
+          "For a travel business this touches daily work. Corporate travel accounts, B2B sub-agents, hotels, ground handlers and airlines all sit on one side or the other of your invoices. If your invoicing still runs from spreadsheets or a basic accounting tool, the data quality the system expects will feel strict: correct Tax Registration Numbers (TRNs), clear line items, VAT shown properly and every refund handled as a credit note."
+        ],
+        [
+          "lp",
+          "Who it covers.",
+          "The Ministry of Finance guidelines say supplies to or from natural persons who are not in business are outside the scope for now. Business-to-business and business-to-government invoices are in scope. A purely B2C agency is still treated as being in business transactions when it buys from other businesses, so it cannot simply ignore the rules."
+        ],
+        [
+          "note",
+          "This article is general information based on official Ministry of Finance and FTA publications available in November 2026. It is not legal or tax advice. Rules and dates can change, so confirm your position with the FTA guidance and a qualified UAE tax adviser."
+        ],
+        [
+          "h2",
+          "When does e-invoicing start in the UAE?"
+        ],
+        [
+          "p",
+          "The UAE e-invoicing deadline depends on your revenue and on whether you are a government entity. A pilot started on 1 July 2026 with a selected group of taxpayers. After that, the roll-out runs in two phases for businesses and a separate track for government entities."
+        ],
+        [
+          "table",
+          [
+            "Group",
+            "Appoint an ASP by",
+            "Go live by"
+          ],
+          [
+            [
+              "Phase 1: revenue AED 50 million or more",
+              "30 October 2026",
+              "1 January 2027"
+            ],
+            [
+              "Phase 2: revenue below AED 50 million",
+              "31 March 2027",
+              "1 July 2027"
+            ],
+            [
+              "Government entities",
+              "31 March 2027",
+              "1 October 2027"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "The Phase 1 ASP deadline was first set for 31 July 2026. Ministerial Decision No. 66 of 2026 moved it to 30 October 2026, while the 1 January 2027 go-live date stayed the same. That deadline has now passed, so large groups that have not appointed a provider are already exposed to penalties."
+        ],
+        [
+          "image",
+          "/assets/img/blog/uae-e-invoicing-travel-agency-timeline.jpg",
+          "Timeline of UAE e-invoicing phases from the July 2026 pilot to government entities in October 2027",
+          "The UAE roll-out runs from the July 2026 pilot to government entities in October 2027."
+        ],
+        [
+          "ol",
+          [
+            [
+              "1 July 2026:",
+              "pilot with a selected group of taxpayers."
+            ],
+            [
+              "1 January 2027:",
+              "Phase 1 businesses with revenue of AED 50 million or more go live."
+            ],
+            [
+              "31 March 2027:",
+              "Phase 2 businesses and government entities must have appointed an ASP."
+            ],
+            [
+              "1 July 2027:",
+              "Phase 2 businesses with revenue below AED 50 million go live."
+            ],
+            [
+              "1 October 2027:",
+              "government entities go live."
+            ]
+          ]
+        ],
+        [
+          "h3",
+          "Which phase is my travel agency in?"
+        ],
+        [
+          "p",
+          "Most agencies are in e-invoicing UAE phase 2, because their revenue is below AED 50 million. Check how revenue is measured in the decision before you decide, and look at the whole legal entity, not one branch. A consolidator with high gross ticket sales may land in Phase 1 even if its margin is small, so do not guess. Ask your tax adviser to confirm the band in writing."
+        ],
+        [
+          "h3",
+          "What about members of the same VAT group?"
+        ],
+        [
+          "p",
+          "The Ministry of Finance has announced a temporary 24-month exclusion, starting on 1 January 2027, for business transactions between members of the same tax group. The guidelines describe this as relief on timing, and each group member still needs its own ASP set-up. If your agency belongs to a group with a sister hotel, transport or DMC company, read the guidance on this point carefully."
+        ],
+        [
+          "h2",
+          "Who must appoint an Accredited Service Provider?"
+        ],
+        [
+          "p",
+          "Every business in scope must appoint an ASP, on both sides of the invoice. When you issue an e-invoice, your ASP sends it. When a hotel or ground handler bills you, your ASP receives it. That means a small agency that rarely issues B2B invoices still needs an ASP to receive its supplier invoices."
+        ],
+        [
+          "p",
+          "An ASP is a company accredited by the Ministry of Finance to exchange and report e-invoices. The FTA e-invoicing pages carry the official list. Choose from that list only, and check that the provider supports your volumes and your software."
+        ],
+        [
+          "h3",
+          "Questions to ask a provider"
+        ],
+        [
+          "ul",
+          [
+            "Are you on the official list of Accredited Service Providers, and since when?",
+            "How do you connect to our invoicing or ERP software, and who builds that link?",
+            "How do you price: per invoice, per month or per year?",
+            "How do you show rejections, delivery and FTA reporting status?",
+            "How long do you keep e-invoices, and can we export them?",
+            "What support do you give in English and Arabic during the first month live?"
+          ]
+        ],
+        [
+          "p",
+          "Ask early how the provider will connect to your systems. Some ASPs offer a web portal for manual upload, which may be enough for a handful of invoices a month but becomes slow and error-prone at travel volumes. A direct connection from your invoicing software to the ASP saves time and keeps the status of every invoice next to the booking."
+        ],
+        [
+          "read",
+          "UAE e-invoicing for travel agencies, ready for Peppol",
+          "/e-invoicing/uae"
+        ],
+        [
+          "h2",
+          "What are the UAE e-invoicing penalties?"
+        ],
+        [
+          "p",
+          "Administrative penalties are set by Cabinet Decision No. 173 of 2026, which replaced Cabinet Decision No. 106 of 2025. The FTA has publicly urged businesses to meet the deadlines to avoid them. The main headline penalties are below; read the decision itself for the full list and exact wording."
+        ],
+        [
+          "table",
+          [
+            "Violation",
+            "Penalty",
+            "Limit"
+          ],
+          [
+            [
+              "Not implementing the system, including no ASP appointed",
+              "AED 5,000 at first, then AED 5,000 for each month or part of a month",
+              "AED 50,000 in any 12 consecutive months"
+            ],
+            [
+              "Failures on electronic invoices",
+              "AED 100 per electronic invoice",
+              "AED 5,000 per calendar month"
+            ],
+            [
+              "Failures on electronic credit notes",
+              "AED 100 per electronic credit note",
+              "AED 5,000 per calendar month"
+            ],
+            [
+              "Not telling the ASP about changes to registered data",
+              "AED 250 for each day of delay",
+              "AED 5,000 per calendar month"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "For a Phase 2 agency, the cost of missing 31 March 2027 grows each month you are late, and it sits on top of the practical problem: once your suppliers and corporate clients go live, they will expect your e-invoices in the right format. Late compliance can mean delayed payments as much as fines."
+        ],
+        [
+          "cta",
+          "Phase 2 deadline coming up?",
+          "See how your invoices, refunds and agent commissions would look as e-invoices, using your own bookings, in a free demo."
+        ],
+        [
+          "h2",
+          "How does the 5-corner model work with Peppol UAE and PINT AE?"
+        ],
+        [
+          "p",
+          "The UAE uses a Peppol-based 5-corner model. Four corners exchange the invoice and the fifth corner is the FTA, which receives the tax data. Peppol UAE uses PINT AE, the UAE version of the Peppol international invoice format."
+        ],
+        [
+          "flow",
+          [
+            "Supplier issues invoice",
+            "Supplier's ASP validates and sends",
+            "Buyer's ASP receives",
+            "Buyer gets the e-invoice",
+            "FTA receives the tax data"
+          ],
+          "The 5-corner model: four corners exchange the invoice and the FTA is the fifth."
+        ],
+        [
+          "p",
+          "In practice your team keeps creating invoices from bookings as usual. Your software turns each invoice into PINT AE data, hands it to your ASP, and receives back confirmation that it was delivered and reported, or a rejection with a reason. A VAT e-invoice UAE buyers receive this way replaces the emailed PDF as the legal record, although many agencies will still send a PDF to customers for convenience."
+        ],
+        [
+          "h3",
+          "Invoices in other currencies"
+        ],
+        [
+          "p",
+          "Travel agencies often quote in US dollars, euros or Saudi riyals. An e-invoice can be issued in another currency, but the VAT amounts must also be shown in AED. Agree with your adviser which exchange rate source you will use, apply it the same way every time and make sure your software stores the rate on each invoice."
+        ],
+        [
+          "lp",
+          "Why data quality matters.",
+          "An ASP will reject an invoice with a missing or wrong TRN, a buyer it cannot find on the network or VAT that does not add up. Clean customer and supplier records before go-live, not after the first rejections arrive."
+        ],
+        [
+          "h2",
+          "What changes for ticket sales, packages, refunds and agent commissions?"
+        ],
+        [
+          "p",
+          "Travel agency VAT UAE treatment depends on what you actually sell and in what capacity. E-invoicing does not change the VAT rules themselves, but it makes every invoice visible to the FTA in near real time, so a wrong treatment shows up faster. Settle these questions with your tax adviser first, then set up your invoice types to match."
+        ],
+        [
+          "h3",
+          "Are you acting as an agent or a principal?"
+        ],
+        [
+          "p",
+          "Many UAE travel businesses do both. When you sell an airline ticket or a hotel room on behalf of a supplier, you may be acting as an agent and earning a commission or service fee. When you buy hotel nights, transfers and tours and sell them as one package at your own price, you may be acting as a principal. The answer decides what you invoice, for what amount and with what VAT."
+        ],
+        [
+          "image",
+          "/assets/img/blog/uae-e-invoicing-travel-agency-versus.jpg",
+          "Comparison of a travel agency acting as an agent versus acting as a principal for UAE e-invoicing",
+          "Agent or principal: the answer shapes what your e-invoices must show."
+        ],
+        [
+          "table",
+          [
+            "Question",
+            "Acting as an agent",
+            "Acting as a principal"
+          ],
+          [
+            [
+              "What you usually sell",
+              "A supplier's service on its behalf",
+              "Services you bought and resell"
+            ],
+            [
+              "What you usually invoice",
+              "Your commission or service fee",
+              "The full price of the package"
+            ],
+            [
+              "What you usually receive",
+              "Commission statements or supplier invoices",
+              "Supplier e-invoices for each cost"
+            ],
+            [
+              "What to confirm",
+              "VAT on your fee and how it is shown",
+              "VAT treatment of the package and its parts"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "This table is a starting point for the conversation, not a ruling. Special rules may apply to some travel services, so ask your tax adviser to confirm the treatment for each product line before you map it to e-invoices."
+        ],
+        [
+          "h3",
+          "Air tickets"
+        ],
+        [
+          "p",
+          "Ministerial Decision No. 243 of 2025 excludes international passenger transport provided by an airline where an electronic ticket is issued, and certain ancillary airline services with an Electronic Miscellaneous Document. That exclusion covers the airline's own supply. Your service fee or markup invoice to a corporate client is a separate question, so check with your adviser whether it must go out as an e-invoice."
+        ],
+        [
+          "h3",
+          "Packages, Hajj and Umrah and group tours"
+        ],
+        [
+          "p",
+          "Packages sold to companies, schools or other agencies are business transactions and are likely to need e-invoices. Packages sold to individual travellers are B2C and are outside the scope for now, but the hotels, transport and ground services you buy for them will reach you as e-invoices through your ASP. Your purchase side changes even if your customers are mostly families and pilgrims."
+        ],
+        [
+          "h3",
+          "Refunds and cancellations"
+        ],
+        [
+          "p",
+          "A refund or cancellation on a B2B invoice should be issued as an electronic credit note linked to the original e-invoice, not by editing or deleting the invoice. Travel produces many changes: date moves, name changes, partial cancellations and no-shows. Agree with your adviser which of these need a credit note and which need a new invoice, and write it down for your team."
+        ],
+        [
+          "h3",
+          "B2B agent commissions"
+        ],
+        [
+          "p",
+          "If you are a consolidator, your sub-agents that are UAE businesses also need an ASP. Commission they invoice to you, and fares you invoice to them, flow through Peppol like any other B2B invoice. Ask your adviser how commission statements, netting and self-billing should be handled, because these are common in travel and the answer affects your set-up."
+        ],
+        [
+          "read",
+          "ZATCA e-invoicing for travel agencies: Phase 2 and Wave 25 explained",
+          "/blog/zatca-e-invoicing-travel-agency"
+        ],
+        [
+          "h2",
+          "How should a Phase 2 agency prepare? A month-by-month countdown to 1 July 2027"
+        ],
+        [
+          "p",
+          "E-invoicing for SMEs UAE businesses is mostly a project of good records and clear decisions. Seven months is enough if you start now and keep to a simple plan. Here is a countdown from December 2026 to go-live."
+        ],
+        [
+          "ol",
+          [
+            [
+              "December 2026:",
+              "confirm your revenue band, list every type of invoice and credit note you issue and name one owner for the project."
+            ],
+            [
+              "January 2027:",
+              "meet your tax adviser on agent and principal treatment, air ticket fees, packages, refunds and commissions, and record the decisions."
+            ],
+            [
+              "February 2027:",
+              "shortlist providers from the FTA list, ask how each one connects to your software and compare prices."
+            ],
+            [
+              "March 2027:",
+              "appoint your Accredited Service Provider before 31 March and register your details with it."
+            ],
+            [
+              "April 2027:",
+              "clean customer, sub-agent and supplier records, collecting TRNs and correct legal names."
+            ],
+            [
+              "May 2027:",
+              "test real invoice types end to end: a corporate ticket fee, a B2B package, a multi-currency invoice and a credit note."
+            ],
+            [
+              "June 2027:",
+              "train the finance and sales teams, agree who handles rejections and tell key clients and suppliers your go-live date."
+            ],
+            [
+              "1 July 2027:",
+              "go live, check the status of every invoice daily for the first weeks and fix rejections the same day."
+            ]
+          ]
+        ],
+        [
+          "p",
+          "A short message to key clients and suppliers in June avoids confusion in the first weeks. You can adapt the sample below."
+        ],
+        [
+          "quote",
+          "Dear partner, from 1 July 2027 we will issue and receive invoices as UAE e-invoices through our Accredited Service Provider. Please confirm your TRN, legal name and Peppol details so that our invoices reach you without delay. Contact our accounts team with any questions."
+        ],
+        [
+          "image",
+          "/assets/img/blog/uae-e-invoicing-travel-agency-checklist.jpg",
+          "Checklist of steps for a UAE travel agency to be ready for e-invoicing Phase 2",
+          "Readiness checklist for a Phase 2 travel agency before 1 July 2027."
+        ],
+        [
+          "ul",
+          [
+            "Confirm your revenue band.",
+            "Shortlist and appoint an ASP.",
+            "Clean customer and supplier TRNs.",
+            "Map every invoice type.",
+            "Agree agent and principal treatment.",
+            "Test credit notes for refunds.",
+            "Train the finance team.",
+            "Go live on 1 July 2027."
+          ]
+        ],
+        [
+          "read",
+          "MyInvois e-invoicing for travel agencies: a practical guide for Malaysia",
+          "/blog/myinvois-e-invoicing-travel-agency"
+        ],
+        [
+          "h2",
+          "What mistakes should travel agencies avoid?"
+        ],
+        [
+          "p",
+          "The same problems tend to appear when any country moves to e-invoicing. Most of them are avoidable with a few weeks of preparation."
+        ],
+        [
+          "ul",
+          [
+            [
+              "Waiting for March:",
+              "providers get busy close to the deadline, and connecting software takes time."
+            ],
+            [
+              "Assuming B2C means no work:",
+              "your supplier invoices still arrive as e-invoices through your ASP."
+            ],
+            [
+              "Editing issued invoices:",
+              "corrections and refunds need credit notes, not changes to the original."
+            ],
+            [
+              "Missing TRNs:",
+              "a corporate client or sub-agent without a correct TRN in your records causes rejections."
+            ],
+            [
+              "Guessing VAT treatment:",
+              "agent and principal decisions should be written down by your adviser, not left to each staff member."
+            ],
+            [
+              "No owner for rejections:",
+              "someone must check status every day and fix rejected invoices quickly."
+            ]
+          ]
+        ],
+        [
+          "h2",
+          "How TravelSuite ERP is preparing for UAE e-invoicing for travel agencies"
+        ],
+        [
+          "p",
+          "TravelSuite ERP is adding UAE e-invoicing for travel agencies on the Business plan, ahead of the national roll-out. It is not live yet, so ask our team for the go-live date before you plan around it. Business plan customers in the UAE get it as part of setup."
+        ],
+        [
+          "ul",
+          [
+            [
+              "PINT AE e-invoices:",
+              "invoices and credit notes are created in the UAE Peppol format."
+            ],
+            [
+              "Sent through your ASP:",
+              "e-invoices go to the Accredited Service Provider you appoint, or the one you already use."
+            ],
+            [
+              "Buyer lookup and TRN checks:",
+              "find the buyer's Peppol address and check seller and buyer TRNs before submission."
+            ],
+            [
+              "Credit notes:",
+              "refunds and cancellations are issued as credit notes linked to the original invoice."
+            ],
+            [
+              "VAT in AED:",
+              "invoices in other currencies show the VAT amounts in AED."
+            ],
+            [
+              "Status and archive:",
+              "see when each e-invoice is sent, delivered and reported, or why it was rejected, with the e-invoice and the customer PDF stored with the booking."
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Invoices still start where they do today: from bookings, accepted quotations and walk-in sales in the finance module. B2B agents with commission and payouts are also part of the Business plan, which helps consolidators keep sub-agent sales and commission in the same system as their invoices."
+        ],
+        [
+          "read",
+          "Fawtara e-invoicing for travel agencies in Oman",
+          "/e-invoicing/oman"
+        ],
+        [
+          "links",
+          [
+            [
+              "Finance & Accounting",
+              "/features/finance"
+            ],
+            [
+              "Invoice & Payment",
+              "/features/invoices"
+            ],
+            [
+              "B2B & B2C Booking",
+              "/features/b2b"
+            ],
+            [
+              "E-invoicing",
+              "/e-invoicing"
+            ],
+            [
+              "Pricing",
+              "/pricing"
+            ]
+          ]
+        ],
+        [
+          "cta",
+          "Getting ready for 1 July 2027?",
+          "Book a free demo and we will walk through your booking-to-invoice flow and the UAE e-invoicing set-up on the Business plan."
+        ],
+        [
+          "sources",
+          [
+            [
+              "Ministry of Finance: two Ministerial Decisions on the scope and timelines of the Electronic Invoicing System",
+              "https://mof.gov.ae/en/news/ministry-of-finance-announces-the-issuance-of-two-ministerial-decisions-on-the-scope-of-obligations-and-the-timelines-for-implementing-the-electronic-invoicing-system-2/"
+            ],
+            [
+              "Ministry of Finance: targeted amendments to eInvoicing system decisions",
+              "https://mof.gov.ae/en/news/ministry-of-finance-announces-targeted-amendments-to-einvoicing-system-decisions/"
+            ],
+            [
+              "Ministerial Decision No. 66 of 2026 amending Ministerial Decision No. 244 of 2025",
+              "https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf"
+            ],
+            [
+              "Ministerial Decision No. 243 of 2025 on the Electronic Invoicing System",
+              "https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-no.-243-of-2025-on-the-Electronic-Invoicing-System.pdf"
+            ],
+            [
+              "Ministry of Finance: UAE eInvoicing initiative and guidelines",
+              "https://mof.gov.ae/en/about-us/initiatives/einvoicing/"
+            ],
+            [
+              "Cabinet Decision No. 173 of 2026 on violations and administrative penalties for the Electronic Invoicing System",
+              "https://mof.gov.ae/wp-content/uploads/2026/10/Cabinet-Decision-No.-173-of-2026-On-the-Violations-and-Administrative-Penalties-Resulting-from-Violation-of-the-Legislation-Regulating-the-Electronic-Invoicing-System_En.pdf"
+            ],
+            [
+              "Ministry of Finance: updated administrative penalties for the UAE eInvoicing system",
+              "https://mof.gov.ae/en/news/mof-announces-updated-administrative-penalties-related-to-the-uae-einvoicing-system-to-enhance-clarity-and-support-business-compliance/"
+            ],
+            [
+              "Federal Tax Authority: call to comply with e-invoicing deadlines and avoid penalties",
+              "https://tax.gov.ae/en/media.centre/news/federal.tax.authority.calls.on.persons.subject.to.einvoicing.to.comply.wit.the.prescribed.legal.deadlines.and.avoid.administrative.penalties.aspx"
+            ],
+            [
+              "Federal Tax Authority: UAE e-invoicing",
+              "https://tax.gov.ae/en/taxes/Vat/uae.einvoicing.aspx"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "UAE e-invoicing is a deadline you can plan for, not a surprise. If you want to see how your own bookings, refunds and commissions would flow through PINT AE and your ASP, book a free demo with our team and get your Phase 2 plan in place before 31 March 2027."
+        ]
+      ],
+      "extra": {
+        "takeaways": [
+          "Phase 2 businesses below AED 50 million must appoint an ASP by 31 March 2027.",
+          "Phase 2 go-live for e-invoices is 1 July 2027.",
+          "Both the issuer and the recipient of a B2B invoice need an Accredited Service Provider.",
+          "Missing the deadline can cost AED 5,000 a month, up to AED 50,000 in 12 months.",
+          "Settle agent versus principal treatment with your tax adviser before mapping invoices."
+        ],
+        "faqs": [
+          [
+            "When does UAE e-invoicing start for small travel agencies?",
+            "Businesses with annual revenue below AED 50 million are in Phase 2. They must appoint an Accredited Service Provider by 31 March 2027 and start issuing e-invoices by 1 July 2027. Larger businesses with revenue of AED 50 million or more went first, with an ASP deadline of 30 October 2026 and go-live on 1 January 2027. Confirm your revenue band with your tax adviser, because it decides which deadline applies to you."
+          ],
+          [
+            "Do I need an Accredited Service Provider if I only sell to travellers?",
+            "Possibly yes. The Ministry of Finance guidelines place supplies to individuals who are not in business outside the scope for now, but an agency that buys hotels, transport or services from other businesses is still treated as being in business transactions. Your ASP is also how you receive supplier e-invoices. Check the guidelines and ask your tax adviser how this applies to your mix of customers and suppliers."
+          ],
+          [
+            "What is the penalty for missing the UAE e-invoicing deadline?",
+            "Under Cabinet Decision No. 173 of 2026, failing to implement the system, including not appointing an ASP, carries AED 5,000 at first and AED 5,000 for each further month or part of a month, up to AED 50,000 in any 12 consecutive months. Separate, smaller penalties apply to failures on individual electronic invoices and credit notes. Read the decision for the full list and exact wording."
+          ],
+          [
+            "What is PINT AE and the 5-corner model?",
+            "PINT AE is the UAE version of the Peppol international invoice format. In the 5-corner model, the supplier sends the invoice through its ASP, the buyer's ASP receives it and passes it to the buyer, and the tax data is reported to the Federal Tax Authority as the fifth corner. Both the issuer and the recipient need an ASP for the exchange to work."
+          ],
+          [
+            "Are air tickets included in UAE e-invoicing?",
+            "Ministerial Decision No. 243 of 2025 excludes international passenger transport provided by an airline where an electronic ticket is issued, along with certain ancillary airline services. That covers the airline's own supply. A service fee or markup that your agency invoices to a business client may be a separate supply, so ask your tax adviser whether those invoices must be issued as e-invoices."
+          ],
+          [
+            "Does TravelSuite ERP support UAE e-invoicing?",
+            "TravelSuite ERP is adding UAE e-invoicing on the Business plan. It creates invoices and credit notes in PINT AE, sends them through the Accredited Service Provider you appoint, checks TRNs and shows delivery and reporting status on each invoice. The feature is not live yet, so ask our team for the go-live date and book a free demo to see how it fits your invoicing."
+          ]
+        ]
+      }
+    },
+    {
       "slug": "tour-management-software-travel-agency",
       "cat": "Guides",
       "icon": "i-map",
