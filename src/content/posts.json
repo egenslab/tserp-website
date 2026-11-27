@@ -1159,8 +1159,8 @@
       "cover": "/assets/img/blog/myinvois-e-invoicing-travel-agency-guide.jpg",
       "date": "21 November 2026",
       "read": 17,
-      "title": "MyInvois e-invoicing for travel agencies: a practical guide for Malaysia",
-      "seoTitle": "MyInvois e-invoicing for travel agencies in Malaysia",
+      "title": "MyInvois e-invoicing for travel agencies: Malaysia guide for 2027",
+      "seoTitle": "MyInvois e-invoicing for travel agencies: 2027 guide",
       "excerpt": "What LHDN's MyInvois rules mean for Malaysian travel agencies and tour operators, from phases and the exemption threshold to deposits, refunds, commissions and a readiness plan.",
       "body": [
         [
@@ -1275,6 +1275,14 @@
           "Relaxation is not an exemption. You still need to issue e-invoices. It simply gives you time to fix data and processes before the full rules apply. LHDN has also announced a special voluntary disclosure programme for e-invoicing, running from 7 July 2026 until 31 December 2027, for businesses that want to correct past issues."
         ],
         [
+          "h3",
+          "What 2027 means for your agency"
+        ],
+        [
+          "p",
+          "For most Malaysian travel agencies, 2027 is the year the transition ends. The interim relaxation for the Phase 4 group and the voluntary disclosure programme both run until 31 December 2027. Use the year to move from consolidated e-invoices to individual e-invoices where the rules require them, clean up buyer tax numbers and test refunds, so that the stricter rules do not arrive in the middle of a busy season."
+        ],
+        [
           "image",
           "/assets/img/blog/myinvois-e-invoicing-travel-agency-timeline.jpg",
           "Six steps a Malaysian travel agency takes to comply with MyInvois e-invoicing",
@@ -1308,6 +1316,11 @@
               "Watch rejections daily and fix the cause, not only the invoice."
             ]
           ]
+        ],
+        [
+          "cta",
+          "Preparing for the end of the relaxation period?",
+          "Show us how you invoice packages, deposits and refunds today, and we will walk you through the same work in TravelSuite ERP."
         ],
         [
           "h2",
@@ -1630,8 +1643,13 @@
         ],
         [
           "read",
-          "ZATCA e-invoicing for travel agencies: Phase 2 and Wave 25 explained",
+          "ZATCA e-invoicing for travel agencies: Wave 25 and the 2027 deadline",
           "/blog/zatca-e-invoicing-travel-agency"
+        ],
+        [
+          "cta",
+          "See MyInvois e-invoicing on your own bookings",
+          "Book a free demo and we will show how a tour package, a deposit and a refund become e-invoices in TravelSuite ERP."
         ],
         [
           "note",
@@ -1709,7 +1727,7 @@
         ],
         [
           "p",
-          "If you want to see how e-invoicing will fit into your bookings, invoices and accounts, book a demo or talk to our team about your MyInvois setup."
+          "If you want to see how e-invoicing will fit into your bookings, invoices and accounts before the relaxation period ends, click Book a free demo. We will set up the session around your own packages and give you the go-live date for the MyInvois connection."
         ]
       ],
       "extra": {
@@ -1747,7 +1765,7 @@
           ]
         ]
       },
-      "metaDescription": "MyInvois e-invoicing for travel agencies: LHDN timeline, RM3 million exemption, consolidated and self-billed e-invoices, 72-hour rule and a readiness plan."
+      "metaDescription": "MyInvois e-invoicing for travel agencies in 2027: LHDN timeline, RM3 million exemption, end of relaxation, consolidated e-invoices and a readiness plan."
     },
     {
       "slug": "zatca-e-invoicing-travel-agency",
@@ -1757,8 +1775,8 @@
       "cover": "/assets/img/blog/zatca-e-invoicing-travel-agency-guide.jpg",
       "date": "17 November 2026",
       "read": 17,
-      "title": "ZATCA e-invoicing for travel agencies: Phase 2 and Wave 25 explained",
-      "seoTitle": "ZATCA e-invoicing for travel agencies: Wave 25 guide",
+      "title": "ZATCA e-invoicing for travel agencies: Wave 25 and the 2027 deadline",
+      "seoTitle": "ZATCA e-invoicing for travel agencies: 2027 Wave 25 guide",
       "excerpt": "Wave 25 brings many Saudi travel agencies into ZATCA Phase 2. Here is what changes for tickets, refunds and Umrah deposits, and how to be ready for FATOORA on time.",
       "body": [
         [
@@ -1889,6 +1907,11 @@
             "Test with real bookings, refunds and deposits.",
             "Go live on or before your integration date."
           ]
+        ],
+        [
+          "cta",
+          "Is your agency in Wave 25?",
+          "The integration deadline is 1 February 2027. Book a free demo and see how tickets, refunds and Umrah deposits are invoiced in TravelSuite ERP."
         ],
         [
           "h2",
@@ -2239,6 +2262,11 @@
           "/blog/choosing-a-travel-erp"
         ],
         [
+          "cta",
+          "See FATOORA e-invoicing on your own bookings",
+          "Book a free demo and we will show how a ticket, an Umrah deposit and a refund become ZATCA e-invoices in TravelSuite ERP."
+        ],
+        [
           "note",
           "This article is general information, not tax or legal advice. ZATCA's rules, waves and deadlines can change, so check ZATCA's official announcements and guidelines, or speak to a qualified tax adviser, before you act."
         ],
@@ -2310,7 +2338,7 @@
         ],
         [
           "p",
-          "If your agency is in Wave 25 or expects to be, start the data clean-up now and talk to our team. We can walk you through how TravelSuite ERP handles bookings, refunds and deposits, and give you the go-live date for the FATOORA integration so you can plan with confidence."
+          "If your agency is in Wave 25 or expects to be, start the data clean-up now and click Book a free demo. We will walk you through how TravelSuite ERP handles bookings, refunds and deposits, and give you the go-live date for the FATOORA integration so you can plan with confidence."
         ]
       ],
       "extra": {
@@ -2348,7 +2376,7 @@
           ]
         ]
       },
-      "metaDescription": "ZATCA e-invoicing for travel agencies: Phase 2 and Wave 25, clearance vs reporting, credit notes, Umrah deposits and a readiness checklist for FATOORA."
+      "metaDescription": "ZATCA e-invoicing for travel agencies: the Wave 25 deadline of 1 February 2027, clearance vs reporting, credit notes, Umrah deposits and a FATOORA checklist."
     },
     {
       "slug": "iata-accreditation-travel-agency",
