@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "npm run i18n && next dev",
     "build": "npm run i18n && next build && node scripts/i18n.mjs check",
-    "build:hostinger": "npm run i18n && next build --webpack",
+    "build:hostinger": "npm run i18n && next build --webpack && node scripts/indexnow.mjs",
     "start": "node scripts/serve.mjs",
     "i18n": "node scripts/i18n.mjs build",
     "lint": "tsc --noEmit"
