@@ -9,6 +9,590 @@
   ],
   "items": [
     {
+      "slug": "tour-management-software-travel-agency",
+      "cat": "Guides",
+      "icon": "i-map",
+      "color": "#0f5c4f",
+      "cover": "/assets/img/blog/tour-management-software-travel-agency-guide.jpg",
+      "date": "27 November 2026",
+      "read": 17,
+      "title": "Tour management software for travel agencies: features and pricing",
+      "seoTitle": "Tour management software: features, pricing, how to choose",
+      "excerpt": "What tour management software does, the signs you have outgrown spreadsheets, the features to check, how to cost a tour package and how pricing models compare.",
+      "body": [
+        [
+          "p",
+          "Tour management software is the system a travel agency, tour operator or DMC uses to build tour packages once and run them end to end: the day-by-day itinerary, the supplier costs, the selling price, the departure dates and seats, the bookings and the money owed to hotels, coaches and guides. If you sell more than a few packages a month, it replaces the Word itineraries, pricing spreadsheets and WhatsApp threads that most tour desks start with."
+        ],
+        [
+          "p",
+          "This guide is for owners and managers of travel agencies, tour operators and DMCs in Bangladesh, Malaysia, Indonesia, the Gulf and Türkiye who sell inbound or outbound packages. It explains what tour management software is, the signs you have outgrown spreadsheets, the features to look for, how to cost and price a tour package with a worked example, how to run fixed departures, how pricing models work and how to choose a system without regret."
+        ],
+        [
+          "h2",
+          "What is tour management software?"
+        ],
+        [
+          "p",
+          "Tour management software is a system for designing, pricing, selling and operating tour packages in one place. It holds each package's itinerary, inclusions, supplier costs, prices and departure dates, takes bookings from your website, agents and staff, reduces seats as they sell and shows the profit of every departure before the trip starts."
+        ],
+        [
+          "lp",
+          "The short verdict.",
+          "If more than one person builds or sells your packages, or you run fixed group departures, a tour management system pays for itself in fewer pricing mistakes, no oversold seats and margins you can see before you confirm a group. A single spreadsheet can list packages, but it cannot keep a website, agents and staff selling from the same seat count."
+        ],
+        [
+          "h3",
+          "Tour management system, tour operator software or DMC software?"
+        ],
+        [
+          "p",
+          "You will see several names for the same family of tools. Tour operator software and tour management system usually mean the full back office for packages. Tour package management software stresses the product side: itineraries, costing and pricing. DMC software is the same idea for destination management companies that handle inbound groups for overseas partners. Tour booking software often means only the online checkout. When you compare products, look past the label and check which of these jobs each one actually does."
+        ],
+        [
+          "h2",
+          "Signs you have outgrown spreadsheets"
+        ],
+        [
+          "p",
+          "Most tour desks start with a pricing sheet, a folder of Word itineraries and a phone full of chats. It works while one experienced person handles every package. It starts to fail when a second salesperson joins, you add agents or you run several departures in the same season. These are the signs to watch for."
+        ],
+        [
+          "lp",
+          "Itineraries are rewritten for every customer.",
+          "Staff copy an old itinerary, change the dates and hotels by hand and send it as a PDF or a photo. Each copy drifts a little, and nobody is sure which version has the current inclusions and prices."
+        ],
+        [
+          "lp",
+          "Seats are counted by hand.",
+          "The website, two salespeople and a partner agent all sell the same departure. Somebody keeps a count in a sheet, and on a busy weekend the group is oversold or a seat is held for a customer who never pays."
+        ],
+        [
+          "lp",
+          "Costs live in one file and prices in another.",
+          "The hotel rate changes, the coach company sends a new quote, or the exchange rate moves. The selling price stays the same because nobody connects the cost sheet to the price list, and the margin quietly shrinks."
+        ],
+        [
+          "lp",
+          "Profit is only known after the trip.",
+          "Supplier bills arrive weeks after the group returns. Only then does the agency learn whether the departure made money, which is too late to change the price, the group size or the supplier."
+        ],
+        [
+          "lp",
+          "Agents and the website show different packages.",
+          "Partner agents receive an old brochure, the website shows last season's price and a customer quotes a deal they saw in a WhatsApp status. Every mismatch costs time and goodwill."
+        ],
+        [
+          "image",
+          "/assets/img/blog/tour-management-software-travel-agency-versus.jpg",
+          "Comparison of a tour desk run on spreadsheets and chats with one run on tour management software",
+          "The same tour desk on spreadsheets and chats, and on tour management software."
+        ],
+        [
+          "table",
+          [
+            "Area",
+            "Spreadsheets and chats",
+            "Tour management software"
+          ],
+          [
+            [
+              "Itineraries",
+              "Itineraries retyped per customer",
+              "Package built once"
+            ],
+            [
+              "Seats",
+              "Seats counted by hand",
+              "Live seat count"
+            ],
+            [
+              "Profit",
+              "Profit known after travel",
+              "Margin before you sell"
+            ]
+          ]
+        ],
+        [
+          "cta",
+          "Running tours on spreadsheets?",
+          "Bring one of your real packages to a free demo and see it built, costed and published in TravelSuite ERP, with seats and margin on screen."
+        ],
+        [
+          "h2",
+          "What features should tour management software have?"
+        ],
+        [
+          "p",
+          "Features matter only if they match the way you sell. Use the groups below as a checklist when you watch a demo, and ask the vendor to show each one with a package you actually sell rather than a sample trip."
+        ],
+        [
+          "h3",
+          "Itinerary builder for day-by-day itineraries"
+        ],
+        [
+          "p",
+          "A good itinerary builder lets you add each day with its places, hotel, meals, transfers and activities, plus photos that make the package easy to sell. You should be able to copy a package, change a few days for a family or company and keep the original intact. Look for a clear list of inclusions, exclusions and terms on every package, because those lines prevent most disputes later."
+        ],
+        [
+          "h3",
+          "Tour costing and package costing"
+        ],
+        [
+          "p",
+          "Tour costing means building the package price from the real cost of each service: hotels, transport, guides, entrance fees, meals and flights. The system should separate per-person costs from shared costs such as a coach or a guide, so the cost per traveller changes correctly with group size. Without this, the price is a guess."
+        ],
+        [
+          "h3",
+          "Tour package pricing for adults, children and groups"
+        ],
+        [
+          "p",
+          "Customers expect different prices for adults, children and infants, and groups expect a group rate. Your software should store these prices on the package and apply the right one to each traveller on a booking. Ask whether you can set a compare-at price for offers, an extra charge for private tours and the unit the price applies to, such as per person or per group."
+        ],
+        [
+          "h3",
+          "Fixed departure management and seat inventory"
+        ],
+        [
+          "p",
+          "For group tour management you need fixed departure dates, each with its own seat count that drops as bookings come in. Look for a maximum number of seats, a booking cut-off a set number of days before travel and a clear view of which departures are filling and which are not."
+        ],
+        [
+          "h3",
+          "Brochures and sharing"
+        ],
+        [
+          "p",
+          "Sales teams still sell with brochures. A shareable PDF brochure generated from the package, with its photos, itinerary, inclusions and prices, means every salesperson and agent sends the same current version instead of an old file."
+        ],
+        [
+          "h3",
+          "Selling channels: website, B2B agents and WhatsApp"
+        ],
+        [
+          "p",
+          "The same package should be sold on your website, to partner agents and over WhatsApp from one record. When the price or the seat count changes, every channel should see it. For agents, check how commission is set and paid, and whether agent sales appear in the same booking list as direct sales."
+        ],
+        [
+          "read",
+          "B2B travel agent commission: tracking sales from booking to payout",
+          "/blog/b2b-agent-commission-payouts"
+        ],
+        [
+          "h3",
+          "Suppliers, payables and profit"
+        ],
+        [
+          "p",
+          "Every booking should create the matching costs for the hotels, transport and guides it uses, so you always know what you owe each supplier and what each package earns. If you resell other operators' tours, the system should record their payout and your commission separately."
+        ],
+        [
+          "image",
+          "/assets/img/blog/tour-management-software-travel-agency-checklist.jpg",
+          "Checklist of features to look for in tour management software for travel agencies",
+          "Nine features to check before you choose tour management software."
+        ],
+        [
+          "ul",
+          [
+            "Day-by-day itinerary builder",
+            "Supplier costing per package",
+            "Adult, child, group prices",
+            "Fixed departures and seats",
+            "Inclusions, exclusions and terms",
+            "Shareable PDF brochures",
+            "Website and B2B selling",
+            "Supplier payables tracked",
+            "Profit per departure"
+          ]
+        ],
+        [
+          "read",
+          "Travel agency software: the complete buyer's guide for 2027",
+          "/blog/travel-agency-software-buyers-guide"
+        ],
+        [
+          "h2",
+          "How do you price a tour package? A worked example"
+        ],
+        [
+          "p",
+          "Pricing a tour package is simple arithmetic, but it has to be done the same way every time. You add up the cost of every service per traveller, spread shared costs across the expected group size, add your margin and then set child and group prices from the same base. The example below shows each step."
+        ],
+        [
+          "note",
+          "Example data. All figures are invented to show the method, in USD, and exclude taxes and fees that vary by country."
+        ],
+        [
+          "p",
+          "The package is a four-day, three-night coach tour for a group of 20 adults. Hotel rooms cost $60 per night for a twin room, the coach costs $1,200 for the whole trip, the guide costs $100 per day, entrance fees are $35 per adult and three group dinners cost $15 each."
+        ],
+        [
+          "table",
+          [
+            "Cost item",
+            "Basis",
+            "Cost per adult"
+          ],
+          [
+            [
+              "Hotel",
+              "$60 twin room, 3 nights, 2 sharing",
+              "$90"
+            ],
+            [
+              "Coach transport",
+              "$1,200 shared by 20",
+              "$60"
+            ],
+            [
+              "Tour guide",
+              "$100 a day, 4 days, shared by 20",
+              "$20"
+            ],
+            [
+              "Entrance fees",
+              "Per person",
+              "$35"
+            ],
+            [
+              "Group dinners",
+              "3 dinners at $15",
+              "$45"
+            ],
+            [
+              "Total cost",
+              "Per adult, group of 20",
+              "$250"
+            ]
+          ]
+        ],
+        [
+          "lp",
+          "Set the price from the margin you need.",
+          "If you want a 20% margin on the selling price, divide the cost by 0.8: $250 divided by 0.8 is $312.50, rounded to $315. Your profit is $65 per adult, which is a 20.6% margin on the price, or a 26% markup on the cost. Keep margin and markup apart in your head, because confusing them is the most common pricing mistake."
+        ],
+        [
+          "lp",
+          "Price children from their own costs.",
+          "A child sharing the parents' room with no extra bed costs no hotel, but still needs a coach seat ($60), a share of the guide ($20), a child entrance ticket ($20) and child meals ($30). That is $130 of cost, so at the same margin the child price is $162.50, rounded to $165."
+        ],
+        [
+          "lp",
+          "Check the group size you depend on.",
+          "Shared costs move with group size. At 15 adults the coach costs $80 and the guide $26.67 per person, so the cost rises to about $277. At 12 adults it reaches about $303, which leaves only $12 of profit at a $315 price. Decide your minimum group size, or a smaller-group price, before you publish the departure."
+        ],
+        [
+          "lp",
+          "Check the departure as a whole.",
+          "If the departure sells 18 adults and 2 children, revenue is $6,000. Costs are $1,620 for nine rooms, $1,200 for the coach, $400 for the guide, $670 for entrance fees and $870 for dinners, a total of $4,760. Profit is $1,240, a margin of about 20.7%."
+        ],
+        [
+          "p",
+          "Tour management software does this arithmetic for you once the supplier costs are on the package. The real benefit is that when a hotel rate or coach quote changes, the cost and margin update with it, so you see a thin departure before you sell the last seat rather than after the trip."
+        ],
+        [
+          "read",
+          "Sales are not profit: how to read your travel agency profit and loss",
+          "/blog/travel-agency-profit-and-loss"
+        ],
+        [
+          "h2",
+          "How do you manage fixed departures and seats?"
+        ],
+        [
+          "p",
+          "A fixed departure is a package with set travel dates and a limited number of seats, sold to individual travellers who join one group. Managing it well comes down to one rule: there is only one seat count, and every channel sells from it. These practices keep group departures under control."
+        ],
+        [
+          "ul",
+          [
+            [
+              "One seat count:",
+              "the website, staff and agents all book against the same departure, and seats drop with each booking."
+            ],
+            [
+              "A maximum and a cut-off:",
+              "set the seats you can really operate and close bookings a fixed number of days before travel, so hotels and coaches can be confirmed."
+            ],
+            [
+              "A minimum group size:",
+              "use your costing to decide the number below which the departure loses money, and agree in your terms what happens if it is not reached."
+            ],
+            [
+              "Payment before confirmation:",
+              "decide how long an unpaid seat can be held and release it when that time passes."
+            ],
+            [
+              "A departure view:",
+              "review every open departure each week to see seats sold, seats left and margin, and push the slow ones early."
+            ],
+            [
+              "Supplier releases:",
+              "match your hotel and coach release dates to your booking cut-off so you are not paying for rooms you cannot sell."
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Private and custom tours work differently. They have no shared seat count, so the focus moves to a priced proposal for one family or company, built by copying a package and adjusting the days and services."
+        ],
+        [
+          "h2",
+          "Tour operator software vs booking engine: what's the difference?"
+        ],
+        [
+          "p",
+          "A booking engine is the checkout on your website: it shows available products, takes the traveller's details and payment and creates a booking. Tour operator software is the back office behind it: it builds and costs the package, manages departures and seats, handles agents and suppliers and shows profit. A booking engine on its own sells; tour operator software also tells you what you earned."
+        ],
+        [
+          "table",
+          [
+            "Area",
+            "Booking engine",
+            "Tour operator software"
+          ],
+          [
+            [
+              "Main job",
+              "Take online bookings and payments",
+              "Build, cost, sell and operate packages"
+            ],
+            [
+              "Itineraries",
+              "Displays what you enter",
+              "Day-by-day builder with photos"
+            ],
+            [
+              "Pricing",
+              "Shows the selling price",
+              "Builds the price from supplier costs"
+            ],
+            [
+              "Departures",
+              "Sells available dates",
+              "Seat inventory across every channel"
+            ],
+            [
+              "Agents",
+              "Usually not included",
+              "B2B selling with commission"
+            ],
+            [
+              "Profit",
+              "Not shown",
+              "Margin per package and departure"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "The best setup is both in one system, so a booking made online lands in the same list as an agent sale or a counter sale, with the same seats, costs and invoices. If they are separate products, ask exactly how bookings, seats and prices move between them and what happens when the connection fails."
+        ],
+        [
+          "h2",
+          "From idea to traveller: the tour package lifecycle"
+        ],
+        [
+          "p",
+          "Every package follows the same path, whether it is an outbound holiday, an inbound group for an overseas partner or a short Umrah add-on tour. Tour management software should support each step without retyping."
+        ],
+        [
+          "image",
+          "/assets/img/blog/tour-management-software-travel-agency-workflow.jpg",
+          "Six steps of a tour package lifecycle from planning the package to paying suppliers",
+          "The tour package lifecycle, from the first idea to the last supplier payment."
+        ],
+        [
+          "ol",
+          [
+            [
+              "Plan the package:",
+              "choose the destination, duration and traveller type, and write the day-by-day itinerary with inclusions, exclusions and terms."
+            ],
+            [
+              "Cost every service:",
+              "add hotels, transport, guides, entrance fees and meals, separating per-person and shared costs."
+            ],
+            [
+              "Set departures and prices:",
+              "publish fixed dates with seats, or keep the package open, and set adult, child and group prices."
+            ],
+            [
+              "Publish to every channel:",
+              "show it on your website, give it to your B2B agents and share the PDF brochure and WhatsApp link."
+            ],
+            [
+              "Take bookings and payments:",
+              "record travellers and payments against each booking while seats drop automatically."
+            ],
+            [
+              "Operate and pay suppliers:",
+              "confirm services, travel with the group and settle what each supplier is owed."
+            ]
+          ]
+        ],
+        [
+          "h3",
+          "Inbound, outbound and Umrah add-ons"
+        ],
+        [
+          "p",
+          "Outbound agencies in Bangladesh or Indonesia often sell holidays to Malaysia, Thailand, Türkiye or Dubai, where costs come in foreign currency and must be converted carefully. Inbound operators and DMCs in Malaysia, the Gulf and Türkiye sell local tours to overseas agents, so agent pricing and commission matter most. Some Umrah agencies add a short city tour before or after the pilgrimage, which works best as a separate package with its own costing so its margin is clear."
+        ],
+        [
+          "read",
+          "WhatsApp for travel agencies: how to turn chats into bookings",
+          "/blog/whatsapp-for-travel-agencies"
+        ],
+        [
+          "h2",
+          "How much does tour management software cost?"
+        ],
+        [
+          "p",
+          "Prices vary widely, so compare the pricing model before you compare the number. There are three common models, and each changes what you pay as you grow."
+        ],
+        [
+          "table",
+          [
+            "Model",
+            "How it works",
+            "Watch for"
+          ],
+          [
+            [
+              "Subscription",
+              "A monthly or yearly fee, often per user",
+              "Costs rise with staff and never stop"
+            ],
+            [
+              "Per-booking fee",
+              "A charge or percentage on each booking",
+              "Your best season becomes your most expensive"
+            ],
+            [
+              "One-time licence",
+              "Pay once to own the licence",
+              "Check what support and updates include"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Whatever the model, ask about the costs around the licence: setup and data import, training, payment gateway fees, hosting, extra branches and the price of modules you will need next year, such as B2B agents or accounting. A cheap start can become an expensive system once you add the parts you really need."
+        ],
+        [
+          "p",
+          "TravelSuite ERP is sold as one-time lifetime licenses with no monthly fee: Starter at $599, Growth at $799 and Business at $1,499, with Enterprise on a custom contract. Starter includes any two booking modules, Growth includes all booking modules with finance and accounting, and Business adds B2B agents with commission and payouts."
+        ],
+        [
+          "h2",
+          "How to choose the right system: questions to ask"
+        ],
+        [
+          "p",
+          "Shortlist two or three systems and ask each vendor the same questions, using one of your own packages. The answers show quickly which product fits the way you work."
+        ],
+        [
+          "ul",
+          [
+            "Can you build one of our real packages, day by day, during the demo?",
+            "How are shared costs such as a coach or guide spread across the group?",
+            "Can we set adult, child and group prices on the same package?",
+            "Does one seat count cover the website, staff and agents?",
+            "Can agents see agent prices, and how is their commission paid?",
+            "Do bookings create supplier payables, and can we see profit per departure?",
+            "Can we generate a PDF brochure and share packages over WhatsApp?",
+            "What does the licence include, and what costs extra later?"
+          ]
+        ],
+        [
+          "p",
+          "Then start small. Move two or three best-selling packages first, run one departure fully in the new system, and only then bring over the rest of the catalogue and your agents. Your team learns on real work, and you find gaps before the busy season."
+        ],
+        [
+          "p",
+          "TravelSuite ERP covers this lifecycle in one system. Its Tour Packages module includes a day-by-day itinerary builder with photos, fixed departures with seat inventory, adult, child and group pricing, inclusions, exclusions and terms, shareable PDF brochures and supplier costing with package profit. The same package can be sold on your agency website, to B2B agents and over WhatsApp, and Vendor Management tracks what each supplier is owed."
+        ],
+        [
+          "cta",
+          "See your own tour packages in TravelSuite ERP",
+          "Book a free demo and we will build one of your packages with its itinerary, costs, departures and prices, so you can judge the fit on real work."
+        ],
+        [
+          "links",
+          [
+            [
+              "Tour Packages",
+              "/features/tours"
+            ],
+            [
+              "Tour operators & DMCs",
+              "/solutions/tour-operators"
+            ],
+            [
+              "Agency Website",
+              "/features/website"
+            ],
+            [
+              "B2B & B2C Booking",
+              "/features/b2b"
+            ],
+            [
+              "Vendor Management",
+              "/features/vendors"
+            ],
+            [
+              "Pricing",
+              "/pricing"
+            ]
+          ]
+        ],
+        [
+          "p",
+          "Choosing tour management software is easier when you see it working with your own packages. Click Book a free demo to see TravelSuite ERP with one of your tour packages, from the day-by-day itinerary to the margin on your next departure."
+        ]
+      ],
+      "extra": {
+        "takeaways": [
+          "Tour management software builds, costs, sells and operates tour packages in one place.",
+          "Retyped itineraries, hand-counted seats and profit known only after travel mean you have outgrown spreadsheets.",
+          "Price packages from real supplier costs, spread shared costs by group size and keep margin and markup apart.",
+          "Run every fixed departure from one seat count shared by the website, staff and agents.",
+          "Compare pricing models first: subscription, per-booking fee or one-time licence."
+        ],
+        "faqs": [
+          [
+            "Do I need tour management software?",
+            "You probably do if more than one person sells your packages, you run fixed group departures, or you sell through agents as well as your website. Common signs are itineraries retyped for each customer, seats counted by hand, costs and prices kept in separate files, and profit known only after the trip. A small agency selling a few custom trips a month can manage on spreadsheets for a while, but the risk of pricing mistakes and oversold seats grows with every channel."
+          ],
+          [
+            "What is the difference between a tour management system and an itinerary builder?",
+            "An itinerary builder creates the day-by-day plan of a trip, often with photos and descriptions, and is mainly a sales tool. A tour management system includes an itinerary builder but also covers costing, prices for adults, children and groups, departures and seats, bookings, agents and supplier payables. If you only need attractive itineraries, a builder is enough. If you need to know your margin and control seats, you need the full system."
+          ],
+          [
+            "Can one system handle inbound and outbound tour packages?",
+            "Yes, if it lets you cost services in the currency your suppliers charge and sell in the currency your customers or agents pay. Outbound agencies need careful currency conversion and supplier payables abroad, while inbound operators and DMCs need agent pricing and commission. Ask the vendor to show one outbound and one inbound package in the demo, with costs, prices and the resulting margin on each."
+          ],
+          [
+            "How do I set a child price for a tour package?",
+            "Build the child price from what a child actually costs you, not as a fixed discount on the adult price. List the services a child uses, such as a coach seat, a share of the guide, a child entrance ticket and meals, and leave out the hotel if the child shares a room without an extra bed. Then apply the same margin you use for adults and round the result to a clean selling price."
+          ],
+          [
+            "Can I sell the same tour package to B2B agents and direct customers?",
+            "Yes, and you should, as long as both channels sell from the same package record and seat count. Direct customers see your public price on your website, while agents see their own price and earn a commission. In TravelSuite ERP one package can be sold on your website, to B2B agents and over WhatsApp, and agent sales appear in the same booking list as direct sales."
+          ],
+          [
+            "How much does TravelSuite ERP cost for a tour operator?",
+            "TravelSuite ERP is sold as one-time lifetime licenses, not monthly subscriptions. Starter costs $599 and includes any two booking modules, Growth costs $799 and includes all booking modules with finance and accounting, and Business costs $1,499 and adds B2B agents with commission and payouts. Enterprise is on a custom contract. Book a free demo to see which plan fits your packages, team and agent network."
+          ]
+        ]
+      },
+      "metaDescription": "Tour management software explained: features to look for, how to cost a tour package, fixed departures, pricing models and how to choose the right system."
+    },
+    {
       "slug": "visa-processing-software-travel-agency",
       "cat": "Guides",
       "icon": "i-passport",
