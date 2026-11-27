@@ -30,9 +30,12 @@ object, written with a small Python script (json.dump, ensure_ascii=False, inden
 - ["image", "/assets/img/blog/<slug>-<key>.jpg", "alt text ≥ 20 chars", "one-sentence caption"] (when asked).
 - ["sources", [["Source title", "https://…"], …]] official sources used; before the closing paragraph.
 - ["links", [["Label", "/path"], …]] "Explore the modules" row, exactly once, near the end.
+- ["cta", "Short heading", "One or two sentences"] a "Book a free demo" box (button and WhatsApp link are added
+  automatically). Use 1–2: one after the section where the reader feels the problem most, one near the end.
+  Speak to the reader's situation ("Running departures on spreadsheets? See it with your own packages.").
 Each text must be a complete sentence or label: the site translates strings one by one into 8 languages.
-Use at least 1 table, 1 flow or ol, 3–4 "read" links, 1 "links" row. The last block is a closing "p" with a soft
-call to action (book a demo / talk to our team).
+Use at least 1 table, 1 flow or ol, 3–4 "read" links, 1 "links" row. The last block is a closing "p" that invites the reader to
+book a free demo. The blog's purpose is leads: every article must make the next step obvious.
 
 ## SEO
 One primary keyword in title, seoTitle, metaDescription, the first paragraph and 2–3 H2s, naturally; secondary

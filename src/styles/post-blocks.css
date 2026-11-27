@@ -101,3 +101,13 @@
 
 /* In-article images (16:9 illustrations) */
 .post-img img { display: block; width: 100%; height: auto; border-radius: 18px; border: 1px solid var(--line); box-shadow: var(--shadow); }
+
+/* Demo call to action inside an article */
+.post-cta { display: flex; align-items: center; justify-content: space-between; gap: 18px 24px; flex-wrap: wrap; margin: 1.8em 0; padding: 24px 26px; border-radius: 20px; color: #cfe0d6;
+  background: radial-gradient(circle at 92% 0%, rgba(146, 239, 89, .22), transparent 45%), linear-gradient(135deg, var(--forest) 0%, var(--forest-2) 100%); }
+.post-cta > div:first-child { flex: 1 1 320px; }
+.article .post-cta p { margin: 0; }
+.article .post-cta .post-cta-h { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; color: var(--white); margin-bottom: 6px; }
+.post-cta-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.post-cta-wa { display: inline-flex; align-items: center; gap: 6px; color: var(--lime); font-weight: 600; font-size: .92rem; }
+.post-cta-wa .ic { width: 16px; height: 16px; }

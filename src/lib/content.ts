@@ -54,7 +54,8 @@ export type Block =
   | ["flow", string[], string]                        // workflow diagram: steps, caption
   | ["links" | "sources", [string, string][]]
   | ["figure", "invoice" | "plans" | "dashboard"]
-  | ["image", string, string, string];               // in-article image: src, alt, caption
+  | ["image", string, string, string]               // in-article image: src, alt, caption
+  | ["cta", string, string];                          // demo call to action: heading, text
 export type Post = {
   slug: string; cat: string; icon: string; color: string; cover?: string; date: string; read: number;
   title: string; seoTitle?: string; metaDescription?: string; excerpt: string; body: Block[];

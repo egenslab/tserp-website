@@ -2,7 +2,7 @@
 // small illustrations (workflow diagram, invoice, plans, dashboard). Text stays in whole sentences
 // or labels so the runtime translator can match every piece.
 import Link from "next/link";
-import { slugify, type Block, type ListItem } from "@/lib/content";
+import { WA, slugify, type Block, type ListItem } from "@/lib/content";
 import { Icon } from "./ui";
 
 function Item({ item }: { item: ListItem }) {
@@ -20,6 +20,7 @@ export function blockText(b: Block): string {
     case "flow": return [...b[1], b[2]].join(" ");
     case "links": case "sources": case "figure": return "";
     case "image": return b[3];
+    case "cta": return `${b[1]} ${b[2]}`;
     default: return b[1];
   }
 }
@@ -65,6 +66,19 @@ export function BlockView({ block }: { block: Block }) {
           <p className="pl-h">Sources</p>
           <ul>{block[1].map(([label, href]) => <li key={href}><a href={href} target="_blank" rel="noopener">{label}</a></li>)}</ul>
         </div>
+      );
+    case "cta":
+      return (
+        <aside className="post-cta">
+          <div>
+            <p className="post-cta-h">{block[1]}</p>
+            <p>{block[2]}</p>
+          </div>
+          <div className="post-cta-actions">
+            <Link href="/contact" className="btn btn-lime">Book a free demo <Icon name="i-arrow" /></Link>
+            <a href={WA} target="_blank" rel="noopener" className="post-cta-wa"><Icon name="i-wa" /> Chat on WhatsApp</a>
+          </div>
+        </aside>
       );
     case "image":
       return (

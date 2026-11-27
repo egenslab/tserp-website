@@ -49,6 +49,7 @@ for i, b in enumerate(post.get("body", [])):
         t = b[3]; images.append(b[1])
         if not re.fullmatch(rf"/assets/img/blog/{re.escape(slug)}-[a-z0-9-]+\.jpg", b[1]): probs.append(f"block {i}: image src must be /assets/img/blog/{slug}-<key>.jpg")
         if len(b[2]) < 20: probs.append(f"block {i}: image alt text too short")
+    elif k == "cta" and len(b) == 3: t = b[1] + " " + b[2]
     elif k == "sources" and len(b) == 2:
         for _, href in b[1]:
             if not href.startswith("https://"): probs.append(f"block {i}: source must be an https URL")
@@ -67,6 +68,7 @@ if kinds.get("h2", 0) < 6: probs.append("fewer than 6 h2")
 if not kinds.get("table"): probs.append("no table")
 if kinds.get("read", 0) < 3: probs.append("fewer than 3 read links")
 if kinds.get("links", 0) != 1: probs.append("need exactly one links row")
+if kinds.get("cta", 0) < 1: probs.append("need at least one cta block (mid-article demo box)")
 if post.get("body") and post["body"][-1][0] != "p": probs.append("last block must be a closing p")
 ex = post.get("extra", {})
 if len(ex.get("takeaways", [])) != 5: probs.append("need 5 takeaways")
